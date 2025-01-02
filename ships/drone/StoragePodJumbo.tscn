@@ -1,0 +1,76 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
+[ext_resource path="res://sfx/spark_noise.png" type="Texture" id=2]
+[ext_resource path="res://lights/color-square.png" type="Texture" id=3]
+[ext_resource path="res://ships/Hull.gd" type="Script" id=4]
+[ext_resource path="res://ships/drone/pods-m.png" type="Texture" id=5]
+[ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=6]
+[ext_resource path="res://ships/drone/pods-n.png" type="Texture" id=7]
+[ext_resource path="res://ships/drone/StoragePod.tscn" type="PackedScene" id=8]
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 1 )
+shader_param/maskScale = Vector2( 11, 1 )
+shader_param/frames = Vector2( 1, 1 )
+shader_param/paintJobFactor = 0.0
+shader_param/paintJobBrightAdjust = 16.0
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 2, 0.5 )
+shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 0.25
+shader_param/shine = 1.0
+shader_param/charges = ExtResource( 2 )
+shader_param/map = ExtResource( 5 )
+
+[node name="StoragePodJumbo" instance=ExtResource( 8 )]
+processedCargoCapacity = 20000
+dummy = true
+
+[node name="allbright" type="Light2D" parent="." index="0"]
+editor_only = true
+texture = ExtResource( 3 )
+texture_scale = 32.0
+energy = 3.0
+range_height = 1024.0
+
+[node name="Hull" parent="." index="1"]
+position = Vector2( 0, 0 )
+offset = Vector2( 0, -73 )
+region_rect = Rect2( 1, 1, 124, 148 )
+
+[node name="Hull2" type="Sprite" parent="Hull" index="0"]
+light_mask = 5
+material = SubResource( 2 )
+rotation = 3.14159
+z_index = 25
+texture = ExtResource( 6 )
+normal_map = ExtResource( 7 )
+offset = Vector2( 0, -73 )
+region_enabled = true
+region_rect = Rect2( 1, 1, 124, 148 )
+script = ExtResource( 4 )
+
+[node name="Collider" parent="." index="2"]
+position = Vector2( 0, 1 )
+polygon = PoolVector2Array( -30, 67, -30, -69, 30, -69, 30, 67 )
+
+[node name="thruster-1" parent="." index="3"]
+visible = false
+position = Vector2( 0, 76 )
+default = "SYSTEM_NONE"
+
+[node name="thruster-2" parent="." index="4"]
+visible = false
+position = Vector2( 0, -76 )
+default = "SYSTEM_NONE"
+
+[node name="DisableAI" parent="." index="10"]
+collision_mask = 2147487232
+
+[editable path="AI"]
