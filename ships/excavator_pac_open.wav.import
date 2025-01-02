@@ -1,0 +1,23 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_open.wav-55d53e0601ba6a8db5fef437387b4dd7.sample"
+
+[deps]
+
+source_file="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_open.wav"
+dest_files=[ "res://IndustriesOfEnceladusRewrite/ships/excavator_pac_open.wav-55d53e0601ba6a8db5fef437387b4dd7.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
