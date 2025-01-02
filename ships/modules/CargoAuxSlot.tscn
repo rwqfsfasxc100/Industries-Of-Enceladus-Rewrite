@@ -1,0 +1,97 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxStorProc8K.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxStorage4K.tscn" type="PackedScene" id=2]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc20x10.tscn" type="PackedScene" id=3]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc0x30.tscn" type="PackedScene" id=4]
+[ext_resource path="res://ships/modules/ThrusterSlot.gd" type="Script" id=5]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxFab.tscn" type="PackedScene" id=6]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxBigFab.tscn" type="PackedScene" id=7]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc40x20.tscn" type="PackedScene" id=8]
+
+[node name="CargoAuxSlot" type="Node2D"]
+script = ExtResource( 5 )
+notAThruster = true
+type = "cargo.aux"
+default = "SYSTEM_NONE"
+
+[node name="CargoAuxPreProc0x30" parent="." instance=ExtResource( 4 )]
+visible = false
+light_mask = 0
+
+[node name="ProcessingArea" parent="CargoAuxPreProc0x30" index="0"]
+light_mask = 0
+
+[node name="ZoneTop" parent="CargoAuxPreProc0x30/ProcessingArea" index="0"]
+light_mask = 0
+
+[node name="ZoneBottom" parent="CargoAuxPreProc0x30/ProcessingArea" index="1"]
+light_mask = 0
+
+[node name="CargoAuxPreProc20x10" parent="." instance=ExtResource( 3 )]
+visible = false
+light_mask = 0
+
+[node name="ProcessingArea" parent="CargoAuxPreProc20x10" index="0"]
+light_mask = 0
+
+[node name="ZoneTop" parent="CargoAuxPreProc20x10/ProcessingArea" index="0"]
+light_mask = 0
+
+[node name="ZoneBottom" parent="CargoAuxPreProc20x10/ProcessingArea" index="1"]
+light_mask = 0
+
+[node name="CargoAuxPreProc40x20" parent="." instance=ExtResource( 8 )]
+light_mask = 0
+mirrorCollider = true
+
+[node name="ProcessingArea" parent="CargoAuxPreProc40x20" index="0"]
+light_mask = 0
+position = Vector2( 28, 0 )
+
+[node name="ZoneTop" parent="CargoAuxPreProc40x20/ProcessingArea" index="0"]
+light_mask = 0
+polygon = PoolVector2Array( 26, 0, 12, -32, -12, -32, -26, 0 )
+
+[node name="ZoneBottom" parent="CargoAuxPreProc40x20/ProcessingArea" index="1"]
+light_mask = 0
+polygon = PoolVector2Array( 26, 0, 26, 32, -26, 32, -26, 0 )
+
+[node name="CargoAuxStorProc8K" parent="." instance=ExtResource( 1 )]
+visible = false
+light_mask = 0
+polygon = PoolVector2Array( 0, 32, 0, 8, 0, -32, 10, -32, 20, -28, 20, 4, 10, 8, 10, 20 )
+
+[node name="ProcessingArea" parent="CargoAuxStorProc8K" index="0"]
+light_mask = 0
+
+[node name="ZoneTop" parent="CargoAuxStorProc8K/ProcessingArea" index="0"]
+visible = false
+light_mask = 0
+disabled = true
+
+[node name="ZoneBottom" parent="CargoAuxStorProc8K/ProcessingArea" index="1"]
+light_mask = 0
+polygon = PoolVector2Array( 16, -28, 24, 22, -24, 22, -16, -28 )
+
+[node name="CargoAuxStorage4K" parent="." instance=ExtResource( 2 )]
+visible = false
+light_mask = 0
+
+[node name="CargoAuxFab" parent="." instance=ExtResource( 6 )]
+visible = false
+position = Vector2( -32, 0 )
+polygon = PoolVector2Array( 0, -32, 28, -12, 32, -4, 32, 30, 18, 30, 10, 40, 10, 52, 0, 64, 0, 24 )
+
+[node name="CargoAuxBigFab" parent="." instance=ExtResource( 7 )]
+visible = false
+position = Vector2( -32, 0 )
+polygon = PoolVector2Array( 0, -32, 16, -32, 32, -28, 32, 38, 24, 40, 18, 40, 16, 46, 10, 48, 10, 60, 0, 72, 0, 32 )
+
+[editable path="CargoAuxPreProc0x30"]
+[editable path="CargoAuxPreProc20x10"]
+[editable path="CargoAuxPreProc40x20"]
+[editable path="CargoAuxStorProc8K"]
+[editable path="CargoAuxStorage4K"]
+[editable path="CargoAuxFab"]
+[editable path="CargoAuxBigFab"]

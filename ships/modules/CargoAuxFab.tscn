@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxFab.gd" type="Script" id=2]
+[ext_resource path="res://ships/excavator_close.wav" type="AudioStream" id=9]
+
+[node name="CargoAuxFab" type="CollisionPolygon2D"]
+light_mask = 0
+z_index = 50
+polygon = PoolVector2Array( 0, -52, 28, -26, 32, -16, 32, 12, 18, 12, 10, 20, 10, 34, 0, 48, 0, 4 )
+script = ExtResource( 2 )
+repairReplacementPrice = 2500000
+repairFixPrice = 50000
+mass = 5000
+systemName = "SYSTEM_CARGO_AUX_FAB"
+internalStorage = 2000.0
+dronePrintTime = 0.014
+bulletPrintTime = 4.0
+powerDrawPrint = 120000.0
+
+[node name="PrintAudio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 9 )
+volume_db = -5.0
+pitch_scale = 1.2
+bus = "ShipBowels"

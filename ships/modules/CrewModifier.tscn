@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifier.gd" type="Script" id=1]
+
+[node name="CrewModifier" type="Node2D"]
+script = ExtResource( 1 )
+systemName = "SYSTEM_CREW_MOD"
+slot = "crew.modifier"
+repairReplacementPrice = 1000
+repairReplacementTime = 1
+repairFixPrice = 1000
+repairFixTime = 1
+mass = 1

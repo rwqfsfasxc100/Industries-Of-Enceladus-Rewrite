@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc.tscn" type="PackedScene" id=1]
+
+[node name="CargoAuxPreProc20x10" instance=ExtResource( 1 )]
+polygon = PoolVector2Array( 0, 20, 0, -20, 10, -16, 16, -6, 16, 6, 10, 16 )
+repairReplacementPrice = 225000
+mass = 2000
+systemName = "SYSTEM_CARGO_AUX_PREPROC_20x10"
+mirrorCollider = true
+kgps = 25
+powerDrawPerKg = 125
+mineralEfficiency = 0.2
+remassEfficiency = 0.1
+
+[node name="ZoneTop" parent="ProcessingArea" index="0"]
+polygon = PoolVector2Array( 26, 0, 0, -8, -26, 0 )
+
+[node name="ZoneBottom" parent="ProcessingArea" index="1"]
+polygon = PoolVector2Array( 26, 0, 0, 8, -26, 0 )
+
+[node name="VentRemass" parent="." index="1"]
+position = Vector2( 32, 0 )

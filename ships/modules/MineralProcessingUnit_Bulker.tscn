@@ -1,0 +1,142 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://ships/tnrtl-engine_01.wav" type="AudioStream" id=1]
+[ext_resource path="res://ships/tntrl_engine_on.wav" type="AudioStream" id=2]
+[ext_resource path="res://ships/tntrl_engine_off.wav" type="AudioStream" id=3]
+[ext_resource path="res://asteroids/dust-c.png" type="Texture" id=4]
+[ext_resource path="res://asteroids/dust-n.png" type="Texture" id=5]
+[ext_resource path="res://sfx/PitchAdjustedAudio.gd" type="Script" id=6]
+[ext_resource path="res://ships/excavator_close.wav" type="AudioStream" id=8]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit.patch.gd" type="Script" id=9]
+
+[sub_resource type="Gradient" id=1]
+colors = PoolColorArray( 1, 1, 1, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 1
+emission_sphere_radius = 16.0
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 128.0
+initial_velocity_random = 0.5
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+scale_random = 1.0
+color_ramp = SubResource( 2 )
+
+[sub_resource type="Curve" id=4]
+_data = [ Vector2( 0, 0.122951 ), 0.0, 0.454656, 0, 0, Vector2( 1, 1 ), 1.20874, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=5]
+curve = SubResource( 4 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+emission_shape = 1
+emission_sphere_radius = 16.0
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 128.0
+initial_velocity_random = 0.5
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 6.0
+scale_random = 1.0
+scale_curve = SubResource( 5 )
+color_ramp = SubResource( 2 )
+
+[node name="MineralProcessingUnit_Bulker" type="CollisionPolygon2D"]
+light_mask = 0
+z_index = 50
+polygon = PoolVector2Array( 2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 32, -56, 32, 0, 32, 36, 20, 56, -20, 56, -32, 36, -32, 0, -32, -24, -32, -56, -24, -40, -14, -34 )
+script = ExtResource( 9 )
+__meta__ = {
+"_editor_description_": ""
+}
+repairReplacementPrice = 1150000
+mass = 8000
+systemName = "SYSTEM_CARGO_MPU_BULK"
+kgps = 40
+powerDrawPerKg = 1000
+mineralEfficiency = 0.7
+remassEfficiency = 0.2
+internalStorage = 10000.0
+
+[node name="MineralProcessingUnit" type="Area2D" parent="."]
+light_mask = 0
+z_index = 50
+collision_layer = 524288
+collision_mask = 0
+monitorable = false
+space_override = 3
+gravity_vec = Vector2( 0, 0 )
+gravity = 0.0
+linear_damp = 0.0
+angular_damp = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MineralProcessingUnit"]
+light_mask = 0
+position = Vector2( 0, -27 )
+polygon = PoolVector2Array( -24, 27, 16, 27, 24, 11, -24, 3 )
+
+[node name="Processing" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 1 )
+volume_db = -15.0
+pitch_scale = 7.0
+bus = "ShipBowels"
+script = ExtResource( 6 )
+
+[node name="ProStart" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 2 )
+pitch_scale = 7.0
+bus = "SFX"
+script = ExtResource( 6 )
+
+[node name="ProStop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+pitch_scale = 7.0
+bus = "SFX"
+script = ExtResource( 6 )
+
+[node name="Processed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+pitch_scale = 0.5
+bus = "SFX"
+script = ExtResource( 6 )
+
+[node name="VentRemass" type="Particles2D" parent="."]
+show_behind_parent = true
+z_index = -50
+emitting = false
+amount = 64
+lifetime = 0.75
+visibility_rect = Rect2( -500, -500, 1000, 1000 )
+local_coords = false
+process_material = SubResource( 3 )
+texture = ExtResource( 4 )
+normal_map = ExtResource( 5 )
+
+[node name="VentMineral" type="Particles2D" parent="."]
+show_behind_parent = true
+z_index = -50
+emitting = false
+amount = 128
+lifetime = 4.0
+explosiveness = 0.75
+visibility_rect = Rect2( -501.795, -477.743, 985.024, 993.438 )
+local_coords = false
+process_material = SubResource( 6 )
+texture = ExtResource( 4 )
+normal_map = ExtResource( 5 )
+
+[connection signal="body_entered" from="MineralProcessingUnit" to="." method="_on_MineralProcessingUnit_body_entered"]
+[connection signal="body_exited" from="MineralProcessingUnit" to="." method="_on_MineralProcessingUnit_body_exited"]
