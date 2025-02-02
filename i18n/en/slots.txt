@@ -1,0 +1,17 @@
+SLOT_TURRET_LEFT|Left Turret Mount
+SLOT_TURRET_RIGHT|Right Turret Mount
+
+
+
+SLOT_TUBE_LEFT_UP|Left Upper Torpedo Vestibule
+SLOT_TUBE_RIGHT_UP|Right Upper Torpedo Vestibule
+SLOT_TUBE_LEFT_DN|Left Lower Torpedo Vestibule
+SLOT_TUBE_RIGHT_DN|Right Lower Torpedo Vestibule
+
+
+
+SLOT_DRONE|Drone Mount
+
+SLOT_MAIN_LARGE|Large Main Propulsion
+
+SLOT_RCS_LARGE|Large Reaction Control System

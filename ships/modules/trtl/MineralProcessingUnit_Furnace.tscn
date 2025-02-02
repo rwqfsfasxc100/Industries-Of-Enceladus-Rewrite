@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=1]
+
+[node name="MineralProcessingUnit_Furnace" instance=ExtResource( 1 )]
+position = Vector2( 0, -11 )
+polygon = PoolVector2Array( -32, -74, -24, -50, -12, -42, -26, -36, -26, 12, -16, 40, 16, 40, 26, 12, 26, -34, 12, -42, 24, -50, 32, -74, 32, -34, 32, 14, 20, 42, -20, 42, -32, 14, -32, -36 )
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit" index="0"]
+polygon = PoolVector2Array( 16, 40, 26, 12, 26, -42, -26, -42, -26, 12, -14, 40 )

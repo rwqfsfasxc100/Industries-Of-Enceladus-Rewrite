@@ -1,0 +1,247 @@
+[gd_resource type="Theme" load_steps=29 format=2]
+
+[ext_resource path="res://hud/TNTRL-theme-button-hov.tres" type="StyleBox" id=1]
+[ext_resource path="res://hud/TNTRL-theme-button.tres" type="StyleBox" id=2]
+[ext_resource path="res://hud/power-off.png" type="Texture" id=3]
+[ext_resource path="res://hud/power-pn.png" type="Texture" id=4]
+[ext_resource path="res://hud/TNTRL-flat.stylebox" type="StyleBox" id=5]
+[ext_resource path="res://hud/slider-dot-off.png" type="Texture" id=6]
+[ext_resource path="res://hud/slider-dot.png" type="Texture" id=7]
+[ext_resource path="res://hud/TNTRL-theme-slider.tres" type="StyleBox" id=8]
+[ext_resource path="res://hud/TNTRL-theme-panel.tres" type="StyleBox" id=9]
+[ext_resource path="res://hud/TNTRL-theme-progress.tres" type="StyleBox" id=10]
+[ext_resource path="res://hud/FontNoto.tres" type="DynamicFont" id=11]
+[ext_resource path="res://hud/TNTRL-button-pressed.stylebox" type="StyleBox" id=12]
+[ext_resource path="res://hud/TNTRL-theme-slider-v.tres" type="StyleBox" id=13]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/_experiments/LidarOnly-theme-panel.tres" type="StyleBox" id=14]
+
+[sub_resource type="StyleBoxFlat" id=1]
+content_margin_left = 8.0
+content_margin_right = 8.0
+content_margin_top = 2.0
+content_margin_bottom = 2.0
+bg_color = Color( 0, 0, 0, 0.972549 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.1, 0.4, 0.1, 1 )
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_bottom_right = 4
+expand_margin_top = 2.0
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id=2]
+bg_color = Color( 0, 0.12549, 0, 0.972549 )
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color( 0.2, 0.4, 0.2, 1 )
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_bottom_right = 4
+expand_margin_left = 4.0
+expand_margin_right = 4.0
+expand_margin_top = 4.0
+expand_margin_bottom = 4.0
+anti_aliasing_size = 2.0
+
+[sub_resource type="StyleBoxFlat" id=3]
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0, 0, 0, 0.501961 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.501961, 0.501961, 0.505843, 1 )
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id=4]
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.501961, 0.501961, 0.501961, 0.501961 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.501961, 0.501961, 0.501961, 1 )
+border_blend = true
+corner_radius_bottom_right = 4
+
+[sub_resource type="StyleBoxFlat" id=5]
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.501961, 0.501961, 0.501961, 0.501961 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.501961, 0.501961, 0.501961, 1 )
+border_blend = true
+
+[sub_resource type="StyleBoxFlat" id=6]
+bg_color = Color( 0, 0, 0, 0.972549 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.2, 0.4, 0.2, 0.498039 )
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_bottom_right = 4
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+expand_margin_top = 8.0
+expand_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxFlat" id=7]
+bg_color = Color( 0, 0.054902, 0, 0.972549 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.2, 1, 0.2, 1 )
+border_blend = true
+corner_radius_top_left = 4
+corner_radius_bottom_right = 4
+expand_margin_left = 8.0
+expand_margin_right = 8.0
+expand_margin_top = 8.0
+expand_margin_bottom = 8.0
+
+[sub_resource type="StyleBoxFlat" id=8]
+bg_color = Color( 0, 0.25098, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=9]
+bg_color = Color( 0, 0.25098, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=10]
+bg_color = Color( 0, 0.25098, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=11]
+bg_color = Color( 0, 0.25098, 0, 1 )
+
+[sub_resource type="StyleBoxFlat" id=12]
+bg_color = Color( 0, 0, 0, 0.25098 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.501961, 0.501961, 0.501961, 1 )
+border_blend = true
+corner_radius_top_left = 4
+expand_margin_bottom = 2.0
+
+[sub_resource type="StyleBoxFlat" id=13]
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0.25098, 1, 0.25098, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0.25098, 1, 0.25098, 1 )
+corner_radius_bottom_right = 4
+
+[sub_resource type="StyleBoxFlat" id=14]
+content_margin_top = 4.0
+content_margin_bottom = 4.0
+bg_color = Color( 0, 0.25098, 0, 1 )
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color( 0, 0.25098, 0, 1 )
+anti_aliasing = false
+
+[resource]
+default_font = ExtResource( 11 )
+Button/colors/font_color = Color( 1, 0.678431, 0, 1 )
+Button/colors/font_color_disabled = Color( 0.372549, 0.243137, 0, 1 )
+Button/colors/font_color_focus = Color( 3, 3, 3, 1 )
+Button/colors/font_color_hover = Color( 3, 3, 3, 1 )
+Button/colors/font_color_pressed = Color( 3, 3, 3, 1 )
+Button/constants/hseparation = 2
+Button/fonts/font = ExtResource( 11 )
+Button/styles/disabled = SubResource( 1 )
+Button/styles/focus = ExtResource( 1 )
+Button/styles/hover = ExtResource( 1 )
+Button/styles/normal = ExtResource( 2 )
+Button/styles/pressed = ExtResource( 12 )
+CheckButton/colors/font_color = Color( 0.878431, 0.878431, 0.878431, 1 )
+CheckButton/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
+CheckButton/colors/font_color_hover = Color( 0.941176, 0.941176, 0.941176, 1 )
+CheckButton/colors/font_color_hover_pressed = Color( 1, 1, 1, 1 )
+CheckButton/colors/font_color_pressed = Color( 1, 1, 1, 1 )
+CheckButton/constants/check_vadjust = 0
+CheckButton/constants/hseparation = 0
+CheckButton/fonts/font = ExtResource( 11 )
+CheckButton/icons/off = ExtResource( 3 )
+CheckButton/icons/off_disabled = ExtResource( 3 )
+CheckButton/icons/on = ExtResource( 4 )
+CheckButton/icons/on_disabled = ExtResource( 4 )
+CheckButton/styles/disabled = ExtResource( 5 )
+CheckButton/styles/focus = SubResource( 2 )
+CheckButton/styles/hover = ExtResource( 5 )
+CheckButton/styles/hover_pressed = ExtResource( 5 )
+CheckButton/styles/normal = ExtResource( 5 )
+CheckButton/styles/pressed = ExtResource( 5 )
+GridContainer/constants/hseparation = 8
+GridContainer/constants/vseparation = 0
+HSlider/icons/grabber = ExtResource( 6 )
+HSlider/icons/grabber_disabled = ExtResource( 6 )
+HSlider/icons/grabber_highlight = ExtResource( 7 )
+HSlider/icons/tick = null
+HSlider/styles/focus = SubResource( 3 )
+HSlider/styles/grabber_area = SubResource( 4 )
+HSlider/styles/grabber_disabled = null
+HSlider/styles/grabber_highlight = SubResource( 5 )
+HSlider/styles/slider = ExtResource( 8 )
+ItemList/colors/font_color = Color( 0, 0.25098, 0, 1 )
+ItemList/colors/font_color_selected = Color( 0, 1, 0, 1 )
+ItemList/colors/guide_color = Color( 0, 0.25098, 0, 0 )
+ItemList/constants/hseparation = 3
+ItemList/constants/icon_margin = 4
+ItemList/constants/line_separation = 2
+ItemList/constants/vseparation = 2
+ItemList/fonts/font = ExtResource( 11 )
+ItemList/styles/bg = SubResource( 6 )
+ItemList/styles/bg_focus = SubResource( 7 )
+ItemList/styles/cursor = SubResource( 8 )
+ItemList/styles/cursor_unfocused = SubResource( 9 )
+ItemList/styles/selected = SubResource( 10 )
+ItemList/styles/selected_focus = SubResource( 11 )
+Label/colors/font_color = Color( 1, 1, 1, 1 )
+Label/colors/font_color_shadow = Color( 0, 0, 0, 0 )
+Label/constants/line_spacing = 3
+Label/constants/shadow_as_outline = 0
+Label/constants/shadow_offset_x = 1
+Label/constants/shadow_offset_y = 1
+Label/fonts/font = ExtResource( 11 )
+Label/styles/normal = null
+Panel/styles/panel = ExtResource( 9 )
+Panel/styles/panelf = null
+Panel/styles/panelnc = null
+PanelContainer/styles/panel = ExtResource( 14 )
+ProgressBar/colors/font_color = Color( 0.941176, 0.941176, 0.941176, 1 )
+ProgressBar/colors/font_color_shadow = Color( 0, 0, 0, 1 )
+ProgressBar/fonts/font = ExtResource( 11 )
+ProgressBar/styles/bg = SubResource( 12 )
+ProgressBar/styles/fg = ExtResource( 10 )
+VBoxContainer/constants/separation = 24
+VScrollBar/icons/decrement = null
+VScrollBar/icons/decrement_highlight = null
+VScrollBar/icons/increment = null
+VScrollBar/icons/increment_highlight = null
+VScrollBar/styles/grabber = SubResource( 13 )
+VScrollBar/styles/grabber_highlight = SubResource( 13 )
+VScrollBar/styles/grabber_pressed = SubResource( 13 )
+VScrollBar/styles/scroll = SubResource( 14 )
+VScrollBar/styles/scroll_focus = SubResource( 14 )
+VSlider/icons/grabber = ExtResource( 6 )
+VSlider/icons/grabber_disabled = ExtResource( 6 )
+VSlider/icons/grabber_highlight = ExtResource( 7 )
+VSlider/styles/slider = ExtResource( 13 )

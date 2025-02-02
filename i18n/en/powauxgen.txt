@@ -1,0 +1,13 @@
+SYSTEM_AUX_MPD_1400|OPG-14 StatPlasma
+
+SYSTEM_AUX_MPD_1400_DESC|Extreme power requirements, such as the industrial furnaces of refinery stations, requires an extreme power solution, and Obonto Microengineering's StatPlasma is it. Enthusiasts and electrical engineers (though there is little distinction) have taken to calling it "the pinecone" due to its unusual helical conversion chamber that narrows towards the recovery outlet. \n\nNote: this unit may require a small period of warmup before reaching its full power output.
+
+SYSTEM_AUX_MPD_1400_SPECS|Power draw: 200 MW \nThermal draw: 2.5 GW \nPower (nominal): 1,400 MW \nWarmup time: 5 s \nMass: 12,250 kg \nType: MPDG \nManufacturer: Obonto Microengineering
+
+
+
+SYSTEM_AUX_MPD_2000|MPI City-class MPDG
+
+SYSTEM_AUX_MPD_2000_DESC|This godforsaken monster of an MPDG literally can't fit in the hull of most vessels, having to be mounted externally and interfaced via multiple feed lines. The ultimate power plant of large settlements on Mars and beyond. \n\nNote: This unit requires a significant period of warmup before reaching its full power output. MPI strongly advises that you do not remove any sigils, engravings, or other marks on the unit.
+
+SYSTEM_AUX_MPD_2000_SPECS|Power draw: 300 MW \nThermal draw: 4 GW \nPower (nominal): 2,000 MW \nWarmup time: 15 s \nMass: 16,660 kg \nType: MPDG with recovery turbine assembly \nManufacturer: Mars Power Industries

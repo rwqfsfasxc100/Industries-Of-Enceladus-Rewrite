@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://IndustriesOfEnceladusRewrite/ships/grid_big_n.png-64485ff4ffffe85c744963c5b01a5f04.stex"
+path="res://IndustriesOfEnceladusRevamp/.import/grid_big_n.png-96b11faa38ea7e5036f29c73398dd1ad.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://IndustriesOfEnceladusRewrite/ships/grid_big_n.png"
-dest_files=[ "res://IndustriesOfEnceladusRewrite/ships/grid_big_n.png-64485ff4ffffe85c744963c5b01a5f04.stex" ]
+source_file="res://IndustriesOfEnceladusRevamp/ships/grid_big_n.png"
+dest_files=[ "res://IndustriesOfEnceladusRevamp/.import/grid_big_n.png-96b11faa38ea7e5036f29c73398dd1ad.stex" ]
 
 [params]
 

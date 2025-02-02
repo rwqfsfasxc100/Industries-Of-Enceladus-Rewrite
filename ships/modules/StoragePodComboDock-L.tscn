@@ -1,0 +1,19 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock.tscn" type="PackedScene" id=1]
+
+[node name="SYSTEM_EXODYN-L" instance=ExtResource( 1 )]
+flip = true
+
+[node name="CollisionShape2D" parent="DockArea" index="0"]
+visible = true
+position = Vector2( -180, 0 )
+
+[node name="DockSlot" parent="." index="2"]
+position = Vector2( -80, -40 )
+
+[node name="StoragePodCombo" parent="ClaimOwner" index="0"]
+position = Vector2( -80, -40 )
+
+[editable path="Arm"]
+[editable path="Arm/A/B/Spotlight"]

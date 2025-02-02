@@ -1,0 +1,167 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://ships/ATK225-B.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=2]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/weapons/WeaponSlot.patch.gd" type="Script" id=3]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=4]
+
+[node name="ATK225" instance=ExtResource( 1 )]
+position = Vector2( 0, 18 )
+
+[node name="Collider" parent="." index="5"]
+polygon = PoolVector2Array( -112.308, -121.538, -75.3846, -121.538, -75.3846, -145.385, -60, -145.385, -60, -151.538, -124.615, -266.923, -113.077, -286.923, -38.4615, -286.923, -38.4615, -298.462, -34.6154, -302.308, -19.2308, -302.308, -19.2308, -310, -10.7692, -308.462, -13.8462, -296.154, -13.8462, -271.539, -92.3077, -271.539, -98.4615, -260.769, -38.4615, -151.538, -38.4615, -106.923, -92.3077, -106.923, -98.4615, -96.1539, -49.2308, -16.1538, -24.6154, 23.8462, -24.6154, 140.769, -15.3846, 171.538, 15.3846, 171.538, 24.6154, 140.769, 24.6154, 23.8462, 49.1492, -16.0212, 98.4615, -96.1539, 92.3077, -106.923, 38.4615, -106.923, 38.4615, -151.538, 98.4615, -260.769, 92.3077, -271.539, 13.8462, -271.539, 13.8462, -296.154, 10.7692, -308.462, 19.2308, -310, 19.2308, -302.308, 34.6154, -302.308, 38.4615, -298.462, 38.4615, -286.923, 113.077, -286.923, 124.615, -266.923, 60, -151.538, 60, -145.385, 75.3846, -145.385, 75.3846, -121.538, 112.308, -121.538, 124.615, -100.769, 60, 13.0769, 60, 20.7692, 75.3846, 20.7692, 75.3846, 43.8462, 112.308, 43.8462, 116.923, 51.5385, 38.4615, 51.5385, 38.4615, 143.077, 61.5385, 179.231, 61.5385, 185.385, 75.3846, 185.385, 75.3846, 216.154, 121.538, 270, 121.538, 285.385, 115.385, 297.692, 103.077, 302.308, -103.077, 302.308, -115.385, 297.692, -121.538, 285.385, -121.538, 270, -75.3846, 216.154, -75.3846, 185.385, -61.5385, 185.385, -61.5385, 179.231, -38.4615, 143.077, -38.4615, 51.5385, -116.923, 51.5385, -112.308, 43.8462, -75.3846, 43.8462, -75.3846, 20.7692, -60, 20.7692, -60, 13.0769, -124.615, -100.769 )
+
+[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
+polygon = PoolVector2Array( -6.92308, -236.154, 5.38462, -236.154, 8.46154, -213.077, 16.1538, -211.538, 16.1538, -179.231, 94.6154, -179.231, 102.308, -165.385, 40.7692, -54.6154, 40.7692, -14.6154, 93.0769, -14.6154, 102.308, -0.769234, 26.9231, 120.769, 26.9231, 237.692, 17.6923, 270, -19.2308, 270, -28.4615, 237.692, -28.4615, 120.769, -103.846, -0.769234, -94.6154, -14.6154, -42.3077, -14.6154, -42.3077, -54.6154, -103.846, -165.385, -96.1539, -179.231, -17.6923, -179.231, -17.6923, -211.538, -10, -213.077 )
+
+[node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
+polygon = PoolVector2Array( 36.1539, -322.308, 36.1539, -310, 112.308, -310, 122.308, -297.692, 56.1539, -176.154, 56.1539, -143.846, 111.538, -143.846, 121.538, -127.692, 36.1539, 23.8462, 36.1539, 118.462, 56.1539, 193.846, 119.231, 246.154, 0, 275.385, -118.462, 245.385, -58.4615, 193.077, -35.3846, 118.462, -35.3846, 23.8462, -121.538, -127.692, -110.769, -144.615, -57.6923, -144.615, -57.6923, -175.385, -121.538, -293.077, -111.538, -310, -36.1539, -310, -36.1539, -323.077, -33.8462, -325.385, 33.0769, -325.385 )
+
+[node name="thruster-tl" parent="." index="10"]
+position = Vector2( -104, -210 )
+
+[node name="thruster-tr" parent="." index="11"]
+position = Vector2( 104, -210 )
+
+[node name="thruster-ml" parent="." index="12"]
+position = Vector2( -104, 6 )
+
+[node name="thruster-mr" parent="." index="13"]
+position = Vector2( 104, 6 )
+
+[node name="thruster-bl" parent="." index="14"]
+position = Vector2( -104, 222 )
+
+[node name="thruster-br" parent="." index="15"]
+position = Vector2( 104, 222 )
+
+[node name="Light2D" parent="." index="21"]
+visible = false
+
+[node name="Light2D2" parent="." index="22"]
+visible = false
+
+[node name="CargoBaffles" parent="." index="24"]
+slot = "cargo.aux"
+
+[node name="MineralProcessingUnit" parent="." index="26"]
+position = Vector2( 0, 150 )
+polygon = PoolVector2Array( -32, -50, -19, -36, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 19, -36, 32, -49, 32, 0, 28, 16, 20, 40, -20, 40, -28, 16, -32, 0 )
+
+[node name="MineralProcessingUnit_Bulker" parent="." index="27" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/k225/MineralProcessingUnit_Bulker.tscn"]
+visible = false
+
+[node name="MineralProcessingUnit_Furnace" parent="." index="28" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/k225/MineralProcessingUnit_Furnace.tscn"]
+visible = false
+
+[node name="MineralProcessingUnit_FSO" parent="." index="29"]
+light_mask = 0
+position = Vector2( 0, 152 )
+polygon = PoolVector2Array( -32, -122, -28, -114, -24, -2, -12, 26, 12, 26, 24, -2, 28, -114, 32, -122, 32, -2, 20, 38, -20, 38, -32, -2 )
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FSO/MineralProcessingUnit" index="0"]
+polygon = PoolVector2Array( -24, -2, -12, 26, 14, 26, 24, -2, 28, -114, -28, -114 )
+
+[node name="MineralProcessingUnit_SMELT" parent="." index="30"]
+light_mask = 0
+polygon = PoolVector2Array( -32, -70, -20, -58, -14, -42, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 14, -42, 20, -58, 32, -70, 32, -30, 32, 2, 20, 42, -20, 42, -32, 2, -32, -30.1071 )
+
+[node name="MineralProcessingUnit_FAB" parent="." index="31"]
+polygon = PoolVector2Array( -31, -84, -7, -62, -1, -54, 1, -46, 1, -18, -14, -18, -23, -8, -23, 12, -11, 24, 13, 24, 25, 12, 25, -48, 27, -66, 33, -84, 33, 2, 29, 16, 21, 42, -19, 42, -27, 16, -31, 2, -31, -26 )
+
+[node name="MineralProcessingUnit" parent="MineralProcessingUnit_FAB" index="0"]
+visible = false
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/MineralProcessingUnit" index="0"]
+polygon = PoolVector2Array( -25, 24, 23, 24, 23, -18, -25, -18 )
+
+[node name="CargoAuxSlot" parent="." index="33" instance=ExtResource( 2 )]
+position = Vector2( 0, -201 )
+
+[node name="CargoAuxPreProc0x30" parent="CargoAuxSlot" index="0"]
+polygon = PoolVector2Array( -18, 15, -18, -15, -8, -7, 2, -5, 2, 5, -8, 7 )
+
+[node name="ZoneTop" parent="CargoAuxSlot/CargoAuxPreProc0x30/ProcessingArea" index="0"]
+light_mask = 0
+polygon = PoolVector2Array( 42, 1, 42, -29, 66, -73, 120, -171, 116, -179, 14, -179, 0, -201, -14, -179, -116, -179, -120, -171, -66, -73, -42, -29, -42, 1 )
+
+[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc0x30/ProcessingArea" index="1"]
+light_mask = 0
+polygon = PoolVector2Array( 42, -1, 42, 35, 116, 35, 120, 43, 26, 197, 26, 349, 14, 385, -14, 385, -26, 349, -26, 197, -120, 43, -116, 35, -42, 35, -42, -1 )
+
+[node name="CargoAuxPreProc20x10" parent="CargoAuxSlot" index="1"]
+polygon = PoolVector2Array( -10, 19, -18, 19, -18, -19, -10, -19, 0, -15, 6, -5, 6, 5, 0, 15 )
+
+[node name="ZoneTop" parent="CargoAuxSlot/CargoAuxPreProc20x10/ProcessingArea" index="0"]
+polygon = PoolVector2Array( 42, 1, 42, -29, 66, -73, 120, -171, 116, -179, 14, -179, 0, -201, -14, -179, -116, -179, -120, -171, -66, -73, -42, -29, -42, 1 )
+
+[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc20x10/ProcessingArea" index="1"]
+polygon = PoolVector2Array( 42, -1, 42, 35, 116, 35, 120, 43, 26, 197, 26, 349, 14, 385, -14, 385, -26, 349, -26, 197, -120, 43, -116, 35, -42, 35, -42, -1 )
+
+[node name="CargoAuxPreProc40x20" parent="CargoAuxSlot" index="2"]
+visible = false
+position = Vector2( -46, 0 )
+polygon = PoolVector2Array( 0, -32, 10, -28, 8, -12, 2, -8, 8, -6, 10, 0, 8, 6, 2, 8, 8, 12, 10, 28, 0, 32, -4, 29, -4, 8, -4, -8, -4, -29 )
+
+[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProc40x20" index="0"]
+position = Vector2( 46, 0 )
+
+[node name="ZoneTop" parent="CargoAuxSlot/CargoAuxPreProc40x20/ProcessingArea" index="0"]
+polygon = PoolVector2Array( 42, 1, 42, -29, 66, -73, 120, -171, 116, -179, 14, -179, 0, -201, -14, -179, -116, -179, -120, -171, -66, -73, -42, -29, -42, 1 )
+
+[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc40x20/ProcessingArea" index="1"]
+polygon = PoolVector2Array( 42, -1, 42, 35, 116, 35, 120, 43, 26, 197, 26, 349, 14, 385, -14, 385, -26, 349, -26, 197, -120, 43, -116, 35, -42, 35, -42, -1 )
+
+[node name="CargoAuxStorProc8K" parent="CargoAuxSlot" index="3"]
+polygon = PoolVector2Array( -18, 29, -18, -29, -10, -23, -10, -17, -4, -15, 4, -15, 4, 15, -4, 15, -10, 17, -10, 23 )
+
+[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxStorProc8K/ProcessingArea" index="1"]
+polygon = PoolVector2Array( 44, -25, 44, 25, 0, 15, -44, 25, -44, -25, 0, -15 )
+
+[node name="CargoAuxStorage4K" parent="CargoAuxSlot" index="4"]
+polygon = PoolVector2Array( -18, 17, -18, -17, -8, -11, -8, 11 )
+
+[node name="CargoAuxFab" parent="CargoAuxSlot" index="5"]
+position = Vector2( -50, 0 )
+polygon = PoolVector2Array( 0, -29, 26, -13, 30, -5, 30, 29, 18, 29, 10, 39, -4, 39, -20, 29, 0, 29, 0, 7 )
+
+[node name="CargoAuxBigFab" parent="CargoAuxSlot" index="6"]
+position = Vector2( -50, 0 )
+polygon = PoolVector2Array( -2, -33, 18, -33, 34, -27, 34, 35, 18, 39, 16, 45, 10, 49, 2, 49, -4, 45, -6, 39, -18, 39, -30, 29, -2, 29 )
+
+[node name="weapon-left" parent="." index="34"]
+position = Vector2( -92, -446 )
+script = ExtResource( 3 )
+armVelocityMultiplier = Vector2( 2.5, 1 )
+
+[node name="weapon-right" parent="." index="35"]
+position = Vector2( 92, -446 )
+script = ExtResource( 3 )
+armVelocityMultiplier = Vector2( 2.5, 1 )
+
+[node name="AI" parent="." index="43"]
+visible = false
+
+[node name="CrewModifiers" parent="." index="47" instance=ExtResource( 4 )]
+
+[node name="HoldModifiers" parent="." index="48" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
+
+[editable path="MineralProcessingUnit_FSO"]
+[editable path="MineralProcessingUnit_FAB"]
+[editable path="CargoAuxSlot"]
+[editable path="CargoAuxSlot/CargoAuxPreProc0x30"]
+[editable path="CargoAuxSlot/CargoAuxPreProc20x10"]
+[editable path="CargoAuxSlot/CargoAuxPreProc40x20"]
+[editable path="CargoAuxSlot/CargoAuxStorProc8K"]
+[editable path="CargoAuxSlot/CargoAuxStorage4K"]
+[editable path="CargoAuxSlot/CargoAuxFab"]
+[editable path="CargoAuxSlot/CargoAuxBigFab"]
+[editable path="weapon-left"]
+[editable path="weapon-right"]
+[editable path="weapon-left-back"]
+[editable path="weapon-right-back"]
+[editable path="weapon-left-back2"]
+[editable path="weapon-right-back2"]
+[editable path="weapon-left-back3"]
+[editable path="weapon-right-back3"]
+[editable path="AI"]

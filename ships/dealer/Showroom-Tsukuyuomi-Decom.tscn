@@ -1,9 +1,0 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://ships/dealer/showroom-OCP209.tscn" type="PackedScene" id=1]
-
-[node name="Showroom-k37" instance=ExtResource( 1 )]
-
-[editable path="Shiwroom/L1/showroom-spotlight2"]
-[editable path="Shiwroom/L2/showroom-spotlight5"]
-[editable path="Shiwroom/L3/showroom-spotlight6"]

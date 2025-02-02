@@ -1,0 +1,12 @@
+SYSTEM_MWTIGHTBEAM|RA DMW Cannon
+
+SYSTEM_MWTIGHTBEAM_DESC|Rusatom-Antonoff's Directed Microwave Cannon utilises a long, tubular waveguide to concentrate microwaves into a tight beam of irradiance. Its modular and unspecialised components are cheap and quick to repair, but are offset by high installation costs and middling power efficiency.
+
+SYSTEM_MWTIGHTBEAM_SPECS|Effective range: 800 m \nPower consumption: 120 MW \nOutput power: 90 MW \nWavelength: 1 cm \nMass: 400 kg \nManufacturer: Rusatom-Antonoff
+
+
+SYSTEM_MWTIGHTBEAM_PDT|RA DMW Cannon Turret
+
+SYSTEM_MWTIGHTBEAM_PDT_DESC|This version of the Rusatom-Antonoff DMW Cannon is mounted onto a Nakamura Dynamics NDPT turret body. It enjoys similar handling characteristics and the adjustable configuration parameters of their 42xx line of point-defense railgun turrets, though its gimbal driver had to be downgeared to properly manage the unit's heavy AC cabling. \n\nThe DMW-CT can automatically acquire and track targets, but, unlike its railgun counterpart, does not require manual input to fire.
+
+SYSTEM_MWTIGHTBEAM_PDT_SPECS|Effective range: 2000 m \n Targeting AI: Class-1 \nPower consumption: 120 MW \nOutput power: 90 MW \nWavelength: 1 cm \nMass: 3,000 kg \nManufacturer: Rusatom

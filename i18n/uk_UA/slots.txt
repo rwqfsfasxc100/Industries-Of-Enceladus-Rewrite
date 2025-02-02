@@ -1,0 +1,13 @@
+SLOT_TURRET_LEFT|Лівий турельний підвіс
+SLOT_TURRET_RIGHT|Правий турельний підвіс
+
+
+
+SLOT_TUBE_LEFT_UP|Лівий верхній торпедний апарат
+SLOT_TUBE_RIGHT_UP|Правий верхній торпедний апарат
+SLOT_TUBE_LEFT_DN|Лівий нижній торпедний апарат
+SLOT_TUBE_RIGHT_DN|Правий нижній торпедний апарат
+
+
+
+SLOT_DRONE|Підвіс для дронів

@@ -1,4 +1,4 @@
-extends "res://IndustriesOfEnceladusRewrite/ships/modules/BaseModifier.gd"
+extends "res://IndustriesOfEnceladusRevamp/ships/modules/BaseModifier.gd"
 
 export (int) var crewCountChange = 0
 export (float, -0.5, 0.5, 0.05) var moraleChange = 0.0

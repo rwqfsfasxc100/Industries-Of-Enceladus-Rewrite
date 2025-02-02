@@ -1,0 +1,5 @@
+SYSTEM_AUX_SMES_10K|OPS-10 Capacitor Bank
+
+SYSTEM_AUX_SMES_10K_DESC|Obonto Microengineering's backup power solution is, while inelegant, incredibly effective. Basically just a few extra-large ultracapacitors in a steel trenchcoat, the OPS-10 can deliver phenomenal power output at peak load while being about as affordable as their standard ultracapacitor range. \n\nAs it is not connected to internal cooling systems, the OPS-10 relies on a slow charge rate and a bulky radiative cooler to manage its temperature.
+
+SYSTEM_AUX_SMES_10K_SPECS|Capacity: 10,000 MJ \nCharge power draw: 50 MW \nDischarge power (peak): 10,000 MW \nMass: 6,500 kg \nType: High-density graphene fractal ultracapacitor array \nManufacturer: Obonto Microengineering

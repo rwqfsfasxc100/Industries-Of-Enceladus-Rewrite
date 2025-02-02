@@ -1,0 +1,261 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/custom/WeaponSlot.tscn" type="PackedScene" id=1]
+[ext_resource path="res://enceladus/SystemShipUpgradeUI.tscn" type="PackedScene" id=2]
+
+[node name="WeaponSlotProspector" instance=ExtResource( 1 )]
+
+[node name="VBoxContainer" parent="." index="0"]
+margin_bottom = 3457.0
+
+[node name="CLAIM-L" parent="VBoxContainer" index="8"]
+system = "SYSTEM_CLAIM_PROSP-L"
+
+[node name="CLAIM-R" parent="VBoxContainer" index="9"]
+system = "SYSTEM_CLAIM_PROSP-R"
+
+[node name="SALVAGE" parent="VBoxContainer" index="10"]
+visible = false
+
+[node name="MWG" parent="VBoxContainer" index="11"]
+margin_top = 721.0
+margin_bottom = 791.0
+
+[node name="EXOSTORAGE-L" parent="VBoxContainer" index="12"]
+margin_top = 795.0
+margin_bottom = 865.0
+system = "SYSTEM_EXSTORAGE_PROSP-L"
+
+[node name="EXOSTORAGE-R" parent="VBoxContainer" index="13"]
+margin_top = 869.0
+margin_bottom = 939.0
+system = "SYSTEM_EXSTORAGE_PROSP-R"
+
+[node name="EXOSTORAGE-L_ALT" parent="VBoxContainer" index="14" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 943.0
+margin_right = 1226.0
+margin_bottom = 1013.0
+slot = "weaponSlot.left.type"
+system = "SYSTEM_EXSTORAGE_PROSP_ALT-L"
+nameOverride = "SYSTEM_EXSTORAGE_ALT"
+description = "SYSTEM_EXSTORAGE_ALT_DESC"
+manual = "SYSTEM_EXSTORAGE_MANUAL"
+specs = "SYSTEM_EXSTORAGE_SPECS"
+price = 74000
+testProtocol = "detach"
+
+[node name="EXOSTORAGE-R_ALT" parent="VBoxContainer" index="15" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1017.0
+margin_right = 1226.0
+margin_bottom = 1087.0
+__meta__ = {
+"_editor_description_": ""
+}
+slot = "weaponSlot.right.type"
+system = "SYSTEM_EXSTORAGE_PROSP_ALT-R"
+nameOverride = "SYSTEM_EXSTORAGE_ALT"
+description = "SYSTEM_EXSTORAGE_ALT_DESC"
+manual = "SYSTEM_EXSTORAGE_MANUAL"
+specs = "SYSTEM_EXSTORAGE_SPECS"
+price = 74000
+testProtocol = "detach"
+
+[node name="SALVAGE_LIGHT" parent="VBoxContainer" index="16"]
+visible = false
+margin_top = 1091.0
+margin_bottom = 1161.0
+
+[node name="SALVAGE_LIGHT-L" parent="VBoxContainer" index="17"]
+visible = true
+system = "SYSTEM_SALVAGE_ARM_LIGHT_PROSP-L"
+
+[node name="SALVAGE_LIGHT-R" parent="VBoxContainer" index="18"]
+visible = true
+system = "SYSTEM_SALVAGE_ARM_LIGHT_PROSP-R"
+
+[node name="EINAT" parent="VBoxContainer" index="19"]
+visible = false
+
+[node name="EXMONO-L" parent="VBoxContainer" index="20"]
+margin_top = 1239.0
+margin_bottom = 1309.0
+system = "SYSTEM_EXMONO_PROSP-L"
+
+[node name="EXMONO-R" parent="VBoxContainer" index="21"]
+margin_top = 1313.0
+margin_bottom = 1383.0
+system = "SYSTEM_EXMONO_PROSP-R"
+
+[node name="EXMONO-L_ALT" parent="VBoxContainer" index="22" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1387.0
+margin_right = 1226.0
+margin_bottom = 1457.0
+slot = "weaponSlot.left.type"
+system = "SYSTEM_EXMONO_PROSP_ALT-L"
+nameOverride = "SYSTEM_EXMONO_ALT"
+description = "SYSTEM_EXMONO_ALT_DESC"
+manual = "SYSTEM_EXMONO_MANUAL"
+specs = "SYSTEM_EXMONO_SPECS"
+price = 111000
+testProtocol = "detach"
+
+[node name="EXMONO-R_ALT" parent="VBoxContainer" index="23" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1461.0
+margin_right = 1226.0
+margin_bottom = 1531.0
+slot = "weaponSlot.right.type"
+system = "SYSTEM_EXMONO_PROSP_ALT-R"
+nameOverride = "SYSTEM_EXMONO_ALT"
+description = "SYSTEM_EXMONO_ALT_DESC"
+manual = "SYSTEM_EXMONO_MANUAL"
+specs = "SYSTEM_EXMONO_SPECS"
+price = 111000
+testProtocol = "detach"
+
+[node name="SCOOP-R" parent="VBoxContainer" index="24"]
+margin_top = 1535.0
+margin_bottom = 1605.0
+system = "SYSTEM_SCOOP_PROSP-R"
+
+[node name="SCOOP-L" parent="VBoxContainer" index="25"]
+margin_top = 1609.0
+margin_bottom = 1679.0
+system = "SYSTEM_SCOOP_PROSP-L"
+
+[node name="SALVAGE_HEAVY" parent="VBoxContainer" index="26"]
+visible = false
+margin_top = 1683.0
+margin_bottom = 1753.0
+
+[node name="EXODYN-L" parent="VBoxContainer" index="29"]
+margin_top = 1683.0
+margin_bottom = 1753.0
+system = "SYSTEM_EXODYN_PROSP-L"
+
+[node name="EXODYN-R" parent="VBoxContainer" index="30"]
+margin_top = 1757.0
+margin_bottom = 1827.0
+system = "SYSTEM_EXODYN_PROSP-R"
+
+[node name="EXODYN-L_ALT" parent="VBoxContainer" index="31" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1831.0
+margin_right = 1226.0
+margin_bottom = 1901.0
+slot = "weaponSlot.left.type"
+system = "SYSTEM_EXODYN_PROSP_ALT-L"
+nameOverride = "SYSTEM_EXODYN_ALT"
+description = "SYSTEM_EXODYN_ALT_DESC"
+manual = "SYSTEM_EXSTORAGE_MANUAL"
+specs = "SYSTEM_EXODYN_SPECS"
+price = 132500
+testProtocol = "detach"
+
+[node name="EXODYN-R_ALT" parent="VBoxContainer" index="32" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 1905.0
+margin_right = 1226.0
+margin_bottom = 1975.0
+slot = "weaponSlot.right.type"
+system = "SYSTEM_EXODYN_PROSP_ALT-R"
+nameOverride = "SYSTEM_EXODYN_ALT"
+description = "SYSTEM_EXODYN_ALT_DESC"
+manual = "SYSTEM_EXSTORAGE_MANUAL"
+specs = "SYSTEM_EXODYN_SPECS"
+price = 132500
+testProtocol = "detach"
+
+[node name="PDT" parent="VBoxContainer" index="33"]
+margin_top = 1979.0
+margin_bottom = 2049.0
+
+[node name="PDT-L" parent="VBoxContainer" index="34"]
+margin_top = 2053.0
+margin_bottom = 2123.0
+
+[node name="PDT-R" parent="VBoxContainer" index="35"]
+margin_top = 2127.0
+margin_bottom = 2197.0
+
+[node name="CL150" parent="VBoxContainer" index="36"]
+margin_top = 2201.0
+margin_bottom = 2271.0
+
+[node name="IROH" parent="VBoxContainer" index="37"]
+margin_top = 2275.0
+margin_bottom = 2345.0
+
+[node name="MWTIGHTBEAM" parent="VBoxContainer" index="38"]
+margin_top = 2349.0
+margin_bottom = 2419.0
+
+[node name="PDMWG" parent="VBoxContainer" index="39"]
+margin_top = 2423.0
+margin_bottom = 2493.0
+
+[node name="PDMWG-L" parent="VBoxContainer" index="40"]
+margin_top = 2497.0
+margin_bottom = 2567.0
+
+[node name="PDMWG-R" parent="VBoxContainer" index="41"]
+margin_top = 2571.0
+margin_bottom = 2641.0
+
+[node name="ACL200P" parent="VBoxContainer" index="42"]
+margin_top = 2645.0
+margin_bottom = 2715.0
+
+[node name="DND_TS" parent="VBoxContainer" index="43"]
+margin_top = 2719.0
+margin_bottom = 2789.0
+
+[node name="MWTIGHTBEAM_PDT" parent="VBoxContainer" index="44"]
+margin_top = 2793.0
+margin_bottom = 2863.0
+
+[node name="MWTIGHTBEAM_PDT-L" parent="VBoxContainer" index="45"]
+margin_top = 2867.0
+margin_bottom = 2937.0
+
+[node name="MWTIGHTBEAM_PDT-R" parent="VBoxContainer" index="46"]
+margin_top = 2941.0
+margin_bottom = 3011.0
+
+[node name="SYNCHRO-L" parent="VBoxContainer" index="47"]
+margin_top = 3015.0
+margin_bottom = 3085.0
+
+[node name="SYNCHRO-R" parent="VBoxContainer" index="48"]
+margin_top = 3089.0
+margin_bottom = 3159.0
+
+[node name="NANI" parent="VBoxContainer" index="49"]
+visible = false
+margin_top = 2793.0
+margin_bottom = 2863.0
+
+[node name="CL600P" parent="VBoxContainer" index="50"]
+margin_top = 3163.0
+margin_bottom = 3233.0
+
+[node name="DND_HAUL" parent="VBoxContainer" index="51"]
+margin_top = 3237.0
+margin_bottom = 3307.0
+
+[node name="DND_FIX" parent="VBoxContainer" index="52"]
+margin_top = 3311.0
+margin_bottom = 3381.0
+
+[node name="DND_HARVHAUL" parent="VBoxContainer" index="53"]
+margin_top = 3385.0
+margin_bottom = 3455.0

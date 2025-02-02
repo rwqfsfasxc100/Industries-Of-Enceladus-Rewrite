@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxBase.gd" type="Script" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxBase.gd" type="Script" id=1]
 
 [node name="CargoAuxBase" type="CollisionPolygon2D"]
 z_index = 50

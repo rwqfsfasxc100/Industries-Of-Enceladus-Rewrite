@@ -1,0 +1,25 @@
+SYSTEM_CARGO_AUX_PREPROC_0x30|Rasamama RP-25
+
+SYSTEM_CARGO_AUX_PREPROC_0x30_DESC|The Rasamama Material Solutions RP-25 is a low-profile ore preprocessor designed to exclusively melt ice from mineral chunks within a vessel's cargo bay and little else. The unit taps the reactor turbine bleed line for thermal power and requires very little electrical energy to function. \n\nRemass is recovered by running process exhaust through a condenser-radiator panel mounted to the vessel's hull. Rasamama MS recommends monthly flow tests followed by hot gas purges to prevent fouling.
+
+SYSTEM_CARGO_AUX_PREPROC_0x30_SPECS|Ice melt rate: 10 kg/s \nPower draw: 25 KW / chunk \nMPU mineral efficiency: x100% (no change) \nRemass processing efficiency: 30% \nMass: 750 kg \nManufacturer: Rasamama Material Solutions
+
+
+
+SYSTEM_CARGO_AUX_PREPROC_20x10|Nakamura Big MT
+
+SYSTEM_CARGO_AUX_PREPROC_20x10_DESC|Nakamura Dynamics' Big MT Ore Preprocessor utilises the fundamental principles of its operation to its advantage when processing ore chunks. Free steam in the cargo bay is superheated by the unit's massive toroidal radiator, quickly sublimating ice and preheating the resultant metal particulates for more efficient processing. \n\nWhile some process steam can be reclaimed as propellant, the unit's compact condenser is often overloaded by the sheer volume and high temperatures. \n\nDisclaimer: no Lobotomites were harmed in the development of this unit.
+
+SYSTEM_CARGO_AUX_PREPROC_20x10_SPECS|Ice melt rate: 25 kg/s \nPower draw: 125 KW / chunk \nMPU mineral efficiency: x120% \nRemass processing efficiency: 10% \nMass: 2,000 kg \nManufacturer: Nakamura Dynamics
+
+
+
+SYSTEM_CARGO_AUX_PREPROC_40x20|Rusatom-Antonoff MPP-N1
+
+SYSTEM_CARGO_AUX_PREPROC_40x20_DESC|The MPP-N1 is one of the best mineral preprocessors on the market, offering excellent efficiency gains and propellant reclamation yields with a magnetohydrodynamic system. \n\nThe unit repurposes reactor powerplant exhaust as its heat source, emitting it into the bay through a bulb at its centre. Electromagnetic coils surrounding the bulb control temperatures through inductive heating. \n\nProcess steam and trace minerals are recovered by a baffled condenser. Replacement of the condenser assembly is recommended after 320 flight-hours to ensure maximum efficiency.
+
+SYSTEM_CARGO_AUX_PREPROC_40x20_SPECS|Ice melt rate: 40 kg/s \nPower draw: 375 KW / chunk \nMPU mineral efficiency: x140% \nRemass processing efficiency: 20% \nMass: 6,500 kg \nManufacturer: Rusatom-Antonoff
+
+
+
+SYSTEM_CARGO_AUX_PREPROC_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.

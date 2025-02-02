@@ -1,0 +1,27 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://ships/modules/TorchSlot.tscn" type="PackedScene" id=1]
+
+[node name="TorchSlot" instance=ExtResource( 1 )]
+
+[node name="SYSTEM_MAIN_ENGINE_NANI" parent="." index="11" instance_placeholder="res://weapons/nani.tscn"]
+position = Vector2( 0, 100 )
+rotation = 0.0
+z_index = 0
+repairReplacementPrice = 425000
+command = "m"
+systemName = "SYSTEM_MAIN_ENGINE_NANI"
+
+[node name="SYSTEM_MAIN_ENGINE_GEMINI" parent="." index="12" instance_placeholder="res://IndustriesOfEnceladusRevamp/sfx/torch-gemini.tscn"]
+
+[node name="SYSTEM_MAIN_ENGINE_SOYUZ" parent="." index="13" instance_placeholder="res://IndustriesOfEnceladusRevamp/sfx/torch-soyuz.tscn"]
+
+[node name="SYSTEM_MAIN_ENGINE_THUNDER" parent="." index="14" instance_placeholder="res://IndustriesOfEnceladusRevamp/sfx/torch-thunder.tscn"]
+
+[node name="SYSTEM_MAIN_ENGINE_PIN1200" parent="." index="15" instance_placeholder="res://IndustriesOfEnceladusRevamp/sfx/torch-pin1200.tscn"]
+gimbal = 0.628
+gimbalPerSecond = 25.133
+tuneThrustMax = 1.25
+
+[node name="SYSTEM_MAIN_ENGINE_CRACK" parent="." index="16" instance_placeholder="res://IndustriesOfEnceladusRevamp/sfx/torch-crack.tscn"]
+position = Vector2( 0, -8 )

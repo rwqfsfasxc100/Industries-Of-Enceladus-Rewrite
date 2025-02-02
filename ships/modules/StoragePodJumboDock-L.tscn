@@ -1,0 +1,13 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodJumboDock.tscn" type="PackedScene" id=1]
+
+[node name="SYSTEM_EXOBIG_L" instance=ExtResource( 1 )]
+flip = true
+systemName = "SYSTEM_EXOBIG_L"
+
+[node name="StoragePodJumbo" parent="ClaimOwner" index="0"]
+position = Vector2( -80, -66 )
+
+[editable path="Arm"]
+[editable path="Arm/A/B/Spotlight"]

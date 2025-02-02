@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=1]
+
+[node name="MineralProcessingUnit_Bulker" instance=ExtResource( 1 )]
+light_mask = 0
+position = Vector2( 0, 126 )
+polygon = PoolVector2Array( 2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 24, -8, 32, -56, 32, 0, 32, 24, 20, 64, -20, 64, -32, 24, -32, 0, -32, -24, -32, -56, -24, -40, -14, -34 )

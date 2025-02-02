@@ -7,7 +7,7 @@
 [ext_resource path="res://asteroids/dust-n.png" type="Texture" id=5]
 [ext_resource path="res://sfx/PitchAdjustedAudio.gd" type="Script" id=6]
 [ext_resource path="res://ships/excavator_close.wav" type="AudioStream" id=8]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit.patch.gd" type="Script" id=9]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit.patch.gd" type="Script" id=9]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 1, 1, 1, 1, 0, 0, 0, 0 )
@@ -55,7 +55,6 @@ scale_curve = SubResource( 5 )
 color_ramp = SubResource( 2 )
 
 [node name="MineralProcessingUnit_Bulker" type="CollisionPolygon2D"]
-light_mask = 0
 z_index = 50
 polygon = PoolVector2Array( 2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 32, -56, 32, 0, 32, 36, 20, 56, -20, 56, -32, 36, -32, 0, -32, -24, -32, -56, -24, -40, -14, -34 )
 script = ExtResource( 9 )
@@ -75,7 +74,6 @@ internalStorage = 10000.0
 light_mask = 0
 z_index = 50
 collision_layer = 524288
-collision_mask = 0
 monitorable = false
 space_override = 3
 gravity_vec = Vector2( 0, 0 )
@@ -84,7 +82,6 @@ linear_damp = 0.0
 angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MineralProcessingUnit"]
-light_mask = 0
 position = Vector2( 0, -27 )
 polygon = PoolVector2Array( -24, 27, 16, 27, 24, 11, -24, 3 )
 

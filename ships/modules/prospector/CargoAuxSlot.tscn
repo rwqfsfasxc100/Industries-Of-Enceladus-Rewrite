@@ -1,0 +1,63 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=1]
+
+[node name="CargoAuxSlot" instance=ExtResource( 1 )]
+position = Vector2( 0, -212 )
+
+[node name="CargoAuxPreProc0x30" parent="." index="0"]
+polygon = PoolVector2Array( 8, 14, 8, -14, 12, -6, 18, -4, 18, 4, 12, 6 )
+
+[node name="ZoneTop" parent="CargoAuxPreProc0x30/ProcessingArea" index="0"]
+polygon = PoolVector2Array( 20, 0, 20, -28, -20, -28, -20, 0 )
+
+[node name="ZoneBottom" parent="CargoAuxPreProc0x30/ProcessingArea" index="1"]
+polygon = PoolVector2Array( 20, 0, 20, 242, -20, 242, -20, 0 )
+
+[node name="CargoAuxPreProc20x10" parent="." index="1"]
+polygon = PoolVector2Array( 8, 20, 8, -20, 16, -14, 20, -6, 20, 6, 16, 14 )
+
+[node name="ZoneTop" parent="CargoAuxPreProc20x10/ProcessingArea" index="0"]
+polygon = PoolVector2Array( 20, 0, 20, -28, -20, -28, -20, 0 )
+
+[node name="ZoneBottom" parent="CargoAuxPreProc20x10/ProcessingArea" index="1"]
+polygon = PoolVector2Array( 20, 0, 20, 242, -20, 242, -20, 0 )
+
+[node name="CargoAuxPreProc40x20" parent="." index="2"]
+visible = false
+position = Vector2( -24, 0 )
+polygon = PoolVector2Array( 0, -32, 10, -28, 8, -12, 2, -8, 8, -6, 10, 0, 8, 6, 2, 8, 8, 12, 10, 28, 0, 32, -2, 6, -2, -6 )
+
+[node name="ProcessingArea" parent="CargoAuxPreProc40x20" index="0"]
+position = Vector2( 24, 0 )
+
+[node name="ZoneTop" parent="CargoAuxPreProc40x20/ProcessingArea" index="0"]
+polygon = PoolVector2Array( 20, 0, 20, -28, -20, -28, -20, 0 )
+
+[node name="ZoneBottom" parent="CargoAuxPreProc40x20/ProcessingArea" index="1"]
+polygon = PoolVector2Array( 20, 0, 20, 242, -20, 242, -20, 0 )
+
+[node name="CargoAuxStorProc8K" parent="." index="3"]
+polygon = PoolVector2Array( 8, 40, 8, -20, 14, -20, 20, -16, 20, 18, 14, 22, 14, 28 )
+
+[node name="ZoneBottom" parent="CargoAuxStorProc8K/ProcessingArea" index="1"]
+polygon = PoolVector2Array( 22, 32, -22, 32, -16, -16, 16, -16 )
+
+[node name="CargoAuxStorage4K" parent="." index="4"]
+polygon = PoolVector2Array( 8, 24, 8, -20, 18, -16, 18, 4 )
+
+[node name="CargoAuxFab" parent="." index="5"]
+position = Vector2( -24, 0 )
+polygon = PoolVector2Array( 0, -32, 16, -22, 22, -14, 24, -4, 24, 32, 16, 32, 10, 38, 10, 52, 0, 64, 0, 4 )
+
+[node name="CargoAuxBigFab" parent="." index="6"]
+position = Vector2( -24, 0 )
+polygon = PoolVector2Array( 0, -32, 10, -30, 20, -24, 24, -16, 24, 46, 18, 48, 16, 52, 10, 54, 10, 60, 0, 72, 0, 44 )
+
+[editable path="CargoAuxPreProc0x30"]
+[editable path="CargoAuxPreProc20x10"]
+[editable path="CargoAuxPreProc40x20"]
+[editable path="CargoAuxStorProc8K"]
+[editable path="CargoAuxStorage4K"]
+[editable path="CargoAuxFab"]
+[editable path="CargoAuxBigFab"]

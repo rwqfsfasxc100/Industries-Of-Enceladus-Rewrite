@@ -1,0 +1,61 @@
+SLOT_CARGOBAY_MOD|Mineral Hold Kits
+
+
+
+SYSTEM_CARGO_MOD_2K|SSE Saddlebags
+
+SYSTEM_CARGO_MOD_2K_DESC|A basic set of expansion modules from Sin Space Engineering, offering a minor boost to cargo hold space. Disclaimer: use of unlicensed equipment may void your vessel's warranty.
+
+SYSTEM_CARGO_MOD_2K_SPECS|Cargo capacity: 2,000 kg / mineral (12,000 kg total) \nCompatibility: Divided and Dynamic \nMass: 1,000kg \nManufacturer: Sin Space Engineering
+
+
+SYSTEM_CARGO_MOD_4K|E-Prime Hold Rejoin
+
+SYSTEM_CARGO_MOD_4K_DESC|An order to have your ship's processed cargo hold extended, courtesy of the local shipyard. Installation comes with a money-back guarantee, a special warranty addendum, and a full structural integrity review for peace of mind. Fly safe!
+
+SYSTEM_CARGO_MOD_4K_SPECS|Cargo capacity: 4,000 kg / mineral (24,000 kg total) \nCompatibility: Divided and Dynamic \nMass: 2,000kg \nManufacturer: N/A
+
+
+SYSTEM_CARGO_MOD_6K|Conlido freightReady Hoppers
+
+SYSTEM_CARGO_MOD_6K_DESC|A set of hull-embedded mineral containers that implement patented Never-Void technology to ensure that all possible space is utilised to its fullest extent. Comes with warranty addendum. This product was tested by REAL miners doing REAL work in REAL SPACE ENVIRONMENTS! \n\nNotice: vessels with installations more recent than 2237 are not able to claim workplace injury compensation involving the operation / maintenance / installation / removal / utilisation of, or visual / auditory / gustatory / olfactory / physical / mental contact with, Conlido freightReady Hoppers. Familiarise yourself and coworkers with proper operational procedures before undertaking duties involving Conlido freightReady Hoppers.
+
+SYSTEM_CARGO_MOD_6K_SPECS|Cargo capacity: 6,000 kg / mineral (36,000 kg total) \nCompatibility: Divided and Dynamic \nMass: 3,500kg \nManufacturer: Conlido RVM
+
+
+SYSTEM_CARGO_MOD_BOTH_MANUAL|Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume.
+
+
+
+SYSTEM_CARGO_MOD_BOLTS|Locking Bolts
+
+SYSTEM_CARGO_MOD_BOLTS_DESC|An assortment of standard locking bolts for ships with variable-geometry holds, to be applied to appropriate fixture points.
+
+SYSTEM_CARGO_MOD_BOLTS_SPECS|Conversion mode: Dynamic to Divided \nConversion ratio: 1:1 (no reduction)
+
+SYSTEM_CARGO_MOD_BOLTS_MANUAL|Converts the mineral hold storage volume to Divided. \nDivisions are equally divided into sixths of the total combined capacity. \nDoes not require power or reactor heat.
+
+
+
+SYSTEM_CARGO_MOD_AMORPH4|Conlido aMorphIV
+
+SYSTEM_CARGO_MOD_AMORPH4_DESC|While the Cothon-217's experimental storage geometry was met with limited success, Conlido RVM was still keen on the concept. Agreements were made between ship manufacturers for trials and, false starts and missed deadlines not withstanding, the aMorphIV Hold Conversion Kit eventually entered the market. \n\nIts modular parts can be retrofitted to all ship systems currently available on the market, and employs the same fundamental principles as its vessel of origin.
+
+SYSTEM_CARGO_MOD_AMORPH4_SPECS|Conversion mode: Divided to Dynamic \nConversion ratio: 6:4 (33% reduction) \nMass: 1,500 kg \nManufacturer: Conlido RVM
+
+
+SYSTEM_CARGO_MOD_AMORPH5|THI MD-5
+
+SYSTEM_CARGO_MOD_AMORPH5_DESC|The Titan Heavy Industries MD-5 Hold Kit is well-known among shipyard engineers for its accordion-style collapsing internal volumes. Lessons were learned from prior implementations and the hardware takes up much less space in the hold as a result, but its compact linear actuators and precision assembly translate to high upfront costs.
+
+SYSTEM_CARGO_MOD_AMORPH5_SPECS|Conversion mode: Divided to Dynamic \nConversion ratio: 6:5 (17% reduction) \nMass: 2,500 kg \nManufacturer: Titan Heavy Industries
+
+
+SYSTEM_CARGO_MOD_AMORPH6|NDSBH
+
+SYSTEM_CARGO_MOD_AMORPH6_DESC|Nakamura Dynamics' Soft Body Hold is the ultimate dynamic conversion kit for divided holds, removing the default partitions and replacing them with a simple, yet effective rolling baffle system that's custom-commissioned according to a ship's specifications. Compressed air is used to create a frictionless cushion as the baffles move, and a control computer manages and predicts future geometry changes through a direct link to the cargo bay's processing unit and microseismic imaging system.
+
+SYSTEM_CARGO_MOD_AMORPH6_SPECS|Conversion mode: Divided to Dynamic \nConversion ratio: 1:1 (no reduction) \nMass: 3,750 kg \nManufacturer: Nakamura Dynamics
+
+
+SYSTEM_CARGO_MOD_AMORPH_MANUAL|Requires an MPU to properly utilise. \nConverts the mineral hold storage volume to Dynamic. \nIncreases or decreases total hold storage volume according to the conversion ratio. Percentage indicated in specification. \nDoes not require power or reactor heat.

@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/ocp-209.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/ocp-209.tscn" type="PackedScene" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=3]
 [ext_resource path="res://ships/modules/claws.phymat" type="PhysicsMaterial" id=4]
@@ -9,9 +9,9 @@
 [ext_resource path="res://ships/obonto-m.png" type="Texture" id=7]
 [ext_resource path="res://ships/obonto-n.png" type="Texture" id=8]
 [ext_resource path="res://ships/obonto-cd.png" type="Texture" id=9]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_close.wav" type="AudioStream" id=10]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_open.wav" type="AudioStream" id=11]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/hud/collect_pac.wav" type="AudioStream" id=12]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/excavator_pac_close.wav" type="AudioStream" id=10]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/excavator_pac_open.wav" type="AudioStream" id=11]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/hud/collect_pac.wav" type="AudioStream" id=12]
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 6.0
@@ -44,7 +44,7 @@ autopilotRotationPartOffsetPath = NodePath("")
 [node name="Collect" parent="Noises" index="6"]
 stream = ExtResource( 12 )
 
-[node name="Bay" parent="." index="3"]
+[node name="Bay" parent="." index="4"]
 openTime = 1.2
 powerScale = 0.2
 angleLimit = 0.1
@@ -213,7 +213,7 @@ rotation = 0.0
 [node name="CollisionPolygon2D" parent="Bay/Bay/CargoHoldArea" index="0"]
 polygon = PoolVector2Array( 38, -141, -2.02815e-05, 8, -140, 7.99965, -145, 0, -124, -75, -73, -126, -0.000365066, -144 )
 
-[node name="Collider" parent="." index="5"]
+[node name="Collider" parent="." index="6"]
 polygon = PoolVector2Array( 92, -282, 92, -140, 82, -121, 70, -121, 36, -135, 0, -140, -36, -135, -70, -121, -99, -99, -121, -70, -135, -36, -140, 0, -135, 37, -121, 70, -99, 99, -70, 121, -36, 135, 0, 140, 37, 135, 70, 121, 84, 125, 90, 137, 90, 215, 86, 229, 74, 239, 60, 241, 60, 369, 40, 386, 46, 396, 30, 446, -30, 446, -46, 396, -40, 386, -52, 378, -70, 378, -70, 240, -86, 230, -90, 215, -90, 137, -83, 125, -106, 107, -131, 75, -146, 39, -151, 0, -146, -39, -131, -75, -107, -106, -82.6822, -124.924, -92, -140, -92, -282, -72, -284, 0.00810242, -284, 72, -284 )
 
 [node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
@@ -228,7 +228,7 @@ polygon = PoolVector2Array( 20, -390, 80, -168, 80, -128, 88, -120, 88, 120, 80,
 [editable path="Noises"]
 [editable path="WeaponHardTop"]
 [editable path="WeaponHardRight"]
-[editable path="MineralProcessingUnit_FSO"]
-[editable path="AI"]
 [editable path="MineralProcessingUnit_Bulker"]
 [editable path="MineralProcessingUnit_Furnace"]
+[editable path="MineralProcessingUnit_FSO"]
+[editable path="AI"]

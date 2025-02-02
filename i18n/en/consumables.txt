@@ -1,0 +1,5 @@
+SYSTEM_AMMO_200|Projectile clip
+
+SYSTEM_AMMO_200_DESC|A set of extension rails for kinetic projectile weapons, capable of handling a variety of calibres. Ammunition is fed by a cost-effective rack-and-pinion actuator. Ports at their bases allow for manual and automatic reloading.
+
+SYSTEM_AMMO_200_SPECS|Storage: 200 kg \nDelivery: 100 kg/s \nManufacturer: Rasamama Material Solutions

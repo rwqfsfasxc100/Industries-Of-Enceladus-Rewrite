@@ -1,0 +1,813 @@
+[gd_scene load_steps=35 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/_experiments/LidarOnly-theme.tres" type="Theme" id=1]
+[ext_resource path="res://hud/Display-K37.gd" type="Script" id=2]
+[ext_resource path="res://hud/AutopilotKeyText.tscn" type="PackedScene" id=3]
+[ext_resource path="res://hud/OMSbox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://hud/AttachToShip.gd" type="Script" id=5]
+[ext_resource path="res://hud/components/ContextSensitiveControlDisplay.tscn" type="PackedScene" id=6]
+[ext_resource path="res://enceladus/FramerateLimitedViewport.gd" type="Script" id=7]
+[ext_resource path="res://hud/AutopilotOverlay.gd" type="Script" id=8]
+[ext_resource path="res://hud/trtl/CargoHold.tscn" type="PackedScene" id=9]
+[ext_resource path="res://shader/hexhider.tres" type="Material" id=10]
+[ext_resource path="res://hud/ShipMark.tscn" type="PackedScene" id=11]
+[ext_resource path="res://hud/components/EnceladusFeed.tscn" type="PackedScene" id=12]
+[ext_resource path="res://hud/Booter.tscn" type="PackedScene" id=13]
+[ext_resource path="res://hud/RemoteSpectrometer.tscn" type="PackedScene" id=14]
+[ext_resource path="res://hud/trtl/ShipParams.tscn" type="PackedScene" id=15]
+[ext_resource path="res://hud/components/TransponderResponse.tscn" type="PackedScene" id=16]
+[ext_resource path="res://hud/MineralMark.tscn" type="PackedScene" id=17]
+[ext_resource path="res://hud/LIDAR_beep.wav" type="AudioStream" id=20]
+[ext_resource path="res://hud/capacitor-b.png" type="Texture" id=21]
+[ext_resource path="res://hud/arrow-up.png" type="Texture" id=22]
+[ext_resource path="res://hud/circle-indicator.png" type="Texture" id=23]
+[ext_resource path="res://hud/capacitor.png" type="Texture" id=24]
+[ext_resource path="res://hud/icon-reactor.png" type="Texture" id=25]
+[ext_resource path="res://hud/circle-indicator-b.png" type="Texture" id=26]
+[ext_resource path="res://hud/TNTRL-outline-b.png" type="Texture" id=27]
+[ext_resource path="res://hud/TNTRL-outline.png" type="Texture" id=28]
+[ext_resource path="res://hud/components/Distortion.tscn" type="PackedScene" id=29]
+[ext_resource path="res://hud/FadingVirtualMarginContainer.gd" type="Script" id=31]
+[ext_resource path="res://hud/SensorDisplay.gd" type="Script" id=32]
+[ext_resource path="res://hud/VBShowWhenSystemInstalled.gd" type="Script" id=33]
+[ext_resource path="res://hud/LIDAR.gd" type="Script" id=34]
+[ext_resource path="res://hud/shipReadout.gd" type="Script" id=35]
+[ext_resource path="res://hud/circularReadout.gd" type="Script" id=36]
+
+[sub_resource type="ViewportTexture" id=1]
+flags = 5
+viewport_path = NodePath("AttachToShipPos/LidarScale/Hider/LidarViewport")
+
+[node name="Display" type="Container"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+
+[node name="AutopilotOverlay" type="TextureRect" parent="."]
+modulate = Color( 1, 1, 1, 0.501961 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 8 )
+mineralMakrer = ExtResource( 17 )
+tacticalMakrer = ExtResource( 11 )
+directionStart = 225.0
+width = 2.0
+markWidth = 0.25
+directionColor = Color( 0, 1, 0, 0.25 )
+
+[node name="AttachToShipPos" type="Node2D" parent="."]
+modulate = Color( 1, 1, 1, 0.498039 )
+position = Vector2( 636.719, 359.072 )
+script = ExtResource( 5 )
+
+[node name="LidarScale" type="Node2D" parent="AttachToShipPos"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="LidarViewport" type="Viewport" parent="AttachToShipPos/LidarScale"]
+size = Vector2( 2048, 2048 )
+hdr = false
+render_target_update_mode = 3
+script = ExtResource( 7 )
+parentPath = NodePath("")
+minimumFps = 10
+
+[node name="LIDAR" type="TextureRect" parent="AttachToShipPos/LidarScale/LidarViewport"]
+light_mask = 0
+anchor_bottom = 0.5
+rect_min_size = Vector2( 2048, 2048 )
+stretch_mode = 1
+script = ExtResource( 34 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+distance = 32000.0
+pxOffset = 2
+crossColor = Color( 0, 0, 0, 0 )
+screenRectColor = Color( 0.0588235, 0.0431373, 0, 1 )
+screenRectShadows = 4
+screenRectShadowStep = 1.01
+dopplerScale = 100.0
+brightScale = 0.5
+lineBright = 0.06
+drawLines = true
+lineConnectLimit = 0.02
+lineTrail = 0.015
+rangeFade = 0.075
+rangeFadeScale = 8.0
+signatureScale = 0.5
+contactGroupLimit = 150
+noColor = Color( 0, 0, 0, 0 )
+Transponder = ExtResource( 16 )
+flickerScale = 3
+
+[node name="Bleep" type="AudioStreamPlayer" parent="AttachToShipPos/LidarScale/LidarViewport/LIDAR"]
+stream = ExtResource( 20 )
+bus = "ShipBowels"
+
+[node name="LidarProxy" type="Sprite" parent="AttachToShipPos/LidarScale"]
+light_mask = 0
+material = ExtResource( 10 )
+texture = SubResource( 1 )
+flip_v = true
+
+[node name="FlightParams" type="MarginContainer" parent="."]
+margin_left = 12.0
+margin_top = 12.0
+margin_right = 482.49
+margin_bottom = 440.0
+script = ExtResource( 31 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="FlightParams"]
+margin_right = 472.0
+margin_bottom = 428.0
+custom_constants/separation = 18
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="FlightParams/VBoxContainer"]
+margin_right = 472.0
+margin_bottom = 72.0
+
+[node name="Autopilot" type="PanelContainer" parent="FlightParams/VBoxContainer/HBoxContainer2"]
+margin_right = 472.0
+margin_bottom = 72.0
+
+[node name="GridContainer" type="GridContainer" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot"]
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 471.0
+margin_bottom = 71.0
+columns = 5
+
+[node name="AutopilotControls" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+margin_right = 4.0
+margin_bottom = 14.0
+
+[node name="AutopilotLabel" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.2, 1, 0.2, 1 )
+margin_left = 12.0
+margin_right = 124.0
+margin_bottom = 14.0
+text = "HUD_AUTOPILOT"
+uppercase = true
+
+[node name="ControlsPlaceholder" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.0509804, 0.298039, 0.0509804, 1 )
+margin_left = 132.0
+margin_right = 279.0
+margin_bottom = 14.0
+text = "HUD_AUTOPILOT_CURRENT"
+align = 1
+uppercase = true
+
+[node name="ControlsPlaceholder2" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.0509804, 0.298039, 0.0509804, 1 )
+margin_left = 287.0
+margin_right = 427.0
+margin_bottom = 14.0
+text = "HUD_AUTOPILOT_TARGET"
+align = 1
+uppercase = true
+
+[node name="AutopilotUnit" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.5, 3, 0.5, 1 )
+margin_left = 435.0
+margin_right = 470.0
+margin_bottom = 14.0
+uppercase = true
+
+[node name="AutopilotVelocityControlls" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+margin_top = 14.0
+margin_right = 4.0
+margin_bottom = 28.0
+
+[node name="AutopilotVelocity" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.2, 1, 0.2, 1 )
+margin_left = 12.0
+margin_top = 14.0
+margin_right = 124.0
+margin_bottom = 28.0
+text = "HUD_VELOCITY"
+uppercase = true
+
+[node name="AutopilotVelocityCurrent" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+margin_left = 132.0
+margin_top = 14.0
+margin_right = 279.0
+margin_bottom = 28.0
+text = "  0.000"
+script = ExtResource( 32 )
+sensor = "velocity"
+format = "%7.3f"
+empty = "-------"
+maxWarn = 50.0
+maxErr = 150.0
+
+[node name="AutopilotVelocityTarget" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+margin_left = 287.0
+margin_top = 14.0
+margin_right = 427.0
+margin_bottom = 28.0
+text = "  0.000"
+script = ExtResource( 32 )
+sensor = "autopilot.velocity"
+format = "%7.3f"
+empty = "-------"
+maxWarn = 50.1
+maxErr = 150.0
+
+[node name="AutopilotVelocityUnit" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.2, 1, 0.2, 1 )
+margin_left = 435.0
+margin_top = 14.0
+margin_right = 470.0
+margin_bottom = 28.0
+text = "m/s"
+
+[node name="AutopilotAccelerationControls" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+margin_top = 28.0
+margin_right = 4.0
+margin_bottom = 42.0
+
+[node name="AutopilotAcceleration" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.2, 1, 0.2, 1 )
+margin_left = 12.0
+margin_top = 28.0
+margin_right = 124.0
+margin_bottom = 42.0
+text = "HUD_ACCELERATION"
+uppercase = true
+
+[node name="AutopilotAccelerationCurrent" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+margin_left = 132.0
+margin_top = 28.0
+margin_right = 279.0
+margin_bottom = 42.0
+text = "  0.000"
+script = ExtResource( 32 )
+sensor = "acceleration"
+format = "%7.3f"
+empty = "-------"
+maxWarn = 50.0
+maxErr = 100.0
+
+[node name="AutopilotAccelerationTarget" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+margin_left = 287.0
+margin_top = 28.0
+margin_right = 427.0
+margin_bottom = 42.0
+text = "  0.000"
+script = ExtResource( 32 )
+sensor = "autopilot.acceleration"
+format = "%7.3f"
+empty = "-------"
+maxWarn = 50.1
+maxErr = 100.0
+
+[node name="AutopilotAccelerationUnit" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.2, 1, 0.2, 1 )
+margin_left = 435.0
+margin_top = 28.0
+margin_right = 470.0
+margin_bottom = 42.0
+text = "m/s^2"
+
+[node name="AutopilotOrientationControls" type="HBoxContainer" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.2, 1, 0.2, 1 )
+margin_top = 42.0
+margin_right = 4.0
+margin_bottom = 56.0
+
+[node name="ContextSensitiveControlDisplay4" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer/AutopilotOrientationControls" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_bottom = 14.0
+rect_scale = Vector2( 1, 1 )
+action = "autopilot_bearing_keys"
+
+[node name="ContextSensitiveControlDisplay3" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer/AutopilotOrientationControls" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 4.0
+margin_right = 4.0
+margin_bottom = 14.0
+rect_scale = Vector2( 1, 1 )
+action = "autopilot_bearing"
+
+[node name="AutopilotBearing" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.2, 1, 0.2, 1 )
+margin_left = 12.0
+margin_top = 42.0
+margin_right = 124.0
+margin_bottom = 56.0
+text = "HUD_BEARING"
+uppercase = true
+
+[node name="AutopilotBearingCurrent" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+margin_left = 132.0
+margin_top = 42.0
+margin_right = 279.0
+margin_bottom = 56.0
+text = "  0.000"
+script = ExtResource( 32 )
+sensor = "bearing"
+format = "%7.0f"
+empty = "-------"
+maxWarn = 361.0
+maxErr = 361.0
+
+[node name="AutopilotBearingTarget" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+margin_left = 287.0
+margin_top = 42.0
+margin_right = 427.0
+margin_bottom = 56.0
+text = "  0.000"
+script = ExtResource( 32 )
+sensor = "autopilot.bearing"
+format = "%7.0f"
+empty = "    ---"
+maxWarn = 361.0
+maxErr = 361.0
+
+[node name="AutopilotBearingUnit" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.2, 1, 0.2, 1 )
+margin_left = 435.0
+margin_top = 42.0
+margin_right = 470.0
+margin_bottom = 56.0
+text = "deg"
+
+[node name="AutopilotOrientationControls3" type="HBoxContainer" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.2, 1, 0.2, 1 )
+margin_top = 56.0
+margin_right = 4.0
+margin_bottom = 70.0
+
+[node name="ContextSensitiveControlDisplay3" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer/AutopilotOrientationControls3" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_bottom = 14.0
+rect_scale = Vector2( 1, 1 )
+action = "autopilot_orient_to_mouse"
+
+[node name="ContextSensitiveControlDisplay4" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer/AutopilotOrientationControls3" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 4.0
+margin_right = 4.0
+margin_bottom = 14.0
+rect_scale = Vector2( 1, 1 )
+action = "autopilot_orient_to"
+
+[node name="AutopilotOrientation" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.2, 1, 0.2, 1 )
+margin_left = 12.0
+margin_top = 56.0
+margin_right = 124.0
+margin_bottom = 70.0
+text = "HUD_ORIENTATION"
+uppercase = true
+
+[node name="AutopilotOrientationCurrent" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+margin_left = 132.0
+margin_top = 56.0
+margin_right = 279.0
+margin_bottom = 70.0
+text = "  0.000"
+script = ExtResource( 32 )
+sensor = "orientation"
+format = "%7.0f"
+empty = "-------"
+maxWarn = 361.0
+maxErr = 361.0
+
+[node name="AutopilotOrientationTarget" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+margin_left = 287.0
+margin_top = 56.0
+margin_right = 427.0
+margin_bottom = 70.0
+text = "  0.000"
+script = ExtResource( 32 )
+sensor = "autopilot.orientation"
+format = "%7.0f"
+empty = "-------"
+maxWarn = 361.0
+maxErr = 361.0
+
+[node name="AutopilotOrientationUnit" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer2/Autopilot/GridContainer"]
+modulate = Color( 0.2, 1, 0.2, 1 )
+margin_left = 435.0
+margin_top = 56.0
+margin_right = 470.0
+margin_bottom = 70.0
+text = "deg"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="FlightParams/VBoxContainer"]
+margin_top = 90.0
+margin_right = 472.0
+margin_bottom = 134.0
+
+[node name="FlightBox" type="PanelContainer" parent="FlightParams/VBoxContainer/HBoxContainer"]
+margin_right = 214.0
+margin_bottom = 44.0
+
+[node name="GridContainer" type="GridContainer" parent="FlightParams/VBoxContainer/HBoxContainer/FlightBox"]
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 213.0
+margin_bottom = 43.0
+columns = 3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="speedLabel" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer/FlightBox/GridContainer"]
+modulate = Color( 0.5, 3, 0.5, 1 )
+margin_right = 112.0
+margin_bottom = 14.0
+text = "HUD_VELOCITY"
+uppercase = true
+
+[node name="speedReadout" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer/FlightBox/GridContainer"]
+margin_left = 120.0
+margin_right = 169.0
+margin_bottom = 14.0
+text = "  0.000"
+script = ExtResource( 32 )
+sensor = "velocity"
+format = "%7.3f"
+maxWarn = 50.0
+maxErr = 100.0
+
+[node name="speedUnit" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer/FlightBox/GridContainer"]
+modulate = Color( 0.5, 3, 0.5, 1 )
+margin_left = 177.0
+margin_right = 212.0
+margin_bottom = 14.0
+text = "m/s"
+
+[node name="accelerationLabel" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer/FlightBox/GridContainer"]
+modulate = Color( 0.5, 3, 0.5, 1 )
+margin_top = 14.0
+margin_right = 112.0
+margin_bottom = 28.0
+text = "HUD_ACCELERATION"
+uppercase = true
+
+[node name="accelerationReadout" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer/FlightBox/GridContainer"]
+margin_left = 120.0
+margin_top = 14.0
+margin_right = 169.0
+margin_bottom = 28.0
+text = "0.00"
+script = ExtResource( 32 )
+sensor = "acceleration"
+format = "%7.3f"
+
+[node name="accelerationUnit" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer/FlightBox/GridContainer"]
+modulate = Color( 0.5, 3, 0.5, 1 )
+margin_left = 177.0
+margin_top = 14.0
+margin_right = 212.0
+margin_bottom = 28.0
+text = "m/s^2"
+
+[node name="depthLabel" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer/FlightBox/GridContainer"]
+modulate = Color( 0.5, 3, 0.5, 1 )
+margin_top = 28.0
+margin_right = 112.0
+margin_bottom = 42.0
+text = "HUD_DEPTH"
+uppercase = true
+
+[node name="depthReadout" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer/FlightBox/GridContainer"]
+self_modulate = Color( 1.0194, 1.0194, 1.0194, 1 )
+margin_left = 120.0
+margin_top = 28.0
+margin_right = 169.0
+margin_bottom = 42.0
+text = "  0.000"
+script = ExtResource( 32 )
+sensor = "diveDepth"
+format = "%7.3f"
+empty = "-------"
+maxWarn = 1000.0
+maxErr = 2000.0
+
+[node name="depthUnit" type="Label" parent="FlightParams/VBoxContainer/HBoxContainer/FlightBox/GridContainer"]
+modulate = Color( 0.5, 3, 0.5, 1 )
+margin_left = 177.0
+margin_top = 28.0
+margin_right = 212.0
+margin_bottom = 42.0
+text = "km"
+
+[node name="ShipParams" type="MarginContainer" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -194.0
+margin_top = 12.0
+margin_right = -14.0
+margin_bottom = 160.0
+grow_horizontal = 0
+script = ExtResource( 31 )
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ShipParams"]
+margin_right = 207.0
+margin_bottom = 316.0
+custom_constants/separation = 18
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ShipParams/VBoxContainer"]
+margin_right = 207.0
+margin_bottom = 128.0
+custom_constants/separation = 18
+alignment = 2
+
+[node name="EnceladusFeed" parent="ShipParams/VBoxContainer/HBoxContainer" instance=ExtResource( 12 )]
+margin_left = 6.0
+margin_right = 134.0
+size_flags_vertical = 0
+
+[node name="OMS" type="PanelContainer" parent="ShipParams/VBoxContainer/HBoxContainer"]
+margin_left = 152.0
+margin_right = 207.0
+margin_bottom = 128.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ShipParams/VBoxContainer/HBoxContainer/OMS"]
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 54.0
+margin_bottom = 127.0
+custom_constants/separation = 4
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ShipParams/VBoxContainer/HBoxContainer/OMS/VBoxContainer"]
+modulate = Color( 0.5, 2, 0.5, 1 )
+margin_right = 53.0
+margin_bottom = 14.0
+alignment = 1
+
+[node name="ContextSensitiveControlDisplay" parent="ShipParams/VBoxContainer/HBoxContainer/OMS/VBoxContainer/HBoxContainer" instance=ExtResource( 6 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_bottom = 14.0
+rect_scale = Vector2( 1, 1 )
+action = "jury_rig"
+
+[node name="Label" type="Label" parent="ShipParams/VBoxContainer/HBoxContainer/OMS/VBoxContainer/HBoxContainer"]
+margin_left = 4.0
+margin_right = 53.0
+margin_bottom = 14.0
+text = "HUD_OMS"
+uppercase = true
+
+[node name="OMS" parent="ShipParams/VBoxContainer/HBoxContainer/OMS/VBoxContainer" instance=ExtResource( 4 )]
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ShipParams/VBoxContainer"]
+margin_top = 146.0
+margin_right = 207.0
+margin_bottom = 316.0
+alignment = 2
+
+[node name="ShipDetails" type="PanelContainer" parent="ShipParams/VBoxContainer/HBoxContainer2"]
+margin_right = 207.0
+margin_bottom = 170.0
+
+[node name="GridContainer" parent="ShipParams/VBoxContainer/HBoxContainer2/ShipDetails" instance=ExtResource( 15 )]
+margin_right = 206.0
+margin_bottom = 169.0
+
+[node name="CargoHold" type="MarginContainer" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 12.0
+margin_top = -232.0
+margin_right = 216.0
+margin_bottom = -12.0
+grow_vertical = 0
+script = ExtResource( 31 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CargoHold"]
+margin_right = 536.0
+margin_bottom = 270.0
+size_flags_vertical = 8
+custom_constants/separation = 20
+
+[node name="CargoHold" type="PanelContainer" parent="CargoHold/HBoxContainer"]
+margin_right = 296.0
+margin_bottom = 270.0
+size_flags_vertical = 8
+
+[node name="CargoHold" parent="CargoHold/HBoxContainer/CargoHold" instance=ExtResource( 9 )]
+margin_right = 295.0
+margin_bottom = 269.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CargoHold/HBoxContainer"]
+margin_left = 316.0
+margin_right = 536.0
+margin_bottom = 270.0
+alignment = 2
+
+[node name="RemoteSpectrometer" type="PanelContainer" parent="CargoHold/HBoxContainer/VBoxContainer"]
+margin_top = 156.0
+margin_right = 220.0
+margin_bottom = 270.0
+script = ExtResource( 33 )
+
+[node name="RemoteSpectrometer" parent="CargoHold/HBoxContainer/VBoxContainer/RemoteSpectrometer" instance=ExtResource( 14 )]
+
+[node name="Label2" parent="CargoHold/HBoxContainer/VBoxContainer/RemoteSpectrometer/RemoteSpectrometer" index="0"]
+margin_right = 105.0
+
+[node name="Label3" parent="CargoHold/HBoxContainer/VBoxContainer/RemoteSpectrometer/RemoteSpectrometer" index="1"]
+margin_left = 113.0
+margin_right = 218.0
+
+[node name="RemoteScanner" parent="CargoHold/HBoxContainer/VBoxContainer/RemoteSpectrometer/RemoteSpectrometer" index="2"]
+margin_top = 14.0
+margin_right = 105.0
+margin_bottom = 112.0
+
+[node name="RemoteManifest" parent="CargoHold/HBoxContainer/VBoxContainer/RemoteSpectrometer/RemoteSpectrometer" index="3"]
+margin_left = 113.0
+margin_top = 14.0
+margin_right = 218.0
+margin_bottom = 112.0
+
+[node name="ShipGfx" type="MarginContainer" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -160.0
+margin_top = -276.0
+margin_right = -12.0
+margin_bottom = -12.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+script = ExtResource( 31 )
+
+[node name="PanelContainer" type="PanelContainer" parent="ShipGfx"]
+margin_left = 18.0
+margin_top = 6.0
+margin_right = 148.0
+margin_bottom = 264.0
+size_flags_horizontal = 8
+size_flags_vertical = 8
+
+[node name="shipReadout" type="TextureProgress" parent="ShipGfx/PanelContainer"]
+self_modulate = Color( 0.5, 3, 0.51, 0.1 )
+margin_left = 1.0
+margin_top = 1.0
+margin_right = 129.0
+margin_bottom = 257.0
+grow_horizontal = 0
+max_value = 5000.0
+texture_under = ExtResource( 28 )
+texture_progress = ExtResource( 27 )
+fill_mode = 3
+script = ExtResource( 36 )
+sensor = "fuel"
+minWarn = 500.0
+minErr = 1000.0
+maxWarn = 6000.0
+maxErr = 6500.0
+okColor = Color( 0.1, 0.5, 0.1, 0.2 )
+warnColor = Color( 1, 1, 0.2, 0.2 )
+errColor = Color( 2, 0.4, 0.4, 0.2 )
+
+[node name="thruster-lt" type="Sprite" parent="ShipGfx/PanelContainer/shipReadout"]
+position = Vector2( 23, 19 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 22 )
+script = ExtResource( 35 )
+
+[node name="thruster-rt" type="Sprite" parent="ShipGfx/PanelContainer/shipReadout"]
+position = Vector2( 103, 19 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 22 )
+script = ExtResource( 35 )
+
+[node name="thruster-rb" type="Sprite" parent="ShipGfx/PanelContainer/shipReadout"]
+position = Vector2( 103, 231 )
+rotation = 3.14159
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 22 )
+script = ExtResource( 35 )
+
+[node name="thruster-lb" type="Sprite" parent="ShipGfx/PanelContainer/shipReadout"]
+position = Vector2( 23, 231 )
+rotation = 3.14159
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 22 )
+script = ExtResource( 35 )
+
+[node name="engine-main" type="Sprite" parent="ShipGfx/PanelContainer/shipReadout"]
+position = Vector2( 64, 248.377 )
+rotation = 3.14159
+scale = Vector2( 0.75, 0.75 )
+texture = ExtResource( 22 )
+script = ExtResource( 35 )
+
+[node name="reactor" type="Sprite" parent="ShipGfx/PanelContainer/shipReadout"]
+position = Vector2( 65, 183 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 25 )
+script = ExtResource( 35 )
+
+[node name="engineTemp" type="TextureProgress" parent="ShipGfx/PanelContainer/shipReadout/reactor"]
+margin_left = -50.0
+margin_top = -53.0
+margin_right = 30.0
+margin_bottom = 27.0
+rect_scale = Vector2( 1.25, 1.25 )
+min_value = 1000.0
+max_value = 6000.0
+value = 1000.0
+texture_under = ExtResource( 26 )
+texture_progress = ExtResource( 23 )
+fill_mode = 4
+radial_initial_angle = 180.0
+script = ExtResource( 36 )
+sensor = "reactor_temperature"
+minWarn = 2500.0
+minErr = 1500.0
+maxWarn = 4500.0
+maxErr = 5500.0
+
+[node name="thruster-bl" type="Sprite" parent="ShipGfx/PanelContainer/shipReadout"]
+position = Vector2( 7, 216 )
+rotation = -1.5708
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 22 )
+script = ExtResource( 35 )
+
+[node name="thruster-br" type="Sprite" parent="ShipGfx/PanelContainer/shipReadout"]
+position = Vector2( 119, 216 )
+rotation = 1.5708
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 22 )
+script = ExtResource( 35 )
+
+[node name="thruster-tr" type="Sprite" parent="ShipGfx/PanelContainer/shipReadout"]
+position = Vector2( 119, 35 )
+rotation = 1.5708
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 22 )
+script = ExtResource( 35 )
+
+[node name="thruster-tl" type="Sprite" parent="ShipGfx/PanelContainer/shipReadout"]
+position = Vector2( 7, 35 )
+rotation = -1.5708
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 22 )
+script = ExtResource( 35 )
+
+[node name="capacitor" type="TextureProgress" parent="ShipGfx/PanelContainer/shipReadout"]
+margin_left = 45.0
+margin_top = 117.0
+margin_right = 125.0
+margin_bottom = 197.0
+rect_scale = Vector2( 0.5, 0.5 )
+max_value = 500.0
+value = 50.0
+texture_under = ExtResource( 21 )
+texture_progress = ExtResource( 24 )
+fill_mode = 3
+radial_initial_angle = 180.0
+script = ExtResource( 36 )
+sensor = "capacitor"
+minWarn = 300.0
+minErr = 200.0
+maxWarn = 2000.0
+maxErr = 3000.0
+
+[node name="Distortion" parent="." instance=ExtResource( 29 )]
+
+[node name="Dialog" type="MarginContainer" parent="."]
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 318.0
+margin_top = -242.0
+margin_right = -322.0
+margin_bottom = -148.0
+mouse_filter = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="AutopilotKeyText" parent="." instance=ExtResource( 3 )]
+
+[node name="Booter" parent="." instance=ExtResource( 13 )]
+visible = false
+anchor_top = 0.0
+margin_top = 17.0
+margin_bottom = -103.0
+
+[editable path="CargoHold/HBoxContainer/VBoxContainer/RemoteSpectrometer/RemoteSpectrometer"]

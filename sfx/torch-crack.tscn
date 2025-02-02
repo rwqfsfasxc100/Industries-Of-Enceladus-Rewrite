@@ -1,0 +1,106 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://ships/cothon-cd.png" type="Texture" id=1]
+[ext_resource path="res://ships/cothon-n.png" type="Texture" id=2]
+[ext_resource path="res://sfx/thruster_start_01.wav" type="AudioStream" id=3]
+[ext_resource path="res://sfx/thruster_loop_01.wav" type="AudioStream" id=4]
+[ext_resource path="res://lights/ConfigurableLight.gd" type="Script" id=5]
+[ext_resource path="res://sfx/thruster.gd" type="Script" id=6]
+[ext_resource path="res://lights/plume.png" type="Texture" id=7]
+[ext_resource path="res://sfx/thrusters.png" type="Texture" id=8]
+[ext_resource path="res://sfx/exhaust-fusion.tscn" type="PackedScene" id=9]
+[ext_resource path="res://ships/modules/nozzle.tscn" type="PackedScene" id=10]
+
+[node name="SYSTEM_MAIN_ENGINE_CRACK" type="Sprite"]
+self_modulate = Color( 1, 0, 0.537255, 1 )
+light_mask = 0
+position = Vector2( 0, -22 )
+scale = Vector2( 0.6, 1 )
+texture = ExtResource( 8 )
+centered = false
+offset = Vector2( -32, 0 )
+hframes = 8
+frame = 1
+script = ExtResource( 6 )
+__meta__ = {
+"_editor_description_": ""
+}
+priorityOffset = 8.0
+mainBrightRatio = 2.0
+repairReplacementPrice = 1575000
+repairReplacementTime = 48
+repairFixPrice = 50000
+repairFixTime = 24
+distanceScale = 300
+accelerationFailLimit = 600
+accelerationFailScale = 400
+thrust = 18000.0
+command = "m"
+particleChance = 1.0
+fadeSeconds = 0.1
+windUpSeconds = 0.1
+particleScale = 32.0
+randomness = 0.2
+minPower = 0.0
+damageWearCapacity = 12800.0
+damageBentCapacity = 12800.0
+damageBentThreshold = 1280.0
+damageChokeCapacity = 128000.0
+damageChokeThreshold = 96000.0
+specialFuelLimit = 1800
+heatFireThreshold = 2000.0
+maxMissalignment = 0.02
+specificImpulse = 1850
+thermalFactor = 0.1
+powerDraw = 445000.0
+gimbalPowerDraw = 400.0
+ignitionsPerSecond = 8
+gimbalPerSecond = 0.496
+pulsePerSecond = 8.0
+exhaust = ExtResource( 9 )
+externalPower = true
+tuneThrustMin = 1.0
+tuneThrustMax = 1.0
+systemName = "SYSTEM_MAIN_ENGINE_CRACK"
+mass = 4650
+maxVolume = -15
+minChoke = 0.01
+
+[node name="AudioLoop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+bus = "ShipBowels"
+
+[node name="AudioStart" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
+pitch_scale = 12.0
+bus = "SFX"
+
+[node name="Flare" type="Light2D" parent="."]
+position = Vector2( 0.00255591, 86 )
+rotation = 9.58465e-05
+scale = Vector2( 6, 4 )
+texture = ExtResource( 7 )
+texture_scale = 8.0
+color = Color( 1, 0.592157, 0.92549, 1 )
+energy = 24.0
+range_height = 5.0
+range_z_min = -4096
+range_z_max = 4096
+range_layer_min = -1
+range_layer_max = 1
+range_item_cull_mask = 17
+script = ExtResource( 5 )
+essentiality = 0.8
+
+[node name="nozzle" parent="." instance=ExtResource( 10 )]
+position = Vector2( 0, 2 )
+scale = Vector2( 2, 0.6 )
+
+[node name="cage" type="Sprite" parent="nozzle"]
+position = Vector2( 1.01488e-05, 38.0833 )
+rotation = 3.14159
+scale = Vector2( 0.45, 6 )
+texture = ExtResource( 1 )
+normal_map = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 108, 425.944, 104, 18.0558 )

@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://sfx/torch-k37.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ships/modules/nozzle-conventonal.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ships/cothon-cd.png" type="Texture" id=3]
+[ext_resource path="res://ships/cothon-n.png" type="Texture" id=4]
+
+[node name="SYSTEM_MAIN_ENGINE_THUNDER" instance=ExtResource( 1 )]
+position = Vector2( 0, 10 )
+scale = Vector2( 0.75, 0.75 )
+__meta__ = {
+"_editor_description_": ""
+}
+priorityOffset = 1.0
+repairReplacementPrice = 102000
+repairFixPrice = 7500
+repairFixTime = 8
+distanceScale = 4
+accelerationFailLimit = 800
+accelerationFailScale = 400
+thrust = 16000.0
+fadeSeconds = 0.1
+randomness = 0.2
+minPower = 0.25
+damageBentThreshold = 50.0
+maxMissalignment = 0.261799
+specificImpulse = 12
+thermalFactor = 60.0
+gimbalPowerDraw = 5000.0
+gimbal = 0.436
+gimbalPerSecond = 6.282
+pulsePerSecond = 30.0
+tuneThrustMin = 0.75
+tuneThrustMax = 2.0
+systemName = "SYSTEM_MAIN_ENGINE_THUNDER"
+mass = 950
+maxVolume = -15
+
+[node name="nozzle2" parent="." index="3" instance=ExtResource( 2 )]
+position = Vector2( -13, -29.3334 )
+scale = Vector2( 0.4, 0.45 )
+
+[node name="nozzle3" parent="." index="4" instance=ExtResource( 2 )]
+position = Vector2( 13, -29.3334 )
+scale = Vector2( 0.4, 0.45 )
+
+[node name="nozzle" parent="." index="5"]
+position = Vector2( 0, -29.3335 )
+scale = Vector2( 0.4, 0.45 )
+
+[node name="support" type="Sprite" parent="." index="6"]
+position = Vector2( 0, -40 )
+scale = Vector2( 0.5, 0.8 )
+texture = ExtResource( 3 )
+normal_map = ExtResource( 4 )
+region_enabled = true
+region_rect = Rect2( 108, 411, 104, 33 )

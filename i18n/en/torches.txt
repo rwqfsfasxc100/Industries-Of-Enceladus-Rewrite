@@ -1,0 +1,61 @@
+SYSTEM_MAIN_ENGINE_NANI|SSE NANI Torch Refit
+
+SYSTEM_MAIN_ENGINE_NANI_DESC|This comically impractical and completely disgusting main torch is the ultimate logical conclusion of many a night spent drinking and ruminating on life's purpose. Coming to the determination that there isn't one, the team at Sin Space Engineering put their heads together and produced this thing. \n\nDisclaimer: Omaewamou-Shindeiru thinks this is really funny and fully endorses the NANI's use as a propulsion solution. May void vessel warranty. Usage as main torch in some vessels may damage your reactor. Have fun!
+
+SYSTEM_MAIN_ENGINE_NANI_SPECS|Thrust: 3,450 kN \nExhaust velocity: 132 km/s \nPropellant consumption: 0.5 kg/s \nPower consumption: 200 MW \nThermal consumption: 2 GW \nPropellant: Supercritical liquid uranium salt \nBurn time: 1 minute (est) \nMass: 10,000 kg \nManufacturer: Sin Space Engineering / Omaewamou-Shindeiru
+
+
+
+SYSTEM_MAIN_ENGINE_GEMINI|MA-NTR600-II dual engine
+
+SYSTEM_MAIN_ENGINE_GEMINI_DESC|The NTR600-II, otherwise known as the "Gemini", is a dual-mounted magnetoplasmadynamic torch unit capable of delivering decent thrust with excellent efficiency and reliability. \n\nDisclaimer: maintenance of this unit is to be performed only by Mitsudaya-Starbus engineers or licensed sub-contractors. Insurance plans are not yet available in the outer solar system.
+
+SYSTEM_MAIN_ENGINE_GEMINI_SPECS|Thrust: 1,200 kN \nExhaust velocity: 28 km/s \nPropellant consumption: 52 kg/s \nPower consumption: 250 MW \nThermal consumption: 16.8 GW \nOperation mode: Variable thrust \nPropellant: Hydrogen plasma \nMass: 4,350 kg \nManufacturer: Mitsudaya-Starbus
+
+
+
+SYSTEM_MAIN_ENGINE_SOYUZ|RA-TNTRL-R44 quad engine
+
+SYSTEM_MAIN_ENGINE_SOYUZ_DESC|It's by no stretch of the imagination that this "torch" exists. Rusatom-Antonoff aimed to compete with other multiple-torch assemblies by introducing their own, but development was slow, and by the end of the 22nd century, many prototypes had been tried and failed with no viable solutions. \n\nMyths of its invention process vary, but generally suggest that the lead designer on the project was visited in a dream by the ghost of legendary Soviet rocket engineer Valentin Glushko. He spoke one word, 'Soyuz', and then departed, leaving the K44 RCS thruster at the designer's feet. \n\nProduction of these combined units continues to this day, and is part of the reason why the K44 thruster is still so abundant.
+
+SYSTEM_MAIN_ENGINE_SOYUZ_SPECS|Thrust: 1,600 kN \nExhaust velocity: 15 km/s \nPropellant consumption: 106.4 kg/s \nPower consumption: 60 MW \nThermal consumption: 12.0 GW \nOperation mode: Pulsed thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 650 kg \nManufacturer: Rusatom-Antonoff
+
+
+
+SYSTEM_MAIN_ENGINE_THUNDER|RA-K69V quad engine
+
+SYSTEM_MAIN_ENGINE_THUNDER_DESC|This torch is a custom-engineered piece of equipment that takes the frame of an R44 and replaces its engines with K69V thrusters, complete with the gimbal mountings the line is so famous for among ringside racers. Installation comes with optional and entirely legal "Thunderbarge-class" transponder modification. Personal grappling hook available on special request.
+
+SYSTEM_MAIN_ENGINE_THUNDER_SPECS|Thrust: 1,600 kN \nExhaust velocity: 12 km/s \nPropellant consumption: 133.2 kg/s \nPower consumption: 100 MW \nThermal consumption: 14.4 GW \nOperation mode: Pulsed thrust, gimballed \nGimbal angle: 25 deg \nGimbal speed: 360 deg/s \nPropellant: Oxygen-Hydrogen plasma \nMass: 950 kg \nManufacturer: Custom-built / Rusatom-Antonoff
+
+
+
+SYSTEM_MAIN_ENGINE_PIN1200|RMS Pin-M200 engine
+
+SYSTEM_MAIN_ENGINE_PIN1200_DESC|The Rasamama Material Solutions Pin-M200 implements the same pulsed induction technology that powers its Pin-150 series of solid-state RCS thrusters on a larger scale. It produces phenomenal thrust with remarkable efficiency, but its truly enormous power requirements make it an impractical choice for most nuclear thermal rockets.
+
+SYSTEM_MAIN_ENGINE_PIN1200_SPECS|Thrust: 1,200 kN \nExhaust velocity: 105 km/s \nPropellant consumption: 11.4 kg/s \nPower consumption: 510 MW \nOperation mode: Virtual variable thrust, gimballed \nGimbal angle: 36 deg \nGimbal speed: instantaneous \nPropellant: Hydrogen plasma \nMass: 2,650 kg \nManufacturer: Rasamama Material Solutions
+
+
+
+SYSTEM_MAIN_ENGINE_CRACK|NDDFD engine
+
+SYSTEM_MAIN_ENGINE_CRACK_DESC|The Directed Fusion Detonation engine by Nakamura Dynamics is one of the most powerful - and earliest! - fusion propulsion solutions still on the market. Popularised by a now-infamous 2214 advertisement backed by the Vengaboys' "Boom, Boom, Boom, Boom", the NDDFD utilises powerful electromagnets to crush remass-heated ferromagnetic shells containing pressurised deuterium and tritium, then direct the resultant detonation out of its cage-like nozzle assembly. \n\nUnlike its competitor, the NDDFD requires a enormous and continuous supply of power to maintain propulsion, and its relatively large pellets and specialised feed hardware dramatically limits its fuel capacity in small vessels.
+
+SYSTEM_MAIN_ENGINE_CRACK_SPECS|Thrust: 1,800 kN \nExhaust velocity: 1,850 km/s \nPropellant consumption: 1 kg/s \nPower consumption: 445 MW \nOperation mode: Pulsed thrust \n Propellant: Hydrogen plasma \nFusion fuel: D-T \nBurn time: 30 minutes (est) \nMass: 4,650 kg \nManufacturer: Nakamura Dynamics
+
+
+
+SYSTEM_MAIN_ENGINE_ZURBIN|ND ZURBIN engine
+
+SYSTEM_MAIN_ENGINE_ZURBIN_DESC|The Zurbin engine is the high-performance main engine of the Tsukuyuomi class of frigates. Now decomissioned, these engines see use still aboard the frigates, albeit long gone from the days of combat involvement. Nakamura Dynamics did make a push to reuse any from scrapped frigates, putting them to use in their Phage class of autonomous stations.
+
+SYSTEM_MAIN_ENGINE_ZURBIN_SPECS|Thrust: 6,900 kN \nExhaust velocity: 66 km/s \nPropellant consumption: 104.5 kg/s \nPower consumption: 20 MW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 10,000 kg \nManufacturer: Nakamura Dynamics
+
+
+
+SYSTEM_MAIN_ENGINE_PMS|ND PMS engine
+
+SYSTEM_MAIN_ENGINE_PMS_DESC|The PMS is the predecessor to the NTTR thruster. Nakamura Dynamics's first large NTR type thruster, it held up with a high performance, even today, however holds the worst propellant economy of any thruster on the market. Many captains opt to use other torches due to the sheer inefficiency and relatively high cost, however they do come at a sheer reliability curve unmatched by any other thruster on the market, capable of operating at an acceleration well in exceeding 300 m/s/s.
+
+SYSTEM_MAIN_ENGINE_PMS_SPECS|Thrust: 3,000 kN \nExhaust velocity: 3 km/s \nPropellant consumption: 1000 kg/s \nPower consumption: 20 MW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 0.5 kg \nManufacturer: Nakamura Dynamics

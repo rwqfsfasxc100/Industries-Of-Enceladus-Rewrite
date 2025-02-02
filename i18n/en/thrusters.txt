@@ -1,0 +1,21 @@
+SYSTEM_THRUSTER_PIN150|RMS Pin-C50 thruster
+
+SYSTEM_THRUSTER_PIN150_DESC|The Rasamama Material Solutions Pin-C50 is a unique solid-state thruster system that utilises pulsed induction to accelerate and vector hydrogen plasma without the need for any mechanical components, massively minimising the damage-related issues associated with conventional thrusters. \n\nWhile incredibly hard-wearing, the installation of heavy plasma conduits and supporting power infrastructure, as well as the thrusters' direct embedment into the vessel hull, requires specialist assistance that may be difficult to afford.
+
+SYSTEM_THRUSTER_PIN150_SPECS|Thrust: 150 kN \nExhaust velocity: 90 km/s \nPropellant consumption: 1.6 kg/s \nPower consumption: 90 MW \nOperation mode: Virtual variable thrust \nVectored thrust angle: 36 deg \nPropellant: Hydrogen plasma \nMass: 185 kg (per thruster) \nManufacturer: Rasamama Material Solutions
+
+
+
+SYSTEM_THRUSTER_BLAST|ERS-BlasTR 7200 thruster
+
+SYSTEM_THRUSTER_BLAST_DESC|Electro Ride Systems' BlasTR is a complete deviation from their previous NAGHET, utilising a helical magnetoplasmadynamic accelerator to achieve spectacular thrust at equally improbable exhaust velocities. Primarily marketed towards racing ships, it has also seen interest from operators of heavy vessels, whose high thrust requirements have long been overserved by thrusters with poor propellant economies.
+
+SYSTEM_THRUSTER_BLAST_SPECS|Thrust: 450 kN \nExhaust velocity: 22 km/s \nPropellant consumption: 20.5 kg/s \nPower consumption: 72 MW \nThermal consumption: 5.0 GW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 145 kg (per thruster) \nManufacturer: Electro Ride Systems
+
+
+
+SYSTEM_THRUSTER_PNTRM|ND-PNTRm thruster
+
+SYSTEM_THRUSTER_PNTRM_DESC|The remarkable success of the PNTR indicated to Nakamura Dynamics that the age-old problem of delicate gimbal mounts could be entirely sidestepped with solid-state thrust vectoring technology, and the company quickly set to work on effectively downscaling the system for use as RCS thrusters.  \n\nDespite its poor exhaust velocity as a pure NTR, the Pulsed Nuclear Thermal Rocket (Micro) makes up for it with the largest effective thrust vectoring range on the market today. Its low operational cost and fast warmup makes it ideal for heavier ships with limited RCS thruster layouts.
+
+SYSTEM_THRUSTER_PNTRM_SPECS|Thrust: 450 kN \nExhaust velocity: 8 km/s \nPropellant consumption: 56.3 kg/s \nPower consumption: 40 MW \nThermal consumption: 1.8 GW \nOperation mode: Pulsed thrust \nVectored thrust angle: 72 deg \nPropellant: Oxygen-Hydrogen plasma \nMass: 25 kg (per thruster) \nManufacturer: Nakamura Dynamics

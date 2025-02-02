@@ -1,0 +1,51 @@
+SLOT_CREW_MOD|Habitat Kits
+HUD_CREW_QUALITY|habitat quality
+
+
+SYSTEM_CREW_ADD_BUNK|Conlido bunkX1
+
+SYSTEM_CREW_ADD_BUNK_DESC|The simplest and cheapest crew accommodation expansion kit money can buy, this set includes one surface-mounted mixed-g bed that implements a memory foam base with basic textile covers and fire-safe insulation. They're surprisingly comfortable, but the lack of private quarters is sure to be a point of contention between crewmembers. \n\nStation control reminds captains that regulations require at least 3x the allotted provisions for each crewmember over the planned length of excursions into the rings. Failure to do so may result in fines from appropriate regulatory bodies.
+
+SYSTEM_CREW_ADD_BUNK_SPECS|Crew capacity: +1 \nCrew morale erosion per day: +30% (very poor) \nManufacturer: Conlido RVM
+
+
+SYSTEM_CREW_ADD_BUNK2|Conlido bunkX2
+
+SYSTEM_CREW_ADD_BUNK2_DESC|One more, same box! The bunkX2 is essentially two bunkX1 units shipped in a far more efficient configuration, but that's about where its benefits end. \n\nMost potential hires would turn away if they saw one of these in a vessel, let alone two. Regardless, they are certainly an option for increasing crew capacity, and are often used in bulk by small interlunar transit vessels where volume and convenience is more important than passenger comforts.
+
+SYSTEM_CREW_ADD_BUNK2_SPECS|Crew capacity: +2 \nCrew morale erosion per day: +40% (very poor) \nManufacturer: Conlido RVM
+
+
+SYSTEM_CREW_ADD_CAPSULE|Runasimi Habitation Capsules
+
+SYSTEM_CREW_ADD_CAPSULE_DESC|Runasimi's option in the crew habitation market has been something of a staple in the low-end hospitality market, consisting of a light, pressure-tight block with two internal capsule beds, a basic en-suite toilet, and stowage for crew belongings and provisions. An internal oxygen reservoir and pressure suit racks ensure that hull breaches won't immediately disable crew during off-hours. \n\nPressure suits sold separately. Check reservoir pressure regularly and perform containment check as outlined in manual at least once per week. Runasimi Inc. is not liable for damages incurred by poorly-maintained equipment.
+
+SYSTEM_CREW_ADD_CAPSULE_SPECS|Crew capacity: +2 \nCrew morale erosion per day: +25% (poor) \nManufacturer: Runasimi Inc.
+
+
+SYSTEM_CREW_ADD_MANUAL|Increases or decreases total crew capacity. \n Increases or decreases crew morale erosion per day of operation. \nUnhappy crew may cause worse operational outcomes. \nDoes not require power or reactor heat.
+
+
+
+SYSTEM_CREW_MOD_HOME|Conlido mgHome Kit
+
+SYSTEM_CREW_MOD_HOME_DESC|Conlido's mgHome is a simple modular kit marketed towards family vessels and light transports. It includes a shared multi-channel entertainment system for crew quarters, a refrigerator and improved food preparation unit for the galley, and several adjustments to the washroom such as a multi-mode showerhead and memory foam toilet cushioning. \n\nNote: showerhead mister is not appropriate for zero-g usage. For best results, do not wash surfaces or cushions with bleach-based cleaners.
+
+SYSTEM_CREW_MOD_HOME_SPECS|Crew morale erosion per day: -10% (good) \nManufacturer: Conlido RVM
+
+
+SYSTEM_CREW_MOD_KMX|Antonoff KMX Upfit
+
+SYSTEM_CREW_MOD_KMX_DESC|The Antonoff KMX is advertised as a long-term flight comfort system intended for interlunar cargo crews and passenger vessels. \n\nWith a full water reclamation system, a range of improvements to the galley, lavatory, and recreaction deck (and retrofit to introduce them on most common hull patterns, should any not exist), and breathable upholstery for most standard seating, crews generally find flying with the KMX upfit preferable to flying without.
+
+SYSTEM_CREW_MOD_KMX_SPECS|Crew morale erosion per day: -20% (good) \nManufacturer: Antonoff
+
+
+SYSTEM_CREW_MOD_OCM|OCM-36 Upfit
+
+SYSTEM_CREW_MOD_OCM_DESC|Obonto Microengineering's OCM-36 completely overhauls ship habitats with modern luxuries that will feel very familiar to those who have visited or lived on their stations. This purchase covers the full cost of Obonto (or otherwise licensed) renovators' labour, which includes the use of a Nakamura Dynamics Class 2 AI system to optimise for varying internal geometries. \n\nIf the divided crew quarters with adjustable bedding, independent entertainment systems and en-suite bathrooms aren't enough, there's always the full Yamato-brand kitchenette in the galley, the diverse and expansive recreation area, and the modern, sleek cockpit overhaul - not to mention the pleasing wall cladding and low-profile handholds for zero-g navigation.
+
+SYSTEM_CREW_MOD_OCM_SPECS|Crew morale erosion per day: -50% (excellent) \nManufacturer: Obonto Microengineering
+
+
+SYSTEM_CREW_MOD_MANUAL|Increases or decreases crew morale erosion per day of operation. \nUnhappy crew may cause worse operational outcomes. \nDoes not require power or reactor heat.

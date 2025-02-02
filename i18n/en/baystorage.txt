@@ -1,0 +1,22 @@
+SYSTEM_CARGO_AUX_STORAGE_4K|Conlido Internal Storage Rack
+
+SYSTEM_CARGO_AUX_STORAGE_4K_DESC|The Conlido RVM Internal Storage Rack, tried and tested by asteroid belt miners throughout the early 22nd century, is a relatively simple concept with a complicated execution. This modular retrofit kit allows for existing units to be attached to the processed material lines of most large vessels available on the ringside market.
+
+SYSTEM_CARGO_AUX_STORAGE_4K_SPECS|Cargo capacity: 4,000 kg / mineral (24,000 kg total) \nMass: 3,000 kg \nManufacturer: Conlido RVM
+
+SYSTEM_CARGO_AUX_STORAGE_MANUAL|Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nTakes up some space in the cargo bay. \nDoes not require power or reactor heat.
+
+
+SYSTEM_CARGO_AUX_STORPROC_8K|THI Mineral Tank Module
+
+SYSTEM_CARGO_AUX_STORPROC_8K_DESC|Titan Heavy Industries' internal storage solution is as experimental as it is novel. By tapping reactor heat from the vessel's radiators, processed materials can be held in a liquid state indefinitely, increasing storage efficiency by up to 20%. \n\nSome miners have taken to using the unit as a rudimentary ore preprocessor, as the relatively thin insulation bleeds heat into the space between the tanks. THI does not endorse nor recommend usage in this manner.
+
+SYSTEM_CARGO_AUX_STORPROC_8K_SPECS|Cargo capacity: 8,000kg / mineral (48,000 kg total) \nIce melt rate: 5 kg/s \nPower draw: 250 KW / chunk (heating losses) \nRemass processing efficiency: 10% \nMass: 8,000 kg \nManufacturer: Titan Heavy Industries
+
+SYSTEM_CARGO_AUX_STORPROC_MANUAL|Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nReduces ice mass of chunks within a small area. \nTakes up some space in the cargo bay.
+
+
+
+SYSTEM_CARGO_AUX_STORAGE_12K|MPI Roving Silo
+
+SYSTEM_CARGO_AUX_STORAGE_12K_DESC|The MPI Roving Silo is by far the largest 

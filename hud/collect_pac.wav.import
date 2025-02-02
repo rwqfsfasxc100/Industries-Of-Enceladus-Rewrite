@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://IndustriesOfEnceladusRewrite/hud/collect_pac.wav-524d9eef868a197de7426424fab787dd.sample"
+path="res://IndustriesOfEnceladusRevamp/.import/collect_pac.wav-9a64a4358a15f886a339e23e4cc67203.sample"
 
 [deps]
 
-source_file="res://IndustriesOfEnceladusRewrite/hud/collect_pac.wav"
-dest_files=[ "res://IndustriesOfEnceladusRewrite/hud/collect_pac.wav-524d9eef868a197de7426424fab787dd.sample" ]
+source_file="res://IndustriesOfEnceladusRevamp/hud/collect_pac.wav"
+dest_files=[ "res://IndustriesOfEnceladusRevamp/.import/collect_pac.wav-9a64a4358a15f886a339e23e4cc67203.sample" ]
 
 [params]
 

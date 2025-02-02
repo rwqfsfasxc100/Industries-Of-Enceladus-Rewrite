@@ -1,0 +1,120 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://ships/Cothon-Lnd.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ships/lifepod-cd.png" type="Texture" id=2]
+[ext_resource path="res://ships/lifepod-n.png" type="Texture" id=3]
+[ext_resource path="res://shader/ao-spec-difuse-fast.shader" type="Shader" id=4]
+[ext_resource path="res://ships/lifepod-m.png" type="Texture" id=5]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=6]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=7]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=8]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=9]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=10]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 4 )
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 0.5, 1 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 1.0
+shader_param/shine = 0.3
+shader_param/mipmapBias = 1.0
+shader_param/map = ExtResource( 5 )
+
+[node name="Cothon-Lux" instance=ExtResource( 1 )]
+mass = 77.25
+crewMoraleBonus = 0.2
+shipName = "SHIP_COTHON_LUX"
+crew = 6
+hullPrice = 250000
+processedCargoCapacity = 25000
+model = "COTHON"
+spriteHullPaths = PoolStringArray( "Hull", "SecondPod", "UnderHull" )
+
+[node name="Hull" parent="." index="1"]
+region_rect = Rect2( 0, 212, 3841, 83 )
+
+[node name="SecondPod" type="Sprite" parent="Hull" index="0"]
+material = SubResource( 1 )
+position = Vector2( -56.9231, -127.5 )
+scale = Vector2( 0.24, 0.24 )
+z_index = -1
+texture = ExtResource( 2 )
+normal_map = ExtResource( 3 )
+
+[node name="Front Bumper" parent="." index="3"]
+position = Vector2( 0, -259 )
+
+[node name="CargoHoldArea" parent="." index="7"]
+visible = true
+
+[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
+light_mask = 0
+
+[node name="engine-main" parent="." index="9"]
+visible = false
+notAThruster = true
+type = ""
+command = ""
+default = "SYSTEM_NONE"
+toggleCommand = ""
+
+[node name="thruster-bl" parent="." index="12"]
+position = Vector2( -139, -43 )
+rotation = 0.523599
+command = "rf"
+
+[node name="thruster-br" parent="." index="13"]
+position = Vector2( 139, -44 )
+rotation = -0.523599
+command = "lf"
+
+[node name="thruster-tr" parent="." index="14"]
+rotation = -2.61799
+
+[node name="thruster-tl" parent="." index="15"]
+position = Vector2( -139, -70 )
+rotation = 2.61799
+
+[node name="Light2D" parent="." index="16"]
+visible = true
+
+[node name="thruster-l" parent="." index="17" instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( -148, -58 )
+rotation = 1.5708
+z_index = 15
+command = ">r"
+
+[node name="thruster-r" parent="." index="18" instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( 148, -58 )
+rotation = -1.5708
+z_index = 15
+command = "<l"
+
+[node name="CrewModifiers" parent="." index="37" instance=ExtResource( 7 )]
+visible = false
+
+[node name="CargoAuxSlot" parent="." index="38" instance=ExtResource( 8 )]
+position = Vector2( -11, -159 )
+
+[node name="HoldModifiers" parent="." index="39" instance=ExtResource( 9 )]
+visible = false
+
+[node name="MineralProcessingUnit_Furnace" parent="." index="40" instance=ExtResource( 6 )]
+visible = false
+position = Vector2( 2, -28 )
+polygon = PoolVector2Array( -45, -72, -24, -48, -12, -40, -24, -32, -24, 44, -12, 64, 12, 64, 24, 44, 24, -32, 12, -40, 24, -48, 45, -72, 45, -3, 38, 38, 22, 72, -22, 72, -39, 38, -45, -4 )
+
+[node name="MineralProcessingUnit_Bulker" parent="." index="41" instance=ExtResource( 10 )]
+position = Vector2( 2, -20 )
+polygon = PoolVector2Array( 2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 45, -56, 45, -11, 38, 30, 22, 64, -22, 64, -39, 30, -45, -12, -45, -91, -30, -50, -24, -40, -14, -34 )
+
+[editable path="CargoBaffles"]
+[editable path="weapon-left"]
+[editable path="weapon-right"]
+[editable path="weapon-left-back"]
+[editable path="weapon-right-back"]
+[editable path="AI"]

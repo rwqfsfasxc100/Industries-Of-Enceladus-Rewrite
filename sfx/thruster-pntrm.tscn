@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://sfx/thruster-ma350ho.tscn" type="PackedScene" id=1]
+
+[node name="SYSTEM_THRUSTER_PNTRM" instance=ExtResource( 1 )]
+position = Vector2( 0, 4 )
+repairReplacementPrice = 2750
+repairFixPrice = 500
+thrust = 4500.0
+randomness = 0.25
+specificImpulse = 8
+powerDraw = 40000.0
+gimbal = 1.257
+gimbalVectoredThrust = true
+pulseEngine = true
+systemName = "SYSTEM_THRUSTER_PNTRM"
+mass = 25
+
+[node name="nozzle" parent="." index="3"]
+position = Vector2( 5.24521e-06, -45 )
+scale = Vector2( 2.43902, 1.94444 )

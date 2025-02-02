@@ -1,0 +1,51 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/custom/CargoEquipment.tscn" type="PackedScene" id=1]
+[ext_resource path="res://enceladus/SystemShipUpgradeUI.tscn" type="PackedScene" id=3]
+
+[node name="CargoEquipmentLimited" instance=ExtResource( 1 )]
+slot = "cargo.equipment"
+always = false
+invertNameLogic = false
+
+[node name="VBoxContainer" parent="." index="0"]
+margin_bottom = 639.0
+
+[node name="CheckButton" parent="VBoxContainer/HBoxContainer" index="0"]
+text = "SLOT_CARGOBAY"
+
+[node name="CargoBaffles" parent="VBoxContainer" index="2" instance=ExtResource( 3 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 118.0
+margin_right = 1214.0
+margin_bottom = 188.0
+slot = "cargo.equipment"
+system = "SYSTEM_CARGO_BAFFLES"
+manual = "SYSTEM_NONE_MANUAL"
+price = 5000
+testProtocol = "cargo"
+
+[node name="CargoMPUFSO" parent="VBoxContainer" index="3"]
+margin_top = 192.0
+margin_bottom = 262.0
+
+[node name="CargoMPU" parent="VBoxContainer" index="4"]
+margin_top = 266.0
+margin_bottom = 336.0
+
+[node name="CargoMPUFURN" parent="VBoxContainer" index="5"]
+margin_top = 340.0
+margin_bottom = 410.0
+
+[node name="CargoMPUSML" parent="VBoxContainer" index="6"]
+margin_top = 414.0
+margin_bottom = 484.0
+
+[node name="CargoMPUBULK" parent="VBoxContainer" index="7"]
+margin_top = 488.0
+margin_bottom = 558.0
+
+[node name="CargoMPUFAB" parent="VBoxContainer" index="8"]
+margin_top = 562.0
+margin_bottom = 632.0

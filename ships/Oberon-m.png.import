@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://IndustriesOfEnceladusRewrite/ships/Oberon-m.png-337d0b95650c682902b5cde8e4c4afe9.stex"
+path="res://IndustriesOfEnceladusRevamp/.import/Oberon-m.png-ac610d274b506c1fed7239e63b04e02f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://IndustriesOfEnceladusRewrite/ships/Oberon-m.png"
-dest_files=[ "res://IndustriesOfEnceladusRewrite/ships/Oberon-m.png-337d0b95650c682902b5cde8e4c4afe9.stex" ]
+source_file="res://IndustriesOfEnceladusRevamp/ships/Oberon-m.png"
+dest_files=[ "res://IndustriesOfEnceladusRevamp/.import/Oberon-m.png-ac610d274b506c1fed7239e63b04e02f.stex" ]
 
 [params]
 

@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/SalvageArmLight.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ships/tnrtl-engine_01.wav" type="AudioStream" id=2]
+
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 640.0
+height = 80.0
+
+[node name="SYSTEM_SALVAGE_ARM_LIGHT-R" instance=ExtResource( 1 )]
+bendRange = 270.0
+feedVelocity = Vector2( 72, -320 )
+
+[node name="DockArea" parent="." index="2"]
+position = Vector2( 0, -468 )
+rotation = 0.0
+
+[node name="CollisionShape2D" parent="DockArea" index="0"]
+position = Vector2( 0, -72 )
+shape = SubResource( 1 )
+
+[node name="DockSlot" parent="." index="3"]
+position = Vector2( 0, -612 )
+
+[node name="Actuation" parent="." index="8"]
+stream = ExtResource( 2 )
+pitch_scale = 8.0
+
+[editable path="Arm"]
+[editable path="Arm/A/B/Spotlight"]

@@ -1,0 +1,78 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://ships/modules/ClaimOwner.gd" type="Script" id=1]
+[ext_resource path="res://ships/modules/DockingArm.tscn" type="PackedScene" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 200, 300 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 1.0
+
+[node name="SYSTEM_EXOBIG_R" instance=ExtResource( 2 )]
+hardLock = true
+timeAccelerationOverride = 2
+resetAi = true
+maxDist = 120
+conDist = 300
+velLimit = 200
+claimDockedForFaction = true
+mineralTargetting = true
+onlyMinerals = true
+targetAsCargo = true
+processedCargoTransferSpeed = 500
+processedCargoTransferBuffer = 500
+remassTransferSpeed = 100
+remassTransferBuffer = 5000
+targetMassThrust = 25
+targetMassTorque = 20000
+fullThrust = 15000
+easeDistance = 2
+torque = 20000.0
+targetRotation = 3.14
+autopilotRelease = false
+lights = false
+systemName = "SYSTEM_EXOBIG_R"
+angularVelocityScale = 0.1
+
+[node name="Arm" parent="." index="0"]
+rotation = 1.5708
+z_index = -5
+armLength = 60
+flickerLights = false
+
+[node name="A" parent="Arm" index="0"]
+scale = Vector2( 0.2, 0.2 )
+z_index = 0
+
+[node name="Strobe" parent="Arm/A/B" index="1"]
+visible = false
+
+[node name="Sprite" parent="Arm/Target" index="0"]
+position = Vector2( 476, 339 )
+
+[node name="DockArea" parent="." index="1"]
+light_mask = 0
+position = Vector2( 0, 0 )
+collision_mask = 4096
+
+[node name="CollisionShape2D" parent="DockArea" index="0"]
+light_mask = 0
+position = Vector2( 180, 0 )
+shape = SubResource( 1 )
+
+[node name="DockSlot" parent="." index="2"]
+position = Vector2( 80, -56 )
+
+[node name="CollisionShape2D" parent="DockSlot" index="0"]
+position = Vector2( 0, 0 )
+shape = SubResource( 2 )
+
+[node name="ClaimOwner" type="Node2D" parent="." index="5"]
+script = ExtResource( 1 )
+
+[node name="StoragePodJumbo" parent="ClaimOwner" index="0" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/drone/StoragePodJumbo.tscn"]
+position = Vector2( 80, -66 )
+
+[editable path="Arm"]
+[editable path="Arm/A/B/Spotlight"]

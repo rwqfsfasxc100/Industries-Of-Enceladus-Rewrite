@@ -1,0 +1,92 @@
+[gd_scene load_steps=11 format=2]
+
+[ext_resource path="res://sfx/PitchAdjustedAudio.gd" type="Script" id=1]
+[ext_resource path="res://lights/spotlight.png" type="Texture" id=2]
+[ext_resource path="res://ships/modules/PDT.gd" type="Script" id=3]
+[ext_resource path="res://weapons/pdt.wav" type="AudioStream" id=4]
+[ext_resource path="res://weapons/weapons-n.png" type="Texture" id=5]
+[ext_resource path="res://weapons/weapons-c.png" type="Texture" id=6]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/weapons/MWTightBeam.tscn" type="PackedScene" id=7]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 4000.0
+
+[sub_resource type="CapsuleShape2D" id=2]
+radius = 600.0
+height = 1200.0
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 1600.0
+
+[node name="SYSTEM_MWTIGHTBEAM_PDT" type="Node2D"]
+z_index = 1
+script = ExtResource( 3 )
+advancedTargeting = true
+repairFixPrice = 8000
+repairFixTime = 12
+repairReplacementPrice = 265000
+safetyDistance = 16.0
+weaponPath = NodePath("Pivot/SYSTEM_MWTIGHTBEAM")
+systemName = "SYSTEM_MWTIGHTBEAM_PDT"
+rotationPerSecond = 0.65
+accurancy = 0.02
+aimOffset = 270.0
+iffRequired = 0.75
+baseMass = 2600
+
+[node name="DefendArea" type="Area2D" parent="."]
+light_mask = 0
+collision_layer = 0
+collision_mask = 5634
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DefendArea"]
+light_mask = 0
+position = Vector2( 0, -3950 )
+shape = SubResource( 1 )
+
+[node name="RockArea" type="Area2D" parent="."]
+light_mask = 0
+collision_layer = 0
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RockArea"]
+light_mask = 0
+position = Vector2( 0, -550 )
+rotation = 1.5708
+shape = SubResource( 2 )
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="RockArea"]
+position = Vector2( 0, -1800 )
+shape = SubResource( 3 )
+
+[node name="Pivot" type="Node2D" parent="."]
+position = Vector2( 0, 150 )
+
+[node name="Light" type="Light2D" parent="Pivot"]
+position = Vector2( 0, -160 )
+texture = ExtResource( 2 )
+texture_scale = 12.0
+color = Color( 0.976471, 0.745098, 0.25098, 1 )
+energy = 12.5
+
+[node name="SYSTEM_MWTIGHTBEAM" parent="Pivot" instance=ExtResource( 7 )]
+position = Vector2( 0, -164 )
+
+[node name="base" type="Sprite" parent="Pivot"]
+modulate = Color( 0.866667, 0.866667, 0.866667, 1 )
+texture = ExtResource( 6 )
+normal_map = ExtResource( 5 )
+region_enabled = true
+region_rect = Rect2( 1509, 309, 54, 51 )
+
+[node name="Actuation" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+volume_db = -14.0
+bus = "ShipBowels"
+script = ExtResource( 1 )
+
+[connection signal="body_entered" from="DefendArea" to="." method="_on_DefendArea_body_entered"]
+[connection signal="body_exited" from="DefendArea" to="." method="_on_DefendArea_body_exited"]
+[connection signal="body_entered" from="RockArea" to="." method="_on_DefendArea_body_entered"]
+[connection signal="body_exited" from="RockArea" to="." method="_on_DefendArea_body_exited"]

@@ -1,0 +1,15 @@
+SLOT_CARGO_MPU|Cargo Bay MPU
+
+
+SYSTEM_CARGO_MPU_FURN|Rusatom-Antonoff MPU Mk2
+
+SYSTEM_CARGO_MPU_FURN_DESC|This Mark-2 variant of the Rusatom-Antonoff Mineral Processing Unit, affectionately termed "the Gulper" by ringside miners, combines the best qualities of its predecessor with an inlet cuff and additional heating elements, increasing overall efficiency and reclamation yields at the cost of decreased operational reach.
+
+SYSTEM_CARGO_MPU_FURN_SPECS|Processing capacity: 25 kg/s \nPower draw: 25 MW / chunk \nMineral processing efficiency: 60% \nRemass processing efficiency: 40% \nMass: 3,000 kg \nManufacturer: Rusatom-Antonoff
+
+
+SYSTEM_CARGO_MPU_BULK|THI Bulker MPU
+
+SYSTEM_CARGO_MPU_BULK_DESC|The Titan Heavy Industries "Bulker" MPU was introduced to the market in the mid-2200s, but has only seen distribution among Enceladian miners following trade agreements in the 2260s. Its simple design is a classic example of THI's "less is more" approach to engineering. \n\nHeavy and awkward to load compared to other MPUs, what makes the Bulker unique is its inbuilt storage capacity. The internals of a THI-CC drone have been incorporated beneath the processing area; while the bins have been reduced in size, they can still dramatically increase the mineral capacity of any vessel they're installed in.
+
+SYSTEM_CARGO_MPU_BULK_SPECS|Cargo capacity: 10,000 kg / mineral (60,000 kg total) \nProcessing capacity: 40 kg/s \nPower draw: 100 MW / chunk \nMineral processing efficiency: 70% \nRemass processing efficiency: 20% \nMass: 8,000 kg \nManufacturer: Titan Heavy Industries

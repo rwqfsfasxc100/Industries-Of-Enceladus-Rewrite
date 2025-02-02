@@ -1,0 +1,17 @@
+SYSTEM_CARGO_AUX_FAB|SSE Voyager Fabricator
+
+SYSTEM_CARGO_AUX_FAB_DESC|A custom-made and completely unlicensed monstrosity from Sin Space Engineering that became popular among ringside miners in the 2260s. The fabricator unit of a Voyager RSLS MPU has been torn out and placed further up in the cargo bay, along with a small mineral storage volume to replace its specialised feed hoppers. \n\nDue to the replacement of its power bus with a lower-grade distributor, moderate power efficiency losses are to be expected over the standard unit. \n\nDisclaimer: Nakamura Dynamics does not provide a warranty for this unit, and does not recognise it as part of its range of products, express or implied. Use of modified equipment may incur damages and present unexpected hazards.
+
+SYSTEM_CARGO_AUX_FAB_SPECS|Print power draw: 120 MW \nPrinting capability: drones, ammunition \nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nMass: 5,000 kg \nManufacturer: Sin Space Engineering / Nakamura-Obonto
+
+
+
+SYSTEM_CARGO_AUX_BIGFAB|RMS-PAL Fabricator
+
+SYSTEM_CARGO_AUX_BIGFAB_DESC|Rasamama Material Solutions' Portable Assembly Line is a true marvel of automation, incorporating two Class-1 AIs (ARTEMIS and APOLLO) that oversee eachother's work in an adversarial relationship. Its remarkable production speed is entirely owed to the two's constant situational optimisations, and its large output hoppers can be connected to vessels' internal magazines as auxiliary consumable storage units. \n\nDisclaimer: AI specifications comply with Class-1 categorisation as per the Los Angeles Convention of 2184. Neither ARTEMIS nor APOLLO are intended to be capable of sapience or communication. Report any aberrant behaviour to ATLAS immediately.
+
+SYSTEM_CARGO_AUX_BIGFAB_SPECS|Print power draw: 210 MW \nPrinting capability: drones, ammunition \nAmmunition capacity: 5,000 kg \nDrone capacity: 5,000 kg \nMass: 10,500 kg \nManufacturer: Rasamama Material Solutions
+
+
+
+SYSTEM_CARGO_AUX_FAB_MANUAL|Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.

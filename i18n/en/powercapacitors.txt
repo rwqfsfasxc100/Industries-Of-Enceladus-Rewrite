@@ -1,0 +1,20 @@
+SYSTEM_CAPACITOR_100|Light Ultracapacitor
+
+SYSTEM_CAPACITOR_100_DESC|A graphene fractal ultracapacitor cylinder for storing excess generated power, for availability during peak usage. Compact unit at a reasonable price.
+
+SYSTEM_CAPACITOR_100_SPECS|Capacity: 100 MJ \nPeak power: 10 GW \nMass: 400 kg  \nManufacturer: Obonto Micro Engineering
+
+
+
+SYSTEM_CAPACITOR_700|ND-iSMB
+
+SYSTEM_CAPACITOR_700_DESC|The Nakamura Dynamics Internal Superconducting Magnetic Battery is a alternative temporary energy storage solution that was proposed after the success of the NDAPS auxiliary power unit. Though heavily shielded to prevent remass plasma from disrupting the field, its direct interface to a vessel's electrical buses allows for maximal discharge and recharge rates with minimal losses.
+
+SYSTEM_CAPACITOR_700_SPECS|Capacity: 700 MJ \nPeak power: 10 GW \nMass: 1,800 kg \nManufacturer: Nakamura Dynamics
+
+
+SYSTEM_CAPACITOR_1400|ND-iSMB Dual Coupling
+
+SYSTEM_CAPACITOR_1400_DESC|Two smaller iSMB units, joined by a heavy-duty power balancer. By intentionally permitting interactions between the two magnetic fields, more energy can effectively be stored in smaller hardware.
+
+SYSTEM_CAPACITOR_1400_SPECS|Capacity: 1,400 MJ \nPeak power: 10 GW \nMass: 3,200 kg \nManufacturer: Nakamura Dynamics

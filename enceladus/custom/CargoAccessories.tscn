@@ -4,7 +4,7 @@
 [ext_resource path="res://enceladus/Upgrades/Preview.tscn" type="PackedScene" id=2]
 [ext_resource path="res://enceladus/SystemShipUpgradeUI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://menu/sfx/PlaySoundsOnTheseButtons.tscn" type="PackedScene" id=4]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/enceladus/UpgradeGroup.gd" type="Script" id=5]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/UpgradeGroup.gd" type="Script" id=5]
 [ext_resource path="res://menu/MenuTheme.tres" type="Theme" id=6]
 [ext_resource path="res://hud/TNTRL-theme.tres" type="Theme" id=7]
 [ext_resource path="res://enceladus/Flicker.tscn" type="PackedScene" id=8]
@@ -179,7 +179,8 @@ margin_right = 1214.0
 margin_bottom = 188.0
 slot = "cargo.aux"
 system = "SYSTEM_CARGO_BAFFLES"
-manual = "SYSTEM_NONE_MANUAL"
+manual = "SYSTEM_CARGO_BAFFLES_MANUAL"
+price = 5000
 testProtocol = "cargo"
 
 [node name="PreProc0x30" type="MarginContainer" parent="VBoxContainer"]

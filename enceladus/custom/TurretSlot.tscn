@@ -1,0 +1,213 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/custom/WeaponSlot.tscn" type="PackedScene" id=1]
+
+[node name="TurretSlot" instance=ExtResource( 1 )]
+slot = "weaponSlot.turret.type"
+
+[node name="VBoxContainer" parent="." index="0"]
+margin_bottom = 645.0
+
+[node name="CheckButton" parent="VBoxContainer/HBoxContainer" index="0"]
+text = "SLOT_TURRET"
+
+[node name="HUNK-L" parent="VBoxContainer" index="2"]
+visible = false
+
+[node name="HUNK-R" parent="VBoxContainer" index="3"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="EMD14" parent="VBoxContainer" index="4"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="RAILTOR" parent="VBoxContainer" index="5"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="EMD17RF" parent="VBoxContainer" index="6"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="ACTEMD14" parent="VBoxContainer" index="7"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="CLAIM-L" parent="VBoxContainer" index="8"]
+visible = false
+margin_top = 203.0
+margin_bottom = 273.0
+
+[node name="CLAIM-R" parent="VBoxContainer" index="9"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="SALVAGE" parent="VBoxContainer" index="10"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="MWG" parent="VBoxContainer" index="11"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="EXOSTORAGE-L" parent="VBoxContainer" index="12"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="EXOSTORAGE-R" parent="VBoxContainer" index="13"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="SALVAGE_LIGHT" parent="VBoxContainer" index="14"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="EINAT" parent="VBoxContainer" index="17"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="EXMONO-L" parent="VBoxContainer" index="18"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="EXMONO-R" parent="VBoxContainer" index="19"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="SCOOP-R" parent="VBoxContainer" index="20"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="SCOOP-L" parent="VBoxContainer" index="21"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="SALVAGE_HEAVY" parent="VBoxContainer" index="22"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="EXODYN-L" parent="VBoxContainer" index="25"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="EXODYN-R" parent="VBoxContainer" index="26"]
+visible = false
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="PDT" parent="VBoxContainer" index="27"]
+margin_top = 129.0
+margin_bottom = 199.0
+
+[node name="PDT-L" parent="VBoxContainer" index="28"]
+visible = false
+margin_top = 203.0
+margin_bottom = 273.0
+
+[node name="PDT-R" parent="VBoxContainer" index="29"]
+visible = false
+margin_top = 203.0
+margin_bottom = 273.0
+
+[node name="CL150" parent="VBoxContainer" index="30"]
+visible = false
+margin_top = 351.0
+margin_bottom = 421.0
+
+[node name="IROH" parent="VBoxContainer" index="31"]
+visible = false
+margin_top = 351.0
+margin_bottom = 421.0
+
+[node name="MWTIGHTBEAM" parent="VBoxContainer" index="32"]
+visible = false
+margin_top = 203.0
+margin_bottom = 273.0
+
+[node name="PDMWG" parent="VBoxContainer" index="33"]
+margin_top = 203.0
+margin_bottom = 273.0
+
+[node name="PDMWG-L" parent="VBoxContainer" index="34"]
+visible = false
+margin_top = 499.0
+margin_bottom = 569.0
+
+[node name="PDMWG-R" parent="VBoxContainer" index="35"]
+visible = false
+margin_top = 499.0
+margin_bottom = 569.0
+
+[node name="ACL200P" parent="VBoxContainer" index="36"]
+visible = false
+margin_top = 573.0
+margin_bottom = 643.0
+
+[node name="DND_TS" parent="VBoxContainer" index="37"]
+margin_top = 277.0
+margin_bottom = 347.0
+
+[node name="MWTIGHTBEAM_PDT" parent="VBoxContainer" index="38"]
+margin_top = 351.0
+margin_bottom = 421.0
+
+[node name="MWTIGHTBEAM_PDT-L" parent="VBoxContainer" index="39"]
+visible = false
+margin_top = 425.0
+margin_bottom = 495.0
+
+[node name="MWTIGHTBEAM_PDT-R" parent="VBoxContainer" index="40"]
+visible = false
+margin_top = 425.0
+margin_bottom = 495.0
+
+[node name="SYNCHRO-L" parent="VBoxContainer" index="41"]
+visible = false
+margin_top = 647.0
+margin_bottom = 717.0
+
+[node name="SYNCHRO-R" parent="VBoxContainer" index="42"]
+visible = false
+margin_top = 647.0
+margin_bottom = 717.0
+
+[node name="NANI" parent="VBoxContainer" index="43"]
+visible = false
+margin_top = 869.0
+margin_bottom = 939.0
+
+[node name="CL600P" parent="VBoxContainer" index="44"]
+visible = false
+margin_top = 869.0
+margin_bottom = 939.0
+
+[node name="DND_HAUL" parent="VBoxContainer" index="45"]
+margin_top = 425.0
+margin_bottom = 495.0
+
+[node name="DND_FIX" parent="VBoxContainer" index="46"]
+margin_top = 499.0
+margin_bottom = 569.0
+
+[node name="DND_HARVHAUL" parent="VBoxContainer" index="47"]
+margin_top = 573.0
+margin_bottom = 643.0

@@ -1,0 +1,21 @@
+SYSTEM_TURBINE_20|Thermocouple Array
+
+SYSTEM_TURBINE_20_DESC|This simple thermocouple array utilises the thermal gradient between the vessel's reactor and propellant to generate electricity. A negligible amount of reaction mass is vented overboard in the process.
+
+SYSTEM_TURBINE_20_SPECS|Power (nominal): 20 MW \nPropellant consumption: 20 g/s \nMass: 100 kg \nManufacturer: Rusatom-Antonoff
+
+
+
+SYSTEM_TURBINE_160|Laminar Turbine
+
+SYSTEM_TURBINE_160_DESC|This power generation unit for fission craft utilises the might of German engineering (and an AI-optimised design) to minimise flow turbulence and heat losses in a four-stage regenerative turbine assembly.
+
+SYSTEM_TURBINE_160_SPECS|Power (nominal): 160 MW \nPropellant consumption: 160 g/s \nMass: 600 kg \nManufacturer: Boltzmann Waermerkraftmaschinen
+
+
+
+SYSTEM_TURBINE_320|Dual Laminar Turbine
+
+SYSTEM_TURBINE_320_DESC|This power generation unit for fission craft utilises the might of German engineering (and an AI-optimised design) to minimise flow turbulence and heat losses in two four-stage regenerative turbine assemblies. Remass and pressure is evenly split between the two with a novel solid-state valve body.
+
+SYSTEM_TURBINE_320_SPECS|Power (nominal): 320 MW \nPropellant consumption: 320 g/s \nMass: 1,200 kg \nManufacturer: Boltzmann Waermerkraftmaschinen

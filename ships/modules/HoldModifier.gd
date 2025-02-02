@@ -1,4 +1,4 @@
-extends "res://IndustriesOfEnceladusRewrite/ships/modules/BaseModifier.gd"
+extends "res://IndustriesOfEnceladusRevamp/ships/modules/BaseModifier.gd"
 
 export (String, "divided", "amorphic", "both") var holdType
 export (int) var addedSpace = 0

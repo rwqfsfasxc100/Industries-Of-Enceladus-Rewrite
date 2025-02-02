@@ -1,0 +1,71 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://weapons/drone-plant.tscn" type="PackedScene" id=1]
+[ext_resource path="res://weapons/weapons-c.png" type="Texture" id=2]
+[ext_resource path="res://weapons/weapons-n.png" type="Texture" id=3]
+[ext_resource path="res://weapons/weapons.material" type="Material" id=4]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/weapons/drone-plant.patch.gd" type="Script" id=5]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 8000.0
+
+[node name="SYSTEM_DND_HARVHAUL" instance=ExtResource( 1 )]
+light_mask = 524293
+region_rect = Rect2( 744, 260, 48, 114 )
+script = ExtResource( 5 )
+__meta__ = {
+"_editor_description_": ""
+}
+repairReplacementPrice = 525000
+repairReplacementTime = 4
+repairFixPrice = 75000
+powerDraw = 100000.0
+lauchPowerDraw = 20000.0
+power = 25000.0
+systemName = "SYSTEM_DND_HARVHAUL"
+dronesPerSecond = 100
+laserRange = 8000
+maxDroneDistance = 8000
+minEnergyToTarget = 1
+droneTugPower = 20.0
+haulAccurancy = 0.96
+launchVector = Vector2( 0, -50 )
+builtInDroneStorage = 2500
+droneFunction = "haul"
+mass = 8000
+
+[node name="DroneLaunchManager" parent="." index="2"]
+drones = 128
+
+[node name="Shape" parent="DronePickupArea" index="0"]
+shape = SubResource( 1 )
+
+[node name="HarvBlock" type="Sprite" parent="." index="5"]
+material = ExtResource( 4 )
+position = Vector2( 0, 160 )
+scale = Vector2( 0.9, 0.9 )
+z_index = 1
+texture = ExtResource( 2 )
+normal_map = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 600, 292, 80, 90 )
+
+[node name="HarvVeins" type="Sprite" parent="HarvBlock" index="0"]
+use_parent_material = true
+position = Vector2( -0.5, -51.1786 )
+scale = Vector2( -0.96, 1 )
+z_index = -1
+texture = ExtResource( 2 )
+normal_map = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 616, 177, 48, 20 )
+
+[node name="HarvExhaust" type="Sprite" parent="HarvBlock" index="1"]
+use_parent_material = true
+position = Vector2( 0, -120 )
+scale = Vector2( 0.944445, 1.11111 )
+z_index = -2
+texture = ExtResource( 2 )
+normal_map = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( 495, 174, 34, 13 )

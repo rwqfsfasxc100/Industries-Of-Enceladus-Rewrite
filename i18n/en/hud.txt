@@ -1,0 +1,13 @@
+HUD_HOLD_CAP|total hold capacity
+
+HUD_HOLD_FILL|hold fill level
+
+
+
+SYSTEM_AUTOPILOT_337MOD|MA-337-MAX Autopilot
+
+SYSTEM_AUTOPILOT_337MOD_DESC|The MAX is a software upgrade to the MA-337 autopilot that integrates fly-by-wire input vectors into its neural network.
+
+SYSTEM_AUTOPILOT_337MOD_SPECS|Developer: Mitsudaya-Starbus \nCapabilities: Antipodal Reaction Limiter \nAdaptive Angular Thrust \nFly-By-Wire \nLIDAR overlay
+
+SYSTEM_AUTOPILOT_337MOD_MANUAL|Displays LIDAR circle around your ship. \nARL: Cancels out opposite thrusters, conserving fuel. \nFBW: Routes all manual thruster input through the autopilot. \nCan use gimballed thrusters and engines. \nAAT: Observes cargo mass shifts and thruster damage to compute minimum thrust required for maneuver. \nReboot onboard computer to clear adaptation data.

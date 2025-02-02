@@ -7,11 +7,11 @@
 [ext_resource path="res://ships/k225-cd.png" type="Texture" id=5]
 [ext_resource path="res://ships/k225-mask.png" type="Texture" id=6]
 [ext_resource path="res://ships/k225-m.png" type="Texture" id=7]
-[ext_resource path="res://ships/ATK225.tscn" type="PackedScene" id=8]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/AT225.tscn" type="PackedScene" id=8]
 [ext_resource path="res://ships/k37-mk3-n.png" type="Texture" id=9]
 [ext_resource path="res://ships/RA-TRTL.material" type="Material" id=10]
 [ext_resource path="res://ships/k37-mk3-cd.png" type="Texture" id=11]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/Excavator.gd" type="Script" id=12]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/Excavator.gd" type="Script" id=12]
 [ext_resource path="res://ships/modules/Excavator.tscn" type="PackedScene" id=13]
 
 [sub_resource type="ShaderMaterial" id=1]
@@ -203,10 +203,8 @@ polygon = PoolVector2Array( -75.3846, -120.769, -75.3846, -145.385, -60, -145.38
 position = Vector2( 0, 82 )
 
 [node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
+visible = true
 polygon = PoolVector2Array( 16.1538, -223.846, 16.1538, -91.5385, 26.9231, -79.2308, 26.9231, 73.0769, 17.6923, 105.385, -19.2308, 105.385, -28.4615, 73.0769, -28.4615, -79.2308, -17.6923, -91.5385, -17.6923, -223.846 )
-
-[node name="CargoHoldAreaHull" parent="." index="10"]
-visible = false
 
 [node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
 position = Vector2( 0, -132 )
@@ -277,46 +275,37 @@ position = Vector2( 348, -178.33 )
 [node name="CargoBaffles" parent="." index="27"]
 position = Vector2( 0, -82 )
 
-[node name="MineralProcessingUnit" parent="." index="29"]
+[node name="MineralProcessingUnit_Bulker" parent="." index="30"]
+position = Vector2( 0, -6 )
+
+[node name="MineralProcessingUnit_Furnace" parent="." index="31"]
+position = Vector2( 0, -28 )
+
+[node name="MineralProcessingUnit" parent="." index="32"]
 position = Vector2( 0, 18 )
 
-[node name="MineralProcessingUnit_FSO" parent="." index="30"]
+[node name="MineralProcessingUnit_FSO" parent="." index="33"]
 position = Vector2( 0, 20 )
 
-[node name="MineralProcessingUnit_SMELT" parent="." index="31"]
+[node name="MineralProcessingUnit_SMELT" parent="." index="34"]
 position = Vector2( 0, 16 )
 
-[node name="MineralProcessingUnit_FAB" parent="." index="32"]
+[node name="MineralProcessingUnit_FAB" parent="." index="35"]
 position = Vector2( -1, 16 )
 
-[node name="AuxSlot" parent="." index="33"]
+[node name="CargoAuxSlot" parent="." index="36"]
+position = Vector2( 0, -162 )
+
+[node name="AuxSlot" parent="." index="37"]
 position = Vector2( 0, -132 )
 
-[node name="weapon-left" parent="." index="34"]
+[node name="weapon-left" parent="." index="38"]
 position = Vector2( -92, -378 )
+armVelocityMultiplier = Vector2( 2, 1 )
 
-[node name="weapon-right" parent="." index="35"]
+[node name="weapon-right" parent="." index="39"]
 position = Vector2( 92, -378 )
-
-[node name="weapon-left-back" parent="." index="36"]
-position = Vector2( -122, -391 )
-toggleCommand = "ship_slot_5"
-
-[node name="weapon-right-back" parent="." index="37"]
-position = Vector2( 122, -392 )
-toggleCommand = "ship_slot_6"
-
-[node name="weapon-left-back2" parent="." index="38"]
-slot = ""
-command = ""
-remove = true
-toggleCommand = ""
-
-[node name="weapon-right-back2" parent="." index="39"]
-slot = ""
-command = ""
-remove = true
-toggleCommand = ""
+armVelocityMultiplier = Vector2( 2, 1 )
 
 [node name="DronePort" parent="." index="40" instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( -92, -199 )
@@ -330,16 +319,36 @@ z_index = 26
 slot = "rightDrone"
 toggleCommand = "ship_slot_4"
 
-[node name="weapon-left-back3" parent="." index="42"]
+[node name="weapon-left-back" parent="." index="42"]
+position = Vector2( -122, -391 )
+toggleCommand = "ship_slot_5"
+
+[node name="weapon-right-back" parent="." index="43"]
+position = Vector2( 122, -392 )
+toggleCommand = "ship_slot_6"
+
+[node name="weapon-left-back2" parent="." index="44"]
+slot = ""
+command = ""
+remove = true
+toggleCommand = ""
+
+[node name="weapon-right-back2" parent="." index="45"]
+slot = ""
+command = ""
+remove = true
+toggleCommand = ""
+
+[node name="weapon-left-back3" parent="." index="46"]
 position = Vector2( -122, -175 )
 
-[node name="weapon-right-back3" parent="." index="43"]
+[node name="weapon-right-back3" parent="." index="47"]
 position = Vector2( 122, -175 )
 
-[node name="AI" parent="." index="45"]
+[node name="AI" parent="." index="49"]
 position = Vector2( 0, 134 )
 
-[node name="reactor" parent="." index="47"]
+[node name="reactor" parent="." index="51"]
 position = Vector2( 0, 117 )
 offset = Vector2( 0, -192 )
 region_rect = Rect2( 0, 298, 7560, 500 )

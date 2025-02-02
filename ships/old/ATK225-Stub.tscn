@@ -1,0 +1,361 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
+[ext_resource path="res://sfx/spark_noise.png" type="Texture" id=2]
+[ext_resource path="res://ships/Hull.gd" type="Script" id=3]
+[ext_resource path="res://ships/k225-n.png" type="Texture" id=4]
+[ext_resource path="res://ships/k225-cd.png" type="Texture" id=5]
+[ext_resource path="res://ships/k225-mask.png" type="Texture" id=6]
+[ext_resource path="res://ships/k225-m.png" type="Texture" id=7]
+[ext_resource path="res://ships/ATK225.tscn" type="PackedScene" id=8]
+[ext_resource path="res://ships/k37-mk3-n.png" type="Texture" id=9]
+[ext_resource path="res://ships/RA-TRTL.material" type="Material" id=10]
+[ext_resource path="res://ships/k37-mk3-cd.png" type="Texture" id=11]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/Excavator.gd" type="Script" id=12]
+[ext_resource path="res://ships/modules/Excavator.tscn" type="PackedScene" id=13]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 1 )
+shader_param/maskScale = Vector2( 12, 1 )
+shader_param/frames = Vector2( 1, 1 )
+shader_param/paintJobFactor = 0.0
+shader_param/paintJobBrightAdjust = 16.0
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 6, 1 )
+shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 0.25
+shader_param/shine = 1.0
+shader_param/mask = ExtResource( 6 )
+shader_param/charges = ExtResource( 2 )
+shader_param/map = ExtResource( 7 )
+
+[node name="ATK225-Stub" instance=ExtResource( 8 )]
+mass = 90.0
+continuous_cd = 2
+crewMoraleBonus = 0.1
+upgradeLimits = {
+"ammo.capacity": Vector2( 0, 20000 ),
+"capacitor.capacity": Vector2( 0, 1500 ),
+"drones.capacity": Vector2( 0, 20000 ),
+"fuel.capacity": Vector2( 0, 200000 ),
+"reactor.power": Vector2( 0, 50 ),
+"turbine.power": Vector2( 0, 500 )
+}
+shipName = "SHIP_AT225_STUB"
+hullPrice = 1674500
+processedCargoCapacity = 5000
+colliderPaths = [ "Collider", "LeftForeCollider", "RightForeCollider" ]
+cargoHoldArea = Rect2( -40, -400, 80, 480 )
+
+[node name="Noises" parent="." index="0"]
+position = Vector2( 0, -132 )
+
+[node name="Hull" parent="." index="1"]
+position = Vector2( 0, 50 )
+region_enabled = true
+region_rect = Rect2( -3, 472, 7628, 409 )
+
+[node name="ForeHull" type="Sprite" parent="Hull" index="0"]
+light_mask = 5
+material = SubResource( 1 )
+position = Vector2( 0, -329 )
+texture = ExtResource( 5 )
+normal_map = ExtResource( 4 )
+hframes = 12
+region_enabled = true
+region_rect = Rect2( -3, 0, 7628, 267 )
+script = ExtResource( 3 )
+hullCustomPaintFile = "user://custom-atk-225.png"
+
+[node name="Front Bumper" parent="." index="2"]
+visible = false
+position = Vector2( 0, -336 )
+script = ExtResource( 12 )
+removeThis = true
+
+[node name="Claw Holder" parent="Front Bumper" index="0"]
+region_rect = Rect2( 0, 0, 0, 0 )
+
+[node name="Claw Right" parent="Front Bumper/Claw Holder" index="0"]
+position = Vector2( 21, -15 )
+
+[node name="Claw Right" parent="Front Bumper/Claw Holder/Claw Right" index="0"]
+position = Vector2( -2, -20 )
+scale = Vector2( 1.25, 1.25 )
+
+[node name="CollisionPolygon2D" parent="Front Bumper/Claw Holder/Claw Right" index="1"]
+polygon = PoolVector2Array( -4, -64, 2, -64, 12, -38, 12, -25.6702, 16, -21.67, 24, -29.67, 16, -44, 12, -56, 8, -64, 0, -72, -4, -72 )
+
+[node name="Claw Left" parent="Front Bumper/Claw Holder" index="1"]
+position = Vector2( -21, -15 )
+
+[node name="Claw Left" parent="Front Bumper/Claw Holder/Claw Left" index="0"]
+position = Vector2( 1, -21 )
+scale = Vector2( 1.25, 1.25 )
+region_rect = Rect2( 80, 16, 33, 64 )
+
+[node name="CollisionPolygon2D" parent="Front Bumper/Claw Holder/Claw Left" index="1"]
+scale = Vector2( -1, 1 )
+polygon = PoolVector2Array( -4, -64, 2, -64, 12, -38, 12, -25.6702, 16, -21.67, 24, -29.67, 16, -44, 12, -56, 8, -64, 0, -72, -4, -72 )
+
+[node name="Tube" type="Sprite" parent="Front Bumper" index="1"]
+material = ExtResource( 10 )
+use_parent_material = true
+position = Vector2( 0, 2 )
+scale = Vector2( 1.2, 1.2 )
+z_index = 9
+texture = ExtResource( 11 )
+normal_map = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 99, 93, 58, 53 )
+
+[node name="Claw Right Spring 1" parent="Front Bumper" index="2"]
+length = 72.0
+rest_length = 64.0
+
+[node name="Claw Left Spring 1" parent="Front Bumper" index="3"]
+length = 72.0
+rest_length = 64.0
+
+[node name="Big Excavator" parent="." index="3" instance=ExtResource( 13 )]
+position = Vector2( 0, -348 )
+closeForce = 30000
+
+[node name="Claw Holder" parent="Big Excavator" index="0"]
+region_rect = Rect2( 0, 0, 0, 0 )
+
+[node name="Claw Right" parent="Big Excavator/Claw Holder" index="0"]
+position = Vector2( 23, -20 )
+
+[node name="Claw Right" parent="Big Excavator/Claw Holder/Claw Right" index="0"]
+position = Vector2( -5, -16 )
+scale = Vector2( 1.5, 1.5 )
+z_index = 0
+region_rect = Rect2( 143, 16, 26, 64 )
+
+[node name="CollisionPolygon2D" parent="Big Excavator/Claw Holder/Claw Right" index="1"]
+position = Vector2( -23, 39 )
+scale = Vector2( 1.5, 1.5 )
+z_index = 1
+
+[node name="Claw Left" parent="Big Excavator/Claw Holder" index="1"]
+position = Vector2( -23, -20 )
+
+[node name="Claw Left" parent="Big Excavator/Claw Holder/Claw Left" index="0"]
+position = Vector2( 5, -17 )
+scale = Vector2( 1.5, 1.5 )
+z_index = 0
+region_rect = Rect2( 87, 16, 26, 64 )
+
+[node name="CollisionPolygon2D" parent="Big Excavator/Claw Holder/Claw Left" index="1"]
+position = Vector2( 23, 39 )
+scale = Vector2( 1.5, 1.5 )
+z_index = 1
+
+[node name="Claw Right Spring 1" parent="Big Excavator" index="1"]
+position = Vector2( 96, -64 )
+length = 96.0
+rest_length = 72.0
+
+[node name="Claw Left Spring 1" parent="Big Excavator" index="2"]
+position = Vector2( -96, -64 )
+length = 96.0
+rest_length = 72.0
+
+[node name="Claw Holder2" type="Sprite" parent="Big Excavator" index="6"]
+material = ExtResource( 10 )
+use_parent_material = true
+position = Vector2( 0, 17 )
+scale = Vector2( 1.5, 1.5 )
+z_index = 9
+texture = ExtResource( 11 )
+normal_map = ExtResource( 9 )
+region_enabled = true
+region_rect = Rect2( 48, 96, 160, 48 )
+
+[node name="CabinLight" parent="." index="4"]
+position = Vector2( 0, -287 )
+
+[node name="Collider" parent="." index="6"]
+position = Vector2( 0, -165 )
+polygon = PoolVector2Array( -24.6154, 140.769, -15.3846, 171.538, 15.3846, 171.538, 24.6154, 140.769, 24.6154, 43.8462, 112.308, 43.8462, 116.923, 51.5385, 38.4615, 51.5385, 38.4615, 140.769, 61.5385, 186.154, 75.3846, 186.154, 75.3846, 216.154, 121.538, 270, 121.538, 285.385, 115.385, 297.692, 104.615, 302.308, 43.8462, 302.308, -43.0769, 302.308, -104.615, 302.308, -115.385, 297.692, -121.538, 285.385, -121.538, 270, -75.3846, 216.154, -75.3846, 186.154, -61.5385, 186.154, -38.4615, 140.769, -38.4615, 51.5385, -116.923, 51.5385, -112.308, 43.8462, -24.6154, 43.8462 )
+
+[node name="LeftForeCollider" type="CollisionPolygon2D" parent="." index="7"]
+light_mask = 0
+position = Vector2( 0, 49 )
+scale = Vector2( 1.3, 1.3 )
+z_index = 50
+polygon = PoolVector2Array( -75.3846, -120.769, -75.3846, -145.385, -60, -145.385, -38.4615, -191.538, -38.4615, -279.231, -116.923, -279.231, -112.308, -286.923, -38.4615, -286.923, -38.4615, -298.462, -34.6154, -302.308, -23.0769, -302.308, -23.0769, -316.154, -18.4615, -320.769, -13.8462, -319.231, -13.8462, -296.154, -13.8462, -279.231, -13.8462, -185.385, -24.6154, -173.077, -24.6154, -113.077, -38.4615, -113.077 )
+
+[node name="RightForeCollider" type="CollisionPolygon2D" parent="." index="8"]
+light_mask = 0
+position = Vector2( 0, 49 )
+scale = Vector2( -1.3, 1.3 )
+z_index = 50
+polygon = PoolVector2Array( -75.3846, -120.769, -75.3846, -145.385, -60, -145.385, -38.4615, -191.538, -38.4615, -279.231, -116.923, -279.231, -112.308, -286.923, -38.4615, -286.923, -38.4615, -298.462, -34.6154, -302.308, -23.0769, -302.308, -23.0769, -316.154, -18.4615, -320.769, -13.8462, -319.231, -13.8462, -296.154, -13.8462, -279.231, -13.8462, -185.385, -24.6154, -173.077, -24.6154, -113.077, -38.4615, -113.077 )
+
+[node name="CargoHoldArea" parent="." index="9"]
+position = Vector2( 0, 82 )
+
+[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
+polygon = PoolVector2Array( 16.1538, -223.846, 16.1538, -91.5385, 26.9231, -79.2308, 26.9231, 73.0769, 17.6923, 105.385, -19.2308, 105.385, -28.4615, 73.0769, -28.4615, -79.2308, -17.6923, -91.5385, -17.6923, -223.846 )
+
+[node name="CargoHoldAreaHull" parent="." index="10"]
+visible = false
+
+[node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
+position = Vector2( 0, -132 )
+polygon = PoolVector2Array( 35.3846, -156.923, 35.3846, -44.6154, 73.8462, 23.0769, 35.3846, 23.0769, 35.3846, 118.462, 67.6923, 189.231, 116.923, 253.846, 98.4615, 273.846, -98.4615, 273.846, -116.923, 253.846, -67.6923, 189.231, -35.3846, 118.462, -35.3846, 23.0769, -73.8462, 23.0769, -35.3846, -44.6154, -35.3846, -156.923, -20, -158.462, -10.7692, -212.308, 10.7692, -212.308, 20, -158.462 )
+
+[node name="thruster-lt" parent="." index="11"]
+position = Vector2( -135, -330 )
+rotation = -2.87979
+command = "bl"
+
+[node name="thruster-rt" parent="." index="12"]
+position = Vector2( 137, -330 )
+rotation = 2.87979
+command = "br"
+
+[node name="thruster-tl" parent="." index="13"]
+position = Vector2( -104, -126 )
+
+[node name="thruster-tr" parent="." index="14"]
+position = Vector2( 104, -126 )
+
+[node name="thruster-ml" parent="." index="15"]
+visible = false
+notAThruster = true
+type = ""
+command = ""
+default = "NULL"
+
+[node name="thruster-mr" parent="." index="16"]
+visible = false
+notAThruster = true
+type = ""
+command = ""
+default = "NULL"
+
+[node name="thruster-bl" parent="." index="17"]
+position = Vector2( -104, 90 )
+
+[node name="thruster-br" parent="." index="18"]
+position = Vector2( 104, 90 )
+
+[node name="thruster-lb" parent="." index="19"]
+position = Vector2( -130, 238 )
+rotation = -0.261799
+command = "fr"
+
+[node name="thruster-rb" parent="." index="20"]
+position = Vector2( 130, 238 )
+rotation = 0.261799
+command = "fl"
+
+[node name="engine-main-1" parent="." index="21"]
+position = Vector2( 0, 270 )
+
+[node name="engine-main-2" parent="." index="22"]
+position = Vector2( 65, 260 )
+
+[node name="engine-main-3" parent="." index="23"]
+position = Vector2( -65, 260 )
+
+[node name="Light2D" parent="." index="24"]
+position = Vector2( -284, -614 )
+
+[node name="Light2D2" parent="." index="25"]
+visible = false
+position = Vector2( 348, -178.33 )
+
+[node name="CargoBaffles" parent="." index="27"]
+position = Vector2( 0, -82 )
+
+[node name="MineralProcessingUnit" parent="." index="29"]
+position = Vector2( 0, 18 )
+
+[node name="MineralProcessingUnit_FSO" parent="." index="30"]
+position = Vector2( 0, 20 )
+
+[node name="MineralProcessingUnit_SMELT" parent="." index="31"]
+position = Vector2( 0, 16 )
+
+[node name="MineralProcessingUnit_FAB" parent="." index="32"]
+position = Vector2( -1, 16 )
+
+[node name="AuxSlot" parent="." index="33"]
+position = Vector2( 0, -132 )
+
+[node name="weapon-left" parent="." index="34"]
+position = Vector2( -92, -378 )
+
+[node name="weapon-right" parent="." index="35"]
+position = Vector2( 92, -378 )
+
+[node name="weapon-left-back" parent="." index="36"]
+position = Vector2( -122, -391 )
+toggleCommand = "ship_slot_5"
+
+[node name="weapon-right-back" parent="." index="37"]
+position = Vector2( 122, -392 )
+toggleCommand = "ship_slot_6"
+
+[node name="weapon-left-back2" parent="." index="38"]
+slot = ""
+command = ""
+remove = true
+toggleCommand = ""
+
+[node name="weapon-right-back2" parent="." index="39"]
+slot = ""
+command = ""
+remove = true
+toggleCommand = ""
+
+[node name="DronePort" parent="." index="40" instance_placeholder="res://weapons/WeaponSlot.tscn"]
+position = Vector2( -92, -199 )
+z_index = 26
+slot = "leftDrone"
+toggleCommand = "ship_slot_3"
+
+[node name="DroneStbd" parent="." index="41" instance_placeholder="res://weapons/WeaponSlot.tscn"]
+position = Vector2( 92, -199 )
+z_index = 26
+slot = "rightDrone"
+toggleCommand = "ship_slot_4"
+
+[node name="weapon-left-back3" parent="." index="42"]
+position = Vector2( -122, -175 )
+
+[node name="weapon-right-back3" parent="." index="43"]
+position = Vector2( 122, -175 )
+
+[node name="AI" parent="." index="45"]
+position = Vector2( 0, 134 )
+
+[node name="reactor" parent="." index="47"]
+position = Vector2( 0, 117 )
+offset = Vector2( 0, -192 )
+region_rect = Rect2( 0, 298, 7560, 500 )
+
+[editable path="Front Bumper"]
+[editable path="Big Excavator"]
+[editable path="MineralProcessingUnit"]
+[editable path="MineralProcessingUnit_FSO"]
+[editable path="MineralProcessingUnit_SMELT"]
+[editable path="MineralProcessingUnit_FAB"]
+[editable path="weapon-left"]
+[editable path="weapon-right"]
+[editable path="weapon-left-back"]
+[editable path="weapon-right-back"]
+[editable path="weapon-left-back2"]
+[editable path="weapon-right-back2"]
+[editable path="weapon-left-back3"]
+[editable path="weapon-right-back3"]
+[editable path="AI"]

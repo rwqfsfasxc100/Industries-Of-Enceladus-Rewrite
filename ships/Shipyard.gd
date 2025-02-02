@@ -2,9 +2,9 @@ extends "res://ships/Shipyard.gd"
 
 
 func _ready():
-	ships["Tsukuyuomi-Decom"] = load("res://IndustriesOfEnceladusRewrite/ships/Tsukuyuomi-Decom.tscn")
-	configAlias["Tsukuyuomi-Decom"] = "TSUKUYUOMI"
-	defaultShipConfig["Tsukuyuomi-Decom"] = {"config": {
+	ships["Tsukuyomi-Decom"] = load("res://IndustriesOfEnceladusRevamp/ships/Tsukuyomi-Decom.tscn")
+	configAlias["Tsukuyomi-Decom"] = "TSUKUYOMI"
+	defaultShipConfig["Tsukuyomi-Decom"] = {"config": {
 		"ammo":{
 			"capacity":50000.0, 
 			"initial":5000.0, 
@@ -52,7 +52,7 @@ func _ready():
 			"rightBay3":{"type":"SYSTEM_NONE"},
 		},
 	}}
-	ships["AT225-STUB"] = load("res://IndustriesOfEnceladusRewrite/ships/ATK225-Stub.tscn")
+	ships["AT225-STUB"] = load("res://IndustriesOfEnceladusRevamp/ships/ATK225-Stub.tscn")
 	configAlias["AT225-STUB"] = "AT225"
 	defaultShipConfig["AT225-STUB"] = {"config": {
 		"ammo": {
@@ -86,8 +86,8 @@ func _ready():
 			"rightBay3":{"type":"SYSTEM_EXSTORAGE-R"}, 
 		}, 
 	}}
-	ships["ATLAS-WASP"] = load("res://IndustriesOfEnceladusRewrite/ships/ATLAS-Wasp.tscn")
-	configAlias["ATLAS-WASP"] = "ATLAS-WASP"
+	ships["ATLAS-WASP"] = load("res://IndustriesOfEnceladusRevamp/ships/ATLAS-Wasp.tscn")
+	configAlias["ATLAS-WASP"] = "WASP"
 	defaultShipConfig["ATLAS-WASP"] = {"config": {
 		"ammo":{
 			"capacity": 1000.0,
@@ -113,7 +113,7 @@ func _ready():
 			"middleRight":{"type":"SYSTEM_RAILTOR"}
 		}, 
 	}}
-	ships["COTHON-LUX"] = load("res://IndustriesOfEnceladusRewrite/ships/Cothon-Lux.tscn")
+	ships["COTHON-LUX"] = load("res://IndustriesOfEnceladusRevamp/ships/Cothon-Lux.tscn")
 	configAlias["COTHON-LUX"] = "COTHON"
 	defaultShipConfig["COTHON-LUX"] = {"config": {
 		"ammo":{
@@ -142,7 +142,7 @@ func _ready():
 			"left":{"type":"SYSTEM_NONE"}
 		}, 
 	}}
-	ships["PIGEON-PROSPECTOR"] = load("res://IndustriesOfEnceladusRewrite/ships/Eagle-Prospector-Pigeon.tscn")
+	ships["PIGEON-PROSPECTOR"] = load("res://IndustriesOfEnceladusRevamp/ships/Eagle-Prospector-Pigeon.tscn")
 	configAlias["PIGEON-PROSPECTOR"] = "PROSPECTOR"
 	defaultShipConfig["PIGEON-PROSPECTOR"] = {"config":{
 		"ammo":{
@@ -166,8 +166,8 @@ func _ready():
 			"left":{"type":"SYSTEM_EMD14"}
 		}, 
 	}}
-	ships["MAD-CERF-CIV"] = load("res://IndustriesOfEnceladusRewrite/ships/MAD-CERF-Civ.tscn")
-	configAlias["MAD-CERF-CIV"] = "MAD-CERF"
+	ships["MAD-CERF-CIV"] = load("res://IndustriesOfEnceladusRevamp/ships/MAD-CERF-Civ.tscn")
+	configAlias["MAD-CERF-CIV"] = "MADCERF"
 	defaultShipConfig["MAD-CERF-CIV"] = {"config": {
 		"ammo":{
 			"capacity":1000.0, 
@@ -193,7 +193,7 @@ func _ready():
 			"main":{"type":"SYSTEM_SALVAGE_ARM"}
 		}, 
 	}}
-	ships["OBERON"] = load("res://IndustriesOfEnceladusRewrite/ships/Oberon.tscn")
+	ships["OBERON"] = load("res://IndustriesOfEnceladusRevamp/ships/Oberon.tscn")
 	configAlias["OBERON"] = "OBERON"
 	defaultShipConfig["OBERON"] = {"config": {
 		"ammo":{
@@ -232,7 +232,7 @@ func _ready():
 			"mainRight":{"type":"SYSTEM_SALVAGE_ARM"},
 		},
 	}}
-	ships["OCP209-DD"] = load("res://IndustriesOfEnceladusRewrite/ships/OCP-209-DD.tscn")
+	ships["OCP209-DD"] = load("res://IndustriesOfEnceladusRevamp/ships/OCP-209-DD.tscn")
 	configAlias["OCP209-DD"] = "OCP209"
 	defaultShipConfig["OCP209-DD"] = {"config": {
 		"ammo":{
@@ -278,7 +278,7 @@ func _ready():
 			"rightBayRev1":{"type":"SYSTEM_NONE"},
 		},
 	}}
-	ships["OCP209-SNAP"] = load("res://IndustriesOfEnceladusRewrite/ships/OCP-209-Snap.tscn")
+	ships["OCP209-SNAP"] = load("res://IndustriesOfEnceladusRevamp/ships/OCP-209-Snap.tscn")
 	configAlias["OCP209-SNAP"] = "OCP209"
 	defaultShipConfig["OCP209-SNAP"] = {"config": {
 		"ammo":{
@@ -323,7 +323,7 @@ func _ready():
 			"rightBayRev1":{"type":"SYSTEM_NONE"},
 		},
 	}}
-	ships["TRTL-OCP"] = load("res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-OCP.tscn")
+	ships["TRTL-OCP"] = load("res://IndustriesOfEnceladusRevamp/ships/RA-TRTL-OCP.tscn")
 	configAlias["TRTL-OCP"] = "TRTL"
 	defaultShipConfig["TRTL-OCP"] = {"config": {
 		"ammo":{
@@ -353,7 +353,7 @@ func _ready():
 			"rightBack": {"type":"SYSTEM_NONE"},
 		}, 
 	}}
-	ships["TRTL-RAM"] = load("res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-Ram.tscn")
+	ships["TRTL-RAM"] = load("res://IndustriesOfEnceladusRevamp/ships/RA-TRTL-Ram.tscn")
 	configAlias["TRTL-RAM"] = "TRTL"
 	defaultShipConfig["TRTL-RAM"] = {"config": {
 		"ammo":{

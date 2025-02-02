@@ -1,0 +1,113 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://hud/trtl/ShipParams.tscn" type="PackedScene" id=1]
+[ext_resource path="res://hud/SensorDisplay.gd" type="Script" id=2]
+
+[node name="ShipParams" instance=ExtResource( 1 )]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="holdFillLabel" type="Label" parent="." index="24"]
+modulate = Color( 0.5, 3, 0.5, 1 )
+margin_top = 108.0
+margin_right = 148.0
+margin_bottom = 122.0
+text = "HUD_HOLD_FILL"
+uppercase = true
+
+[node name="holdFillReadout" type="Label" parent="." index="25"]
+margin_left = 152.0
+margin_top = 108.0
+margin_right = 192.0
+margin_bottom = 122.0
+text = "   0.00"
+script = ExtResource( 2 )
+sensor = "hold.fill"
+format = "%7.1f"
+minWarn = 0.0
+minErr = 0.0
+maxWarn = 80.0
+maxErr = 100.0
+conversion = 100.0
+sensorTemporalResolution = 1.0
+
+[node name="holdFillUnit" type="Label" parent="." index="26"]
+modulate = Color( 0.5, 3, 0.5, 1 )
+margin_left = 196.0
+margin_top = 108.0
+margin_right = 221.0
+margin_bottom = 122.0
+text = "%"
+
+[node name="shipMassLabel" parent="." index="27"]
+margin_top = 126.0
+margin_bottom = 140.0
+
+[node name="shipMassReadout" parent="." index="28"]
+margin_top = 126.0
+margin_bottom = 140.0
+
+[node name="shipMassUnit" parent="." index="29"]
+margin_top = 126.0
+margin_bottom = 140.0
+
+[node name="powerDrawLabel" parent="." index="30"]
+margin_top = 144.0
+margin_bottom = 158.0
+
+[node name="powerDrawReadout" parent="." index="31"]
+margin_top = 144.0
+margin_bottom = 158.0
+
+[node name="powerDrawUnit" parent="." index="32"]
+margin_top = 144.0
+margin_bottom = 158.0
+
+[node name="powerSupplyLabel" parent="." index="33"]
+margin_top = 162.0
+margin_bottom = 176.0
+
+[node name="powerSupplyReadout" parent="." index="34"]
+margin_top = 162.0
+margin_bottom = 176.0
+
+[node name="powerSupplyUnit" parent="." index="35"]
+margin_top = 162.0
+margin_bottom = 176.0
+
+[node name="powerBalanceLabel" parent="." index="36"]
+margin_top = 180.0
+margin_bottom = 194.0
+
+[node name="powerBalanceReadout" parent="." index="37"]
+margin_top = 180.0
+margin_bottom = 194.0
+
+[node name="powerBalanceUnit" parent="." index="38"]
+margin_top = 180.0
+margin_bottom = 194.0
+
+[node name="capacitorLabel" parent="." index="39"]
+margin_top = 198.0
+margin_bottom = 212.0
+
+[node name="capacitorReadout" parent="." index="40"]
+margin_top = 198.0
+margin_bottom = 212.0
+
+[node name="capacitorUnit" parent="." index="41"]
+margin_top = 198.0
+margin_bottom = 212.0
+
+[node name="reactorTempLabel" parent="." index="42"]
+margin_top = 216.0
+margin_bottom = 230.0
+
+[node name="reactorTempReadout" parent="." index="43"]
+margin_top = 216.0
+margin_bottom = 230.0
+
+[node name="reactorTempUnit" parent="." index="44"]
+margin_top = 216.0
+margin_bottom = 230.0

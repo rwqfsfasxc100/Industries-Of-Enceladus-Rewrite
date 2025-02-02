@@ -1,0 +1,43 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://ships/Eagle-Prospector-Fat.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifier.tscn" type="PackedScene" id=2]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=3]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=4]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=5]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=6]
+
+[node name="Eagle" instance=ExtResource( 1 )]
+
+[node name="CargoHoldArea" parent="." index="7"]
+visible = true
+
+[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
+light_mask = 0
+
+[node name="CargoAuxSlot" parent="." index="38" instance=ExtResource( 5 )]
+position = Vector2( -13, -232 )
+
+[node name="CrewModifier" parent="." index="39" instance=ExtResource( 2 )]
+
+[node name="HoldModifiers" parent="." index="40" instance=ExtResource( 3 )]
+
+[node name="MineralProcessingUnit_Bulker" parent="." index="41" instance=ExtResource( 6 )]
+visible = false
+position = Vector2( 0, -29 )
+polygon = PoolVector2Array( 2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 45, -120, 45, -16, 45, 56, 20, 56, -20, 56, -45, 56, -45, 1, -45, -18, -45, -82, -24, -40, -14, -34 )
+
+[node name="MineralProcessingUnit_Furnace" parent="." index="42" instance=ExtResource( 4 )]
+position = Vector2( 0, -44 )
+polygon = PoolVector2Array( -45, -107, -24, -48, -12, -40, -24, -32, -24, 44, -12, 64, 12, 64, 24, 44, 24, -32, 12, -40, 24, -48, 45, -111, 45, -24, 45, 71, 16, 72, -16, 72, -45, 71, -45, -25 )
+
+[editable path="Front Bumper"]
+[editable path="engine-main-1"]
+[editable path="engine-main-2"]
+[editable path="WeaponLeft"]
+[editable path="WeaponRight"]
+[editable path="MineralProcessingUnit"]
+[editable path="MineralProcessingUnit_FSO"]
+[editable path="MineralProcessingUnit_SMELT"]
+[editable path="MineralProcessingUnit_FAB"]
+[editable path="AI"]

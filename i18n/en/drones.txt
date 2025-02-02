@@ -1,0 +1,41 @@
+SYSTEM_DND_HARVTUG|OT Hard-Stop Tug Drones
+
+SYSTEM_DND_HARVTUG_DESC|The Obonto-Titan Hard-Stop nanodrone delivery system is a modification of THI's Harvester-class system, configured to bring high-albedo objects to a gentle stop relative to the rings. Originally manufactured for the OCP-209 as a proprietary equipment loss method, it has since seen distribution on the aftermarket following commerce agreements in the 2260s.
+
+SYSTEM_DND_HARVTUG_SPECS|Power draw: 120 MW \nEffective range: 800 m (line of sight) \nDrone launch capability: 100 dps \nDrone wet mass: 0.1 kg \nThrust: 1 kN (per drone) \nMass: 8,000 kg \nManufacturer: Obonto Micro Engineering / Titan Heavy Industries
+
+
+SYSTEM_DND_HARVHAUL|THI Harvester-class Haul Drones
+
+SYSTEM_DND_HARVHAUL_DESC|This monstrous piece of hardware is an industrial assembly line masquerading as a disposable nanodrone assembler. Its enormous infrared laser array and fabrication unit have be connected to individual low-stress buses, but when it has enough power, it's a thing to behold. The unit's behaviour guides drones to intercept any high-albedo objects and tows them towards your ship.
+
+SYSTEM_DND_HARVHAUL_SPECS|Power draw: 120 MW \nEffective range: 800 m (line of sight) \nDrone launch capability: 100 dps \nDrone wet mass: 0.1 kg \nThrust: 1 kN (per drone) \nMass: 8,000 kg \nManufacturer: Titan Heavy Industries
+
+
+
+SYSTEM_EXODYN|THI Dyna-Cargo Container
+
+SYSTEM_EXODYN_DESC|An experimental dynamic variant of the THI Cargo Container, released to the public in the mid-2200s. Requires on-site mineral processing units to utilise. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \n\nDyna-Cargo is a trademark of Titan Heavy Industries. All rights reserved. Station control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability.
+
+
+SYSTEM_EXODYN_SPECS|Cargo capacity: 72,000 kg (combined) \nPower usage (nominal): 20 MW \nCradle mass: 500 kg \nManufacturer: Titan Heavy Industries
+
+
+SYSTEM_EXOBIG|THI Jumbo Cargo Container
+
+SYSTEM_EXOBIG_DESC|The 'Jumbo' is a variant of the THI Cargo Container that
+
+
+SYSTEM_EXSTORAGE_ALT|THI Cargo Container (Alternate)
+
+SYSTEM_EXSTORAGE_ALT_DESC|The Titan Heavy Industries Cargo Containers are fully autonomous storage pods that can relay processed minerals from a mining site. When the cradle is powered down, the pod will return to the designated station. These require on-site mineral processing units to utilize. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \n\nStation control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability. \n\nThis alternate version for the Prospector series is placed at the midships for enhanced manoeuvring.
+
+
+SYSTEM_EXMONO_ALT|THI Monocargo Container (Alternate)
+
+SYSTEM_EXMONO_ALT_DESC|A single-ore variant of the standard THI Cargo Container for specialized mining runs that focus on the collection of only one mineral type. These require on-site mineral processing units to utilize. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \n\nStation control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability. \n\nThis alternate version for the Prospector series is placed at the midships for enhanced manoeuvring.
+
+
+SYSTEM_EXODYN_ALT|THI Dyna-Cargo Container (Alternate)
+
+SYSTEM_EXODYN_ALT_DESC|An experimental dynamic variant of the THI Cargo Container, released to the public in the mid-2200s. Requires on-site mineral processing units to utilise. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \n\nDyna-Cargo is a trademark of Titan Heavy Industries. All rights reserved. Station control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability. \n\nThis alternate version for the Prospector series is placed at the midships for enhanced manoeuvring.

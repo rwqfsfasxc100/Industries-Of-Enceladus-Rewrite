@@ -1,0 +1,99 @@
+SHIP_TSUKUYOMI_IOT|Tsukuyomi-Class Frigate (Decommissioned)
+
+SHIP_TSUKUYOMI_IOT_DESC|The Tsukuyomi class of light frigates were designed in 2190 for military operations throughout the solar system. They were the first of their type and laid the groundwork for modern tactical frigates, with their quintuplet reactors serving as immense sources of power for their powerful thrusters. Following phase-out of nuclear saltwater rockets in military service, many were scrapped or sold off to private military contractors and corporations. \n\nCourtesy of the Sin Space Engineering shipyards, this unit has been fully demilitarised and refurbished for operations within the rings. Its saltwater reactors have been replaced with three modular containment vessels for modern NTR system retrofitting, and its bow torpedo tubes have been departitioned to expand its hold and add four auxiliary equipment bays.
+
+SHIP_TSUKUYOMI_IOT_SPECS|Make: Sin Space Engineering / Nakamura Dynamics \nHigh-Stress Hardpoints: 1 \nTorpedo Tubes: 4 \nDocking Bays: 4 \nTurret Mounts: 2 \nCrew: 16 \nDry mass: 455,350 kg \nCargo bay: 1300 m^3 \nProcessed cargo storage: 37,500 kg
+
+SYSTEM_REACTOR_TSUYUKOMI_IOT-A|Tsukuyomi Reactor Core A
+SYSTEM_REACTOR_TSUYUKOMI_IOT-B|Tsukuyomi Reactor Core B
+SYSTEM_REACTOR_TSUYUKOMI_IOT-C|Tsukuyomi Reactor Core C
+
+
+
+SHIP_OCP209_DD|OCP-214-DD "Deep Dish"
+
+SHIP_OCP209_DD_DESC|The 214-DD is a version of the OCP-209 specially adapted for mining operations within the rings. The structure supporting its consumable bays has been hollowed and plated to extend the raw cargo volume, and additional power infrastructure permits the installation of standard cargo bay accessories. \n\nDespite the obvious benefits, the pocket makes handling ore awkward, and the reduced onboard mineral hold space means captains tend to be more reliant on auxiliary hardware than on most other vessels.
+
+SHIP_OCP209_DD_SPECS|Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 4 \nCrew: 8 \nDry mass: 190,500 kg\nCargo bay: 700 m^3\nProcessed cargo storage (combined): 36,000 kg
+
+
+SHIP_OCP209_SNAP|OCP-207-SNAP "Piranha"
+
+SHIP_OCP209_SNAP_DESC|The 207-SNAP is a version of the OCP-209 that implements an excavator design that was considered during the prototype phase of development. Its heavy dual doors are better suited for crushing ringroids than its counterpart - and, unfortunately, the fragile equipment that it is designed to handle. \n\nDue to its unique configuration, autopilot rotation assistance is not available on this unit.
+
+SHIP_OCP209_SNAP_SPECS|Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 4 \nCrew: 8 \nDry mass: 184,500 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg
+
+
+
+SHIP_COTHON_LUX|SSE Cothon-2200-XL
+
+SHIP_COTHON_LUX_DESC|This unofficial "modernised" variant of the Cothon-213 Triplet features an additional 'crew compartment' (lifepod), an additional pair of translatory thrusters, and a handful of "premium" features such as a combination lounge and mess, upholstered breathable-fabric seating, and a functioning washroom. The two pods are mated together at their base docking ports and secured to the frame with standard emergency quick-release hardware. The XL stands for "Extra Love". \n\nSin Space Engineering does not offer any warranty of any kind, express or implied.
+
+SHIP_COTHON_LUX_SPECS|Make: Sin Space Engineering / Conlido RVM \nLow-Stress Hardpoints: 4 \nCrew: 6 \nDry mass: 77,250 kg \nCargo bay: 260 m^3 \nProcessed cargo storage: 25,000 kg
+
+
+
+SHIP_MADCERF_CIV|MAD-CERF (Civilian Refit)
+
+SHIP_MADCERF_CIV_DESC|This civilian refit, made in collaboration with Obonto Microengineering, introduces a number of modifications for the diverse requirements of the ring environment. Its compact top-mounted habitat has been relocated to the bow and replaced with an expanded OCP-standard centrifuge, increasing its effective crew capacity to eight. Further, the docking bay has been enclosed with a mesh basket and the clamps removed to support mining operations, and its rear bulkhead bears an enormous sliding door for acceptance of large cargo. Much of the bow substructure has also been replaced by hold volumes, lending the vessel more processed mineral space than any other vessel on the civilian market.
+
+SHIP_MADCERF_CIV_SPECS|Make: Machines Astro-Dynamiques / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nTurret Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6 \nDry mass: 195,000 kg \nCargo bay: 1,300 m^3 \nProcessed cargo storage: 45,000 kg
+
+
+SHIP_MADCERF_DESC|The Machines Astro-Dynamiques Cernunnos Modèle II, otherwise known as the MAD-CERF, is the staple ship of salvage companies within the rings of Saturn. Its heavily-armoured bow, rated for asteroid belt travel, is an inelegant but effective solution to the many hazards posed by interplanetary excursions. Twin reactors on either side of the vessel each power their own pair of torches and maneuvering thrusters.
+
+
+
+SHIP_OBERON|UMC Oberon MLP-60
+
+SHIP_OBERON_DESC|The Oberon MLP-60 is a curious vessel manufactured by the United Machine Cults. Originally an autonomous vehicle launched by electromagnetic rail cannons for orbital racing events, it was outmoded by later fusion-propelled units, but enthusiasts quickly bought up the remaining stock and it eventually found its way to the rings. Six belt radiators, three at either side, cool its high-performance reactor and partially shield its exposed fuel tanks, though are hardly needed due to the vessel's comical number of translatory thrusters. \n\nMultiple modifications have been undertaken to make the vessel appropriate for operation within the rings: its magnetic contacts have been cleverly retrofitted into two high-stress hardpoints, interface infrastructure has been built into the small cargo bay in the bow to support mineral processing units (barely, and with meager onboard space allotted to support them), and a HAL-9001 luxury lifepod serves as a comfortable cockpit and crew compartment.
+
+SHIP_OBERON_SPECS|Make: United Machine Cults / Custom-built \nHigh-Stress Hardpoints: 2 \nDrone Bays: 1 \nCrew: 4 \nDry mass: 26,400 kg \nCargo bay: 50 m^3 \nProcessed cargo storage: 12,000 kg (combined)
+
+SYSTEM_REACTOR_OBERON|Oberon performance reactor
+
+
+
+SHIP_TRTL_RAM|KX37 TNTRL "RAM"
+
+SHIP_TRTL_RAM_DESC|The "Ringa Aftermarket Modification" variant of the KX37, typically just called the "Ram", is a modification pattern that gained popularity in 2269 after its distribution by a RingChan user going by the handle 'BLKCandy'. The pattern sacrifices a moderate amount of mineral hold capacity to introduce power and feed rails for two drone hardpoints on the tail-end of the vessel's spines, replaces the fixed thruster mounts with gimballing variants, and reworks the RCS blisters for enhanced mobility. \n\nIts most notable feature is its Prospector-type grinder, obtained direct from the salvage market. Its installation makes only minor concessions to crew comforts, being remarkably noisy during operation and slightly reducing the recreation area's floor space.
+
+SHIP_TRTL_RAM_SPECS|Make: Rusatom-Antonoff / Custom-built \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 4 \nDry mass: 42,920 kg \nCargo bay: 110 m^3 \nProcessed cargo storage: 40,000 kg (combined) \nEMP shielding: 100 MW
+
+SYSTEM_REACTOR_TNTRL_FORT|Braced K37 nuclear reactor
+
+
+
+SHIP_ATLAS_WASP|Wasp-class Scout (Decommissioned)
+
+SHIP_ATLAS_WASP_DESC|Manufactured in the mid-2200s, the Nakamura Dynamics Wasp-class of automated tactical scouts utilise [REDACTED] as their power source and [REDACTED], delivering a constant [REDACTED] megawatts of electrical energy as long as the vehicle's [REDACTED] is [REDACTED]. A Faraday cage mesh insulates much of the vehicle, protecting it from static discharges in dense space environments and providing a convenient charge dissipation vector for the [REDACTED]. \n\nNow wasn't that fun? This version, coming to you exclusive from the Sin Space Engineering shipyards, is totally declassified, decommissioned, and probably deillegaled, with a range of nice benefits like a performance propellant-remass reaction wheel, a "Reactor Housing" where the redacted-whatever was torn out (it was like that when we got it), and a probably-functional cargo bay, all topped with the Conlido Classic™ converted lifepod for her pleasure. \n\nWarranty? Hell no. Fly the goddamn ship, ringa. And, if anyone asks where you got this thing, give us a call and send your logs for 25% off your next purchase.
+
+SHIP_ATLAS_WASP_SPECS|Make: Sin Space Engineering / Nakamura Dynamics \nLow-Stress Hardpoints: 2 \nThruster mount gimbal: 36 deg \nCrew: 3 \nDry mass: 8,250 kg \nCargo bay: 40 m^3 \nProcessed cargo storage: 500 kg \nEMP shielding: 320 MW
+
+SYSTEM_REACTOR_JURYRIG|Jury-rigged reactor
+
+SYSTEM_REACTIONWHEEL_PERF|Fluid reaction wheel
+
+
+
+SHIP_PROSPECTOR_PIGEON|Pigeon Prospector
+
+SHIP_PROSPECTOR_PIGEON_DESC|What happens when a Pelican and a Vulture love eachother very much? They make this thing - or so it goes. The Pigeon's high price point is entirely on account of the incredible skill that went into its implementation; additional girding struts support a high-stress hardpoint to the fore of the vessel, the entire power and equipment feed system having been reworked to accommodate it. The bay has also been shortened to handle the stress, which has permitted reinstallation of a standard grinder.
+
+SHIP_PROSPECTOR_PIGEON_SPECS|Make: Mitsudaya-Starbus / Conlido RVM \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6 \nDry mass: 70,000 kg \nCargo bay: 70 m^3 \nProcessed cargo storage: 14,000 kg
+
+
+
+SHIP_AT225_STUB|Antonoff-Titan K225-SH
+
+SHIP_AT225_STUB_DESC|The Short Haul variant, affectionately nicknamed the "Stubby" by series enthusiasts, began manufacture only three years following the wildly-successful launch of its base variant, and is designed to fill express transit roles throughout the solar system. The SH makes up for the loss of its midsection with its light, maneuverable frame and in-built nanodrone assembler mounts, the latter of which makes it an excellent alternative to the base model in mining operations.
+
+SHIP_AT225_STUB_SPECS|Make: Antonoff-Titan Heavy Industries \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 4 \nCrew: 12 \nDry mass: 160,000 kg\nCargo bay: 280 m^3 \nProcessed cargo storage: 5,000 kg
+
+
+
+SHIP_TRTL_OCP|SSE OK720 TNTRL
+
+SHIP_TRTL_OCP_DESC|"Oh, dear God, what is that?", they said. "That won't fly," they said. "Stop calling us or we'll press charges," both Antonoff and Obonto said, in unison. It was in this chorus of naysaying and whining that we created the miracle that is the OK720 TNTRL. \n\nTwo spare bay halves from Obonto surplus and the resectioned corpse of a K37 come together to create this masterpiece, originally a "joke" posted to the RingChan /dreamship/ board by user snownukitro. With a truly enormous cargo bay and support hardware for OCP-standard MPUs and accessories, four low-stress equipment hardpoints, and incredibly low mass for the volume of its bay, this monster is perfectly suited for ring mining - as long as it doesn't hit anything. \n\nLimited warranty applies. We won't replace it if you get stuck in a tight space, but we'll sell you replacement panels.
+
+SHIP_TRTL_OCP_SPECS|Make: Rusatom-Antonoff / Obonto Microengineering / Sin Space Engineering \nLow-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 4 \nCrew: 4 \nDry mass: 86,600 kg \nCargo bay: 720 m^3 \nProcessed cargo storage: 5,000 kg
