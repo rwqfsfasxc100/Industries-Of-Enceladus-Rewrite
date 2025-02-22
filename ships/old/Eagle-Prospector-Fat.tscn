@@ -4,7 +4,7 @@
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifier.tscn" type="PackedScene" id=2]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=3]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=4]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=5]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxSlot-OLD.tscn" type="PackedScene" id=5]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=6]
 
 [node name="Eagle" instance=ExtResource( 1 )]

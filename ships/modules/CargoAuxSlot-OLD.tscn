@@ -9,7 +9,7 @@
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxBigFab.tscn" type="PackedScene" id=7]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProc40x20.tscn" type="PackedScene" id=8]
 
-[node name="CargoAuxSlot" type="RigidBody2D"]
+[node name="CargoAuxSlot" type="Node2D"]
 script = ExtResource( 5 )
 notAThruster = true
 type = "cargo.aux"

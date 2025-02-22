@@ -18,6 +18,7 @@ visible = false
 polygon = PoolVector2Array( 16, -26, 16, -8, 11, -4, 4, -2, 9, 0, 8, 7, 2, 8, 8, 11, 10, 28, 0, 32, -4, 32, -4, 8, -4, -6 )
 
 [node name="CargoAuxStorProc8K" parent="." index="3"]
+visible = true
 polygon = PoolVector2Array( 0, 40, 0, -2, 20, -30, 20, 10, 10, 16, 10, 24 )
 
 [node name="CargoAuxStorage4K" parent="." index="4"]
@@ -28,3 +29,11 @@ polygon = PoolVector2Array( 0, -6, 20, -26, 20, -18, 28, -8, 28, 18, 22, 24, 14,
 
 [node name="CargoAuxBigFab" parent="." index="6"]
 polygon = PoolVector2Array( 0, -6, 16, -22, 20, -26, 20, -20, 32, -6, 32, 18, 24, 28, 18, 28, 16, 34, 10, 36, 10, 52, 0, 62, 0, 36, 0, 12 )
+
+[editable path="CargoAuxPreProc0x30"]
+[editable path="CargoAuxPreProc20x10"]
+[editable path="CargoAuxPreProc40x20"]
+[editable path="CargoAuxStorProc8K"]
+[editable path="CargoAuxStorage4K"]
+[editable path="CargoAuxFab"]
+[editable path="CargoAuxBigFab"]

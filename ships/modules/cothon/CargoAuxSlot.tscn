@@ -44,6 +44,7 @@ polygon = PoolVector2Array( 40, 0, 44, 16, 44, 186, 28, 262, -28, 262, -44, 186,
 position = Vector2( 44, 8 )
 
 [node name="CargoAuxPreProc40x20" parent="." index="2"]
+visible = false
 position = Vector2( -40, 0 )
 polygon = PoolVector2Array( 0, -32, 10, -28, 8, -12, 2, -8, 8, -6, 10, 0, 8, 6, 2, 8, 8, 12, 10, 28, 0, 32, -4, 32, -4, 8, -4, -8, -4, -22 )
 

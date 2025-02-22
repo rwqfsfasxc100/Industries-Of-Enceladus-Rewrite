@@ -770,7 +770,6 @@ rpmPS = 120.0
 whirlMax = 10
 
 [node name="HoldModifiers" parent="." instance=ExtResource( 41 )]
-type = "cargo.modifierDivided"
 
 [node name="CargoAuxSlot" parent="." instance=ExtResource( 39 )]
 position = Vector2( 0, -1148 )
@@ -812,6 +811,7 @@ polygon = PoolVector2Array( 110, 0, 110, 304, 34, 424, 34, 700, -34, 700, -34, 4
 position = Vector2( 98, 0 )
 
 [node name="CargoAuxPreProc40x20" parent="CargoAuxSlot" index="2"]
+visible = false
 light_mask = 0
 position = Vector2( -112, 0 )
 polygon = PoolVector2Array( 6, -42, 14, -38, 10, -16, 4, -12, 10, -10, 14, -4, 14, 4, 10, 10, 4, 12, 10, 18, 14, 38, 6, 42, -4, 42, -4, 12, -4, -12, -4, -42 )
@@ -858,7 +858,8 @@ position = Vector2( -66, 0 )
 polygon = PoolVector2Array( -22, -8, -22, 32, -32, 32, -40, 40, -40, 56, -50, 72, -50, 40, -50, 24, -50, -36 )
 
 [node name="CargoAuxBigFab" parent="CargoAuxSlot" index="6"]
-position = Vector2( -84, 0 )
+visible = true
+position = Vector2( -116, 0 )
 
 [node name="MineralProcessingUnit" parent="." instance=ExtResource( 33 )]
 visible = false

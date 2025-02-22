@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://ships/ocp-209.tscn" type="PackedScene" id=1]
 [ext_resource path="res://lights/light-mask.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=4]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=5]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=6]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=7]
 
 [sub_resource type="CircleShape2D" id=1]
 radius = 70.0071
@@ -119,7 +120,7 @@ position = Vector2( 0, 203 )
 [node name="SYSTEM_SCOOP-L" parent="DockAftStbd" index="22"]
 position = Vector2( 0, 203 )
 
-[node name="HoldModifiers" parent="." index="33" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
+[node name="HoldModifiers" parent="." index="33" instance=ExtResource( 7 )]
 type = "cargo.modifierAmorphic"
 
 [node name="MineralProcessingUnit_Bulker" parent="." index="34" instance=ExtResource( 3 )]
@@ -166,6 +167,7 @@ rpmPS = 180.0
 [editable path="DockForeStbd"]
 [editable path="DockAftPort"]
 [editable path="DockAftStbd"]
+[editable path="HoldModifiers"]
 [editable path="MineralProcessingUnit_Bulker"]
 [editable path="MineralProcessingUnit_Furnace"]
 [editable path="MineralProcessingUnit_DRY"]

@@ -137,11 +137,11 @@ z_index = 21
 toggleCommand = "ship_slot_1"
 
 [node name="WeaponLeft" parent="." index="23"]
-position = Vector2( -54, -68 )
+position = Vector2( -70, -68 )
 toggleCommand = "ship_slot_2"
 
 [node name="WeaponRight" parent="." index="24"]
-position = Vector2( 54, -68 )
+position = Vector2( 70, -68 )
 toggleCommand = "ship_slot_3"
 
 [node name="DroneLeft" parent="." index="25"]
@@ -155,7 +155,6 @@ position = Vector2( 0, -92 )
 slot = "cargo.aux"
 
 [node name="HoldModifiers" parent="." index="30" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
-type = "cargo.modifierDivided"
 
 [node name="MineralProcessingUnit" parent="." index="31"]
 light_mask = 0
@@ -165,28 +164,19 @@ polygon = PoolVector2Array( -40, -56, -30, -46, -18, -26, -14, -12, -22, -4, -22
 light_mask = 0
 polygon = PoolVector2Array( -22, 24, 22, 24, 22, -4, 16, -20, -16, -20, -22, -4 )
 
-[node name="MineralProcessingUnit_FSO" parent="." index="32"]
+[node name="MineralProcessingUnit_FSO" parent="." index="33"]
 position = Vector2( 0, -3 )
 polygon = PoolVector2Array( -40, -185, -36, -185, -32, 9, -25, 17, 24, 17, 32, 9, 36, -185, 40, -185, 40, 27, -40, 27 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_FSO/MineralProcessingUnit" index="0"]
-light_mask = 0
 polygon = PoolVector2Array( -32, 17, 32, 17, 36, -183, -36, -183 )
 
-[node name="MineralProcessingUnit_SMELT" parent="." index="33"]
+[node name="MineralProcessingUnit_SMELT" parent="." index="34"]
 polygon = PoolVector2Array( -40, -76, -26, -64, -16, -48, -12, -30, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -30, 16, -48, 26, -64, 40, -76, 40, -32, 40, 32, 16, 32, -16, 32, -40, 32, -40, -32 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_SMELT/MineralProcessingUnit" index="0"]
 light_mask = 0
 polygon = PoolVector2Array( -18, 4, 18, 4, 18, -30, -18, -30 )
-
-[node name="MineralProcessingUnit_FAB" parent="." index="34"]
-position = Vector2( 0, -5 )
-polygon = PoolVector2Array( 0, -51, 0, -19, -14, -19, -24, -9, -24, 13, -14, 23, 14, 23, 24, 13, 24, -51, 28, -71, 40, -91, 40, 13, 40, 29, 18, 29, -18, 29, -40, 29, -40, 13, -40, -9, -40, -43, -40, -91, -12, -75, -2, -63 )
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/MineralProcessingUnit" index="0"]
-position = Vector2( 0, 0 )
-polygon = PoolVector2Array( -24, 23, 24, 23, 24, -19, -24, -19 )
 
 [node name="MineralProcessingUnit_Bulker" parent="." index="35" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/prospector/fat/MineralProcessingUnit_Bulker.tscn"]
 visible = false
@@ -198,6 +188,14 @@ visible = false
 visible = false
 position = Vector2( 0, -156 )
 
+[node name="MineralProcessingUnit_FAB" parent="." index="38"]
+position = Vector2( 0, -5 )
+polygon = PoolVector2Array( 0, -51, 0, -19, -14, -19, -24, -9, -24, 13, -14, 23, 14, 23, 24, 13, 24, -51, 28, -71, 40, -91, 40, 13, 40, 29, 18, 29, -18, 29, -40, 29, -40, 13, -40, -9, -40, -43, -40, -91, -12, -75, -2, -63 )
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/MineralProcessingUnit" index="0"]
+position = Vector2( 0, 0 )
+polygon = PoolVector2Array( -24, 23, 24, 23, 24, -19, -24, -19 )
+
 [node name="CrewModifiers" parent="." index="44" instance=ExtResource( 3 )]
 
 [editable path="Front Bumper"]
@@ -207,6 +205,7 @@ position = Vector2( 0, -156 )
 [editable path="WeaponLeft"]
 [editable path="WeaponRight"]
 [editable path="MineralProcessingUnit"]
+[editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_SMELT"]
 [editable path="MineralProcessingUnit_FAB"]

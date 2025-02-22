@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://ships/Eagle-Prospector-Bald.tscn" type="PackedScene" id=1]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=2]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=3]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=4]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=5]
 
 [node name="BaldEagle" instance=ExtResource( 1 )]
 __meta__ = {
@@ -13,9 +14,6 @@ __meta__ = {
 
 [node name="Collider" parent="." index="8"]
 polygon = PoolVector2Array( -33, -48, -33, 4, -42, 4, -50, 14, -50, 38, -72, 60, -76, 68, -76, 130, -38, 140, -38, 202, -28, 234, 28, 234, 38, 202, 38, 140, 76, 130, 76, 68, 72, 60, 50, 38, 50, 14, 42, 4, 33, 4, 33, -48, 26, -48, 14, -52, 16, -44, 24, -44, 24, 8, 24, 24, -24, 24, -24, 8, -24, -44, -16, -44, -14, -52, -26, -48 )
-
-[node name="CargoHoldArea" parent="." index="9"]
-visible = false
 
 [node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
 polygon = PoolVector2Array( 27, -47, 27, 27, -27, 27, -27, -47 )
@@ -29,8 +27,7 @@ visible = false
 [node name="RacerConversation" parent="." index="26"]
 visible = false
 
-[node name="HoldModifiers" parent="." index="28" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
-type = "cargo.modifierDivided"
+[node name="HoldModifiers" parent="." index="28" instance=ExtResource( 5 )]
 
 [node name="MineralProcessingUnit_Bulker" parent="." index="29" instance=ExtResource( 3 )]
 visible = false
@@ -54,43 +51,42 @@ polygon = PoolVector2Array( -20, 70, 20, 70, 20, 8, -20, 8 )
 position = Vector2( 0, -108 )
 polygon = PoolVector2Array( -24, -36, -16, -36, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 16, -36, 24, -36, 24, 32, -24, 32 )
 
-[node name="MineralProcessingUnit_FSO" parent="." index="32"]
+[node name="MineralProcessingUnit_FSO" parent="." index="33"]
 polygon = PoolVector2Array( -25, -124, -23, -124, -21, -68, -15, -60, 13, -60, 19, -68, 21, -124, 23, -124, 23, -56, -25, -56 )
 
-[node name="MineralProcessingUnit_SMELT" parent="." index="33"]
+[node name="MineralProcessingUnit_SMELT" parent="." index="34"]
 position = Vector2( 0, -102 )
 polygon = PoolVector2Array( -24, -42, -16, -42, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 16, -42, 24, -42, 24, 26, -24, 26 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_SMELT/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( -18, 4, 18, 4, 18, -28, -18, -28 )
 
-[node name="MineralProcessingUnit_FAB" parent="." index="34"]
+[node name="MineralProcessingUnit_FAB" parent="." index="35"]
 polygon = PoolVector2Array( -24, -40, -16, -40, 0, -20, 0, 4, -14, 4, -20, 10, -20, 18, -14, 24, 12, 24, 18, 20, 20, 12, 20, -20, 24, -28, 24, 28, -24, 28 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/MineralProcessingUnit" index="0"]
 visible = true
 polygon = PoolVector2Array( -22, 24, 18, 24, 18, -20, -2, -20, -22, 4 )
 
-[node name="AI" parent="." index="36"]
+[node name="AI" parent="." index="37"]
 visible = false
 
-[node name="CargoHoldAreaHull" parent="." index="40"]
-visible = false
+[node name="CrewModifiers" parent="." index="41" instance=ExtResource( 2 )]
 
 [node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
 light_mask = 0
 position = Vector2( -1, 0 )
 polygon = PoolVector2Array( 30, 8, 72, 88, 64, 132, 30, 136, 24, 232, -24, 232, -32, 136, -64, 132, -72, 88, -30, 8, -30, -42, -12, -48, -6, -76, 6, -76, 12, -48, 30, -42 )
 
-[node name="CrewModifiers" parent="." index="41" instance=ExtResource( 2 )]
-
 [editable path="engine-main-1"]
 [editable path="engine-main-2"]
 [editable path="WeaponLeft"]
 [editable path="WeaponRight"]
+[editable path="HoldModifiers"]
 [editable path="MineralProcessingUnit_Bulker"]
 [editable path="MineralProcessingUnit_Furnace"]
 [editable path="MineralProcessingUnit"]
+[editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_SMELT"]
 [editable path="MineralProcessingUnit_FAB"]

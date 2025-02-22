@@ -4,7 +4,7 @@ extends Node
 # Mods are loaded from lowest to highest priority, default is 0
 const MOD_PRIORITY = -99
 # Name of the mod, used for writing to the logs
-const MOD_NAME = "IoE Rewrite 2.0.2"
+const MOD_NAME = "IoE Rewrite 2.0.5"
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
@@ -40,11 +40,7 @@ func _init(modLoader = ModLoader):
 	if addShips:
 		replaceScene("enceladus/Dealer.tscn")
 	
-# install CurrentGame.gd which loads new ships into the game
-	if addShips:
-		l("Injecting new ships")
-		installScriptExtension("ships/Shipyard.gd")
-		installScriptExtension("CurrentGame.gd")
+
 		
 # install the Shipyard.gd script extension, which loads replacements + new ships
 	
@@ -69,18 +65,25 @@ func _init(modLoader = ModLoader):
 	replaceScene("ships/Cothon-Lnd.tscn")
 	replaceScene("ships/Cothon.tscn")
 	
-# replace the Upgrades.tscn containing equipment modifications
-	replaceScene("weapons/WeaponSlot.tscn")
-	replaceScene("enceladus/Upgrades.tscn")
-	
+	# install CurrentGame.gd which loads new ships into the game
+	if addShips:
+		l("Injecting new ships")
+		installScriptExtension("CurrentGame.gd")
+	installScriptExtension("ships/Shipyard.gd")
 # Load custom translations
 	updateTL("en") 
 	updateTL("uk_UA") 
 
+
+# replace the Upgrades.tscn containing equipment modifications
+	replaceScene("weapons/WeaponSlot.tscn")
+	replaceScene("enceladus/Upgrades.tscn")
+
 	l("Initialised!", MOD_NAME)
 
 
-func _ready():	
+func _ready():
+	
 	l("Ready!")
 
 
@@ -105,7 +108,9 @@ func updateTL(locale:String, path:String = modPath + "i18n"):
 			var fileName = dir.get_next()
 			
 			if fileName:
-				tlFile.open(operatingPath + fileName)
+				var tFileConcat = operatingPath + fileName
+				
+				tlFile.open(tFileConcat, File.READ)
 				
 				if verbose: l("Loaded translation file %s" % fileName)
 		
