@@ -89,7 +89,7 @@ Special thanks go to:
  - THI Bulker MPU: squeezes a massive amount of mineral hold space beneath the unit... at the expense of the processing volume, which is comically difficult to load
 	
 ### Cargo Bay Accessories
- - Not usable with the Kitsune, KTA24, Runasimi K37, and base OCP
+ - Not usable with the Kitsune, KTA24, Runasimi K37, Model E, Bald Eagle, Oberon, ATLAS Wasp, OCP-207-SNAP and the base OCP-209
  - Rasamama RP-25: low-profile ore preprocessor that reduces ice content and recovers a modest amount of remass from chunks in the bay
  - Conlido Internal Storage Rack: low-profile storage module that increases mineral hold space
  - Nakamura Big MT: somewhat bulky ore preprocessor, does the same thing as the RP-25 but faster and less efficient, increases MPU mineral efficiency though
