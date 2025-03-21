@@ -1,0 +1,84 @@
+[gd_scene format=2]
+
+[node name="Node" type="Node"]
+
+[node name="SYSTEM_SALVAGE_ARM_LIGHT_PROSP-L" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/SalvageArmLight-R.tscn"]
+visible = false
+position = Vector2( 16, -40 )
+flip = true
+feedVelocity = Vector2( -72, -320 )
+
+[node name="SYSTEM_SALVAGE_ARM_LIGHT_PROSP-R" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/SalvageArmLight-R.tscn"]
+visible = false
+position = Vector2( -16, -40 )
+
+[node name="SYSTEM_EXSTORAGE_PROSP-L" parent="." instance_placeholder="res://ships/modules/StorageContainerDock-L.tscn"]
+visible = false
+position = Vector2( 48, -86 )
+flip = true
+
+[node name="SYSTEM_EXSTORAGE_PROSP-R" parent="." instance_placeholder="res://ships/modules/StorageContainerDock.tscn"]
+visible = false
+position = Vector2( -48, -86 )
+
+[node name="SYSTEM_EXSTORAGE_PROSP_ALT-L" parent="." instance_placeholder="res://ships/modules/StorageContainerDock-L.tscn"]
+visible = false
+position = Vector2( 48, 54 )
+flip = true
+
+[node name="SYSTEM_EXSTORAGE_PROSP_ALT-R" parent="." instance_placeholder="res://ships/modules/StorageContainerDock.tscn"]
+visible = false
+position = Vector2( -48, 54 )
+
+[node name="SYSTEM_CLAIM_PROSP-L" parent="." instance_placeholder="res://ships/modules/ClaimDroneDock-L.tscn"]
+visible = false
+position = Vector2( 48, -86 )
+flip = true
+
+[node name="SYSTEM_CLAIM_PROSP-R" parent="." instance_placeholder="res://ships/modules/ClaimDroneDock-R.tscn"]
+visible = false
+position = Vector2( -48, -86 )
+
+[node name="SYSTEM_SCOOP_PROSP-L" parent="." instance_placeholder="res://ships/modules/CargoScoopDock-L.tscn"]
+visible = false
+position = Vector2( 48, -86 )
+flip = true
+
+[node name="SYSTEM_SCOOP_PROSP-R" parent="." instance_placeholder="res://ships/modules/CargoScoopDock-R.tscn"]
+visible = false
+position = Vector2( -48, -86 )
+
+[node name="SYSTEM_EXMONO_PROSP-L" parent="." instance_placeholder="res://ships/modules/StorageContainerDockMono-L.tscn"]
+visible = false
+position = Vector2( 48, -86 )
+flip = true
+
+[node name="SYSTEM_EXMONO_PROSP-R" parent="." instance_placeholder="res://ships/modules/StorageContainerDockMono.tscn"]
+visible = false
+position = Vector2( -48, -86 )
+
+[node name="SYSTEM_EXMONO_PROSP_ALT-L" parent="." instance_placeholder="res://ships/modules/StorageContainerDockMono-L.tscn"]
+visible = false
+position = Vector2( 48, 54 )
+flip = true
+
+[node name="SYSTEM_EXMONO_PROSP_ALT-R" parent="." instance_placeholder="res://ships/modules/StorageContainerDockMono.tscn"]
+visible = false
+position = Vector2( -48, 54 )
+
+[node name="SYSTEM_EXODYN_PROSP-L" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock-L.tscn"]
+visible = false
+position = Vector2( 48, -86 )
+
+[node name="SYSTEM_EXODYN_PROSP-R" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock.tscn"]
+visible = false
+position = Vector2( -48, -86 )
+
+[node name="SYSTEM_EXODYN_PROSP_ALT-L" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock-L.tscn"]
+visible = false
+position = Vector2( 48, 54 )
+repairReplacementPrice = 135000
+
+[node name="SYSTEM_EXODYN_PROSP_ALT-R" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock.tscn"]
+visible = false
+position = Vector2( -48, 54 )

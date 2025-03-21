@@ -1,0 +1,149 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://ships/ATK225.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/k225/CargoAuxSlot.tscn" type="PackedScene" id=2]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/weapons/WeaponSlot.patch.gd" type="Script" id=3]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=5]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=6]
+[ext_resource path="res://ships/modules/CargoBaffles.tscn" type="PackedScene" id=8]
+
+[node name="ATK225" instance=ExtResource( 1 )]
+position = Vector2( 0, 18 )
+inside = -1
+
+[node name="Collider" parent="." index="5"]
+polygon = PoolVector2Array( -116.923, -113.846, -112.308, -121.538, -75.3846, -121.538, -75.3846, -145.385, -60, -145.385, -38.4615, -191.538, -38.4615, -279.231, -116.923, -279.231, -112.308, -286.923, -38.4615, -286.923, -38.4615, -298.462, -34.6154, -302.308, -19.2308, -302.308, -19.2308, -310, -10.7692, -308.462, -13.8462, -296.154, -13.8462, -279.231, -13.8462, -185.385, -24.6154, -173.077, -24.6154, 11.5385, -24.6154, 140.769, -15.3846, 171.538, 15.3846, 171.538, 24.6154, 140.769, 24.6154, 11.5385, 24.6154, -173.077, 13.8462, -185.385, 13.8462, -253.077, 13.8462, -279.231, 13.8462, -296.154, 10.7692, -308.462, 19.2308, -310, 19.2308, -302.308, 34.6154, -302.308, 38.4615, -298.462, 38.4615, -286.923, 112.308, -286.923, 116.923, -279.231, 38.4615, -279.231, 38.4615, -191.538, 60, -145.385, 75.3846, -145.385, 75.3846, -121.538, 112.308, -121.538, 116.923, -113.846, 38.4615, -113.846, 38.4615, -25.3846, 60, 20.7692, 75.3846, 20.7692, 75.3846, 43.8462, 112.308, 43.8462, 116.923, 51.5385, 38.4615, 51.5385, 38.4615, 140.769, 61.5385, 179.231, 61.5385, 186.154, 75.3846, 186.154, 75.3846, 216.154, 121.538, 270, 121.538, 285.385, 115.385, 297.692, 104.615, 302.308, 55.3846, 302.308, -43.0769, 302.308, -104.615, 302.308, -115.385, 297.692, -121.538, 285.385, -121.538, 270, -75.3846, 216.154, -75.3846, 186.154, -61.5385, 186.154, -38.4615, 140.769, -38.4615, 51.5385, -116.923, 51.5385, -112.308, 43.8462, -75.3846, 43.8462, -75.3846, 20.7692, -60, 20.7692, -38.4615, -25.3846, -38.4615, -113.846 )
+
+[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
+visible = false
+polygon = PoolVector2Array( 16.1538, -211.538, 16.1538, -91.5385, 26.9231, -79.2308, 26.9231, 237.692, 17.6923, 270, -19.2308, 270, -28.4615, 237.692, -28.4615, -79.2308, -17.6923, -91.5385, -17.6923, -211.538 )
+
+[node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
+light_mask = 0
+polygon = PoolVector2Array( 35.3846, -324.615, 35.3846, -210.769, 73.8462, -143.077, 35.3846, -143.077, 35.3846, -44.6154, 73.8462, 23.0769, 35.3846, 23.0769, 35.3846, 118.462, 67.6923, 189.231, 116.923, 253.846, 98.4615, 273.846, -98.4615, 273.846, -116.923, 253.846, -67.6923, 189.231, -35.3846, 118.462, -35.3846, 23.0769, -73.8462, 23.0769, -35.3846, -44.6154, -35.3846, -143.077, -73.8462, -143.077, -35.3846, -210.459, -35.3846, -324.615, -9.23077, -324.615, -6.15385, -355.385, 6.15385, -355.385, 9.23077, -324.615 )
+
+[node name="thruster-tl" parent="." index="10"]
+position = Vector2( -104, -210 )
+
+[node name="thruster-tr" parent="." index="11"]
+position = Vector2( 104, -210 )
+
+[node name="thruster-ml" parent="." index="12"]
+position = Vector2( -104, 6 )
+
+[node name="thruster-mr" parent="." index="13"]
+position = Vector2( 104, 6 )
+
+[node name="thruster-bl" parent="." index="14"]
+position = Vector2( -104, 222 )
+
+[node name="thruster-br" parent="." index="15"]
+position = Vector2( 104, 222 )
+
+[node name="CargoBaffles" parent="." index="24"]
+visible = true
+
+[node name="MineralProcessingUnit" parent="." index="26"]
+light_mask = 0
+position = Vector2( 0, 150 )
+polygon = PoolVector2Array( -32, -50, -19, -36, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 19, -36, 32, -49, 32, 0, 28, 16, 20, 40, -20, 40, -28, 16, -32, 0 )
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit/MineralProcessingUnit" index="0"]
+light_mask = 0
+polygon = PoolVector2Array( -22, 24, 22, 24, 22, -12, -22, -12 )
+
+[node name="MineralProcessingUnit_DRY" parent="." index="27"]
+visible = false
+
+[node name="MineralProcessingUnit_FSO" parent="." index="28"]
+visible = false
+light_mask = 0
+position = Vector2( 0, 152 )
+polygon = PoolVector2Array( -32, -122, -28, -114, -24, -2, -12, 26, 12, 26, 24, -2, 28, -114, 32, -122, 32, -2, 20, 38, -20, 38, -32, -2 )
+
+[node name="MineralProcessingUnit" parent="MineralProcessingUnit_FSO" index="0"]
+visible = false
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FSO/MineralProcessingUnit" index="0"]
+light_mask = 0
+polygon = PoolVector2Array( -24, -2, -12, 26, 12, 26, 24, -2, 28, -114, -28, -114 )
+
+[node name="MineralProcessingUnit_SMELT" parent="." index="29"]
+light_mask = 0
+polygon = PoolVector2Array( -32, -70, -20, -58, -14, -42, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 14, -42, 20, -58, 32, -70, 32, -30, 32, 2, 20, 42, -20, 42, -32, 2, -32, -30.1071 )
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit_SMELT/MineralProcessingUnit" index="0"]
+light_mask = 0
+polygon = PoolVector2Array( -18, 4, 18, 4, 18, -30, -18, -30 )
+
+[node name="MineralProcessingUnit_FAB" parent="." index="30"]
+polygon = PoolVector2Array( -31, -84, -7, -62, -1, -54, 1, -46, 1, -18, -14, -18, -23, -8, -23, 12, -11, 24, 13, 24, 25, 12, 25, -48, 27, -66, 33, -84, 33, 2, 29, 16, 21, 42, -19, 42, -27, 16, -31, 2, -31, -26 )
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/MineralProcessingUnit" index="0"]
+polygon = PoolVector2Array( -25, 24, 23, 24, 23, -18, -25, -18 )
+
+[node name="CargoAuxSlot" parent="." index="31" instance=ExtResource( 2 )]
+
+[node name="CargoBaffles" parent="CargoAuxSlot" index="7" instance=ExtResource( 8 )]
+position = Vector2( 0, 100 )
+z_index = 50
+slot = "cargo.aux"
+
+[node name="weapon-left" parent="." index="33"]
+position = Vector2( -92, -462 )
+script = ExtResource( 3 )
+armVelocityMultiplier = Vector2( 2.5, 1 )
+
+[node name="weapon-right" parent="." index="34"]
+position = Vector2( 92, -462 )
+script = ExtResource( 3 )
+armVelocityMultiplier = Vector2( 2.5, 1 )
+
+[node name="SYSTEM_PDMWG-R" parent="weapon-right" index="14"]
+visible = false
+
+[node name="AI" parent="." index="42"]
+visible = false
+
+[node name="CrewModifiers" parent="." index="45" instance=ExtResource( 5 )]
+script = ExtResource( 6 )
+
+[node name="HoldModifiers" parent="." index="46" instance=ExtResource( 6 )]
+
+[node name="HoldModifiers2" parent="." index="48" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
+
+[node name="MineralProcessingUnit_Bulker3" parent="." index="49" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
+visible = false
+position = Vector2( 0, 142 )
+
+[node name="MineralProcessingUnit_Furnace2" parent="." index="50" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
+visible = false
+light_mask = 1
+position = Vector2( 0, 148 )
+
+[node name="CrewModifiers2" parent="." index="51" instance=ExtResource( 5 )]
+
+[editable path="MineralProcessingUnit"]
+[editable path="MineralProcessingUnit_DRY"]
+[editable path="MineralProcessingUnit_FSO"]
+[editable path="MineralProcessingUnit_SMELT"]
+[editable path="MineralProcessingUnit_FAB"]
+[editable path="CargoAuxSlot"]
+[editable path="CargoAuxSlot/CargoAuxPreProc0x30"]
+[editable path="CargoAuxSlot/CargoAuxPreProc20x10"]
+[editable path="CargoAuxSlot/CargoAuxPreProc40x20"]
+[editable path="CargoAuxSlot/CargoAuxStorProc8K"]
+[editable path="CargoAuxSlot/CargoAuxStorage4K"]
+[editable path="CargoAuxSlot/CargoAuxFab"]
+[editable path="CargoAuxSlot/CargoAuxBigFab"]
+[editable path="weapon-left"]
+[editable path="weapon-right"]
+[editable path="weapon-left-back"]
+[editable path="weapon-right-back"]
+[editable path="weapon-left-back2"]
+[editable path="weapon-right-back2"]
+[editable path="weapon-left-back3"]
+[editable path="weapon-right-back3"]
+[editable path="AI"]
+[editable path="CrewModifiers"]
+[editable path="HoldModifiers"]

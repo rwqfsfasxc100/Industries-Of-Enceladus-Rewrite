@@ -1,0 +1,234 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/ocp-209-old.tscn" type="PackedScene" id=1]
+[ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
+[ext_resource path="res://sfx/spark_noise.png" type="Texture" id=3]
+[ext_resource path="res://ships/modules/claws.phymat" type="PhysicsMaterial" id=4]
+[ext_resource path="res://ships/Hull.gd" type="Script" id=5]
+[ext_resource path="res://ships/MaterialReadout.gd" type="Script" id=6]
+[ext_resource path="res://ships/obonto-m.png" type="Texture" id=7]
+[ext_resource path="res://ships/obonto-n.png" type="Texture" id=8]
+[ext_resource path="res://ships/obonto-cd.png" type="Texture" id=9]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/excavator_pac_close.wav" type="AudioStream" id=10]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/excavator_pac_open.wav" type="AudioStream" id=11]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/hud/collect_pac.wav" type="AudioStream" id=12]
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 6.0
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 2 )
+shader_param/maskScale = Vector2( 11, 1 )
+shader_param/frames = Vector2( 1, 1 )
+shader_param/paintJobFactor = 0.0
+shader_param/paintJobBrightAdjust = 16.0
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 1, 0.5 )
+shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 0.25
+shader_param/shine = 1.0
+shader_param/charges = ExtResource( 3 )
+shader_param/map = ExtResource( 7 )
+
+[node name="OCP-209-Snap" instance=ExtResource( 1 )]
+mass = 150.0
+shipName = "SHIP_OCP209_SNAP"
+hullPrice = 360000
+autopilotRotationPartOffsetPath = NodePath("")
+
+[node name="Collect" parent="Noises" index="6"]
+stream = ExtResource( 12 )
+
+[node name="Bay" parent="." index="4"]
+openTime = 1.2
+powerScale = 0.2
+angleLimit = 0.1
+rotMax = 1.571
+
+[node name="BayStopper 1" parent="Bay" index="0"]
+position = Vector2( 8, 166 )
+
+[node name="BayStopper 2" parent="Bay" index="1"]
+position = Vector2( 8, -166 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="BayStopper 3" type="RigidBody2D" parent="Bay" index="2" groups=["splitstream"]]
+position = Vector2( -142, -32 )
+z_index = 78
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bay/BayStopper 3" index="0"]
+shape = SubResource( 2 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Bay/BayStopper 3" index="1"]
+node_a = NodePath("..")
+node_b = NodePath("../../..")
+
+[node name="BayStopper 4" type="RigidBody2D" parent="Bay" index="3" groups=["splitstream"]]
+position = Vector2( -142, 32 )
+z_index = 78
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Bay/BayStopper 4" index="0"]
+shape = SubResource( 2 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Bay/BayStopper 4" index="1"]
+node_a = NodePath("..")
+node_b = NodePath("../../..")
+
+[node name="Spring 1" parent="Bay" index="4"]
+position = Vector2( -132, 22 )
+rotation = -0.785398
+length = 160.0
+rest_length = 140.0
+damping = 1.25
+
+[node name="Spring 2" parent="Bay" index="5"]
+position = Vector2( -122, 1.14441e-05 )
+rotation = -0.785398
+length = 160.0
+rest_length = 140.0
+damping = 1.25
+
+[node name="Spring 3" type="DampedSpringJoint2D" parent="Bay" index="6"]
+position = Vector2( -122, -7.62939e-06 )
+rotation = -2.35619
+z_index = 50
+node_a = NodePath("../..")
+node_b = NodePath("../Bay2")
+bias = 0.5
+length = 160.0
+rest_length = 140.0
+stiffness = 64.0
+damping = 1.25
+
+[node name="Spring 4" type="DampedSpringJoint2D" parent="Bay" index="7"]
+position = Vector2( -132, -21 )
+rotation = -2.35619
+z_index = 50
+node_a = NodePath("../..")
+node_b = NodePath("../Bay2")
+bias = 0.5
+length = 160.0
+rest_length = 140.0
+stiffness = 64.0
+damping = 1.25
+
+[node name="Open" parent="Bay" index="8"]
+stream = ExtResource( 11 )
+pitch_scale = 0.5
+
+[node name="Close" parent="Bay" index="9"]
+stream = ExtResource( 10 )
+pitch_scale = 0.5
+
+[node name="Bay2" type="RigidBody2D" parent="Bay" index="10" groups=["slipstream"]]
+rotation = 3.14159
+z_index = -1
+collision_layer = 2
+collision_mask = 7
+mass = 18.0
+physics_material_override = ExtResource( 4 )
+script = ExtResource( 6 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bay/Bay2" index="0"]
+light_mask = 0
+position = Vector2( -21, -18 )
+rotation = 1.5708
+z_index = 40
+polygon = PoolVector2Array( 179, -17.0002, 173, -15.0002, 168, 19, 152, 57, 127, 90, 95, 114, 61, 128, 38.0001, 133, 18.0001, 135, 18.0001, 119, 54, 114, 88, 100, 117, 78, 138, 50, 152, 16, 158, -21.0002, 173, -21.0002 )
+
+[node name="PinJoint2D" type="PinJoint2D" parent="Bay/Bay2" index="1"]
+position = Vector2( 4.89552e-06, -2 )
+z_index = 23
+node_a = NodePath("../../..")
+node_b = NodePath("..")
+bias = 0.8
+
+[node name="ExcavatorSprite" type="Sprite" parent="Bay/Bay2" index="2"]
+light_mask = 5
+material = SubResource( 1 )
+scale = Vector2( -0.95, 0.95 )
+z_index = 31
+texture = ExtResource( 9 )
+normal_map = ExtResource( 8 )
+offset = Vector2( 0, 50 )
+flip_h = true
+hframes = 11
+region_enabled = true
+region_rect = Rect2( 0, 1180, 3630, 208 )
+script = ExtResource( 5 )
+hullCustomPaintFile = "user://custom-ocp-209.png"
+
+[node name="CargoHoldArea" type="Area2D" parent="Bay/Bay2" index="3"]
+visible = false
+z_index = 50
+collision_layer = 524288
+collision_mask = 33
+monitorable = false
+gravity = 0.0
+linear_damp = 0.0
+angular_damp = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Bay/Bay2/CargoHoldArea" index="0"]
+light_mask = 0
+scale = Vector2( 1, -1 )
+polygon = PoolVector2Array( 38, -141, -2.02815e-05, 8, -140, 7.99965, -145, 0, -124, -75, -73, -126, -0.000365066, -144 )
+
+[node name="Bay" parent="Bay" index="11"]
+mass = 18.0
+
+[node name="CargoBaffles" parent="Bay/Bay" index="0"]
+scale = Vector2( 1, -1 )
+
+[node name="baffleshape2" type="Sprite" parent="Bay/Bay/CargoBaffles" index="1"]
+light_mask = 5
+material = SubResource( 1 )
+rotation = -1.5708
+scale = Vector2( 0.5, 0.5 )
+z_index = 30
+texture = ExtResource( 9 )
+normal_map = ExtResource( 8 )
+offset = Vector2( 0, 50 )
+hframes = 11
+region_enabled = true
+region_rect = Rect2( 0, 973, 3630, 202 )
+script = ExtResource( 5 )
+hullCustomPaintFile = "user://custom-ocp-209.png"
+
+[node name="CollisionPolygon2D" parent="Bay/Bay" index="1"]
+polygon = PoolVector2Array( 173, -21, 171, -1, 168, 19, 152, 57, 127, 90, 95, 114, 61, 128, 23, 134, 21, 140, 17, 134, 17, 119, 54, 114, 88, 100, 117, 78, 138, 50, 152, 16, 157, -21 )
+
+[node name="PinJoint2D" parent="Bay/Bay" index="2"]
+position = Vector2( 0, -2 )
+
+[node name="ExcavatorSprite" parent="Bay/Bay" index="3"]
+rotation = 0.0
+
+[node name="CollisionPolygon2D" parent="Bay/Bay/CargoHoldArea" index="0"]
+polygon = PoolVector2Array( 38, -141, -2.02815e-05, 8, -140, 7.99965, -145, 0, -124, -75, -73, -126, -0.000365066, -144 )
+
+[node name="Collider" parent="." index="6"]
+polygon = PoolVector2Array( 92, -282, 92, -140, 82, -121, 70, -121, 36, -135, 0, -140, -36, -135, -70, -121, -99, -99, -121, -70, -135, -36, -140, 0, -135, 37, -121, 70, -99, 99, -70, 121, -36, 135, 0, 140, 37, 135, 70, 121, 84, 125, 90, 137, 90, 215, 86, 229, 74, 239, 60, 241, 60, 369, 40, 386, 46, 396, 30, 446, -30, 446, -46, 396, -40, 386, -52, 378, -70, 378, -70, 240, -86, 230, -90, 215, -90, 137, -83, 125, -106, 107, -131, 75, -146, 39, -151, 0, -146, -39, -131, -75, -107, -106, -82.6822, -124.924, -92, -140, -92, -282, -72, -284, 0.00810242, -284, 72, -284 )
+
+[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
+polygon = PoolVector2Array( 40, -140, 82, -120, 114, -90, 114, 90, 74, 126, 42, 138, -1, 146, -40, 140, -72, 128, -103, 102, -126, 71, -140, 36, -145, 0, -140, -39, -124, -75, -102, -103, -73, -126, -37, -141, 2, -145 )
+
+[node name="Collider" parent="CargoHoldAreaHull" index="0"]
+polygon = PoolVector2Array( 20, -390, 80, -168, 80, -128, 88, -120, 88, 120, 80, 128, 56, 240, 29, 444, -29, 444, -60, 240, -81, 124, -105, 105, -129, 74, -144, 38, -149, 1, -144, -38, -129, -73, -104, -106, -80, -125, -80, -168, -20, -390 )
+
+[connection signal="body_entered" from="Bay/Bay2/CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
+[connection signal="body_exited" from="Bay/Bay2/CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
+
+[editable path="Noises"]
+[editable path="WeaponHardTop"]
+[editable path="WeaponHardRight"]
+[editable path="MineralProcessingUnit_Bulker"]
+[editable path="MineralProcessingUnit_Furnace"]
+[editable path="MineralProcessingUnit_FSO"]
+[editable path="AI"]

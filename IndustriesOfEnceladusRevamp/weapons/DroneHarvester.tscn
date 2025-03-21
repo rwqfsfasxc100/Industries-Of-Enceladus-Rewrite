@@ -1,0 +1,160 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://sfx/PitchAdjustedAudio.gd" type="Script" id=1]
+[ext_resource path="res://weapons/weapons.material" type="Material" id=2]
+[ext_resource path="res://lights/color-square.png" type="Texture" id=3]
+[ext_resource path="res://weapons/drones/Launch.material" type="Material" id=4]
+[ext_resource path="res://weapons/weapons-c.png" type="Texture" id=5]
+[ext_resource path="res://weapons/weapons-n.png" type="Texture" id=6]
+[ext_resource path="res://weapons/drones/deploy-laser.wav" type="AudioStream" id=7]
+[ext_resource path="res://weapons/drones/deploy-open.wav" type="AudioStream" id=8]
+[ext_resource path="res://weapons/drones/Near.material" type="Material" id=9]
+[ext_resource path="res://weapons/drones/Stop.material" type="Material" id=10]
+[ext_resource path="res://sfx/drone-plume.png" type="Texture" id=11]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/weapons/drone-plant.patch.gd" type="Script" id=12]
+[ext_resource path="res://weapons/drones/DroneLaunchManager.gd" type="Script" id=13]
+
+[sub_resource type="StreamTexture" id=1]
+flags = 5
+load_path = "res://.import/weapons-c.png-3af2427b72ec2c03f8846be34e082163.stex"
+
+[sub_resource type="StreamTexture" id=2]
+flags = 5
+load_path = "res://.import/weapons-n.png-239103954ba21358ab4ce0c1546e915f.stex"
+
+[sub_resource type="CanvasItemMaterial" id=4]
+blend_mode = 1
+light_mode = 1
+particles_animation = true
+particles_anim_h_frames = 8
+particles_anim_v_frames = 1
+particles_anim_loop = true
+
+[sub_resource type="CircleShape2D" id=3]
+radius = 8000.0
+
+[node name="SYSTEM_DND_HARVHAUL" type="Sprite"]
+light_mask = 524293
+texture = SubResource( 1 )
+normal_map = SubResource( 2 )
+offset = Vector2( 0, 114 )
+region_enabled = true
+region_rect = Rect2( 744, 260, 48, 114 )
+script = ExtResource( 12 )
+
+[node name="AudioFire" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+bus = "ShipBowels"
+script = ExtResource( 1 )
+
+[node name="Laser" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -5.0
+bus = "ShipBowels"
+script = ExtResource( 1 )
+
+[node name="DroneLaunchManager" type="Node2D" parent="."]
+position = Vector2( 0, 40 )
+script = ExtResource( 13 )
+power = false
+emitting = false
+endEmitting = false
+acceleration = 2000
+deadzone = 20
+endSize = 50
+drones = 128
+
+[node name="Launch" type="Particles2D" parent="DroneLaunchManager"]
+visible = false
+light_mask = 0
+material = SubResource( 4 )
+rotation = 3.1255
+z_index = 40
+emitting = false
+amount = 64
+lifetime = 3.79727
+visibility_rect = Rect2( -4000, -4000, 8000, 8000 )
+local_coords = false
+process_material = ExtResource( 4 )
+texture = ExtResource( 11 )
+
+[node name="Stop" type="Particles2D" parent="DroneLaunchManager"]
+visible = false
+light_mask = 0
+material = SubResource( 4 )
+position = Vector2( -72.0868, 1.16004 )
+rotation = 3.1255
+z_index = 40
+emitting = false
+amount = 64
+lifetime = 3.79727
+visibility_rect = Rect2( -4000, -4000, 8000, 8000 )
+local_coords = false
+process_material = ExtResource( 10 )
+texture = ExtResource( 11 )
+
+[node name="Target" type="Node2D" parent="DroneLaunchManager"]
+position = Vector2( -144.174, 2.32007 )
+
+[node name="Near" type="Particles2D" parent="DroneLaunchManager/Target"]
+visible = false
+light_mask = 0
+material = SubResource( 4 )
+position = Vector2( 58.2216, 5.77274 )
+rotation = 3.1255
+z_index = 40
+amount = 512
+lifetime = 3.79727
+visibility_rect = Rect2( -4000, -4000, 8000, 8000 )
+process_material = ExtResource( 9 )
+texture = ExtResource( 11 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( -57.4491, 69.3939 )
+editor_only = true
+texture = ExtResource( 3 )
+texture_scale = 8.0
+energy = 4.0
+range_height = 57.7
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DronePickupArea" type="Area2D" parent="."]
+collision_layer = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="DronePickupArea"]
+modulate = Color( 0, 0.14902, 0.533333, 1 )
+light_mask = 0
+shape = SubResource( 3 )
+
+[node name="HarvBlock" type="Sprite" parent="."]
+material = ExtResource( 2 )
+position = Vector2( 0, 160 )
+scale = Vector2( 0.9, 0.9 )
+z_index = 1
+texture = ExtResource( 5 )
+normal_map = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 600, 292, 80, 90 )
+
+[node name="HarvVeins" type="Sprite" parent="HarvBlock"]
+use_parent_material = true
+position = Vector2( -0.5, -51.1786 )
+scale = Vector2( -0.96, 1 )
+z_index = -1
+texture = ExtResource( 5 )
+normal_map = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 616, 177, 48, 20 )
+
+[node name="HarvExhaust" type="Sprite" parent="HarvBlock"]
+use_parent_material = true
+position = Vector2( 0, -120 )
+scale = Vector2( 0.944445, 1.11111 )
+z_index = -2
+texture = ExtResource( 5 )
+normal_map = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 495, 174, 34, 13 )

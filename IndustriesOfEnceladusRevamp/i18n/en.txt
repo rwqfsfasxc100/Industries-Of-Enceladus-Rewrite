@@ -1,0 +1,574 @@
+locale|en
+
+SYSTEM_MWTIGHTBEAM|RA DMW Cannon
+
+SYSTEM_CARGO_AUX_STORAGE_12K|MPI Roving Silo
+
+SYSTEM_CARGO_AUX_STORAGE_12K_DESC|The MPI Roving Silo is by far the largest 
+
+SLOT_CARGOBAY_MOD|Mineral Hold Kits
+
+SYSTEM_MWTIGHTBEAM_DESC|Rusatom-Antonoff's Directed Microwave Cannon utilises a long, tubular waveguide to concentrate microwaves into a tight beam of irradiance. Its modular and unspecialised components are cheap and quick to repair, but are offset by high installation costs and middling power efficiency.
+
+SYSTEM_MWTIGHTBEAM_SPECS|Effective range: 800 m \nPower consumption: 120 MW \nOutput power: 90 MW \nWavelength: 1 cm \nMass: 400 kg \nManufacturer: Rusatom-Antonoff
+
+
+SYSTEM_MWTIGHTBEAM_PDT|RA DMW Cannon Turret
+
+SYSTEM_MWTIGHTBEAM_PDT_DESC|This version of the Rusatom-Antonoff DMW Cannon is mounted onto a Nakamura Dynamics NDPT turret body. It enjoys similar handling characteristics and the adjustable configuration parameters of their 42xx line of point-defense railgun turrets, though its gimbal driver had to be downgeared to properly manage the unit's heavy AC cabling. \n\nThe DMW-CT can automatically acquire and track targets, but, unlike its railgun counterpart, does not require manual input to fire.
+
+SYSTEM_MWTIGHTBEAM_PDT_SPECS|Effective range: 2000 m \n Targeting AI: Class-1 \nPower consumption: 120 MW \nOutput power: 90 MW \nWavelength: 1 cm \nMass: 3,000 kg \nManufacturer: Rusatom
+
+SYSTEM_AMMO_200|Projectile clip
+
+SYSTEM_AMMO_200_DESC|A set of extension rails for kinetic projectile weapons, capable of handling a variety of calibres. Ammunition is fed by a cost-effective rack-and-pinion actuator. Ports at their bases allow for manual and automatic reloading.
+
+SYSTEM_AMMO_200_SPECS|Storage: 200 kg \nDelivery: 100 kg/s \nManufacturer: Rasamama Material Solutions
+
+SYSTEM_CARGO_AUX_FAB|SSE Voyager Fabricator
+
+SYSTEM_CARGO_AUX_FAB_DESC|A custom-made and completely unlicensed monstrosity from Sin Space Engineering that became popular among ringside miners in the 2260s. The fabricator unit of a Voyager RSLS MPU has been torn out and placed further up in the cargo bay, along with a small mineral storage volume to replace its specialised feed hoppers. \n\nDue to the replacement of its power bus with a lower-grade distributor, moderate power efficiency losses are to be expected over the standard unit. \n\nDisclaimer: Nakamura Dynamics does not provide a warranty for this unit, and does not recognise it as part of its range of products, express or implied. Use of modified equipment may incur damages and present unexpected hazards.
+
+SYSTEM_CARGO_AUX_FAB_SPECS|Print power draw: 120 MW \nPrinting capability: drones, ammunition \nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nMass: 5,000 kg \nManufacturer: Sin Space Engineering / Nakamura-Obonto
+
+
+
+SYSTEM_CARGO_AUX_BIGFAB|RMS-PAL Fabricator
+
+SYSTEM_CARGO_AUX_BIGFAB_DESC|Rasamama Material Solutions' Portable Assembly Line is a true marvel of automation, incorporating two Class-1 AIs (ARTEMIS and APOLLO) that oversee eachother's work in an adversarial relationship. Its remarkable production speed is entirely owed to the two's constant situational optimisations, and its large output hoppers can be connected to vessels' internal magazines as auxiliary consumable storage units. \n\nDisclaimer: AI specifications comply with Class-1 categorisation as per the Los Angeles Convention of 2184. Neither ARTEMIS nor APOLLO are intended to be capable of sapience or communication. Report any aberrant behaviour to ATLAS immediately.
+
+SYSTEM_CARGO_AUX_BIGFAB_SPECS|Print power draw: 210 MW \nPrinting capability: drones, ammunition \nAmmunition capacity: 5,000 kg \nDrone capacity: 5,000 kg \nMass: 10,500 kg \nManufacturer: Rasamama Material Solutions
+
+
+
+SYSTEM_CARGO_AUX_FAB_MANUAL|Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nProduces kinetic ammunition from a 9:1 ratio of iron to vanadium. \nProduces nanodrone components from a 4:1 ratio of iron to platinum. \nTakes up some space in the cargo bay.
+
+SYSTEM_CARGO_AUX_STORAGE_4K|Conlido Internal Storage Rack
+
+SYSTEM_CARGO_AUX_STORAGE_4K_DESC|The Conlido RVM Internal Storage Rack, tried and tested by asteroid belt miners throughout the early 22nd century, is a relatively simple concept with a complicated execution. This modular retrofit kit allows for existing units to be attached to the processed material lines of most large vessels available on the ringside market.
+
+SYSTEM_CARGO_AUX_STORAGE_4K_SPECS|Cargo capacity: 4,000 kg / mineral (24,000 kg total) \nMass: 3,000 kg \nManufacturer: Conlido RVM
+
+SYSTEM_CARGO_AUX_STORAGE_MANUAL|Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nTakes up some space in the cargo bay. \nDoes not require power or reactor heat.
+
+
+SYSTEM_CARGO_AUX_STORPROC_8K|THI Mineral Tank Module
+
+SYSTEM_CARGO_AUX_STORPROC_8K_DESC|Titan Heavy Industries' internal storage solution is as experimental as it is novel. By tapping reactor heat from the vessel's radiators, processed materials can be held in a liquid state indefinitely, increasing storage efficiency by up to 20%. \n\nSome miners have taken to using the unit as a rudimentary ore preprocessor, as the relatively thin insulation bleeds heat into the space between the tanks. THI does not endorse nor recommend usage in this manner.
+
+SYSTEM_CARGO_AUX_STORPROC_8K_SPECS|Cargo capacity: 8,000kg / mineral (48,000 kg total) \nIce melt rate: 5 kg/s \nPower draw: 250 KW / chunk (heating losses) \nRemass processing efficiency: 10% \nMass: 8,000 kg \nManufacturer: Titan Heavy Industries
+
+SYSTEM_CARGO_AUX_STORPROC_MANUAL|Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume. \nProcessed ore stored in seperate containers, with capacity limited per mineral type. \nReduces ice mass of chunks within a small area. \nTakes up some space in the cargo bay.
+
+SYSTEM_AUX_SMES_10K|OPS-10 Capacitor Bank
+
+SYSTEM_AUX_SMES_10K_DESC|Obonto Microengineering's backup power solution is, while inelegant, incredibly effective. Basically just a few extra-large ultracapacitors in a steel trenchcoat, the OPS-10 can deliver phenomenal power output at peak load while being about as affordable as their standard ultracapacitor range. \n\nAs it is not connected to internal cooling systems, the OPS-10 relies on a slow charge rate and a bulky radiative cooler to manage its temperature.
+
+SYSTEM_AUX_SMES_10K_SPECS|Capacity: 10,000 MJ \nCharge power draw: 50 MW \nDischarge power (peak): 10,000 MW \nMass: 6,500 kg \nType: High-density graphene fractal ultracapacitor array \nManufacturer: Obonto Microengineering
+
+SYSTEM_CARGO_MOD_2K|SSE Saddlebags
+
+SYSTEM_CARGO_MOD_2K_DESC|A basic set of expansion modules from Sin Space Engineering, offering a minor boost to cargo hold space. Disclaimer: use of unlicensed equipment may void your vessel's warranty.
+
+SYSTEM_CARGO_MOD_2K_SPECS|Cargo capacity: 2,000 kg / mineral (12,000 kg total) \nCompatibility: Divided and Dynamic \nMass: 1,000kg \nManufacturer: Sin Space Engineering
+
+
+SYSTEM_CARGO_MOD_4K|E-Prime Hold Rejoin
+
+SYSTEM_CARGO_MOD_4K_DESC|An order to have your ship's processed cargo hold extended, courtesy of the local shipyard. Installation comes with a money-back guarantee, a special warranty addendum, and a full structural integrity review for peace of mind. Fly safe!
+
+SYSTEM_CARGO_MOD_4K_SPECS|Cargo capacity: 4,000 kg / mineral (24,000 kg total) \nCompatibility: Divided and Dynamic \nMass: 2,000kg \nManufacturer: N/A
+
+
+SYSTEM_CARGO_MOD_6K|Conlido freightReady Hoppers
+
+SYSTEM_CARGO_MOD_6K_DESC|A set of hull-embedded mineral containers that implement patented Never-Void technology to ensure that all possible space is utilised to its fullest extent. Comes with warranty addendum. This product was tested by REAL miners doing REAL work in REAL SPACE ENVIRONMENTS! \n\nNotice: vessels with installations more recent than 2237 are not able to claim workplace injury compensation involving the operation / maintenance / installation / removal / utilisation of, or visual / auditory / gustatory / olfactory / physical / mental contact with, Conlido freightReady Hoppers. Familiarise yourself and coworkers with proper operational procedures before undertaking duties involving Conlido freightReady Hoppers.
+
+SYSTEM_CARGO_MOD_6K_SPECS|Cargo capacity: 6,000 kg / mineral (36,000 kg total) \nCompatibility: Divided and Dynamic \nMass: 3,500kg \nManufacturer: Conlido RVM
+
+
+SYSTEM_CARGO_MOD_BOTH_MANUAL|Requires an MPU to properly utilise. \nPassively increases onboard processed cargo volume.
+
+
+
+SYSTEM_CARGO_MOD_BOLTS|Locking Bolts
+
+SYSTEM_CARGO_MOD_BOLTS_DESC|An assortment of standard locking bolts for ships with variable-geometry holds, to be applied to appropriate fixture points.
+
+SYSTEM_CARGO_MOD_BOLTS_SPECS|Conversion mode: Dynamic to Divided \nConversion ratio: 1:1 (no reduction)
+
+SYSTEM_CARGO_MOD_BOLTS_MANUAL|Converts the mineral hold storage volume to Divided. \nDivisions are equally divided into sixths of the total combined capacity. \nDoes not require power or reactor heat.
+
+
+
+SYSTEM_CARGO_MOD_AMORPH4|Conlido aMorphIV
+
+SYSTEM_CARGO_MOD_AMORPH4_DESC|While the Cothon-217's experimental storage geometry was met with limited success, Conlido RVM was still keen on the concept. Agreements were made between ship manufacturers for trials and, false starts and missed deadlines not withstanding, the aMorphIV Hold Conversion Kit eventually entered the market. \n\nIts modular parts can be retrofitted to all ship systems currently available on the market, and employs the same fundamental principles as its vessel of origin.
+
+SYSTEM_CARGO_MOD_AMORPH4_SPECS|Conversion mode: Divided to Dynamic \nConversion ratio: 6:4 (33% reduction) \nMass: 1,500 kg \nManufacturer: Conlido RVM
+
+
+SYSTEM_CARGO_MOD_AMORPH5|THI MD-5
+
+SYSTEM_CARGO_MOD_AMORPH5_DESC|The Titan Heavy Industries MD-5 Hold Kit is well-known among shipyard engineers for its accordion-style collapsing internal volumes. Lessons were learned from prior implementations and the hardware takes up much less space in the hold as a result, but its compact linear actuators and precision assembly translate to high upfront costs.
+
+SYSTEM_CARGO_MOD_AMORPH5_SPECS|Conversion mode: Divided to Dynamic \nConversion ratio: 6:5 (17% reduction) \nMass: 2,500 kg \nManufacturer: Titan Heavy Industries
+
+
+SYSTEM_CARGO_MOD_AMORPH6|NDSBH
+
+SYSTEM_CARGO_MOD_AMORPH6_DESC|Nakamura Dynamics' Soft Body Hold is the ultimate dynamic conversion kit for divided holds, removing the default partitions and replacing them with a simple, yet effective rolling baffle system that's custom-commissioned according to a ship's specifications. Compressed air is used to create a frictionless cushion as the baffles move, and a control computer manages and predicts future geometry changes through a direct link to the cargo bay's processing unit and microseismic imaging system.
+
+SYSTEM_CARGO_MOD_AMORPH6_SPECS|Conversion mode: Divided to Dynamic \nConversion ratio: 1:1 (no reduction) \nMass: 3,750 kg \nManufacturer: Nakamura Dynamics
+
+
+SYSTEM_CARGO_MOD_AMORPH_MANUAL|Requires an MPU to properly utilise. \nConverts the mineral hold storage volume to Dynamic. \nIncreases or decreases total hold storage volume according to the conversion ratio. Percentage indicated in specification. \nDoes not require power or reactor heat.
+
+SYSTEM_CARGO_AUX_PREPROC_0x30|Rasamama RP-25
+
+SYSTEM_CARGO_AUX_PREPROC_0x30_DESC|The Rasamama Material Solutions RP-25 is a low-profile ore preprocessor designed to exclusively melt ice from mineral chunks within a vessel's cargo bay and little else. The unit taps the reactor turbine bleed line for thermal power and requires very little electrical energy to function. \n\nRemass is recovered by running process exhaust through a condenser-radiator panel mounted to the vessel's hull. Rasamama MS recommends monthly flow tests followed by hot gas purges to prevent fouling.
+
+SYSTEM_CARGO_AUX_PREPROC_0x30_SPECS|Ice melt rate: 10 kg/s \nPower draw: 25 KW / chunk \nMPU mineral efficiency: x100% (no change) \nRemass processing efficiency: 30% \nMass: 750 kg \nManufacturer: Rasamama Material Solutions
+
+
+
+SYSTEM_CARGO_AUX_PREPROC_20x10|Nakamura Big MT
+
+SYSTEM_CARGO_AUX_PREPROC_20x10_DESC|Nakamura Dynamics' Big MT Ore Preprocessor utilises the fundamental principles of its operation to its advantage when processing ore chunks. Free steam in the cargo bay is superheated by the unit's massive toroidal radiator, quickly sublimating ice and preheating the resultant metal particulates for more efficient processing. \n\nWhile some process steam can be reclaimed as propellant, the unit's compact condenser is often overloaded by the sheer volume and high temperatures. \n\nDisclaimer: no Lobotomites were harmed in the development of this unit.
+
+SYSTEM_CARGO_AUX_PREPROC_20x10_SPECS|Ice melt rate: 25 kg/s \nPower draw: 125 KW / chunk \nMPU mineral efficiency: x120% \nRemass processing efficiency: 10% \nMass: 2,000 kg \nManufacturer: Nakamura Dynamics
+
+
+
+SYSTEM_CARGO_AUX_PREPROC_40x20|Rusatom-Antonoff MPP-N1
+
+SYSTEM_CARGO_AUX_PREPROC_40x20_DESC|The MPP-N1 is one of the best mineral preprocessors on the market, offering excellent efficiency gains and propellant reclamation yields with a magnetohydrodynamic system. \n\nThe unit repurposes reactor powerplant exhaust as its heat source, emitting it into the bay through a bulb at its centre. Electromagnetic coils surrounding the bulb control temperatures through inductive heating. \n\nProcess steam and trace minerals are recovered by a baffled condenser. Replacement of the condenser assembly is recommended after 320 flight-hours to ensure maximum efficiency.
+
+SYSTEM_CARGO_AUX_PREPROC_40x20_SPECS|Ice melt rate: 40 kg/s \nPower draw: 375 KW / chunk \nMPU mineral efficiency: x140% \nRemass processing efficiency: 20% \nMass: 6,500 kg \nManufacturer: Rusatom-Antonoff
+
+
+
+SYSTEM_CARGO_AUX_PREPROC_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
+
+SYSTEM_SALVAGE_ARM_HEAVY|Rusatom-Antonoff ORD
+
+SYSTEM_SALVAGE_ARM_HEAVY_DESC|Through the course of their collaboration on the KTA24, Rusatom-Antonoff quickly recognised the shortcomings of the Triskellion-Armstrong AR-1500. A slow and delicate device, its usage as an ore recovery tool quickly wears out its precision servos and carefully-constructed docking adapter. The ORD is their response to such shortcomings. \n\nWhile especially heavy and power-hungry on account of its bulky support structure, its hard-wearing motors and bearings offer a viable and durable alternative to its counterpart. 
+
+SYSTEM_SALVAGE_ARM_HEAVY_SPECS|Arm strength: 3,200 kN \nReach: 40 m \nPower draw (peak): 220 MW \nMounting Location: High-stress only \nMass: 14,000 kg \nManufacturer: Rusatom-Antonoff
+
+
+SYSTEM_SALVAGE_ARM_LIGHT|Runasimi KRB-500
+
+SYSTEM_SALVAGE_ARM_LIGHT_DESC|The Runasimi KRB-500 Sample Manipulator was originally developed for the vessels of lesser-funded research organisations, but has recently found a new niche in the mining sector as a convenient alternative to nanodrone systems. \n\nThe manipulator's actuators use fluid couplings with brake discs to simulate the precision of stepper or servo motors, a novel implementation that minimises maintenance expenses and overall mass. In addition, its claw can be magnetised to clamp to the outer hull of small ferromagnetic objects such as drone hulls, but its holding strength may be inadequate for larger vessels. \n\nNote: analysis and experiment packages are available as a separate purchase.
+
+SYSTEM_SALVAGE_ARM_LIGHT_SPECS|Arm strength: 500 kN \nReach: 35 m \nPower draw (peak): 60 MW \nMass: 2,050 kg \nManufacturer: Runasimi Inc.
+
+HUD_HOLD_CAP|total hold capacity
+
+HUD_HOLD_FILL|hold fill level
+
+
+
+SYSTEM_AUTOPILOT_337MOD|MA-337-MAX Autopilot
+
+SYSTEM_AUTOPILOT_337MOD_DESC|The MAX is a software upgrade to the MA-337 autopilot that integrates fly-by-wire input vectors into its neural network.
+
+SYSTEM_AUTOPILOT_337MOD_SPECS|Developer: Mitsudaya-Starbus \nCapabilities: Antipodal Reaction Limiter \nAdaptive Angular Thrust \nFly-By-Wire \nLIDAR overlay
+
+SYSTEM_AUTOPILOT_337MOD_MANUAL|Displays LIDAR circle around your ship. \nARL: Cancels out opposite thrusters, conserving fuel. \nFBW: Routes all manual thruster input through the autopilot. \nCan use gimballed thrusters and engines. \nAAT: Observes cargo mass shifts and thruster damage to compute minimum thrust required for maneuver. \nReboot onboard computer to clear adaptation data.
+
+SLOT_CARGO_AUX|Cargo Bay Accessories
+
+
+SLOT_CREW_MOD|Habitat Kits
+HUD_CREW_QUALITY|habitat quality
+
+
+SYSTEM_CREW_ADD_BUNK|Conlido bunkX1
+
+SYSTEM_CREW_ADD_BUNK_DESC|The simplest and cheapest crew accommodation expansion kit money can buy, this set includes one surface-mounted mixed-g bed that implements a memory foam base with basic textile covers and fire-safe insulation. They're surprisingly comfortable, but the lack of private quarters is sure to be a point of contention between crewmembers. \n\nStation control reminds captains that regulations require at least 3x the allotted provisions for each crewmember over the planned length of excursions into the rings. Failure to do so may result in fines from appropriate regulatory bodies.
+
+SYSTEM_CREW_ADD_BUNK_SPECS|Crew capacity: +1 \nCrew morale erosion per day: +30% (very poor) \nManufacturer: Conlido RVM
+
+
+SYSTEM_CREW_ADD_BUNK2|Conlido bunkX2
+
+SYSTEM_CREW_ADD_BUNK2_DESC|One more, same box! The bunkX2 is essentially two bunkX1 units shipped in a far more efficient configuration, but that's about where its benefits end. \n\nMost potential hires would turn away if they saw one of these in a vessel, let alone two. Regardless, they are certainly an option for increasing crew capacity, and are often used in bulk by small interlunar transit vessels where volume and convenience is more important than passenger comforts.
+
+SYSTEM_CREW_ADD_BUNK2_SPECS|Crew capacity: +2 \nCrew morale erosion per day: +40% (very poor) \nManufacturer: Conlido RVM
+
+
+SYSTEM_CREW_ADD_CAPSULE|Runasimi Habitation Capsules
+
+SYSTEM_CREW_ADD_CAPSULE_DESC|Runasimi's option in the crew habitation market has been something of a staple in the low-end hospitality market, consisting of a light, pressure-tight block with two internal capsule beds, a basic en-suite toilet, and stowage for crew belongings and provisions. An internal oxygen reservoir and pressure suit racks ensure that hull breaches won't immediately disable crew during off-hours. \n\nPressure suits sold separately. Check reservoir pressure regularly and perform containment check as outlined in manual at least once per week. Runasimi Inc. is not liable for damages incurred by poorly-maintained equipment.
+
+SYSTEM_CREW_ADD_CAPSULE_SPECS|Crew capacity: +2 \nCrew morale erosion per day: +25% (poor) \nManufacturer: Runasimi Inc.
+
+
+SYSTEM_CREW_ADD_MANUAL|Increases or decreases total crew capacity. \n Increases or decreases crew morale erosion per day of operation. \nUnhappy crew may cause worse operational outcomes. \nDoes not require power or reactor heat.
+
+
+
+SYSTEM_CREW_MOD_HOME|Conlido mgHome Kit
+
+SYSTEM_CREW_MOD_HOME_DESC|Conlido's mgHome is a simple modular kit marketed towards family vessels and light transports. It includes a shared multi-channel entertainment system for crew quarters, a refrigerator and improved food preparation unit for the galley, and several adjustments to the washroom such as a multi-mode showerhead and memory foam toilet cushioning. \n\nNote: showerhead mister is not appropriate for zero-g usage. For best results, do not wash surfaces or cushions with bleach-based cleaners.
+
+SYSTEM_CREW_MOD_HOME_SPECS|Crew morale erosion per day: -10% (good) \nManufacturer: Conlido RVM
+
+
+SYSTEM_CREW_MOD_KMX|Antonoff KMX Upfit
+
+SYSTEM_CREW_MOD_KMX_DESC|The Antonoff KMX is advertised as a long-term flight comfort system intended for interlunar cargo crews and passenger vessels. \n\nWith a full water reclamation system, a range of improvements to the galley, lavatory, and recreaction deck (and retrofit to introduce them on most common hull patterns, should any not exist), and breathable upholstery for most standard seating, crews generally find flying with the KMX upfit preferable to flying without.
+
+SYSTEM_CREW_MOD_KMX_SPECS|Crew morale erosion per day: -20% (good) \nManufacturer: Antonoff
+
+
+SYSTEM_CREW_MOD_OCM|OCM-36 Upfit
+
+SYSTEM_CREW_MOD_OCM_DESC|Obonto Microengineering's OCM-36 completely overhauls ship habitats with modern luxuries that will feel very familiar to those who have visited or lived on their stations. This purchase covers the full cost of Obonto (or otherwise licensed) renovators' labour, which includes the use of a Nakamura Dynamics Class 2 AI system to optimise for varying internal geometries. \n\nIf the divided crew quarters with adjustable bedding, independent entertainment systems and en-suite bathrooms aren't enough, there's always the full Yamato-brand kitchenette in the galley, the diverse and expansive recreation area, and the modern, sleek cockpit overhaul - not to mention the pleasing wall cladding and low-profile handholds for zero-g navigation.
+
+SYSTEM_CREW_MOD_OCM_SPECS|Crew morale erosion per day: -50% (excellent) \nManufacturer: Obonto Microengineering
+
+
+SYSTEM_CREW_MOD_MANUAL|Increases or decreases crew morale erosion per day of operation. \nUnhappy crew may cause worse operational outcomes. \nDoes not require power or reactor heat.
+
+SHIP_TSUKUYOMI_IOT|Tsukuyomi-Class Frigate (Decommissioned)
+
+SHIP_TSUKUYOMI_IOT_DESC|The Tsukuyomi class of light frigates were designed in 2190 for military operations throughout the solar system. They were the first of their type and laid the groundwork for modern tactical frigates, with their quintuplet reactors serving as immense sources of power for their powerful thrusters. Following phase-out of nuclear saltwater rockets in military service, many were scrapped or sold off to private military contractors and corporations. \n\nCourtesy of the Sin Space Engineering shipyards, this unit has been fully demilitarised and refurbished for operations within the rings. Its saltwater reactors have been replaced with three modular containment vessels for modern NTR system retrofitting, and its bow torpedo tubes have been departitioned to expand its hold and add four auxiliary equipment bays.
+
+SHIP_TSUKUYOMI_IOT_SPECS|Make: Sin Space Engineering / Nakamura Dynamics \nHigh-Stress Hardpoints: 1 \nTorpedo Tubes: 4 \nDocking Bays: 4 \nTurret Mounts: 2 \nCrew: 16 \nDry mass: 455,350 kg \nCargo bay: 1300 m^3 \nProcessed cargo storage: 37,500 kg
+
+SYSTEM_REACTOR_TSUYUKOMI_IOT-A|Tsukuyomi Reactor Core A
+SYSTEM_REACTOR_TSUYUKOMI_IOT-B|Tsukuyomi Reactor Core B
+SYSTEM_REACTOR_TSUYUKOMI_IOT-C|Tsukuyomi Reactor Core C
+
+
+
+SHIP_OCP209_DD|OCP-214-DD "Deep Dish"
+
+SHIP_OCP209_DD_DESC|The 214-DD is a version of the OCP-209 specially adapted for mining operations within the rings. The structure supporting its consumable bays has been hollowed and plated to extend the raw cargo volume, and additional power infrastructure permits the installation of standard cargo bay accessories. \n\nDespite the obvious benefits, the pocket makes handling ore awkward, and the reduced onboard mineral hold space means captains tend to be more reliant on auxiliary hardware than on most other vessels.
+
+SHIP_OCP209_DD_SPECS|Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 4 \nCrew: 8 \nDry mass: 190,500 kg\nCargo bay: 700 m^3\nProcessed cargo storage (combined): 36,000 kg
+
+
+SHIP_OCP209_SNAP|OCP-207-SNAP "Piranha"
+
+SHIP_OCP209_SNAP_DESC|The 207-SNAP is a version of the OCP-209 that implements an excavator design that was considered during the prototype phase of development. Its heavy dual doors are better suited for crushing ringroids than its counterpart - and, unfortunately, the fragile equipment that it is designed to handle. \n\nDue to its unique configuration, autopilot rotation assistance is not available on this unit.
+
+SHIP_OCP209_SNAP_SPECS|Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 4 \nCrew: 8 \nDry mass: 184,500 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg
+
+
+
+SHIP_COTHON_LUX|SSE Cothon-2200-XL
+
+SHIP_COTHON_LUX_DESC|This unofficial "modernised" variant of the Cothon-213 Triplet features an additional 'crew compartment' (lifepod), an additional pair of translatory thrusters, and a handful of "premium" features such as a combination lounge and mess, upholstered breathable-fabric seating, and a functioning washroom. The two pods are mated together at their base docking ports and secured to the frame with standard emergency quick-release hardware. The XL stands for "Extra Love". \n\nSin Space Engineering does not offer any warranty of any kind, express or implied.
+
+SHIP_COTHON_LUX_SPECS|Make: Sin Space Engineering / Conlido RVM \nLow-Stress Hardpoints: 4 \nCrew: 6 \nDry mass: 77,250 kg \nCargo bay: 260 m^3 \nProcessed cargo storage: 25,000 kg
+
+
+
+SHIP_MADCERF_CIV|MAD-CERF (Civilian Refit)
+
+SHIP_MADCERF_CIV_DESC|This civilian refit, made in collaboration with Obonto Microengineering, introduces a number of modifications for the diverse requirements of the ring environment. Its compact top-mounted habitat has been relocated to the bow and replaced with an expanded OCP-standard centrifuge, increasing its effective crew capacity to eight. Further, the docking bay has been enclosed with a mesh basket and the clamps removed to support mining operations, and its rear bulkhead bears an enormous sliding door for acceptance of large cargo. Much of the bow substructure has also been replaced by hold volumes, lending the vessel more processed mineral space than any other vessel on the civilian market.
+
+SHIP_MADCERF_CIV_SPECS|Make: Machines Astro-Dynamiques / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nTurret Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6 \nDry mass: 195,000 kg \nCargo bay: 1,300 m^3 \nProcessed cargo storage: 45,000 kg
+
+
+SHIP_MADCERF_DESC|The Machines Astro-Dynamiques Cernunnos Modèle II, otherwise known as the MAD-CERF, is the staple ship of salvage companies within the rings of Saturn. Its heavily-armoured bow, rated for asteroid belt travel, is an inelegant but effective solution to the many hazards posed by interplanetary excursions. Twin reactors on either side of the vessel each power their own pair of torches and maneuvering thrusters.
+
+
+
+SHIP_OBERON|UMC Oberon MLP-60
+
+SHIP_OBERON_DESC|The Oberon MLP-60 is a curious vessel manufactured by the United Machine Cults. Originally an autonomous vehicle launched by electromagnetic rail cannons for orbital racing events, it was outmoded by later fusion-propelled units, but enthusiasts quickly bought up the remaining stock and it eventually found its way to the rings. Six belt radiators, three at either side, cool its high-performance reactor and partially shield its exposed fuel tanks, though are hardly needed due to the vessel's comical number of translatory thrusters. \n\nMultiple modifications have been undertaken to make the vessel appropriate for operation within the rings: its magnetic contacts have been cleverly retrofitted into two high-stress hardpoints, interface infrastructure has been built into the small cargo bay in the bow to support mineral processing units (barely, and with meager onboard space allotted to support them), and a HAL-9001 luxury lifepod serves as a comfortable cockpit and crew compartment.
+
+SHIP_OBERON_SPECS|Make: United Machine Cults / Custom-built \nHigh-Stress Hardpoints: 2 \nDrone Bays: 1 \nCrew: 4 \nDry mass: 26,400 kg \nCargo bay: 50 m^3 \nProcessed cargo storage: 12,000 kg (combined)
+
+SYSTEM_REACTOR_OBERON|Oberon performance reactor
+
+
+
+SHIP_TRTL_RAM|KX37 TNTRL "RAM"
+
+SHIP_TRTL_RAM_DESC|The "Ringa Aftermarket Modification" variant of the KX37, typically just called the "Ram", is a modification pattern that gained popularity in 2269 after its distribution by a RingChan user going by the handle 'BLKCandy'. The pattern sacrifices a moderate amount of mineral hold capacity to introduce power and feed rails for two drone hardpoints on the tail-end of the vessel's spines, replaces the fixed thruster mounts with gimballing variants, and reworks the RCS blisters for enhanced mobility. \n\nIts most notable feature is its Prospector-type grinder, obtained direct from the salvage market. Its installation makes only minor concessions to crew comforts, being remarkably noisy during operation and slightly reducing the recreation area's floor space.
+
+SHIP_TRTL_RAM_SPECS|Make: Rusatom-Antonoff / Custom-built \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 4 \nDry mass: 42,920 kg \nCargo bay: 110 m^3 \nProcessed cargo storage: 40,000 kg (combined) \nEMP shielding: 100 MW
+
+SYSTEM_REACTOR_TNTRL_FORT|Braced K37 nuclear reactor
+
+
+
+SHIP_ATLAS_WASP|Wasp-class Scout (Decommissioned)
+
+SHIP_ATLAS_WASP_DESC|Manufactured in the mid-2200s, the Nakamura Dynamics Wasp-class of automated tactical scouts utilise [REDACTED] as their power source and [REDACTED], delivering a constant [REDACTED] megawatts of electrical energy as long as the vehicle's [REDACTED] is [REDACTED]. A Faraday cage mesh insulates much of the vehicle, protecting it from static discharges in dense space environments and providing a convenient charge dissipation vector for the [REDACTED]. \n\nNow wasn't that fun? This version, coming to you exclusive from the Sin Space Engineering shipyards, is totally declassified, decommissioned, and probably deillegaled, with a range of nice benefits like a performance propellant-remass reaction wheel, a "Reactor Housing" where the redacted-whatever was torn out (it was like that when we got it), and a probably-functional cargo bay, all topped with the Conlido Classic™ converted lifepod for her pleasure. \n\nWarranty? Hell no. Fly the goddamn ship, ringa. And, if anyone asks where you got this thing, give us a call and send your logs for 25% off your next purchase.
+
+SHIP_ATLAS_WASP_SPECS|Make: Sin Space Engineering / Nakamura Dynamics \nLow-Stress Hardpoints: 2 \nThruster mount gimbal: 36 deg \nCrew: 3 \nDry mass: 8,250 kg \nCargo bay: 40 m^3 \nProcessed cargo storage: 500 kg \nEMP shielding: 320 MW
+
+SYSTEM_REACTOR_JURYRIG|Jury-rigged reactor
+
+SYSTEM_REACTIONWHEEL_PERF|Fluid reaction wheel
+
+
+
+SHIP_PROSPECTOR_PIGEON|Pigeon Prospector
+
+SHIP_PROSPECTOR_PIGEON_DESC|What happens when a Pelican and a Vulture love eachother very much? They make this thing - or so it goes. The Pigeon's high price point is entirely on account of the incredible skill that went into its implementation; additional girding struts support a high-stress hardpoint to the fore of the vessel, the entire power and equipment feed system having been reworked to accommodate it. The bay has also been shortened to handle the stress, which has permitted reinstallation of a standard grinder.
+
+SHIP_PROSPECTOR_PIGEON_SPECS|Make: Mitsudaya-Starbus / Conlido RVM \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6 \nDry mass: 70,000 kg \nCargo bay: 70 m^3 \nProcessed cargo storage: 14,000 kg
+
+
+
+SHIP_AT225_STUB|Antonoff-Titan K225-SH
+
+SHIP_AT225_STUB_DESC|The Short Haul variant, affectionately nicknamed the "Stubby" by series enthusiasts, began manufacture only three years following the wildly-successful launch of its base variant, and is designed to fill express transit roles throughout the solar system. The SH makes up for the loss of its midsection with its light, maneuverable frame and in-built nanodrone assembler mounts, the latter of which makes it an excellent alternative to the base model in mining operations.
+
+SHIP_AT225_STUB_SPECS|Make: Antonoff-Titan Heavy Industries \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 4 \nCrew: 12 \nDry mass: 160,000 kg\nCargo bay: 280 m^3 \nProcessed cargo storage: 5,000 kg
+
+
+
+SHIP_TRTL_OCP|SSE OK720 TNTRL
+
+SHIP_TRTL_OCP_DESC|"Oh, dear God, what is that?", they said. "That won't fly," they said. "Stop calling us or we'll press charges," both Antonoff and Obonto said, in unison. It was in this chorus of naysaying and whining that we created the miracle that is the OK720 TNTRL. \n\nTwo spare bay halves from Obonto surplus and the resectioned corpse of a K37 come together to create this masterpiece, originally a "joke" posted to the RingChan /dreamship/ board by user snownukitro. With a truly enormous cargo bay and support hardware for OCP-standard MPUs and accessories, four low-stress equipment hardpoints, and incredibly low mass for the volume of its bay, this monster is perfectly suited for ring mining - as long as it doesn't hit anything. \n\nLimited warranty applies. We won't replace it if you get stuck in a tight space, but we'll sell you replacement panels.
+
+SHIP_TRTL_OCP_SPECS|Make: Rusatom-Antonoff / Obonto Microengineering / Sin Space Engineering \nLow-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 4 \nCrew: 4 \nDry mass: 86,600 kg \nCargo bay: 720 m^3 \nProcessed cargo storage: 5,000 kg
+
+SYSTEM_DND_HARVTUG|OT Hard-Stop Tug Drones
+
+SYSTEM_DND_HARVTUG_DESC|The Obonto-Titan Hard-Stop nanodrone delivery system is a modification of THI's Harvester-class system, configured to bring high-albedo objects to a gentle stop relative to the rings. Originally manufactured for the OCP-209 as a proprietary equipment loss method, it has since seen distribution on the aftermarket following commerce agreements in the 2260s.
+
+SYSTEM_DND_HARVTUG_SPECS|Power draw: 120 MW \nEffective range: 800 m (line of sight) \nDrone launch capability: 100 dps \nDrone wet mass: 0.1 kg \nThrust: 1 kN (per drone) \nMass: 8,000 kg \nManufacturer: Obonto Micro Engineering / Titan Heavy Industries
+
+
+SYSTEM_DND_HARVHAUL|THI Harvester-class Haul Drones
+
+SYSTEM_DND_HARVHAUL_DESC|This monstrous piece of hardware is an industrial assembly line masquerading as a disposable nanodrone assembler. Its enormous infrared laser array and fabrication unit have be connected to individual low-stress buses, but when it has enough power, it's a thing to behold. The unit's behaviour guides drones to intercept any high-albedo objects and tows them towards your ship.
+
+SYSTEM_DND_HARVHAUL_SPECS|Power draw: 120 MW \nEffective range: 800 m (line of sight) \nDrone launch capability: 100 dps \nDrone wet mass: 0.1 kg \nThrust: 1 kN (per drone) \nMass: 8,000 kg \nManufacturer: Titan Heavy Industries
+
+
+
+SYSTEM_EXODYN|THI Dyna-Cargo Container
+
+SYSTEM_EXODYN_DESC|An experimental dynamic variant of the THI Cargo Container, released to the public in the mid-2200s. Requires on-site mineral processing units to utilise. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \n\nDyna-Cargo is a trademark of Titan Heavy Industries. All rights reserved. Station control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability.
+
+
+SYSTEM_EXODYN_SPECS|Cargo capacity: 72,000 kg (combined) \nPower usage (nominal): 20 MW \nCradle mass: 500 kg \nManufacturer: Titan Heavy Industries
+
+
+SYSTEM_EXOBIG|THI Jumbo Cargo Container
+
+SYSTEM_EXOBIG_DESC|The 'Jumbo' is a variant of the THI Cargo Container that
+
+
+SYSTEM_EXSTORAGE_ALT|THI Cargo Container (Alternate)
+
+SYSTEM_EXSTORAGE_ALT_DESC|The Titan Heavy Industries Cargo Containers are fully autonomous storage pods that can relay processed minerals from a mining site. When the cradle is powered down, the pod will return to the designated station. These require on-site mineral processing units to utilize. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \n\nStation control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability. \n\nThis alternate version for the Prospector series is placed at the midships for enhanced manoeuvring.
+
+
+SYSTEM_EXMONO_ALT|THI Monocargo Container (Alternate)
+
+SYSTEM_EXMONO_ALT_DESC|A single-ore variant of the standard THI Cargo Container for specialized mining runs that focus on the collection of only one mineral type. These require on-site mineral processing units to utilize. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \n\nStation control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability. \n\nThis alternate version for the Prospector series is placed at the midships for enhanced manoeuvring.
+
+
+SYSTEM_EXODYN_ALT|THI Dyna-Cargo Container (Alternate)
+
+SYSTEM_EXODYN_ALT_DESC|An experimental dynamic variant of the THI Cargo Container, released to the public in the mid-2200s. Requires on-site mineral processing units to utilise. The equipment purchase of the cargo cradle comes with a lease covering the resupply of new pods for as long as the owner holds the license. \n\nDyna-Cargo is a trademark of Titan Heavy Industries. All rights reserved. Station control warns that retrofit with certain RCS configurations may risk overheating the Cargo Container's micro-reactor. Captains assume all such liability. \n\nThis alternate version for the Prospector series is placed at the midships for enhanced manoeuvring.
+
+SYSTEM_THRUSTER_PIN150|RMS Pin-C50 thruster
+
+SYSTEM_THRUSTER_PIN150_DESC|The Rasamama Material Solutions Pin-C50 is a unique solid-state thruster system that utilises pulsed induction to accelerate and vector hydrogen plasma without the need for any mechanical components, massively minimising the damage-related issues associated with conventional thrusters. \n\nWhile incredibly hard-wearing, the installation of heavy plasma conduits and supporting power infrastructure, as well as the thrusters' direct embedment into the vessel hull, requires specialist assistance that may be difficult to afford.
+
+SYSTEM_THRUSTER_PIN150_SPECS|Thrust: 150 kN \nExhaust velocity: 90 km/s \nPropellant consumption: 1.6 kg/s \nPower consumption: 90 MW \nOperation mode: Virtual variable thrust \nVectored thrust angle: 36 deg \nPropellant: Hydrogen plasma \nMass: 185 kg (per thruster) \nManufacturer: Rasamama Material Solutions
+
+
+
+SYSTEM_THRUSTER_BLAST|ERS-BlasTR 7200 thruster
+
+SYSTEM_THRUSTER_BLAST_DESC|Electro Ride Systems' BlasTR is a complete deviation from their previous NAGHET, utilising a helical magnetoplasmadynamic accelerator to achieve spectacular thrust at equally improbable exhaust velocities. Primarily marketed towards racing ships, it has also seen interest from operators of heavy vessels, whose high thrust requirements have long been overserved by thrusters with poor propellant economies.
+
+SYSTEM_THRUSTER_BLAST_SPECS|Thrust: 450 kN \nExhaust velocity: 22 km/s \nPropellant consumption: 20.5 kg/s \nPower consumption: 72 MW \nThermal consumption: 5.0 GW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 145 kg (per thruster) \nManufacturer: Electro Ride Systems
+
+
+
+SYSTEM_THRUSTER_PNTRM|ND-PNTRm thruster
+
+SYSTEM_THRUSTER_PNTRM_DESC|The remarkable success of the PNTR indicated to Nakamura Dynamics that the age-old problem of delicate gimbal mounts could be entirely sidestepped with solid-state thrust vectoring technology, and the company quickly set to work on effectively downscaling the system for use as RCS thrusters.  \n\nDespite its poor exhaust velocity as a pure NTR, the Pulsed Nuclear Thermal Rocket (Micro) makes up for it with the largest effective thrust vectoring range on the market today. Its low operational cost and fast warmup makes it ideal for heavier ships with limited RCS thruster layouts.
+
+SYSTEM_THRUSTER_PNTRM_SPECS|Thrust: 450 kN \nExhaust velocity: 8 km/s \nPropellant consumption: 56.3 kg/s \nPower consumption: 40 MW \nThermal consumption: 1.8 GW \nOperation mode: Pulsed thrust \nVectored thrust angle: 72 deg \nPropellant: Oxygen-Hydrogen plasma \nMass: 25 kg (per thruster) \nManufacturer: Nakamura Dynamics
+
+SYSTEM_FUEL_1000000|2x Freighter propellant tank array
+
+SYSTEM_FUEL_1000000_DESC|A doubled-up array of freighter-class propellant tanks that can hold up to 1,000,000 kg of propellant for thermal rockets. Honeycombed cells prevent mass shifts during maneuvers.
+
+SYSTEM_FUEL_1000000_SPECS|Capacity: 1,000,000 kg \nPropellant type: Thermal Rocket
+
+
+
+SYSTEM_FUEL_2000000|Frigate propellant tank array
+
+SYSTEM_FUEL_2000000_DESC|A sprawling, decommissioned military-class fuel tank array that can hold up to 2,000,000 kg of propellant for thermal rockets. Honeycombed cells prevent mass shifts during maneuvers.
+
+SYSTEM_FUEL_2000000_SPECS|Capacity: 2,000,000 kg \nPropellant type: Thermal Rocket
+
+SYSTEM_MAIN_ENGINE_NANI|SSE NANI Torch Refit
+
+SYSTEM_MAIN_ENGINE_NANI_DESC|This comically impractical and completely disgusting main torch is the ultimate logical conclusion of many a night spent drinking and ruminating on life's purpose. Coming to the determination that there isn't one, the team at Sin Space Engineering put their heads together and produced this thing. \n\nDisclaimer: Omaewamou-Shindeiru thinks this is really funny and fully endorses the NANI's use as a propulsion solution. May void vessel warranty. Usage as main torch in some vessels may damage your reactor. Have fun!
+
+SYSTEM_MAIN_ENGINE_NANI_SPECS|Thrust: 3,450 kN \nExhaust velocity: 132 km/s \nPropellant consumption: 0.5 kg/s \nPower consumption: 200 MW \nThermal consumption: 2 GW \nPropellant: Supercritical liquid uranium salt \nBurn time: 1 minute (est) \nMass: 10,000 kg \nManufacturer: Sin Space Engineering / Omaewamou-Shindeiru
+
+
+
+SYSTEM_MAIN_ENGINE_GEMINI|MA-NTR600-II dual engine
+
+SYSTEM_MAIN_ENGINE_GEMINI_DESC|The NTR600-II, otherwise known as the "Gemini", is a dual-mounted magnetoplasmadynamic torch unit capable of delivering decent thrust with excellent efficiency and reliability. \n\nDisclaimer: maintenance of this unit is to be performed only by Mitsudaya-Starbus engineers or licensed sub-contractors. Insurance plans are not yet available in the outer solar system.
+
+SYSTEM_MAIN_ENGINE_GEMINI_SPECS|Thrust: 1,200 kN \nExhaust velocity: 28 km/s \nPropellant consumption: 52 kg/s \nPower consumption: 250 MW \nThermal consumption: 16.8 GW \nOperation mode: Variable thrust \nPropellant: Hydrogen plasma \nMass: 4,350 kg \nManufacturer: Mitsudaya-Starbus
+
+
+
+SYSTEM_MAIN_ENGINE_SOYUZ|RA-TNTRL-R44 quad engine
+
+SYSTEM_MAIN_ENGINE_SOYUZ_DESC|It's by no stretch of the imagination that this "torch" exists. Rusatom-Antonoff aimed to compete with other multiple-torch assemblies by introducing their own, but development was slow, and by the end of the 22nd century, many prototypes had been tried and failed with no viable solutions. \n\nMyths of its invention process vary, but generally suggest that the lead designer on the project was visited in a dream by the ghost of legendary Soviet rocket engineer Valentin Glushko. He spoke one word, 'Soyuz', and then departed, leaving the K44 RCS thruster at the designer's feet. \n\nProduction of these combined units continues to this day, and is part of the reason why the K44 thruster is still so abundant.
+
+SYSTEM_MAIN_ENGINE_SOYUZ_SPECS|Thrust: 1,600 kN \nExhaust velocity: 15 km/s \nPropellant consumption: 106.4 kg/s \nPower consumption: 60 MW \nThermal consumption: 12.0 GW \nOperation mode: Pulsed thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 650 kg \nManufacturer: Rusatom-Antonoff
+
+
+
+SYSTEM_MAIN_ENGINE_THUNDER|RA-K69V quad engine
+
+SYSTEM_MAIN_ENGINE_THUNDER_DESC|This torch is a custom-engineered piece of equipment that takes the frame of an R44 and replaces its engines with K69V thrusters, complete with the gimbal mountings the line is so famous for among ringside racers. Installation comes with optional and entirely legal "Thunderbarge-class" transponder modification. Personal grappling hook available on special request.
+
+SYSTEM_MAIN_ENGINE_THUNDER_SPECS|Thrust: 1,600 kN \nExhaust velocity: 12 km/s \nPropellant consumption: 133.2 kg/s \nPower consumption: 100 MW \nThermal consumption: 14.4 GW \nOperation mode: Pulsed thrust, gimballed \nGimbal angle: 25 deg \nGimbal speed: 360 deg/s \nPropellant: Oxygen-Hydrogen plasma \nMass: 950 kg \nManufacturer: Custom-built / Rusatom-Antonoff
+
+
+
+SYSTEM_MAIN_ENGINE_PIN1200|RMS Pin-M200 engine
+
+SYSTEM_MAIN_ENGINE_PIN1200_DESC|The Rasamama Material Solutions Pin-M200 implements the same pulsed induction technology that powers its Pin-150 series of solid-state RCS thrusters on a larger scale. It produces phenomenal thrust with remarkable efficiency, but its truly enormous power requirements make it an impractical choice for most nuclear thermal rockets.
+
+SYSTEM_MAIN_ENGINE_PIN1200_SPECS|Thrust: 1,200 kN \nExhaust velocity: 105 km/s \nPropellant consumption: 11.4 kg/s \nPower consumption: 510 MW \nOperation mode: Virtual variable thrust, gimballed \nGimbal angle: 36 deg \nGimbal speed: instantaneous \nPropellant: Hydrogen plasma \nMass: 2,650 kg \nManufacturer: Rasamama Material Solutions
+
+
+
+SYSTEM_MAIN_ENGINE_CRACK|NDDFD engine
+
+SYSTEM_MAIN_ENGINE_CRACK_DESC|The Directed Fusion Detonation engine by Nakamura Dynamics is one of the most powerful - and earliest! - fusion propulsion solutions still on the market. Popularised by a now-infamous 2214 advertisement backed by the Vengaboys' "Boom, Boom, Boom, Boom", the NDDFD utilises powerful electromagnets to crush remass-heated ferromagnetic shells containing pressurised deuterium and tritium, then direct the resultant detonation out of its cage-like nozzle assembly. \n\nUnlike its competitor, the NDDFD requires a enormous and continuous supply of power to maintain propulsion, and its relatively large pellets and specialised feed hardware dramatically limits its fuel capacity in small vessels.
+
+SYSTEM_MAIN_ENGINE_CRACK_SPECS|Thrust: 1,800 kN \nExhaust velocity: 1,850 km/s \nPropellant consumption: 1 kg/s \nPower consumption: 445 MW \nOperation mode: Pulsed thrust \n Propellant: Hydrogen plasma \nFusion fuel: D-T \nBurn time: 30 minutes (est) \nMass: 4,650 kg \nManufacturer: Nakamura Dynamics
+
+
+
+SYSTEM_MAIN_ENGINE_ZURBIN|ND ZURBIN engine
+
+SYSTEM_MAIN_ENGINE_ZURBIN_DESC|The Zurbin engine is the high-performance main engine of the Tsukuyuomi class of frigates. Now decomissioned, these engines see use still aboard the frigates, albeit long gone from the days of combat involvement. Nakamura Dynamics did make a push to reuse any from scrapped frigates, putting them to use in their Phage class of autonomous stations.
+
+SYSTEM_MAIN_ENGINE_ZURBIN_SPECS|Thrust: 6,900 kN \nExhaust velocity: 66 km/s \nPropellant consumption: 104.5 kg/s \nPower consumption: 20 MW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 10,000 kg \nManufacturer: Nakamura Dynamics
+
+
+
+SYSTEM_MAIN_ENGINE_PMS|ND PMS engine
+
+SYSTEM_MAIN_ENGINE_PMS_DESC|The PMS is the predecessor to the NTTR thruster. Nakamura Dynamics's first large NTR type thruster, it held up with a high performance, even today, however holds the worst propellant economy of any thruster on the market. Many captains opt to use other torches due to the sheer inefficiency and relatively high cost, however they do come at a sheer reliability curve unmatched by any other thruster on the market, capable of operating at an acceleration well in exceeding 300 m/s/s.
+
+SYSTEM_MAIN_ENGINE_PMS_SPECS|Thrust: 3,000 kN \nExhaust velocity: 3 km/s \nPropellant consumption: 1000 kg/s \nPower consumption: 20 MW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 0.5 kg \nManufacturer: Nakamura Dynamics
+
+
+SLOT_TURRET_LEFT|Left Turret Mount
+SLOT_TURRET_RIGHT|Right Turret Mount
+
+
+
+SLOT_TUBE_LEFT_UP|Left Upper Torpedo Vestibule
+SLOT_TUBE_RIGHT_UP|Right Upper Torpedo Vestibule
+SLOT_TUBE_LEFT_DN|Left Lower Torpedo Vestibule
+SLOT_TUBE_RIGHT_DN|Right Lower Torpedo Vestibule
+
+
+
+SLOT_DRONE|Drone Mount
+
+SLOT_MAIN_LARGE|Large Main Propulsion
+
+SLOT_RCS_LARGE|Large Reaction Control System
+
+SLOT_CARGO_MPU|Cargo Bay MPU
+
+
+SYSTEM_CARGO_MPU_FURN|Rusatom-Antonoff MPU Mk2
+
+SYSTEM_CARGO_MPU_FURN_DESC|This Mark-2 variant of the Rusatom-Antonoff Mineral Processing Unit, affectionately termed "the Gulper" by ringside miners, combines the best qualities of its predecessor with an inlet cuff and additional heating elements, increasing overall efficiency and reclamation yields at the cost of decreased operational reach.
+
+SYSTEM_CARGO_MPU_FURN_SPECS|Processing capacity: 25 kg/s \nPower draw: 25 MW / chunk \nMineral processing efficiency: 60% \nRemass processing efficiency: 40% \nMass: 3,000 kg \nManufacturer: Rusatom-Antonoff
+
+
+SYSTEM_CARGO_MPU_BULK|THI Bulker MPU
+
+SYSTEM_CARGO_MPU_BULK_DESC|The Titan Heavy Industries "Bulker" MPU was introduced to the market in the mid-2200s, but has only seen distribution among Enceladian miners following trade agreements in the 2260s. Its simple design is a classic example of THI's "less is more" approach to engineering. \n\nHeavy and awkward to load compared to other MPUs, what makes the Bulker unique is its inbuilt storage capacity. The internals of a THI-CC drone have been incorporated beneath the processing area; while the bins have been reduced in size, they can still dramatically increase the mineral capacity of any vessel they're installed in.
+
+SYSTEM_CARGO_MPU_BULK_SPECS|Cargo capacity: 10,000 kg / mineral (60,000 kg total) \nProcessing capacity: 40 kg/s \nPower draw: 100 MW / chunk \nMineral processing efficiency: 70% \nRemass processing efficiency: 20% \nMass: 8,000 kg \nManufacturer: Titan Heavy Industries
+
+
+SYSTEM_TURBINE_20|Thermocouple Array
+
+SYSTEM_TURBINE_20_DESC|This simple thermocouple array utilises the thermal gradient between the vessel's reactor and propellant to generate electricity. A negligible amount of reaction mass is vented overboard in the process.
+
+SYSTEM_TURBINE_20_SPECS|Power (nominal): 20 MW \nPropellant consumption: 20 g/s \nMass: 100 kg \nManufacturer: Rusatom-Antonoff
+
+
+
+SYSTEM_TURBINE_160|Laminar Turbine
+
+SYSTEM_TURBINE_160_DESC|This power generation unit for fission craft utilises the might of German engineering (and an AI-optimised design) to minimise flow turbulence and heat losses in a four-stage regenerative turbine assembly.
+
+SYSTEM_TURBINE_160_SPECS|Power (nominal): 160 MW \nPropellant consumption: 160 g/s \nMass: 600 kg \nManufacturer: Boltzmann Waermerkraftmaschinen
+
+
+
+SYSTEM_TURBINE_320|Dual Laminar Turbine
+
+SYSTEM_TURBINE_320_DESC|This power generation unit for fission craft utilises the might of German engineering (and an AI-optimised design) to minimise flow turbulence and heat losses in two four-stage regenerative turbine assemblies. Remass and pressure is evenly split between the two with a novel solid-state valve body.
+
+SYSTEM_TURBINE_320_SPECS|Power (nominal): 320 MW \nPropellant consumption: 320 g/s \nMass: 1,200 kg \nManufacturer: Boltzmann Waermerkraftmaschinen
+
+SYSTEM_RODS_1|1x SO6 fuel rod
+
+SYSTEM_RODS_1_DESC|This Rusatom-Antonoff SO6 nuclear fuel rod, commonly called a "sunshard", is a standard fuel for early interplanetary NTR designs. The SO6 utilize a liquid thorium-based core encased in a solid shell. The stress and composition yield extremely high operating temperatures. \n\nThe perfect gift for the aspiring ship captain. Lead-lined wrapping material in a variety of designs and colours is available on request.
+
+SYSTEM_RODS_1_SPECS|Manufacturer: Rusatom-Antonoff \nOperating temperature: 3,500 K \nFailure point: 4,500 K \nMass: 400 kg \nThermal power: 1 GW
+
+SYSTEM_CAPACITOR_100|Light Ultracapacitor
+
+SYSTEM_CAPACITOR_100_DESC|A graphene fractal ultracapacitor cylinder for storing excess generated power, for availability during peak usage. Compact unit at a reasonable price.
+
+SYSTEM_CAPACITOR_100_SPECS|Capacity: 100 MJ \nPeak power: 10 GW \nMass: 400 kg  \nManufacturer: Obonto Micro Engineering
+
+
+
+SYSTEM_CAPACITOR_700|ND-iSMB
+
+SYSTEM_CAPACITOR_700_DESC|The Nakamura Dynamics Internal Superconducting Magnetic Battery is a alternative temporary energy storage solution that was proposed after the success of the NDAPS auxiliary power unit. Though heavily shielded to prevent remass plasma from disrupting the field, its direct interface to a vessel's electrical buses allows for maximal discharge and recharge rates with minimal losses.
+
+SYSTEM_CAPACITOR_700_SPECS|Capacity: 700 MJ \nPeak power: 10 GW \nMass: 1,800 kg \nManufacturer: Nakamura Dynamics
+
+
+SYSTEM_CAPACITOR_1400|ND-iSMB Dual Coupling
+
+SYSTEM_CAPACITOR_1400_DESC|Two smaller iSMB units, joined by a heavy-duty power balancer. By intentionally permitting interactions between the two magnetic fields, more energy can effectively be stored in smaller hardware.
+
+SYSTEM_CAPACITOR_1400_SPECS|Capacity: 1,400 MJ \nPeak power: 10 GW \nMass: 3,200 kg \nManufacturer: Nakamura Dynamics
+
+SYSTEM_AUX_MPD_1400|OPG-14 StatPlasma
+
+SYSTEM_AUX_MPD_1400_DESC|Extreme power requirements, such as the industrial furnaces of refinery stations, requires an extreme power solution, and Obonto Microengineering's StatPlasma is it. Enthusiasts and electrical engineers (though there is little distinction) have taken to calling it "the pinecone" due to its unusual helical conversion chamber that narrows towards the recovery outlet. \n\nNote: this unit may require a small period of warmup before reaching its full power output.
+
+SYSTEM_AUX_MPD_1400_SPECS|Power draw: 200 MW \nThermal draw: 2.5 GW \nPower (nominal): 1,400 MW \nWarmup time: 5 s \nMass: 12,250 kg \nType: MPDG \nManufacturer: Obonto Microengineering
+
+
+
+SYSTEM_AUX_MPD_2000|MPI City-class MPDG
+
+SYSTEM_AUX_MPD_2000_DESC|This godforsaken monster of an MPDG literally can't fit in the hull of most vessels, having to be mounted externally and interfaced via multiple feed lines. The ultimate power plant of large settlements on Mars and beyond. \n\nNote: This unit requires a significant period of warmup before reaching its full power output. MPI strongly advises that you do not remove any sigils, engravings, or other marks on the unit.
+
+SYSTEM_AUX_MPD_2000_SPECS|Power draw: 300 MW \nThermal draw: 4 GW \nPower (nominal): 2,000 MW \nWarmup time: 15 s \nMass: 16,660 kg \nType: MPDG with recovery turbine assembly \nManufacturer: Mars Power Industries
+
+IOE_MOD_DESCRIPTION|This port of the Industries of Enceladus mod aims to bring full compatability with the content of IoE with that of other equipment mods. \n\nCompatability with saves using the original IoE isn't supported (yet) \n\nCredit: \nSpaceDotEXE - Original mod creator \nZa'krin Yoran - much of the hard work behind the mod's backend and aided with the original development \n__hev - Conversion to a compatable state

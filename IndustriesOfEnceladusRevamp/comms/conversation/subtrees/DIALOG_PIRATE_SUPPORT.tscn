@@ -1,0 +1,380 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn" type="PackedScene" id=1]
+[ext_resource path="res://comms/ConversationPlayer.gd" type="Script" id=2]
+
+[node name="DIALOG_PIRATE_SUPPORT" instance=ExtResource( 1 )]
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_TSUKUYOMI" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="6"]
+script = ExtResource( 2 )
+weight = 0.01
+mostPrelevantDisposition = "support"
+dispositionRequired = 0.7
+poiTimeHours = 168.0
+
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_TSUKUYOMI" index="0"]
+script = ExtResource( 2 )
+myLine = false
+changeHostility = -0.1
+changeFear = -0.1
+changeSupport = 0.1
+factionBroadcast = 1.0
+requirePlayerMoney = 7.5e+06
+changePlayerMoney = -7.5e+06
+poiExposeName = "POI_PIRATE_SHIP"
+poiExposeUnique = false
+poiExposeEvent = "DerelictTsukuyomi"
+poiDistanceKm = 500.0
+poiTimeHours = 168.0
+poiDirection = Vector2( 1, 0 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_TSUKUYOMI/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_TSUKUYOMI" index="1"]
+script = ExtResource( 2 )
+myLine = false
+changeSupport = -0.2
+
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_TSUKUYOMI" index="2"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_STUB" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="7"]
+script = ExtResource( 2 )
+weight = 0.05
+mostPrelevantDisposition = "support"
+dispositionRequired = 0.7
+poiTimeHours = 168.0
+
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_STUB" index="0"]
+script = ExtResource( 2 )
+myLine = false
+changeHostility = -0.1
+changeFear = -0.1
+changeSupport = 0.1
+factionBroadcast = 1.0
+requirePlayerMoney = 900000.0
+changePlayerMoney = -900000.0
+poiExposeName = "POI_PIRATE_SHIP"
+poiExposeUnique = false
+poiExposeEvent = "DerelictStub"
+poiDistanceKm = 500.0
+poiTimeHours = 168.0
+poiDirection = Vector2( 1, 0 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_STUB/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_STUB" index="1"]
+script = ExtResource( 2 )
+myLine = false
+changeSupport = -0.2
+
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_STUB" index="2"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_ATLAS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="8"]
+script = ExtResource( 2 )
+weight = 0.05
+mostPrelevantDisposition = "support"
+dispositionRequired = 0.7
+poiTimeHours = 168.0
+
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_ATLAS" index="0"]
+script = ExtResource( 2 )
+myLine = false
+changeHostility = -0.1
+changeFear = -0.1
+changeSupport = 0.1
+factionBroadcast = 1.0
+requirePlayerMoney = 400000.0
+changePlayerMoney = -400000.0
+poiExposeName = "POI_PIRATE_SHIP"
+poiExposeUnique = false
+poiExposeEvent = "DerelictATLAS"
+poiDistanceKm = 500.0
+poiTimeHours = 168.0
+poiDirection = Vector2( 1, 0 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_ATLAS/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_ATLAS" index="1"]
+script = ExtResource( 2 )
+myLine = false
+changeSupport = -0.2
+
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_ATLAS" index="2"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_COTHON_LUX" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="9"]
+script = ExtResource( 2 )
+weight = 0.1
+mostPrelevantDisposition = "support"
+dispositionRequired = 0.7
+poiTimeHours = 168.0
+
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_COTHON_LUX" index="0"]
+script = ExtResource( 2 )
+myLine = false
+changeHostility = -0.1
+changeFear = -0.1
+changeSupport = 0.1
+factionBroadcast = 1.0
+requirePlayerMoney = 250000.0
+changePlayerMoney = -250000.0
+poiExposeName = "POI_PIRATE_SHIP"
+poiExposeUnique = false
+poiExposeEvent = "DerelictCothonLUX"
+poiDistanceKm = 500.0
+poiTimeHours = 168.0
+poiDirection = Vector2( 1, 0 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_COTHON_LUX/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_COTHON_LUX" index="1"]
+script = ExtResource( 2 )
+myLine = false
+changeSupport = -0.2
+
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_COTHON_LUX" index="2"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_PIDGEON" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="10"]
+script = ExtResource( 2 )
+weight = 0.1
+mostPrelevantDisposition = "support"
+dispositionRequired = 0.7
+poiTimeHours = 168.0
+
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_PIDGEON" index="0"]
+script = ExtResource( 2 )
+myLine = false
+changeHostility = -0.1
+changeFear = -0.1
+changeSupport = 0.1
+factionBroadcast = 1.0
+requirePlayerMoney = 550000.0
+changePlayerMoney = -550000.0
+poiExposeName = "POI_PIRATE_SHIP"
+poiExposeUnique = false
+poiExposeEvent = "DerelictPidgeon"
+poiDistanceKm = 500.0
+poiTimeHours = 168.0
+poiDirection = Vector2( 1, 0 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_PIDGEON/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_PIDGEON" index="1"]
+script = ExtResource( 2 )
+myLine = false
+changeSupport = -0.2
+
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_PIDGEON" index="2"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_CERF" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="11"]
+script = ExtResource( 2 )
+weight = 0.03
+mostPrelevantDisposition = "support"
+dispositionRequired = 0.7
+poiTimeHours = 168.0
+
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_CERF" index="0"]
+script = ExtResource( 2 )
+myLine = false
+changeHostility = -0.1
+changeFear = -0.1
+changeSupport = 0.1
+factionBroadcast = 1.0
+requirePlayerMoney = 800000.0
+changePlayerMoney = -800000.0
+poiExposeName = "POI_PIRATE_SHIP"
+poiExposeUnique = false
+poiExposeEvent = "DerelictCERF"
+poiDistanceKm = 500.0
+poiTimeHours = 168.0
+poiDirection = Vector2( 1, 0 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_CERF/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_CERF" index="1"]
+script = ExtResource( 2 )
+myLine = false
+changeSupport = -0.2
+
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_CERF" index="2"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_OBERON" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="12"]
+script = ExtResource( 2 )
+weight = 0.03
+mostPrelevantDisposition = "support"
+dispositionRequired = 0.7
+poiTimeHours = 168.0
+
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_OBERON" index="0"]
+script = ExtResource( 2 )
+myLine = false
+changeHostility = -0.1
+changeFear = -0.1
+changeSupport = 0.1
+factionBroadcast = 1.0
+requirePlayerMoney = 1e+06
+changePlayerMoney = -1e+06
+poiExposeName = "POI_PIRATE_SHIP"
+poiExposeUnique = false
+poiExposeEvent = "DerelictOberon"
+poiDistanceKm = 500.0
+poiTimeHours = 168.0
+poiDirection = Vector2( 1, 0 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_OBERON/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_OBERON" index="1"]
+script = ExtResource( 2 )
+myLine = false
+changeSupport = -0.2
+
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_OBERON" index="2"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_DEEP_DISH" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="13"]
+script = ExtResource( 2 )
+weight = 0.07
+mostPrelevantDisposition = "support"
+dispositionRequired = 0.7
+poiTimeHours = 168.0
+
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_DEEP_DISH" index="0"]
+script = ExtResource( 2 )
+myLine = false
+changeHostility = -0.1
+changeFear = -0.1
+changeSupport = 0.1
+factionBroadcast = 1.0
+requirePlayerMoney = 500000.0
+changePlayerMoney = -500000.0
+poiExposeName = "POI_PIRATE_SHIP"
+poiExposeUnique = false
+poiExposeEvent = "DerelictDeepDish"
+poiDistanceKm = 500.0
+poiTimeHours = 168.0
+poiDirection = Vector2( 1, 0 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_DEEP_DISH/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_DEEP_DISH" index="1"]
+script = ExtResource( 2 )
+myLine = false
+changeSupport = -0.2
+
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_DEEP_DISH" index="2"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_SNAP" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="14"]
+script = ExtResource( 2 )
+weight = 0.07
+mostPrelevantDisposition = "support"
+dispositionRequired = 0.7
+poiTimeHours = 168.0
+
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_SNAP" index="0"]
+script = ExtResource( 2 )
+myLine = false
+changeHostility = -0.1
+changeFear = -0.1
+changeSupport = 0.1
+factionBroadcast = 1.0
+requirePlayerMoney = 500000.0
+changePlayerMoney = -500000.0
+poiExposeName = "POI_PIRATE_SHIP"
+poiExposeUnique = false
+poiExposeEvent = "DerelictSNAP"
+poiDistanceKm = 500.0
+poiTimeHours = 168.0
+poiDirection = Vector2( 1, 0 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_SNAP/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_SNAP" index="1"]
+script = ExtResource( 2 )
+myLine = false
+changeSupport = -0.2
+
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_SNAP" index="2"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_OK720" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="15"]
+script = ExtResource( 2 )
+weight = 0.07
+mostPrelevantDisposition = "support"
+dispositionRequired = 0.7
+poiTimeHours = 168.0
+
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_OK720" index="0"]
+script = ExtResource( 2 )
+myLine = false
+changeHostility = -0.1
+changeFear = -0.1
+changeSupport = 0.1
+factionBroadcast = 1.0
+requirePlayerMoney = 300000.0
+changePlayerMoney = -300000.0
+poiExposeName = "POI_PIRATE_SHIP"
+poiExposeUnique = false
+poiExposeEvent = "DerelictOK720"
+poiDistanceKm = 500.0
+poiTimeHours = 168.0
+poiDirection = Vector2( 1, 0 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_OK720/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_OK720" index="1"]
+script = ExtResource( 2 )
+myLine = false
+changeSupport = -0.2
+
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_OK720" index="2"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_RAM" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS" index="16"]
+script = ExtResource( 2 )
+weight = 0.1
+mostPrelevantDisposition = "support"
+dispositionRequired = 0.7
+poiTimeHours = 168.0
+
+[node name="DIALOG_PIRATE_BUSINESS_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_RAM" index="0"]
+script = ExtResource( 2 )
+myLine = false
+changeHostility = -0.1
+changeFear = -0.1
+changeSupport = 0.1
+factionBroadcast = 1.0
+requirePlayerMoney = 250000.0
+changePlayerMoney = -250000.0
+poiExposeName = "POI_PIRATE_SHIP"
+poiExposeUnique = false
+poiExposeEvent = "DerelictRAM"
+poiDistanceKm = 500.0
+poiTimeHours = 168.0
+poiDirection = Vector2( 1, 0 )
+
+[node name="DIALOG_PIRATE_BUSINESS_SHIP_INSTRUCTIONS" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_RAM/DIALOG_PIRATE_BUSINESS_DEAL" index="0"]
+script = ExtResource( 2 )
+
+[node name="DIALOG_PIRATE_BUSINESS_NO_DEAL" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_RAM" index="1"]
+script = ExtResource( 2 )
+myLine = false
+changeSupport = -0.2
+
+[node name="link-on-our-way2" type="Node" parent="DIALOG_PIRATE_LETS_TALK_BUSINESS/DIALOG_PIRATE_BUSINESS_SHIP_RAM" index="2"]
+script = ExtResource( 2 )
