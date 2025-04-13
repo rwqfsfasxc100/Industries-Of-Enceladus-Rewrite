@@ -9,6 +9,15 @@
 
 [node name="OCP-209" instance=ExtResource( 1 )]
 
+[node name="MineralProcessingUnit_DRY" parent="." index="26"]
+visible = false
+
+[node name="MineralProcessingUnit_FSO" parent="." index="27"]
+visible = false
+
+[node name="MineralProcessingUnit_FAB" parent="." index="29"]
+visible = false
+
 [node name="DockForePort" parent="." index="37" instance=ExtResource( 2 )]
 position = Vector2( -56, -336 )
 slot = "leftBay1"

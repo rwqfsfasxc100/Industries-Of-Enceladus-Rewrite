@@ -217,7 +217,6 @@ cargoHoldArea = Rect2( -250, -260, 500, 400 )
 cargoHoldOffset = Vector2( 0, 50 )
 
 [node name="editor_allbright" type="Light2D" parent="."]
-visible = false
 material = SubResource( 4 )
 editor_only = true
 texture = ExtResource( 21 )
@@ -225,7 +224,6 @@ energy = 2.14
 range_height = 2000.0
 
 [node name="editor_centrelight" type="Light2D" parent="."]
-visible = false
 material = SubResource( 4 )
 position = Vector2( 0, -20 )
 editor_only = true
@@ -426,7 +424,7 @@ z_index = 43
 texture = ExtResource( 5 )
 normal_map = ExtResource( 6 )
 region_enabled = true
-region_rect = Rect2( 95, 6, 834, 567 )
+region_rect = Rect2( 1, -9, 838, 567 )
 script = ExtResource( 7 )
 
 [node name="cage" type="Sprite" parent="Hull"]
@@ -871,7 +869,7 @@ position = Vector2( -292, -80 )
 z_index = 43
 texture = ExtResource( 13 )
 offset = Vector2( 68, 0 )
-region_rect = Rect2( 90, 6, 398, 567 )
+region_rect = Rect2( -4, -9, 398, 567 )
 damageRodsThreshold = 6400.0
 damageRodsCapacity = 64000.0
 damageLeakThreshold = 3200.0
@@ -888,7 +886,7 @@ position = Vector2( 294, -80 )
 z_index = 43
 texture = ExtResource( 13 )
 offset = Vector2( -71, 0 )
-region_rect = Rect2( 536, 6, 394, 567 )
+region_rect = Rect2( 446, 551, 394, 567 )
 damageRodsThreshold = 6400.0
 damageRodsCapacity = 64000.0
 damageLeakThreshold = 3200.0
@@ -898,6 +896,7 @@ damageLeakCapacity = 32000.0
 position = Vector2( 35, 60 )
 
 [node name="CollisionShape2D" parent="reactor-r/ReactorPhysics" index="1"]
+visible = false
 shape = SubResource( 11 )
 
 [node name="AuxSlot" parent="." instance=ExtResource( 8 )]

@@ -1,7 +1,47 @@
 extends "res://ships/Shipyard.gd"
 
+var ammoValueNew = {
+		200: 500,
+	}
+var rodsValueNew = {
+		1.0: 20000,
+	}
+var rodsMassNew = {
+		1.0: 400,
+	}
+var capacitorValueNew = {
+		100.0: 4000,
+		700.0: 135000,
+		1400.0: 292000,
+	}
+var capacitorMassNew = {
+		100.0: 400,
+		700.0: 1800,
+		1400.0: 3200,
+	}
+var turbineValueNew = {
+		20.0: 2500,
+		160.0: 95000,
+		320.0: 200000,
+	}
+var turbineMassNew = {
+		20.0: 100,
+		160.0: 600,
+		320.0: 1200,
+	}
+
+
 
 func _ready():
+	ammoValue.merge(ammoValueNew)
+	rodsValue.merge(rodsValueNew)
+	rodsMass.merge(rodsMassNew)
+	capacitorMass.merge(capacitorMassNew)
+	capacitorValue.merge(capacitorValueNew)
+	turbineValue.merge(turbineValueNew)
+	turbineMass.merge(turbineMassNew)
+	
+	
 	ships["Tsukuyomi-Decom"] = load("res://IndustriesOfEnceladusRevamp/ships/Tsukuyomi-Decom.tscn")
 	configAlias["Tsukuyomi-Decom"] = "TSUKUYOMI"
 	defaultShipConfig["Tsukuyomi-Decom"] = {"config": {
@@ -383,9 +423,9 @@ func _ready():
 			"left":{"type":"SYSTEM_EMD14"}
 		}, 
 	}}
-	
+
 	ships["CK65"] = load("res://IndustriesOfEnceladusRevamp/ships/CK65.tscn")
-	configAlias["CK65"] = "CK65"
+	configAlias["CK65"] = "PROSPECTOR"
 	defaultShipConfig["CK65"] = {"config": {
 		"ammo":{
 			"capacity": 1000.0, 
@@ -413,3 +453,128 @@ func _ready():
 			"left":{"type":"SYSTEM_NONE"}
 		}, 
 	}}
+
+	
+	ships["CK69"] = load("res://IndustriesOfEnceladusRevamp/ships/CK69.tscn")
+	configAlias["CK69"] = "PROSPECTOR"
+	defaultShipConfig["CK69"] = {"config": {
+		"ammo":{
+			"capacity": 1000.0, 
+			"initial": 1000.0, 
+		}, 
+		"autopilot":{"type":"SYSTEM_AUTOPILOT_MK2"}, 
+		"capacitor":{"capacity": 500.0}, 
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_STANDARD",
+			"modifierDivided":"SYSTEM_CARGO_MOD_2K"
+		},
+		"fuel":{
+			"capacity": 80000.0, 
+			"initial": 80000.0, 
+		}, 
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_PNTR", 
+			"rcs":"SYSTEM_THRUSTER_NDSTR"
+		}, 
+		"reactor":{	"power": 8.0},
+		"shielding":{"emp": 100},  
+		"turbine":{"power": 200.0}, 
+		"weaponSlot":{
+			"right":{"type":"SYSTEM_EMD14"}, 
+			"left":{"type":"SYSTEM_NONE"}
+		}, 
+	}}
+
+	
+	var YME:String = "YME"
+	ships[YME] = load("res://IndustriesOfEnceladusRevamp/ships/YME.tscn")
+	configAlias[YME] = "EIME"
+	defaultShipConfig[YME] = {
+		"config":{
+			"fuel":{
+				"capacity":30000.0, 
+				"initial":30000.0, 
+			}, 
+			"propulsion":{
+				"main":"SYSTEM_MAIN_ENGINE_EIZAP", 
+				"rcs":"SYSTEM_THRUSTER_AGILE"
+			}, 
+			"weaponSlot":{
+				"main":{
+					"type":"SYSTEM_NONE"
+				}, 
+				"left":{
+					"type":"SYSTEM_NONE"
+				}, 
+				"right":{
+					"type":"SYSTEM_NONE"
+				}, 
+			}, 
+			"ammo":{
+				"capacity":0.0, 
+				"initial":0.0
+			}, 
+			"autopilot":{
+				"type":"SYSTEM_AUTOPILOT_MK4"
+			}, 
+			"capacitor":{
+				"capacity":1000.0
+			}, 
+			"turbine":{
+				"power":500.0
+			},
+			"reactor":{
+				"power": 30.0
+			},
+		}
+	}
+	
+	
+	var salvageOCP:String = "OCP-SALVAGE"
+	ships[salvageOCP] = load("res://IndustriesOfEnceladusRevamp/ships/ocp-209-salvage.tscn")
+	configAlias[salvageOCP] = "OCP209"
+	defaultShipConfig = {
+		"config":{
+			"hud":{
+				"type":"SYSTEM_HUD_OCP209"
+			}, 
+			"aux":{
+				"power":"SYSTEM_AUX_SMES"
+				}, 
+			"weaponSlot":{
+				"mainLeft":{
+					"type":"SYSTEM_SALVAGE_ARM"
+				}, 
+				"mainRight":{
+					"type":"SYSTEM_SALVAGE_ARM"
+				}, 
+			}, 
+			"reactor":{
+				"power":16.0
+			}, 
+			"ammo":{
+				"capacity":0.0, 
+				"initial":0.0, 
+			}, 
+			"fuel":{
+				"capacity":80000.0, 
+				"initial":80000.0, 
+			}, 
+			"capacitor":{
+				"capacity":1000.0, 
+			}, 
+			"turbine":{
+				"power":200.0, 
+			}, 
+			"shielding":{
+				"emp":0, 
+			}, 
+			"autopilot":{
+				"type":"SYSTEM_AUTOPILOT_MK2"
+			}, 
+			"propulsion":{
+				"main":"SYSTEM_MAIN_ENGINE_DFMPD2205", 
+				"rcs":"SYSTEM_THRUSTER_GHET"
+			}, 
+		}
+	}

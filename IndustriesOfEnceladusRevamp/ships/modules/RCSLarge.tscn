@@ -27,12 +27,9 @@ priorityOffset = 4.0
 
 [node name="SYSTEM_MAIN_ENGINE_PMS" parent="." instance_placeholder="res://sfx/torch-PMS.tscn"]
 priorityOffset = 2.0
-fadeSeconds = 0.2
-randomness = 0.15
 
 [node name="SYSTEM_MAIN_ENGINE_K44" parent="." instance_placeholder="res://sfx/torch-k44.tscn"]
 priorityOffset = 2.0
-fadeSeconds = 0.2
 
 [node name="SYSTEM_MAIN_ENGINE_BWMT535" parent="." instance_placeholder="res://sfx/torch-bwm-t535.tscn"]
 

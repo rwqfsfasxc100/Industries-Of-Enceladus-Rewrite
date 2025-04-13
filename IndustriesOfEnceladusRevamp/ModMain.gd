@@ -5,7 +5,7 @@ extends Node
 const MOD_PRIORITY = -99
 # Name of the mod, used for writing to the logs
 const MOD_NAME = "IoE Compatability Rewrite"
-const MOD_VERSION = "2.1.8"
+const MOD_VERSION = "2.2.3"
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
@@ -15,8 +15,14 @@ var aesthetics:bool = true
 var addShips:bool = true
 var verbose:bool = true # failsafe
 
+var modSettings = {}
+
 func _init(modLoader = ModLoader):
 # Must load DLC early for it to properly function.
+	# Modify Settings.gd first so we can load config and DLC
+	installScriptExtension("Settings.gd")
+	loadSettings()
+	
 	loadDLC()
 	
 # replace ShipParams for hold percentage fill readout
@@ -75,6 +81,17 @@ func _ready():
 	replaceScene("Game.tscn")
 	l("Ready!")
 
+
+
+func loadSettings():
+	l(MOD_NAME + ": Loading mod settings")
+	var settings = load("res://Settings.gd").new()
+	settings.loadIoEFromFile()
+	settings.saveIoEToFile()
+	modSettings = settings.IoEConfig
+	l(MOD_NAME + ": Current settings: %s" % modSettings)
+	settings.queue_free()
+	l(MOD_NAME + ": Finished loading settings")
 
 # helper script for translations
 # based on Za'krin's helper script!!

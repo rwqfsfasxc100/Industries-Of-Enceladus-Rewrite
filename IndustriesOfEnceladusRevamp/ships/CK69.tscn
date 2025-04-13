@@ -123,7 +123,7 @@ shader_param/speed = 2.0
 shader_param/reverseFrequency = 602.104
 shader_param/reverseAmplitude = 500.0
 
-[node name="CK-65" type="RigidBody2D" groups=["ships"]]
+[node name="CK-69" type="RigidBody2D" groups=["ships"]]
 collision_layer = 530
 collision_mask = 7
 mass = 35.16
@@ -136,13 +136,14 @@ __meta__ = {
 "_edit_group_": true
 }
 crewMoraleBonus = 0.1
-shipName = "SHIP_CK65"
+shipName = "SHIP_CK69"
 baseShipName = "SHIP_PROSPECTOR"
 shipType = "fission"
 crew = 12
 hullPrice = 1750999
-processedCargoCapacity = 108000
-startProductionYear = 2230.0
+processedCargoCapacity = 576000
+processedCargoStorageType = "amorphic"
+startProductionYear = 2238.0
 lifepod = ExtResource( 30 )
 model = "CK65"
 defaultAutopilot = "SYSTEM_AUTOPILOT_MK2"

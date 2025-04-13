@@ -1,4 +1,4 @@
-[gd_scene load_steps=46 format=2]
+[gd_scene load_steps=44 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -30,9 +30,7 @@
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=28]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=30]
-[ext_resource path="res://ships/modules/Excavator.tscn" type="PackedScene" id=31]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=32]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/Excavator.gd" type="Script" id=33]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/prospector/fat/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=34]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/prospector/fat/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=35]
 
@@ -246,35 +244,6 @@ region_enabled = true
 region_rect = Rect2( 55, 358, 38, 19 )
 script = ExtResource( 7 )
 hullCustomPaintFile = "user://custom-prospector.png"
-
-[node name="Front Bumper" parent="." instance=ExtResource( 31 )]
-visible = false
-position = Vector2( 1, -251 )
-script = ExtResource( 33 )
-rampUpTime = 1.0
-removeThis = true
-
-[node name="Claw Right" parent="Front Bumper/Claw Holder" index="0"]
-position = Vector2( 23, -22 )
-
-[node name="Claw Right" parent="Front Bumper/Claw Holder/Claw Right" index="0"]
-position = Vector2( -0.999998, -22 )
-scale = Vector2( 1.5, 1.5 )
-
-[node name="CollisionPolygon2D" parent="Front Bumper/Claw Holder/Claw Right" index="1"]
-position = Vector2( -24, 32 )
-scale = Vector2( 1.5, 1.5 )
-
-[node name="Claw Left" parent="Front Bumper/Claw Holder" index="1"]
-position = Vector2( -25, -22 )
-
-[node name="Claw Left" parent="Front Bumper/Claw Holder/Claw Left" index="0"]
-position = Vector2( 0.999998, -23 )
-scale = Vector2( 1.5, 1.5 )
-
-[node name="CollisionPolygon2D" parent="Front Bumper/Claw Holder/Claw Left" index="1"]
-position = Vector2( 24, 32 )
-scale = Vector2( 1.5, 1.5 )
 
 [node name="Grinder" parent="." instance=ExtResource( 9 )]
 position = Vector2( 0, -192 )
@@ -700,7 +669,6 @@ systemName = "SYSTEM_REACTOR_PROSPECTOR"
 [connection signal="body_entered" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_exited"]
 
-[editable path="Front Bumper"]
 [editable path="Grinder"]
 [editable path="engine-main-1"]
 [editable path="engine-main-2"]

@@ -1,13 +1,29 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://weapons/drone-plant.tscn" type="PackedScene" id=1]
-[ext_resource path="res://weapons/weapons-n.png" type="Texture" id=2]
-[ext_resource path="res://weapons/weapons-c.png" type="Texture" id=3]
-[ext_resource path="res://weapons/weapons.material" type="Material" id=4]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/weapons/drone-plant.patch.gd" type="Script" id=5]
+[ext_resource path="res://weapons/weapons.material" type="Material" id=1]
+[ext_resource path="res://weapons/weapons-c.png" type="Texture" id=2]
+[ext_resource path="res://weapons/weapons-n.png" type="Texture" id=3]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/weapons/drone-plant.patch.gd" type="Script" id=4]
+[ext_resource path="res://weapons/drones/deploy-open.wav" type="AudioStream" id=5]
+[ext_resource path="res://weapons/drones/deploy-laser.wav" type="AudioStream" id=6]
+[ext_resource path="res://weapons/drones/DroneLaunchManager.tscn" type="PackedScene" id=7]
+[ext_resource path="res://lights/color-square.png" type="Texture" id=8]
+[ext_resource path="res://sfx/PitchAdjustedAudio.gd" type="Script" id=9]
 
-[node name="SYSTEM_DND_HARVTUG" instance=ExtResource( 1 )]
-script = ExtResource( 5 )
+[sub_resource type="CircleShape2D" id=1]
+radius = 8000.0
+
+[node name="SYSTEM_DND_HARVTUG" type="Sprite"]
+light_mask = 524289
+material = ExtResource( 1 )
+z_index = 1
+texture = ExtResource( 2 )
+normal_map = ExtResource( 3 )
+offset = Vector2( 0, 114 )
+region_enabled = true
+region_rect = Rect2( 744, 260, 48, 138 )
+script = ExtResource( 4 )
+droneWeightKg = 0.1
 repairReplacementPrice = 385000
 repairReplacementTime = 4
 repairFixPrice = 75000
@@ -26,13 +42,48 @@ launchVector = Vector2( 0, -50 )
 builtInDroneStorage = 2500
 mass = 8000
 
+[node name="AudioFire" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+bus = "ShipBowels"
+script = ExtResource( 9 )
+
+[node name="Laser" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = -5.0
+bus = "ShipBowels"
+script = ExtResource( 9 )
+
+[node name="DroneLaunchManager" parent="." instance=ExtResource( 7 )]
+position = Vector2( 0, 40 )
+acceleration = 2000
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( -57.4491, 69.3939 )
+editor_only = true
+texture = ExtResource( 8 )
+texture_scale = 8.0
+energy = 4.0
+range_height = 57.7
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="DronePickupArea" type="Area2D" parent="."]
+collision_layer = 0
+monitorable = false
+
+[node name="Shape" type="CollisionShape2D" parent="DronePickupArea"]
+modulate = Color( 0, 0.14902, 0.533333, 1 )
+light_mask = 0
+shape = SubResource( 1 )
+
 [node name="HarvBlock" type="Sprite" parent="." index="5"]
-material = ExtResource( 4 )
+material = ExtResource( 1 )
 position = Vector2( 0, 148 )
 scale = Vector2( 0.9, 0.9 )
 z_index = 1
-texture = ExtResource( 3 )
-normal_map = ExtResource( 2 )
+texture = ExtResource( 2 )
+normal_map = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 600, 292, 80, 90 )
 
@@ -41,8 +92,8 @@ use_parent_material = true
 position = Vector2( -0.5, -51.1786 )
 scale = Vector2( -0.96, 1 )
 z_index = -1
-texture = ExtResource( 3 )
-normal_map = ExtResource( 2 )
+texture = ExtResource( 2 )
+normal_map = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 616, 177, 48, 20 )
 
@@ -51,7 +102,11 @@ use_parent_material = true
 position = Vector2( 0, -120 )
 scale = Vector2( 0.944445, 1.11111 )
 z_index = -2
-texture = ExtResource( 3 )
-normal_map = ExtResource( 2 )
+texture = ExtResource( 2 )
+normal_map = ExtResource( 3 )
 region_enabled = true
 region_rect = Rect2( 495, 174, 34, 13 )
+
+[connection signal="droneHit" from="DroneLaunchManager" to="." method="_on_DroneLaunchManager_droneHit"]
+[connection signal="body_entered" from="DronePickupArea" to="." method="_on_DronePickupArea_body_entered"]
+[connection signal="body_exited" from="DronePickupArea" to="." method="_on_DronePickupArea_body_exited"]
