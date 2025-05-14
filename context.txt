@@ -1,0 +1,35 @@
+ALL HARD: harvtug, harvhaul
+High-stress: salvage-light, salvage-heavy, mwtightbeam, tightbeam-pdt
+Main-low: salvage-light, mwtightbeam, tightbeam-pdt
+main-left: salvage-light, salvage-heavy, mwtightbeam, tightbeam-pdt
+main-right: salvage-light, salvage-heavy, mwtightbeam, tightbeam-pdt
+left: salvage-light, exodyn, mwtightbeam, tightbeam-pdt
+middleleft: salvage-light, tightbeam-pdt, (ADD: mwtightbeam)
+right: salvage-light, exodyn, mwtightbeam, tightbeam-pdt
+middleright: salvage-light, mwtightbeam, tightbeam-pdt
+rearleft: exodyn, tightbeam-pdt
+rearright: exodyn, tightbeam-pdt
+docking: exodyn, tightbeam-pdt
+
+
+ammo: 200
+propellant: 1000000, 2000000
+rcs: pntrm, blast, pin150
+torch: soyuz, thunder, gemini, pms2, nani, pin1200, crack
+rods: 1
+ultracap: 100, 700, 1400
+turbine: 20, 160, 320
+aux: mpd1400, mpd2000, smes10k
+cargo: MPUFURN, MPUBULK
+auto: 337MOD
+
+
+NEW SLOTS:
+HoldModifiersDivided: NONE, 2k, amorph4, 4k, amorph5, 6k, amorph6
+HoldModifiersAmorphic: NONE, bolts, 2k, 4k, 6k
+CargoAccessories: NONE, baffles, 0x30, 4k, 20x10, 8k, 40x20, fab, bigfab
+CrewModifiers: NONE, bunk, bunkx2, home, capsule, kmx, ocm
+LeftTurretSlot: none, drones, turrets
+RightTurretSlot: none, drones, turrets
+RCSLarge: equivalent to torch
+TorchLarge: none, ZURBIN

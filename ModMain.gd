@@ -17,6 +17,11 @@ var verbose:bool = true # failsafe
 
 var modSettings = {}
 
+var ADD_EQUIPMENT_SLOTS = []
+var ADD_EQUIPMENT_ITEMS = []
+var EQUIPMENT_TAGS = {}
+var SLOT_TAGS = {}
+
 func _init(modLoader = ModLoader):
 # Must load DLC early for it to properly function.
 	# Modify Settings.gd first so we can load config and DLC
@@ -54,7 +59,7 @@ func _init(modLoader = ModLoader):
 	
 # replace the Upgrades.tscn containing equipment modifications
 	replaceScene("weapons/WeaponSlot.tscn")
-	replaceScene("enceladus/Upgrades.tscn")
+#	replaceScene("enceladus/Upgrades.tscn")
 	
 	# Adds IoE-specific ships to the event pool
 	replaceScene("story/TheRing.tscn")
@@ -79,6 +84,7 @@ func _init(modLoader = ModLoader):
 func _ready():
 	# Game.tscn should be loaded on ready, separate from TheRing.tscn to allow for other mods to add their own events
 	replaceScene("Game.tscn")
+	made_additions()
 	l("Ready!")
 
 
@@ -211,4 +217,21 @@ func shipReplacements():
 	replaceScene("ships/Cothon-CHK.tscn")
 	replaceScene("ships/Cothon-Lnd.tscn")
 	replaceScene("ships/Cothon.tscn")
-		
+
+func made_additions():
+	var slots = load("res://IndustriesOfEnceladusRevamp/tagging_assignments/slots.gd")
+	var assignments = load("res://IndustriesOfEnceladusRevamp/tagging_assignments/slot_assignments.gd")
+	var tags = load("res://IndustriesOfEnceladusRevamp/tagging_assignments/tags.gd")
+	for slot in slots.get_script_constant_map():
+		addEquipmentSlot(slots.get(slot))
+	EQUIPMENT_TAGS = tags.EQUIPMENT_TAGS
+	SLOT_TAGS = tags.SLOT_TAGS
+	for slot in assignments.get_script_constant_map():
+		addEquipmentItem(assignments.get(slot))
+var Equipment = preload("res://HevLib/pointers/Equipment.gd")
+func addEquipmentSlot(slot_data: Dictionary):
+	var slot = Equipment.__make_slot(slot_data)
+	ADD_EQUIPMENT_SLOTS.append(slot)
+func addEquipmentItem(item_data: Dictionary):
+	var eqp = Equipment.__make_equipment(item_data)
+	ADD_EQUIPMENT_ITEMS.append(eqp)
