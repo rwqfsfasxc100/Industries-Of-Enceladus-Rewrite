@@ -2,7 +2,11 @@
 
 id="hev.IndustriesOfEnceladus"
 name="Industries of Enceladus Compat Port"
-version="2.2.3"
+version="2.3.0"
+version_major=2
+version_minor=3
+version_bugfix=0
+version_metadata=""
 description="IOE_MOD_DESCRIPTION"
 group="gameplay"
 github_homepage="https://github.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite"
