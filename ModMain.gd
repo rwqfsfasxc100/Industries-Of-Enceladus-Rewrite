@@ -65,10 +65,7 @@ func _init(modLoader = ModLoader):
 	replaceScene("weapons/WeaponSlot.tscn")
 #	replaceScene("enceladus/Upgrades.tscn")
 	
-	# Adds IoE-specific ships to the event pool
-	replaceScene("story/TheRing.tscn")
-	replaceScene("comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
-
+	
 # install the Shipyard.gd script extension, which loads replacements + new ships
 	shipReplacements()
 	
@@ -86,6 +83,9 @@ func _init(modLoader = ModLoader):
 
 
 func _ready():
+	# Adds IoE-specific ships to the event pool
+	replaceScene("story/TheRing.tscn")
+	replaceScene("comms/conversation/subtrees/DIALOG_PIRATE_SUPPORT.tscn")
 	# Game.tscn should be loaded on ready, separate from TheRing.tscn to allow for other mods to add their own events
 	replaceScene("Game.tscn")
 	made_additions()
