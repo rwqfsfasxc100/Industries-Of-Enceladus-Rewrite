@@ -283,7 +283,7 @@ const ULTRACAP_700 = {
 }
 const ULTRACAP_1400 = {
 	"num_val":1400,
-	"system":"SYSTEM_CAPACITOR_700",
+	"system":"SYSTEM_CAPACITOR_1400",
 	"manual":"SYSTEM_CAPACITOR_MANUAL",
 	"price":292000,
 	"test_protocol":"bootup",

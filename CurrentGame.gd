@@ -80,8 +80,9 @@ func validateEmployment():
 					if isCrewMemberActive(member):
 						member.active = false
 						changed = true
-		if maxMembers <= 0:
-			Achivements.achive("CREW_FULL")
+		if maxMembers != null:
+			if maxMembers <= 0:
+				Achivements.achive("CREW_FULL")
 
 		for memberName in state.crew:
 			var member = state.crew[memberName]
