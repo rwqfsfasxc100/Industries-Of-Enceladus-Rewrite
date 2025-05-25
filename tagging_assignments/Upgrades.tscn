@@ -1,0 +1,280 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://enceladus/Upgrades.tscn" type="PackedScene" id=1]
+[ext_resource path="res://enceladus/SystemShipUpgradeUI.tscn" type="PackedScene" id=2]
+
+[node name="Upgrades" instance=ExtResource( 1 )]
+
+[node name="MarginContainer" parent="VB/MarginContainer/ScrollContainer" index="0"]
+margin_bottom = 26468.0
+
+[node name="Items" parent="VB/MarginContainer/ScrollContainer/MarginContainer" index="0"]
+margin_bottom = 26452.0
+
+[node name="AmmunitionDelivery" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="18"]
+margin_bottom = 18581.0
+
+[node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/AmmunitionDelivery" index="0"]
+margin_bottom = 645.0
+
+[node name="Ammo200" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/AmmunitionDelivery/VBoxContainer" index="8" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 573.0
+margin_right = 1196.0
+margin_bottom = 643.0
+numVal = 200.0
+slot = "ammo.capacity"
+system = "SYSTEM_AMMO_200"
+manual = "SYSTEM_AMMO_MANUAL"
+price = 500
+testProtocol = "takeoff"
+
+[node name="DisposableDrones" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="19"]
+margin_top = 18585.0
+margin_bottom = 19084.0
+
+[node name="Propellant" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="20"]
+margin_top = 19088.0
+margin_bottom = 19735.0
+
+[node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Propellant" index="0"]
+margin_bottom = 645.0
+
+[node name="Fuel1000000" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Propellant/VBoxContainer" index="7" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 499.0
+margin_right = 1196.0
+margin_bottom = 569.0
+numVal = 1e+06
+slot = "fuel.capacity"
+system = "SYSTEM_FUEL_1000000"
+manual = "SYSTEM_FUEL_MANUAL"
+price = 750000
+testProtocol = "takeoff"
+
+[node name="Fuel2000000" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Propellant/VBoxContainer" index="8" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 573.0
+margin_right = 1196.0
+margin_bottom = 643.0
+numVal = 2e+06
+slot = "fuel.capacity"
+system = "SYSTEM_FUEL_2000000"
+manual = "SYSTEM_FUEL_MANUAL"
+price = 1950000
+testProtocol = "takeoff"
+
+[node name="Thrusters" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="21"]
+margin_top = 19739.0
+margin_bottom = 20756.0
+
+[node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Thrusters" index="0"]
+margin_bottom = 1015.0
+
+[node name="PNTRM" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Thrusters/VBoxContainer" index="11" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 795.0
+margin_right = 1196.0
+margin_bottom = 865.0
+slot = "propulsion.rcs"
+system = "SYSTEM_THRUSTER_PNTRM"
+manual = "SYSTEM_THRUSTER_MANUAL"
+price = 2750
+testProtocol = "autopilot"
+warnIfThermalBelow = 0.9
+
+[node name="BLAST" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Thrusters/VBoxContainer" index="12" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 869.0
+margin_right = 1196.0
+margin_bottom = 939.0
+rect_pivot_offset = Vector2( 4057.23, 2362 )
+slot = "propulsion.rcs"
+system = "SYSTEM_THRUSTER_BLAST"
+manual = "SYSTEM_THRUSTER_MANUAL"
+price = 15500
+testProtocol = "autopilot"
+warnIfThermalBelow = 3.0
+warnIfElectricBelow = 35.0
+
+[node name="PIN150" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Thrusters/VBoxContainer" index="13" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 943.0
+margin_right = 1196.0
+margin_bottom = 1013.0
+slot = "propulsion.rcs"
+system = "SYSTEM_THRUSTER_PIN150"
+manual = "SYSTEM_THRUSTER_MANUAL"
+price = 31500
+testProtocol = "autopilot"
+warnIfThermalBelow = 1.3
+warnIfElectricBelow = 250.0
+
+[node name="Torches" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="22"]
+margin_top = 20760.0
+margin_bottom = 21481.0
+
+[node name="Rods" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="23"]
+margin_top = 21485.0
+margin_bottom = 22206.0
+
+[node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Rods" index="0"]
+margin_bottom = 719.0
+
+[node name="Rods1" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Rods/VBoxContainer" index="9" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 647.0
+margin_right = 1196.0
+margin_bottom = 717.0
+numVal = 1.0
+slot = "reactor.power"
+system = "SYSTEM_RODS_1"
+manual = "SYSTEM_RODS_MANUAL"
+price = 20000
+testProtocol = "takeoff"
+
+[node name="Capacitor" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="24"]
+margin_top = 22210.0
+margin_bottom = 22709.0
+
+[node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Capacitor" index="0"]
+margin_bottom = 497.0
+
+[node name="Capacitor100" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Capacitor/VBoxContainer" index="4" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 277.0
+margin_right = 1196.0
+margin_bottom = 347.0
+numVal = 100.0
+slot = "capacitor.capacity"
+system = "SYSTEM_CAPACITOR_100"
+manual = "SYSTEM_CAPACITOR_MANUAL"
+price = 4000
+testProtocol = "bootup"
+
+[node name="Capacitor700" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Capacitor/VBoxContainer" index="5" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 351.0
+margin_right = 1196.0
+margin_bottom = 421.0
+numVal = 700.0
+slot = "capacitor.capacity"
+system = "SYSTEM_CAPACITOR_700"
+manual = "SYSTEM_CAPACITOR_MANUAL"
+price = 135000
+testProtocol = "bootup"
+
+[node name="Capacitor1400" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Capacitor/VBoxContainer" index="6" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 425.0
+margin_right = 1196.0
+margin_bottom = 495.0
+numVal = 1400.0
+slot = "capacitor.capacity"
+system = "SYSTEM_CAPACITOR_1400"
+manual = "SYSTEM_CAPACITOR_MANUAL"
+price = 292000
+testProtocol = "bootup"
+
+[node name="Turbine" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="25"]
+margin_top = 22713.0
+margin_bottom = 23212.0
+
+[node name="VBoxContainer" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Turbine" index="0"]
+margin_bottom = 497.0
+
+[node name="Turbine20" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Turbine/VBoxContainer" index="4" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 277.0
+margin_right = 1196.0
+margin_bottom = 347.0
+numVal = 20.0
+slot = "turbine.power"
+system = "SYSTEM_TURBINE_20"
+manual = "SYSTEM_TURBINE_MANUAL"
+price = 5000
+testProtocol = "bootup"
+
+[node name="Turbine160" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Turbine/VBoxContainer" index="5" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 351.0
+margin_right = 1196.0
+margin_bottom = 421.0
+numVal = 160.0
+slot = "turbine.power"
+system = "SYSTEM_TURBINE_160"
+manual = "SYSTEM_TURBINE_MANUAL"
+price = 95000
+testProtocol = "bootup"
+
+[node name="Turbine320" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items/Turbine/VBoxContainer" index="6" instance=ExtResource( 2 )]
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 425.0
+margin_right = 1196.0
+margin_bottom = 495.0
+numVal = 320.0
+slot = "turbine.power"
+system = "SYSTEM_TURBINE_320"
+manual = "SYSTEM_TURBINE_MANUAL"
+price = 200000
+testProtocol = "bootup"
+
+[node name="AuxilaryPower" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="26"]
+margin_top = 23216.0
+margin_bottom = 23789.0
+
+[node name="CargoBay" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="27"]
+margin_top = 23793.0
+margin_bottom = 24366.0
+
+[node name="Autopilot" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="28"]
+margin_top = 24370.0
+margin_bottom = 24869.0
+
+[node name="Hud" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="29"]
+margin_top = 24873.0
+margin_bottom = 25668.0
+
+[node name="Lidar" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="30"]
+margin_top = 25672.0
+margin_bottom = 26097.0
+
+[node name="ReconDrone" parent="VB/MarginContainer/ScrollContainer/MarginContainer/Items" index="31"]
+margin_top = 26101.0
+margin_bottom = 26452.0
+
+[editable path="VB/HeaderWithMoney"]
+[editable path="VB/WindowMargin/TabHintContainer"]
+[editable path="VB/WindowMargin/TabHintContainer/Window/UPGRADE_SIMULATION/MarginContainer/ShipParams"]
+[editable path="VB/WindowMargin/TabHintContainer/Window/UPGRADE_SIMULATION/MarginContainer/CargoHold/CargoHold"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/MainWeaponSlot"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/MainLowWeaponSlot"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftHighStress"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightHighStress"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftWeaponSlot"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/MiddleLeftWeaponSlot"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightWeaponSlot"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/MiddleRightWeaponSlot"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftDroneSlot"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightDroneSlot"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftRearSlot"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightRearSlot"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay1"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay1"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay2"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay2"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/LeftBay3"]
+[editable path="VB/MarginContainer/ScrollContainer/MarginContainer/Items/RightBay3"]

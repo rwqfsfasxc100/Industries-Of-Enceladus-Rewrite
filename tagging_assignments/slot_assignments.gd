@@ -138,62 +138,62 @@ const EXODYN_R = {
 	"alignment":"ALIGNMENT_RIGHT",
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER"
 }
-const AMMO_200 = {
-	"num_val":200,
-	"system":"SYSTEM_AMMO_200",
-	"manual":"SYSTEM_AMMO_MANUAL",
-	"price":500,
-	"test_protocol":"takeoff",
-	"slot_type":"MASS_DRIVER_AMMUNITION",
-	"equipment_type":"CONSUMABLE_MASS_DRIVER_AMMUNITION"
-}
-const PROPELLANT_1000000 = {
-	"num_val":1000000,
-	"system":"SYSTEM_FUEL_1000000",
-	"manual":"SYSTEM_FUEL_MANUAL",
-	"price":750000,
-	"test_protocol":"takeoff",
-	"slot_type":"PROPELLANT_TANK",
-	"equipment_type":"CONSUMABLE_PROPELLANT"
-}
-const PROPELLANT_2000000 = {
-	"num_val":2000000,
-	"system":"SYSTEM_FUEL_2000000",
-	"manual":"SYSTEM_FUEL_MANUAL",
-	"price":1950000,
-	"test_protocol":"takeoff",
-	"slot_type":"PROPELLANT_TANK",
-	"equipment_type":"CONSUMABLE_PROPELLANT"
-}
-const RCS_PNTRM = {
-	"system":"SYSTEM_THRUSTER_PNTRM",
-	"manual":"SYSTEM_THRUSTER_MANUAL",
-	"price":2750,
-	"test_protocol":"autopilot",
-	"warn_if_thermal_below":0.9,
-	"slot_type":"STANDARD_REACTION_CONTROL_THRUSTERS",
-	"equipment_type":"THRUSTER_STANDARD_REACTION_CONTROL_THRUSTERS"
-}
-const RCS_BLAST = {
-	"system":"SYSTEM_THRUSTER_BLAST",
-	"manual":"SYSTEM_THRUSTER_MANUAL",
-	"price":15500,
-	"test_protocol":"autopilot",
-	"warn_if_thermal_below":3.0,
-	"warn_if_electric_below":35,
-	"slot_type":"STANDARD_REACTION_CONTROL_THRUSTERS",
-	"equipment_type":"THRUSTER_STANDARD_REACTION_CONTROL_THRUSTERS"
-}
-const RCS_PIN150 = {
-	"system":"SYSTEM_THRUSTER_PIN150",
-	"manual":"SYSTEM_THRUSTER_MANUAL",
-	"price":31500,
-	"test_protocol":"autopilot",
-	"warn_if_thermal_below":1.3,
-	"warn_if_electric_below":250,
-	"slot_type":"STANDARD_REACTION_CONTROL_THRUSTERS",
-	"equipment_type":"THRUSTER_STANDARD_REACTION_CONTROL_THRUSTERS"
-}
+#const AMMO_200 = {
+#	"num_val":200,
+#	"system":"SYSTEM_AMMO_200",
+#	"manual":"SYSTEM_AMMO_MANUAL",
+#	"price":500,
+#	"test_protocol":"takeoff",
+#	"slot_type":"MASS_DRIVER_AMMUNITION",
+#	"equipment_type":"CONSUMABLE_MASS_DRIVER_AMMUNITION"
+#}
+#const PROPELLANT_1000000 = {
+#	"num_val":1000000,
+#	"system":"SYSTEM_FUEL_1000000",
+#	"manual":"SYSTEM_FUEL_MANUAL",
+#	"price":750000,
+#	"test_protocol":"takeoff",
+#	"slot_type":"PROPELLANT_TANK",
+#	"equipment_type":"CONSUMABLE_PROPELLANT"
+#}
+#const PROPELLANT_2000000 = {
+#	"num_val":2000000,
+#	"system":"SYSTEM_FUEL_2000000",
+#	"manual":"SYSTEM_FUEL_MANUAL",
+#	"price":1950000,
+#	"test_protocol":"takeoff",
+#	"slot_type":"PROPELLANT_TANK",
+#	"equipment_type":"CONSUMABLE_PROPELLANT"
+#}
+#const RCS_PNTRM = {
+#	"system":"SYSTEM_THRUSTER_PNTRM",
+#	"manual":"SYSTEM_THRUSTER_MANUAL",
+#	"price":2750,
+#	"test_protocol":"autopilot",
+#	"warn_if_thermal_below":0.9,
+#	"slot_type":"STANDARD_REACTION_CONTROL_THRUSTERS",
+#	"equipment_type":"THRUSTER_STANDARD_REACTION_CONTROL_THRUSTERS"
+#}
+#const RCS_BLAST = {
+#	"system":"SYSTEM_THRUSTER_BLAST",
+#	"manual":"SYSTEM_THRUSTER_MANUAL",
+#	"price":15500,
+#	"test_protocol":"autopilot",
+#	"warn_if_thermal_below":3.0,
+#	"warn_if_electric_below":35,
+#	"slot_type":"STANDARD_REACTION_CONTROL_THRUSTERS",
+#	"equipment_type":"THRUSTER_STANDARD_REACTION_CONTROL_THRUSTERS"
+#}
+#const RCS_PIN150 = {
+#	"system":"SYSTEM_THRUSTER_PIN150",
+#	"manual":"SYSTEM_THRUSTER_MANUAL",
+#	"price":31500,
+#	"test_protocol":"autopilot",
+#	"warn_if_thermal_below":1.3,
+#	"warn_if_electric_below":250,
+#	"slot_type":"STANDARD_REACTION_CONTROL_THRUSTERS",
+#	"equipment_type":"THRUSTER_STANDARD_REACTION_CONTROL_THRUSTERS"
+#}
 const TORCH_SOYUZ = {
 	"system":"SYSTEM_MAIN_ENGINE_SOYUZ",
 	"manual":"SYSTEM_MAIN_ENGINE_MANUAL",
@@ -254,69 +254,69 @@ const TORCH_CRACK = {
 	"slot_type":"STANDARD_MAIN_ENGINE",
 	"equipment_type":"THRUSTER_STANDARD_MAIN_ENGINE"
 }
-const RODS_1 = {
-	"num_val":1,
-	"system":"SYSTEM_RODS_1",
-	"manual":"SYSTEM_RODS_MANUAL",
-	"price":20000,
-	"test_protocol":"takeoff",
-	"slot_type":"FISSION_RODS",
-	"equipment_type":"POWER_FISSION_RODS"
-}
-const ULTRACAP_100 = {
-	"num_val":100,
-	"system":"SYSTEM_CAPACITOR_100",
-	"manual":"SYSTEM_CAPACITOR_MANUAL",
-	"price":4000,
-	"test_protocol":"bootup",
-	"slot_type":"ULTRACAPACITOR",
-	"equipment_type":"POWER_ULTRACAPACITOR"
-}
-const ULTRACAP_700 = {
-	"num_val":700,
-	"system":"SYSTEM_CAPACITOR_700",
-	"manual":"SYSTEM_CAPACITOR_MANUAL",
-	"price":135000,
-	"test_protocol":"bootup",
-	"slot_type":"ULTRACAPACITOR",
-	"equipment_type":"POWER_ULTRACAPACITOR"
-}
-const ULTRACAP_1400 = {
-	"num_val":1400,
-	"system":"SYSTEM_CAPACITOR_1400",
-	"manual":"SYSTEM_CAPACITOR_MANUAL",
-	"price":292000,
-	"test_protocol":"bootup",
-	"slot_type":"ULTRACAPACITOR",
-	"equipment_type":"POWER_ULTRACAPACITOR"
-}
-const TURBINE_20 = {
-	"num_val":20,
-	"system":"SYSTEM_TURBINE_20",
-	"manual":"SYSTEM_TURBINE_MANUAL",
-	"price":5000,
-	"test_protocol":"bootup",
-	"slot_type":"FISSION_TURBINE",
-	"equipment_type":"POWER_FISSION_TURBINE"
-}
-const TURBINE_160 = {
-	"num_val":160,
-	"system":"SYSTEM_TURBINE_160",
-	"manual":"SYSTEM_TURBINE_MANUAL",
-	"price":95000,
-	"test_protocol":"bootup",
-	"slot_type":"FISSION_TURBINE",
-	"equipment_type":"POWER_FISSION_TURBINE"
-}
-const TURBINE_320 = {
-	"num_val":320,
-	"system":"SYSTEM_TURBINE_320",
-	"manual":"SYSTEM_TURBINE_MANUAL",
-	"price":200000,
-	"test_protocol":"bootup",
-	"slot_type":"FISSION_TURBINE",
-	"equipment_type":"POWER_FISSION_TURBINE"
-}
+#const RODS_1 = {
+#	"num_val":1,
+#	"system":"SYSTEM_RODS_1",
+#	"manual":"SYSTEM_RODS_MANUAL",
+#	"price":20000,
+#	"test_protocol":"takeoff",
+#	"slot_type":"FISSION_RODS",
+#	"equipment_type":"POWER_FISSION_RODS"
+#}
+#const ULTRACAP_100 = {
+#	"num_val":100,
+#	"system":"SYSTEM_CAPACITOR_100",
+#	"manual":"SYSTEM_CAPACITOR_MANUAL",
+#	"price":4000,
+#	"test_protocol":"bootup",
+#	"slot_type":"ULTRACAPACITOR",
+#	"equipment_type":"POWER_ULTRACAPACITOR"
+#}
+#const ULTRACAP_700 = {
+#	"num_val":700,
+#	"system":"SYSTEM_CAPACITOR_700",
+#	"manual":"SYSTEM_CAPACITOR_MANUAL",
+#	"price":135000,
+#	"test_protocol":"bootup",
+#	"slot_type":"ULTRACAPACITOR",
+#	"equipment_type":"POWER_ULTRACAPACITOR"
+#}
+#const ULTRACAP_1400 = {
+#	"num_val":1400,
+#	"system":"SYSTEM_CAPACITOR_1400",
+#	"manual":"SYSTEM_CAPACITOR_MANUAL",
+#	"price":292000,
+#	"test_protocol":"bootup",
+#	"slot_type":"ULTRACAPACITOR",
+#	"equipment_type":"POWER_ULTRACAPACITOR"
+#}
+#const TURBINE_20 = {
+#	"num_val":20,
+#	"system":"SYSTEM_TURBINE_20",
+#	"manual":"SYSTEM_TURBINE_MANUAL",
+#	"price":5000,
+#	"test_protocol":"bootup",
+#	"slot_type":"FISSION_TURBINE",
+#	"equipment_type":"POWER_FISSION_TURBINE"
+#}
+#const TURBINE_160 = {
+#	"num_val":160,
+#	"system":"SYSTEM_TURBINE_160",
+#	"manual":"SYSTEM_TURBINE_MANUAL",
+#	"price":95000,
+#	"test_protocol":"bootup",
+#	"slot_type":"FISSION_TURBINE",
+#	"equipment_type":"POWER_FISSION_TURBINE"
+#}
+#const TURBINE_320 = {
+#	"num_val":320,
+#	"system":"SYSTEM_TURBINE_320",
+#	"manual":"SYSTEM_TURBINE_MANUAL",
+#	"price":200000,
+#	"test_protocol":"bootup",
+#	"slot_type":"FISSION_TURBINE",
+#	"equipment_type":"POWER_FISSION_TURBINE"
+#}
 const AUX_MPDG_1400 = {
 	"system":"SYSTEM_AUX_MPD_1400",
 	"manual":"SYSTEM_AUX_MPD_MANUAL",
