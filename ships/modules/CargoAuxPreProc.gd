@@ -22,19 +22,22 @@ func getStatus():
 func getPower():
 	return clamp(power, 0, 1)
 
+var NodeAccess = preload("res://HevLib/pointers/NodeAccess.gd")
+
 func extend(ship):
 	# and this part which boosts MPU efficiency
 	for node in ship.get_children():
-		if "MineralProcessingUnit" in node.name:
-#			var nodeMinEff = node.get("mineralEfficiency")
-			var nodeMinEff = node.mineralEfficiency
-			var newMinEff = clamp(nodeMinEff + (nodeMinEff * mineralEfficiency),
-				0, 0.95)
-			# clamped to 0.95 since it'll violate the laws of physics otherwise
-			# maybe 1? i can change it later i guess
-			ship.set("mineralEfficiency", newMinEff)
-			#print("New efficiency of %s is %s" % [node.systemName, String(newMinEff)])
-	
+		var valid = node.is_processing()
+		if valid:
+			if "MineralProcessingUnit" in node.name:
+				var nodeMinEff = node.mineralEfficiency
+				var newMinEff = clamp(nodeMinEff + (nodeMinEff * mineralEfficiency),
+					0, 0.95)
+				# clamped to 0.95 since it'll violate the laws of physics otherwise
+				# maybe 1? i can change it later i guess
+				ship.set("mineralEfficiency", newMinEff)
+				#print("New efficiency of %s is %s" % [node.systemName, String(newMinEff)])
+	pass
 	#print("%s just fired" % systemName)
 			
 onready var ventRemass = $VentRemass

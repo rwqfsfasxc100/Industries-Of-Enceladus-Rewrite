@@ -70,7 +70,8 @@ const RCS_LARGE = {
 	"slot_display_name":"SLOT_RCS_LARGE",
 	"always_display":false,
 	"slot_type":"STANDARD_MAIN_ENGINE",
-	"has_none":false
+	"has_none":false,
+	"add_vanilla_equipment":true
 }
 const TORCH_LARGE = {
 	"system_slot":"propulsion.mainLarge",

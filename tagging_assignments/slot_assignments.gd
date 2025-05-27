@@ -317,46 +317,46 @@ const TORCH_CRACK = {
 #	"slot_type":"FISSION_TURBINE",
 #	"equipment_type":"POWER_FISSION_TURBINE"
 #}
-const AUX_MPDG_1400 = {
-	"system":"SYSTEM_AUX_MPD_1400",
-	"manual":"SYSTEM_AUX_MPD_MANUAL",
-	"price":1150000,
-	"test_protocol":"bootup",
-	"slot_type":"AUX_POWER_SLOT",
-	"equipment_type":"POWER_AUX_POWER_SLOT"
-}
-const AUX_MPDG_2000 = {
-	"system":"SYSTEM_AUX_MPD_2000",
-	"manual":"SYSTEM_AUX_MPD_MANUAL",
-	"price":1425000,
-	"test_protocol":"bootup",
-	"slot_type":"AUX_POWER_SLOT",
-	"equipment_type":"POWER_AUX_POWER_SLOT"
-}
-const AUX_SMES_10K = {
-	"system":"SYSTEM_AUX_SMES_10K",
-	"manual":"SYSTEM_AUX_SMES_MANUAL",
-	"price":140000,
-	"test_protocol":"bootup",
-	"slot_type":"AUX_POWER_SLOT",
-	"equipment_type":"POWER_AUX_POWER_SLOT"
-}
-const CARGO_MPU_FURN = {
-	"system":"SYSTEM_CARGO_MPU_FURN",
-	"manual":"SYSTEM_CARGO_MPU_MANUAL",
-	"price":650000,
-	"test_protocol":"cargo",
-	"slot_type":"CARGO_BAY",
-	"equipment_type":"CARGO_BAY"
-}
-const CARGO_MPU_BULK = {
-	"system":"SYSTEM_CARGO_MPU_BULK",
-	"manual":"SYSTEM_CARGO_MPU_MANUAL",
-	"price":1150000,
-	"test_protocol":"cargo",
-	"slot_type":"CARGO_BAY",
-	"equipment_type":"CARGO_BAY"
-}
+#const AUX_MPDG_1400 = {
+#	"system":"SYSTEM_AUX_MPD_1400",
+#	"manual":"SYSTEM_AUX_MPD_MANUAL",
+#	"price":1150000,
+#	"test_protocol":"bootup",
+#	"slot_type":"AUX_POWER_SLOT",
+#	"equipment_type":"POWER_AUX_POWER_SLOT"
+#}
+#const AUX_MPDG_2000 = {
+#	"system":"SYSTEM_AUX_MPD_2000",
+#	"manual":"SYSTEM_AUX_MPD_MANUAL",
+#	"price":1425000,
+#	"test_protocol":"bootup",
+#	"slot_type":"AUX_POWER_SLOT",
+#	"equipment_type":"POWER_AUX_POWER_SLOT"
+#}
+#const AUX_SMES_10K = {
+#	"system":"SYSTEM_AUX_SMES_10K",
+#	"manual":"SYSTEM_AUX_SMES_MANUAL",
+#	"price":140000,
+#	"test_protocol":"bootup",
+#	"slot_type":"AUX_POWER_SLOT",
+#	"equipment_type":"POWER_AUX_POWER_SLOT"
+#}
+#const CARGO_MPU_FURN = {
+#	"system":"SYSTEM_CARGO_MPU_FURN",
+#	"manual":"SYSTEM_CARGO_MPU_MANUAL",
+#	"price":650000,
+#	"test_protocol":"cargo",
+#	"slot_type":"CARGO_BAY",
+#	"equipment_type":"CARGO_BAY"
+#}
+#const CARGO_MPU_BULK = {
+#	"system":"SYSTEM_CARGO_MPU_BULK",
+#	"manual":"SYSTEM_CARGO_MPU_MANUAL",
+#	"price":1150000,
+#	"test_protocol":"cargo",
+#	"slot_type":"CARGO_BAY",
+#	"equipment_type":"CARGO_BAY"
+#}
 const HOLD_MODIFIER_BOLTS = {
 	"system":"SYSTEM_CARGO_MOD_BOLTS",
 	"price":2500,
@@ -474,13 +474,13 @@ const CARGO_ACCESSORY_BIG_FAB = {
 	"slot_type":"CARGO_ACCESSORIES",
 	"equipment_type":"CARGO_ACCESSORIES"
 }
-const AUTOPILOT_337MOD = {
-	"system":"SYSTEM_AUTOPILOT_337MOD",
-	"price":42500,
-	"test_protocol":"autopilot",
-	"slot_type":"AUTOPILOT",
-	"equipment_type":"COMPUTER_AUTOPILOT"
-}
+#const AUTOPILOT_337MOD = {
+#	"system":"SYSTEM_AUTOPILOT_337MOD",
+#	"price":42500,
+#	"test_protocol":"autopilot",
+#	"slot_type":"AUTOPILOT",
+#	"equipment_type":"COMPUTER_AUTOPILOT"
+#}
 const CREW_MOD_BUNK = {
 	"system":"SYSTEM_CREW_ADD_BUNK",
 	"manual":"SYSTEM_CREW_ADD_MANUAL",
