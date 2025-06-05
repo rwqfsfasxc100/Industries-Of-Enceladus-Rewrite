@@ -80,7 +80,7 @@ SHIP_PROSPECTOR_PIGEON|Pigeon Prospector
 
 SHIP_PROSPECTOR_PIGEON_DESC|What happens when a Pelican and a Vulture love eachother very much? They make this thing - or so it goes. The Pigeon's high price point is entirely on account of the incredible skill that went into its implementation; additional girding struts support a high-stress hardpoint to the fore of the vessel, the entire power and equipment feed system having been reworked to accommodate it. The bay has also been shortened to handle the stress, which has permitted reinstallation of a standard grinder.
 
-SHIP_PROSPECTOR_PIGEON_SPECS|Make: Mitsudaya-Starbus / Conlido RVM \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6 \nDry mass: 70,000 kg \nCargo bay: 70 m^3 \nProcessed cargo storage: 14,000 kg
+SHIP_PROSPECTOR_PIGEON_SPECS|Make: Mitsudaya-Starbus / Conlido RVM \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6 \nDry mass: 42,300 kg \nCargo bay: 70 m^3 \nProcessed cargo storage: 14,000 kg
 
 
 

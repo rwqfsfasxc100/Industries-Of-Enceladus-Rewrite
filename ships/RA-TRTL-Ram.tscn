@@ -73,6 +73,7 @@ slot = "rightDrone"
 toggleCommand = "ship_slot_5"
 
 [node name="HoldModifiers" parent="." index="30" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
+type = "cargo.modifierAmorphic"
 
 [node name="MineralProcessingUnit" parent="." index="31"]
 polygon = PoolVector2Array( -32, -57, -19, -36, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 19, -36, 32, -57, 32, 3, 20, 31, -20, 31, -32, 3 )
