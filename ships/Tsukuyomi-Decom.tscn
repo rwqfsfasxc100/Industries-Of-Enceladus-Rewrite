@@ -398,7 +398,7 @@ __meta__ = {
 "_editor_description_": ""
 }
 slot = "right"
-toggleCommand = "ship_slot_5"
+toggleCommand = "ship_slot_3"
 
 [node name="SYSTEM_ACTEMD14" parent="TorpedoTubeRightUp" index="19"]
 pivotPath = NodePath("Pivot")
@@ -415,7 +415,7 @@ __meta__ = {
 "_editor_description_": ""
 }
 slot = "middleLeft"
-toggleCommand = "ship_slot_2"
+toggleCommand = "ship_slot_4"
 
 [node name="SYSTEM_ACTEMD14" parent="TorpedoTubeLeftDn" index="19"]
 pivotPath = NodePath("Pivot")
@@ -432,7 +432,7 @@ __meta__ = {
 "_editor_description_": ""
 }
 slot = "middleRight"
-toggleCommand = "ship_slot_4"
+toggleCommand = "ship_slot_5"
 
 [node name="SYSTEM_ACTEMD14" parent="TorpedoTubeRightDn" index="19"]
 pivotPath = NodePath("Pivot")
@@ -448,7 +448,7 @@ position = Vector2( -310, -740 )
 rotation = -1.309
 z_index = 25
 slot = "turretLeft"
-toggleCommand = "ship_slot_5"
+toggleCommand = "ship_slot_6"
 
 [node name="SYSTEM_ACTEMD14" parent="TurretMidLeft" index="19"]
 pivotPath = NodePath("Pivot")
@@ -464,7 +464,7 @@ position = Vector2( 310, -740 )
 rotation = 1.309
 z_index = 25
 slot = "turretRight"
-toggleCommand = "ship_slot_6"
+toggleCommand = "ship_slot_7"
 
 [node name="SYSTEM_ACTEMD14" parent="TurretMidRight" index="19"]
 pivotPath = NodePath("Pivot")
@@ -479,13 +479,13 @@ weaponPath = NodePath("Pivot/laster-pulse")
 position = Vector2( -200, -440 )
 rotation = -0.314159
 slot = "leftBay2"
-toggleCommand = "ship_slot_7"
+toggleCommand = "ship_slot_8"
 
 [node name="DockMR" parent="." instance=ExtResource( 28 )]
 position = Vector2( 200, -440 )
 rotation = 0.314159
 slot = "rightBay2"
-toggleCommand = "ship_slot_8"
+toggleCommand = "ship_slot_9"
 
 [node name="DockBL" parent="." instance=ExtResource( 28 )]
 position = Vector2( -260, 20 )
