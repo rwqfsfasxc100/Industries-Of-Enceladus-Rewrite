@@ -47,7 +47,7 @@ func _init(modLoader = ModLoader):
 #	installScriptExtension("weapons/drone-plant.patch.gd")
 #	replaceScene("weapons/drone-plant.tscn")
 	replaceScene("sfx/torch-PMS.tscn")
-	replaceScene("sfx/torch-ZURBIN.tscn")
+	replaceScene("sfx/torch-ZUBRIN.tscn")
 	
 	replaceScene("ships/modules/AuxSlot.tscn")
 	replaceScene("ships/modules/ThrusterSlot.tscn")

@@ -10,3 +10,11 @@ SYSTEM_MWTIGHTBEAM_PDT|RA DMW Cannon Turret
 SYSTEM_MWTIGHTBEAM_PDT_DESC|This version of the Rusatom-Antonoff DMW Cannon is mounted onto a Nakamura Dynamics NDPT turret body. It enjoys similar handling characteristics and the adjustable configuration parameters of their 42xx line of point-defense railgun turrets, though its gimbal driver had to be downgeared to properly manage the unit's heavy AC cabling. \n\nThe DMW-CT can automatically acquire and track targets, but, unlike its railgun counterpart, does not require manual input to fire.
 
 SYSTEM_MWTIGHTBEAM_PDT_SPECS|Effective range: 2000 m \n Targeting AI: Class-1 \nPower consumption: 120 MW \nOutput power: 90 MW \nWavelength: 1 cm \nMass: 3,000 kg \nManufacturer: Rusatom
+
+SYSTEM_PDTL|NDCL-80 Point Defence Laser Turret
+
+SYSTEM_PDTL_MANUAL|Automatically picks targets.\nFires automatically.\nCoordinates across multiple systems.\nTargeting computer is imperfect.\nDisable the hardpoint to prevent accidental friendly fire.\nDeals thermal damage.
+
+SYSTEM_PDTL_DESC|A small laser attached to a turret base allows for a wide coverage from the hardpoint's point of view. The lower power makes for a bit of extra work on the laser to break rocks, however it prevents as much damage dealt to targets. It fires automatically, so users are warned to have proper control over their governing IFF systems to prevent unwanted conflict. \n\nTHE HARDWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. THE USER ASSUMES ALL LIABILITY WITH THE USE OF THIS EQUIPMENT
+
+SYSTEM_PDTL_SPECS|Effective range: 1,000 m \nTargeting AI: Class-1 \nPower consumption (peak): 80 MW \nMass: 1,500 kg \nManufacturer: Nakamura Dynamics, Coherent Light
