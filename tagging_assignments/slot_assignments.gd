@@ -100,6 +100,44 @@ const MWTIGHTBEAM_PDT_R = {
 	"alignment":"ALIGNMENT_RIGHT",
 	"equipment_type":"EQUIPMENT_TURRETS"
 }
+const PDTL = {
+	"system":"SYSTEM_PDTL",
+	"manual":"SYSTEM_PDTL_MANUAL",
+	"price":300000,
+	"test_protocol":"pdt",
+	"slot_type":"HARDPOINT",
+	"alignment":"ALIGNMENT_CENTER",
+	"warn_if_electric_below":100,
+	"story_flag":"hardware.nakamura",
+	"story_flag_min":5,
+	"equipment_type":"EQUIPMENT_TURRETS"
+}
+const PDTL_L = {
+	"system":"SYSTEM_PDTL-L",
+	"name_override":"SYSTEM_PDTL",
+	"manual":"SYSTEM_PDTL_MANUAL",
+	"price":300000,
+	"test_protocol":"pdt",
+	"slot_type":"HARDPOINT",
+	"alignment":"ALIGNMENT_LEFT",
+	"warn_if_electric_below":100,
+	"story_flag":"hardware.nakamura",
+	"story_flag_min":5,
+	"equipment_type":"EQUIPMENT_TURRETS"
+}
+const PDTL_R = {
+	"system":"SYSTEM_PDTL-R",
+	"name_override":"SYSTEM_PDTL",
+	"manual":"SYSTEM_PDTL_MANUAL",
+	"price":300000,
+	"test_protocol":"pdt",
+	"slot_type":"HARDPOINT",
+	"alignment":"ALIGNMENT_RIGHT",
+	"warn_if_electric_below":100,
+	"story_flag":"hardware.nakamura",
+	"story_flag_min":5,
+	"equipment_type":"EQUIPMENT_TURRETS"
+}
 const DND_HARVTUG = {
 	"system":"SYSTEM_DND_HARVTUG",
 	"manual":"SYSTEM_DND_TS_MANUAL",
@@ -225,7 +263,7 @@ const TORCH_GEMINI = {
 const TORCH_PMS2 = {
 	"system":"SYSTEM_MAIN_ENGINE_PMS",
 	"manual":"SYSTEM_MAIN_ENGINE_MANUAL",
-	"price":400000,
+	"price":4000,
 	"test_protocol":"autopilot",
 	"slot_type":"STANDARD_MAIN_ENGINE",
 	"equipment_type":"THRUSTER_STANDARD_MAIN_ENGINE"

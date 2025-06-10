@@ -1,0 +1,78 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://sfx/AddOnly.material" type="Material" id=1]
+[ext_resource path="res://sfx/thrusters.png" type="Texture" id=2]
+[ext_resource path="res://sfx/thruster.gd" type="Script" id=3]
+[ext_resource path="res://sfx/exhaust.tscn" type="PackedScene" id=4]
+[ext_resource path="res://sfx/thruster_loop_01.wav" type="AudioStream" id=5]
+[ext_resource path="res://sfx/thruster_start_01.wav" type="AudioStream" id=6]
+[ext_resource path="res://lights/plume.png" type="Texture" id=7]
+[ext_resource path="res://lights/ConfigurableLight.gd" type="Script" id=8]
+[ext_resource path="res://ships/modules/nozzle-conventonal.tscn" type="PackedScene" id=9]
+
+[node name="PMS" type="Sprite"]
+self_modulate = Color( 1, 1, 1, 0.12549 )
+light_mask = 0
+material = ExtResource( 1 )
+scale = Vector2( 1, 2 )
+texture = ExtResource( 2 )
+centered = false
+offset = Vector2( -32, -16 )
+hframes = 8
+frame = 1
+script = ExtResource( 3 )
+mainBrightRatio = 0.0
+repairReplacementPrice = 4000
+repairReplacementTime = 4
+repairFixPrice = 250
+repairFixTime = 12
+accelerationFailLimit = 4000
+accelerationFailScale = 2000
+thrust = 30000.0
+command = "m"
+particleChance = 1.0
+particleScale = 8.0
+randomness = 0.15
+heatCone = 0.15
+minPower = 0.3
+damageWearCapacity = 7200.0
+damageBentCapacity = 300000.0
+damageBentThreshold = 20000.0
+damageChokeCapacity = 12000.0
+damageChokeThreshold = 600.0
+maxMissalignment = 0.026
+specificImpulse = 3
+powerDraw = 20000.0
+pulsePerSecond = 4.0
+pulseEngine = false
+exhaust = ExtResource( 4 )
+systemName = "SYSTEM_MAIN_ENGINE_PMS"
+mass = 250
+
+[node name="AudioLoop" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+bus = "ShipBowels"
+
+[node name="AudioStart" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+bus = "SFX"
+
+[node name="Flare" type="Light2D" parent="."]
+rotation = 9.58465e-05
+scale = Vector2( 4, 4 )
+texture = ExtResource( 7 )
+texture_scale = 6.0
+color = Color( 0.231373, 0.686275, 1, 1 )
+energy = 5.0
+range_height = -15.0
+range_z_min = -4096
+range_z_max = 4096
+range_layer_min = -1
+range_layer_max = 1
+range_item_cull_mask = 17
+script = ExtResource( 8 )
+essentiality = 0.8
+
+[node name="nozzle" parent="." instance=ExtResource( 9 )]
+position = Vector2( 0, -8 )
+scale = Vector2( 2, 1 )

@@ -5,10 +5,10 @@ extends Node
 const MOD_PRIORITY = -99
 # Name of the mod, used for writing to the logs
 const MOD_NAME = "IoE Compatability Rewrite"
-const MOD_VERSION = "2.3.7"
+const MOD_VERSION = "2.3.8"
 const MOD_VERSION_MAJOR = 2
 const MOD_VERSION_MINOR = 3
-const MOD_VERSION_BUGFIX = 7
+const MOD_VERSION_BUGFIX = 8
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
@@ -46,6 +46,9 @@ func _init(modLoader = ModLoader):
 #	installScriptExtension("weapons/WeaponSlot.gd")
 #	installScriptExtension("weapons/drone-plant.patch.gd")
 #	replaceScene("weapons/drone-plant.tscn")
+	replaceScene("sfx/torch-PMS.tscn")
+	replaceScene("sfx/torch-ZURBIN.tscn")
+	
 	replaceScene("ships/modules/AuxSlot.tscn")
 	replaceScene("ships/modules/ThrusterSlot.tscn")
 	replaceScene("ships/modules/TorchSlot.tscn")
