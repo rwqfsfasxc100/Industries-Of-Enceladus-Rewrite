@@ -51,6 +51,15 @@ visible = false
 position = Vector2( 130, 66 )
 rotation = 1.0472
 
+[node name="SYSTEM_PDTL" parent="." index="45"]
+repairReplacementPrice = 300000
+
+[node name="SYSTEM_PDTL-L" parent="." index="46"]
+repairReplacementPrice = 300000
+
+[node name="SYSTEM_PDTL-R" parent="." index="47"]
+repairReplacementPrice = 300000
+
 [node name="SYSTEM_EXODYN-L" parent="." index="48" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock-L.tscn"]
 visible = false
 position = Vector2( 0, 196 )
