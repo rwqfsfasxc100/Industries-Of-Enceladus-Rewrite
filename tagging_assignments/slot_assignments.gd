@@ -265,6 +265,7 @@ const TORCH_PMS2 = {
 	"manual":"SYSTEM_MAIN_ENGINE_MANUAL",
 	"price":4000,
 	"test_protocol":"autopilot",
+	"warn_if_thermal_below":12.0,
 	"slot_type":"STANDARD_MAIN_ENGINE",
 	"equipment_type":"THRUSTER_STANDARD_MAIN_ENGINE"
 }
