@@ -22,6 +22,6 @@ SHIP_CK65_DESC|The rise of mineral processors gave a need for ships that could c
 
 SHIP_CK69|CK-69
 
-SHIP_CK69_SPECS|Make: Conlindo / Rusatom-Antonoff\nLow-Stress Hardpoints: 2\nDrone Hardpoints: 2\nCrew: 12\nDry mass: 44,500 kg \nCargo bay: 40\nProcessed cargo storage (combined): 576,000 kg
+SHIP_CK69_SPECS|Make: Conlindo / Rusatom-Antonoff\nLow-Stress Hardpoints: 2\nDrone Hardpoints: 2\nCrew: 12\nDry mass: 44,500 kg \nCargo bay: 40 m^3\nProcessed cargo storage (combined): 576,000 kg
 
 SHIP_CK69_DESC|The success of the CK-65 led to a more advanced CK-69 to handle any quantity of ore, at the cost of a slightly lower total hold. It saw its use during dips in throughput at Enceladus, where space would be wasted on a stock CK-65 due to the lack of a specific mineral, however was very popular among miners who could bring back large quantities of ore more reliably.
