@@ -1,119 +1,431 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=37 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/Excavator.gd" type="Script" id=1]
-[ext_resource path="res://ships/RA-TRTL-LCB.tscn" type="PackedScene" id=2]
-[ext_resource path="res://ships/modules/Grinder.tscn" type="PackedScene" id=3]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=4]
+[ext_resource path="res://ships/shipHull.phymat" type="PhysicsMaterial" id=1]
+[ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
+[ext_resource path="res://ships/Lifepod.tscn" type="PackedScene" id=3]
+[ext_resource path="res://ships/modules/Noises.tscn" type="PackedScene" id=4]
+[ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=5]
+[ext_resource path="res://sfx/spark_noise.png" type="Texture" id=6]
+[ext_resource path="res://ships/k37-mk3-m.png" type="Texture" id=7]
+[ext_resource path="res://ships/k37-mk3-cd.png" type="Texture" id=8]
+[ext_resource path="res://ships/k37-mk3-n.png" type="Texture" id=9]
+[ext_resource path="res://ships/Hull.gd" type="Script" id=10]
+[ext_resource path="res://ships/modules/Excavator.tscn" type="PackedScene" id=11]
+[ext_resource path="res://ships/k37-mk3-cl-cabin.png" type="Texture" id=12]
+[ext_resource path="res://ships/CabinLight.gd" type="Script" id=13]
+[ext_resource path="res://lights/spotlight.png" type="Texture" id=14]
+[ext_resource path="res://ships/modules/ShipCamera.tscn" type="PackedScene" id=15]
+[ext_resource path="res://lights/distant-proxy.png" type="Texture" id=16]
+[ext_resource path="res://debug/AIdebug.tscn" type="PackedScene" id=17]
+[ext_resource path="res://ships/modules/MineralProcessingUnit_DRY.tscn" type="PackedScene" id=18]
+[ext_resource path="res://ships/modules/MineralProcessingUnit_FAB.tscn" type="PackedScene" id=19]
+[ext_resource path="res://ships/modules/AuxSlot.tscn" type="PackedScene" id=20]
+[ext_resource path="res://ships/modules/ReactionWheel.tscn" type="PackedScene" id=21]
+[ext_resource path="res://ships/AI.tscn" type="PackedScene" id=22]
+[ext_resource path="res://hud/Hud.tscn" type="PackedScene" id=23]
+[ext_resource path="res://ships/k37-mk3-cl.png" type="Texture" id=24]
+[ext_resource path="res://ships/modules/CargoBaffles.tscn" type="PackedScene" id=25]
+[ext_resource path="res://comms/conversation/UberConversation.tscn" type="PackedScene" id=26]
+[ext_resource path="res://ships/modules/Grinder.tscn" type="PackedScene" id=27]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/Excavator.gd" type="Script" id=28]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=29]
 
-[node name="TRTL-RAM" instance=ExtResource( 2 )]
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 5 )
+shader_param/maskScale = Vector2( 11, 1 )
+shader_param/frames = Vector2( 1, 1 )
+shader_param/paintJobFactor = 0.0
+shader_param/paintJobBrightAdjust = 16.0
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 1, 0.5 )
+shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 0.25
+shader_param/shine = 1.0
+shader_param/charges = ExtResource( 6 )
+shader_param/map = ExtResource( 7 )
+
+[sub_resource type="ShaderMaterial" id=2]
+shader = ExtResource( 5 )
+shader_param/maskScale = Vector2( 11, 1 )
+shader_param/frames = Vector2( 1, 1 )
+shader_param/paintJobFactor = 0.0
+shader_param/paintJobBrightAdjust = 16.0
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 1, 0.5 )
+shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 0.25
+shader_param/shine = 1.0
+shader_param/charges = ExtResource( 6 )
+shader_param/map = ExtResource( 7 )
+
+[sub_resource type="CanvasItemMaterial" id=3]
+blend_mode = 1
+
+[sub_resource type="ShaderMaterial" id=4]
+shader = ExtResource( 5 )
+shader_param/maskScale = Vector2( 11, 1 )
+shader_param/frames = Vector2( 1, 1 )
+shader_param/paintJobFactor = 0.0
+shader_param/paintJobBrightAdjust = 16.0
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 0.5, 1 )
+shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/coatColor = Plane( 0.02, 0.02, 0.02, 1 )
+shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
+shader_param/ref = 0.4
+shader_param/roughness = 4.0
+shader_param/reflectiveness = 8.0
+shader_param/shine = 1.0
+
+[sub_resource type="Animation" id=5]
+resource_name = "appear"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 1 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="CapsuleShape2D" id=6]
+radius = 106.0
+height = 220.0
+
+[sub_resource type="CapsuleShape2D" id=7]
+radius = 250.0
+height = 600.0
+
+[node name="TRTL-RAM" type="RigidBody2D" groups=["ships"]]
 position = Vector2( 0, -7 )
+collision_layer = 530
+collision_mask = 7
+mass = 28.66
+physics_material_override = ExtResource( 1 )
+continuous_cd = 1
+linear_damp = 0.0
+angular_damp = 0.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
 shipName = "SHIP_TRTL_RAM"
+baseShipName = "SHIP_TRTL"
+shipType = "fission"
 hullPrice = 1858500
 processedCargoCapacity = 40000
 processedCargoStorageType = "amorphic"
+lifepod = ExtResource( 3 )
+evaOffset = Vector2( 30, -130 )
+autopilotRotationAssumption = 4.0
+rotationCabinOffsetPx = 144.0
+spriteHullPaths = PoolStringArray( "Hull", "HullFront" )
 cargoHoldArea = Rect2( -36, -180, 72, 232 )
+cargoHoldOffset = Vector2( 0, 105 )
 
-[node name="Front Bumper" parent="." index="3"]
+[node name="Noises" parent="." instance=ExtResource( 4 )]
+
+[node name="HullFront" type="Sprite" parent="."]
+light_mask = 5
+material = SubResource( 1 )
+position = Vector2( 0, -115 )
+z_index = 19
+texture = ExtResource( 8 )
+normal_map = ExtResource( 9 )
+hframes = 11
+region_enabled = true
+region_rect = Rect2( 0, 160, 2816, 174 )
+script = ExtResource( 10 )
+hullCustomPaintFile = ""
+
+[node name="Hull" type="Sprite" parent="."]
+light_mask = 5
+material = SubResource( 2 )
+position = Vector2( 0, 120 )
+z_index = 19
+texture = ExtResource( 8 )
+normal_map = ExtResource( 9 )
+hframes = 11
+region_enabled = true
+region_rect = Rect2( 0, 276, 2816, 336 )
+script = ExtResource( 10 )
+hullCustomPaintFile = ""
+
+[node name="Front Bumper" parent="." instance=ExtResource( 11 )]
 visible = false
-script = ExtResource( 1 )
+position = Vector2( 0, -164 )
+script = ExtResource( 28 )
 removeThis = true
 
-[node name="Grinder" parent="." index="4" instance=ExtResource( 3 )]
+[node name="Grinder" parent="." instance=ExtResource( 27 )]
 position = Vector2( 0, -151 )
 openTime = 0.5
 openFactor = 0.7
 
-[node name="Collider" parent="." index="7"]
+[node name="CabinLight" type="Sprite" parent="."]
+material = SubResource( 3 )
+position = Vector2( 0, -144 )
+z_index = 20
+texture = ExtResource( 12 )
+region_rect = Rect2( 16, -48, 224, 128 )
+script = ExtResource( 13 )
+spotlightBrightness = 8.0
+
+[node name="Light" type="Light2D" parent="CabinLight"]
+light_mask = 7
+position = Vector2( 3.41061e-13, -32 )
+enabled = false
+texture = ExtResource( 14 )
+texture_scale = 12.0
+energy = 16.0
+range_height = 20.0
+range_z_min = -4096
+range_z_max = 4096
+range_item_cull_mask = 31
+shadow_enabled = true
+shadow_buffer_size = 512
+shadow_gradient_length = 8.0
+shadow_filter = 5
+shadow_filter_smooth = 4.0
+shadow_item_cull_mask = 3
+
+[node name="ShipCamera" parent="." instance=ExtResource( 15 )]
+
+[node name="Collider" type="CollisionPolygon2D" parent="."]
+light_mask = 0
+position = Vector2( 0, 20 )
+z_index = 50
 polygon = PoolVector2Array( -24, -191, -12, -189, -12, -141, -32, -117, -32, 3, -20, 31, 20, 31, 32, 3, 32, -117, 12, -141, 12, -189, 24, -191, 56, -191, 56, -213, 72, -213, 72, -173, 72, 55, 72, 127, 56, 127, 56, 87, 40, 97, 34, 111, 20, 121, 24, 137, 22, 143, -22, 143, -24, 137, -20, 121, -34, 111, -40, 97, -56, 87, -56, 127, -72, 127, -72, 55, -72, -173, -72, -213, -56, -213, -56, -191 )
 
-[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
+[node name="CargoHoldArea" type="Area2D" parent="."]
+visible = false
+position = Vector2( 0, 20 )
+z_index = 50
+collision_layer = 524288
+collision_mask = 33
+monitorable = false
+gravity = 0.0
+linear_damp = 0.0
+angular_damp = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldArea"]
 light_mask = 0
 polygon = PoolVector2Array( 14, -143, 34, -119, 34, 3, 22, 33, -22, 33, -34, 3, -34, -119, -14, -143, -14, -189, -10, -197, 0, -201, 10, -197, 14, -189 )
 
-[node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
+[node name="CargoHoldAreaHull" type="Area2D" parent="."]
+visible = false
+position = Vector2( 0, 20 )
+z_index = 50
+collision_layer = 0
+collision_mask = 33
+monitorable = false
+gravity = 0.0
+linear_damp = 0.0
+angular_damp = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldAreaHull"]
 light_mask = 0
 polygon = PoolVector2Array( -68, -187, -32, -189, -14, -205, 14, -205, 32, -189, 68, -187, 68, 83, 0, 99, -68, 83 )
 
-[node name="thruster-lt" parent="." index="12"]
+[node name="engine-main" parent="." instance_placeholder="res://ships/modules/TorchSlot.tscn"]
+position = Vector2( 0, 184 )
+command = "m"
+
+[node name="thruster-lb" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( -64, 151 )
+command = "f"
+
+[node name="thruster-lt" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( -74, -195 )
 rotation = 2.35619
+command = "b"
 
-[node name="thruster-rt" parent="." index="13"]
+[node name="thruster-rt" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( 74, -195 )
 rotation = -2.35619
+command = "b"
 
-[node name="thruster-bl2" parent="." index="17" instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+[node name="thruster-rb" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( 64, 151 )
+command = "f"
+
+[node name="thruster-br" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( 74, 142 )
+rotation = -1.5708
+command = "r<"
+
+[node name="thruster-bl" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( -74, 142 )
+rotation = 1.5708
+command = "l>"
+
+[node name="thruster-ml" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( -74, 71 )
 rotation = 1.5708
 extraGimbal = 0.175
 command = "l>"
 
-[node name="thruster-br2" parent="." index="18" instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+[node name="thruster-mr" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( 74, 71 )
 rotation = -1.5708
 extraGimbal = 0.175
 command = "r<"
 
-[node name="thruster-tl" parent="." index="19"]
+[node name="thruster-tl" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( -74, -161 )
+rotation = 1.5708
+command = "r>"
 
-[node name="thruster-tr" parent="." index="20"]
+[node name="thruster-tr" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( 74, -161 )
+rotation = -1.5708
+command = "l<"
 
-[node name="LeftDrone" parent="." index="26" instance_placeholder="res://weapons/WeaponSlot.tscn"]
+[node name="Light2D" type="Light2D" parent="."]
+material = SubResource( 4 )
+position = Vector2( -32, -238.33 )
+editor_only = true
+texture = ExtResource( 16 )
+energy = 5.0
+range_height = 50.0
+
+[node name="Light2D2" type="Light2D" parent="."]
+position = Vector2( 348, -46.3298 )
+editor_only = true
+texture = ExtResource( 16 )
+texture_scale = 4.0
+energy = 2.0
+range_height = 50.0
+
+[node name="WeaponSlot" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
+visible = false
+position = Vector2( 0, -224 )
+z_index = 22
+toggleCommand = "ship_slot_main_toggle"
+
+[node name="WeaponLeft" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
+visible = false
+position = Vector2( -38, -209 )
+z_index = 22
+slot = "left"
+toggleCommand = "ship_slot_left_toggle"
+
+[node name="WeaponRight" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
+visible = false
+position = Vector2( 38, -209 )
+z_index = 22
+slot = "right"
+toggleCommand = "ship_slot_right_toggle"
+
+[node name="LeftDrone" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( -64, -93 )
 z_index = 22
 slot = "leftDrone"
 toggleCommand = "ship_slot_4"
 
-[node name="RightDrone" parent="." index="27" instance_placeholder="res://weapons/WeaponSlot.tscn"]
+[node name="RightDrone" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( 64, -93 )
 z_index = 22
 slot = "rightDrone"
 toggleCommand = "ship_slot_5"
 
-[node name="HoldModifiers" parent="." index="30" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "appear"
+anims/appear = SubResource( 5 )
+
+[node name="AIdebug" parent="." instance=ExtResource( 17 )]
+visible = false
+
+[node name="HoldModifiers" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
 type = "cargo.modifierAmorphic"
 
-[node name="MineralProcessingUnit" parent="." index="31"]
+[node name="MineralProcessingUnit" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit.tscn"]
+visible = false
+position = Vector2( 0, 20 )
 polygon = PoolVector2Array( -32, -57, -19, -36, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 19, -36, 32, -57, 32, 3, 20, 31, -20, 31, -32, 3 )
 
-[node name="MineralProcessingUnit_FSO" parent="." index="33"]
+[node name="MineralProcessingUnit_DRY" parent="." instance=ExtResource( 18 )]
+visible = false
+position = Vector2( 0, 20 )
+
+[node name="MineralProcessingUnit_FSO" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit_FSO.tscn"]
+visible = false
+position = Vector2( 0, 20 )
 polygon = PoolVector2Array( -32, -89, -28, -81, -22, 12, -10, 24, 10, 24, 22, 12, 28, -81, 32, -89, 32, 3, 20, 31, -20, 31, -32, 3 )
 
-[node name="MineralProcessingUnit_SMELT" parent="." index="34"]
+[node name="MineralProcessingUnit_SMELT" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit_SMELT.tscn"]
+visible = false
+position = Vector2( 0, 20 )
 polygon = PoolVector2Array( -32, -69, -16, -60, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 16, -60, 32, -69, 32, 3, 20, 31, -20, 31, -32, 3 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." index="35" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
+[node name="MineralProcessingUnit_Bulker" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 position = Vector2( 0, 3 )
 
-[node name="MineralProcessingUnit_Furnace" parent="." index="36" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
+[node name="MineralProcessingUnit_Furnace" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
 visible = false
 light_mask = 1
 position = Vector2( 0, 9 )
 
-[node name="CargoAuxSlot" parent="." index="37" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/CargoAuxSlot.tscn"]
+[node name="CargoAuxSlot" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/CargoAuxSlot.tscn"]
 visible = false
 position = Vector2( 0, -95 )
 
-[node name="MineralProcessingUnit_FAB" parent="." index="38"]
+[node name="MineralProcessingUnit_FAB" parent="." instance=ExtResource( 19 )]
+visible = false
+position = Vector2( 0, 20 )
 polygon = PoolVector2Array( -32, -85, 2, -50, 2, -17, -12, -17, -24, -7, -24, 13, -12, 25, 12, 25, 28, 9, 28, -51, 32, -85, 32, 9, 32, 15, 20, 31, -20, 31, -28, 15, -32, 3, -32, -25 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( -26, 13, -14, 25, 10, 25, 26, 9, 26, -17, -26, -17 )
 
-[node name="AI" parent="." index="41"]
+[node name="AuxSlot" parent="." instance=ExtResource( 20 )]
+
+[node name="SYSTEM_REACTIONWHEEL" parent="." instance=ExtResource( 21 )]
+
+[node name="AI" parent="." instance=ExtResource( 22 )]
 visible = false
 
-[node name="reactor" parent="." index="43"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AI/CollisionArea" index="0"]
+light_mask = 0
+position = Vector2( 0, -24 )
+shape = SubResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AI/DangerArea" index="0"]
+light_mask = 0
+shape = SubResource( 7 )
+
+[node name="Hud" parent="." instance=ExtResource( 23 )]
+
+[node name="reactor" parent="." instance_placeholder="res://ships/modules/NuclearReactor.tscn"]
+position = Vector2( 0, 104 )
+z_index = 20
+texture = ExtResource( 24 )
+hframes = 11
+region_rect = Rect2( 0, 348, 2816, 160 )
 systemName = "SYSTEM_REACTOR_TNTRL_FORT"
 
-[node name="CargoBaffles" parent="." index="44"]
-position = Vector2( 0, 0 )
+[node name="CargoBaffles" parent="." instance=ExtResource( 25 )]
 slot = "cargo.aux"
 
-[node name="CrewModifiers" parent="." index="45" instance=ExtResource( 4 )]
+[node name="CrewModifiers" parent="." instance=ExtResource( 29 )]
+
+[node name="UberConversation" parent="." instance=ExtResource( 26 )]
 
 [editable path="Grinder"]
 [editable path="MineralProcessingUnit_FAB"]
