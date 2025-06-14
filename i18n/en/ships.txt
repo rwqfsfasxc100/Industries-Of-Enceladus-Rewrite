@@ -12,7 +12,7 @@ SYSTEM_REACTOR_TSUYUKOMI_IOT-C|Tsukuyomi Reactor Core C
 
 SHIP_OCP209_DD|OCP-214-DD "Deep Dish"
 
-SHIP_OCP209_DD_DESC|The 214-DD is a version of the OCP-209 specially adapted for mining operations within the rings. The structure supporting its consumable bays has been hollowed and plated to extend the raw cargo volume, and additional power infrastructure permits the installation of standard cargo bay accessories. \n\nDespite the obvious benefits, the pocket makes handling ore awkward, and the reduced onboard mineral hold space means captains tend to be more reliant on auxiliary hardware than on most other vessels.
+SHIP_OCP209_DD_DESC|The 214-DD is a version of the OCP-209 specially adapted for mining operations within the rings. The structure supporting its consumable bays has been hollowed and plated to extend the raw cargo volume, and additional power infrastructure permits the installation of standard cargo bay accessories. \n\nDespite the obvious benefits, the pocket makes handling ore awkward, and the reduced onboard mineral hold space means captains tend to be more reliant on auxiliary hardware than on most other vessels.\n\nDue to modifications made to the vessel, the autopilot is unable to receive feedback directly from the excavator, and autopilot rotation assistance is not available on this unit.
 
 SHIP_OCP209_DD_SPECS|Make: Obonto Microengineering \nHigh-Stress Hardpoints: 2 \nLow-Stress Hardpoints: 2 \nDocking Bays: 4 \nCrew: 8 \nDry mass: 190,500 kg\nCargo bay: 700 m^3\nProcessed cargo storage (combined): 36,000 kg
 
