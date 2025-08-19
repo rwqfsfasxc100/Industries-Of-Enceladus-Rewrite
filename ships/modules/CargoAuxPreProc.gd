@@ -22,8 +22,6 @@ func getStatus():
 func getPower():
 	return clamp(power, 0, 1)
 
-var NodeAccess = preload("res://HevLib/pointers/NodeAccess.gd")
-
 func extend(ship):
 	# and this part which boosts MPU efficiency
 	for node in ship.get_children():
