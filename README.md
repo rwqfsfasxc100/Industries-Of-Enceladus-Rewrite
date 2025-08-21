@@ -1,7 +1,3 @@
-I am currently away ; please use [this link](https://forms.gle/vUoarawnYjy3hXJi9) to report bugs. Feature requests may still use the issues tab
-
-~ Hev
-
 ### Hev's Message 
 This is a modification of SpaceDotEXE's Industries of Enceladus mod for ΔV: Rings of Saturn that brings much requested compatability with several other content mods (this was probably the biggest request of the modding community, at least at the time of writing).
 None of this is really mine, and all credit goes to SpaceDOTexe and their [original repository](https://github.com/spdx-github/IndustriesOfEnceladus).
