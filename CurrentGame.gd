@@ -46,55 +46,62 @@ func _init():
 		{"name":"OCP-SALVAGE", "age":24*3600*365*200},
 		]
 
+
+
 # need to do this so that maxMembers is valid
 func validateEmployment():
-	var ship = getPlayerShip()
-	var preferredCrew = {}
-	var maxMembers
-	var ss = state.ship
-	if ss.keys() == null or ss.keys() == []:
-		preferredCrew = {}
-	else:
-		preferredCrew = state.ship.config.get("preferredCrew", getCurrentlyActiveCrewNames())
-		maxMembers = state.ship.config.get("crewCount")
-	
-	var maxActive = maxMembers
-	var changed = false
-	if not ship == null:
-		if ship.zone != "rings":
-			for memberName in state.crew:
-				var member = state.crew[memberName]
-				var preferActve = preferredCrew.has(memberName)
-				if preferActve:
-					var wasActive = isCrewMemberActive(member)
-					if not isCrewOnLeave(member):
-						if not wasActive:
-							member.active = true
-							changed = true
+	var ship = .getPlayerShip()
+	if ship:
+		var preferredCrew = {}
+		var maxMembers = ship.crew
+		var ss = state.ship
+		if ss.keys() == null or ss.keys() == []:
+			preferredCrew = {}
+		else:
+			var cfg = state.ship.config
+			preferredCrew = cfg.get("preferredCrew", getCurrentlyActiveCrewNames())
+			maxMembers = preferredCrew.size()
+			pass
+		
+		var maxActive = maxMembers
+		var changed = false
+		if not ship == null:
+			if ship.zone != "rings":
+				for memberName in state.crew:
+					var member = state.crew[memberName]
+					var preferActve = preferredCrew.has(memberName)
+					if preferActve:
+						var wasActive = isCrewMemberActive(member)
+						if not isCrewOnLeave(member):
+							if not wasActive:
+								member.active = true
+								changed = true
 
-						maxMembers -= 1
-						if maxMembers < 0:
+							maxMembers -= 1
+							if maxMembers < 0:
+								member.active = false
+								changed = true
+					else :
+						if isCrewMemberActive(member):
 							member.active = false
 							changed = true
-				else :
-					if isCrewMemberActive(member):
-						member.active = false
-						changed = true
-		if maxMembers != null:
-			if maxMembers <= 0:
-				Achivements.achive("CREW_FULL")
+			if maxMembers != null:
+				if maxMembers <= 0:
+					Achivements.achive("CREW_FULL")
 
-		for memberName in state.crew:
-			var member = state.crew[memberName]
-			if member.get("active", false):
-				maxActive -= 1
+			for memberName in state.crew:
+				var member = state.crew[memberName]
+				if member.get("active", false):
+					maxActive -= 1
 
-		for memberName in state.crew:
-			var member = state.crew[memberName]
-			if maxActive < 0 and isCrewOnLeave(member):
-				maxActive += 1
-				member.active = false
-				changed = true
+			for memberName in state.crew:
+				var member = state.crew[memberName]
+				if maxActive < 0 and isCrewOnLeave(member):
+					maxActive += 1
+					member.active = false
+					changed = true
 
-		if changed:
-			emit_signal("employmentChanged")
+			if changed:
+				emit_signal("employmentChanged")
+	else:
+		pass

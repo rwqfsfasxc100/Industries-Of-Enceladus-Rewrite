@@ -47,5 +47,16 @@ const EQUIPMENT_TAGS = {
 	}
 }
 const SLOT_TAGS = {
-	
+	"RightRearSlot":{
+		"slot_type":"HARDPOINT",
+		"hardpoint_type":"HARDPOINT_LOW_STRESS",
+		"alignment":"ALIGNMENT_RIGHT",
+		"override_subtractive":["EQUIPMENT_MASS_DRIVERS","EQUIPMENT_IRON_THROWERS","EQUIPMENT_MINING_LASERS","EQUIPMENT_MICROWAVES","EQUIPMENT_SYNCHROTRONS","EQUIPMENT_BEACON"]
+	},
+	"LeftBay1":{
+		"slot_type":"HARDPOINT",
+		"hardpoint_type":"HARDPOINT_DOCKING_BAY",
+		"alignment":"ALIGNMENT_LEFT",
+		"override_additive":["EQUIPMENT_BEACON"]
+	}
 }
