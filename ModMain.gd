@@ -34,6 +34,10 @@ func _init(modLoader = ModLoader):
 	
 	loadDLC()
 	
+	var self_path = self.get_script().get_path()
+	var self_directory = self_path.split(self_path.split("/")[self_path.split("/").size() - 1])[0]
+	var self_check = load(self_directory + "mod_checker_script.tscn").instance()
+	add_child(self_check)
 # replace ShipParams for hold percentage fill readout
 	replaceScene("hud/trtl/ShipParams.tscn")
 	
@@ -65,7 +69,7 @@ func _init(modLoader = ModLoader):
 		replaceScene("enceladus/Dealer.tscn")
 	
 # replace the Upgrades.tscn containing equipment modifications
-	replaceScene("weapons/WeaponSlot.tscn")
+#	replaceScene("weapons/WeaponSlot.tscn")
 #	replaceScene("res://IndustriesOfEnceladusRevamp/tagging_assignments/Upgrades.tscn","res://enceladus/Upgrades.tscn")
 	
 	

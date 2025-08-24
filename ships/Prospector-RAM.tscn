@@ -1,0 +1,696 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://ships/Eagle-Prospector.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ships/modules/ThrusterSlot.tscn" type="PackedScene" id=2]
+[ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=4]
+[ext_resource path="res://sfx/spark_noise.png" type="Texture" id=5]
+[ext_resource path="res://ships/Hull.gd" type="Script" id=6]
+[ext_resource path="res://ships/ep-cd.png" type="Texture" id=7]
+[ext_resource path="res://ships/ep-n.png" type="Texture" id=8]
+[ext_resource path="res://ships/ep-m.png" type="Texture" id=9]
+[ext_resource path="res://ships/Rough.phymat" type="PhysicsMaterial" id=10]
+[ext_resource path="res://ships/modules/EqupmentWithRotationLimit.gd" type="Script" id=11]
+
+[sub_resource type="ShaderMaterial" id=1]
+shader = ExtResource( 4 )
+shader_param/maskScale = Vector2( 11, 1 )
+shader_param/frames = Vector2( 1, 1 )
+shader_param/paintJobFactor = 0.0
+shader_param/paintJobBrightAdjust = 16.0
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 2, 0.5 )
+shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 0.25
+shader_param/shine = 1.0
+shader_param/charges = ExtResource( 5 )
+shader_param/map = ExtResource( 9 )
+
+[node name="Eagle" instance=ExtResource( 1 )]
+mass = 54.38
+shipName = "SHIP_PROSPECTOR_RAM"
+crew = 4
+hullPrice = 3000000
+processedCargoCapacity = 40000
+model = "PROSPECTOR_RAM"
+defaultAutopilot = "SYSTEM_AUTOPILOT_RTYPE"
+autopilotMaxRotation = 6.284
+cargoHoldArea = Rect2( -45, -180, 90, 215 )
+cargoHoldOffset = Vector2( 0, 105 )
+autopilotComfortEnabled = false
+autopilotComfort = false
+processedCargoStorageType = "amorphic"
+autopilotMaxVelocity = 1490.0
+crewMoraleBonus = 0.0
+lidarResolution = 1440
+empShield = 200
+spriteHullPaths = PoolStringArray( "Hull", "FatHull" )
+forceHudFeature = {
+"boresight": true,
+"contrast": 0.7
+}
+
+[node name="Hull" parent="." index="0"]
+position = Vector2( 0, 49 )
+region_enabled = true
+region_rect = Rect2( 0, 85, 2816, 440 )
+
+[node name="FatHull" type="Sprite" parent="." index="1"]
+material = SubResource( 1 )
+position = Vector2( 0, -71 )
+scale = Vector2( 1.5, 1.5 )
+z_index = 18
+texture = ExtResource( 7 )
+normal_map = ExtResource( 8 )
+hframes = 11
+region_enabled = true
+region_rect = Rect2( 0, 0, 2816, 150 )
+script = ExtResource( 6 )
+hullCustomPaintFile = "user://custom-prospector.png"
+
+[node name="Grinder" parent="." index="3"]
+position = Vector2( 0, -153 )
+restAngle = 0.524
+openFactor = 0.838
+grinderTorque = 60000
+closeTorque = 600000
+
+[node name="ArmLeft" parent="Grinder" index="0"]
+position = Vector2( -35, -8 )
+rotation = 0.523599
+
+[node name="Sprite" parent="Grinder/ArmLeft" index="0"]
+position = Vector2( 0, -8 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="CollisionShape2D" parent="Grinder/ArmLeft" index="1"]
+position = Vector2( 0, -7 )
+scale = Vector2( 1, 1.5 )
+
+[node name="Sprite" parent="Grinder/ArmLeft/Grinder" index="0"]
+scale = Vector2( 1.65, 1.65 )
+
+[node name="CollisionShape2D" parent="Grinder/ArmLeft/Grinder" index="1"]
+scale = Vector2( 1.65, 1.65 )
+
+[node name="PinJoint2D" parent="Grinder/ArmLeft" index="3"]
+position = Vector2( 0, 18 )
+
+[node name="RightArm" parent="Grinder" index="1"]
+position = Vector2( 35, -8 )
+rotation = -0.523599
+
+[node name="Sprite" parent="Grinder/RightArm" index="0"]
+position = Vector2( 0, -8 )
+scale = Vector2( 1.5, 1.5 )
+
+[node name="CollisionShape2D" parent="Grinder/RightArm" index="1"]
+position = Vector2( 0, -8 )
+scale = Vector2( 1, 1.5 )
+
+[node name="Sprite" parent="Grinder/RightArm/Grinder" index="0"]
+scale = Vector2( 1.65, 1.65 )
+
+[node name="CollisionShape2D" parent="Grinder/RightArm/Grinder" index="1"]
+scale = Vector2( 1.65, 1.65 )
+
+[node name="PinJoint2D" parent="Grinder/RightArm" index="3"]
+position = Vector2( 0, 18 )
+
+[node name="LeftSpring" parent="Grinder" index="2"]
+position = Vector2( -84, -49 )
+length = 70.0
+rest_length = 70.0
+damping = 5.0
+
+[node name="RightSpring" parent="Grinder" index="3"]
+position = Vector2( 84, -49 )
+length = 70.0
+rest_length = 70.0
+damping = 5.0
+
+[node name="Open" parent="Grinder" index="4"]
+volume_db = -15.0
+
+[node name="Close" parent="Grinder" index="5"]
+volume_db = -15.0
+
+[node name="Work" parent="Grinder" index="6"]
+volume_db = -15.0
+
+[node name="Light" parent="CabinLight" index="0"]
+visible = true
+
+[node name="Collider" parent="." index="6"]
+polygon = PoolVector2Array( -45, -171, -47, 40, -72, 65, -72, 107, -60, 119, -32, 119, -37, 150, -37, 200, -30, 229, 30, 229, 37, 200, 37, 150, 32, 119, 60, 119, 72, 107, 72, 64, 47, 40, 45, -171, 40, -171, 40, 23, -40, 23, -40, -171 )
+
+[node name="CargoHoldArea" parent="." index="7"]
+position = Vector2( 0, 105 )
+
+[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
+polygon = PoolVector2Array( 43, -276, 43, -80, -43, -80, -43, -276 )
+
+[node name="CargoHoldAreaHull" parent="." index="8"]
+visible = false
+
+[node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
+position = Vector2( 1, 0 )
+polygon = PoolVector2Array( 42, -171, 42, 43, 67, 67, 67, 104, 57, 116, 28, 116, 33, 151, 33, 199, 27, 227, -29, 227, -35, 199, -35, 151, -30, 116, -59, 116, -70, 105, -70, 67, -44, 43, -44, -171 )
+
+[node name="engine-main-1" parent="." index="9"]
+extraGimbal = 0.35
+default = "SYSTEM_MAIN_ENGINE_NMPD"
+
+[node name="engine-main-2" parent="." index="10"]
+extraGimbal = 0.35
+default = "SYSTEM_MAIN_ENGINE_NMPD"
+
+[node name="thruster-lb" parent="." index="11"]
+position = Vector2( -74, 117 )
+extraGimbal = 0.35
+command = "fl>"
+default = "SYSTEM_THRUSTER_GHET"
+
+[node name="thruster-lt" parent="." index="12"]
+position = Vector2( -74, 55 )
+extraGimbal = 0.35
+command = "bl>"
+default = "SYSTEM_THRUSTER_GHET"
+
+[node name="thruster-ml" parent="." index="13" instance=ExtResource( 2 )]
+position = Vector2( -55, -136 )
+rotation = 1.5708
+extraGimbal = 0.35
+command = "r>"
+default = "SYSTEM_THRUSTER_GHET"
+
+[node name="thruster-mr" parent="." index="14" instance=ExtResource( 2 )]
+position = Vector2( 55, -136 )
+rotation = -1.5708
+extraGimbal = 0.35
+command = "l<"
+default = "SYSTEM_THRUSTER_GHET"
+
+[node name="thruster-rt" parent="." index="15"]
+position = Vector2( 74, 55 )
+rotation = -2.35619
+extraGimbal = 0.35
+command = "br<"
+default = "SYSTEM_THRUSTER_GHET"
+
+[node name="thruster-rb" parent="." index="16"]
+position = Vector2( 74, 117 )
+extraGimbal = 0.35
+command = "fr<"
+default = "SYSTEM_THRUSTER_GHET"
+
+[node name="thruster-br" parent="." index="17"]
+position = Vector2( 39, 221 )
+rotation = -1.309
+extraGimbal = 0.35
+default = "SYSTEM_THRUSTER_GHET"
+
+[node name="thruster-bl" parent="." index="18"]
+position = Vector2( -39, 221 )
+rotation = 1.309
+extraGimbal = 0.35
+default = "SYSTEM_THRUSTER_GHET"
+
+[node name="thruster-tl" parent="." index="19"]
+position = Vector2( -55, -163 )
+extraGimbal = 0.35
+default = "SYSTEM_THRUSTER_GHET"
+
+[node name="thruster-tr" parent="." index="20"]
+position = Vector2( 55, -163 )
+extraGimbal = 0.35
+default = "SYSTEM_THRUSTER_GHET"
+
+[node name="WeaponSlot" parent="." index="28" instance_placeholder="res://weapons/WeaponSlot.tscn"]
+visible = false
+position = Vector2( 0, -245 )
+z_index = 22
+default = "SYSTEM_SALVAGE_ARM"
+toggleCommand = "ship_slot_main_toggle"
+
+[node name="SYSTEM_CL150" parent="WeaponSlot" index="1"]
+position = Vector2( 0, 80 )
+
+[node name="SYSTEM_CL600P" parent="WeaponSlot" index="2"]
+position = Vector2( 0, 80 )
+
+[node name="SYSTEM_EMD14" parent="WeaponSlot" index="3"]
+visible = false
+position = Vector2( 0, 20 )
+
+[node name="SYSTEM_EMD17RF" parent="WeaponSlot" index="4"]
+position = Vector2( 0, 20 )
+
+[node name="SYSTEM_RAILTOR" parent="WeaponSlot" index="5"]
+position = Vector2( 0, 20 )
+
+[node name="SYSTEM_EINAT" parent="WeaponSlot" index="9"]
+position = Vector2( 0, 80 )
+
+[node name="SYSTEM_NANI" parent="WeaponSlot" index="10"]
+position = Vector2( 0, 80 )
+
+[node name="SYSTEM_SALVAGE_ARM" parent="WeaponSlot" index="11"]
+visible = true
+mass = 2000
+targetMassThrust = 100
+thrust = 200
+fullThrust = 2000
+maxThrust = 4000
+maxVelocity = 300
+torque = 2000.0
+damageBentThreshold = 100.0
+damageOverheatThreshold = 60.0
+
+[node name="SYSTEM_PDMWG" parent="WeaponSlot" index="12"]
+returnToDefault = true
+
+[node name="SYSTEM_PDMWG-L" parent="WeaponSlot" index="13"]
+returnToDefault = true
+
+[node name="SYSTEM_PDMWG-R" parent="WeaponSlot" index="14"]
+returnToDefault = true
+
+[node name="SYSTEM_ACTEMD14" parent="WeaponSlot" index="19"]
+position = Vector2( 0, 20 )
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="WeaponSlot" index="20"]
+position = Vector2( 0, 80 )
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="WeaponLeft" parent="." index="29"]
+visible = false
+position = Vector2( -61, -37 )
+default = "SYSTEM_MWG"
+toggleCommand = "ship_slot_2"
+
+[node name="SYSTEM_MWG" parent="WeaponLeft" index="0"]
+visible = true
+position = Vector2( 0, -40 )
+
+[node name="SYSTEM_CL150" parent="WeaponLeft" index="1"]
+position = Vector2( 0, -27 )
+z_index = -2
+z_as_relative = false
+
+[node name="SYSTEM_CL600P" parent="WeaponLeft" index="2"]
+z_index = -2
+z_as_relative = false
+
+[node name="SYSTEM_EMD14" parent="WeaponLeft" index="3"]
+visible = false
+position = Vector2( 0, -133 )
+z_index = -2
+z_as_relative = false
+
+[node name="SYSTEM_EMD17RF" parent="WeaponLeft" index="4"]
+position = Vector2( 0, -109 )
+z_index = -2
+z_as_relative = false
+
+[node name="SYSTEM_PDMWG" parent="WeaponLeft" index="12"]
+returnToDefault = true
+
+[node name="SYSTEM_PDMWG-L" parent="WeaponLeft" index="13"]
+position = Vector2( -115, 40 )
+rotation = -0.959931
+returnToDefault = true
+
+[node name="SYSTEM_PDMWG-R" parent="WeaponLeft" index="14"]
+returnToDefault = true
+
+[node name="SYSTEM_EXSTORAGE-L" parent="WeaponLeft" index="15"]
+position = Vector2( 40, 57 )
+
+[node name="SYSTEM_CLAIM-L" parent="WeaponLeft" index="17"]
+position = Vector2( 40, 57 )
+
+[node name="SYSTEM_ACTEMD14" parent="WeaponLeft" index="19"]
+position = Vector2( -15, -103 )
+z_index = -2
+z_as_relative = false
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="WeaponLeft" index="20"]
+position = Vector2( -15, -27 )
+z_index = -2
+z_as_relative = false
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_SCOOP-L" parent="WeaponLeft" index="22"]
+position = Vector2( 40, 57 )
+
+[node name="SYSTEM_HUNK-L" parent="WeaponLeft" index="24"]
+position = Vector2( 34, 163 )
+
+[node name="SYSTEM_EXMONO-L" parent="WeaponLeft" index="27"]
+position = Vector2( 40, 57 )
+
+[node name="SYSTEM_PDT-L" parent="WeaponLeft" index="29"]
+position = Vector2( -115, 40 )
+rotation = -0.959931
+
+[node name="WeaponRight" parent="." index="30"]
+visible = false
+position = Vector2( 61, -37 )
+default = "SYSTEM_EMD14"
+toggleCommand = "ship_slot_3"
+
+[node name="SYSTEM_MWG" parent="WeaponRight" index="0"]
+position = Vector2( 0, -40 )
+
+[node name="SYSTEM_CL150" parent="WeaponRight" index="1"]
+position = Vector2( 0, -27 )
+z_index = -2
+z_as_relative = false
+
+[node name="SYSTEM_CL600P" parent="WeaponRight" index="2"]
+z_index = -2
+z_as_relative = false
+
+[node name="SYSTEM_EMD14" parent="WeaponRight" index="3"]
+position = Vector2( 0, -133 )
+z_index = -2
+z_as_relative = false
+
+[node name="SYSTEM_EMD17RF" parent="WeaponRight" index="4"]
+position = Vector2( 0, -109 )
+z_index = -2
+z_as_relative = false
+
+[node name="SYSTEM_PDMWG" parent="WeaponRight" index="12"]
+returnToDefault = true
+
+[node name="SYSTEM_PDMWG-L" parent="WeaponRight" index="13"]
+returnToDefault = true
+
+[node name="SYSTEM_PDMWG-R" parent="WeaponRight" index="14"]
+position = Vector2( 115, 40 )
+rotation = 0.959931
+returnToDefault = true
+
+[node name="SYSTEM_EXSTORAGE-R" parent="WeaponRight" index="16"]
+position = Vector2( -40, 57 )
+
+[node name="SYSTEM_CLAIM-R" parent="WeaponRight" index="18"]
+position = Vector2( -40, 57 )
+
+[node name="SYSTEM_ACTEMD14" parent="WeaponRight" index="19"]
+position = Vector2( 15, -103 )
+rotation = 0.0
+z_index = -2
+z_as_relative = false
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="WeaponRight" index="20"]
+position = Vector2( 15, -27 )
+z_index = -2
+z_as_relative = false
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="SYSTEM_SCOOP-R" parent="WeaponRight" index="21"]
+position = Vector2( -40, 57 )
+
+[node name="SYSTEM_HUNK-R" parent="WeaponRight" index="23"]
+position = Vector2( -34, 163 )
+
+[node name="SYSTEM_EXMONO-R" parent="WeaponRight" index="28"]
+position = Vector2( -40, 57 )
+
+[node name="SYSTEM_PDT-R" parent="WeaponRight" index="30"]
+position = Vector2( 115, 40 )
+rotation = 0.959931
+
+[node name="DroneLeft" parent="." index="31"]
+z_index = -3
+default = "SYSTEM_DND_TS"
+toggleCommand = "ship_slot_4"
+
+[node name="SYSTEM_EMD14" parent="DroneLeft" index="3"]
+visible = false
+
+[node name="SYSTEM_DND_TS" parent="DroneLeft" index="6"]
+visible = true
+position = Vector2( 0, 80 )
+
+[node name="SYSTEM_DND_HAUL" parent="DroneLeft" index="7"]
+position = Vector2( 0, 80 )
+
+[node name="SYSTEM_DND_FIX" parent="DroneLeft" index="8"]
+position = Vector2( 0, 80 )
+
+[node name="SYSTEM_ACTEMD14" parent="DroneLeft" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="DroneLeft" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="DroneRight" parent="." index="32"]
+z_index = -3
+default = "SYSTEM_DND_FIX"
+toggleCommand = "ship_slot_5"
+
+[node name="SYSTEM_EMD14" parent="DroneRight" index="3"]
+visible = false
+
+[node name="SYSTEM_DND_TS" parent="DroneRight" index="6"]
+position = Vector2( 0, 80 )
+
+[node name="SYSTEM_DND_HAUL" parent="DroneRight" index="7"]
+position = Vector2( 0, 80 )
+
+[node name="SYSTEM_DND_FIX" parent="DroneRight" index="8"]
+visible = true
+position = Vector2( 0, 80 )
+
+[node name="SYSTEM_ACTEMD14" parent="DroneRight" index="19"]
+pivotPath = NodePath("Pivot")
+weaponPath = NodePath("Pivot/massdriver")
+audioPath = NodePath("Actuation")
+lightPath = NodePath("Pivot/Light")
+
+[node name="SYSTEM_ACL200P" parent="DroneRight" index="20"]
+weaponPath = NodePath("Pivot/laster-pulse")
+
+[node name="CargoBaffles" parent="." index="34"]
+visible = false
+position = Vector2( 0, -33 )
+
+[node name="LeftBaffle" parent="CargoBaffles" index="0"]
+position = Vector2( -39, -100 )
+
+[node name="CollisionPolygon2D" parent="CargoBaffles/LeftBaffle" index="0"]
+polygon = PoolVector2Array( -1, 0, -1, -9, 37, 4, 37, 7, 6, 7 )
+
+[node name="RightBaffle" parent="CargoBaffles" index="1"]
+position = Vector2( 39, -100 )
+
+[node name="CollisionPolygon2D" parent="CargoBaffles/RightBaffle" index="0"]
+polygon = PoolVector2Array( -36, 4, 2, -8, 2, 0, -5, 7, -36, 7 )
+
+[node name="LeftJoint" parent="CargoBaffles" index="2"]
+position = Vector2( -39, -100 )
+
+[node name="RightJoint" parent="CargoBaffles" index="3"]
+position = Vector2( 39, -100 )
+
+[node name="LeftSpring" parent="CargoBaffles" index="4"]
+position = Vector2( -3, -96 )
+
+[node name="RightSpring" parent="CargoBaffles" index="5"]
+position = Vector2( 3, -96 )
+
+[node name="MineralProcessingUnit" parent="." index="36"]
+visible = false
+polygon = PoolVector2Array( -26, -46, -21, -36, -17, -13, -26, -4, -26, 14, -14, 26, 14, 26, 26, 14, 26, -4, 17, -13, 21, -36, 26, -46, 40, -47, 40, 31, -40, 31, -40, -47 )
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit/MineralProcessingUnit" index="0"]
+polygon = PoolVector2Array( -26, 26, 26, 26, 26, -13, -26, -13 )
+
+[node name="Processing" parent="MineralProcessingUnit" index="1"]
+volume_db = -20.0
+
+[node name="ProStart" parent="MineralProcessingUnit" index="2"]
+volume_db = -10.0
+
+[node name="ProStop" parent="MineralProcessingUnit" index="3"]
+volume_db = -10.0
+
+[node name="Processed" parent="MineralProcessingUnit" index="4"]
+volume_db = -10.0
+
+[node name="MineralProcessingUnit_FSO" parent="." index="37"]
+visible = false
+polygon = PoolVector2Array( -40, -135, -35, -130, -35, 8, -28, 17, 27, 17, 35, 8, 35, -130, 40, -135, 40, 27, -40, 27 )
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FSO/MineralProcessingUnit" index="0"]
+polygon = PoolVector2Array( -40, 27, 40, 27, 40, -130, -40, -130 )
+
+[node name="Processing" parent="MineralProcessingUnit_FSO" index="1"]
+volume_db = -20.0
+
+[node name="ProStart" parent="MineralProcessingUnit_FSO" index="2"]
+volume_db = -10.0
+
+[node name="ProStop" parent="MineralProcessingUnit_FSO" index="3"]
+volume_db = -10.0
+
+[node name="Processed" parent="MineralProcessingUnit_FSO" index="4"]
+volume_db = -10.0
+
+[node name="MineralProcessingUnit_SMELT" parent="." index="38"]
+visible = false
+position = Vector2( 0, 8 )
+polygon = PoolVector2Array( -26, -65, -18, -60, -15, -29, -22, -22, -22, -3, -14, 5, 14, 5, 22, -3, 22, -22, 15, -29, 18, -60, 26, -65, 40, -66, 40, 15, -40, 15, -40, -66 )
+
+[node name="CollisionPolygon2D" parent="MineralProcessingUnit_SMELT/MineralProcessingUnit" index="0"]
+polygon = PoolVector2Array( -22, 5, 22, 5, 22, -30, -22, -30 )
+
+[node name="Processing" parent="MineralProcessingUnit_SMELT" index="1"]
+volume_db = -20.0
+
+[node name="ProStart" parent="MineralProcessingUnit_SMELT" index="2"]
+volume_db = -10.0
+
+[node name="ProStop" parent="MineralProcessingUnit_SMELT" index="3"]
+volume_db = -10.0
+
+[node name="Processed" parent="MineralProcessingUnit_SMELT" index="4"]
+volume_db = -10.0
+
+[node name="MineralProcessingUnit_FAB" parent="." index="39"]
+visible = true
+position = Vector2( -7, -5 )
+polygon = PoolVector2Array( -29, -83, -10, -64, -8, -58, -8, -18, -19, -18, -27, -9, -27, 12, -15, 24, 11, 24, 22, 12, 22, -18, 26, -18, 32, -39, 30, -43, 25, -47, 47, -52, 47, 28, -33, 28, -33, -84 )
+
+[node name="MineralProcessingUnit" parent="MineralProcessingUnit_FAB" index="0"]
+position = Vector2( -5, 0 )
+
+[node name="Processing" parent="MineralProcessingUnit_FAB" index="1"]
+volume_db = -20.0
+
+[node name="ProStart" parent="MineralProcessingUnit_FAB" index="2"]
+volume_db = -10.0
+
+[node name="ProStop" parent="MineralProcessingUnit_FAB" index="3"]
+volume_db = -10.0
+
+[node name="Processed" parent="MineralProcessingUnit_FAB" index="4"]
+volume_db = -10.0
+
+[node name="PrintAudio" parent="MineralProcessingUnit_FAB" index="8"]
+volume_db = -10.0
+
+[node name="FabBaffle" type="RigidBody2D" parent="MineralProcessingUnit_FAB" index="9" groups=["slipstream"]]
+position = Vector2( 29, -43 )
+collision_layer = 2
+collision_mask = 3
+mass = 0.2
+physics_material_override = ExtResource( 10 )
+script = ExtResource( 11 )
+limit = true
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/FabBaffle" index="0"]
+polygon = PoolVector2Array( 0, -3.8147e-06, -3, 3, -25, 2, -25, -2, -3, -3 )
+
+[node name="FabJoint" type="PinJoint2D" parent="MineralProcessingUnit_FAB" index="10"]
+visible = false
+position = Vector2( 29, -38 )
+node_a = NodePath("../..")
+node_b = NodePath("../FabBaffle")
+disable_collision = false
+
+[node name="FabSpring" type="DampedSpringJoint2D" parent="MineralProcessingUnit_FAB" index="11"]
+visible = false
+position = Vector2( 3, -41 )
+rotation = -0.645772
+z_index = 21
+node_a = NodePath("../FabBaffle")
+node_b = NodePath("../..")
+bias = 0.7
+disable_collision = false
+rest_length = 50.0
+stiffness = 0.5
+damping = 0.05
+
+[node name="Hud" parent="." index="40"]
+repairReplacementPrice = 30000
+repairFixPrice = 1000
+damageSensorsThreshold = 400.0
+damageSensorsCapacity = 80000.0
+damageShortCircuitThreshold = 100.0
+damageShortCircuitCapacity = 2e+06
+damageOverheatThreshold = 8000.0
+damageOverheatCapacity = 5.76e+06
+systemName = "SYSTEM_OE600"
+
+[node name="RocksArea" parent="AI" index="0"]
+visible = true
+
+[node name="DerelicShipArea" parent="AI" index="2"]
+visible = true
+
+[node name="CollisionShape2D" parent="AI/CollisionArea" index="0"]
+position = Vector2( 0, 33 )
+scale = Vector2( 1, 0.85 )
+
+[node name="CollisionShape2D" parent="AI/DangerArea" index="0"]
+position = Vector2( 0, 33 )
+scale = Vector2( 1, 0.85 )
+
+[node name="ReactionWheel" parent="." index="42"]
+mass = 0.4
+powerDraw = 4000.0
+whirlMax = 40
+
+[node name="AuxSlot" parent="." index="43"]
+default = "SYSTEM_AUX_MPD_MK2"
+
+[node name="reactor" parent="." index="44"]
+minTemperature = 1350.0
+damageRodsThreshold = 880.0
+damageRodsCapacity = 35200.0
+damageLeakThreshold = 220.0
+damageLeakCapacity = 10560.0
+damageTurbineCapacity = 35200.0
+damageTurbineThreshold = 4950.0
+reactorRadius = 100.0
+reactorMinRadius = 10.0
+specificHeat = 1200.0
+
+[editable path="Grinder"]
+[editable path="engine-main-1"]
+[editable path="engine-main-2"]
+[editable path="WeaponSlot"]
+[editable path="WeaponLeft"]
+[editable path="WeaponRight"]
+[editable path="DroneLeft"]
+[editable path="DroneRight"]
+[editable path="MineralProcessingUnit"]
+[editable path="MineralProcessingUnit_FSO"]
+[editable path="MineralProcessingUnit_SMELT"]
+[editable path="MineralProcessingUnit_FAB"]
+[editable path="AI"]
+[editable path="AuxSlot"]

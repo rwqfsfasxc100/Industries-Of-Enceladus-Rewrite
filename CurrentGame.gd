@@ -44,6 +44,7 @@ func _init():
 		{"name":"CK69", "age":24 * 3600 * 365 * 20},
 		{"name":"YME", "age":24*3600*365*2},
 		{"name":"OCP-SALVAGE", "age":24*3600*365*200},
+#		{"name":"PROSPECTOR_RAM", "age":24*3600*365*200},
 		]
 
 
