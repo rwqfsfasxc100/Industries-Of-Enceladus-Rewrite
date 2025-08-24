@@ -46,6 +46,3 @@ const EQUIPMENT_TAGS = {
 		],
 	}
 }
-const SLOT_TAGS = {
-	
-}

@@ -66,7 +66,7 @@ func _init(modLoader = ModLoader):
 	
 # replace the Upgrades.tscn containing equipment modifications
 	replaceScene("weapons/WeaponSlot.tscn")
-	replaceScene("res://IndustriesOfEnceladusRevamp/tagging_assignments/Upgrades.tscn","res://enceladus/Upgrades.tscn")
+#	replaceScene("res://IndustriesOfEnceladusRevamp/tagging_assignments/Upgrades.tscn","res://enceladus/Upgrades.tscn")
 	
 	
 # install the Shipyard.gd script extension, which loads replacements + new ships
