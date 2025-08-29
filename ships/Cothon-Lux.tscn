@@ -23,6 +23,7 @@ shader_param/map = ExtResource( 5 )
 mass = 77.25
 crewMoraleBonus = 0.2
 shipName = "SHIP_COTHON_LUX"
+baseShipName = "SHIP_COTHON"
 crew = 6
 hullPrice = 250000
 processedCargoCapacity = 25000

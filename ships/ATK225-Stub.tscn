@@ -47,6 +47,7 @@ upgradeLimits = {
 "turbine.power": Vector2( 0, 500 )
 }
 shipName = "SHIP_AT225_STUB"
+baseShipName = "SHIP_AT225"
 hullPrice = 1674500
 processedCargoCapacity = 5000
 colliderPaths = [ "Collider", "LeftForeCollider", "RightForeCollider" ]

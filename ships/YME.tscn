@@ -172,7 +172,7 @@ __meta__ = {
 "_edit_group_": true
 }
 shipName = "SHIP_YME"
-baseShipName = "SHIP_YME"
+baseShipName = "SHIP_EIME"
 shipType = "fission"
 crew = 5
 hullPrice = 5999
