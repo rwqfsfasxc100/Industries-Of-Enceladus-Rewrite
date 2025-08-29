@@ -16,13 +16,13 @@ SHIP_OCP-SALVAGE_DESC|This ship was found in a back alley behind Sin Space Engin
 
 SHIP_CK65|CK-65
 
-SHIP_CK65_SPECS|Make: Conlindo / Rusatom-Antonoff\nLow-Stress Hardpoints: 2\nDrone Hardpoints: 2\nCrew: 12\nDry mass: 44,500 kg \nCargo bay: 40 m^3\nProcessed cargo storage (per mineral): 108,000 kg
+SHIP_CK65_SPECS|Make: Conlindo / Rusatom-Antonoff\nLow-Stress Hardpoints: 2\nDrone Hardpoints: 2\nCrew: 12\nDry mass: 44,500 kg \nCargo bay: 40 m^3\nProcessed cargo storage (per mineral): 81,000 kg
 
 SHIP_CK65_DESC|The rise of mineral processors gave a need for ships that could carry significant quantities of it for interplanetary travel. The century-old venture of the Cothon class of ships showed the viability of automated ships to be used for travel, and the Eagles were chosen as the ship of choice to complete the new venture. A large portion of it's cargo bay was gutted to fit 6 ginormous bays to store processed cargo, alongside a luxury living quarter space to house 12 passengers. A large portion of the Eagle's hardware was left in for the convenience of captains, however the grinder was replaced with a standard excavator to ensure a more reliable experience.
 
 SHIP_CK69|CK-69
 
-SHIP_CK69_SPECS|Make: Conlindo / Rusatom-Antonoff\nLow-Stress Hardpoints: 2\nDrone Hardpoints: 2\nCrew: 12\nDry mass: 44,500 kg \nCargo bay: 40 m^3\nProcessed cargo storage (combined): 576,000 kg
+SHIP_CK69_SPECS|Make: Conlindo / Rusatom-Antonoff\nLow-Stress Hardpoints: 2\nDrone Hardpoints: 2\nCrew: 12\nDry mass: 44,500 kg \nCargo bay: 40 m^3\nProcessed cargo storage (combined): 432,000 kg
 
 SHIP_CK69_DESC|The success of the CK-65 led to a more advanced CK-69 to handle any quantity of ore, at the cost of a slightly lower total hold. It saw its use during dips in throughput at Enceladus, where space would be wasted on a stock CK-65 due to the lack of a specific mineral, however was very popular among miners who could bring back large quantities of ore more reliably.
 

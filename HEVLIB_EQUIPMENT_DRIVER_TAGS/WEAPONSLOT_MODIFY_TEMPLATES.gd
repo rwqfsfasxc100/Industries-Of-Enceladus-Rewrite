@@ -27,5 +27,51 @@ const WEAPONSLOT_MODIFY_TEMPLATES = {
 			"SYSTEM_DND_HARVTUG",
 			"SYSTEM_DND_HARVHAUL"
 		]
+	},
+	"MANIPULATION_ARMS":{
+		"equipment":[
+			"SYSTEM_SALVAGE_ARM_LIGHT",
+			"SYSTEM_SALVAGE_ARM_LIGHT-L",
+			"SYSTEM_SALVAGE_ARM_LIGHT-R",
+			"SYSTEM_SALVAGE_ARM_HEAVY",
+			"SYSTEM_SALVAGE_ARM_HEAVY-L",
+			"SYSTEM_SALVAGE_ARM_HEAVY-R"
+		]
+	},
+	"FIXED_MICROWAVES":{
+		"equipment":[
+			"SYSTEM_MWTIGHTBEAM",
+			
+		]
+	},
+	"NANODRONES":{
+		"equipment":[
+			"SYSTEM_DND_HARVTUG",
+			"SYSTEM_DND_HARVHAUL"
+		]
+	},
+	"TURRETS":{
+		"equipment":[
+			"SYSTEM_MWTIGHTBEAM_PDT",
+			"SYSTEM_MWTIGHTBEAM_PDT-L",
+			"SYSTEM_MWTIGHTBEAM_PDT-R"
+		]
+	},
+	"FRONT_FACING_WEAPONS":{
+		"equipment":[
+			"SYSTEM_MWTIGHTBEAM"
+		]
+	},
+	"CARGO_CONTAINERS":{
+		"equipment":[
+			"SYSTEM_EXODYN-L",
+			"SYSTEM_EXODYN-R"
+		]
+	},
+	"CONTAINERS":{
+		"equipment":[
+			"SYSTEM_EXODYN-L",
+			"SYSTEM_EXODYN-R"
+		]
 	}
 }
