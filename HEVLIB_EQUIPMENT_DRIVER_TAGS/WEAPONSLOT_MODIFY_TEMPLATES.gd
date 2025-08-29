@@ -5,16 +5,27 @@ const WEAPONSLOT_MODIFY_TEMPLATES = {
 		"equipment":[
 			"SYSTEM_EXODYN-R",
 			"SYSTEM_EXODYN-L"
-		],
-		"data":[
-			{
-				"property":"position",
-				"value":"Vector2(0,16)"
-			},
-			{
-				"property":"visible",
-				"value":"false"
-			}
+		]
+	},
+	"CENTER_MIKE_TURRETS":{
+		"equipment":[
+			"SYSTEM_MWTIGHTBEAM_PDT",
+		]
+	},
+	"LEFT_MIKE_TURRETS":{
+		"equipment":[
+			"SYSTEM_MWTIGHTBEAM_PDT-L"
+		]
+	},
+	"RIGHT_MIKE_TURRETS":{
+		"equipment":[
+			"SYSTEM_MWTIGHTBEAM_PDT-R"
+		]
+	},
+	"ORE_NANODRONES":{
+		"equipment":[
+			"SYSTEM_DND_HARVTUG",
+			"SYSTEM_DND_HARVHAUL"
 		]
 	}
 }
