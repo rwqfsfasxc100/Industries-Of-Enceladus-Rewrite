@@ -126,7 +126,7 @@ shader_param/reverseAmplitude = 500.0
 [node name="CK-65" type="RigidBody2D" groups=["ships"]]
 collision_layer = 530
 collision_mask = 7
-mass = 35.16
+mass = 43.95
 physics_material_override = ExtResource( 4 )
 continuous_cd = 2
 linear_damp = 0.0
@@ -140,7 +140,7 @@ shipName = "SHIP_CK65"
 baseShipName = "SHIP_PROSPECTOR"
 shipType = "fission"
 crew = 12
-hullPrice = 1750999
+hullPrice = 2188750
 processedCargoCapacity = 81000
 startProductionYear = 2230.0
 lifepod = ExtResource( 30 )
