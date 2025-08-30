@@ -1,9 +1,9 @@
 extends Node
 
 const SLOT_ORDER = [
+	"CargoAccessories",
 	"HoldModifiersDivided",
 	"HoldModifiersAmorphic",
-	"CargoAccessories",
 	"CrewModifiers",
 	"LeftTurretSlot",
 	"RightTurretSlot",
