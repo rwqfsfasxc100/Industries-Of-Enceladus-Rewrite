@@ -401,20 +401,20 @@ shadow_item_cull_mask = 3
 light_mask = 0
 position = Vector2( 0, 111 )
 z_index = 50
-polygon = PoolVector2Array( 0, 31, 38, 25, 72, 11, 72, 65, 72, 127, 56, 127, 56, 87, 40, 95, 34, 109, 20, 119, 24, 135, 20, 141, -20, 141, -24, 135, -20, 119, -34, 109, -40, 95, -56, 87, -56, 127, -72, 127, -72, 73, -72, 11, -38, 25 )
+polygon = PoolVector2Array( 0, 31, 38, 25, 72, 11, 70, 73, 80, 78, 80, 86, 70, 90, 70, 126, 53, 126, 20, 122, 24, 138, 20, 146, -20, 146, -24, 138, -20, 122, -59, 126, -70, 126, -70, 89, -80, 86, -80, 78, -70, 75, -72, 11, -38, 25 )
 
 [node name="LeftForeCollider" type="CollisionPolygon2D" parent="."]
 light_mask = 0
 position = Vector2( 0, 29 )
 z_index = 50
-polygon = PoolVector2Array( -32, -235, -24, -253, -18, -253, -16, -247, -16, -229, -16, -169, -40, -165, -72, -161, -72, -229, -72, -259, -56, -259, -56, -235 )
+polygon = PoolVector2Array( -30, -231, -30, -241, -16, -241, -16, -169, -40, -165, -72, -161, -70, -260, -56, -260, -56, -231 )
 
 [node name="RightForeCollider" type="CollisionPolygon2D" parent="."]
 light_mask = 0
 position = Vector2( 0, 29 )
 scale = Vector2( -1, 1 )
 z_index = 50
-polygon = PoolVector2Array( -32, -235, -24, -253, -18, -253, -16, -247, -16, -229, -16, -169, -40, -165, -72, -161, -72, -229, -72, -259, -56, -259, -56, -235 )
+polygon = PoolVector2Array( -30, -231, -30, -241, -16, -241, -16, -169, -40, -165, -72, -161, -70, -260, -56, -260, -56, -231 )
 
 [node name="LeftShell" type="CollisionPolygon2D" parent="."]
 light_mask = 0

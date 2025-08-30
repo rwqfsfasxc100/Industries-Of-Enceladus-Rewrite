@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://ships/ATK225.tscn" type="PackedScene" id=1]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/k225/CargoAuxSlot.tscn" type="PackedScene" id=2]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/weapons/WeaponSlot.patch.gd" type="Script" id=3]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=5]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=6]
 [ext_resource path="res://ships/modules/CargoBaffles.tscn" type="PackedScene" id=8]
@@ -10,9 +9,6 @@
 [node name="ATK225" instance=ExtResource( 1 )]
 position = Vector2( 0, 18 )
 inside = -1
-
-[node name="Collider" parent="." index="5"]
-polygon = PoolVector2Array( -116.923, -113.846, -112.308, -121.538, -75.3846, -121.538, -75.3846, -145.385, -60, -145.385, -38.4615, -191.538, -38.4615, -279.231, -116.923, -279.231, -112.308, -286.923, -38.4615, -286.923, -38.4615, -298.462, -34.6154, -302.308, -19.2308, -302.308, -19.2308, -310, -10.7692, -308.462, -13.8462, -296.154, -13.8462, -279.231, -13.8462, -185.385, -24.6154, -173.077, -24.6154, 11.5385, -24.6154, 140.769, -15.3846, 171.538, 15.3846, 171.538, 24.6154, 140.769, 24.6154, 11.5385, 24.6154, -173.077, 13.8462, -185.385, 13.8462, -253.077, 13.8462, -279.231, 13.8462, -296.154, 10.7692, -308.462, 19.2308, -310, 19.2308, -302.308, 34.6154, -302.308, 38.4615, -298.462, 38.4615, -286.923, 112.308, -286.923, 116.923, -279.231, 38.4615, -279.231, 38.4615, -191.538, 60, -145.385, 75.3846, -145.385, 75.3846, -121.538, 112.308, -121.538, 116.923, -113.846, 38.4615, -113.846, 38.4615, -25.3846, 60, 20.7692, 75.3846, 20.7692, 75.3846, 43.8462, 112.308, 43.8462, 116.923, 51.5385, 38.4615, 51.5385, 38.4615, 140.769, 61.5385, 179.231, 61.5385, 186.154, 75.3846, 186.154, 75.3846, 216.154, 121.538, 270, 121.538, 285.385, 115.385, 297.692, 104.615, 302.308, 55.3846, 302.308, -43.0769, 302.308, -104.615, 302.308, -115.385, 297.692, -121.538, 285.385, -121.538, 270, -75.3846, 216.154, -75.3846, 186.154, -61.5385, 186.154, -38.4615, 140.769, -38.4615, 51.5385, -116.923, 51.5385, -112.308, 43.8462, -75.3846, 43.8462, -75.3846, 20.7692, -60, 20.7692, -38.4615, -25.3846, -38.4615, -113.846 )
 
 [node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
 visible = false
@@ -91,13 +87,13 @@ slot = "cargo.aux"
 
 [node name="weapon-left" parent="." index="33"]
 position = Vector2( -92, -462 )
-script = ExtResource( 3 )
-armVelocityMultiplier = Vector2( 2.5, 1 )
+slot = "main"
+toggleCommand = ""
 
 [node name="weapon-right" parent="." index="34"]
 position = Vector2( 92, -462 )
-script = ExtResource( 3 )
-armVelocityMultiplier = Vector2( 2.5, 1 )
+slot = "main"
+toggleCommand = ""
 
 [node name="SYSTEM_PDMWG-R" parent="weapon-right" index="14"]
 visible = false
@@ -106,7 +102,6 @@ visible = false
 visible = false
 
 [node name="CrewModifiers" parent="." index="45" instance=ExtResource( 5 )]
-script = ExtResource( 6 )
 
 [node name="HoldModifiers" parent="." index="46" instance=ExtResource( 6 )]
 

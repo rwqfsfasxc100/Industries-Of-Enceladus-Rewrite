@@ -47,7 +47,6 @@ upgradeLimits = {
 "turbine.power": Vector2( 0, 500 )
 }
 shipName = "SHIP_AT225_STUB"
-baseShipName = "SHIP_AT225"
 hullPrice = 1674500
 processedCargoCapacity = 5000
 colliderPaths = [ "Collider", "LeftForeCollider", "RightForeCollider" ]
@@ -276,37 +275,37 @@ position = Vector2( 348, -178.33 )
 [node name="CargoBaffles" parent="." index="27"]
 position = Vector2( 0, -82 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." index="30"]
-position = Vector2( 0, -6 )
-
-[node name="MineralProcessingUnit_Furnace" parent="." index="31"]
-position = Vector2( 0, -28 )
-
-[node name="MineralProcessingUnit" parent="." index="32"]
+[node name="MineralProcessingUnit" parent="." index="29"]
 position = Vector2( 0, 18 )
 
-[node name="MineralProcessingUnit_FSO" parent="." index="33"]
+[node name="MineralProcessingUnit_FSO" parent="." index="31"]
 position = Vector2( 0, 20 )
 
-[node name="MineralProcessingUnit_SMELT" parent="." index="34"]
+[node name="MineralProcessingUnit_SMELT" parent="." index="32"]
 position = Vector2( 0, 16 )
 
-[node name="MineralProcessingUnit_FAB" parent="." index="35"]
+[node name="MineralProcessingUnit_FAB" parent="." index="33"]
 position = Vector2( -1, 16 )
 
-[node name="CargoAuxSlot" parent="." index="36"]
+[node name="CargoAuxSlot" parent="." index="34"]
 position = Vector2( 0, -162 )
 
-[node name="AuxSlot" parent="." index="37"]
+[node name="AuxSlot" parent="." index="35"]
 position = Vector2( 0, -132 )
 
-[node name="weapon-left" parent="." index="38"]
+[node name="weapon-left" parent="." index="36"]
 position = Vector2( -92, -378 )
-armVelocityMultiplier = Vector2( 2, 1 )
 
-[node name="weapon-right" parent="." index="39"]
+[node name="weapon-right" parent="." index="37"]
 position = Vector2( 92, -378 )
-armVelocityMultiplier = Vector2( 2, 1 )
+
+[node name="weapon-left-back" parent="." index="38"]
+position = Vector2( -122, -391 )
+toggleCommand = "ship_slot_5"
+
+[node name="weapon-right-back" parent="." index="39"]
+position = Vector2( 122, -392 )
+toggleCommand = "ship_slot_6"
 
 [node name="DronePort" parent="." index="40" instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( -92, -199 )
@@ -320,36 +319,28 @@ z_index = 26
 slot = "rightDrone"
 toggleCommand = "ship_slot_4"
 
-[node name="weapon-left-back" parent="." index="42"]
-position = Vector2( -122, -391 )
-toggleCommand = "ship_slot_5"
-
-[node name="weapon-right-back" parent="." index="43"]
-position = Vector2( 122, -392 )
-toggleCommand = "ship_slot_6"
-
-[node name="weapon-left-back2" parent="." index="44"]
+[node name="weapon-left-back2" parent="." index="42"]
 slot = ""
 command = ""
 remove = true
 toggleCommand = ""
 
-[node name="weapon-right-back2" parent="." index="45"]
+[node name="weapon-right-back2" parent="." index="43"]
 slot = ""
 command = ""
 remove = true
 toggleCommand = ""
 
-[node name="weapon-left-back3" parent="." index="46"]
+[node name="weapon-left-back3" parent="." index="44"]
 position = Vector2( -122, -175 )
 
-[node name="weapon-right-back3" parent="." index="47"]
+[node name="weapon-right-back3" parent="." index="45"]
 position = Vector2( 122, -175 )
 
-[node name="AI" parent="." index="49"]
+[node name="AI" parent="." index="47"]
 position = Vector2( 0, 134 )
 
-[node name="reactor" parent="." index="51"]
+[node name="reactor" parent="." index="49"]
 position = Vector2( 0, 117 )
 offset = Vector2( 0, -192 )
 region_rect = Rect2( 0, 298, 7560, 500 )
@@ -357,9 +348,18 @@ region_rect = Rect2( 0, 298, 7560, 500 )
 [editable path="Front Bumper"]
 [editable path="Big Excavator"]
 [editable path="MineralProcessingUnit"]
+[editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_SMELT"]
 [editable path="MineralProcessingUnit_FAB"]
+[editable path="CargoAuxSlot"]
+[editable path="CargoAuxSlot/CargoAuxPreProc0x30"]
+[editable path="CargoAuxSlot/CargoAuxPreProc20x10"]
+[editable path="CargoAuxSlot/CargoAuxPreProc40x20"]
+[editable path="CargoAuxSlot/CargoAuxStorProc8K"]
+[editable path="CargoAuxSlot/CargoAuxStorage4K"]
+[editable path="CargoAuxSlot/CargoAuxFab"]
+[editable path="CargoAuxSlot/CargoAuxBigFab"]
 [editable path="weapon-left"]
 [editable path="weapon-right"]
 [editable path="weapon-left-back"]
@@ -369,3 +369,5 @@ region_rect = Rect2( 0, 298, 7560, 500 )
 [editable path="weapon-left-back3"]
 [editable path="weapon-right-back3"]
 [editable path="AI"]
+[editable path="CrewModifiers"]
+[editable path="HoldModifiers"]

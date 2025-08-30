@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=37 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -58,10 +58,6 @@ load_path = "res://IndustriesOfEnceladusRevamp/ships/Oberon-c.png.stex"
 [sub_resource type="StreamTexture" id=10]
 flags = 4
 load_path = "res://IndustriesOfEnceladusRevamp/ships/Oberon-n.png.stex"
-
-[sub_resource type="CapsuleShape2D" id=8]
-radius = 20.0
-height = 122.0
 
 [sub_resource type="Animation" id=4]
 resource_name = "appear"
@@ -136,7 +132,6 @@ autopilotRotationAssumption = 4.0
 autopilotMaxVelocity = 750.0
 autopilotMaxVelocityLimit = 1900.0
 tradePriceMultiplier = 2.0
-colliderPaths = [ "Collider", "LeftTank", "RightTank" ]
 aiPilotingSkillAdjust = 0.5
 dialogTree = NodePath("UberConversation")
 cargoHoldArea = Rect2( -36, -250, 72, 150 )
@@ -172,19 +167,7 @@ closeForce = 25000
 [node name="Collider" type="CollisionPolygon2D" parent="."]
 light_mask = 0
 z_index = 50
-polygon = PoolVector2Array( -74, -104, -74, -152, -44, -188, -28, -222, -18, -218, -18, -194, -24, -182, -24, -116, 24, -116, 24, -182, 18, -194, 18, -218, 28, -222, 44, -188, 74, -152, 74, -104, 74, 86, 86, 124, 62, 144, 58, 160, 40, 166, -40, 166, -58, 160, -62, 144, -86, 124, -74, 86 )
-
-[node name="LeftTank" type="CollisionShape2D" parent="."]
-light_mask = 0
-position = Vector2( -88, 21 )
-z_index = 50
-shape = SubResource( 8 )
-
-[node name="RightTank" type="CollisionShape2D" parent="."]
-light_mask = 0
-position = Vector2( 88, 21 )
-z_index = 50
-shape = SubResource( 8 )
+polygon = PoolVector2Array( -74, -104, -74, -152, -44, -188, -28, -222, -18, -218, -18, -194, -24, -182, -24, -116, 24, -116, 24, -182, 18, -194, 18, -218, 28, -222, 44, -188, 74, -152, 74, -104, 74, -62, 97, -58, 104, -52, 108, -41, 108, 87, 98, 100, 78.3392, 99.7407, 86, 124, 62, 144, 58, 160, 40, 166, -40, 166, -58, 160, -62, 144, -86, 124, -78.4496, 100.09, -98, 100, -108, 85, -108, -39, -105, -50, -98, -58, -74, -62 )
 
 [node name="CargoHoldArea" type="Area2D" parent="."]
 visible = false

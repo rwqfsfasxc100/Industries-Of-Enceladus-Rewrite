@@ -13,8 +13,5 @@ kgps = 5
 powerDrawPerKg = 250
 remassEfficiency = 0.1
 
-[node name="Zone" parent="ProcessingArea" index="0"]
-polygon = PoolVector2Array( 22, 20, 12, -28, -12, -28, -22, 20 )
-
 [node name="VentRemass" parent="." index="1"]
 position = Vector2( 32, 16 )

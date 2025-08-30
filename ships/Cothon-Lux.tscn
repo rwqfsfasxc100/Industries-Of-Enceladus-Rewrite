@@ -23,7 +23,6 @@ shader_param/map = ExtResource( 5 )
 mass = 77.25
 crewMoraleBonus = 0.2
 shipName = "SHIP_COTHON_LUX"
-baseShipName = "SHIP_COTHON"
 crew = 6
 hullPrice = 250000
 processedCargoCapacity = 25000
@@ -44,14 +43,7 @@ normal_map = ExtResource( 3 )
 [node name="Front Bumper" parent="." index="3"]
 position = Vector2( 0, -259 )
 
-[node name="Collider" parent="." index="6"]
-visible = false
-
-[node name="Pod" parent="." index="7"]
-visible = false
-position = Vector2( -70, -182 )
-
-[node name="engine-main" parent="." index="12"]
+[node name="engine-main" parent="." index="9"]
 visible = false
 notAThruster = true
 type = ""
@@ -59,15 +51,25 @@ command = ""
 default = "SYSTEM_NONE"
 toggleCommand = ""
 
-[node name="thruster-bl" parent="." index="15"]
+[node name="thruster-bl" parent="." index="12"]
 position = Vector2( -139, -43 )
 rotation = 0.523599
 command = "rf"
 
-[node name="thruster-br" parent="." index="16"]
+[node name="thruster-br" parent="." index="13"]
 position = Vector2( 139, -44 )
 rotation = -0.523599
 command = "lf"
+
+[node name="thruster-tr" parent="." index="14"]
+rotation = -2.61799
+
+[node name="thruster-tl" parent="." index="15"]
+position = Vector2( -139, -70 )
+rotation = 2.61799
+
+[node name="Light2D" parent="." index="16"]
+visible = true
 
 [node name="thruster-l" parent="." index="17" instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( -148, -58 )
@@ -81,12 +83,21 @@ rotation = -1.5708
 z_index = 15
 command = "<l"
 
-[node name="thruster-tr" parent="." index="19"]
-rotation = -2.61799
-
-[node name="thruster-tl" parent="." index="20"]
-position = Vector2( -139, -70 )
-rotation = 2.61799
-
-[node name="Light2D" parent="." index="21"]
-visible = true
+[editable path="CargoBaffles"]
+[editable path="HoldModifiers"]
+[editable path="CargoAuxSlot"]
+[editable path="CargoAuxSlot/CargoAuxPreProc0x30"]
+[editable path="CargoAuxSlot/CargoAuxPreProc20x10"]
+[editable path="CargoAuxSlot/CargoAuxPreProc40x20"]
+[editable path="CargoAuxSlot/CargoAuxStorProc8K"]
+[editable path="CargoAuxSlot/CargoAuxStorage4K"]
+[editable path="CargoAuxSlot/CargoAuxFab"]
+[editable path="CargoAuxSlot/CargoAuxBigFab"]
+[editable path="MineralProcessingUnit_DRY"]
+[editable path="MineralProcessingUnit_FSO"]
+[editable path="MineralProcessingUnit_FAB"]
+[editable path="weapon-left"]
+[editable path="weapon-right"]
+[editable path="weapon-left-back"]
+[editable path="weapon-right-back"]
+[editable path="AI"]

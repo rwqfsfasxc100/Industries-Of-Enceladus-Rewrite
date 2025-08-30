@@ -7,9 +7,6 @@
 
 [node name="Eagle" instance=ExtResource( 1 )]
 
-[node name="Collider" parent="." index="5"]
-polygon = PoolVector2Array( -33, -248, -33, 4, -42, 4, -50, 14, -50, 28, -50, 40, -72, 64, -72, 108, -60, 120, -34, 120, -37, 148, -37, 202, -30, 230, 30, 230, 38, 202, 38, 148, 34, 120, 60, 120, 74, 108, 74, 64, 50, 40, 50, 14, 42, 4, 33, 4, 33, -248, 24, -248, 24, 24, -24, 24, -24, -248 )
-
 [node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
 light_mask = 0
 polygon = PoolVector2Array( 27, -247, 27, 27, -27, 27, -27, -247 )

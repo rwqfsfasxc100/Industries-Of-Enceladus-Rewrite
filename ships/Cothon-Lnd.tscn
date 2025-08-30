@@ -1,42 +1,12 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://ships/Cothon-Lnd.tscn" type="PackedScene" id=1]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=2]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=3]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/cothon/CargoAuxSlot.tscn" type="PackedScene" id=4]
 
-[sub_resource type="CapsuleShape2D" id=1]
-radius = 13.0
-height = 66.0
-
-[sub_resource type="CapsuleShape2D" id=2]
-radius = 17.0
-height = 86.0
-
 [node name="Cothon-Lnd" instance=ExtResource( 1 )]
-colliderPaths = [ "Collider", "Pod", "TankLeft", "TankRight" ]
 cargoHoldArea = Rect2( -60, -350, 120, 400 )
-
-[node name="Collider" parent="." index="6"]
-polygon = PoolVector2Array( -100, -39.2308, -110.769, -48.4615, -100, -57.6923, -67.6923, -59.2308, -49.2308, -68.4615, -49.2308, -170, -44.6154, -188.462, -36.9231, -199.231, -26.1538, -202.308, -20, -202.308, -20, -214.615, -12.3077, -213.077, -12.3077, -194.615, -27.6923, -188.462, -33.8462, -171.538, -33.8462, -68.4615, -33.8462, -28.4615, -21.5385, 30, 21.5385, 30, 33.8462, -28.4615, 33.8462, -68.4615, 33.8462, -171.538, 27.6923, -188.462, 12.3077, -194.615, 12.3077, -213.077, 20, -216.154, 20, -202.308, 26.1538, -202.308, 36.9231, -199.231, 44.6154, -188.462, 49.2308, -170, 49.2308, -68.4615, 67.6923, -59.2308, 100, -57.6923, 110.769, -48.4615, 100, -39.2308, 67.6923, -37.6923, 49.2308, -28.4615, 44.6154, 82.3077, 46.1539, 146.923, 50.7692, 154.615, 35.3846, 171.538, -35.3846, 171.538, -50.7692, 154.615, -46.1539, 146.923, -44.6154, 82.3077, -49.2308, -28.4615, -67.6923, -37.6923 )
-
-[node name="Pod" type="CollisionShape2D" parent="." index="7"]
-light_mask = 0
-position = Vector2( -67, -182 )
-z_index = 25
-shape = SubResource( 1 )
-
-[node name="TankLeft" type="CollisionShape2D" parent="." index="8"]
-light_mask = 0
-position = Vector2( -72, 30 )
-z_index = 25
-shape = SubResource( 2 )
-
-[node name="TankRight" type="CollisionShape2D" parent="." index="9"]
-light_mask = 0
-position = Vector2( 72, 30 )
-z_index = 25
-shape = SubResource( 2 )
 
 [node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
 polygon = PoolVector2Array( 15.3846, -207.692, 15.3846, -193.846, 30.7692, -187.692, 36.9231, -169.231, 36.9231, -23.0769, 24.6154, 36.9231, -24.6154, 36.9231, -36.9231, -23.0769, -36.9231, -169.231, -30.7692, -186.154, -15.3846, -193.846, -15.3846, -207.692 )
@@ -44,13 +14,13 @@ polygon = PoolVector2Array( 15.3846, -207.692, 15.3846, -193.846, 30.7692, -187.
 [node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
 polygon = PoolVector2Array( 43.0769, -181.538, 43.0769, 67.6923, 24.6154, 166.154, -24.6154, 166.154, -43.0769, 67.6923, -43.0769, -181.538, -12.3077, -198.462, -4.61539, -232.308, 4.61539, -232.308, 12.3077, -198.462 )
 
-[node name="engine-main-left" parent="." index="13"]
+[node name="engine-main-left" parent="." index="10"]
 position = Vector2( -36, 252 )
 
-[node name="engine-main-right" parent="." index="14"]
+[node name="engine-main-right" parent="." index="11"]
 position = Vector2( 36, 252 )
 
-[node name="CargoBaffles" parent="." index="22"]
+[node name="CargoBaffles" parent="." index="19"]
 visible = false
 position = Vector2( 0, -130 )
 slot = "cargo.aux"
@@ -66,38 +36,38 @@ position = Vector2( 46, -92 )
 position = Vector2( 0, 0 )
 polygon = PoolVector2Array( -44, 14, -12, -4, -4, 0, -14, 12, -44, 18 )
 
-[node name="HoldModifiers" parent="." index="24" instance=ExtResource( 3 )]
+[node name="HoldModifiers" parent="." index="21" instance=ExtResource( 3 )]
 
-[node name="CargoAuxSlot" parent="." index="25" instance=ExtResource( 4 )]
+[node name="CargoAuxSlot" parent="." index="22" instance=ExtResource( 4 )]
 
-[node name="MineralProcessingUnit_Bulker" parent="." index="26" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/cothon/MineralProcessingUnit_Bulker.tscn"]
+[node name="MineralProcessingUnit_Bulker" parent="." index="23" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/cothon/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 
-[node name="MineralProcessingUnit_Furnace" parent="." index="27" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/cothon/MineralProcessingUnit_Furnace.tscn"]
+[node name="MineralProcessingUnit_Furnace" parent="." index="24" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/cothon/MineralProcessingUnit_Furnace.tscn"]
 visible = false
 
-[node name="MineralProcessingUnit" parent="." index="28"]
+[node name="MineralProcessingUnit" parent="." index="25"]
 polygon = PoolVector2Array( -44, -72, -20, -38, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 20, -38, 44, -72, 44, -32, 40, -8, 34, 18, 28, 44, -28, 44, -34, 16, -40, -8, -44, -32 )
 
-[node name="MineralProcessingUnit_FSO" parent="." index="30"]
+[node name="MineralProcessingUnit_FSO" parent="." index="27"]
 polygon = PoolVector2Array( -44, -160, -40, -152, -34, -36, -26, 12, -14, 32, 14, 32, 26, 12, 34, -36, 40, -152, 44, -160, 44, -32, 34, 16, 28, 44, -28, 44, -34, 16, -44, -32 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_FSO/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( -34, -36, -26, 12, -14, 32, 14, 32, 26, 12, 34, -36, 40, -152, 0, -184, -40, -152 )
 
-[node name="MineralProcessingUnit_SMELT" parent="." index="31"]
+[node name="MineralProcessingUnit_SMELT" parent="." index="28"]
 polygon = PoolVector2Array( -44, -80, -16, -60, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 16, -60, 44, -80, 44, -32, 34, 16, 28, 44, -0.217682, 44, -28, 44, -34, 18, -44, -32 )
 
-[node name="MineralProcessingUnit_FAB" parent="." index="32"]
+[node name="MineralProcessingUnit_FAB" parent="." index="29"]
 polygon = PoolVector2Array( -44, -96, -6, -58, -2, -50, 0, -42, 0, -18, -16, -18, -24, -10, -24, 14, -14, 24, 14, 24, 24, 12, 24, -40, 26, -58, 44, -96, 44, -32, 34, 18, 28, 44, -28, 44, -34, 18, -40, -8, -44, -32 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( -26, 24, 22, 24, 22, -18, -26, -18 )
 
-[node name="AI" parent="." index="39"]
+[node name="AI" parent="." index="36"]
 visible = false
 
-[node name="CrewModifiers" parent="." index="42" instance=ExtResource( 2 )]
+[node name="CrewModifiers" parent="." index="39" instance=ExtResource( 2 )]
 
 [editable path="CargoBaffles"]
 [editable path="HoldModifiers"]

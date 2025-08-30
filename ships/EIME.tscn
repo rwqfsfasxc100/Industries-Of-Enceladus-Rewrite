@@ -106,9 +106,6 @@ visible = false
 [node name="SpringRight6" parent="Beak" index="19"]
 visible = false
 
-[node name="Collider" parent="." index="10"]
-polygon = PoolVector2Array( 0, -130, 86, -92, 95, -60, 95, 55, 0, 106, -96, 55, -96, -59, -86, -92 )
-
 [node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
 light_mask = 0
 

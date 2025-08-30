@@ -12,9 +12,6 @@ __meta__ = {
 "_edit_horizontal_guides_": [  ]
 }
 
-[node name="Collider" parent="." index="8"]
-polygon = PoolVector2Array( -33, -48, -33, 4, -42, 4, -50, 14, -50, 38, -72, 60, -76, 68, -76, 130, -38, 140, -38, 202, -28, 234, 28, 234, 38, 202, 38, 140, 76, 130, 76, 68, 72, 60, 50, 38, 50, 14, 42, 4, 33, 4, 33, -48, 26, -48, 14, -52, 16, -44, 24, -44, 24, 8, 24, 24, -24, 24, -24, 8, -24, -44, -16, -44, -14, -52, -26, -48 )
-
 [node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
 polygon = PoolVector2Array( 27, -47, 27, 27, -27, 27, -27, -47 )
 

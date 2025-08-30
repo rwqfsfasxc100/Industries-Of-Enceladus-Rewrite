@@ -211,7 +211,7 @@ func shipReplacements():
 	replaceScene("ships/ATK225-R.tscn")
 	replaceScene("ships/ATK225.tscn")
 	replaceScene("ships/ocp-209.tscn")
-	replaceScene("ships/Kitsune.tscn")
+	replaceScene("ships/kitsune.tscn")
 	replaceScene("ships/Eagle-Prospector-VP.tscn")
 	replaceScene("ships/Eagle-Prospector-Lux.tscn")
 	replaceScene("ships/Eagle-Prospector-Fat.tscn")
