@@ -34,7 +34,8 @@ const CARGO_ACCESSORIES = {
 		"SHIP_OCP209",
 		"SHIP_OCP209_SNAP",
 		"SHIP_OBERON",
-		"SHIP_ATLAS_WASP"
+		"SHIP_ATLAS_WASP",
+		"SHIP_OCP213_TWIN",
 	],
 	"invert_limit_logic":true
 }
