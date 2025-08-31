@@ -318,6 +318,52 @@ func _ready():
 			"rightBayRev1":{"type":"SYSTEM_NONE"},
 		},
 	}}
+	ships["OCP213-TWIN"] = preload("res://IndustriesOfEnceladusRevamp/ships/OCP-213-TWIN.tscn")
+	configAlias["OCP213-TWIN"] = "OCP209"
+	defaultShipConfig["OCP213-TWIN"] = {"config": {
+		"ammo":{
+			"capacity":0.0, 
+			"initial":0.0, 
+		}, 
+		"autopilot":{
+			"type":"SYSTEM_AUTOPILOT_MK1"
+		},  
+		"capacitor":{
+				"capacity":1000.0
+		}, 
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_MPU",
+			"aux":"SYSTEM_NONE",
+			"modifierAmorphic":"SYSTEM_CARGO_MOD_2K"
+		},
+		"drones":{
+			"initial":0.0, 
+			"capacity":0.0, 
+		}, 
+		"fuel":{
+			"capacity": 80000.0, 
+			"initial": 80000.0, 
+		}, 
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_K44", 
+			"rcs":"SYSTEM_THRUSTER_MA150HO"
+		}, 
+		"reactor":{	"power": 16.0},
+		"turbine":{
+			"capacity":200.0, 
+			"power":200.0
+		}, 
+		"weaponSlot": {
+			"mainLeft":{"type":"SYSTEM_SALVAGE_ARM"},
+			"mainRight":{"type":"SYSTEM_SALVAGE_ARM"},
+			"middleLeft":{"type":"SYSTEM_PDMWG"},
+			"middleRight":{"type":"SYSTEM_PDMWG"},
+			"leftBay1":{"type":"SYSTEM_NONE"}, 
+			"rightBay1":{"type":"SYSTEM_NONE"},
+			"leftBayRev1":{"type":"SYSTEM_NONE"}, 
+			"rightBayRev1":{"type":"SYSTEM_NONE"},
+		},
+	}}
 	ships["OCP209-SNAP"] = preload("res://IndustriesOfEnceladusRevamp/ships/OCP-209-Snap.tscn")
 	configAlias["OCP209-SNAP"] = "OCP209"
 	defaultShipConfig["OCP209-SNAP"] = {"config": {

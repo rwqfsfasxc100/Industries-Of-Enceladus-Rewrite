@@ -38,6 +38,8 @@ func _init():
 		{"name":"OBERON", "age":24 * 3600 * 365 * 200},
 		{"name":"OCP209-DD", "age":24 * 3600 * 365 * 200},
 		{"name":"OCP209-SNAP", "age":24 * 3600 * 365 * 200},
+		{"name":"OCP213-TWIN", "age":24 * 3600 * 365 * 200},
+		{"name":"OCP213-TWIN", "age":24 * 3600 * 365 * 200},
 		{"name":"TRTL-OCP", "age":24 * 3600 * 365 * 200},
 		{"name":"TRTL-RAM", "age":24 * 3600 * 365 * 200},
 		{"name":"CK65", "age":24 * 3600 * 365 * 20},

@@ -31,3 +31,9 @@ SHIP_PROSPECTOR_RAM|Prospector RAM
 SHIP_PROSPECTOR_RAM_DESC|Ringa Aftermarket Modification sacrifices cargo space for increased capabilities with salvages and counterfeit parts from various ship models. Vulture High-Stress Hardpoint modification, KR-37 electronics and sensors, Cothon Bender's variable processed resource storage, etc. RAM also has many original modification. The short wide cargo, the larger cargo door and larger grinder, reinforced and upgraded manipulator arm support, thrusters and torch turret system, reinforced reactor, etc. These come at the cost of very high ship mass for a ship its size, halved processed resource capacity, reduced crew capacity, and extremely high price. Prospector RAM can handle any situation in the ring, but its high mass and low capacity make it a mediocre mining ship.
 
 SHIP_PROSPECTOR_RAM_SPECS|Maker: Unknown\nHigh-Stress Hardpoints: 1\nLow-Stress Hardpoints: 2\nDrone Hardpoints: 2\nCrew: 4\nDry Mass: 54,380 kg\nProcessed cargo storage (combined): 40,000 kg\nEMP Shielding: 200 MW
+
+SHIP_OCP213_TWIN|OCP-213 Twin
+
+SHIP_OCP213_TWIN_SPECS|Make: Obonto Microengineering\nHigh-Stress Hardpoints: 2\nLow-Stress Hardpoints: 2\nCrew: 8\nDry mass: 187,500 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg
+
+SHIP_OCP213_TWIN_DESC|A minor modification to the stock OCP-209, the Twin adds a second torch fitting and splits both into a V-shape to allow for more varied maneuvers, especially when combining translation and rotation.
