@@ -86,7 +86,7 @@ SHIP_PROSPECTOR_PIGEON_SPECS|Make: Mitsudaya-Starbus / Conlido RVM \nHigh-Stress
 
 SHIP_AT225_STUB|Antonoff-Titan K225-SH
 
-SHIP_AT225_STUB_DESC|The Short Haul variant, affectionately nicknamed the "Stubby" by series enthusiasts, began manufacture only three years following the wildly-successful launch of its base variant, and is designed to fill express transit roles throughout the solar system. The SH makes up for the loss of its midsection with its light, maneuverable frame and in-built nanodrone assembler mounts, the latter of which makes it an excellent alternative to the base model in mining operations.
+SHIP_AT225_STUB_DESC|The Short Haul variant, affectionately nicknamed the "Stubby" by series enthusiasts, began manufacture only three years following the wildly-successful launch of its base variant, and is designed to fill express transit roles throughout the solar system. The SH makes up for the loss of its midsection with its light, maneuverable frame and dual nanodrone mount fittings, the latter of which makes it an excellent alternative to the base model in mining operations.
 
 SHIP_AT225_STUB_SPECS|Make: Antonoff-Titan Heavy Industries \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 4 \nCrew: 12 \nDry mass: 160,000 kg\nCargo bay: 280 m^3 \nProcessed cargo storage (per mineral): 5,000 kg
 
