@@ -87,12 +87,10 @@ slot = "cargo.aux"
 
 [node name="weapon-left" parent="." index="33"]
 position = Vector2( -92, -462 )
-slot = "main"
 toggleCommand = ""
 
 [node name="weapon-right" parent="." index="34"]
 position = Vector2( 92, -462 )
-slot = "main"
 toggleCommand = ""
 
 [node name="SYSTEM_PDMWG-R" parent="weapon-right" index="14"]
