@@ -29,6 +29,7 @@ position = Vector2( 47, -92 )
 polygon = PoolVector2Array( -44, 14, -12, -4, -4, 0, -14, 12, -44, 18 )
 
 [node name="HoldModifiers" parent="." index="19" instance=ExtResource( 3 )]
+type = "cargo.modifierAmorphic"
 
 [node name="CargoAuxSlot" parent="." index="20" instance=ExtResource( 4 )]
 
