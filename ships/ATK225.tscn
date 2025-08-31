@@ -103,18 +103,14 @@ visible = false
 
 [node name="HoldModifiers" parent="." index="46" instance=ExtResource( 6 )]
 
-[node name="HoldModifiers2" parent="." index="48" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
-
-[node name="MineralProcessingUnit_Bulker3" parent="." index="49" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
+[node name="MineralProcessingUnit_Bulker3" parent="." index="48" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 position = Vector2( 0, 142 )
 
-[node name="MineralProcessingUnit_Furnace2" parent="." index="50" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
+[node name="MineralProcessingUnit_Furnace2" parent="." index="49" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
 visible = false
 light_mask = 1
 position = Vector2( 0, 148 )
-
-[node name="CrewModifiers2" parent="." index="51" instance=ExtResource( 5 )]
 
 [editable path="MineralProcessingUnit"]
 [editable path="MineralProcessingUnit_DRY"]
