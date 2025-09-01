@@ -37,6 +37,3 @@ minChoke = 0.05
 [node name="Flare" parent="." index="2"]
 color = Color( 0.733333, 0.494118, 1, 1 )
 energy = 4.0
-
-[node name="nozzle" parent="." index="3"]
-visible = true
