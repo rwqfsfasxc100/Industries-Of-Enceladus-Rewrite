@@ -8,8 +8,8 @@ mass = 750
 systemName = "SYSTEM_CARGO_AUX_PREPROC_0x30"
 mirrorCollider = true
 massDamageScale = 10.0
-kgps = 10
-powerDrawPerKg = 25
+kgps = 20
+powerDrawPerKg = 1250
 remassEfficiency = 0.3
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
