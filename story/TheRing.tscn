@@ -6,35 +6,33 @@
 
 [node name="TheRing" instance=ExtResource( 1 )]
 
-[node name="DerelictTsukuyomi" type="Node" parent="." index="77"]
+[node name="DerelictTsukuyomi" type="Node" parent="." index="49"]
 script = ExtResource( 3 )
 randomChance = 0.1
-minimumChance = 0.01
 moneyCeiling = 2e+06
 model = "Tsukuyomi-Decom"
 rescue = false
 chaosLimit = 0.65
 
-[node name="TsukuyomiMinerMining" type="Node" parent="." index="78"]
+[node name="TsukuyomiMinerMining" type="Node" parent="." index="50"]
 script = ExtResource( 2 )
-chaosLimit = 0.55
+chaosLimit = 0.4
 ship = "Tsukuyomi-Decom"
 
-[node name="DerelictStub" type="Node" parent="." index="79"]
+[node name="DerelictStub" type="Node" parent="." index="51"]
 script = ExtResource( 3 )
-randomChance = 0.5
-minimumChance = 0.07
-moneyCeiling = 5e+06
+randomChance = 0.3
+moneyCeiling = 2e+06
 model = "AT225-STUB"
 rescue = false
-chaosLimit = 0.3
+chaosLimit = 0.5
 
-[node name="StubMinerMining" type="Node" parent="." index="80"]
+[node name="StubMinerMining" type="Node" parent="." index="52"]
 script = ExtResource( 2 )
-chaosLimit = 0.3
+chaosLimit = 0.25
 ship = "AT225-STUB"
 
-[node name="DerelictATLAS" type="Node" parent="." index="81"]
+[node name="DerelictATLAS" type="Node" parent="." index="53"]
 script = ExtResource( 3 )
 randomChance = 0.4
 moneyCeiling = 3e+06
@@ -42,115 +40,170 @@ model = "ATLAS-WASP"
 rescue = false
 chaosLimit = 0.4
 
-[node name="ATLASMinerMining" type="Node" parent="." index="82"]
+[node name="ATLASMinerMining" type="Node" parent="." index="54"]
 script = ExtResource( 2 )
-chaosLimit = 0.4
+chaosLimit = 0.25
 ship = "ATLAS-WASP"
 
-[node name="DerelictCothonLUX" type="Node" parent="." index="83"]
+[node name="DerelictCothonLUX" type="Node" parent="." index="55"]
 script = ExtResource( 3 )
-randomChance = 0.6
-minimumChance = 0.15
-moneyCeiling = 6e+06
+randomChance = 0.4
 model = "COTHON-LUX"
 rescue = false
-chaosLimit = 0.4
+chaosLimit = 0.3
 
-[node name="AncientLUXMinerMining" type="Node" parent="." index="84"]
+[node name="AncientLUXMinerMining" type="Node" parent="." index="56"]
 script = ExtResource( 2 )
-chaosLimit = 0.4
 ship = "COTHON-LUX"
 
-[node name="DerelictPidgeon" type="Node" parent="." index="85"]
+[node name="DerelictPidgeon" type="Node" parent="." index="57"]
 script = ExtResource( 3 )
-randomChance = 0.6
-moneyCeiling = 7e+06
+randomChance = 0.5
 model = "PIGEON-PROSPECTOR"
 rescue = false
 chaosLimit = 0.4
 
-[node name="PidgeonMinerMining" type="Node" parent="." index="86"]
+[node name="PidgeonMinerMining" type="Node" parent="." index="58"]
 script = ExtResource( 2 )
-chaosLimit = 0.4
+chaosLimit = 0.25
 ship = "PIGEON-PROSPECTOR"
 
-[node name="DerelictCERF" type="Node" parent="." index="87"]
+[node name="DerelictCERF" type="Node" parent="." index="59"]
 script = ExtResource( 3 )
 randomChance = 0.4
-minimumChance = 0.04
 moneyCeiling = 4e+06
 model = "MAD-CERF-CIV"
 rescue = false
-chaosLimit = 0.5
+chaosLimit = 0.4
 
-[node name="CERFMinerMining" type="Node" parent="." index="88"]
+[node name="CERFMinerMining" type="Node" parent="." index="60"]
 script = ExtResource( 2 )
-chaosLimit = 0.5
+chaosLimit = 0.4
 ship = "MAD-CERF-CIV"
 
-[node name="DerelictOberon" type="Node" parent="." index="89"]
+[node name="DerelictOberon" type="Node" parent="." index="61"]
 script = ExtResource( 3 )
-randomChance = 0.5
-minimumChance = 0.01
+randomChance = 0.2
 moneyCeiling = 3e+06
 model = "OBERON"
 rescue = false
 chaosLimit = 0.6
 
-[node name="OberonMinerMining" type="Node" parent="." index="90"]
+[node name="OberonMinerMining" type="Node" parent="." index="62"]
 script = ExtResource( 2 )
-chaosLimit = 0.6
+chaosLimit = 0.4
 ship = "OBERON"
 
-[node name="DerelictDeepDish" type="Node" parent="." index="91"]
+[node name="DerelictDeepDish" type="Node" parent="." index="63"]
 script = ExtResource( 3 )
-randomChance = 0.5
-moneyCeiling = 5e+06
+randomChance = 0.2
+moneyCeiling = 2e+06
 model = "OCP209-DD"
 rescue = false
-chaosLimit = 0.3
+chaosLimit = 0.5
 
-[node name="DeepDishMinerMining" type="Node" parent="." index="92"]
+[node name="DeepDishMinerMining" type="Node" parent="." index="64"]
 script = ExtResource( 2 )
-chaosLimit = 0.3
+chaosLimit = 0.25
 ship = "OCP209-DD"
 
-[node name="DerelictSNAP" type="Node" parent="." index="93"]
+[node name="DerelictOCPTwin" type="Node" parent="." index="65"]
 script = ExtResource( 3 )
-randomChance = 0.5
-moneyCeiling = 5e+06
+randomChance = 0.2
+moneyCeiling = 2e+06
+model = "OCP213-TWIN"
+rescue = false
+chaosLimit = 0.5
+
+[node name="OCPTwinMinerMining" type="Node" parent="." index="66"]
+script = ExtResource( 2 )
+chaosLimit = 0.25
+ship = "OCP213-TWIN"
+
+[node name="DerelictSNAP" type="Node" parent="." index="67"]
+script = ExtResource( 3 )
+randomChance = 0.2
+moneyCeiling = 2e+06
 model = "OCP209-SNAP"
 rescue = false
-chaosLimit = 0.3
+chaosLimit = 0.5
 
-[node name="SNAPMinerMining" type="Node" parent="." index="94"]
+[node name="SNAPMinerMining" type="Node" parent="." index="68"]
 script = ExtResource( 2 )
-chaosLimit = 0.3
+chaosLimit = 0.25
 ship = "OCP209-SNAP"
 
-[node name="DerelictOK720" type="Node" parent="." index="95"]
+[node name="DerelictOCPSALVAGE" type="Node" parent="." index="69"]
 script = ExtResource( 3 )
-randomChance = 0.5
+randomChance = 0.2
+minimumChance = 0.2
+moneyCeiling = 2e+06
+model = "OCP-SALVAGE"
+rescue = false
+chaosLimit = 0.5
+
+[node name="OCPSALVAGEMinerMining" type="Node" parent="." index="70"]
+script = ExtResource( 2 )
+chaosLimit = 0.25
+ship = "OCP-SALVAGE"
+
+[node name="DerelictOK720" type="Node" parent="." index="71"]
+script = ExtResource( 3 )
+randomChance = 0.4
 moneyCeiling = 5e+06
 model = "TRTL-OCP"
 rescue = false
-chaosLimit = 0.5
+chaosLimit = 0.2
 
-[node name="OK720MinerMining" type="Node" parent="." index="96"]
+[node name="OK720MinerMining" type="Node" parent="." index="72"]
 script = ExtResource( 2 )
-chaosLimit = 0.5
 ship = "TRTL-OCP"
 
-[node name="DerelictRAM" type="Node" parent="." index="97"]
+[node name="DerelictRAM" type="Node" parent="." index="73"]
 script = ExtResource( 3 )
-randomChance = 0.7
-minimumChance = 0.2
-moneyCeiling = 8e+06
+randomChance = 0.2
+moneyCeiling = 5e+06
 model = "TRTL-RAM"
+rescue = false
+chaosLimit = 0.2
+
+[node name="RAMMinerMining" type="Node" parent="." index="74"]
+script = ExtResource( 2 )
+ship = "TRTL-RAM"
+
+[node name="DerelictCK65" type="Node" parent="." index="75"]
+script = ExtResource( 3 )
+randomChance = 0.5
+model = "CK65"
 rescue = false
 chaosLimit = 0.4
 
-[node name="RAMMinerMining" type="Node" parent="." index="98"]
+[node name="CK65MinerMining" type="Node" parent="." index="76"]
 script = ExtResource( 2 )
+chaosLimit = 0.25
+ship = "CK65"
+
+[node name="DerelictCK69" type="Node" parent="." index="77"]
+script = ExtResource( 3 )
+randomChance = 0.5
+model = "CK69"
+rescue = false
 chaosLimit = 0.4
-ship = "TRTL-RAM"
+
+[node name="CK69MinerMining" type="Node" parent="." index="78"]
+script = ExtResource( 2 )
+chaosLimit = 0.25
+ship = "CK69"
+
+[node name="DerelictYME" type="Node" parent="." index="79"]
+script = ExtResource( 3 )
+randomChance = 0.3
+moneyCeiling = 2e+06
+model = "YME"
+rescue = false
+chaosLimit = 0.5
+
+[node name="YMEMinerMining" type="Node" parent="." index="80"]
+script = ExtResource( 2 )
+chaosLimit = 0.25
+ship = "YME"
