@@ -10,13 +10,6 @@ position = Vector2( 0, -7 )
 [node name="CargoHoldArea" parent="." index="7"]
 visible = false
 
-[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
-polygon = PoolVector2Array( 14, -115, 14, -71, 34, -49, 34, 9, 22, 33, -22, 33, -34, 9, -34, -49, -14, -71, -14, -115 )
-
-[node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
-light_mask = 0
-polygon = PoolVector2Array( -70, -137, -58, -137, -58, -113, -14, -113, -8, -149, 8, -149, 14, -113, 58, -113, 58, -137, 70, -137, 70, 39, 70, 125, 58, 125, 58, 85, -58, 85, -58, 125, -70, 125, -70, 63, -70, -49 )
-
 [node name="HoldModifiers" parent="." index="25" instance=ExtResource( 3 )]
 
 [node name="MineralProcessingUnit" parent="." index="26"]

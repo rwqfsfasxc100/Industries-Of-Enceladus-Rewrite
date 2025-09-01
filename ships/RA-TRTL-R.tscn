@@ -7,14 +7,6 @@
 [node name="TRTL-R" instance=ExtResource( 1 )]
 position = Vector2( 0, -7 )
 
-[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
-light_mask = 0
-polygon = PoolVector2Array( 14, -151, 14, -75, 34, -49, 34, 5, 22, 33, -22, 33, -34, 3, -34, -49, -14, -75, -14, -151 )
-
-[node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
-light_mask = 0
-polygon = PoolVector2Array( -70, -173, -58, -173, -58, -149, -14, -149, -8, -183, 8, -183, 14, -149, 58, -149, 58, -173, 70, -173, 70, 125, 58, 125, 58, 87, -58, 87, -58, 125, -70, 125 )
-
 [node name="HoldModifiers" parent="." index="24" instance=ExtResource( 3 )]
 
 [node name="MineralProcessingUnit_Bulker" parent="." index="29" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]

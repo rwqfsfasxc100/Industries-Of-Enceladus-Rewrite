@@ -12,9 +12,6 @@ __meta__ = {
 "_edit_horizontal_guides_": [  ]
 }
 
-[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
-polygon = PoolVector2Array( 27, -47, 27, 27, -27, 27, -27, -47 )
-
 [node name="WeaponLeft" parent="." index="18"]
 visible = true
 

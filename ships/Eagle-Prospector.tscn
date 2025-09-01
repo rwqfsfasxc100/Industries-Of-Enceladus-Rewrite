@@ -7,14 +7,6 @@
 
 [node name="Eagle" instance=ExtResource( 1 )]
 
-[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
-light_mask = 0
-polygon = PoolVector2Array( 27, -247, 27, 27, -27, 27, -27, -247 )
-
-[node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
-light_mask = 0
-polygon = PoolVector2Array( 30, -246, 30, 8, 68, 92, 30, 116.471, 30, 222, -30, 222, -30, 116, -68, 92, -30, 8, -30, -246 )
-
 [node name="Light2D2" parent="." index="19"]
 energy = 5.0
 

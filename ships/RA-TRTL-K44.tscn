@@ -8,15 +8,6 @@
 [node name="TRTL-K44" instance=ExtResource( 1 )]
 position = Vector2( 0, -7 )
 
-[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
-visible = true
-light_mask = 0
-polygon = PoolVector2Array( 14, -187, 34, -161, 34, 5, 22, 33, -22, 33, -34, 5, -34, -161, -14, -187, -14, -237, 14, -237 )
-
-[node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
-light_mask = 0
-polygon = PoolVector2Array( -70, -257, -58, -257, -58, -233, -14, -233, -6, -271, 6, -271, 14, -233, 58, -233, 58, -257, 70, -257, 70, -193, 70, 61, 70, 125, 58, 125, 58, 85, -58, 85, -58, 125, -68, 125, -68, 61, -70, -193 )
-
 [node name="HoldModifiers" parent="." index="25" instance=ExtResource( 4 )]
 
 [node name="MineralProcessingUnit" parent="." index="26"]

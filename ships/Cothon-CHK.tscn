@@ -7,13 +7,6 @@
 
 [node name="Cothon-CHK" instance=ExtResource( 1 )]
 
-[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
-light_mask = 0
-polygon = PoolVector2Array( 32.3077, -207.692, 32.3077, -187.692, 36.9231, -169.231, 36.9231, -23.0769, 24.6154, 36.9231, -24.6154, 36.9231, -36.9231, -23.0769, -36.9231, -169.231, -30.7692, -186.154, -13.8462, -193.846, -6.15385, -193.846, -6.15385, -207.692 )
-
-[node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
-polygon = PoolVector2Array( 43.0769, -181.538, 43.0769, 67.6923, 24.6154, 166.154, -24.6154, 166.154, -43.0769, 67.6923, -43.0769, -181.538, -6.15385, -198.462, 7.69231, -241.538, 18.4615, -241.538, 32.3077, -198.462 )
-
 [node name="CargoBaffles" parent="." index="17"]
 visible = false
 slot = "cargo.aux"

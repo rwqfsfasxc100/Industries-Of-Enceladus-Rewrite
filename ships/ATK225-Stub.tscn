@@ -188,9 +188,8 @@ polygon = PoolVector2Array( -116.154, -114.615, -112.308, -121.538, -38.4615, -1
 visible = true
 position = Vector2( 0, 82 )
 
-[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
+[node name="CargoHoldAreaHull" parent="." index="8"]
 visible = true
-polygon = PoolVector2Array( 16.1538, -223.846, 16.1538, -91.5385, 26.9231, -79.2308, 26.9231, 73.0769, 17.6923, 105.385, -19.2308, 105.385, -28.4615, 73.0769, -28.4615, -79.2308, -17.6923, -91.5385, -17.6923, -223.846 )
 
 [node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
 position = Vector2( 0, -132 )

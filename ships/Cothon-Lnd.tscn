@@ -8,12 +8,6 @@
 [node name="Cothon-Lnd" instance=ExtResource( 1 )]
 cargoHoldArea = Rect2( -60, -350, 120, 400 )
 
-[node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
-polygon = PoolVector2Array( 15.3846, -207.692, 15.3846, -193.846, 30.7692, -187.692, 36.9231, -169.231, 36.9231, -23.0769, 24.6154, 36.9231, -24.6154, 36.9231, -36.9231, -23.0769, -36.9231, -169.231, -30.7692, -186.154, -15.3846, -193.846, -15.3846, -207.692 )
-
-[node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
-polygon = PoolVector2Array( 43.0769, -181.538, 43.0769, 67.6923, 24.6154, 166.154, -24.6154, 166.154, -43.0769, 67.6923, -43.0769, -181.538, -12.3077, -198.462, -4.61539, -232.308, 4.61539, -232.308, 12.3077, -198.462 )
-
 [node name="engine-main-left" parent="." index="10"]
 position = Vector2( -36, 252 )
 

@@ -13,11 +13,9 @@ position = Vector2( 0, -141 )
 
 [node name="CollisionPolygon2D" parent="CargoHoldArea" index="0"]
 light_mask = 0
-polygon = PoolVector2Array( 14, -153, 14, -119, 34, -93, 34, 3, 22, 33, -22, 33, -34, 3, -34, -93, -14, -119, -14, -153 )
 
 [node name="CollisionPolygon2D" parent="CargoHoldAreaHull" index="0"]
 light_mask = 0
-polygon = PoolVector2Array( -70, -173, -58, -173, -58, -151, -14, -151, -8, -185, 8, -185, 14, -151, 58, -151, 58, -173, 70, -173, 70, -105, 70, 71, 70, 125, 58, 125, 58, 87, -58, 87, -58, 125, -70, 125, -70, 71, -70, -105, -70, -137 )
 
 [node name="Light2D" parent="." index="17"]
 texture_scale = 50.0
