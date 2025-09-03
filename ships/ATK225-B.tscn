@@ -32,36 +32,11 @@ visible = false
 [node name="CargoBaffles" parent="." index="24"]
 slot = "cargo.aux"
 
-[node name="MineralProcessingUnit" parent="." index="26"]
-position = Vector2( 0, 150 )
-polygon = PoolVector2Array( -32, -50, -19, -36, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 19, -36, 32, -49, 32, 0, 28, 16, 20, 40, -20, 40, -28, 16, -32, 0 )
-
 [node name="MineralProcessingUnit_Bulker" parent="." index="27" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/k225/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 
 [node name="MineralProcessingUnit_Furnace" parent="." index="28" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/k225/MineralProcessingUnit_Furnace.tscn"]
 visible = false
-
-[node name="MineralProcessingUnit_FSO" parent="." index="30"]
-light_mask = 0
-position = Vector2( 0, 152 )
-polygon = PoolVector2Array( -32, -122, -28, -114, -24, -2, -12, 26, 12, 26, 24, -2, 28, -114, 32, -122, 32, -2, 20, 38, -20, 38, -32, -2 )
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FSO/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -24, -2, -12, 26, 14, 26, 24, -2, 28, -114, -28, -114 )
-
-[node name="MineralProcessingUnit_SMELT" parent="." index="31"]
-light_mask = 0
-polygon = PoolVector2Array( -32, -70, -20, -58, -14, -42, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 14, -42, 20, -58, 32, -70, 32, -30, 32, 2, 20, 42, -20, 42, -32, 2, -32, -30.1071 )
-
-[node name="MineralProcessingUnit_FAB" parent="." index="32"]
-polygon = PoolVector2Array( -31, -84, -7, -62, -1, -54, 1, -46, 1, -18, -14, -18, -23, -8, -23, 12, -11, 24, 13, 24, 25, 12, 25, -48, 27, -66, 33, -84, 33, 2, 29, 16, 21, 42, -19, 42, -27, 16, -31, 2, -31, -26 )
-
-[node name="MineralProcessingUnit" parent="MineralProcessingUnit_FAB" index="0"]
-visible = false
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -25, 24, 23, 24, 23, -18, -25, -18 )
 
 [node name="CargoAuxSlot" parent="." index="33" instance=ExtResource( 2 )]
 position = Vector2( 0, -201 )
@@ -134,8 +109,10 @@ visible = false
 
 [node name="HoldModifiers" parent="." index="48" instance=ExtResource( 5 )]
 
+[editable path="MineralProcessingUnit"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
+[editable path="MineralProcessingUnit_SMELT"]
 [editable path="MineralProcessingUnit_FAB"]
 [editable path="CargoAuxSlot"]
 [editable path="CargoAuxSlot/CargoAuxPreProc0x30"]

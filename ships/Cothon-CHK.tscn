@@ -54,21 +54,6 @@ visible = false
 [node name="MineralProcessingUnit_Furnace" parent="." index="22" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/cothon/MineralProcessingUnit_Furnace.tscn"]
 visible = false
 
-[node name="MineralProcessingUnit" parent="." index="23"]
-polygon = PoolVector2Array( -44, -72, -20, -38, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 20, -38, 44, -72, 44, -32, 40, -8, 34, 18, 28, 44, -28, 44, -34, 16, -40, -8, -44, -32 )
-
-[node name="MineralProcessingUnit_FSO" parent="." index="25"]
-polygon = PoolVector2Array( -44, -160, -40, -152, -34, -36, -26, 12, -14, 32, 14, 32, 26, 12, 34, -36, 40, -152, 44, -160, 44, -32, 34, 16, 28, 44, -28, 44, -34, 16, -44, -32 )
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FSO/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -26, 12, -14, 32, 14, 32, 26, 12, 34, -36, 40, -152, -40, -152, -34, -36 )
-
-[node name="MineralProcessingUnit_SMELT" parent="." index="26"]
-polygon = PoolVector2Array( -44, -80, -16, -60, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 16, -60, 44, -80, 44, -32, 34, 16, 28, 44, -0.217682, 44, -28, 44, -34, 18, -44, -32 )
-
-[node name="MineralProcessingUnit_FAB" parent="." index="27"]
-polygon = PoolVector2Array( -44, -96, -6, -58, -2, -50, 0, -42, 0, -18, -16, -18, -24, -10, -24, 14, -14, 24, 14, 24, 24, 12, 24, -40, 26, -58, 44, -96, 44, -32, 34, 18, 28, 44, -28, 44, -34, 18, -40, -8, -44, -32 )
-
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( -26, 24, 22, 24, 22, -18, -26, -18 )
 

@@ -4,13 +4,13 @@
 
 [node name="SYSTEM_THRUSTER_PNTRM" instance=ExtResource( 1 )]
 position = Vector2( 0, 4 )
-repairReplacementPrice = 2750
+repairReplacementPrice = 22750
 repairFixPrice = 500
 thrust = 4500.0
 randomness = 0.25
-specificImpulse = 8
+specificImpulse = 5
 powerDraw = 40000.0
-gimbal = 1.257
+gimbal = 1.047
 gimbalVectoredThrust = true
 pulseEngine = true
 systemName = "SYSTEM_THRUSTER_PNTRM"

@@ -206,7 +206,7 @@ const PROPELLANT_2000000 = {
 const RCS_PNTRM = {
 	"system":"SYSTEM_THRUSTER_PNTRM",
 	"manual":"SYSTEM_THRUSTER_MANUAL",
-	"price":2750,
+	"price":22750,
 	"test_protocol":"autopilot",
 	"warn_if_thermal_below":0.9,
 	"slot_type":"STANDARD_REACTION_CONTROL_THRUSTERS",
@@ -413,7 +413,7 @@ const HOLD_MODIFIER_2K = {
 }
 const HOLD_MODIFIER_AMORPH4 = {
 	"system":"SYSTEM_CARGO_MOD_AMORPH4",
-	"price":85000,
+	"price":30000,
 	"test_protocol":"takeoff",
 	"slot_type":"HOLD_MODIFIERS",
 	"restriction":"HOLDMODIFIER_DIVIDED",

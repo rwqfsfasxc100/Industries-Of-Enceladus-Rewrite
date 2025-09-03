@@ -10,7 +10,7 @@ mirrorCollider = true
 massDamageScale = 10.0
 kgps = 20
 powerDrawPerKg = 1250
-remassEfficiency = 0.3
+remassEfficiency = 0.45
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
 polygon = PoolVector2Array( 26, 0, 0, -8, -26, 0 )

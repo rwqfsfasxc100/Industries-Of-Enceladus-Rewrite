@@ -17,10 +17,8 @@ repairReplacementPrice = 45000
 repairReplacementTime = 1
 repairFixPrice = 5000
 repairFixTime = 4
-mass = 1000.0
 holdType = "both"
 addedSpace = 2000
-amorphicRatio = 6
 
 [node name="SYSTEM_CARGO_MOD_4K" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
 __meta__ = {
@@ -31,10 +29,8 @@ repairReplacementPrice = 150000
 repairReplacementTime = 1
 repairFixPrice = 5000
 repairFixTime = 4
-mass = 2000.0
 holdType = "both"
 addedSpace = 4000
-amorphicRatio = 6
 
 [node name="SYSTEM_CARGO_MOD_6K" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
 __meta__ = {
@@ -45,10 +41,8 @@ repairReplacementPrice = 350000
 repairReplacementTime = 1
 repairFixPrice = 5000
 repairFixTime = 4
-mass = 3500.0
 holdType = "both"
 addedSpace = 6000
-amorphicRatio = 6
 
 [node name="SYSTEM_CARGO_MOD_BOLTS" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
 __meta__ = {
@@ -60,9 +54,9 @@ repairReplacementPrice = 2000
 repairReplacementTime = 1
 repairFixPrice = 100
 repairFixTime = 4
-mass = 1000.0
 holdType = "divided"
-amorphicRatio = 6
+numerator = 1
+denominator = 1
 
 [node name="SYSTEM_CARGO_MOD_AMORPH4" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
 __meta__ = {
@@ -70,13 +64,13 @@ __meta__ = {
 }
 systemName = "SYSTEM_CARGO_MOD_AMORPH4"
 slot = "cargo.modifierDivided"
-repairReplacementPrice = 85000
+repairReplacementPrice = 30000
 repairReplacementTime = 1
 repairFixPrice = 5000
 repairFixTime = 4
-mass = 1500.0
 holdType = "amorphic"
-amorphicRatio = 4
+numerator = 1
+denominator = 2
 
 [node name="SYSTEM_CARGO_MOD_AMORPH5" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
 __meta__ = {
@@ -88,15 +82,15 @@ repairReplacementPrice = 275000
 repairReplacementTime = 1
 repairFixPrice = 5000
 repairFixTime = 4
-mass = 2500.0
 holdType = "amorphic"
-amorphicRatio = 5
+numerator = 2
+denominator = 3
 
 [node name="SYSTEM_CARGO_MOD_AMORPH6" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
 repairReplacementPrice = 445000
 repairReplacementTime = 1
 repairFixPrice = 5000
 repairFixTime = 1
-mass = 3750.0
 holdType = "amorphic"
-amorphicRatio = 6
+numerator = 5
+denominator = 6

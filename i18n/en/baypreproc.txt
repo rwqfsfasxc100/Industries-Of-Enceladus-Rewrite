@@ -2,7 +2,7 @@ SYSTEM_CARGO_AUX_PREPROC_0x30|Rasamama RP-25
 
 SYSTEM_CARGO_AUX_PREPROC_0x30_DESC|The Rasamama Material Solutions RP-25 is a low-profile ore preprocessor designed to exclusively melt ice from mineral chunks within a vessel's cargo bay and little else. The unit taps the reactor turbine bleed line for thermal power and requires very little electrical energy to function. \n\nRemass is recovered by running process exhaust through a condenser-radiator panel mounted to the vessel's hull. Rasamama MS recommends monthly flow tests followed by hot gas purges to prevent fouling.
 
-SYSTEM_CARGO_AUX_PREPROC_0x30_SPECS|Ice melt rate: 20 kg/s \nPreprocessor remass processing efficiency: 30% \nPower draw: 750 KW / chunk \nMPU mineral efficiency multiplier: x100% (no change) \nMass: 750 kg \nManufacturer: Rasamama Material Solutions
+SYSTEM_CARGO_AUX_PREPROC_0x30_SPECS|Ice melt rate: 20 kg/s \nPreprocessor remass processing efficiency: 45% \nPower draw: 1,250 KW / chunk \nMPU mineral efficiency multiplier: x100% (no change) \nMass: 750 kg \nManufacturer: Rasamama Material Solutions
 
 
 

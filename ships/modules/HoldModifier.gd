@@ -2,14 +2,21 @@ extends "res://IndustriesOfEnceladusRevamp/ships/modules/BaseModifier.gd"
 
 export (String, "divided", "amorphic", "both") var holdType
 export (int) var addedSpace = 0
-export (int) var amorphicRatio = 0
+export (int) var numerator = 0
+export (int) var denominator = 0
 
 func extend(ship):
 	var capacity = ship.get("processedCargoCapacity")
 	var shipHoldType = ship.get("processedCargoStorageType")
 	
+	
+	var amorphicRatio = 0
 	#print(shipHoldType)
 	
+	if denominator == 0 or numerator == 0:
+		amorphicRatio = 1
+	else:
+		amorphicRatio = numerator / denominator
 	match holdType:
 		"divided":
 			match shipHoldType:
@@ -23,7 +30,7 @@ func extend(ship):
 					ship.set("processedCargoStorageType", "divided")
 					# and divide the total storage space
 					ship.set("processedCargoCapacity",
-						capacity / amorphicRatio)
+						capacity * amorphicRatio)
 					#print("branch divided amorphic")
 		"amorphic":
 			match shipHoldType:
@@ -32,12 +39,12 @@ func extend(ship):
 					ship.set("processedCargoStorageType", "amorphic")
 					# and multiply the total storage space
 					ship.set("processedCargoCapacity",
-						capacity * amorphicRatio)
+						capacity / amorphicRatio)
 					#print("branch amorphic divided")
 				"amorphic":
 					# increase the hold capacity
 					ship.set("processedCargoCapacity",
-						capacity + (addedSpace * amorphicRatio))
+						capacity + (addedSpace / amorphicRatio))
 					#print("branch amorphic amorphic")
 		"both":
 			match shipHoldType:
