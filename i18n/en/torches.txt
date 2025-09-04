@@ -50,7 +50,7 @@ SYSTEM_MAIN_ENGINE_ZURBIN|ND ZURBIN engine
 
 SYSTEM_MAIN_ENGINE_ZURBIN_DESC|The Zurbin engine is the high-performance main engine of the Tsukuyuomi class of frigates. Now decomissioned, these engines see use still aboard the frigates, albeit long gone from the days of combat involvement. Nakamura Dynamics did make a push to reuse any from scrapped frigates, putting them to use in their Phage class of autonomous stations.
 
-SYSTEM_MAIN_ENGINE_ZURBIN_SPECS|Thrust: 6,900 kN \nExhaust velocity: 66 km/s \nPropellant consumption: 104.5 kg/s \nPower consumption: 20 MW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 10,000 kg \nManufacturer: Nakamura Dynamics
+SYSTEM_MAIN_ENGINE_ZURBIN_SPECS|Thrust: 6,900 kN \nExhaust velocity: 66 km/s \nPropellant consumption: 104.5 kg/s \nPower consumption: 50 MW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 10,000 kg \nManufacturer: Nakamura Dynamics
 
 
 
