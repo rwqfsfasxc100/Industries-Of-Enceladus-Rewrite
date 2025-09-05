@@ -100,11 +100,15 @@ func _physics_process(delta):
 				0, 0.95)
 
 			var nodeKGPS = processor.kgps
-			var newKGPS = (nodeKGPS * (clamp(modify_kgps_percent_multi,10,1000)/100)) + modify_kgps_add
+			var clp = clamp(modify_kgps_percent_multi,10,1000)
+			var cc = clp/100.0
+			var pl = nodeKGPS * cc
+			var om = pl + modify_kgps_add
+			var newKGPS = int(pl)
 			
 			var nodePower = processor.powerDrawPerKg
 			var powerFactor = (newKGPS/nodeKGPS)
-			var newPower = nodePower * powerFactor
+			var newPower = int(nodePower * powerFactor)
 			
 			processor.set("mineralEfficiency", newMinEff)
 			processor.set("kgps",newKGPS)

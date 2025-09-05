@@ -6,54 +6,66 @@ export (int) var numerator = 0
 export (int) var denominator = 0
 
 func extend(ship):
-	var capacity = ship.get("processedCargoCapacity")
-	var shipHoldType = ship.get("processedCargoStorageType")
-	
-	
-	var amorphicRatio = 0
-	#print(shipHoldType)
-	
-	if denominator == 0 or numerator == 0:
-		amorphicRatio = 1
-	else:
-		amorphicRatio = numerator / denominator
-	match holdType:
-		"divided":
-			match shipHoldType:
+	pass
+
+var has_modified = false
+
+func _physics_process(delta):
+	if not has_modified:
+		var ship = getShip()
+		if !ship.cutscene and ship.isPlayerControlled():
+			if ship == null:
+				breakpoint
+			else:
+				has_modified = true
+			var capacity = ship.get("processedCargoCapacity")
+			var shipHoldType = ship.get("processedCargoStorageType")
+			
+			
+			var amorphicRatio = 0.0
+			#print(shipHoldType)
+			
+			if denominator == 0 or numerator == 0:
+				amorphicRatio = 1.0
+			else:
+				amorphicRatio = float(float(numerator) / float(denominator))
+			match holdType:
 				"divided":
-					# just increase the hold capacity by the addedSpace factor
-					ship.set("processedCargoCapacity",
-						capacity + addedSpace)
-					#print("branch divided divided")
+					match shipHoldType:
+						"divided":
+							# just increase the hold capacity by the addedSpace factor
+							ship.set("processedCargoCapacity",
+								capacity + addedSpace)
+							#print("branch divided divided")
+						"amorphic":
+							# this will change the hold type to divided
+							ship.set("processedCargoStorageType", "divided")
+							# and divide the total storage space
+							ship.set("processedCargoCapacity",
+								capacity * amorphicRatio)
+							#print("branch divided amorphic")
 				"amorphic":
-					# this will change the hold type to divided
-					ship.set("processedCargoStorageType", "divided")
-					# and divide the total storage space
-					ship.set("processedCargoCapacity",
-						capacity * amorphicRatio)
-					#print("branch divided amorphic")
-		"amorphic":
-			match shipHoldType:
-				"divided":
-					# convert to amorphic
-					ship.set("processedCargoStorageType", "amorphic")
-					# and multiply the total storage space
-					ship.set("processedCargoCapacity",
-						capacity / amorphicRatio)
-					#print("branch amorphic divided")
-				"amorphic":
-					# increase the hold capacity
-					ship.set("processedCargoCapacity",
-						capacity + (addedSpace / amorphicRatio))
-					#print("branch amorphic amorphic")
-		"both":
-			match shipHoldType:
-				"divided":
-					# flat increase
-					ship.set("processedCargoCapacity",
-						capacity + addedSpace)
-					#print("branch both divided")
-				"amorphic":
-					ship.set("processedCargoCapacity",
-						capacity + (addedSpace * amorphicRatio))
-					#print("branch both amorphic")
+					match shipHoldType:
+						"divided":
+							# convert to amorphic
+							ship.set("processedCargoStorageType", "amorphic")
+							# and multiply the total storage space
+							ship.set("processedCargoCapacity",
+								capacity / amorphicRatio)
+							#print("branch amorphic divided")
+						"amorphic":
+							# increase the hold capacity
+							ship.set("processedCargoCapacity",
+								capacity + (addedSpace / amorphicRatio))
+							#print("branch amorphic amorphic")
+				"both":
+					match shipHoldType:
+						"divided":
+							# flat increase
+							ship.set("processedCargoCapacity",
+								capacity + addedSpace)
+							#print("branch both divided")
+						"amorphic":
+							ship.set("processedCargoCapacity",
+								capacity + (addedSpace * amorphicRatio))
+							#print("branch both amorphic")

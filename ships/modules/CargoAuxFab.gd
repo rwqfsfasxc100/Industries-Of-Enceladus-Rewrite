@@ -56,6 +56,7 @@ var MPU_BASE_KGPS = 100
 func _physics_process(delta):
 	
 	if not has_modified:
+		var ship = getShip()
 		if !ship.cutscene and ship.isPlayerControlled():
 			var processors = []
 			for node in ship.get_children():
