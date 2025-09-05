@@ -8,10 +8,10 @@ repairReplacementPrice = 225000
 mass = 2000
 systemName = "SYSTEM_CARGO_AUX_PREPROC_20x10"
 mirrorCollider = true
-kgps = 25
+self_kgps = 25
 powerDrawPerKg = 125
-mineralEfficiency = 0.2
-remassEfficiency = 0.1
+modify_mineralEfficiency = 0.2
+self_remassEfficiency = 0.1
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
 polygon = PoolVector2Array( 26, 0, 0, -8, -26, 0 )

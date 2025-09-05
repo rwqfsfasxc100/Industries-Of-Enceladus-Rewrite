@@ -36,10 +36,12 @@ position = Vector2( -32, 0 )
 script = ExtResource( 9 )
 ventTime = 0.5
 massDamageScale = 20.0
-kgps = 100
+self_kgps = 100
 powerDrawPerKg = 100
-mineralEfficiency = 0.0
-remassEfficiency = 0.5
+modify_mineralEfficiency = 0.0
+self_remassEfficiency = 0.5
+modify_kgps_add = 0
+modify_kgps_percent_multi = 100
 enabled = true
 
 [node name="ProcessingArea" type="Area2D" parent="." index="0"]

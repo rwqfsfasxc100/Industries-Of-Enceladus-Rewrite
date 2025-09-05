@@ -2,7 +2,7 @@ SYSTEM_CARGO_AUX_FAB|SSE Voyager Fabricator
 
 SYSTEM_CARGO_AUX_FAB_DESC|A custom-made and completely unlicensed monstrosity from Sin Space Engineering that became popular among ringside miners in the 2260s. The fabricator unit of a Voyager RSLS MPU has been torn out and placed further up in the cargo bay, along with a small mineral storage volume to replace its specialised feed hoppers. \n\nDue to the replacement of its power bus with a lower-grade distributor, moderate power efficiency losses are to be expected over the standard unit. \n\nDisclaimer: Nakamura Dynamics does not provide a warranty for this unit, and does not recognise it as part of its range of products, express or implied. Use of modified equipment may incur damages and present unexpected hazards.
 
-SYSTEM_CARGO_AUX_FAB_SPECS|Print power draw: 120 MW \nPrinting capability: drones, ammunition \nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nMass: 5,000 kg \nManufacturer: Sin Space Engineering / Nakamura-Obonto
+SYSTEM_CARGO_AUX_FAB_SPECS|Print power draw: 120 MW \nPrinting capability: drones, ammunition \nCargo capacity: 2,000 kg / mineral (12,000 kg total) \nMPU processing speed factor: 135% MPU speed \nAdditional MPU power cost per chunk: ~55% \nMass: 5,000 kg \nManufacturer: Sin Space Engineering / Nakamura-Obonto
 
 
 

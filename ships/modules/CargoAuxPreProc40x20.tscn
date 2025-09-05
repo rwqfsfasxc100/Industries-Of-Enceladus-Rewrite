@@ -8,9 +8,9 @@ polygon = PoolVector2Array( 0, -32, 10, -28, 8, -12, 2, -8, 8, -6, 10, 0, 8, 6, 
 repairReplacementPrice = 770000
 mass = 6500
 systemName = "SYSTEM_CARGO_AUX_PREPROC_40x20"
-kgps = 40
-mineralEfficiency = 0.4
-remassEfficiency = 0.2
+self_kgps = 40
+modify_mineralEfficiency = 0.4
+self_remassEfficiency = 0.2
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
 polygon = PoolVector2Array( 22, 0, -4, -32, -30, 0 )

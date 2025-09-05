@@ -7,12 +7,16 @@ extends "res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxBase.gd"
 
 export  var ventTime = 0.5
 export  var massDamageScale = 20.0
-export  var kgps = 100
+export  var self_kgps = 100
 export  var powerDrawPerKg = 100
-export (float, 0, 1, 0.05) var mineralEfficiency = 0.0
-export (float, 0, 1, 0.05) var remassEfficiency = 0.5
+export (float, 0, 1, 0.05) var modify_mineralEfficiency = 0.0
+export (float, 0, 1, 0.05) var self_remassEfficiency = 0.5
+export  var modify_kgps_add = 0
+export  (int, 10, 1000, 1) var modify_kgps_percent_multi = 100
+
 
 export  var enabled = true
+
 
 var processing = []
 var power = 0
@@ -22,20 +26,32 @@ func getStatus():
 func getPower():
 	return clamp(power, 0, 1)
 
-func extend(ship):
+#func extend(ship):
 	# and this part which boosts MPU efficiency
-	for node in ship.get_children():
-		var valid = node.is_processing()
-		if valid:
-			if "MineralProcessingUnit" in node.name:
-				var nodeMinEff = node.mineralEfficiency
-				var newMinEff = clamp(nodeMinEff + (nodeMinEff * mineralEfficiency),
-					0, 0.95)
-				# clamped to 0.95 since it'll violate the laws of physics otherwise
-				# maybe 1? i can change it later i guess
-				ship.set("mineralEfficiency", newMinEff)
-				#print("New efficiency of %s is %s" % [node.systemName, String(newMinEff)])
-	pass
+#	for child in ship.get_children():
+#		var scriptobj = child.get_script()
+#		if scriptobj != null:
+#			var script = scriptobj.get_path()
+#			if script == "res://ships/modules/MineralProcessingUnit.gd":
+#				MPUs.append(child)
+#	for node in ship.get_children():
+#		var nname = node.name
+#		var inst = is_instance_valid(node)
+#		var valid = node.is_processing()
+#		if "MineralProcessingUnit" in node.name:
+#			if valid:
+#				var nodeMinEff = node.mineralEfficiency
+#				var newMinEff = clamp(nodeMinEff + (nodeMinEff * modify_mineralEfficiency),
+#					0, 0.95)
+#
+#				var nodeKGPS = node.kgps
+#				var newKGPS = (nodeKGPS * (clamp(modify_kgps_percent_multi,10,1000)/100)) + modify_kgps_add
+#
+#				# clamped to 0.95 since it'll violate the laws of physics otherwise
+#				# maybe 1? i can change it later i guess
+#				ship.set("mineralEfficiency", newMinEff)
+##				#print("New efficiency of %s is %s" % [node.systemName, String(newMinEff)])
+#	return .extend(ship)
 	#print("%s just fired" % systemName)
 			
 onready var ventRemass = $VentRemass
@@ -45,7 +61,56 @@ onready var proStop = $ProStop
 	
 var ventingMineral = 0.0
 
+var processor
+
+var made_adjustment = false
+
+var has_modified = false
+
+var MPU_BASE_MINERAL_EFFICIENCY = 0.7
+var MPU_BASE_KGPS = 100
+
 func _physics_process(delta):
+	var ship = getShip()
+	if not has_modified:
+		if !ship.cutscene and ship.isPlayerControlled():
+			var processors = []
+			for node in ship.get_children():
+				var nname = node.name
+				var inst = is_instance_valid(node)
+				var valid = node.is_processing()
+				if "MineralProcessingUnit" in nname and inst:
+					processors.append(node)
+			var num = processors.size()
+			if num == 0:
+#				breakpoint
+				made_adjustment = true
+				has_modified = true
+			if num == 1:
+#				breakpoint
+				processor = processors[0]
+				MPU_BASE_KGPS = processor.kgps
+				MPU_BASE_MINERAL_EFFICIENCY = processor.mineralEfficiency
+				has_modified = true
+				
+	if has_modified and not made_adjustment:
+		if processor:
+			var nodeMinEff = processor.mineralEfficiency
+			var newMinEff = clamp(nodeMinEff + (nodeMinEff * modify_mineralEfficiency),
+				0, 0.95)
+
+			var nodeKGPS = processor.kgps
+			var newKGPS = (nodeKGPS * (clamp(modify_kgps_percent_multi,10,1000)/100)) + modify_kgps_add
+			
+			var nodePower = processor.powerDrawPerKg
+			var powerFactor = (newKGPS/nodeKGPS)
+			var newPower = nodePower * powerFactor
+			
+			processor.set("mineralEfficiency", newMinEff)
+			processor.set("kgps",newKGPS)
+			made_adjustment = true
+		else:
+			breakpoint
 	ventingMineral = max(0, ventingMineral - delta)
 	power = 0
 
@@ -53,50 +118,53 @@ func _physics_process(delta):
 	var isproc = false
 	
 	if enabled:
-		for p in processing:
-			if Tool.claim(p):
-				if "fillerContent" in p:
-					if p.fillerContent > 0.01:
-						var fillerMass = p.fillerContent * p.mass
-						var mineralMass = p.mineralContent * p.mass
-						var procDelta = min(fillerMass, delta * kgps / 1000)
-						var requiredPower = procDelta * powerDrawPerKg * 1000
-						var gotPower = ship.drawEnergy(requiredPower)
-						if gotPower / requiredPower > 0.9:
-							# for some reason it doesn't work if this isn't in place
-							var nm = max(mineralMass, p.mass - procDelta)
-							
-							if nm > 0:
-								p.mass = nm
-								p.mineralContent = mineralMass / nm
-							
-							p.fillerContent = 1 - p.mineralContent
-							# stuff from the original imp
-							var newMass = max(mineralMass, p.mass - procDelta)
-							var massChange = p.mass - newMass
-							var shipRemass = ship.reactiveMass
-							var procRemass = massChange * 1000 * remassEfficiency
-							var newRemass = clamp(shipRemass + procRemass, 0, ship.reactiveMassMax)
-							ship.reactiveMass = newRemass
-							isproc = true
-							power += 1.0
-							venting = (newRemass - shipRemass < procRemass / 2)
-							ship.cargoMass = max(ship.cargoMass - massChange * 1000, 0)
-				else :
-					if p.has_method("getScan") and p.getScan() == "H2O" and p.has_method("applyEnergyDamage"):
-						var mad = max(1, p.mass / massDamageScale)
-						var proc = min(p.mass, delta * kgps / 1000) * mad
-						var requiredPower = proc * powerDrawPerKg * 1000 * delta * 60
-						var gotPower = ship.drawEnergy(requiredPower)
-						var prm = ship.reactiveMass
-						if gotPower / requiredPower > 0.9:
-							p.applyEnergyDamage(gotPower, p.global_position, delta)
-							var st = remassEfficiency * proc * 1000
-							var nrm = clamp(prm + st, 0, ship.reactiveMassMax)
-							ship.reactiveMass = nrm
-							isproc = true
-							power += 1.0
-							venting = (nrm - prm < st / 2)
+		if self_kgps == 0 or powerDrawPerKg == 0:
+			pass
+		else:
+			for p in processing:
+				if Tool.claim(p):
+					if "fillerContent" in p:
+						if p.fillerContent > 0.01:
+							var fillerMass = p.fillerContent * p.mass
+							var mineralMass = p.mineralContent * p.mass
+							var procDelta = min(fillerMass, delta * self_kgps / 1000)
+							var requiredPower = procDelta * powerDrawPerKg * 1000
+							var gotPower = ship.drawEnergy(requiredPower)
+							if gotPower / requiredPower > 0.9:
+								# for some reason it doesn't work if this isn't in place
+								var nm = max(mineralMass, p.mass - procDelta)
+								
+								if nm > 0:
+									p.mass = nm
+									p.mineralContent = mineralMass / nm
+								
+								p.fillerContent = 1 - p.mineralContent
+								# stuff from the original imp
+								var newMass = max(mineralMass, p.mass - procDelta)
+								var massChange = p.mass - newMass
+								var shipRemass = ship.reactiveMass
+								var procRemass = massChange * 1000 * self_remassEfficiency
+								var newRemass = clamp(shipRemass + procRemass, 0, ship.reactiveMassMax)
+								ship.reactiveMass = newRemass
+								isproc = true
+								power += 1.0
+								venting = (newRemass - shipRemass < procRemass / 2)
+								ship.cargoMass = max(ship.cargoMass - massChange * 1000, 0)
+					else :
+						if p.has_method("getScan") and p.getScan() == "H2O" and p.has_method("applyEnergyDamage"):
+							var mad = max(1, p.mass / massDamageScale)
+							var proc = min(p.mass, delta * self_kgps / 1000) * mad
+							var requiredPower = proc * powerDrawPerKg * 1000 * delta * 60
+							var gotPower = ship.drawEnergy(requiredPower)
+							var prm = ship.reactiveMass
+							if gotPower / requiredPower > 0.9:
+								p.applyEnergyDamage(gotPower, p.global_position, delta)
+								var st = self_remassEfficiency * proc * 1000
+								var nrm = clamp(prm + st, 0, ship.reactiveMassMax)
+								ship.reactiveMass = nrm
+								isproc = true
+								power += 1.0
+								venting = (nrm - prm < st / 2)
 				Tool.release(p)
 							
 	ventRemass.emitting = venting

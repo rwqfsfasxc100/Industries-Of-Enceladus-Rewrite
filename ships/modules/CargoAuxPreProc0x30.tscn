@@ -8,9 +8,9 @@ mass = 750
 systemName = "SYSTEM_CARGO_AUX_PREPROC_0x30"
 mirrorCollider = true
 massDamageScale = 10.0
-kgps = 20
+self_kgps = 20
 powerDrawPerKg = 1250
-remassEfficiency = 0.45
+self_remassEfficiency = 0.45
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
 polygon = PoolVector2Array( 26, 0, 0, -8, -26, 0 )

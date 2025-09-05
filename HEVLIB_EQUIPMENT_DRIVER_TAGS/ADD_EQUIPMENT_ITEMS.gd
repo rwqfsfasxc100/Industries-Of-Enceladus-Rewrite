@@ -452,14 +452,38 @@ const HOLD_MODIFIER_AMORPH6 = {
 const CARGO_ACCESSORY_BAFFLES = {
 	"system":"SYSTEM_CARGO_BAFFLES",
 	"manual":"SYSTEM_CARGO_BAFFLES_MANUAL",
-	"price":5000,
+	"price":15000,
+	"test_protocol":"cargo",
+	"slot_type":"CARGO_ACCESSORIES",
+	"equipment_type":"CARGO_ACCESSORIES"
+}
+const CARGO_ACCESSORY_P15 = {
+	"system":"SYSTEM_CARGO_PREPROC_P15",
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_MANUAL",
+	"price":55000,
+	"test_protocol":"cargo",
+	"slot_type":"CARGO_ACCESSORIES",
+	"equipment_type":"CARGO_ACCESSORIES"
+}
+const CARGO_ACCESSORY_M35 = {
+	"system":"SYSTEM_CARGO_PREPROC_M35",
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_MANUAL",
+	"price":815000,
+	"test_protocol":"cargo",
+	"slot_type":"CARGO_ACCESSORIES",
+	"equipment_type":"CARGO_ACCESSORIES"
+}
+const CARGO_ACCESSORY_M85 = {
+	"system":"SYSTEM_CARGO_PREPROC_M85",
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_MANUAL",
+	"price":2750000,
 	"test_protocol":"cargo",
 	"slot_type":"CARGO_ACCESSORIES",
 	"equipment_type":"CARGO_ACCESSORIES"
 }
 const CARGO_ACCESSORY_PREPROC_0X30 = {
 	"system":"SYSTEM_CARGO_AUX_PREPROC_0x30",
-	"manual":"SYSTEM_CARGO_AUX_PREPROC_MANUAL",
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_NOMINERAL_MANUAL",
 	"price":32000,
 	"test_protocol":"cargo",
 	"slot_type":"CARGO_ACCESSORIES",

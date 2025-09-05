@@ -4,6 +4,8 @@ export  var dronePrintTime = 0.0
 export  var bulletPrintTime = 0.0
 export  var powerDrawPrint = 70000.0
 export (bool) var enabled = true
+export  var modify_kgps_add = 0
+export  (int, 10, 1000, 1) var modify_kgps_percent_multi = 100
 
 const droneUnit = 0.1
 const droneCostPerKg = {
@@ -43,7 +45,51 @@ func tryToDraw(cost:Dictionary, unit:float)->bool:
 		ship.removeProcessedCargo(m, how)
 	return true
 	
+var processor
+
+var made_adjustment = false
+
+var has_modified = false
+
+var MPU_BASE_KGPS = 100
+
 func _physics_process(delta):
+	
+	if not has_modified:
+		if !ship.cutscene and ship.isPlayerControlled():
+			var processors = []
+			for node in ship.get_children():
+				var nname = node.name
+				var inst = is_instance_valid(node)
+				var valid = node.is_processing()
+				if "MineralProcessingUnit" in nname and inst:
+					processors.append(node)
+			var num = processors.size()
+			if num == 0:
+#				breakpoint
+				made_adjustment = true
+				has_modified = true
+			if num == 1:
+#				breakpoint
+				processor = processors[0]
+				MPU_BASE_KGPS = processor.kgps
+				has_modified = true
+				
+	if has_modified and not made_adjustment:
+		if processor:
+
+			var nodeKGPS = processor.kgps
+			var newKGPS = (nodeKGPS * (clamp(modify_kgps_percent_multi,10,1000)/100)) + modify_kgps_add
+			
+			var nodePower = processor.powerDrawPerKg
+			var powerFactor = (newKGPS/nodeKGPS)
+			var newPower = nodePower * powerFactor
+			
+			processor.set("kgps",newKGPS)
+			made_adjustment = true
+		else:
+			breakpoint
+	
 	if enabled:
 		if Tool.claim(ship):
 			if ship.droneParts + droneUnit <= ship.dronePartsMax and powerDrawPrint > 0:
