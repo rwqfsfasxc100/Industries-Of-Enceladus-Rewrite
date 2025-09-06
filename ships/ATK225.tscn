@@ -43,11 +43,9 @@ slot = "cargo.aux"
 
 [node name="weapon-left" parent="." index="33"]
 position = Vector2( -92, -462 )
-toggleCommand = ""
 
 [node name="weapon-right" parent="." index="34"]
 position = Vector2( 92, -462 )
-toggleCommand = ""
 
 [node name="SYSTEM_PDMWG-R" parent="weapon-right" index="14"]
 visible = false
@@ -81,6 +79,9 @@ position = Vector2( 0, 148 )
 [editable path="CargoAuxSlot/CargoAuxStorage4K"]
 [editable path="CargoAuxSlot/CargoAuxFab"]
 [editable path="CargoAuxSlot/CargoAuxBigFab"]
+[editable path="CargoAuxSlot/CargoAuxPreProcM35"]
+[editable path="CargoAuxSlot/CargoAuxPreProcM85"]
+[editable path="CargoAuxSlot/CargoAuxPreProcP15"]
 [editable path="weapon-left"]
 [editable path="weapon-right"]
 [editable path="weapon-left-back"]

@@ -44,53 +44,50 @@ func tryToDraw(cost:Dictionary, unit:float)->bool:
 		var how = cost[m] * unit
 		ship.removeProcessedCargo(m, how)
 	return true
-	
-var processor
 
 var made_adjustment = false
 
 var has_modified = false
 
-var MPU_BASE_KGPS = 100
+var current_model = ""
+
+var base
 
 func _physics_process(delta):
 	
 	if not has_modified:
 		var ship = getShip()
 		if !ship.cutscene and ship.isPlayerControlled():
-			var processors = []
-			for node in ship.get_children():
-				var nname = node.name
-				var inst = is_instance_valid(node)
-				var valid = node.is_processing()
-				if "MineralProcessingUnit" in nname and inst:
-					processors.append(node)
-			var num = processors.size()
-			if num == 0:
-#				breakpoint
-				made_adjustment = true
-				has_modified = true
-			if num == 1:
-#				breakpoint
-				processor = processors[0]
-				MPU_BASE_KGPS = processor.kgps
-				has_modified = true
+			var processor
+			var reinstance = false
+			var current_aux = ship.getConfig("cargo.aux")
+			var current_mpu = ship.getConfig("cargo.equipment")
+			if current_aux == systemName:
+				if current_model != current_mpu:
+					reinstance = true
+					current_model = current_mpu
+				var self_aux = systemName
+				for node in ship.get_children():
+					if "systemName" in node:
+						var nname = node.name
+						if node.systemName == current_mpu:
+							processor = node
+				if processor:
+					var path = processor.filename
+					if reinstance:
+						if base != null:
+							base.free()
+						base = load(path).instance()
+					if base == null:
+						base = load(path).instance()
+					var baseMineralEfficiency = base.mineralEfficiency
+					var basekgps = base.kgps
+					var basePowerDrawPerKg = base.powerDrawPerKg
+					
+					modifyProcessor(processor,basekgps,basePowerDrawPerKg)
 				
-	if has_modified and not made_adjustment:
-		if processor:
-
-			var nodeKGPS = processor.kgps
-			var newKGPS = (nodeKGPS * (clamp(modify_kgps_percent_multi,10,1000)/100)) + modify_kgps_add
-			
-			var nodePower = processor.powerDrawPerKg
-			var powerFactor = (newKGPS/nodeKGPS)
-			var newPower = nodePower * powerFactor
-			
-			processor.set("kgps",newKGPS)
-			made_adjustment = true
-		else:
-			breakpoint
-	
+#				breakpoint
+				
 	if enabled:
 		if Tool.claim(ship):
 			if ship.droneParts + droneUnit <= ship.dronePartsMax and powerDrawPrint > 0:
@@ -122,3 +119,18 @@ func _physics_process(delta):
 							printA.play()
 							
 			Tool.release(ship)
+
+
+func modifyProcessor(processor,nodeKGPS,nodePower):
+	
+	var clp = clamp(modify_kgps_percent_multi,10,1000)
+	var cc = clp/100.0
+	var pl = nodeKGPS * cc
+	var om = pl + modify_kgps_add
+	var newKGPS = int(pl)
+	
+	var powerFactor = float((float(newKGPS)/float(nodeKGPS)))
+	var newPower = int(nodePower * powerFactor)
+	
+	processor.set("powerDrawPerKg",newPower)
+	processor.set("kgps",newKGPS)

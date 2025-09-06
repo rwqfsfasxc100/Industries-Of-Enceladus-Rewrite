@@ -3,6 +3,7 @@
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxBase.tscn" type="PackedScene" id=1]
 
 [node name="CargoAuxStorage4K" instance=ExtResource( 1 )]
+visible = false
 position = Vector2( -32, 0 )
 polygon = PoolVector2Array( 0, 24, 0, -20, 10, -16, 10, 4 )
 repairReplacementPrice = 145000

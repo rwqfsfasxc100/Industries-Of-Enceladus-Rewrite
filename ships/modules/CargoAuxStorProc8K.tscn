@@ -3,15 +3,21 @@
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProc.tscn" type="PackedScene" id=1]
 
 [node name="CargoAuxStorProc8K" instance=ExtResource( 1 )]
-polygon = PoolVector2Array( 0, 32, 0, -32, 10, -32, 20, -28, 20, 4, 10, 8, 10, 20 )
+visible = false
+polygon = PoolVector2Array( 0, 32, 0, 8, 0, -32, 10, -32, 20, -28, 20, 4, 10, 8, 10, 20 )
 repairReplacementPrice = 435000
 mass = 8000
 systemName = "SYSTEM_CARGO_AUX_STORPROC_8K"
 internalStorage = 8000.0
 mirrorCollider = true
-kgps = 5
 powerDrawPerKg = 250
-remassEfficiency = 0.1
+
+[node name="ZoneTop" parent="ProcessingArea" index="0"]
+visible = false
+disabled = true
+
+[node name="ZoneBottom" parent="ProcessingArea" index="1"]
+polygon = PoolVector2Array( 16, -28, 24, 22, -24, 22, -16, -28 )
 
 [node name="VentRemass" parent="." index="1"]
 position = Vector2( 32, 16 )

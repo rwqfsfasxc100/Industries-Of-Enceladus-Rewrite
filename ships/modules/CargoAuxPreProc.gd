@@ -61,60 +61,68 @@ onready var proStop = $ProStop
 	
 var ventingMineral = 0.0
 
-var processor
-
 var made_adjustment = false
 
 var has_modified = false
 
-var MPU_BASE_MINERAL_EFFICIENCY = 0.7
-var MPU_BASE_KGPS = 100
+var current_model = ""
+
+var base
 
 func _physics_process(delta):
 	var ship = getShip()
 	if not has_modified:
 		if !ship.cutscene and ship.isPlayerControlled():
-			var processors = []
-			for node in ship.get_children():
-				var nname = node.name
-				var inst = is_instance_valid(node)
-				var valid = node.is_processing()
-				if "MineralProcessingUnit" in nname and inst:
-					processors.append(node)
-			var num = processors.size()
-			if num == 0:
+			var processor
+			var reinstance = false
+			var current_aux = ship.getConfig("cargo.aux")
+			var current_mpu = ship.getConfig("cargo.equipment")
+			if current_aux == systemName:
+				if current_model != current_mpu:
+					reinstance = true
+					current_model = current_mpu
+				var self_aux = systemName
+				for node in ship.get_children():
+					if "systemName" in node:
+						var nname = node.name
+						if node.systemName == current_mpu:
+							processor = node
+				if processor:
+					var path = processor.filename
+					if reinstance:
+						if base != null:
+							base.free()
+						base = load(path).instance()
+					if base == null:
+						base = load(path).instance()
+					var baseMineralEfficiency = base.mineralEfficiency
+					var basekgps = base.kgps
+					var basePowerDrawPerKg = base.powerDrawPerKg
+					
+					
+					modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
 #				breakpoint
-				made_adjustment = true
-				has_modified = true
-			if num == 1:
-#				breakpoint
-				processor = processors[0]
-				MPU_BASE_KGPS = processor.kgps
-				MPU_BASE_MINERAL_EFFICIENCY = processor.mineralEfficiency
-				has_modified = true
 				
-	if has_modified and not made_adjustment:
-		if processor:
-			var nodeMinEff = processor.mineralEfficiency
-			var newMinEff = clamp(nodeMinEff + (nodeMinEff * modify_mineralEfficiency),
-				0, 0.95)
-
-			var nodeKGPS = processor.kgps
-			var clp = clamp(modify_kgps_percent_multi,10,1000)
-			var cc = clp/100.0
-			var pl = nodeKGPS * cc
-			var om = pl + modify_kgps_add
-			var newKGPS = int(pl)
-			
-			var nodePower = processor.powerDrawPerKg
-			var powerFactor = (newKGPS/nodeKGPS)
-			var newPower = int(nodePower * powerFactor)
-			
-			processor.set("mineralEfficiency", newMinEff)
-			processor.set("kgps",newKGPS)
-			made_adjustment = true
-		else:
-			breakpoint
+				
+				
+				
+				
+#				if "MineralProcessingUnit" in nname:
+#					processors.append(node)
+#			var num = processors.size()
+#			if num == 0:
+##				breakpoint
+#				made_adjustment = true
+#				has_modified = true
+#			if num >= 1:
+#				breakpoint
+#				var MPU_BASE_KGPS = processor.kgps
+#				var MPU_BASE_MINERAL_EFFICIENCY = processor.mineralEfficiency
+#				for processor in processors:
+#					modifyProcessor(processor)
+#				has_modified = true
+				
+	
 	ventingMineral = max(0, ventingMineral - delta)
 	power = 0
 
@@ -183,6 +191,23 @@ func _physics_process(delta):
 				processingA.stop()
 				proStop.play()
 
+
+func modifyProcessor(processor,nodeMinEff,nodeKGPS,nodePower):
+	var newMinEff = clamp(nodeMinEff + (nodeMinEff * modify_mineralEfficiency),
+		0, 0.95)
+
+	var clp = clamp(modify_kgps_percent_multi,10,1000)
+	var cc = clp/100.0
+	var pl = nodeKGPS * cc
+	var om = pl + modify_kgps_add
+	var newKGPS = int(pl)
+	
+	var powerFactor = (float(newKGPS)/float(nodeKGPS))
+	var newPower = int(nodePower * powerFactor)
+	
+	processor.set("mineralEfficiency", newMinEff)
+	processor.set("kgps",newKGPS)
+	processor.set("powerDrawPerKg",newPower)
 
 									
 func _on_ProcessingArea_body_entered(body):

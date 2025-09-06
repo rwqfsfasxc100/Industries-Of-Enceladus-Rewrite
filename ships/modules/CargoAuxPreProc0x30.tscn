@@ -3,7 +3,9 @@
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProc.tscn" type="PackedScene" id=1]
 
 [node name="CargoAuxPreProc0x30" instance=ExtResource( 1 )]
+visible = false
 polygon = PoolVector2Array( 0, 14, 0, -14, 6, -6, 12, -4, 12, 4, 6, 6 )
+repairReplacementPrice = 32000
 mass = 750
 systemName = "SYSTEM_CARGO_AUX_PREPROC_0x30"
 mirrorCollider = true
@@ -11,6 +13,7 @@ massDamageScale = 10.0
 self_kgps = 20
 powerDrawPerKg = 1250
 self_remassEfficiency = 0.45
+modify_kgps_add = -5
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
 polygon = PoolVector2Array( 26, 0, 0, -8, -26, 0 )

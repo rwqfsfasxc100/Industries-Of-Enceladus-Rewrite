@@ -150,7 +150,7 @@ maxZoomOut = 6.0
 [node name="Collider" type="CollisionPolygon2D" parent="."]
 light_mask = 0
 z_index = 50
-polygon = PoolVector2Array( -206, -1242, -92, -1242, -88, -1238, -88, -1222, -116, -1202, -116, -1040, -116, -842, -40, -722, -40, -600, -40, -442, 40, -442, 40, -600, 40, -722, 116, -842, 116, -1040, 116, -1202, 88, -1222, 88, -1238, 92, -1242, 206, -1242, 206, -1030, 192, -994, 192, -780, 218, -720, 218, -606, 190, -568, 190, -370, 150, -224, 150, -182, 332, -112, 346, -66, 352, 40, 260, 80, 260, 260, 364, 300, 364, 690, 352, 790, -352, 790, -364, 700, -364, 300, -260, 260, -260, 80, -352, 40, -346, -58, -332, -112, -150, -182, -150, -224, -190, -370, -190, -568, -218, -602, -218, -720, -190, -780, -192, -994, -206, -1030 )
+polygon = PoolVector2Array( -206, -1242, -92, -1242, -88, -1238, -88, -1222, -116, -1202, -116, -1040, -116, -942, -40, -822, -40, -600, -40, -442, 40, -442, 40, -600, 40, -822, 116, -942, 116, -1040, 116, -1202, 88, -1222, 88, -1238, 92, -1242, 206, -1242, 206, -1030, 192, -994, 192, -780, 218, -720, 218, -606, 190, -568, 190, -370, 150, -224, 150, -182, 332, -112, 346, -66, 352, 40, 260, 80, 260, 260, 364, 300, 364, 690, 352, 790, -352, 790, -364, 700, -364, 300, -260, 260, -260, 80, -352, 40, -346, -58, -332, -112, -150, -182, -150, -224, -190, -370, -190, -568, -218, -602, -218, -720, -190, -780, -192, -994, -206, -1030 )
 
 [node name="NacelleTip" type="CollisionShape2D" parent="."]
 visible = false
@@ -161,7 +161,6 @@ z_index = 50
 shape = SubResource( 7 )
 
 [node name="CargoHoldArea" type="Area2D" parent="."]
-visible = false
 light_mask = 0
 z_index = 50
 collision_layer = 524288
@@ -172,10 +171,11 @@ linear_damp = 0.0
 angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldArea"]
+visible = false
 light_mask = 0
 position = Vector2( 3, -966 )
 scale = Vector2( 1.3, 1.3 )
-polygon = PoolVector2Array( 71.5385, -201.539, 93.0769, -186.154, 93.0769, 98.4615, 34.6154, 189.231, 34.6154, 409.231, -39.2308, 409.231, -39.2308, 189.231, -97.6923, 98.4615, -97.6923, -186.154, -76.1539, -201.539, -76.1539, -209.231, 71.5385, -209.231 )
+polygon = PoolVector2Array( 71.5385, -201.539, 93.0769, -186.154, 93.077, 20, 34.615, 110, 34.6154, 409.231, -39.2308, 409.231, -39.231, 110, -97.692, 20, -97.6923, -186.154, -76.1539, -201.539, -76.1539, -209.231, 71.5385, -209.231 )
 
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
 visible = false
@@ -792,7 +792,10 @@ polygon = PoolVector2Array( 110, 0, 110, 304, 34, 424, 34, 700, -34, 700, -34, 4
 [node name="VentRemass" parent="CargoAuxSlot/CargoAuxPreProc0x30" index="1"]
 position = Vector2( 98, 0 )
 
-[node name="CargoAuxPreProc20x10" parent="CargoAuxSlot" index="1"]
+[node name="CargoAuxPreProcP15" parent="CargoAuxSlot" index="1"]
+polygon = PoolVector2Array( -84, 8, -84, -30, -70, -19, -73, -10, -70, 0 )
+
+[node name="CargoAuxPreProc20x10" parent="CargoAuxSlot" index="2"]
 light_mask = 0
 position = Vector2( -98, 0 )
 polygon = PoolVector2Array( -12, 25, -14, 30, -18, 30, -18, 20, -18, -20, -18, -30, -14, -30, -12, -25, -2, -22, 4, -16, 8, -4, 8, 4, 4, 16, -2, 22 )
@@ -811,8 +814,10 @@ polygon = PoolVector2Array( 110, 0, 110, 304, 34, 424, 34, 700, -34, 700, -34, 4
 [node name="VentRemass" parent="CargoAuxSlot/CargoAuxPreProc20x10" index="1"]
 position = Vector2( 98, 0 )
 
-[node name="CargoAuxPreProc40x20" parent="CargoAuxSlot" index="2"]
-visible = false
+[node name="CargoAuxPreProcM35" parent="CargoAuxSlot" index="3"]
+polygon = PoolVector2Array( -84, 13, -84, -30, -66, -13, -68, 2 )
+
+[node name="CargoAuxPreProc40x20" parent="CargoAuxSlot" index="4"]
 light_mask = 0
 position = Vector2( -112, 0 )
 polygon = PoolVector2Array( 6, -42, 14, -38, 10, -16, 4, -12, 10, -10, 14, -4, 14, 4, 10, 10, 4, 12, 10, 18, 14, 38, 6, 42, -4, 42, -4, 12, -4, -12, -4, -42 )
@@ -832,7 +837,10 @@ polygon = PoolVector2Array( 110, 0, 110, 304, 34, 424, 34, 700, -34, 700, -34, 4
 [node name="VentRemass" parent="CargoAuxSlot/CargoAuxPreProc40x20" index="1"]
 position = Vector2( 112, 0 )
 
-[node name="CargoAuxStorProc8K" parent="CargoAuxSlot" index="3"]
+[node name="CargoAuxPreProcM85" parent="CargoAuxSlot" index="5"]
+visible = false
+
+[node name="CargoAuxStorProc8K" parent="CargoAuxSlot" index="6"]
 position = Vector2( -98, 0 )
 polygon = PoolVector2Array( -18, 29, -18, -29, -10, -23, -10, -17, -4, -15, 4, -15, 4, 15, -4, 15, -10, 17, -10, 23 )
 
@@ -850,16 +858,15 @@ disabled = false
 position = Vector2( -66, 0 )
 polygon = PoolVector2Array( 10, 32, -44, 20, -44, -20, 10, -28, 26, 0 )
 
-[node name="CargoAuxStorage4K" parent="CargoAuxSlot" index="4"]
+[node name="CargoAuxStorage4K" parent="CargoAuxSlot" index="7"]
 position = Vector2( -98, 0 )
 polygon = PoolVector2Array( -18, 17, -18, -17, -8, -11, -8, 11 )
 
-[node name="CargoAuxFab" parent="CargoAuxSlot" index="5"]
+[node name="CargoAuxFab" parent="CargoAuxSlot" index="8"]
 position = Vector2( -66, 0 )
 polygon = PoolVector2Array( -22, -8, -22, 32, -32, 32, -40, 40, -40, 56, -50, 72, -50, 40, -50, 24, -50, -36 )
 
-[node name="CargoAuxBigFab" parent="CargoAuxSlot" index="6"]
-visible = true
+[node name="CargoAuxBigFab" parent="CargoAuxSlot" index="9"]
 position = Vector2( -116, 0 )
 
 [node name="MineralProcessingUnit" parent="." instance=ExtResource( 33 )]
@@ -877,6 +884,7 @@ polygon = PoolVector2Array( -40, -98, 0, -64, 4, -50, 4, -18, -14, -18, -24, -8,
 polygon = PoolVector2Array( -26, 24, 26, 24, 26, -18, -26, -18 )
 
 [node name="MineralProcessingUnit_FSO" parent="." instance=ExtResource( 34 )]
+visible = false
 light_mask = 0
 position = Vector2( 0, -470 )
 polygon = PoolVector2Array( -40, -252, -36, -242, -28, 6, -10, 18, 10, 18, 28, 6, 36, -242, 40, -252, 40, 28, -40, 28 )
@@ -886,8 +894,9 @@ light_mask = 0
 polygon = PoolVector2Array( -28, 6, -10, 18, 10, 18, 28, 6, 36, -242, -36, -242 )
 
 [node name="MineralProcessingUnit_DRY" parent="." instance=ExtResource( 44 )]
+visible = false
 position = Vector2( 0, -470 )
-polygon = PoolVector2Array( -36, -254, -28, 6, -10, 18, 10, 18, 28, 6, 36, -257, 110, -376, 110, -721, 116, -732, 116, -372, 40, -252, 40, 28, -40, 28, -40, -252, -116, -372, -116, -732, -109, -721, -109, -373 )
+polygon = PoolVector2Array( -36, -354, -28, 6, -10, 18, 10, 18, 28, 6, 36, -357, 110, -476, 110, -721, 116, -732, 116, -472, 40, -352, 40, 28, -40, 28, -40, -352, -116, -472, -116, -732, -109, -721, -109, -473 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_DRY/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( 116, -732, 116, -372, 40, -252, 40, 28, -40, 28, -40, -252, -116, -372, -116, -732, -89, -751, 88, -751 )
@@ -997,8 +1006,11 @@ shadow_item_cull_mask = 3
 [editable path="Noises"]
 [editable path="CargoAuxSlot"]
 [editable path="CargoAuxSlot/CargoAuxPreProc0x30"]
+[editable path="CargoAuxSlot/CargoAuxPreProcP15"]
 [editable path="CargoAuxSlot/CargoAuxPreProc20x10"]
+[editable path="CargoAuxSlot/CargoAuxPreProcM35"]
 [editable path="CargoAuxSlot/CargoAuxPreProc40x20"]
+[editable path="CargoAuxSlot/CargoAuxPreProcM85"]
 [editable path="CargoAuxSlot/CargoAuxStorProc8K"]
 [editable path="CargoAuxSlot/CargoAuxStorage4K"]
 [editable path="CargoAuxSlot/CargoAuxFab"]

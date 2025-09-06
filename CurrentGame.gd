@@ -54,7 +54,7 @@ func _init():
 # need to do this so that maxMembers is valid
 func validateEmployment():
 	var ship = .getPlayerShip()
-	if ship:
+	if is_instance_valid(ship) and ship:
 		var preferredCrew = {}
 		var maxMembers = ship.crew
 		var ss = state.ship

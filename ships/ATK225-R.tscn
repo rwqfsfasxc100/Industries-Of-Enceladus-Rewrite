@@ -36,13 +36,9 @@ visible = false
 
 [node name="weapon-left" parent="." index="41"]
 position = Vector2( -92, -454 )
-slot = "main"
-toggleCommand = ""
 
 [node name="weapon-right" parent="." index="42"]
 position = Vector2( 92, -454 )
-slot = "main"
-toggleCommand = ""
 
 [node name="AI" parent="." index="50"]
 visible = false

@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProc.tscn" type="PackedScene" id=1]
+
+[node name="CargoAuxPreProcM35" instance=ExtResource( 1 )]
+visible = false
+polygon = PoolVector2Array( 0, 8, 0, -8, 9, -3, 9, 5 )
+repairReplacementPrice = 815000
+mass = 4780
+systemName = "SYSTEM_CARGO_PREPROC_M35"
+self_kgps = 30
+powerDrawPerKg = 250
+modify_mineralEfficiency = 0.1
+self_remassEfficiency = 0.1
+modify_kgps_add = 10
+modify_kgps_percent_multi = 135

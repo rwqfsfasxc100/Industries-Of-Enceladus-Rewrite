@@ -31,11 +31,15 @@ const CARGO_ACCESSORIES = {
 		"SHIP_TRTL_T",
 		"SHIP_TRTL_R",
 		"SHIP_EIME",
+		"SHIP_YME",
 		"SHIP_OCP209",
 		"SHIP_OCP209_SNAP",
+		"SHIP_OCP213_TWIN",
+		"SHIP_OCP-SALVAGE",
 		"SHIP_OBERON",
 		"SHIP_ATLAS_WASP",
-		"SHIP_OCP213_TWIN",
+		"SHIP_CK65",
+		"SHIP_CK69",
 	],
 	"invert_limit_logic":true
 }

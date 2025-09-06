@@ -4,9 +4,11 @@
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxFab.gd" type="Script" id=2]
 
 [node name="CargoAuxBigFab" type="CollisionPolygon2D"]
+visible = false
 light_mask = 0
+position = Vector2( -32, 0 )
 z_index = 50
-polygon = PoolVector2Array( 0, -32, 16, -32, 32, -28, 32, 38, 24, 40, 18, 40, 16, 46, 10, 48, 10, 60, 0, 72, 0, 4 )
+polygon = PoolVector2Array( 0, -32, 16, -32, 32, -28, 32, 38, 24, 40, 18, 40, 16, 46, 10, 48, 10, 60, 0, 72, 0, 32 )
 script = ExtResource( 2 )
 repairReplacementPrice = 3850000
 repairFixPrice = 50000

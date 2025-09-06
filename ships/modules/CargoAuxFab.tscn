@@ -4,9 +4,11 @@
 [ext_resource path="res://ships/excavator_close.wav" type="AudioStream" id=9]
 
 [node name="CargoAuxFab" type="CollisionPolygon2D"]
+visible = false
 light_mask = 0
+position = Vector2( -32, 0 )
 z_index = 50
-polygon = PoolVector2Array( 0, -52, 28, -26, 32, -16, 32, 12, 18, 12, 10, 20, 10, 34, 0, 48, 0, 4 )
+polygon = PoolVector2Array( 0, -32, 28, -12, 32, -4, 32, 30, 18, 30, 10, 40, 10, 52, 0, 64, 0, 24 )
 script = ExtResource( 2 )
 repairReplacementPrice = 2500000
 repairFixPrice = 50000
@@ -16,6 +18,7 @@ internalStorage = 2000.0
 dronePrintTime = 0.014
 bulletPrintTime = 4.0
 powerDrawPrint = 120000.0
+modify_kgps_percent_multi = 155
 
 [node name="PrintAudio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )

@@ -57,13 +57,22 @@ position = Vector2( 0, -92 )
 collision_layer = 530
 collision_mask = 7
 
+[node name="CargoAuxPreProcM85" parent="CargoAuxSlot" index="5"]
+visible = false
+
+[node name="CargoAuxStorProc8K" parent="CargoAuxSlot" index="6"]
+visible = false
+
 [editable path="HoldModifiers"]
 [editable path="AI"]
 [editable path="CrewModifiers"]
 [editable path="CargoAuxSlot"]
 [editable path="CargoAuxSlot/CargoAuxPreProc0x30"]
+[editable path="CargoAuxSlot/CargoAuxPreProcP15"]
 [editable path="CargoAuxSlot/CargoAuxPreProc20x10"]
+[editable path="CargoAuxSlot/CargoAuxPreProcM35"]
 [editable path="CargoAuxSlot/CargoAuxPreProc40x20"]
+[editable path="CargoAuxSlot/CargoAuxPreProcM85"]
 [editable path="CargoAuxSlot/CargoAuxStorProc8K"]
 [editable path="CargoAuxSlot/CargoAuxStorage4K"]
 [editable path="CargoAuxSlot/CargoAuxFab"]
