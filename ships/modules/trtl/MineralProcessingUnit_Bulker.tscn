@@ -8,6 +8,3 @@ polygon = PoolVector2Array( 2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0,
 
 [node name="MineralProcessingUnit" parent="." index="0"]
 visible = false
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -24, 27, 16, 27, 24, 11, -24, 3 )
