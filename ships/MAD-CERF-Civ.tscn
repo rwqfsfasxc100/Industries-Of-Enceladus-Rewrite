@@ -68,6 +68,19 @@ shader_param/roughness = 4.0
 shader_param/reflectiveness = 8.0
 shader_param/shine = 1.0
 
+[sub_resource type="ShaderMaterial" id=13]
+shader = ExtResource( 38 )
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 0.5, 1 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 1.0
+shader_param/shine = 1.0
+shader_param/mipmapBias = 0.0
+shader_param/map = ExtResource( 4 )
+
 [sub_resource type="CanvasItemMaterial" id=8]
 blend_mode = 1
 
@@ -145,19 +158,6 @@ shader_param/shine = 1.0
 shader_param/mipmapBias = 0.0
 shader_param/map = ExtResource( 39 )
 
-[sub_resource type="ShaderMaterial" id=13]
-shader = ExtResource( 38 )
-shader_param/maxval = 5.0
-shader_param/sparkBias = 0.0
-shader_param/scale = Vector2( 0.5, 1 )
-shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
-shader_param/ref = 0.1
-shader_param/roughness = 0.5
-shader_param/reflectiveness = 1.0
-shader_param/shine = 1.0
-shader_param/mipmapBias = 0.0
-shader_param/map = ExtResource( 4 )
-
 [sub_resource type="CircleShape2D" id=5]
 radius = 7000.0
 
@@ -222,6 +222,17 @@ editor_only = true
 texture = ExtResource( 21 )
 energy = 2.14
 range_height = 2000.0
+
+[node name="CargoAuxSlot@CargoAuxFab@Sprite" type="Sprite" parent="."]
+material = SubResource( 13 )
+position = Vector2( 1, -21 )
+rotation = 1.5708
+scale = Vector2( -1, 1 )
+z_index = -10
+texture = ExtResource( 5 )
+normal_map = ExtResource( 6 )
+region_enabled = true
+region_rect = Rect2( 689, 61, 105, 40 )
 
 [node name="editor_centrelight" type="Light2D" parent="."]
 material = SubResource( 4 )
@@ -724,109 +735,6 @@ polygon = PoolVector2Array( -40, -150, -30, -160, -30, -240, -20, -250, 20, -250
 [node name="CargoAuxSlot" parent="." instance=ExtResource( 44 )]
 position = Vector2( 0, -136 )
 
-[node name="CargoAuxPreProc0x30" parent="CargoAuxSlot" index="0"]
-light_mask = 0
-position = Vector2( -102, 0 )
-polygon = PoolVector2Array( -12, -14, 20, -14, 10, -6, 8, 4, 0, 4, -2, -6 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProc0x30" index="0"]
-visible = false
-position = Vector2( 102, -8 )
-
-[node name="ZoneTop" parent="CargoAuxSlot/CargoAuxPreProc0x30/ProcessingArea" index="0"]
-polygon = PoolVector2Array( 22, -10, 22, -72, 8, -94, -8, -94, -22, -72, -22, -10, -32, 0, 32, 0 )
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc0x30/ProcessingArea" index="1"]
-polygon = PoolVector2Array( 234, 0, 234, 234, -234, 234, -234, 0 )
-
-[node name="VentRemass" parent="CargoAuxSlot/CargoAuxPreProc0x30" index="1"]
-position = Vector2( 102, 0 )
-
-[node name="CargoAuxPreProcP15" parent="CargoAuxSlot" index="1"]
-polygon = PoolVector2Array( -80, -14, -17, -14, -32, 6, -50, 0, -72, 6 )
-
-[node name="CargoAuxPreProc20x10" parent="CargoAuxSlot" index="2"]
-light_mask = 0
-position = Vector2( -112, 0 )
-polygon = PoolVector2Array( -16, 0, -18, -8, -24, -10, -24, -14, -16, -14, 20, -14, 30, -14, 30, -10, 22, -8, 20, 0, 16, 6, 6, 10, -2, 10, -12, 6 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProc20x10" index="0"]
-visible = false
-position = Vector2( 112, -8 )
-
-[node name="ZoneTop" parent="CargoAuxSlot/CargoAuxPreProc20x10/ProcessingArea" index="0"]
-polygon = PoolVector2Array( 22, -10, 22, -72, 8, -94, -8, -94, -22, -72, -22, -10, -32, 0, 32, 0 )
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc20x10/ProcessingArea" index="1"]
-polygon = PoolVector2Array( 234, 0, 234, 234, -234, 234, -234, 0 )
-
-[node name="CargoAuxPreProcM35" parent="CargoAuxSlot" index="3"]
-polygon = PoolVector2Array( -87, -15, -33, -15, -53, 5, -78, 5 )
-
-[node name="CargoAuxPreProc40x20" parent="CargoAuxSlot" index="4"]
-light_mask = 0
-position = Vector2( -120, 0 )
-polygon = PoolVector2Array( 38, 0, 20, -4, 16, -8, 14, -2, 8, 2, 0, 2, -6, -2, -8, -8, -12, -4, -30, 0, -34, -6, -34, -14, -6, -14, 14, -14, 42, -14, 42, -6 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProc40x20" index="0"]
-position = Vector2( 120, -8 )
-
-[node name="ZoneTop" parent="CargoAuxSlot/CargoAuxPreProc40x20/ProcessingArea" index="0"]
-polygon = PoolVector2Array( 22, -10, 22, -72, 8, -94, -8, -94, -22, -72, -22, -10, -32, 0, 32, 0 )
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc40x20/ProcessingArea" index="1"]
-polygon = PoolVector2Array( 234, 0, 234, 234, -234, 234, -234, 0 )
-
-[node name="VentRemass" parent="CargoAuxSlot/CargoAuxPreProc40x20" index="1"]
-position = Vector2( 120, 0 )
-
-[node name="CargoAuxPreProcM85" parent="CargoAuxSlot" index="5"]
-visible = false
-polygon = PoolVector2Array( -136, -14, -18, -14, -54, 10, -92, -6 )
-
-[node name="CargoAuxStorProc8K" parent="CargoAuxSlot" index="6"]
-light_mask = 0
-position = Vector2( -104, 0 )
-polygon = PoolVector2Array( 12, 2, -28, 2, -30, -2, -30, -14, 12, -14, 34, -14, 26, -6, 14, -6, 14, -2 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxStorProc8K" index="0"]
-position = Vector2( 104, -8 )
-
-[node name="ZoneTop" parent="CargoAuxSlot/CargoAuxStorProc8K/ProcessingArea" index="0"]
-visible = true
-position = Vector2( -112, 18 )
-polygon = PoolVector2Array( 36, 10, 22, -12, -22, -12, -36, 10, -26, 32, 0, 38, 26, 32 )
-disabled = false
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxStorProc8K/ProcessingArea" index="1"]
-position = Vector2( 112, 18 )
-polygon = PoolVector2Array( 36, 10, 22, -12, -22, -12, -36, 10, -26, 32, 0, 38, 26, 32 )
-
-[node name="CargoAuxStorage4K" parent="CargoAuxSlot" index="7"]
-position = Vector2( -113, 0 )
-polygon = PoolVector2Array( -5, -4, -9, -14, 33, -14, 19, -4 )
-
-[node name="CargoAuxFab" parent="CargoAuxSlot" index="8"]
-position = Vector2( 136, 0 )
-rotation = 1.5708
-polygon = PoolVector2Array( -14, -32, 12, -14, 16, -4, 16, 30, 0, 30, -4, 36, -4, 52, -14, 64, -14, 24 )
-
-[node name="Sprite" type="Sprite" parent="CargoAuxSlot/CargoAuxFab" index="1"]
-material = SubResource( 13 )
-position = Vector2( 1, -21 )
-rotation = 1.5708
-scale = Vector2( -1, 1 )
-z_index = -10
-texture = ExtResource( 5 )
-normal_map = ExtResource( 6 )
-region_enabled = true
-region_rect = Rect2( 689, 61, 105, 40 )
-
-[node name="CargoAuxBigFab" parent="CargoAuxSlot" index="9"]
-position = Vector2( 152, 0 )
-rotation = 1.5708
-polygon = PoolVector2Array( -14, -32, 5.99998, -32, 22, -28, 22, 36, 6, 40, 4, 46, -2, 48, -2, 60, -14, 72, -14, 32 )
-
 [node name="CargoBaffles" parent="." instance=ExtResource( 49 )]
 visible = false
 position = Vector2( 0, 164 )
@@ -946,16 +854,6 @@ rpmPS = 300.0
 [editable path="MineralProcessingUnit_Furnace"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="CargoAuxSlot"]
-[editable path="CargoAuxSlot/CargoAuxPreProc0x30"]
-[editable path="CargoAuxSlot/CargoAuxPreProcP15"]
-[editable path="CargoAuxSlot/CargoAuxPreProc20x10"]
-[editable path="CargoAuxSlot/CargoAuxPreProcM35"]
-[editable path="CargoAuxSlot/CargoAuxPreProc40x20"]
-[editable path="CargoAuxSlot/CargoAuxPreProcM85"]
-[editable path="CargoAuxSlot/CargoAuxStorProc8K"]
-[editable path="CargoAuxSlot/CargoAuxStorage4K"]
-[editable path="CargoAuxSlot/CargoAuxFab"]
-[editable path="CargoAuxSlot/CargoAuxBigFab"]
 [editable path="CargoBaffles"]
 [editable path="AI"]
 [editable path="reactor-l"]

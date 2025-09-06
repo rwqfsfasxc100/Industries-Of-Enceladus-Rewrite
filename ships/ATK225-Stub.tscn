@@ -279,66 +279,6 @@ position = Vector2( -1, 16 )
 [node name="CargoAuxSlot" parent="." index="32"]
 position = Vector2( 0, -162 )
 
-[node name="CargoAuxPreProc0x30" parent="CargoAuxSlot" index="0"]
-position = Vector2( -36, 0 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProc0x30" index="0"]
-position = Vector2( 36, 0 )
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc0x30/ProcessingArea" index="1"]
-polygon = PoolVector2Array( 26, 0, 26, 196, 14, 228, -14, 228, -26, 196, -26, 0 )
-
-[node name="CargoAuxPreProcP15" parent="CargoAuxSlot" index="1"]
-position = Vector2( -36, 0 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProcP15" index="0"]
-position = Vector2( 36, 0 )
-
-[node name="CargoAuxPreProc20x10" parent="CargoAuxSlot" index="2"]
-position = Vector2( -36, 0 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProc20x10" index="0"]
-position = Vector2( 36, 0 )
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc20x10/ProcessingArea" index="1"]
-polygon = PoolVector2Array( 26, 0, 26, 196, 14, 228, -14, 228, -26, 196, -26, 0 )
-
-[node name="CargoAuxPreProcM35" parent="CargoAuxSlot" index="3"]
-position = Vector2( -36, 0 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProcM35" index="0"]
-position = Vector2( 36, 0 )
-
-[node name="CargoAuxPreProc40x20" parent="CargoAuxSlot" index="4"]
-position = Vector2( -32, 0 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProc40x20" index="0"]
-position = Vector2( 32, 0 )
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc40x20/ProcessingArea" index="1"]
-polygon = PoolVector2Array( 26, 0, 26, 196, 14, 228, -14, 228, -26, 196, -26, 0 )
-
-[node name="CargoAuxPreProcM85" parent="CargoAuxSlot" index="5"]
-position = Vector2( -36, 0 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProcM85" index="0"]
-position = Vector2( 36, 0 )
-
-[node name="CargoAuxStorProc8K" parent="CargoAuxSlot" index="6"]
-position = Vector2( -36, 0 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxStorProc8K" index="0"]
-position = Vector2( 36, 0 )
-
-[node name="CargoAuxStorage4K" parent="CargoAuxSlot" index="8"]
-position = Vector2( -36, 0 )
-
-[node name="CargoAuxFab" parent="CargoAuxSlot" index="9"]
-position = Vector2( -36, 0 )
-
-[node name="CargoAuxBigFab" parent="CargoAuxSlot" index="10"]
-position = Vector2( -36, 0 )
-
 [node name="AuxSlot" parent="." index="33"]
 position = Vector2( 0, -132 )
 
@@ -402,16 +342,6 @@ region_rect = Rect2( 0, 298, 7560, 500 )
 [editable path="MineralProcessingUnit_SMELT"]
 [editable path="MineralProcessingUnit_FAB"]
 [editable path="CargoAuxSlot"]
-[editable path="CargoAuxSlot/CargoAuxPreProc0x30"]
-[editable path="CargoAuxSlot/CargoAuxPreProcP15"]
-[editable path="CargoAuxSlot/CargoAuxPreProc20x10"]
-[editable path="CargoAuxSlot/CargoAuxPreProcM35"]
-[editable path="CargoAuxSlot/CargoAuxPreProc40x20"]
-[editable path="CargoAuxSlot/CargoAuxPreProcM85"]
-[editable path="CargoAuxSlot/CargoAuxStorProc8K"]
-[editable path="CargoAuxSlot/CargoAuxStorage4K"]
-[editable path="CargoAuxSlot/CargoAuxFab"]
-[editable path="CargoAuxSlot/CargoAuxBigFab"]
 [editable path="weapon-left"]
 [editable path="weapon-right"]
 [editable path="weapon-left-back"]

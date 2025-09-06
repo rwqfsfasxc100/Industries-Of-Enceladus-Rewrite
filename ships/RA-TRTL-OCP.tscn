@@ -742,82 +742,6 @@ polygon = PoolVector2Array( -106, -15, -84, 7, -46, 27, 1.61732e-06, 37, 46, 27,
 [node name="CargoAuxSlot" parent="." instance=ExtResource( 33 )]
 position = Vector2( 0, -80 )
 
-[node name="CargoAuxPreProc0x30" parent="CargoAuxSlot" index="0"]
-position = Vector2( -120, 0 )
-polygon = PoolVector2Array( -6, 16, 0, -6, 18, -18, 16, -6, 22, 4, 16, 12, 4, 10 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProc0x30" index="0"]
-position = Vector2( 120, 0 )
-
-[node name="ZoneTop" parent="CargoAuxSlot/CargoAuxPreProc0x30/ProcessingArea" index="0"]
-position = Vector2( 0, -60 )
-polygon = PoolVector2Array( 14, -44, 0, -64, -14, -44, -14, 12, 14, 12 )
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc0x30/ProcessingArea" index="1"]
-visible = false
-
-[node name="CargoAuxPreProc20x10" parent="CargoAuxSlot" index="1"]
-position = Vector2( -120, 0 )
-polygon = PoolVector2Array( -8, 20, 0, -6, 22, -24, 30, -12, 30, 2, 24, 16, 10, 22 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProc20x10" index="0"]
-position = Vector2( 120, 0 )
-
-[node name="ZoneTop" parent="CargoAuxSlot/CargoAuxPreProc20x10/ProcessingArea" index="0"]
-position = Vector2( 0, -60 )
-polygon = PoolVector2Array( 14, -44, 0, -64, -14, -44, -14, 12, 14, 12 )
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc20x10/ProcessingArea" index="1"]
-visible = false
-
-[node name="CargoAuxPreProc40x20" parent="CargoAuxSlot" index="2"]
-position = Vector2( -116, 0 )
-polygon = PoolVector2Array( 44, -28, 46, -20, 20, -4, 16, -6, 22, 2, 20, 12, 12, 16, 2, 14, 6, 18, 0, 44, -10, 46, -22, 42, -4, -6, 36, -38 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxPreProc40x20" index="0"]
-position = Vector2( 116, 0 )
-
-[node name="ZoneTop" parent="CargoAuxSlot/CargoAuxPreProc40x20/ProcessingArea" index="0"]
-position = Vector2( 0, -60 )
-polygon = PoolVector2Array( 14, -44, 0, -64, -14, -44, -14, 12, 14, 12 )
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc40x20/ProcessingArea" index="1"]
-visible = false
-
-[node name="CargoAuxStorProc8K" parent="CargoAuxSlot" index="3"]
-visible = false
-position = Vector2( -116, 0 )
-polygon = PoolVector2Array( 44, -30, 48, -22, 24, -2, 16, -6, 10, 2, -10, 10, 10, -16, 36, -38 )
-
-[node name="ProcessingArea" parent="CargoAuxSlot/CargoAuxStorProc8K" index="0"]
-position = Vector2( 116, 0 )
-
-[node name="ZoneTop" parent="CargoAuxSlot/CargoAuxStorProc8K/ProcessingArea" index="0"]
-visible = true
-position = Vector2( -70, 0 )
-rotation = 1.5708
-polygon = PoolVector2Array( 20, 26, -5.99999, 32, -32, 6.00001, -28, -22, -12, -30, 18, -22, 28, 8 )
-disabled = false
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxStorProc8K/ProcessingArea" index="1"]
-position = Vector2( 70, 0 )
-rotation = 3.14159
-polygon = PoolVector2Array( 20, 26, -5.99999, 32, -32, 6.00001, -28, -22, -12, -30, 18, -22, 28, 8 )
-
-[node name="CargoAuxStorage4K" parent="CargoAuxSlot" index="4"]
-position = Vector2( -100, 0 )
-polygon = PoolVector2Array( -16, -2, -2, -22, 22, -40, 26, -28, 8, -12 )
-
-[node name="CargoAuxFab" parent="CargoAuxSlot" index="5"]
-position = Vector2( -100, -20 )
-rotation = 0.785398
-polygon = PoolVector2Array( 0, -32, 28, -12, 32, -4, 32, 30, 21.2132, 29.6985, 15.5563, 38.1838, 19.799, 50.9117, 14.1421, 62.2254, 0, 24 )
-
-[node name="CargoAuxBigFab" parent="CargoAuxSlot" index="6"]
-position = Vector2( -90, -20 )
-rotation = 0.785398
-polygon = PoolVector2Array( -8.48529, -8.48528, 0, -42.4264, 22.6274, -25.4558, 28.2843, -16.9706, 31.1127, -5.65685, 31.1127, 36.7696, 16.9706, 36.7696, 15.5564, 43.8406, 8.48528, 45.2548, 12.7279, 57.9828, 7.07107, 72.1249, -4.24263, 43.8406, -6.02647, 26.6618 )
-
 [node name="CrewModifiers" parent="." instance=ExtResource( 30 )]
 position = Vector2( 0, 70 )
 
@@ -838,10 +762,3 @@ position = Vector2( 0, 70 )
 [editable path="MineralProcessingUnit_Bulker"]
 [editable path="MineralProcessingUnit_Furnace"]
 [editable path="CargoAuxSlot"]
-[editable path="CargoAuxSlot/CargoAuxPreProc0x30"]
-[editable path="CargoAuxSlot/CargoAuxPreProc20x10"]
-[editable path="CargoAuxSlot/CargoAuxPreProc40x20"]
-[editable path="CargoAuxSlot/CargoAuxStorProc8K"]
-[editable path="CargoAuxSlot/CargoAuxStorage4K"]
-[editable path="CargoAuxSlot/CargoAuxFab"]
-[editable path="CargoAuxSlot/CargoAuxBigFab"]

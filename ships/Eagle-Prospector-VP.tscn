@@ -26,22 +26,6 @@ polygon = PoolVector2Array( -24, -30, -12, -22, -20, -14, -20, 44, -12, 64, 12, 
 [node name="CargoAuxSlot" parent="." index="31" instance=ExtResource( 2 )]
 position = Vector2( 0, -136 )
 
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc0x30/ProcessingArea" index="1"]
-polygon = PoolVector2Array( 20, 0, 20, 156, -20, 156, -20, 0 )
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc20x10/ProcessingArea" index="1"]
-polygon = PoolVector2Array( 20, 0, 20, 156, -20, 156, -20, 0 )
-
-[node name="CargoAuxPreProc40x20" parent="CargoAuxSlot" index="2"]
-light_mask = 0
-
-[node name="ZoneBottom" parent="CargoAuxSlot/CargoAuxPreProc40x20/ProcessingArea" index="1"]
-polygon = PoolVector2Array( 20, 0, 20, 156, -20, 156, -20, 0 )
-
-[node name="CargoAuxFab" parent="CargoAuxSlot" index="5"]
-position = Vector2( 0, 0 )
-polygon = PoolVector2Array( -24, -20, -4, -4, 0, 6, 0, 28, -6, 40, -14, 40, -18, 44, -18, 58, -24, 72 )
-
 [node name="MineralProcessingUnit" parent="." index="32"]
 polygon = PoolVector2Array( -24, -46, -19, -36, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 19, -36, 24, -46, 24, 32, -24, 32 )
 
@@ -78,13 +62,6 @@ visible = false
 [editable path="WeaponRight"]
 [editable path="HoldModifiers"]
 [editable path="CargoAuxSlot"]
-[editable path="CargoAuxSlot/CargoAuxPreProc0x30"]
-[editable path="CargoAuxSlot/CargoAuxPreProc20x10"]
-[editable path="CargoAuxSlot/CargoAuxPreProc40x20"]
-[editable path="CargoAuxSlot/CargoAuxStorProc8K"]
-[editable path="CargoAuxSlot/CargoAuxStorage4K"]
-[editable path="CargoAuxSlot/CargoAuxFab"]
-[editable path="CargoAuxSlot/CargoAuxBigFab"]
 [editable path="MineralProcessingUnit"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
