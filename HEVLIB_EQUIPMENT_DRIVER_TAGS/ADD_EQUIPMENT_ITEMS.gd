@@ -408,6 +408,7 @@ const HOLD_MODIFIER_BOLTS = {
 }
 const HOLD_MODIFIER_2K = {
 	"system":"SYSTEM_CARGO_MOD_2K",
+	"manual":"SYSTEM_CARGO_MOD_BOTH_MANUAL",
 	"price":45000,
 	"test_protocol":"takeoff",
 	"slot_type":"HOLD_MODIFIERS",
@@ -415,6 +416,7 @@ const HOLD_MODIFIER_2K = {
 }
 const HOLD_MODIFIER_AMORPH4 = {
 	"system":"SYSTEM_CARGO_MOD_AMORPH4",
+	"manual":"SYSTEM_CARGO_MOD_AMORPH_MANUAL",
 	"price":30000,
 	"test_protocol":"takeoff",
 	"slot_type":"HOLD_MODIFIERS",
@@ -423,6 +425,7 @@ const HOLD_MODIFIER_AMORPH4 = {
 }
 const HOLD_MODIFIER_4K = {
 	"system":"SYSTEM_CARGO_MOD_4K",
+	"manual":"SYSTEM_CARGO_MOD_BOTH_MANUAL",
 	"price":150000,
 	"test_protocol":"takeoff",
 	"slot_type":"HOLD_MODIFIERS",
@@ -430,6 +433,7 @@ const HOLD_MODIFIER_4K = {
 }
 const HOLD_MODIFIER_AMORPH5 = {
 	"system":"SYSTEM_CARGO_MOD_AMORPH5",
+	"manual":"SYSTEM_CARGO_MOD_AMORPH_MANUAL",
 	"price":275000,
 	"test_protocol":"takeoff",
 	"slot_type":"HOLD_MODIFIERS",
@@ -438,6 +442,7 @@ const HOLD_MODIFIER_AMORPH5 = {
 }
 const HOLD_MODIFIER_6K = {
 	"system":"SYSTEM_CARGO_MOD_6K",
+	"manual":"SYSTEM_CARGO_MOD_BOTH_MANUAL",
 	"price":350000,
 	"test_protocol":"takeoff",
 	"slot_type":"HOLD_MODIFIERS", 
@@ -445,6 +450,7 @@ const HOLD_MODIFIER_6K = {
 }
 const HOLD_MODIFIER_AMORPH6 = {
 	"system":"SYSTEM_CARGO_MOD_AMORPH6",
+	"manual":"SYSTEM_CARGO_MOD_AMORPH_MANUAL",
 	"price":445000,
 	"test_protocol":"takeoff",
 	"slot_type":"HOLD_MODIFIERS",
