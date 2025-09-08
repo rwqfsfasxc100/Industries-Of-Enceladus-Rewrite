@@ -8,7 +8,7 @@
 position = Vector2( -140, 0 )
 
 [node name="ZoneTop" parent="SYSTEM_CARGO_AUX_PREPROC_0x30/ProcessingArea" index="0"]
-polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 161, -122, 136.967, -126.622, 109, -132, 86, -129, 58, -117, 12, -91, -8, -66, -22, -34, -26, 0 )
+polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0 )
 
 [node name="ZoneBottom" parent="SYSTEM_CARGO_AUX_PREPROC_0x30/ProcessingArea" index="1"]
 polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0 )
@@ -17,7 +17,7 @@ polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 13
 position = Vector2( -140, 0 )
 
 [node name="ZoneTop" parent="SYSTEM_CARGO_AUX_PREPROC_20x10/ProcessingArea" index="0"]
-polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 161, -122, 136.967, -126.622, 109, -132, 86, -129, 58, -117, 12, -91, -8, -66, -22, -34, -26, 0 )
+polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0 )
 
 [node name="ZoneBottom" parent="SYSTEM_CARGO_AUX_PREPROC_20x10/ProcessingArea" index="1"]
 polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0 )
@@ -26,7 +26,7 @@ polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 13
 position = Vector2( -140, 0 )
 
 [node name="ZoneTop" parent="SYSTEM_CARGO_AUX_PREPROC_40x20/ProcessingArea" index="0"]
-polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 161, -122, 136.967, -126.622, 109, -132, 86, -129, 58, -117, 12, -91, -8, -66, -22, -34, -26, 0 )
+polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0 )
 
 [node name="ZoneBottom" parent="SYSTEM_CARGO_AUX_PREPROC_40x20/ProcessingArea" index="1"]
 polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0 )
@@ -35,7 +35,7 @@ polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 13
 position = Vector2( -140, 0 )
 
 [node name="ZoneTop" parent="SYSTEM_CARGO_AUX_STORPROC_8K/ProcessingArea" index="0"]
-polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 161, -122, 136.967, -126.622, 109, -132, 86, -129, 58, -117, 12, -91, -8, -66, -22, -34, -26, 0 )
+polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0 )
 
 [node name="ZoneBottom" parent="SYSTEM_CARGO_AUX_STORPROC_8K/ProcessingArea" index="1"]
 polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0 )
@@ -53,7 +53,7 @@ position = Vector2( -140, 0 )
 position = Vector2( -140, 0 )
 
 [node name="ZoneTop" parent="SYSTEM_CARGO_PREPROC_M35/ProcessingArea" index="0"]
-polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 161, -122, 136.967, -126.622, 109, -132, 86, -129, 58, -117, 12, -91, -8, -66, -22, -34, -26, 0 )
+polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0 )
 
 [node name="ZoneBottom" parent="SYSTEM_CARGO_PREPROC_M35/ProcessingArea" index="1"]
 polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0 )
@@ -62,7 +62,7 @@ polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 13
 position = Vector2( -140, 0 )
 
 [node name="ZoneTop" parent="SYSTEM_CARGO_PREPROC_M85/ProcessingArea" index="0"]
-polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 161, -122, 136.967, -126.622, 109, -132, 86, -129, 58, -117, 12, -91, -8, -66, -22, -34, -26, 0 )
+polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0 )
 
 [node name="ZoneBottom" parent="SYSTEM_CARGO_PREPROC_M85/ProcessingArea" index="1"]
 polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0 )
@@ -71,7 +71,7 @@ polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 13
 position = Vector2( -140, 0 )
 
 [node name="ZoneTop" parent="SYSTEM_CARGO_PREPROC_P15/ProcessingArea" index="0"]
-polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 161, -122, 136.967, -126.622, 109, -132, 86, -129, 58, -117, 12, -91, -8, -66, -22, -34, -26, 0 )
+polygon = PoolVector2Array( 244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0 )
 
 [node name="ZoneBottom" parent="SYSTEM_CARGO_PREPROC_P15/ProcessingArea" index="1"]
 polygon = PoolVector2Array( 244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0 )
