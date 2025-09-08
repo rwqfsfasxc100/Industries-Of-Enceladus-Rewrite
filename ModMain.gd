@@ -57,7 +57,7 @@ func _init(modLoader = ModLoader):
 	replaceScene("ships/modules/ThrusterSlot.tscn")
 	replaceScene("ships/modules/TorchSlot.tscn")
 	
-	
+	var test = 11 % 2
 	
 # replace weapons and WeaponSlot
 	if aesthetics:

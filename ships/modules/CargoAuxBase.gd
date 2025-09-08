@@ -19,8 +19,14 @@ export  var registerExternal = false
 export var mirrorCollider = false
 export (Vector2) var mirrorCentreOffset = Vector2(0,0)
 
+var preproc_default_shapes = preload("res://IndustriesOfEnceladusRevamp/ships/modules/data/preproc_default_shapes.gd")
+var preproc_ship_shape_mods = preload("res://IndustriesOfEnceladusRevamp/ships/modules/data/preproc_ship_shape_mods.gd")
+
 var ship
 var duped = false
+
+var ship_name = ""
+var base_ship_name = ""
 
 var hs_modified = false
 
@@ -29,6 +35,8 @@ func _physics_process(delta):
 		var ship = getShip()
 		if ship.isPlayerControlled():
 			if !ship.cutscene:
+				ship_name = ship.shipName
+				base_ship_name = ship.baseShipName
 				var cfg = ship.shipConfig
 				var baseAmmo = cfg["ammo"]["capacity"]
 				var baseDrones = cfg["drones"]["capacity"]
@@ -112,3 +120,35 @@ func getShip(from:Node = self, maxLoops = 10):
 			return ERR_PRINTER_ON_FIRE
 		
 	return node
+
+func convert_arr_to_vec2arr(array:Array) -> PoolVector2Array:
+	var converted = PoolVector2Array([])
+	var size = array.size()
+	if size % 2 == 1:
+		Debug.l("Cannot convert array to PoolVector2Array with an odd number of entries")
+		return PoolVector2Array([])
+	var index = 0
+	while index < size:
+		var a = array[index]
+		var b = array[index + 1]
+		var atype = typeof(a)
+		var btype = typeof(b)
+		if atype == TYPE_INT:
+			pass
+		elif atype == TYPE_REAL:
+			pass
+		else:
+			Debug.l("Cannot convert type %s for PoolVector2Array" % atype)
+			return PoolVector2Array([])
+		if btype == TYPE_INT:
+			pass
+		elif btype == TYPE_REAL:
+			pass
+		else:
+			Debug.l("Cannot convert type %s for PoolVector2Array" % btype)
+			return PoolVector2Array([])
+		var pooling = Vector2(a,b)
+		converted.append(pooling)
+		index += 2
+#	breakpoint
+	return converted

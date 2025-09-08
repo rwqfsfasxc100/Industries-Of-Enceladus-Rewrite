@@ -58,7 +58,11 @@ onready var ventRemass = $VentRemass
 onready var processingA = $Processing
 onready var proStart = $ProStart
 onready var proStop = $ProStop
-	
+
+onready var area = get_node_or_null("ProcessingArea")
+onready var top = get_node_or_null("ProcessingArea/ZoneTop")
+onready var bottom = get_node_or_null("ProcessingArea/ZoneBottom")
+
 var ventingMineral = 0.0
 
 var made_adjustment = false
@@ -73,6 +77,7 @@ func _physics_process(delta):
 	var ship = getShip()
 	if not has_modified:
 		if !ship.cutscene and ship.isPlayerControlled():
+			modify_preproc_shape()
 			var processor
 			var reinstance = false
 			var current_aux = ship.getConfig("cargo.aux")
@@ -217,3 +222,52 @@ func _on_ProcessingArea_body_entered(body):
 func _on_ProcessingArea_body_exited(body):
 	
 	processing.remove(processing.find(body))
+
+func adjustShape(data):
+	if "rotation" in data:
+		var d = data["rotation"]
+		self.rotation = deg2rad(d)
+	if "shape" in data:
+		var shape = convert_arr_to_vec2arr(data["shape"])
+		self.polygon = shape
+	if "ZoneTop" in data:
+		var shape = convert_arr_to_vec2arr(data["ZoneTop"])
+		top.polygon = shape
+	if "ZoneBottom" in data:
+		var shape = convert_arr_to_vec2arr(data["ZoneBottom"])
+		bottom.polygon = shape
+
+func modify_preproc_shape():
+	var shapes = preproc_default_shapes.get_script_constant_map()
+	var shipMod = preproc_ship_shape_mods.get_script_constant_map()
+	
+	if systemName in shapes:
+		var data = shapes[systemName]
+		adjustShape(data)
+	else:
+		var data = shapes["_DEFAULT"]
+		adjustShape(data)
+	
+	if base_ship_name in shipMod:
+		var sdata = shipMod[base_ship_name]
+		if "position" in sdata:
+			var data = sdata["position"]
+			self.position = Vector2(data[0],data[1])
+		if "rotation" in sdata:
+			var data = sdata["rotation"]
+			self.rotation = deg2rad(data)
+		if systemName in sdata:
+			var data = sdata[systemName]
+			adjustShape(data)
+	if ship_name in shipMod:
+		var sdata = shipMod[ship_name]
+		if "position" in sdata:
+			var data = sdata["position"]
+			self.position = Vector2(data[0],data[1])
+		if "rotation" in sdata:
+			var data = sdata["rotation"]
+			self.rotation = deg2rad(data)
+		if systemName in sdata:
+			var data = sdata[systemName]
+			adjustShape(data)
+	

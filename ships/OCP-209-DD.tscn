@@ -36,7 +36,7 @@
 [ext_resource path="res://ships/CabinLight.gd" type="Script" id=34]
 [ext_resource path="res://lights/light-mask.png" type="Texture" id=35]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/ocp/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=36]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/ocp/CargoAuxSlot.tscn" type="PackedScene" id=37]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=37]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=43]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=44]
 
