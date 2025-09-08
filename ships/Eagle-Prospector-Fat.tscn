@@ -17,7 +17,7 @@ position = Vector2( 54, -68 )
 
 [node name="CargoBaffles" parent="." index="26"]
 visible = false
-slot = "cargo.aux"
+slot = "cargo.modifierDivided"
 
 [node name="HoldModifiers" parent="." index="28" instance=ExtResource( 5 )]
 

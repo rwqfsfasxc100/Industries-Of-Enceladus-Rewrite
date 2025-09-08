@@ -503,6 +503,7 @@ scale = Vector2( 2, 2 )
 z_index = 31
 polygon = PoolVector2Array( -13.5, 76, -37.5, 67.5, -53, 52, -67, 32, -73, 13, -74, -9, -67, -34, -50.5, -55, -29.5, -70.5, 0, -98, 25, -75, 0, -75, 0, -68, -22, -59, -39, -49, -56, -27, -62, -8, -61, 16, -49, 38, -37.5, 49, -19, 62.5 )
 script = ExtResource( 17 )
+slot = "cargo.modifierAmorphic"
 
 [node name="baffleshape" type="Sprite" parent="CargoBaffles"]
 light_mask = 5
@@ -536,6 +537,7 @@ visible = false
 position = Vector2( 0, 192 )
 
 [node name="HoldModifiers" parent="." instance=ExtResource( 31 )]
+type = "cargo.modifierAmorphic"
 
 [node name="CrewModifiers" parent="." instance=ExtResource( 24 )]
 

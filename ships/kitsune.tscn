@@ -12,6 +12,7 @@
 
 [node name="CargoBaffles" parent="Front" index="2"]
 visible = false
+slot = "cargo.modifierAmorphic"
 
 [node name="MineralProcessingUnit" parent="." index="23"]
 light_mask = 0

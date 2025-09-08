@@ -421,7 +421,7 @@ region_rect = Rect2( 0, 348, 2816, 160 )
 systemName = "SYSTEM_REACTOR_TNTRL_FORT"
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 25 )]
-slot = "cargo.aux"
+slot = "cargo.modifierAmorphic"
 
 [node name="CrewModifiers" parent="." instance=ExtResource( 29 )]
 

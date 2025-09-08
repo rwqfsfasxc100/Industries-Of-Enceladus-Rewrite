@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=58 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://lights/distant-proxy.png" type="Texture" id=2]
@@ -46,6 +46,7 @@
 [ext_resource path="res://ships/modules/AuxSlot.tscn" type="PackedScene" id=44]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=45]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_DRY.tscn" type="PackedScene" id=46]
+[ext_resource path="res://ships/modules/CargoBaffles.tscn" type="PackedScene" id=47]
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 1 )
@@ -533,6 +534,7 @@ polygon = PoolVector2Array( -24, -16, -12, -8, -12, -4, -18, 0, -18, 54, -12, 66
 polygon = PoolVector2Array( -18, 54, -12, 66, 12, 66, 18, 54, 18, -6, -18, -6 )
 
 [node name="MineralProcessingUnit_DRY" parent="." instance=ExtResource( 46 )]
+visible = false
 position = Vector2( 0, -96 )
 polygon = PoolVector2Array( -24, -88, -20, -80, -18, -14, -12, -4, 12, -4, 18, -14, 20, -80, 24, -88, 24, 0, -24, 0 )
 
@@ -614,6 +616,22 @@ position = Vector2( 0, -64 )
 
 [node name="CrewModifiers" parent="." instance=ExtResource( 45 )]
 
+[node name="CargoBaffles" parent="." instance=ExtResource( 47 )]
+position = Vector2( 0, -84 )
+slot = "cargo.modifierDivided"
+
+[node name="LeftBaffle" parent="CargoBaffles" index="0"]
+position = Vector2( -20, -92 )
+
+[node name="CollisionPolygon2D" parent="CargoBaffles/LeftBaffle" index="1"]
+polygon = PoolVector2Array( 18, -4, 19, 1, 5, 4, 1, 0 )
+
+[node name="RightBaffle" parent="CargoBaffles" index="1"]
+position = Vector2( 20, -92 )
+
+[node name="CollisionPolygon2D" parent="CargoBaffles/RightBaffle" index="1"]
+polygon = PoolVector2Array( -18, -4, -19, 1, -5, 4, -1, 0 )
+
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
 [connection signal="body_entered" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_entered"]
@@ -630,3 +648,4 @@ position = Vector2( 0, -64 )
 [editable path="MineralProcessingUnit_Furnace"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="reactor"]
+[editable path="CargoBaffles"]

@@ -11,6 +11,9 @@
 [node name="AI" parent="." index="1"]
 visible = false
 
+[node name="CargoBaffle" parent="." index="2"]
+slot = "cargo.modifierDivided"
+
 [node name="HoldModifiers" parent="." index="3" instance=ExtResource( 5 )]
 
 [node name="MineralProcessingUnit_Bulker" parent="Beak/Claw Right" index="1" instance=ExtResource( 2 )]

@@ -433,6 +433,7 @@ anims/appear = SubResource( 11 )
 visible = false
 position = Vector2( 0, -140 )
 script = ExtResource( 20 )
+slot = "cargo.modifierAmorphic"
 
 [node name="LeftBaffle" type="RigidBody2D" parent="CargoBaffles" groups=["slipstream"]]
 position = Vector2( -23, -99 )
@@ -578,6 +579,7 @@ systemName = "SYSTEM_REACTOR_PROSPECTOR"
 [node name="UberConversation" parent="." instance=ExtResource( 5 )]
 
 [node name="HoldModifiers" parent="." instance=ExtResource( 33 )]
+type = "cargo.modifierAmorphic"
 
 [node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 31 )]
 visible = false

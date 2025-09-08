@@ -9,7 +9,7 @@
 
 [node name="CargoBaffles" parent="." index="25"]
 visible = false
-slot = "cargo.aux"
+slot = "cargo.modifierDivided"
 
 [node name="HoldModifiers" parent="." index="27" instance=ExtResource( 4 )]
 

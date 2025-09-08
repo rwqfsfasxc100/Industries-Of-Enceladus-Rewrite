@@ -710,6 +710,7 @@ region_rect = Rect2( 0, 348, 2816, 160 )
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 12 )]
 position = Vector2( 0, -34 )
+slot = "cargo.modifierDivided"
 
 [node name="LeftBaffle" parent="CargoBaffles" index="0"]
 position = Vector2( -24, -99 )

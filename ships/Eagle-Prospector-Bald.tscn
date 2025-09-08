@@ -17,6 +17,7 @@ visible = true
 
 [node name="CargoBaffles" parent="." index="25"]
 visible = false
+slot = "cargo.modifierDivided"
 
 [node name="RacerConversation" parent="." index="26"]
 visible = false

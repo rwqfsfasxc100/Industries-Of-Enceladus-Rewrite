@@ -432,6 +432,7 @@ anims/appear = SubResource( 11 )
 visible = false
 position = Vector2( 0, -140 )
 script = ExtResource( 20 )
+slot = "cargo.modifierDivided"
 
 [node name="LeftBaffle" type="RigidBody2D" parent="CargoBaffles" groups=["slipstream"]]
 position = Vector2( -23, -99 )

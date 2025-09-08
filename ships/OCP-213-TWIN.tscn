@@ -268,6 +268,7 @@ script = ExtResource( 11 )
 [node name="CargoBaffles" type="CollisionPolygon2D" parent="Bay/Bay"]
 polygon = PoolVector2Array( 22, 73, -5, 75, -29, 69, -53, 52, -67, 32, -73, 13, -74, -9, -67, -34, -50, -54, -29, -68, 0, -72, 36, -87, 58, -107, 36, -124, 0, -139, 36, -135, 70, -121, 99, -98, 0, -63, -22, -59, -39, -49, -56, -27, -62, -8, -61, 16, -49, 38, -32, 53, -11, 61, 0, 62 )
 script = ExtResource( 38 )
+slot = "cargo.modifierAmorphic"
 
 [node name="baffleshape" type="Sprite" parent="Bay/Bay/CargoBaffles"]
 light_mask = 5

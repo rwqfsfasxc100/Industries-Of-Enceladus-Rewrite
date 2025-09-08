@@ -171,7 +171,7 @@ const EXODYN_R = {
 	"name_override":"SYSTEM_EXODYN",
 	"manual":"SYSTEM_EXSTORAGE_MANUAL",
 	"price":132500,
-	"test_protocol":"detach",
+	"test_protocol":"detach", 
 	"slot_type":"HARDPOINT",
 	"alignment":"ALIGNMENT_RIGHT",
 	"equipment_type":"EQUIPMENT_CARGO_CONTAINER"
@@ -385,6 +385,7 @@ const CARGO_MPU_FURN = {
 	"manual":"SYSTEM_CARGO_MPU_MANUAL",
 	"price":650000,
 	"test_protocol":"cargo",
+	"capability_lock":true,
 	"slot_type":"CARGO_BAY",
 	"equipment_type":"CARGO_BAY"
 }
@@ -393,6 +394,7 @@ const CARGO_MPU_BULK = {
 	"manual":"SYSTEM_CARGO_MPU_MANUAL",
 	"price":1150000,
 	"test_protocol":"cargo",
+	"capability_lock":true,
 	"slot_type":"CARGO_BAY",
 	"equipment_type":"CARGO_BAY"
 }
@@ -454,8 +456,11 @@ const CARGO_ACCESSORY_BAFFLES = {
 	"manual":"SYSTEM_CARGO_BAFFLES_MANUAL",
 	"price":15000,
 	"test_protocol":"cargo",
-	"slot_type":"CARGO_ACCESSORIES",
-	"equipment_type":"CARGO_ACCESSORIES"
+	"capability_lock":true,
+	"slot_type":"HOLD_MODIFIERS",
+	"equipment_type":"EQUIPMENT_HOLD_MODIFIER"
+	# "slot_type":"CARGO_ACCESSORIES",
+	# "equipment_type":"CARGO_ACCESSORIES"
 }
 const CARGO_ACCESSORY_P15 = {
 	"system":"SYSTEM_CARGO_PREPROC_P15",

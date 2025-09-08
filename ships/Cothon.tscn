@@ -22,7 +22,7 @@ range_height = 2048.0
 [node name="CargoBaffles" parent="." index="17"]
 visible = false
 position = Vector2( 0, -130 )
-slot = "cargo.aux"
+slot = "cargo.modifierDivided"
 
 [node name="CollisionPolygon2D" parent="CargoBaffles/LeftBaffle" index="1"]
 scale = Vector2( -1, 1 )

@@ -1,10 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://ships/ATK225.tscn" type="PackedScene" id=1]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/k225/CargoAuxSlot.tscn" type="PackedScene" id=2]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=5]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=6]
-[ext_resource path="res://ships/modules/CargoBaffles.tscn" type="PackedScene" id=8]
 
 [node name="ATK225" instance=ExtResource( 1 )]
 position = Vector2( 0, 18 )
@@ -33,13 +32,9 @@ position = Vector2( 104, 222 )
 
 [node name="CargoBaffles" parent="." index="24"]
 visible = true
+slot = "cargo.modifierDivided"
 
 [node name="CargoAuxSlot" parent="." index="31" instance=ExtResource( 2 )]
-
-[node name="CargoBaffles" parent="CargoAuxSlot" index="7" instance=ExtResource( 8 )]
-position = Vector2( 0, 100 )
-z_index = 50
-slot = "cargo.aux"
 
 [node name="weapon-left" parent="." index="33"]
 position = Vector2( -92, -462 )

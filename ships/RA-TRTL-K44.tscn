@@ -36,7 +36,7 @@ polygon = PoolVector2Array( -32, -85, 2, -50, 2, -17, -12, -17, -24, -7, -24, 13
 [node name="CargoBaffles" parent="." index="41"]
 visible = false
 position = Vector2( 0, -26 )
-slot = "cargo.aux"
+slot = "cargo.modifierDivided"
 
 [node name="CrewModifiers" parent="." index="42" instance=ExtResource( 2 )]
 

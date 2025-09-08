@@ -1,8 +1,8 @@
-[gd_scene load_steps=56 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
-[ext_resource path="res://shader/ao-spec-difuse-fast.shader" type="Shader" id=3]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/ocp/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=3]
 [ext_resource path="res://ships/Hull.gd" type="Script" id=4]
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=5]
 [ext_resource path="res://ships/modules/Noises.tscn" type="PackedScene" id=6]
@@ -35,19 +35,10 @@
 [ext_resource path="res://ships/modules/Bay.gd" type="Script" id=33]
 [ext_resource path="res://ships/CabinLight.gd" type="Script" id=34]
 [ext_resource path="res://lights/light-mask.png" type="Texture" id=35]
-[ext_resource path="res://ships/modules/MPU-m.png" type="Texture" id=36]
-[ext_resource path="res://ships/modules/MPU-n.png" type="Texture" id=37]
-[ext_resource path="res://ships/modules/MPU-c.png" type="Texture" id=38]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=39]
-[ext_resource path="res://ships/drone/pods-n.png" type="Texture" id=40]
-[ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=41]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=42]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/ocp/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=36]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/ocp/CargoAuxSlot.tscn" type="PackedScene" id=37]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=43]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=44]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=45]
-
-[sub_resource type="CircleShape2D" id=7]
-radius = 132.015
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
@@ -101,19 +92,6 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
-
-[sub_resource type="ShaderMaterial" id=8]
-shader = ExtResource( 3 )
-shader_param/maxval = 5.0
-shader_param/sparkBias = 0.0
-shader_param/scale = Vector2( 2, 0.5 )
-shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
-shader_param/ref = 0.1
-shader_param/roughness = 0.5
-shader_param/reflectiveness = 0.25
-shader_param/shine = 1.0
-shader_param/mipmapBias = 0.0
-shader_param/map = ExtResource( 36 )
 
 [sub_resource type="CapsuleShape2D" id=9]
 radius = 182.0
@@ -196,20 +174,6 @@ energy = 2.0
 range_height = 2048.0
 
 [node name="Noises" parent="." instance=ExtResource( 6 )]
-
-[node name="CargoAuxSlot@CargoAuxPreProc40x20@ProcessingArea@CollisionShape2D2" type="CollisionShape2D" parent="."]
-light_mask = 0
-shape = SubResource( 7 )
-
-[node name="CargoAuxSlot@CargoAuxPreProc20x10@ProcessingArea@CollisionShape2D" type="CollisionShape2D" parent="."]
-light_mask = 0
-position = Vector2( 108, 0 )
-shape = SubResource( 7 )
-
-[node name="CargoAuxSlot@CargoAuxPreProc0x30@ProcessingArea@CollisionShape2D" type="CollisionShape2D" parent="."]
-light_mask = 0
-position = Vector2( 108, 0 )
-shape = SubResource( 7 )
 
 [node name="Hull" type="Sprite" parent="."]
 light_mask = 5
@@ -308,9 +272,10 @@ physics_material_override = ExtResource( 32 )
 script = ExtResource( 13 )
 
 [node name="CargoBaffles" type="CollisionPolygon2D" parent="Bay/Bay"]
+z_index = -30
 polygon = PoolVector2Array( -28, 67, -53, 52, -67, 32, -73, 13, -74, -9, -67, -34, -50, -54, -29, -68, 0, -72, 36, -87, 48, -103, 54, -117, 52, -129, 70, -121, 99, -98, 0, -63, -22, -59, -39, -49, -56, -27, -62, -8, -61, 16, -49, 38 )
 script = ExtResource( 21 )
-slot = "cargo.auxequipment"
+slot = "cargo.modifierAmorphic"
 
 [node name="baffleshape" type="Sprite" parent="Bay/Bay/CargoBaffles"]
 light_mask = 5
@@ -615,49 +580,14 @@ visible = false
 [node name="HoldModifiers" parent="." instance=ExtResource( 43 )]
 type = "cargo.modifierAmorphic"
 
-[node name="CargoAuxSlot" parent="." instance=ExtResource( 42 )]
+[node name="CargoAuxSlot" parent="." instance=ExtResource( 37 )]
 
-[node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 39 )]
+[node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 3 )]
 visible = false
 light_mask = 0
-position = Vector2( 0, -200 )
-rotation = 3.14159
-polygon = PoolVector2Array( 4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -40, 24, -56, 32, -40, 32, -10, 32, 24, 24, 44, 4.54598e-06, 52, -24, 44, -32, 24, -32, -3, -32, -18, -32, -40, -24, -56, -20, -42, -10, -32, 4, -30 )
 
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_Bulker/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -24, 27, 28, 27, 28, 11, -24, 3 )
-
-[node name="MineralProcessingUnit_Furnace" parent="." instance=ExtResource( 45 )]
-position = Vector2( 0, -192 )
-rotation = 1.5708
-polygon = PoolVector2Array( 32.0001, 31.9999, -31.9999, 32.0001, -51.9999, 24.0002, -60, 0.000217199, -52.0001, -23.9998, -32.0001, -31.9999, 31.9999, -32.0001, 55.9999, -24.0002, 63.9998, -56.0002, 67.9998, -66.0002, 77.9998, -66.0003, 120, -34.0004, 116, -18.0004, 110, -20.0004, 110, -28.0004, 77.9998, -52.0003, 69.9998, -50.0003, 61.9999, -18.0002, 47.9999, -18.0002, 27.9999, -24.0001, -16.0001, -23.9999, -32, -11.9999, -32, 12.0001, -15.9999, 24.0001, 28.0001, 23.9999, 48.0001, 17.9998, 62.0001, 17.9998, 70.0002, 49.9997, 78.0002, 51.9997, 110, 27.9996, 110, 19.9996, 116, 17.9996, 120, 33.9996, 78.0002, 65.9997, 68.0002, 65.9998, 64.0002, 55.9998, 56.0001, 23.9998 )
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_Furnace/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( 48.0001, 17.9998, 28.0001, 23.9999, -31.9999, 24.0001, -32.0001, -23.9999, 27.9999, -24.0001, 47.9999, -18.0002, 61.9999, -18.0002, 69.9998, -50.0003, 77.9998, -52.0003, 112, -28.0004, 112, 27.9996, 78.0002, 51.9997, 70.0002, 49.9997, 62.0001, 17.9998 )
-
-[node name="gfx" type="Node2D" parent="MineralProcessingUnit_Furnace"]
-position = Vector2( -19, 1.52588e-05 )
-rotation = 1.5708
-z_index = -21
-
-[node name="Sprite2" type="Sprite" parent="MineralProcessingUnit_Furnace/gfx"]
-light_mask = 5
-material = SubResource( 8 )
-position = Vector2( -39.6688, -100.935 )
-rotation = -2.35619
-scale = Vector2( 1.33752, 2.03293 )
-texture = ExtResource( 38 )
-normal_map = ExtResource( 37 )
-region_rect = Rect2( 0, 308, 1408, 43 )
-
-[node name="body" type="Sprite" parent="MineralProcessingUnit_Furnace/gfx"]
-position = Vector2( 0, -96 )
-rotation = 3.14159
-scale = Vector2( 0.55, 0.75 )
-texture = ExtResource( 41 )
-normal_map = ExtResource( 40 )
-region_enabled = true
-region_rect = Rect2( 1, 99, 124, 117 )
+[node name="MineralProcessingUnit_Furnace" parent="." instance=ExtResource( 36 )]
+visible = false
 
 [node name="MineralProcessingUnit" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit.tscn"]
 visible = false
@@ -700,6 +630,7 @@ light_mask = 0
 polygon = PoolVector2Array( -18, 4, 18, 4, 18, -30, -18, -30 )
 
 [node name="MineralProcessingUnit_FAB" parent="." instance=ExtResource( 18 )]
+visible = false
 position = Vector2( 0, -216 )
 rotation = 3.14159
 polygon = PoolVector2Array( -24, -80, -8.00001, -64, -2.00001, -56, -4.19629e-06, -48, -1.57361e-06, -18, -14, -18, -24, -8, -24, 12, -12, 24, 12, 24, 24, 12, 24, -72, 32, -56, 32, 8, 24, 28, 3.14722e-06, 36, -24, 28, -32, 8, -32, -12, -32, -40, -32, -56 )
@@ -787,9 +718,6 @@ hullCustomPaintFile = "user://custom-ocp-209.png"
 [editable path="DockAftPort"]
 [editable path="DockAftStbd"]
 [editable path="HoldModifiers"]
-[editable path="CargoAuxSlot"]
-[editable path="MineralProcessingUnit_Bulker"]
-[editable path="MineralProcessingUnit_Furnace"]
 [editable path="MineralProcessingUnit"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]

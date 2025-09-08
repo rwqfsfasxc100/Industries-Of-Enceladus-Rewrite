@@ -3,3 +3,6 @@
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=1]
 
 [node name="MineralProcessingUnit_Bulker" instance=ExtResource( 1 )]
+position = Vector2( 0, -200 )
+rotation = 3.14159
+polygon = PoolVector2Array( 2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 24, -64, 32, -41, 32, 0, 32, 24, 24, 44, 4.52995e-06, 52, -24, 44, -32, 24, -32, 0, -32, -24, -36, -47, -32, -56, -24, -40, -14, -34 )

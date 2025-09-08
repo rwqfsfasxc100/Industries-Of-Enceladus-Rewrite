@@ -739,7 +739,7 @@ position = Vector2( 0, -136 )
 visible = false
 position = Vector2( 0, 164 )
 z_index = 100
-slot = "cargo.aux"
+slot = "cargo.modifierDivided"
 
 [node name="LeftBaffle" parent="CargoBaffles" index="0"]
 position = Vector2( -100, -70 )

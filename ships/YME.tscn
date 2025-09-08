@@ -216,6 +216,7 @@ polygon = PoolVector2Array( 0, -330, 200, -150, 600, 700, 0, 1000, -600, 700, -2
 position = Vector2( 0, -115 )
 polygon = PoolVector2Array( 0, -129, 40, -95, 33, -85, 0, -112, -33, -85, -40, -95 )
 script = ExtResource( 45 )
+slot = "cargo.modifierDivided"
 
 [node name="Sprite" type="Sprite" parent="CargoBaffle"]
 position = Vector2( 7.62939e-06, -118 )

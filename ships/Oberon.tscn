@@ -329,6 +329,7 @@ visible = false
 [node name="CargoBaffles" parent="." instance=ExtResource( 12 )]
 visible = false
 position = Vector2( 0, -91 )
+slot = "cargo.modifierAmorphic"
 
 [node name="LeftJoint" parent="CargoBaffles/LeftBaffle" index="0"]
 position = Vector2( 6, 0 )

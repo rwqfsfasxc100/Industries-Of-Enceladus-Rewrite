@@ -26,6 +26,9 @@ position = Vector2( -104, 222 )
 [node name="thruster-br" parent="." index="15"]
 position = Vector2( 104, 222 )
 
+[node name="CargoBaffles" parent="." index="30"]
+slot = "cargo.modifierDivided"
+
 [node name="MineralProcessingUnit_Bulker" parent="." index="33" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/k225/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 

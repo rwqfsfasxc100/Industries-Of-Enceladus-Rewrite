@@ -19,6 +19,7 @@ visible = false
 
 [node name="CargoBaffles" parent="." index="37"]
 position = Vector2( 0, 43 )
+slot = "cargo.modifierDivided"
 
 [node name="CrewModifiers" parent="." index="38" instance=ExtResource( 2 )]
 

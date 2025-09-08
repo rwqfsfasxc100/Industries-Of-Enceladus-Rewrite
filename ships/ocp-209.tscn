@@ -9,6 +9,9 @@
 
 [node name="OCP-209" instance=ExtResource( 1 )]
 
+[node name="CargoBaffles" parent="Bay/Bay" index="0"]
+slot = "cargo.modifierAmorphic"
+
 [node name="MineralProcessingUnit_DRY" parent="." index="26"]
 visible = false
 
