@@ -227,13 +227,18 @@ func adjustShape(data):
 	if "rotation" in data:
 		var d = data["rotation"]
 		self.rotation = deg2rad(d)
+	if "position" in data:
+		var a = data["position"][0]
+		var b = data["position"][1]
+		self.position = Vector2(a,b)
+#		breakpoint
 	if "shape" in data:
 		var shape = convert_arr_to_vec2arr(data["shape"])
 		self.polygon = shape
-	if "ZoneTop" in data:
+	if top and "ZoneTop" in data:
 		var shape = convert_arr_to_vec2arr(data["ZoneTop"])
 		top.polygon = shape
-	if "ZoneBottom" in data:
+	if bottom and "ZoneBottom" in data:
 		var shape = convert_arr_to_vec2arr(data["ZoneBottom"])
 		bottom.polygon = shape
 
@@ -247,15 +252,26 @@ func modify_preproc_shape():
 	else:
 		var data = shapes["_DEFAULT"]
 		adjustShape(data)
-	
+	var current_pos = self.position
 	if base_ship_name in shipMod:
 		var sdata = shipMod[base_ship_name]
 		if "position" in sdata:
 			var data = sdata["position"]
-			self.position = Vector2(data[0],data[1])
+			var a = data[0]
+			var b = data[1]
+			self.position = current_pos + Vector2(a,b)
 		if "rotation" in sdata:
 			var data = sdata["rotation"]
 			self.rotation = deg2rad(data)
+		if "mirrorCollider" in sdata:
+			self.mirrorCollider = sdata["mirrorCollider"]
+		if "mirrorVertical" in sdata:
+			self.mirrorVertical = sdata["mirrorVertical"]
+		if "mirrorCentreOffset" in sdata:
+			var d = sdata["mirrorCentreOffset"]
+			var a = d[0]
+			var b = d[1]
+			self.mirrorCentreOffset = Vector2(a,b)
 		if systemName in sdata:
 			var data = sdata[systemName]
 			adjustShape(data)
@@ -263,7 +279,7 @@ func modify_preproc_shape():
 		var sdata = shipMod[ship_name]
 		if "position" in sdata:
 			var data = sdata["position"]
-			self.position = Vector2(data[0],data[1])
+			self.position = current_pos + Vector2(data[0],data[1])
 		if "rotation" in sdata:
 			var data = sdata["rotation"]
 			self.rotation = deg2rad(data)

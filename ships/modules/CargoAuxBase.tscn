@@ -6,3 +6,6 @@
 z_index = 50
 polygon = PoolVector2Array( 0, 8, 0, -8, 8, 0 )
 script = ExtResource( 1 )
+
+[node name="Mirror" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( 0, 8, 0, -8, -8, 0 )

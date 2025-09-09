@@ -17,6 +17,7 @@ export (float, 0, 25000, 500) var droneStorage = 0.0
 export  var registerExternal = false
 
 export var mirrorCollider = false
+export var mirrorVertical = false
 export (Vector2) var mirrorCentreOffset = Vector2(0,0)
 
 var preproc_default_shapes = preload("res://IndustriesOfEnceladusRevamp/ships/modules/data/preproc_default_shapes.gd")
@@ -80,30 +81,49 @@ func _physics_process(delta):
 						var selfPos = self.get_position()
 						var selfScale = self.scale
 						# instantiate a new collider
-						var copy = CollisionPolygon2D.new()
+						var copy = $Mirror
 						
 						# copy over properties
 						copy.visible = true
 						copy.z_index = self.z_index
-						copy.set_polygon(self.polygon)
+						var poly = self.polygon
+						var newPoly = PoolVector2Array([])
+						for vec in poly:
+							if mirrorVertical:
+								var newVec = Vector2(vec[0],-vec[1])
+								newPoly.append(newVec)
+							else:
+								var newVec = Vector2(-vec[0],vec[1])
+								newPoly.append(newVec)
+#						breakpoint
+						copy.set_polygon(newPoly)
 						copy.set_build_mode(self.build_mode)
 						copy.set_disabled(false)
 						copy.set_one_way_collision(self.one_way_collision)
 						copy.set_one_way_collision_margin(self.one_way_collision_margin)
 						
 						# flip the x coordinate and adjust for the centre offset
-						copy.set_position(Vector2(-(selfPos[0]), selfPos[1])
-							+ mirrorCentreOffset)
+						var modifyP = Vector2(-(selfPos[0]), selfPos[1])
+						if mirrorVertical:
+							modifyP[1] = modifyP[1]*2
+						else:
+							modifyP[0] = modifyP[0]*2
+						var newpos = modifyP + mirrorCentreOffset
+						copy.set_position(newpos)
 						# set the scale to the equivalent of self
-						copy.set_scale(Vector2(-(selfScale[0]), selfScale[1]))
 						
 						# clear the script, just to be sure
 						copy.set_script(null)
 						# set a property for the cargo scanner? i'm not sure
 			#			copy.equipment = true
 						# add the collider to the ship
-						ship.add_child(copy)
-						
+#						ship.add_child(copy)
+						copy.visible = true
+						copy.disabled = false
+#						breakpoint
+					else:
+						$Mirror.visible = false
+						$Mirror.disabled = true
 						#print("Made copy %s with scale %s at %s, parent is %s" % [copy.to_string(), String(copy.scale), String(copy.position), copy.get_parent().to_string()])
 
 func extend(ship):
@@ -152,3 +172,4 @@ func convert_arr_to_vec2arr(array:Array) -> PoolVector2Array:
 		index += 2
 #	breakpoint
 	return converted
+
