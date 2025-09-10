@@ -4,7 +4,7 @@
 [ext_resource path="res://ships/excavator_close.wav" type="AudioStream" id=2]
 [ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxFab.gd" type="Script" id=3]
 
-[node name="CargoAuxBase" instance=ExtResource( 1 )]
+[node name="CargoAuxFabricator" instance=ExtResource( 1 )]
 script = ExtResource( 3 )
 dronePrintTime = 0.0
 bulletPrintTime = 0.0
