@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://ships/excavator_close.wav" type="AudioStream" id=2]
+[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxFab.gd" type="Script" id=3]
+
+[node name="CargoAuxBase" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+dronePrintTime = 0.0
+bulletPrintTime = 0.0
+powerDrawPrint = 70000.0
+enabled = true
+modify_kgps_add = 0
+modify_kgps_percent_multi = 100
+
+[node name="PrintAudio" type="AudioStreamPlayer" parent="." index="1"]
+stream = ExtResource( 2 )
+volume_db = -5.0
+pitch_scale = 1.2
+bus = "ShipBowels"
