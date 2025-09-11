@@ -226,7 +226,7 @@ func _on_ProcessingArea_body_exited(body):
 func adjustShape(data):
 	if "rotation" in data:
 		var d = data["rotation"]
-		self.rotation = deg2rad(d)
+		self.set_rot = d
 	if "position" in data:
 		var a = data["position"][0]
 		var b = data["position"][1]
@@ -262,7 +262,7 @@ func modify_preproc_shape():
 			self.position = current_pos + Vector2(a,b)
 		if "rotation" in sdata:
 			var data = sdata["rotation"]
-			self.rotation = deg2rad(data)
+			self.set_rot = data
 		if "mirrorCollider" in sdata:
 			self.mirrorCollider = sdata["mirrorCollider"]
 		if "mirrorVertical" in sdata:
@@ -282,7 +282,7 @@ func modify_preproc_shape():
 			self.position = current_pos + Vector2(data[0],data[1])
 		if "rotation" in sdata:
 			var data = sdata["rotation"]
-			self.rotation = deg2rad(data)
+			self.set_rot = data
 		if systemName in sdata:
 			var data = sdata[systemName]
 			adjustShape(data)
