@@ -56,9 +56,11 @@ linear_damp = 0.0
 angular_damp = 0.0
 
 [node name="ZoneTop" type="CollisionPolygon2D" parent="ProcessingArea" index="0"]
+visible = false
 polygon = PoolVector2Array( 8, 0, 0, -8, -8, 0 )
 
 [node name="ZoneBottom" type="CollisionPolygon2D" parent="ProcessingArea" index="1"]
+visible = false
 polygon = PoolVector2Array( 8, 0, 0, 8, -8, 0 )
 
 [node name="VentRemass" type="Particles2D" parent="." index="1"]
@@ -97,6 +99,7 @@ bus = "SFX"
 script = ExtResource( 7 )
 
 [node name="Mirror" parent="." index="5"]
+visible = false
 disabled = true
 
 [connection signal="body_entered" from="ProcessingArea" to="." method="_on_ProcessingArea_body_entered"]

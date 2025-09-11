@@ -34,15 +34,15 @@ const SYSTEM_CARGO_AUX_STORPROC_8K = {
 	"position":[-32,0]
 }
 const SYSTEM_CARGO_PREPROC_M35 = {
-	"shape":[0, 8, 0, -8, 9, -3, 9, 5],
+	"shape":[0, 24, 0, -24, 27, -9, 27, 15],
 	"position":[-32,0]
 }
 const SYSTEM_CARGO_PREPROC_M85 = {
-	"shape":[0, 19, 0, -8, 5, 1, 6, 13],
+	"shape":[0, 57, 0, -24, 15, 3, 18, 39],
 	"position":[-32,0]
 }
 const SYSTEM_CARGO_PREPROC_P15 = {
-	"shape":[0, 8, 0, -8, 4.00923, -5.13626, 3, 0, 4, 4],
+	"shape":[0, 24, 0, -24, 12, -15, 3, 0, 12, 12],
 	"position":[-32,0]
 }
 const SYSTEM_CARGO_AUX_BIGFAB = {

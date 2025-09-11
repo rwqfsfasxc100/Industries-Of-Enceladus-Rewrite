@@ -13,7 +13,6 @@ mirrorCollider = true
 powerDrawPerKg = 250
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
-visible = false
 disabled = true
 
 [node name="ZoneBottom" parent="ProcessingArea" index="1"]

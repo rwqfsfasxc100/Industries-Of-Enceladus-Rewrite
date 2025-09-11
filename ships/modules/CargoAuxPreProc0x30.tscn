@@ -23,6 +23,3 @@ polygon = PoolVector2Array( 26, 0, 0, 8, -26, 0 )
 
 [node name="VentRemass" parent="." index="1"]
 position = Vector2( 32, 0 )
-
-[node name="Mirror" parent="." index="6"]
-position = Vector2( 0, 0 )

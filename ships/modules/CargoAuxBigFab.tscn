@@ -14,3 +14,6 @@ droneStorage = 5000.0
 dronePrintTime = 0.005
 bulletPrintTime = 1.8
 powerDrawPrint = 210000.0
+
+[node name="Mirror" parent="." index="0"]
+visible = false

@@ -111,7 +111,6 @@ func _physics_process(delta):
 				
 				
 				
-				
 #				if "MineralProcessingUnit" in nname:
 #					processors.append(node)
 #			var num = processors.size()
@@ -241,6 +240,22 @@ func adjustShape(data):
 	if bottom and "ZoneBottom" in data:
 		var shape = convert_arr_to_vec2arr(data["ZoneBottom"])
 		bottom.polygon = shape
+	if "scale" in data:
+		if data["scale"].size() >= 2:
+			var x = data["scale"][0]
+			var y = data["scale"][1]
+			var poly = PoolVector2Array([])
+			for p in self.polygon:
+				var v = Vector2(p[0]*x,p[1]*y)
+				poly.append(v)
+			self.polygon = poly
+		else:
+			var x = data["scale"][0]
+			var poly = PoolVector2Array([])
+			for p in self.polygon:
+				var v = Vector2(p[0]*x,p[1]*x)
+				poly.append(v)
+			self.polygon = poly
 
 func modify_preproc_shape():
 	var shapes = preproc_default_shapes.get_script_constant_map()
