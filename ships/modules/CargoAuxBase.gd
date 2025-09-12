@@ -31,6 +31,11 @@ var duped = false
 var ship_name = ""
 var base_ship_name = ""
 
+onready var area = get_node_or_null("ProcessingArea")
+onready var top = get_node_or_null("ProcessingArea/ZoneTop")
+onready var bottom = get_node_or_null("ProcessingArea/ZoneBottom")
+
+
 var hs_modified = false
 
 func _physics_process(delta):
@@ -76,6 +81,7 @@ func _physics_process(delta):
 				
 				extend(ship)
 				
+				modify_shape()
 				self.rotation = -deg2rad(set_rot)
 				var current_pos = self.position
 				var new_position = DataFormat.__rotate_point(current_pos,set_rot)
@@ -197,3 +203,90 @@ func convert_arr_to_vec2arr(array:Array) -> PoolVector2Array:
 #	breakpoint
 	return converted
 
+
+
+
+
+func adjust(data):
+	if "rotation" in data:
+		var d = data["rotation"]
+		self.set_rot = d
+	if "position" in data:
+		var a = data["position"][0]
+		var b = data["position"][1]
+		self.position = Vector2(a,b)
+#		breakpoint
+	if "shape" in data:
+		var shape = convert_arr_to_vec2arr(data["shape"])
+		self.polygon = shape
+	if top and "ZoneTop" in data:
+		var shape = convert_arr_to_vec2arr(data["ZoneTop"])
+		top.polygon = shape
+	if bottom and "ZoneBottom" in data:
+		var shape = convert_arr_to_vec2arr(data["ZoneBottom"])
+		bottom.polygon = shape
+	if "scale" in data:
+		if data["scale"].size() >= 2:
+			var x = data["scale"][0]
+			var y = data["scale"][1]
+			var poly = PoolVector2Array([])
+			for p in self.polygon:
+				var v = Vector2(p[0]*x,p[1]*y)
+				poly.append(v)
+			self.polygon = poly
+		else:
+			var x = data["scale"][0]
+			var poly = PoolVector2Array([])
+			for p in self.polygon:
+				var v = Vector2(p[0]*x,p[1]*x)
+				poly.append(v)
+			self.polygon = poly
+	
+
+func modify_shape():
+	var shapes = preproc_default_shapes.get_script_constant_map()
+	var shipMod = preproc_ship_shape_mods.get_script_constant_map()
+	
+	if systemName in shapes:
+		var data = shapes[systemName]
+		adjust(data)
+	else:
+		var data = shapes["_DEFAULT"]
+		adjust(data)
+	var current_pos = self.position
+	if base_ship_name in shipMod:
+		mod_ship(shipMod,base_ship_name,current_pos)
+	if ship_name in shipMod:
+		mod_ship(shipMod,ship_name,current_pos)
+	
+func mod_ship(shipMod,base_ship_name,current_pos):
+	var sdata = shipMod[base_ship_name]
+	if "position" in sdata:
+		var data = sdata["position"]
+		var a = data[0]
+		var b = data[1]
+		self.position = current_pos + Vector2(a,b)
+	if "rotation" in sdata:
+		var data = sdata["rotation"]
+		self.set_rot = data
+	if "mirrorCollider" in sdata:
+		self.mirrorCollider = sdata["mirrorCollider"]
+	if "mirrorVertical" in sdata:
+		self.mirrorVertical = sdata["mirrorVertical"]
+	if "mirrorCentreOffset" in sdata:
+		var d = sdata["mirrorCentreOffset"]
+		var a = d[0]
+		var b = d[1]
+		self.mirrorCentreOffset = Vector2(a,b)
+	if "scale" in sdata:
+		var nscale = sdata["scale"]
+		var new_scale = Vector2(1,1)
+		if nscale.size() >=2:
+			new_scale = Vector2(nscale[0],nscale[1])
+		elif nscale.size() == 1:
+			new_scale = Vector2(nscale[0],nscale[0])
+		self.scale = new_scale
+		
+	if systemName in sdata:
+		var data = sdata[systemName]
+		adjust(data)
