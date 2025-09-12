@@ -12,3 +12,4 @@ func extend(ship):
 	
 	ship.set("crew", crewCount + crewCountChange)
 	ship.set("crewMoraleBonus", crewMorale + moraleChange)
+	

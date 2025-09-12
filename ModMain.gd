@@ -5,10 +5,10 @@ extends Node
 const MOD_PRIORITY = -99
 # Name of the mod, used for writing to the logs
 const MOD_NAME = "IoE Compatability Rewrite"
-const MOD_VERSION = "2.4.6"
+const MOD_VERSION = "2.4.7"
 const MOD_VERSION_MAJOR = 2
 const MOD_VERSION_MINOR = 4
-const MOD_VERSION_BUGFIX = 6
+const MOD_VERSION_BUGFIX = 7
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"

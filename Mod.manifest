@@ -2,10 +2,10 @@
 
 id="hev.IndustriesOfEnceladus"
 name="Industries of Enceladus Compat Port"
-version="2.4.6"
+version="2.4.7"
 version_major=2
 version_minor=4
-version_bugfix=6
+version_bugfix=7
 version_metadata=""
 description="IOE_MOD_DESCRIPTION"
 group="gameplay"
