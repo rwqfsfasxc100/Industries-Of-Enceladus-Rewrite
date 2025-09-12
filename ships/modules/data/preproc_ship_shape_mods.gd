@@ -1,10 +1,46 @@
 extends Node
 
 const SHIP_COTHON = {
-	"position":[0, -218]
+	"position":[-11, -188]
 }
 const SHIP_AT225 = {
-	"position":[0, -244]
+	"position":[0, -210]
+}
+const SHIP_AT225B = {
+	"position":[-18, -201],
+	"SYSTEM_CARGO_AUX_PREPROC_0x30":{
+		"scale":[1.85]
+	},
+	"SYSTEM_CARGO_AUX_PREPROC_20x10":{
+		"scale":[1.45]
+	},
+	"SYSTEM_CARGO_AUX_PREPROC_40x20":{
+		"scale":[1.5],
+		"shape":[0,-32,10,-28,8,-12,2,-8,8,-6,10,0,8,6,2,8,8,12,10,28,8,32,-4,32,-23.3,19.3,-4,19.3,-4,-23.3,-14,-42.6]
+	},
+	"SYSTEM_CARGO_AUX_STORPROC_8K":{
+		"scale":[1.4],
+		"shape":[0,32,-12.1,20.7,0,8,0,-22.1,-5.71,-32.1,10,-32,20,-28,20,4,10,8,10,20]
+	},
+	"SYSTEM_CARGO_AUX_STORAGE_4K":{
+		"scale":[1.2]
+	},
+	"SYSTEM_CARGO_AUX_FAB":{
+		"shape":[-4,-48,28,-12,32,-4,32,30,18,30,10,40,10,52,0,64,-51,29,0,29]
+	},
+	"SYSTEM_CARGO_AUX_BIGFAB":{
+		"shape":[-4,-35,16,-34,32,-28,32,38,24,40,18,40,16,46,10,48,10,60,0,72,-61,70,-78,28,-1,26]
+	},
+	"SYSTEM_CARGO_PREPROC_M35":{
+		"scale":[2.5]
+	},
+	"SYSTEM_CARGO_PREPROC_M85":{
+		"scale":[3],
+		"shape":[0,19,-26,9.66,0,9.66,0,-10.3,5,1,6,13]
+	},
+	"SYSTEM_CARGO_PREPROC_P15":{
+		"scale":[3]
+	}
 }
 const SHIP_OCP209 = {
 	"position":[-108, 0],
