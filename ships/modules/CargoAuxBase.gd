@@ -90,17 +90,18 @@ func _physics_process(delta):
 				if mirrorCollider:
 					var colliderName = systemName + "_COLLIDER_MIRROR"
 					var node = ship.get_node_or_null(colliderName)
+					var selfScale = self.scale
 					if node:
 						node.set_polygon(make_poly())
 						node.set_position(modify_position())
 						node.rotation = deg2rad(set_rot)
-						
+						node.scale = selfScale
 					else:
 					
 					
 						# get the position and scale of the existing collider
 						
-						var selfScale = self.scale
+						
 						# instantiate a new collider
 						var copy = CollisionPolygon2D.new()
 						copy.name = colliderName
@@ -116,7 +117,7 @@ func _physics_process(delta):
 						copy.set_one_way_collision_margin(self.one_way_collision_margin)
 						
 						# flip the x coordinate and adjust for the centre offset
-						
+						copy.scale = selfScale
 						copy.set_position(modify_position())
 						# set the scale to the equivalent of self
 						copy.rotation = deg2rad(set_rot)

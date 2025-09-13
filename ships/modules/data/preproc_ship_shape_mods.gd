@@ -157,3 +157,7 @@ const SHIP_PROSPECTOR_PIGEON = {
 const SHIP_PROSPECTOR_VP = {
 	"position":[5,-130]
 }
+const SHIP_TSUKUYOMI_IOT = {
+	"position":[-85,-1125],
+	"scale":[2]
+}
