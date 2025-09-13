@@ -1,16 +1,34 @@
-[package]
+[mod_information]
 
-id="hev.IndustriesOfEnceladus"
 name="Industries of Enceladus Compat Port"
-version="2.4.7"
+id="hev.IndustriesOfEnceladus"
+description="IOE_MOD_DESCRIPTION"
+author="__hev"
+credits=["SpaceDOTexe - original mod with a majority of the mod's functionality and content","Za'krin - mod main design and general help around the mod"]
+
+[version]
+
 version_major=2
 version_minor=4
-version_bugfix=7
+version_bugfix=8
 version_metadata=""
-description="IOE_MOD_DESCRIPTION"
-group="gameplay"
-github_homepage="https://github.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite"
-github_releases="https://github.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite/releases"
-discord_thread="https://discord.com/channels/426287934870781952/1324503298295988327"
-donations_page="https://ko-fi.com/pearshapes"
-wiki_page="https://delta-v.kodera.pl/index.php/Mod:Industries_of_Enceladus"
+
+[tags]
+
+allow_achievements=false
+overhaul=true
+quality_of_life=true
+language=["en","uk_UA"]
+
+[links]
+
+github="https://github.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite"
+discord="https://discord.com/channels/426287934870781952/1324503298295988327"
+nexus="https://www.nexusmods.com/dvringsofsaturn/mods/12"
+donations="https://ko-fi.com/00hev"
+wiki="https://delta-v.kodera.pl/index.php/Mod:Industries_of_Enceladus"
+bug_reports="https://forms.gle/vUoarawnYjy3hXJi9"
+
+[manifest_definitions]
+
+manifest_version=2.1
