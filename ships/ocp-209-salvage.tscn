@@ -179,7 +179,7 @@ aiCatchDistance = 750
 aiKeepRotationWhileExcavating = false
 aiExcavationTimeLimit = 15
 dialogTree = NodePath("UberConversation")
-cargoHoldArea = Rect2( -145, -100, 290, 350 )
+cargoHoldArea = Rect2( -150, -150, 300, 380 )
 cargoHoldOffset = Vector2( 0, 105 )
 
 [node name="Noises" parent="." instance=ExtResource( 6 )]

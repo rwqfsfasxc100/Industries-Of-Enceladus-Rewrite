@@ -150,7 +150,7 @@ autopilotMaxRotation = 3.142
 autopilotRotationPriority = 1.0
 rotationCabinOffsetPx = 10.0
 aiCatchDistance = 280
-cargoHoldArea = Rect2( -47, -275, 94, 303 )
+cargoHoldArea = Rect2( -35, -310, 70, 150 )
 cargoHoldOffset = Vector2( 0, 32 )
 
 [node name="Front Bumper" parent="." instance=ExtResource( 25 )]
