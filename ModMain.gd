@@ -7,7 +7,7 @@ const MOD_PRIORITY = -99
 const MOD_NAME = "IoE Compatability Rewrite"
 const MOD_VERSION_MAJOR = 2
 const MOD_VERSION_MINOR = 4
-const MOD_VERSION_BUGFIX = 8
+const MOD_VERSION_BUGFIX = 9
 const MOD_VERSION_METADATA = ""
 # Path of the mod folder, automatically generated on runtime
 var modPath:String = get_script().resource_path.get_base_dir() + "/"
@@ -204,7 +204,9 @@ func installScriptExtension(path:String , oldPath:String = "none"):
 
 	childScript.take_over_path(parentPath)
 
-func l(msg:String, title:String = MOD_NAME, version:String = MOD_VERSION):
+func l(msg:String, title:String = MOD_NAME, version:String = str(MOD_VERSION_MAJOR) + "." + str(MOD_VERSION_MINOR) + "." + str(MOD_VERSION_BUGFIX)):
+	if not MOD_VERSION_METADATA == "":
+		version = version + "-" + MOD_VERSION_METADATA
 	Debug.l("[%s V%s]: %s" % [title, version, msg])
 
 func shipReplacements():
