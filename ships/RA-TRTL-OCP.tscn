@@ -205,6 +205,7 @@ autopilotRotationAssumption = 4.0
 rotationCabinOffsetPx = 170.0
 colliderPaths = [ "Collider", "LeftForeCollider", "RightForeCollider", "LeftShell", "RightShell" ]
 spriteHullPaths = PoolStringArray( "Hull", "HullFront", "OCPCircleLeft", "OCPCircleRight", "OCPSupportAft", "OCPSupportFore", "HullForeUnder", "HullAftUnder" )
+dialogTree = NodePath("UberConversation")
 cargoHoldArea = Rect2( -150, -250, 300, 400 )
 cargoHoldOffset = Vector2( 0, 105 )
 

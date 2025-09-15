@@ -163,6 +163,7 @@ aiMaxExcavationVelocity = 100
 aiCatchDistance = 750
 aiKeepRotationWhileExcavating = false
 aiExcavationTimeLimit = 15
+dialogTree = NodePath("UberConversation")
 cargoHoldArea = Rect2( -145, -275, 290, 450 )
 cargoHoldOffset = Vector2( 0, 105 )
 

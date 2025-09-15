@@ -135,6 +135,7 @@ evaOffset = Vector2( 30, -130 )
 autopilotRotationAssumption = 4.0
 rotationCabinOffsetPx = 144.0
 spriteHullPaths = PoolStringArray( "Hull", "HullFront" )
+dialogTree = NodePath("UberConversation")
 cargoHoldArea = Rect2( -36, -180, 72, 232 )
 cargoHoldOffset = Vector2( 0, 105 )
 
