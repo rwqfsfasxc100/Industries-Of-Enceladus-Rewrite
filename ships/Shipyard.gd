@@ -225,6 +225,10 @@ func _ready():
 			"capacity":80000.0, 
 			"initial":80000.0, 
 		}, 
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_CHEVAL", 
+			"rcs":"SYSTEM_THRUSTER_MADTX4"
+		}, 
 		"reactor":{	"power": 16.0},
 		"turbine":{"power":200.0}, 
 		"weaponSlot":{
