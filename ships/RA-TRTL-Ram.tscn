@@ -428,6 +428,11 @@ slot = "cargo.modifierAmorphic"
 
 [node name="UberConversation" parent="." instance=ExtResource( 26 )]
 
+[connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
+[connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
+[connection signal="body_entered" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_entered"]
+[connection signal="body_exited" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_exited"]
+
 [editable path="Grinder"]
 [editable path="MineralProcessingUnit_FAB"]
 [editable path="AI"]
