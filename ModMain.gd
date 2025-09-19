@@ -54,7 +54,7 @@ func _init(modLoader = ModLoader):
 	
 	
 	
-	replaceScene("ships/modules/AuxSlot.tscn")
+#	replaceScene("ships/modules/AuxSlot.tscn")
 	replaceScene("ships/modules/ThrusterSlot.tscn")
 	replaceScene("ships/modules/TorchSlot.tscn")
 	
@@ -75,13 +75,14 @@ func _init(modLoader = ModLoader):
 	
 	
 # install the Shipyard.gd script extension, which loads replacements + new ships
-	shipReplacements()
+	
 	replaceScene("enceladus/Upgrades.tscn")
 	# install CurrentGame.gd which loads new ships into the game
 	if addShips:
 		l("Injecting new ships")
 		installScriptExtension("CurrentGame.gd")
 	installScriptExtension("ships/Shipyard.gd")
+	shipReplacements()
 # Load custom translations
 	updateTL("en") 
 	updateTL("uk_UA") 

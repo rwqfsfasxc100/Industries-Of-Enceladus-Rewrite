@@ -38,34 +38,37 @@ onready var bottom = get_node_or_null("ProcessingArea/ZoneBottom")
 
 var hs_modified = false
 
+var isready = false
+
+func _ready():
+	ship = getShip()
+	self.name = systemName
+	ship.registerCapability(slot, systemName)
+	if ship.getConfig(slot) != systemName:
+		Tool.remove(self)
+	else:
+		visible = true
+		if registerExternal:
+			ship.externalSystems.append(self)
+	isready = true
+	
+
 func _physics_process(delta):
-	var ship = getShip()
-	if ship.isPlayerControlled():
-		if !ship.cutscene:
-			ship_name = ship.shipName
-			base_ship_name = ship.baseShipName
-			var cfg = ship.shipConfig
-			var baseAmmo = cfg["ammo"]["capacity"]
-			var baseDrones = cfg["drones"]["capacity"]
-			if ship == null:
-				breakpoint
-			else:
-				hs_modified = true
-			if ship.getConfig(slot) != systemName:
-				self.queue_free()
-			else: if not duped:
-				var dupe = self.duplicate()
-				dupe.duped = true
-				dupe.set_position(self.position + self.get_parent().position)
-				dupe.set_rotation(self.rotation)
-				ship.call_deferred("add_child", dupe)
-				self.queue_free()
-				return true
-			else :
+	if isready:
+		var ship = getShip()
+		if ship.isPlayerControlled():
+			if !ship.cutscene:
+				ship_name = ship.shipName
+				base_ship_name = ship.baseShipName
+				var cfg = ship.shipConfig
+				var baseAmmo = cfg["ammo"]["capacity"]
+				var baseDrones = cfg["drones"]["capacity"]
+				if ship == null:
+					breakpoint
+				else:
+					hs_modified = true
 				visible = true
-				if registerExternal:
-					ship.externalSystems.append(self)
-					
+				
 				match ship.processedCargoStorageType:
 					"divided":
 						ship.processedCargoCapacity += internalStorage
@@ -82,57 +85,41 @@ func _physics_process(delta):
 				extend(ship)
 				
 				modify_shape()
-				self.rotation = -deg2rad(set_rot)
-				var current_pos = self.position
-				var new_position = DataFormat.__rotate_point(current_pos,set_rot)
-				self.position = new_position
-				# flip the collider if it's requested
-				if mirrorCollider:
-					var colliderName = systemName + "_COLLIDER_MIRROR"
-					var node = ship.get_node_or_null(colliderName)
-					var selfScale = self.scale
-					if node:
-						node.set_polygon(make_poly())
-						node.set_position(modify_position())
-						node.rotation = deg2rad(set_rot)
-						node.scale = selfScale
-					else:
-					
-					
-						# get the position and scale of the existing collider
-						
-						
-						# instantiate a new collider
-						var copy = CollisionPolygon2D.new()
-						copy.name = colliderName
-						# copy over properties
-						copy.visible = true
-						copy.z_index = self.z_index
-						
-#						breakpoint
-						copy.set_polygon(make_poly())
-						copy.set_build_mode(self.build_mode)
-						copy.set_disabled(false)
-						copy.set_one_way_collision(self.one_way_collision)
-						copy.set_one_way_collision_margin(self.one_way_collision_margin)
-						
-						# flip the x coordinate and adjust for the centre offset
-						copy.scale = selfScale
-						copy.set_position(modify_position())
-						# set the scale to the equivalent of self
-						copy.rotation = deg2rad(set_rot)
-						# clear the script, just to be sure
-						copy.set_script(null)
-						# set a property for the cargo scanner? i'm not sure
-			#			copy.equipment = true
-						# add the collider to the ship
-						ship.add_child(copy)
-#						copy.visible = true
-#						copy.disabled = false
-#						breakpoint
-						$Mirror.visible = false
-						$Mirror.disabled = true
-						#print("Made copy %s with scale %s at %s, parent is %s" % [copy.to_string(), String(copy.scale), String(copy.position), copy.get_parent().to_string()])
+				make_mirror()
+
+func make_mirror():
+	self.rotation = -deg2rad(set_rot)
+	var current_pos = self.position
+	var new_position = DataFormat.__rotate_point(current_pos,set_rot)
+	self.position = new_position
+	# flip the collider if it's requested
+	var has = ship.getConfig(slot) == systemName
+	if has and mirrorCollider:
+		var colliderName = systemName + "_COLLIDER_MIRROR"
+		var node = ship.get_node_or_null(colliderName)
+		var selfScale = self.scale
+		if node:
+			node.set_polygon(make_poly())
+			node.set_position(modify_position())
+			node.rotation = deg2rad(set_rot)
+			node.scale = selfScale
+		else:
+			var copy = CollisionPolygon2D.new()
+			copy.name = colliderName
+			copy.visible = true
+			copy.z_index = self.z_index
+			copy.set_polygon(make_poly())
+			copy.set_build_mode(self.build_mode)
+			copy.set_disabled(false)
+			copy.set_one_way_collision(self.one_way_collision)
+			copy.set_one_way_collision_margin(self.one_way_collision_margin)
+			copy.scale = selfScale
+			copy.set_position(modify_position())
+			copy.rotation = deg2rad(set_rot)
+			copy.set_script(null)
+			ship.add_child(copy)
+			$Mirror.visible = false
+			$Mirror.disabled = true
 
 func modify_position() -> Vector2:
 	var selfPos = self.get_position()
@@ -160,17 +147,11 @@ func make_poly() -> PoolVector2Array:
 func extend(ship):
 	return true
 
-func getShip(from:Node = self, maxLoops = 10):
-	var node = from
-	var counter = 0
-	while not node.has_method("getConfig") and node != null:
-		node = node.get_parent()
-		counter += 1
-		if counter > maxLoops:
-			Debug.l("%s exceeded max loop limit!" % from.name)
-			return ERR_PRINTER_ON_FIRE
-		
-	return node
+func getShip():
+	var c = self
+	while not c.has_method("getConfig") and c != null:
+		c = c.get_parent()
+	return c
 
 func convert_arr_to_vec2arr(array:Array) -> PoolVector2Array:
 	var converted = PoolVector2Array([])

@@ -85,7 +85,6 @@ command = "<l"
 
 [editable path="CargoBaffles"]
 [editable path="HoldModifiers"]
-[editable path="CargoAuxSlot"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_FAB"]

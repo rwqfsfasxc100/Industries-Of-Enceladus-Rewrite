@@ -21,6 +21,7 @@ default = "SYSTEM_NONE"
 [node name="SYSTEM_CARGO_AUX_FAB" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxFab.tscn"]
 
 [node name="SYSTEM_CARGO_AUX_BIGFAB" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxBigFab.tscn"]
+visible = false
 
 [node name="SYSTEM_CARGO_PREPROC_M35" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProcM35.tscn"]
 

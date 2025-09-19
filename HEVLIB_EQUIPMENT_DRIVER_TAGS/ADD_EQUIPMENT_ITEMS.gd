@@ -362,7 +362,19 @@ const AUX_MPDG_1400 = {
 	"price":1150000,
 	"test_protocol":"bootup",
 	"slot_type":"AUX_POWER_SLOT",
-	"equipment_type":"POWER_AUX_POWER_SLOT"
+	"equipment_type":"POWER_AUX_POWER_SLOT",
+	"auxiliary_power_unit":{
+		"type":"MPDG",
+		"repair_time":1,
+		"fix_price":5000,
+		"fix_time":4,
+		"command":"",
+		"power_draw":50000,
+		"thermal":250000,
+		"power_supply":1400000,
+		"windup_time":5,
+		"mass":12250
+	}
 }
 const AUX_MPDG_2000 = {
 	"system":"SYSTEM_AUX_MPD_2000",
