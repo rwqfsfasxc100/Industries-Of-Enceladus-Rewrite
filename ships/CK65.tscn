@@ -285,6 +285,7 @@ z_index = 50
 polygon = PoolVector2Array( -33, -248, -33, 6, -41, 6, -49, 14, -49, 39, -73, 64, -73, 108, -61, 120, -33, 120, -37, 148, -37, 202, -31, 230, 31, 230, 38, 202, 38, 148, 34, 120, 61, 120, 73, 108, 73, 63, 49, 39, 49, 13, 42, 6, 33, 6, 33, -248, 24, -248, 24, -169.019, -24, -169, -24, -248 )
 
 [node name="CargoHoldArea" type="Area2D" parent="."]
+visible = false
 position = Vector2( 0, -192 )
 z_index = 50
 collision_layer = 524288
@@ -296,7 +297,7 @@ angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldArea"]
 light_mask = 0
-polygon = PoolVector2Array( 0, -74, 28, -53, 28, 23, -27, 23, -27, -54 )
+polygon = PoolVector2Array( -18, -92, -12, -101, 12, -101, 18, -92, 18, -62, 28, -53, 28, 23, -27, 23, -27, -54, -18, -62 )
 
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
 visible = false
@@ -309,7 +310,7 @@ linear_damp = 0.0
 angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldAreaHull"]
-polygon = PoolVector2Array( 32, -247, 32, 7, 41, 7, 48, 14, 48, 40, 72, 64, 72, 107, 60, 119, 33, 119, 37, 148, 37, 202, 30, 229, -30, 229, -36, 202, -36, 148, -32, 119, -60, 119, -72, 108, -72, 64, -48, 39, -48, 14, -41, 7, -32, 7, -32, -247 )
+polygon = PoolVector2Array( 32, -247, 32, 7, 41, 7, 48, 14, 48, 40, 72, 64, 72, 107, 60, 119, 33, 119, 37, 148, 37, 202, 30, 229, -30, 229, -36, 202, -36, 148, -32, 119, -60, 119, -72, 108, -72, 64, -48, 39, -48, 14, -41, 7, -32, 7, -32, -247, -20, -247, 0, -303, 20, -247 )
 
 [node name="engine-main-1" parent="." instance=ExtResource( 27 )]
 position = Vector2( -8, 256 )
@@ -661,6 +662,11 @@ polygon = PoolVector2Array( -20, 70, 20, 70, 20, 8, -20, 8 )
 [node name="CrewModifiers" parent="." instance=ExtResource( 34 )]
 
 [node name="Noises" parent="." instance=ExtResource( 11 )]
+
+[connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
+[connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
+[connection signal="body_entered" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_entered"]
+[connection signal="body_exited" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_exited"]
 
 [editable path="Front Bumper"]
 [editable path="engine-main-1"]

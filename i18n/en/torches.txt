@@ -8,9 +8,9 @@ SYSTEM_MAIN_ENGINE_NANI_SPECS|Thrust: 3,450 kN \nExhaust velocity: 132 km/s \nPr
 
 SYSTEM_MAIN_ENGINE_GEMINI|MA-NTR600-II dual engine
 
-SYSTEM_MAIN_ENGINE_GEMINI_DESC|The NTR600-II, otherwise known as the "Gemini", is a dual-mounted magnetoplasmadynamic torch unit capable of delivering decent thrust with excellent efficiency and reliability. \n\nDisclaimer: maintenance of this unit is to be performed only by Mitsudaya-Starbus engineers or licensed sub-contractors. Insurance plans are not yet available in the outer solar system.
+SYSTEM_MAIN_ENGINE_GEMINI_DESC|The NTR600-II, otherwise known as the "Gemini", is a dual-mounted magnetoplasmadynamic torch unit capable of delivering decent thrust with excellent efficiency and reliability. The dual exhaust layout in combination of a basic thrust vectoring system also allows for additional virtual vectoring, furthering the potential efficiency of the torch. \n\nDisclaimer: maintenance of this unit is to be performed only by Mitsudaya-Starbus engineers or licensed sub-contractors. Insurance plans are not yet available in the outer solar system.
 
-SYSTEM_MAIN_ENGINE_GEMINI_SPECS|Thrust: 1,200 kN \nExhaust velocity: 28 km/s \nPropellant consumption: 52 kg/s \nPower consumption: 250 MW \nThermal consumption: 16.8 GW \nOperation mode: Variable thrust \nPropellant: Hydrogen plasma \nMass: 4,350 kg \nManufacturer: Mitsudaya-Starbus
+SYSTEM_MAIN_ENGINE_GEMINI_SPECS|Thrust: 1,200 kN \nExhaust velocity: 28 km/s \nPropellant consumption: 52 kg/s \nPower consumption: 250 MW \nThermal consumption: 16.8 GW \nVectored thrust angle: 60 deg \nVectoring speed: 20 deg/s \nOperation mode: Variable thrust \nPropellant: Hydrogen plasma \nMass: 4,350 kg \nManufacturer: Mitsudaya-Starbus
 
 
 
@@ -26,15 +26,15 @@ SYSTEM_MAIN_ENGINE_THUNDER|RA-K69V quad engine
 
 SYSTEM_MAIN_ENGINE_THUNDER_DESC|This torch is a custom-engineered piece of equipment that takes the frame of an R44 and replaces its engines with K69V thrusters, complete with the gimbal mountings the line is so famous for among ringside racers. Installation comes with optional and entirely legal "Thunderbarge-class" transponder modification. Personal grappling hook available on special request.
 
-SYSTEM_MAIN_ENGINE_THUNDER_SPECS|Thrust: 1,600 kN \nExhaust velocity: 12 km/s \nPropellant consumption: 133.2 kg/s \nPower consumption: 100 MW \nThermal consumption: 14.4 GW \nOperation mode: Pulsed thrust, gimballed \nGimbal angle: 25 deg \nGimbal speed: 360 deg/s \nPropellant: Oxygen-Hydrogen plasma \nMass: 950 kg \nManufacturer: Custom-built / Rusatom-Antonoff
+SYSTEM_MAIN_ENGINE_THUNDER_SPECS|Thrust: 1,600 kN \nExhaust velocity: 12 km/s \nPropellant consumption: 133.2 kg/s \nPower consumption: 100 MW \nThermal consumption: 14.4 GW \nGimbal angle: 25 deg \nGimbal speed: 360 deg/s \nOperation mode: Pulsed thrust, gimballed \nPropellant: Oxygen-Hydrogen plasma \nMass: 950 kg \nManufacturer: Custom-built / Rusatom-Antonoff
 
 
 
 SYSTEM_MAIN_ENGINE_PIN1200|RMS Pin-M200 engine
 
-SYSTEM_MAIN_ENGINE_PIN1200_DESC|The Rasamama Material Solutions Pin-M200 implements the same pulsed induction technology that powers its Pin-150 series of solid-state RCS thrusters on a larger scale. The upscaling of the tech does make for a more fragile thruster, however it is still well within the bounds of competitor's reliability data. \n\nThe sheer thermal power of the upscaled technology posed a nominal burn requirement of well over 60 GW direct from the reactor. Considering that it outpaces even racing reactors, and only a fusion reactor is currently capable of powering 'one' torch, it was decided that a toned-down NSWR mechanism would be installed, using a contained uranium salt injection to provide for the excess thermal power. As a result, each torch has a limited burn time of just over 7 minutes before needing to refuel it's salt banks, still considerably more than today's established NSWR rockets consume.
+SYSTEM_MAIN_ENGINE_PIN1200_DESC|The Rasamama Material Solutions Pin-M200 implements the same pulsed induction technology that powers its Pin-150 series of solid-state RCS thrusters on a larger scale. The upscaling of the tech does make for a more fragile thruster, however it is still well within the bounds of competitor's reliability data. \n\nThe sheer thermal power of the upscaled technology posed a nominal burn requirement of well over 60 GW direct from the reactor. Considering that it outpaces even racing reactors, it was decided to include a micro fusion reactor for the power supply. Unlike equivalent fusion torches, this reactor is used solely for the purpose of providing heat, rather than being essential to the generation of thrust, the ignition of which causes an extra 100 MW of electrical power to ignite the core, and a limited tank of fusion fuel limiting burn time to roughly an hour and a half.
 
-SYSTEM_MAIN_ENGINE_PIN1200_SPECS|Thrust: 1,200 kN \nExhaust velocity: 105 km/s \nPropellant consumption: 11.4 kg/s \nPower consumption: 510 MW \nOperation mode: Virtual variable thrust, gimballed \nGimbal angle: 22.5 deg \nGimbal speed: 28 deg/s \nPropellant: Hydrogen plasma / uranium salt \nBurn time: 7 minutes 30 seconds (est) \nMass: 8,950 kg \nManufacturer: Rasamama Material Solutions
+SYSTEM_MAIN_ENGINE_PIN1200_SPECS|Thrust: 1,200 kN \nExhaust velocity: 105 km/s \nPropellant consumption: 11.4 kg/s \nPower consumption: 510 MW \nVectoring angle: 22.5 deg \nVectoring speed: 28 deg/s \nOperation mode: Variable thrust \nPropellant: Hydrogen plasma / uranium salt \nBurn time: 90 minutes (est) \nMass: 11,350 kg \nManufacturer: Rasamama Material Solutions
 
 
 

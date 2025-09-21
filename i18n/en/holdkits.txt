@@ -31,7 +31,7 @@ SYSTEM_CARGO_MOD_BOLTS|Locking Bolts
 
 SYSTEM_CARGO_MOD_BOLTS_DESC|An assortment of standard locking bolts for ships with variable-geometry holds, to be applied to appropriate fixture points.
 
-SYSTEM_CARGO_MOD_BOLTS_SPECS|Conversion mode: Dynamic to Divided \nConversion ratio: 1:1 (no reduction)
+SYSTEM_CARGO_MOD_BOLTS_SPECS|Conversion mode: Dynamic to Divided \nConversion ratio: 1:1 (no reduction) \nMass reduction: 1000 kg
 
 SYSTEM_CARGO_MOD_BOLTS_MANUAL|Converts the mineral hold storage volume to Divided. \nDivisions are equally divided into sixths of the total combined capacity. \nDoes not require power or reactor heat.
 

@@ -20,38 +20,45 @@ const MODIFY_INTERNALS = [
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_2K",
-		"storage_flat":2000
+		"storage_flat":2000,
+		"mass":1000
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_4K",
-		"storage_flat":4000
+		"storage_flat":4000,
+		"mass":2000
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_6K",
-		"storage_flat":6000
+		"storage_flat":6000,
+		"mass":3500
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_BOLTS",
 		"storage_multi":1/1,
-		"force_type":"divided"
+		"force_type":"divided",
+		"mass":-1000
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_AMORPH4",
 		"storage_multi_upper":1,
 		"storage_multi_lower":2,
-		"force_type":"amorphic"
+		"force_type":"amorphic",
+		"mass":1500
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_AMORPH5",
 		"storage_multi_upper":2,
 		"storage_multi_lower":3,
-		"force_type":"amorphic"
+		"force_type":"amorphic",
+		"mass":2500
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_AMORPH6",
 		"storage_multi_upper":5,
 		"storage_multi_lower":6,
-		"force_type":"amorphic"
+		"force_type":"amorphic",
+		"mass":3750
 	},
 	{
 		"system":"SYSTEM_CREW_ADD_BUNK",
