@@ -34,7 +34,7 @@ SYSTEM_MAIN_ENGINE_PIN1200|RMS Pin-M200 engine
 
 SYSTEM_MAIN_ENGINE_PIN1200_DESC|The Rasamama Material Solutions Pin-M200 implements the same pulsed induction technology that powers its Pin-150 series of solid-state RCS thrusters on a larger scale. The upscaling of the tech does make for a more fragile thruster, however it is still well within the bounds of competitor's reliability data. \n\nThe sheer thermal power of the upscaled technology posed a nominal burn requirement of well over 60 GW direct from the reactor. Considering that it outpaces even racing reactors, and only a fusion reactor is currently capable of powering 'one' torch, it was decided that a toned-down NSWR mechanism would be installed, using a contained uranium salt injection to provide for the excess thermal power. As a result, each torch has a limited burn time of just over 7 minutes before needing to refuel it's salt banks, still considerably more than today's established NSWR rockets consume.
 
-SYSTEM_MAIN_ENGINE_PIN1200_SPECS|Thrust: 1,200 kN \nExhaust velocity: 105 km/s \nPropellant consumption: 11.4 kg/s \nPower consumption: 510 MW \nOperation mode: Virtual variable thrust, gimballed \nGimbal angle: 22.5 deg \nGimbal speed: 28 deg/s \nPropellant: Hydrogen plasma / uranium salt \nBurn time: 7 minutes 30 seconds (est) \nMass: 2,650 kg \nManufacturer: Rasamama Material Solutions
+SYSTEM_MAIN_ENGINE_PIN1200_SPECS|Thrust: 1,200 kN \nExhaust velocity: 105 km/s \nPropellant consumption: 11.4 kg/s \nPower consumption: 510 MW \nOperation mode: Virtual variable thrust, gimballed \nGimbal angle: 22.5 deg \nGimbal speed: 28 deg/s \nPropellant: Hydrogen plasma / uranium salt \nBurn time: 7 minutes 30 seconds (est) \nMass: 8,950 kg \nManufacturer: Rasamama Material Solutions
 
 
 

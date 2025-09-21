@@ -39,7 +39,7 @@ pulseEngine = false
 externalPower = true
 tuneThrustMax = 1.25
 systemName = "SYSTEM_MAIN_ENGINE_PIN1200"
-mass = 2650
+mass = 8950
 minChoke = 0.05
 
 [node name="nozzle" parent="." index="3"]
