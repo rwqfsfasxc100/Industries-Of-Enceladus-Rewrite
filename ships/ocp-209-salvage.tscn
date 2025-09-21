@@ -23,15 +23,16 @@
 [ext_resource path="res://debug/AIdebug.tscn" type="PackedScene" id=21]
 [ext_resource path="res://comms/conversation/UberConversation.tscn" type="PackedScene" id=22]
 [ext_resource path="res://ships/Lifepod.tscn" type="PackedScene" id=23]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=24]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=24]
 [ext_resource path="res://lights/spotlight.png" type="Texture" id=25]
 [ext_resource path="res://ships/obonto-cd.png" type="Texture" id=26]
 [ext_resource path="res://ships/obonto-cl.png" type="Texture" id=27]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=28]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=30]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=31]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=31]
 [ext_resource path="res://ships/modules/SalvageArm.tscn" type="PackedScene" id=38]
+
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
@@ -528,11 +529,11 @@ polygon = PoolVector2Array( -67, -78, -24, -62, -24, 12, -12, 24, 10, 24, 22, 12
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_DRY/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( -24, 12, -12, 24, 10, 24, 22, 12, 23, -63, 68, -79, 73, -103, 48, -145, -56, -145, -77, -103, -66, -78, -24, -62 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
+[node name="MineralProcessingUnit_Bulker" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 position = Vector2( 0, 192 )
 
-[node name="MineralProcessingUnit_Furnace" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
+[node name="MineralProcessingUnit_Furnace" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
 visible = false
 position = Vector2( 0, 192 )
 

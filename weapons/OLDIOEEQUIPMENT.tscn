@@ -2,13 +2,13 @@
 
 [node name="Node" type="Node"]
 
-[node name="SYSTEM_SALVAGE_ARM_LIGHT_PROSP-L" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/SalvageArmLight-R.tscn"]
+[node name="SYSTEM_SALVAGE_ARM_LIGHT_PROSP-L" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLight-R.tscn"]
 visible = false
 position = Vector2( 16, -40 )
 flip = true
 feedVelocity = Vector2( -72, -320 )
 
-[node name="SYSTEM_SALVAGE_ARM_LIGHT_PROSP-R" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/SalvageArmLight-R.tscn"]
+[node name="SYSTEM_SALVAGE_ARM_LIGHT_PROSP-R" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLight-R.tscn"]
 visible = false
 position = Vector2( -16, -40 )
 
@@ -66,19 +66,19 @@ flip = true
 visible = false
 position = Vector2( -48, 54 )
 
-[node name="SYSTEM_EXODYN_PROSP-L" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock-L.tscn"]
+[node name="SYSTEM_EXODYN_PROSP-L" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/StoragePodComboDock-L.tscn"]
 visible = false
 position = Vector2( 48, -86 )
 
-[node name="SYSTEM_EXODYN_PROSP-R" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock.tscn"]
+[node name="SYSTEM_EXODYN_PROSP-R" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/StoragePodComboDock.tscn"]
 visible = false
 position = Vector2( -48, -86 )
 
-[node name="SYSTEM_EXODYN_PROSP_ALT-L" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock-L.tscn"]
+[node name="SYSTEM_EXODYN_PROSP_ALT-L" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/StoragePodComboDock-L.tscn"]
 visible = false
 position = Vector2( 48, 54 )
 repairReplacementPrice = 135000
 
-[node name="SYSTEM_EXODYN_PROSP_ALT-R" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock.tscn"]
+[node name="SYSTEM_EXODYN_PROSP_ALT-R" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/StoragePodComboDock.tscn"]
 visible = false
 position = Vector2( -48, 54 )

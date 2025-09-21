@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://ships/AI.tscn" type="PackedScene" id=2]
@@ -30,10 +30,13 @@
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=28]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/Lifepod.tscn" type="PackedScene" id=30]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=31]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=32]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=33]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=34]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=31]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=32]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=33]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=34]
+[ext_resource path="res://ships/drone/pods-m.png" type="Texture" id=35]
+[ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=36]
+[ext_resource path="res://ships/drone/pods-n.png" type="Texture" id=37]
 
 [sub_resource type="ShaderMaterial" id=8]
 shader = ExtResource( 9 )
@@ -56,6 +59,25 @@ shader_param/map = ExtResource( 24 )
 
 [sub_resource type="CanvasItemMaterial" id=9]
 blend_mode = 1
+
+[sub_resource type="ShaderMaterial" id=15]
+shader = ExtResource( 9 )
+shader_param/maskScale = Vector2( 11, 1 )
+shader_param/frames = Vector2( 1, 1 )
+shader_param/paintJobFactor = 0.0
+shader_param/paintJobBrightAdjust = 16.0
+shader_param/maxval = 5.0
+shader_param/sparkBias = 0.0
+shader_param/scale = Vector2( 2, 0.5 )
+shader_param/sparkColor = Vector3( 50, 10, 100 )
+shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
+shader_param/sparkSpeed = Plane( 0.011, 0.013, 0.017, 0.019 )
+shader_param/ref = 0.1
+shader_param/roughness = 0.5
+shader_param/reflectiveness = 0.25
+shader_param/shine = 1.0
+shader_param/charges = ExtResource( 13 )
+shader_param/map = ExtResource( 35 )
 
 [sub_resource type="ShaderMaterial" id=10]
 shader = ExtResource( 9 )
@@ -126,7 +148,7 @@ shader_param/reverseAmplitude = 500.0
 [node name="CK-69" type="RigidBody2D" groups=["ships"]]
 collision_layer = 530
 collision_mask = 7
-mass = 52.74
+mass = 72.74
 physics_material_override = ExtResource( 4 )
 continuous_cd = 2
 linear_damp = 0.0
@@ -220,6 +242,42 @@ shadow_filter_smooth = 4.0
 shadow_item_cull_mask = 3
 
 [node name="ShipCamera" parent="." instance=ExtResource( 15 )]
+
+[node name="Container1" type="Sprite" parent="."]
+light_mask = 5
+material = SubResource( 15 )
+position = Vector2( 0, -125 )
+scale = Vector2( 0.33, 0.33 )
+z_index = 35
+texture = ExtResource( 36 )
+normal_map = ExtResource( 37 )
+region_enabled = true
+region_rect = Rect2( 1, 1, 124, 226 )
+script = ExtResource( 16 )
+
+[node name="Container2" type="Sprite" parent="."]
+light_mask = 5
+material = SubResource( 15 )
+position = Vector2( 20, -125 )
+scale = Vector2( 0.33, 0.33 )
+z_index = -35
+texture = ExtResource( 36 )
+normal_map = ExtResource( 37 )
+region_enabled = true
+region_rect = Rect2( 1, 1, 124, 226 )
+script = ExtResource( 16 )
+
+[node name="Container3" type="Sprite" parent="."]
+light_mask = 5
+material = SubResource( 15 )
+position = Vector2( -20, -125 )
+scale = Vector2( 0.33, 0.33 )
+z_index = -35
+texture = ExtResource( 36 )
+normal_map = ExtResource( 37 )
+region_enabled = true
+region_rect = Rect2( 1, 1, 124, 226 )
+script = ExtResource( 16 )
 
 [node name="Collider" type="CollisionPolygon2D" parent="."]
 light_mask = 0

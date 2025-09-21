@@ -8,23 +8,23 @@ notAThruster = true
 type = "cargo.aux"
 default = "SYSTEM_NONE"
 
-[node name="SYSTEM_CARGO_AUX_PREPROC_0x30" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProc0x30.tscn"]
+[node name="SYSTEM_CARGO_AUX_PREPROC_0x30" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc0x30.tscn"]
 
-[node name="SYSTEM_CARGO_AUX_PREPROC_20x10" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProc20x10.tscn"]
+[node name="SYSTEM_CARGO_AUX_PREPROC_20x10" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc20x10.tscn"]
 
-[node name="SYSTEM_CARGO_AUX_PREPROC_40x20" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProc40x20.tscn"]
+[node name="SYSTEM_CARGO_AUX_PREPROC_40x20" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc40x20.tscn"]
 
-[node name="SYSTEM_CARGO_AUX_STORPROC_8K" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxStorProc8K.tscn"]
+[node name="SYSTEM_CARGO_AUX_STORPROC_8K" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxStorProc8K.tscn"]
 
-[node name="SYSTEM_CARGO_AUX_STORAGE_4K" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxStorage4K.tscn"]
+[node name="SYSTEM_CARGO_AUX_STORAGE_4K" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxStorage4K.tscn"]
 
-[node name="SYSTEM_CARGO_AUX_FAB" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxFab.tscn"]
+[node name="SYSTEM_CARGO_AUX_FAB" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxFab.tscn"]
 
-[node name="SYSTEM_CARGO_AUX_BIGFAB" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxBigFab.tscn"]
+[node name="SYSTEM_CARGO_AUX_BIGFAB" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxBigFab.tscn"]
 visible = false
 
-[node name="SYSTEM_CARGO_PREPROC_M35" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProcM35.tscn"]
+[node name="SYSTEM_CARGO_PREPROC_M35" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProcM35.tscn"]
 
-[node name="SYSTEM_CARGO_PREPROC_M85" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProcM85.tscn"]
+[node name="SYSTEM_CARGO_PREPROC_M85" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProcM85.tscn"]
 
-[node name="SYSTEM_CARGO_PREPROC_P15" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProcP15.tscn"]
+[node name="SYSTEM_CARGO_PREPROC_P15" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProcP15.tscn"]

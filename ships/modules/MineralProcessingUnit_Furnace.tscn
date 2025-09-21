@@ -8,7 +8,7 @@
 [ext_resource path="res://sfx/PitchAdjustedAudio.gd" type="Script" id=6]
 [ext_resource path="res://lights/distant-proxy.png" type="Texture" id=7]
 [ext_resource path="res://ships/excavator_close.wav" type="AudioStream" id=8]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit.patch.gd" type="Script" id=9]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit.patch.gd" type="Script" id=9]
 
 [sub_resource type="Gradient" id=1]
 colors = PoolColorArray( 1, 1, 1, 1, 0, 0, 0, 0 )

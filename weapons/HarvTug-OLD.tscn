@@ -4,7 +4,7 @@
 [ext_resource path="res://weapons/weapons-n.png" type="Texture" id=2]
 [ext_resource path="res://weapons/weapons-c.png" type="Texture" id=3]
 [ext_resource path="res://weapons/weapons.material" type="Material" id=4]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/weapons/drone-plant.patch.gd" type="Script" id=5]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/weapons/drone-plant.patch.gd" type="Script" id=5]
 
 [node name="SYSTEM_DND_HARVTUG" instance=ExtResource( 1 )]
 script = ExtResource( 5 )

@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/excavator_pac_close.wav-4de45b495d5146aa02aaf7ba2751e746.sample"
+path="res://.import/excavator_pac_close.wav-a8bad4640394df00c40ab29aad953998.sample"
 
 [deps]
 
-source_file="res://IndustriesOfEnceladusRevamp/ships/excavator_pac_close.wav"
-dest_files=[ "res://.import/excavator_pac_close.wav-4de45b495d5146aa02aaf7ba2751e746.sample" ]
+source_file="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_close.wav"
+dest_files=[ "res://.import/excavator_pac_close.wav-a8bad4640394df00c40ab29aad953998.sample" ]
 
 [params]
 

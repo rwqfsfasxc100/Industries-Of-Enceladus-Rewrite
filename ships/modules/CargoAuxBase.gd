@@ -21,8 +21,8 @@ export var mirrorVertical = false
 export (Vector2) var mirrorCentreOffset = Vector2(0,0)
 var set_rot = 0.0
 
-var preproc_default_shapes = preload("res://IndustriesOfEnceladusRevamp/ships/modules/data/preproc_default_shapes.gd")
-var preproc_ship_shape_mods = preload("res://IndustriesOfEnceladusRevamp/ships/modules/data/preproc_ship_shape_mods.gd")
+var preproc_default_shapes = preload("res://IndustriesOfEnceladusRewrite/ships/modules/data/preproc_default_shapes.gd")
+var preproc_ship_shape_mods = preload("res://IndustriesOfEnceladusRewrite/ships/modules/data/preproc_ship_shape_mods.gd")
 var DataFormat = preload("res://HevLib/pointers/DataFormat.gd")
 
 var ship
@@ -35,6 +35,8 @@ onready var area = get_node_or_null("ProcessingArea")
 onready var top = get_node_or_null("ProcessingArea/ZoneTop")
 onready var bottom = get_node_or_null("ProcessingArea/ZoneBottom")
 
+var capacity = 3000
+var shipHoldType = "divided"
 
 var hs_modified = false
 
@@ -52,35 +54,39 @@ func _ready():
 			ship.externalSystems.append(self)
 	isready = true
 	
+	
 
 func _physics_process(delta):
+	
 	if isready:
 		var ship = getShip()
 		if ship.isPlayerControlled():
 			if !ship.cutscene:
+				shipHoldType = ship.get("processedCargoStorageType")
 				ship_name = ship.shipName
 				base_ship_name = ship.baseShipName
 				var cfg = ship.shipConfig
-				var baseAmmo = cfg["ammo"]["capacity"]
-				var baseDrones = cfg["drones"]["capacity"]
-				if ship == null:
-					breakpoint
-				else:
-					hs_modified = true
+#				var baseAmmo = cfg["ammo"]["capacity"]
+#				var baseDrones = cfg["drones"]["capacity"]
+#				if ship == null:
+#					breakpoint
+#				else:
+#					hs_modified = true
 				visible = true
 				
-				match ship.processedCargoStorageType:
-					"divided":
-						ship.processedCargoCapacity += internalStorage
-					"amorphic":
-						ship.processedCargoCapacity += internalStorage * 6
+#				match shipHoldType:
+#					"divided":
+#						ship.processedCargoCapacity = capacity + internalStorage
+#					"amorphic":
+#						ship.processedCargoCapacity = capacity + (internalStorage * 6)
 				
-				var newAmmo = baseAmmo + ammoStorage
+#				ship.bay_aux_capacity = internalStorage
 				
-				var newDrones = baseDrones + droneStorage
-				
-				ship.massDriverAmmoMax = newAmmo
-				ship.dronePartsMax = newDrones
+#				var newAmmo = baseAmmo + ammoStorage
+#
+#				var newDrones = baseDrones + droneStorage
+#				ship.massDriverAmmoMax = newAmmo
+#				ship.dronePartsMax = newDrones
 				
 				extend(ship)
 				

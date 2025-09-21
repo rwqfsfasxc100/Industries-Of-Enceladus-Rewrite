@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRevamp/weapons/DroneHarvester-OLD.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/weapons/DroneHarvester-OLD.tscn" type="PackedScene" id=1]
 
 [node name="SYSTEM_DND_HARVTUG" instance=ExtResource( 1 )]
 repairReplacementPrice = 385000

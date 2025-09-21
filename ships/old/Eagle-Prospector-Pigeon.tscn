@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/Excavator.gd" type="Script" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/Excavator.gd" type="Script" id=1]
 [ext_resource path="res://ships/Eagle-Prospector-Fat.tscn" type="PackedScene" id=2]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=3]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=3]
 [ext_resource path="res://ships/modules/Grinder.tscn" type="PackedScene" id=4]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=5]
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=6]
@@ -154,7 +154,7 @@ toggleCommand = "ship_slot_5"
 position = Vector2( 0, -92 )
 slot = "cargo.aux"
 
-[node name="HoldModifiers" parent="." index="30" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
+[node name="HoldModifiers" parent="." index="30" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn"]
 type = "cargo.modifierDivided"
 
 [node name="MineralProcessingUnit" parent="." index="31"]
@@ -188,17 +188,17 @@ polygon = PoolVector2Array( 0, -51, 0, -19, -14, -19, -24, -9, -24, 13, -14, 23,
 position = Vector2( 0, 0 )
 polygon = PoolVector2Array( -24, 23, 24, 23, 24, -19, -24, -19 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." index="35" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn"]
+[node name="MineralProcessingUnit_Bulker" parent="." index="35" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 position = Vector2( 0, -32 )
 polygon = PoolVector2Array( 2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 40, -56, 40, 1, 40, 36, 40, 56, -40, 56, -40, 36, -40, 0, -40, -24, -40, -65, -24, -40, -14, -34 )
 
-[node name="MineralProcessingUnit_Furnace" parent="." index="36" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Furnace.tscn"]
+[node name="MineralProcessingUnit_Furnace" parent="." index="36" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn"]
 visible = false
 position = Vector2( 0, -48 )
 polygon = PoolVector2Array( -40, -72, -24, -48, -12, -40, -24, -32, -24, 44, -12, 64, 12, 64, 24, 44, 24, -32, 12, -40, 24, -48, 40, -71, 40, -32, 40, 44, 40, 72, -40, 72, -40, 44, -40, -32 )
 
-[node name="CargoAuxSlot" parent="." index="37" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxSlot.tscn"]
+[node name="CargoAuxSlot" parent="." index="37" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxSlot.tscn"]
 position = Vector2( -8, -156 )
 
 [node name="CrewModifiers" parent="." index="44" instance=ExtResource( 3 )]

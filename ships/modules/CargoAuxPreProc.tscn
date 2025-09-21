@@ -1,13 +1,13 @@
 [gd_scene load_steps=12 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxBase.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxBase.tscn" type="PackedScene" id=1]
 [ext_resource path="res://ships/tntrl_engine_off.wav" type="AudioStream" id=2]
 [ext_resource path="res://ships/tnrtl-engine_01.wav" type="AudioStream" id=3]
 [ext_resource path="res://ships/tntrl_engine_on.wav" type="AudioStream" id=4]
 [ext_resource path="res://asteroids/dust-c.png" type="Texture" id=5]
 [ext_resource path="res://asteroids/dust-n.png" type="Texture" id=6]
 [ext_resource path="res://sfx/PitchAdjustedAudio.gd" type="Script" id=7]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProc.gd" type="Script" id=9]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc.gd" type="Script" id=9]
 
 [sub_resource type="Gradient" id=3]
 colors = PoolColorArray( 1, 1, 1, 1, 0, 0, 0, 0 )

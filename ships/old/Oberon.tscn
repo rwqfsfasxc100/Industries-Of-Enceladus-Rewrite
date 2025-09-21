@@ -3,9 +3,9 @@
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=3]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/Oberon-m.png" type="Texture" id=4]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/Oberon-c.png" type="Texture" id=5]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/Oberon-n.png" type="Texture" id=6]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/Oberon-m.png" type="Texture" id=4]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/Oberon-c.png" type="Texture" id=5]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/Oberon-n.png" type="Texture" id=6]
 [ext_resource path="res://ships/Hull.gd" type="Script" id=7]
 [ext_resource path="res://ships/modules/Noises.tscn" type="PackedScene" id=8]
 [ext_resource path="res://ships/modules/Excavator.tscn" type="PackedScene" id=9]
@@ -19,16 +19,16 @@
 [ext_resource path="res://ships/modules/ShipCamera.tscn" type="PackedScene" id=17]
 [ext_resource path="res://ships/modules/AuxSlot.tscn" type="PackedScene" id=18]
 [ext_resource path="res://ships/modules/ReactionWheel.tscn" type="PackedScene" id=19]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=20]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=20]
 [ext_resource path="res://ships/Lifepod.tscn" type="PackedScene" id=21]
 [ext_resource path="res://hud/Hud.tscn" type="PackedScene" id=22]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/Oberon-cl.png" type="Texture" id=23]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/Oberon-cl.png" type="Texture" id=23]
 [ext_resource path="res://debug/AIdebug.tscn" type="PackedScene" id=24]
 [ext_resource path="res://ships/AI.tscn" type="PackedScene" id=25]
 [ext_resource path="res://lights/light-mask.png" type="Texture" id=26]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=27]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=28]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=29]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=28]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=29]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=30]
 
 [sub_resource type="ShaderMaterial" id=1]
@@ -346,7 +346,7 @@ position = Vector2( -6, 0 )
 scale = Vector2( -1, 1 )
 polygon = PoolVector2Array( 12, -7, 28, -3, 29, 0, 10, 3, 8, 1 )
 
-[node name="HoldModifiersAmorphic" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
+[node name="HoldModifiersAmorphic" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn"]
 type = "cargo.modifierAmorphic"
 
 [node name="MineralProcessingUnit" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit.tscn"]

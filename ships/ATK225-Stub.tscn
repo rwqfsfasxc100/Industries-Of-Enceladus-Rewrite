@@ -7,11 +7,11 @@
 [ext_resource path="res://ships/k225-cd.png" type="Texture" id=5]
 [ext_resource path="res://ships/k225-mask.png" type="Texture" id=6]
 [ext_resource path="res://ships/k225-m.png" type="Texture" id=7]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/ATK225.tscn" type="PackedScene" id=8]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/ATK225.tscn" type="PackedScene" id=8]
 [ext_resource path="res://ships/k37-mk3-n.png" type="Texture" id=9]
 [ext_resource path="res://ships/RA-TRTL.material" type="Material" id=10]
 [ext_resource path="res://ships/k37-mk3-cd.png" type="Texture" id=11]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/Excavator.gd" type="Script" id=12]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/Excavator.gd" type="Script" id=12]
 [ext_resource path="res://ships/modules/Excavator.tscn" type="PackedScene" id=13]
 
 [sub_resource type="ShaderMaterial" id=1]

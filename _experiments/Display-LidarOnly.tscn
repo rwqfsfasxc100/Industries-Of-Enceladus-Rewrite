@@ -1,6 +1,6 @@
 [gd_scene load_steps=35 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRevamp/_experiments/LidarOnly-theme.tres" type="Theme" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/_experiments/LidarOnly-theme.tres" type="Theme" id=1]
 [ext_resource path="res://hud/Display-K37.gd" type="Script" id=2]
 [ext_resource path="res://hud/AutopilotKeyText.tscn" type="PackedScene" id=3]
 [ext_resource path="res://hud/OMSbox.tscn" type="PackedScene" id=4]

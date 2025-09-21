@@ -29,8 +29,8 @@
 [ext_resource path="res://ships/drone/pods-m.png" type="Texture" id=27]
 [ext_resource path="res://ships/drone/pods-n.png" type="Texture" id=28]
 [ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=29]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=30]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=31]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=30]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=31]
 [ext_resource path="res://comms/conversation/UberConversation.tscn" type="PackedScene" id=32]
 [ext_resource path="res://ships/modules/Grinder.tscn" type="PackedScene" id=33]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=34]
@@ -41,10 +41,10 @@
 [ext_resource path="res://ships/matchParent.gd" type="Script" id=39]
 [ext_resource path="res://ships/nival-cl.png" type="Texture" id=40]
 [ext_resource path="res://ships/nival-cd.png" type="Texture" id=41]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=42]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=42]
 [ext_resource path="res://sfx/dv-plume.wav" type="AudioStream" id=43]
 [ext_resource path="res://ships/modules/AuxSlot.tscn" type="PackedScene" id=44]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=45]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=45]
 
 [sub_resource type="ShaderMaterial" id=2]
 shader = ExtResource( 1 )

@@ -14,7 +14,7 @@
 [node name="SYSTEM_MAIN_ENGINE_CRACK" type="Sprite"]
 self_modulate = Color( 1, 0, 0.537255, 1 )
 light_mask = 0
-position = Vector2( 0, -22 )
+position = Vector2( 0, -8 )
 scale = Vector2( 0.6, 1 )
 texture = ExtResource( 8 )
 centered = false

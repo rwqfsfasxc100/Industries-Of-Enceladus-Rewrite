@@ -2,7 +2,7 @@ extends Node
 
 const SYSTEM_DND_HARVTUG = {
 	"name":"SYSTEM_DND_HARVTUG",
-	"path":"res://IndustriesOfEnceladusRevamp/weapons/HarvTug.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/HarvTug.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -12,7 +12,7 @@ const SYSTEM_DND_HARVTUG = {
 }
 const SYSTEM_DND_HARVHAUL = {
 	"name":"SYSTEM_DND_HARVHAUL",
-	"path":"res://IndustriesOfEnceladusRevamp/weapons/HarvHaul.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/HarvHaul.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -22,7 +22,7 @@ const SYSTEM_DND_HARVHAUL = {
 }
 const SYSTEM_SALVAGE_ARM_LIGHT = {
 	"name":"SYSTEM_SALVAGE_ARM_LIGHT",
-	"path":"res://IndustriesOfEnceladusRevamp/ships/modules/SalvageArmLight.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLight.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -32,7 +32,7 @@ const SYSTEM_SALVAGE_ARM_LIGHT = {
 }
 const SYSTEM_SALVAGE_ARM_LIGHT_L = {
 	"name":"SYSTEM_SALVAGE_ARM_LIGHT-L",
-	"path":"res://IndustriesOfEnceladusRevamp/ships/modules/SalvageArmLight.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLight.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -50,7 +50,7 @@ const SYSTEM_SALVAGE_ARM_LIGHT_L = {
 }
 const SYSTEM_SALVAGE_ARM_LIGHT_R = {
 	"name":"SYSTEM_SALVAGE_ARM_LIGHT-R",
-	"path":"res://IndustriesOfEnceladusRevamp/ships/modules/SalvageArmLight.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmLight.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -60,7 +60,7 @@ const SYSTEM_SALVAGE_ARM_LIGHT_R = {
 }
 const SYSTEM_SALVAGE_ARM_HEAVY = {
 	"name":"SYSTEM_SALVAGE_ARM_HEAVY",
-	"path":"res://IndustriesOfEnceladusRevamp/ships/modules/SalvageArmHeavy.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmHeavy.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -70,7 +70,7 @@ const SYSTEM_SALVAGE_ARM_HEAVY = {
 }
 const SYSTEM_SALVAGE_ARM_HEAVY_L = {
 	"name":"SYSTEM_SALVAGE_ARM_HEAVY-L",
-	"path":"res://IndustriesOfEnceladusRevamp/ships/modules/SalvageArmHeavy.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmHeavy.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -88,7 +88,7 @@ const SYSTEM_SALVAGE_ARM_HEAVY_L = {
 }
 const SYSTEM_SALVAGE_ARM_HEAVY_R = {
 	"name":"SYSTEM_SALVAGE_ARM_HEAVY-R",
-	"path":"res://IndustriesOfEnceladusRevamp/ships/modules/SalvageArmHeavy.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/SalvageArmHeavy.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -102,7 +102,7 @@ const SYSTEM_SALVAGE_ARM_HEAVY_R = {
 }
 const SYSTEM_MWTIGHTBEAM = {
 	"name":"SYSTEM_MWTIGHTBEAM",
-	"path":"res://IndustriesOfEnceladusRevamp/weapons/MWTightBeam.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/MWTightBeam.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -116,7 +116,7 @@ const SYSTEM_MWTIGHTBEAM = {
 }
 const SYSTEM_MWTIGHTBEAM_PDT = {
 	"name":"SYSTEM_MWTIGHTBEAM_PDT",
-	"path":"res://IndustriesOfEnceladusRevamp/weapons/PDT-MWTightBeam.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/PDT-MWTightBeam.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -130,7 +130,7 @@ const SYSTEM_MWTIGHTBEAM_PDT = {
 }
 const SYSTEM_MWTIGHTBEAM_PDT_L = {
 	"name":"SYSTEM_MWTIGHTBEAM_PDT-L",
-	"path":"res://IndustriesOfEnceladusRevamp/weapons/PDT-MWTightBeam.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/PDT-MWTightBeam.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -148,7 +148,7 @@ const SYSTEM_MWTIGHTBEAM_PDT_L = {
 }
 const SYSTEM_MWTIGHTBEAM_PDT_R = {
 	"name":"SYSTEM_MWTIGHTBEAM_PDT-R",
-	"path":"res://IndustriesOfEnceladusRevamp/weapons/PDT-MWTightBeam.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/PDT-MWTightBeam.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -193,7 +193,7 @@ const SYSTEM_PDTL_R = {
 }
 const SYSTEM_EXODYN_L = {
 	"name":"SYSTEM_EXODYN-L",
-	"path":"res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock-L.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/StoragePodComboDock-L.tscn",
 	"data":[
 		{
 			"property":"visible",
@@ -207,7 +207,7 @@ const SYSTEM_EXODYN_L = {
 }
 const SYSTEM_EXODYN_R = {
 	"name":"SYSTEM_EXODYN-R",
-	"path":"res://IndustriesOfEnceladusRevamp/ships/modules/StoragePodComboDock.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/StoragePodComboDock.tscn",
 	"data":[
 		{
 			"property":"visible",

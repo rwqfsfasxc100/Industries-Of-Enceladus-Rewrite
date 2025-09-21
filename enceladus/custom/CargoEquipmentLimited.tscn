@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/custom/CargoEquipment.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/enceladus/custom/CargoEquipment.tscn" type="PackedScene" id=1]
 [ext_resource path="res://enceladus/SystemShipUpgradeUI.tscn" type="PackedScene" id=3]
 
 [node name="CargoEquipmentLimited" instance=ExtResource( 1 )]

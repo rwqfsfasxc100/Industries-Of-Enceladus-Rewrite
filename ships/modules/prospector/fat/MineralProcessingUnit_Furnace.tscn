@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=1]
 
 [node name="MineralProcessingUnit_Furnace" instance=ExtResource( 1 )]
 position = Vector2( 0, -48 )

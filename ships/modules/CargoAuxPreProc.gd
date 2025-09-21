@@ -1,4 +1,4 @@
-extends "res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxBase.gd"
+extends "res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxBase.gd"
 
 # ok this is very stupid
 # _physics_process can't be explicitly overriden in 3.5.3

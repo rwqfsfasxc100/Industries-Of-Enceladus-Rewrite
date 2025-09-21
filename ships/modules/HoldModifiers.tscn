@@ -8,7 +8,7 @@ notAThruster = true
 type = "cargo.modifierDivided"
 default = "SYSTEM_NONE"
 
-[node name="SYSTEM_CARGO_MOD_2K" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
+[node name="SYSTEM_CARGO_MOD_2K" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifier.tscn"]
 __meta__ = {
 "_editor_description_": ""
 }
@@ -20,7 +20,7 @@ repairFixTime = 4
 holdType = "both"
 addedSpace = 2000
 
-[node name="SYSTEM_CARGO_MOD_4K" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
+[node name="SYSTEM_CARGO_MOD_4K" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifier.tscn"]
 __meta__ = {
 "_editor_description_": ""
 }
@@ -32,7 +32,7 @@ repairFixTime = 4
 holdType = "both"
 addedSpace = 4000
 
-[node name="SYSTEM_CARGO_MOD_6K" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
+[node name="SYSTEM_CARGO_MOD_6K" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifier.tscn"]
 __meta__ = {
 "_editor_description_": ""
 }
@@ -44,7 +44,7 @@ repairFixTime = 4
 holdType = "both"
 addedSpace = 6000
 
-[node name="SYSTEM_CARGO_MOD_BOLTS" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
+[node name="SYSTEM_CARGO_MOD_BOLTS" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifier.tscn"]
 __meta__ = {
 "_editor_description_": ""
 }
@@ -58,7 +58,7 @@ holdType = "divided"
 numerator = 1
 denominator = 1
 
-[node name="SYSTEM_CARGO_MOD_AMORPH4" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
+[node name="SYSTEM_CARGO_MOD_AMORPH4" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifier.tscn"]
 __meta__ = {
 "_editor_description_": ""
 }
@@ -72,7 +72,7 @@ holdType = "amorphic"
 numerator = 1
 denominator = 2
 
-[node name="SYSTEM_CARGO_MOD_AMORPH5" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
+[node name="SYSTEM_CARGO_MOD_AMORPH5" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifier.tscn"]
 __meta__ = {
 "_editor_description_": ""
 }
@@ -86,7 +86,7 @@ holdType = "amorphic"
 numerator = 2
 denominator = 3
 
-[node name="SYSTEM_CARGO_MOD_AMORPH6" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifier.tscn"]
+[node name="SYSTEM_CARGO_MOD_AMORPH6" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifier.tscn"]
 repairReplacementPrice = 445000
 repairReplacementTime = 1
 repairFixPrice = 5000

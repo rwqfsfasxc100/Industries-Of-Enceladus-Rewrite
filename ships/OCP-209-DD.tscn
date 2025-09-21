@@ -2,7 +2,7 @@
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/ocp/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=3]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/ocp/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=3]
 [ext_resource path="res://ships/Hull.gd" type="Script" id=4]
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=5]
 [ext_resource path="res://ships/modules/Noises.tscn" type="PackedScene" id=6]
@@ -35,10 +35,11 @@
 [ext_resource path="res://ships/modules/Bay.gd" type="Script" id=33]
 [ext_resource path="res://ships/CabinLight.gd" type="Script" id=34]
 [ext_resource path="res://lights/light-mask.png" type="Texture" id=35]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/ocp/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=36]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=37]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=43]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=44]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/ocp/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=36]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=37]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=43]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=44]
+
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )

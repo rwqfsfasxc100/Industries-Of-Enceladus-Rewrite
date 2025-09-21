@@ -13,7 +13,7 @@
 [ext_resource path="res://hud/FontNoto.tres" type="DynamicFont" id=11]
 [ext_resource path="res://hud/TNTRL-button-pressed.stylebox" type="StyleBox" id=12]
 [ext_resource path="res://hud/TNTRL-theme-slider-v.tres" type="StyleBox" id=13]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/_experiments/LidarOnly-theme-panel.tres" type="StyleBox" id=14]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/_experiments/LidarOnly-theme-panel.tres" type="StyleBox" id=14]
 
 [sub_resource type="StyleBoxFlat" id=1]
 content_margin_left = 8.0

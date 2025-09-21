@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxPreProc.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc.tscn" type="PackedScene" id=1]
 
 [node name="CargoAuxPreProc20x10" instance=ExtResource( 1 )]
 visible = false

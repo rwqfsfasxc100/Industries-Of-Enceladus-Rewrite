@@ -1,8 +1,8 @@
 SYSTEM_THRUSTER_PIN150|RMS Pin-C50 thruster
 
-SYSTEM_THRUSTER_PIN150_DESC|The Rasamama Material Solutions Pin-C50 is a unique solid-state thruster system that utilises pulsed induction to accelerate and vector hydrogen plasma without the need for any mechanical components, massively minimising the damage-related issues associated with conventional thrusters. \n\nWhile incredibly hard-wearing, the installation of heavy plasma conduits and supporting power infrastructure, as well as the thrusters' direct embedment into the vessel hull, requires specialist assistance that may be difficult to afford.
+SYSTEM_THRUSTER_PIN150_DESC|The Rasamama Material Solutions Pin-C50 is a unique solid-state thruster system that utilises pulsed induction to accelerate and vector hydrogen plasma without the need for any mechanical components, massively minimising the damage-related issues associated with conventional thrusters. However, they do suffer extra stress while under acceleration, and will fail at considerably lower accelerations than conventional thrusters. \n\nWhile incredibly hard-wearing, the installation of heavy plasma conduits and supporting power infrastructure, as well as the thrusters' direct embedment into the vessel hull, requires specialist assistance that may be difficult to afford.
 
-SYSTEM_THRUSTER_PIN150_SPECS|Thrust: 150 kN \nExhaust velocity: 90 km/s \nPropellant consumption: 1.6 kg/s \nPower consumption: 90 MW \nOperation mode: Virtual variable thrust \nVectored thrust angle: 36 deg \nPropellant: Hydrogen plasma \nMass: 185 kg (per thruster) \nManufacturer: Rasamama Material Solutions
+SYSTEM_THRUSTER_PIN150_SPECS|Thrust: 150 kN \nExhaust velocity: 90 km/s \nPropellant consumption: 1.6 kg/s \nPower consumption: 90 MW \nThermal consumption: 6.8 GW \nOperation mode: Virtual variable thrust \nVectored thrust angle: 36 deg \nPropellant: Hydrogen plasma \nMass: 185 kg (per thruster) \nManufacturer: Rasamama Material Solutions
 
 
 

@@ -1,15 +1,16 @@
 [gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://enceladus/Upgrades.tscn" type="PackedScene" id=1]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/custom/CargoEquipment.tscn" type="PackedScene" id=2]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/custom/CargoAccessories.tscn" type="PackedScene" id=3]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/custom/HoldModifiers.tscn" type="PackedScene" id=4]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/custom/TorchSlot.tscn" type="PackedScene" id=8]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/enceladus/custom/CargoEquipment.tscn" type="PackedScene" id=2]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/enceladus/custom/CargoAccessories.tscn" type="PackedScene" id=3]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/enceladus/custom/HoldModifiers.tscn" type="PackedScene" id=4]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/enceladus/custom/TorchSlot.tscn" type="PackedScene" id=8]
 [ext_resource path="res://enceladus/SystemShipUpgradeUI.tscn" type="PackedScene" id=10]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/custom/CargoEquipmentLimited.tscn" type="PackedScene" id=16]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/custom/TurretSlot.tscn" type="PackedScene" id=19]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/enceladus/custom/CargoEquipmentLimited.tscn" type="PackedScene" id=16]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/enceladus/custom/TurretSlot.tscn" type="PackedScene" id=19]
 [ext_resource path="res://hud/SensorDisplay.gd" type="Script" id=20]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/enceladus/custom/CrewModifiers.tscn" type="PackedScene" id=22]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/enceladus/custom/CrewModifiers.tscn" type="PackedScene" id=22]
+
 
 [sub_resource type="ViewportTexture" id=1]
 flags = 5

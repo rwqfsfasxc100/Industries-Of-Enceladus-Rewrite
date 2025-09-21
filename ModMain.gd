@@ -14,16 +14,14 @@ var modPath:String = get_script().resource_path.get_base_dir() + "/"
 # Required var for the replaceScene() func to work
 var _savedObjects := []
 
-var aesthetics:bool = true
-var addShips:bool = true
-var verbose:bool = true # failsafe
-
 var modSettings = {}
 
 var ADD_EQUIPMENT_SLOTS = []
 var ADD_EQUIPMENT_ITEMS = []
 var EQUIPMENT_TAGS = {}
 var SLOT_TAGS = {}
+
+var verbose = false
 
 func _init(modLoader = ModLoader):
 # Must load DLC early for it to properly function.
@@ -33,12 +31,16 @@ func _init(modLoader = ModLoader):
 	
 	loadDLC()
 	
+	verbose = modSettings["options"]["verbose_logging"]
+	
 	var self_path = self.get_script().get_path()
 	var self_directory = self_path.split(self_path.split("/")[self_path.split("/").size() - 1])[0]
 	var self_check = load(self_directory + "mod_checker_script.tscn").instance()
 	add_child(self_check)
 # replace ShipParams for hold percentage fill readout
 	replaceScene("hud/trtl/ShipParams.tscn")
+	if modSettings["options"]["display_hold_size_on_hud"]:
+		replaceScene("hud/trtl/ShipParamsHoldSize.tscn")
 	installScriptExtension("ships/modules/ThrusterSlot.gd")
 # install ship-ctrl.gd, adds hold sensors and AP setup
 	installScriptExtension("ships/ship-ctrl.gd")
@@ -58,29 +60,28 @@ func _init(modLoader = ModLoader):
 	replaceScene("ships/modules/ThrusterSlot.tscn")
 	replaceScene("ships/modules/TorchSlot.tscn")
 	
-	var test = 11 % 2
 	
 # replace weapons and WeaponSlot
-	if aesthetics:
-		l("Setting up aesthetic adjustments")
-		replaceScene("weapons/railgun_tor.tscn")
+	
+	l("Setting up aesthetic adjustments")
+	replaceScene("weapons/railgun_tor.tscn")
 		
 # replace Dealer.tscn for our "promo images" (that i don't have lol)
-	if addShips:
-		replaceScene("enceladus/Dealer.tscn")
+	
+	replaceScene("enceladus/Dealer.tscn")
 	
 # replace the Upgrades.tscn containing equipment modifications
 #	replaceScene("weapons/WeaponSlot.tscn")
-#	replaceScene("res://IndustriesOfEnceladusRevamp/tagging_assignments/Upgrades.tscn","res://enceladus/Upgrades.tscn")
+#	replaceScene("res://IndustriesOfEnceladusRewrite/tagging_assignments/Upgrades.tscn","res://enceladus/Upgrades.tscn")
 	
 	
 # install the Shipyard.gd script extension, which loads replacements + new ships
 	
 	replaceScene("enceladus/Upgrades.tscn")
 	# install CurrentGame.gd which loads new ships into the game
-	if addShips:
-		l("Injecting new ships")
-		installScriptExtension("CurrentGame.gd")
+	
+	l("Injecting new ships")
+	installScriptExtension("CurrentGame.gd")
 	installScriptExtension("ships/Shipyard.gd")
 	shipReplacements()
 # Load custom translations
@@ -233,9 +234,9 @@ func shipReplacements():
 	replaceScene("ships/Cothon.tscn")
 
 func made_additions():
-	var slots = load("res://IndustriesOfEnceladusRevamp/tagging_assignments/slots.gd")
-	var assignments = load("res://IndustriesOfEnceladusRevamp/tagging_assignments/slot_assignments.gd")
-	var tags = load("res://IndustriesOfEnceladusRevamp/tagging_assignments/tags.gd")
+	var slots = load("res://IndustriesOfEnceladusRewrite/tagging_assignments/slots.gd")
+	var assignments = load("res://IndustriesOfEnceladusRewrite/tagging_assignments/slot_assignments.gd")
+	var tags = load("res://IndustriesOfEnceladusRewrite/tagging_assignments/tags.gd")
 	for slot in slots.get_script_constant_map():
 		addEquipmentSlot(slots.get(slot))
 	EQUIPMENT_TAGS = tags.EQUIPMENT_TAGS

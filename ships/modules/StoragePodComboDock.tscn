@@ -76,7 +76,7 @@ shape = SubResource( 2 )
 [node name="ClaimOwner" type="Node2D" parent="." index="5"]
 script = ExtResource( 8 )
 
-[node name="StoragePodCombo" parent="ClaimOwner" index="0" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/drone/StoragePodCombo.tscn"]
+[node name="StoragePodCombo" parent="ClaimOwner" index="0" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/drone/StoragePodCombo.tscn"]
 position = Vector2( 80, -40 )
 
 [editable path="Arm"]

@@ -1,6 +1,6 @@
 [gd_scene load_steps=15 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/ocp-209-old.tscn" type="PackedScene" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/ocp-209-old.tscn" type="PackedScene" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=3]
 [ext_resource path="res://ships/modules/claws.phymat" type="PhysicsMaterial" id=4]
@@ -9,9 +9,9 @@
 [ext_resource path="res://ships/obonto-m.png" type="Texture" id=7]
 [ext_resource path="res://ships/obonto-n.png" type="Texture" id=8]
 [ext_resource path="res://ships/obonto-cd.png" type="Texture" id=9]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/excavator_pac_close.wav" type="AudioStream" id=10]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/excavator_pac_open.wav" type="AudioStream" id=11]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/hud/collect_pac.wav" type="AudioStream" id=12]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_close.wav" type="AudioStream" id=10]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_open.wav" type="AudioStream" id=11]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/hud/collect_pac.wav" type="AudioStream" id=12]
 
 [sub_resource type="CircleShape2D" id=2]
 radius = 6.0

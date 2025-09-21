@@ -30,15 +30,16 @@
 [ext_resource path="res://ships/obonto-cl.png" type="Texture" id=28]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=30]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=31]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=31]
 [ext_resource path="res://ships/modules/claws.phymat" type="PhysicsMaterial" id=32]
 [ext_resource path="res://ships/modules/Bay.gd" type="Script" id=33]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=34]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=35]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn" type="PackedScene" id=36]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/excavator_pac_close.wav.sample" type="AudioStream" id=37]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/hud/collect_pac.wav.sample" type="AudioStream" id=38]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/excavator_pac_open.wav.sample" type="AudioStream" id=39]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=34]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=35]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=36]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_close.wav.sample" type="AudioStream" id=37]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/hud/collect_pac.wav.sample" type="AudioStream" id=38]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_open.wav.sample" type="AudioStream" id=39]
+
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )

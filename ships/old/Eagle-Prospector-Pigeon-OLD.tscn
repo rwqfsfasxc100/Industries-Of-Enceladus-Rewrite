@@ -1,8 +1,8 @@
 [gd_scene load_steps=13 format=2]
 
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/Excavator.gd" type="Script" id=1]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/Excavator.gd" type="Script" id=1]
 [ext_resource path="res://ships/Eagle-Prospector-Fat.tscn" type="PackedScene" id=2]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifiers.tscn" type="PackedScene" id=3]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=3]
 [ext_resource path="res://ships/modules/Grinder.tscn" type="PackedScene" id=4]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=5]
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=6]
@@ -154,7 +154,7 @@ toggleCommand = "ship_slot_5"
 position = Vector2( 0, -92 )
 slot = "cargo.aux"
 
-[node name="HoldModifiers" parent="." index="30" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/HoldModifiers.tscn"]
+[node name="HoldModifiers" parent="." index="30" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn"]
 
 [node name="MineralProcessingUnit" parent="." index="31"]
 light_mask = 0
@@ -186,13 +186,13 @@ polygon = PoolVector2Array( -40, -76, -26, -64, -16, -48, -12, -30, -18, -22, -1
 light_mask = 0
 polygon = PoolVector2Array( -18, 4, 18, 4, 18, -30, -18, -30 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." index="35" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/prospector/fat/MineralProcessingUnit_Bulker.tscn"]
+[node name="MineralProcessingUnit_Bulker" parent="." index="35" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/prospector/fat/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 
-[node name="MineralProcessingUnit_Furnace" parent="." index="36" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/prospector/fat/MineralProcessingUnit_Furnace.tscn"]
+[node name="MineralProcessingUnit_Furnace" parent="." index="36" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/prospector/fat/MineralProcessingUnit_Furnace.tscn"]
 visible = false
 
-[node name="CargoAuxSlot" parent="." index="37" instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/prospector/fat/CargoAuxSlot.tscn"]
+[node name="CargoAuxSlot" parent="." index="37" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/prospector/fat/CargoAuxSlot.tscn"]
 visible = false
 position = Vector2( 0, -156 )
 

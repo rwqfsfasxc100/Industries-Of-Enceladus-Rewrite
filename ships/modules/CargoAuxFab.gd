@@ -1,4 +1,4 @@
-extends "res://IndustriesOfEnceladusRevamp/ships/modules/CargoAuxBase.gd"
+extends "res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxBase.gd"
 
 export  var dronePrintTime = 0.0
 export  var bulletPrintTime = 0.0

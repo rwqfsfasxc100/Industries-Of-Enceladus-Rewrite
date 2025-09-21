@@ -2,9 +2,24 @@ extends "res://ships/ship-ctrl.gd"
 
 export var crewBonus = 0
 
-func _ready():
-	CurrentGame.validateEmployment()
-	pass
+#var base_capacity = 3000
+#var base_cargo_type = "divided"
+#
+#var bay_aux_capacity = 0
+#var hold_kit_capacity = 0
+#
+#func _ready():
+#	CurrentGame.validateEmployment()
+#	base_capacity = processedCargoCapacity
+#	base_cargo_type = processedCargoStorageType
+
+#func _process(delta):
+#
+#	if hold_kit_capacity > 0:
+#		breakpoint;
+#
+#	processedCargoCapacity = base_capacity + bay_aux_capacity + hold_kit_capacity
+	
 
 func sensorGet(sensor):
 	match sensor:

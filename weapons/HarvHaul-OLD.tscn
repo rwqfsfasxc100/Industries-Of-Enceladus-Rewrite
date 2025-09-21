@@ -4,7 +4,7 @@
 [ext_resource path="res://weapons/weapons-c.png" type="Texture" id=2]
 [ext_resource path="res://weapons/weapons.material" type="Material" id=3]
 [ext_resource path="res://weapons/drone-plant.tscn" type="PackedScene" id=4]
-[ext_resource path="res://IndustriesOfEnceladusRevamp/weapons/drone-plant.patch.gd" type="Script" id=5]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/weapons/drone-plant.patch.gd" type="Script" id=5]
 
 [node name="SYSTEM_DND_HARVHAUL" instance=ExtResource( 4 )]
 script = ExtResource( 5 )

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/icon.png-f144ccb4e10ad1a54d904c3290638de9.stex"
+path="res://.import/icon.png-3f14da378939bf4d7b7b2c5e01f22bdf.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://IndustriesOfEnceladusRevamp/icon.png"
-dest_files=[ "res://.import/icon.png-f144ccb4e10ad1a54d904c3290638de9.stex" ]
+source_file="res://IndustriesOfEnceladusRewrite/icon.png"
+dest_files=[ "res://.import/icon.png-3f14da378939bf4d7b7b2c5e01f22bdf.stex" ]
 
 [params]
 

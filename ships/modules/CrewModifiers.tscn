@@ -8,37 +8,37 @@ notAThruster = true
 type = "crew.modifier"
 default = "SYSTEM_NONE"
 
-[node name="SYSTEM_CREW_ADD_BUNK" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifier.tscn"]
+[node name="SYSTEM_CREW_ADD_BUNK" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifier.tscn"]
 systemName = "SYSTEM_CREW_ADD_BUNK"
 repairReplacementPrice = 4000
 repairFixPrice = 100
 crewCountChange = 1
 moraleChange = -0.3
 
-[node name="SYSTEM_CREW_ADD_BUNK2" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifier.tscn"]
+[node name="SYSTEM_CREW_ADD_BUNK2" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifier.tscn"]
 systemName = "SYSTEM_CREW_ADD_BUNK2"
 repairReplacementPrice = 7500
 repairFixPrice = 200
 crewCountChange = 2
 moraleChange = -0.4
 
-[node name="SYSTEM_CREW_ADD_CAPSULE" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifier.tscn"]
+[node name="SYSTEM_CREW_ADD_CAPSULE" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifier.tscn"]
 systemName = "SYSTEM_CREW_ADD_CAPSULE"
 repairReplacementPrice = 67500
 crewCountChange = 2
 moraleChange = -0.25
 
-[node name="SYSTEM_CREW_MOD_HOME" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifier.tscn"]
+[node name="SYSTEM_CREW_MOD_HOME" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifier.tscn"]
 systemName = "SYSTEM_CREW_MOD_HOME"
 repairReplacementPrice = 35000
 moraleChange = 0.1
 
-[node name="SYSTEM_CREW_MOD_KMX" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifier.tscn"]
+[node name="SYSTEM_CREW_MOD_KMX" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifier.tscn"]
 systemName = "SYSTEM_CREW_MOD_KMX"
 repairReplacementPrice = 120000
 moraleChange = 0.2
 
-[node name="SYSTEM_CREW_MOD_OCM" parent="." instance_placeholder="res://IndustriesOfEnceladusRevamp/ships/modules/CrewModifier.tscn"]
+[node name="SYSTEM_CREW_MOD_OCM" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifier.tscn"]
 systemName = "SYSTEM_CREW_MOD_OCM"
 repairReplacementPrice = 485000
 moraleChange = 0.5
