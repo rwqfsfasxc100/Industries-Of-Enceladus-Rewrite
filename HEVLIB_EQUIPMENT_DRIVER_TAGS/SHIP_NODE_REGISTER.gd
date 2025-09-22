@@ -4,44 +4,64 @@ const SHIP_TRTL = {
 	"ship_name":"SHIP_TRTL",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
-			"position":[-32,-75],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-32,-75],
+				"scale":[0.8]
+			},
 		},
 		"IOE_PREPROC_20x10":{
-			"position":[-32,-75],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-32,-75],
+				"scale":[0.8]
+			},
 		},
 		"IOE_PREPROC_40x20":{
-			"position":[-28,-75],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-28,-75],
+				"scale":[0.8]
+			},
 		},
 		"IOE_STORAGE_4K":{
-			"position":[-32,-75],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-32,-75],
+				"scale":[0.8]
+			},
 		},
 		"IOE_STORAGE_8K":{
-			"position":[-32,-75],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-32,-75],
+				"scale":[0.8]
+			},
 		},
 		"IOE_FABAUX_FAB":{
-			"position":[-32,-75],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-32,-75],
+				"scale":[0.8]
+			},
 		},
 		"IOE_FABAUX_BIGFAB":{
-			"position":[-32,-75],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-32,-75],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_M35":{
-			"position":[-32,-75],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-32,-75],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_M85":{
-			"position":[-32,-75],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-32,-75],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_P15":{
-			"position":[-32,-75],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-32,-75],
+				"scale":[0.8]
+			},
 		},
 	},
 }
@@ -52,44 +72,64 @@ const SHIP_TSUKUYOMI_IOT = {
 	"fallback_override":"SHIP_TSUKUYOMI_IOT",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
-			"position":[-117,-1125],
-			"scale":[2]
+			"position_data":{
+				"position":[-117,-1125],
+				"scale":[2]
+			},
 		},
 		"IOE_PREPROC_20x10":{
-			"position":[-117,-1125],
-			"scale":[2]
+			"position_data":{
+				"position":[-117,-1125],
+				"scale":[2]
+			},
 		},
 		"IOE_PREPROC_40x20":{
-			"position":[-113,-1125],
-			"scale":[2]
+			"position_data":{
+				"position":[-113,-1125],
+				"scale":[2]
+			},
 		},
 		"IOE_STORAGE_4K":{
-			"position":[-117,-1125],
-			"scale":[2]
+			"position_data":{
+				"position":[-117,-1125],
+				"scale":[2]
+			},
 		},
 		"IOE_STORAGE_8K":{
-			"position":[-117,-1125],
-			"scale":[2]
+			"position_data":{
+				"position":[-117,-1125],
+				"scale":[2]
+			},
 		},
 		"IOE_FABAUX_FAB":{
-			"position":[-117,-1125],
-			"scale":[2]
+			"position_data":{
+				"position":[-117,-1125],
+				"scale":[2]
+			},
 		},
 		"IOE_FABAUX_BIGFAB":{
-			"position":[-117,-1125],
-			"scale":[2]
+			"position_data":{
+				"position":[-117,-1125],
+				"scale":[2]
+			},
 		},
 		"IOE_ICEBREAKER_M35":{
-			"position":[-117,-1125],
-			"scale":[2]
+			"position_data":{
+				"position":[-117,-1125],
+				"scale":[2]
+			},
 		},
 		"IOE_ICEBREAKER_M85":{
-			"position":[-117,-1125],
-			"scale":[2]
+			"position_data":{
+				"position":[-117,-1125],
+				"scale":[2]
+			},
 		},
 		"IOE_ICEBREAKER_P15":{
-			"position":[-117,-1125],
-			"scale":[2]
+			"position_data":{
+				"position":[-117,-1125],
+				"scale":[2]
+			},
 		},
 	},
 }
@@ -98,44 +138,64 @@ const SHIP_PROSPECTOR = {
 	"ship_name":"SHIP_PROSPECTOR",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
-			"position":[-27,-192],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-192],
+				"scale":[0.8]
+			},
 		},
 		"IOE_PREPROC_20x10":{
-			"position":[-27,-192],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-192],
+				"scale":[0.8]
+			},
 		},
 		"IOE_PREPROC_40x20":{
-			"position":[-23,-192],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-23,-192],
+				"scale":[0.8]
+			},
 		},
 		"IOE_STORAGE_4K":{
-			"position":[-27,-192],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-192],
+				"scale":[0.8]
+			},
 		},
 		"IOE_STORAGE_8K":{
-			"position":[-27,-192],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-192],
+				"scale":[0.8]
+			},
 		},
 		"IOE_FABAUX_FAB":{
-			"position":[-27,-192],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-192],
+				"scale":[0.8]
+			},
 		},
 		"IOE_FABAUX_BIGFAB":{
-			"position":[-27,-192],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-192],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_M35":{
-			"position":[-27,-192],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-192],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_M85":{
-			"position":[-27,-192],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-192],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_P15":{
-			"position":[-27,-192],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-192],
+				"scale":[0.8]
+			},
 		},
 	},
 }
@@ -144,44 +204,64 @@ const SHIP_PROSPECTOR_VP = {
 	"ship_name":"SHIP_PROSPECTOR_VP",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
-			"position":[-27,-130],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-130],
+				"scale":[0.8]
+			},
 		},
 		"IOE_PREPROC_20x10":{
-			"position":[-27,-130],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-130],
+				"scale":[0.8]
+			},
 		},
 		"IOE_PREPROC_40x20":{
-			"position":[-23,-130],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-23,-130],
+				"scale":[0.8]
+			},
 		},
 		"IOE_STORAGE_4K":{
-			"position":[-27,-130],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-130],
+				"scale":[0.8]
+			},
 		},
 		"IOE_STORAGE_8K":{
-			"position":[-27,-130],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-130],
+				"scale":[0.8]
+			},
 		},
 		"IOE_FABAUX_FAB":{
-			"position":[-27,-130],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-130],
+				"scale":[0.8]
+			},
 		},
 		"IOE_FABAUX_BIGFAB":{
-			"position":[-27,-130],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-130],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_M35":{
-			"position":[-27,-130],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-130],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_M85":{
-			"position":[-27,-130],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-130],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_P15":{
-			"position":[-27,-130],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-27,-130],
+				"scale":[0.8]
+			},
 		},
 	},
 }
@@ -190,34 +270,54 @@ const SHIP_AT225 = {
 	"ship_name":"SHIP_AT225",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
-			"position":[-32,-210]
+			"position_data":{
+				"position":[-32,-210]
+			},
 		},
 		"IOE_PREPROC_20x10":{
-			"position":[-32,-210]
+			"position_data":{
+				"position":[-32,-210]
+			},
 		},
 		"IOE_PREPROC_40x20":{
-			"position":[-28,-210]
+			"position_data":{
+				"position":[-28,-210]
+			},
 		},
 		"IOE_STORAGE_4K":{
-			"position":[-32,-210]
+			"position_data":{
+				"position":[-32,-210]
+			},
 		},
 		"IOE_STORAGE_8K":{
-			"position":[-32,-210]
+			"position_data":{
+				"position":[-32,-210]
+			},
 		},
 		"IOE_FABAUX_FAB":{
-			"position":[-32,-210]
+			"position_data":{
+				"position":[-32,-210]
+			},
 		},
 		"IOE_FABAUX_BIGFAB":{
-			"position":[-32,-210]
+			"position_data":{
+				"position":[-32,-210]
+			},
 		},
 		"IOE_ICEBREAKER_M35":{
-			"position":[-32,-210]
+			"position_data":{
+				"position":[-32,-210]
+			},
 		},
 		"IOE_ICEBREAKER_M85":{
-			"position":[-32,-210]
+			"position_data":{
+				"position":[-32,-210]
+			},
 		},
 		"IOE_ICEBREAKER_P15":{
-			"position":[-32,-210]
+			"position_data":{
+				"position":[-32,-210]
+			},
 		},
 	},
 }
@@ -228,42 +328,62 @@ const SHIP_AT225B = {
 	"fallback_override":"SHIP_AT225",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
-			"position":[-50,-201],
-			"scale":[1.85]
+			"position_data":{
+				"position":[-50,-201],
+				"scale":[1.85]
+			},
 		},
 		"IOE_PREPROC_20x10":{
-			"position":[-50,-201],
-			"scale":[1.45]
+			"position_data":{
+				"position":[-50,-201],
+				"scale":[1.45]
+			},
 		},
 		"IOE_PREPROC_40x20":{
-			"position":[-46,-201],
-			"scale":[1.5]
+			"position_data":{
+				"position":[-46,-201],
+				"scale":[1.5]
+			},
 		},
 		"IOE_STORAGE_4K":{
-			"position":[-50,-201],
-			"scale":[1.2]
+			"position_data":{
+				"position":[-50,-201],
+				"scale":[1.2]
+			},
 		},
 		"IOE_STORAGE_8K":{
-			"position":[-50,-201],
-			"scale":[1.4]
+			"position_data":{
+				"position":[-50,-201],
+				"scale":[1.4]
+			},
 		},
 		"IOE_FABAUX_FAB":{
-			"position":[-50,-201]
+			"position_data":{
+				"position":[-50,-201]
+			},
 		},
 		"IOE_FABAUX_BIGFAB":{
-			"position":[-50,-201]
+			"position_data":{
+				"position":[-50,-201]
+			},
 		},
 		"IOE_ICEBREAKER_M35":{
-			"position":[-50,-201],
-			"scale":[2.5]
+			"position_data":{
+				"position":[-50,-201],
+				"scale":[2.5]
+			},
 		},
 		"IOE_ICEBREAKER_M85":{
-			"position":[-50,-201],
-			"scale":[3]
+			"position_data":{
+				"position":[-50,-201],
+				"scale":[3]
+			},
 		},
 		"IOE_ICEBREAKER_P15":{
-			"position":[-50,-201],
-			"scale":[3]
+			"position_data":{
+				"position":[-50,-201],
+				"scale":[3]
+			},
 		},
 	},
 }
@@ -272,44 +392,64 @@ const SHIP_PROSPECTOR_FAT = {
 	"ship_name":"SHIP_PROSPECTOR_FAT",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
-			"position":[-40,-230],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-230],
+				"scale":[0.8]
+			},
 		},
 		"IOE_PREPROC_20x10":{
-			"position":[-40,-230],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-230],
+				"scale":[0.8]
+			},
 		},
 		"IOE_PREPROC_40x20":{
-			"position":[-36,-230],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-36,-230],
+				"scale":[0.8]
+			},
 		},
 		"IOE_STORAGE_4K":{
-			"position":[-40,-230],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-230],
+				"scale":[0.8]
+			},
 		},
 		"IOE_STORAGE_8K":{
-			"position":[-40,-230],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-230],
+				"scale":[0.8]
+			},
 		},
 		"IOE_FABAUX_FAB":{
-			"position":[-40,-230],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-230],
+				"scale":[0.8]
+			},
 		},
 		"IOE_FABAUX_BIGFAB":{
-			"position":[-40,-230],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-230],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_M35":{
-			"position":[-40,-230],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-230],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_M85":{
-			"position":[-40,-230],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-230],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_P15":{
-			"position":[-40,-230],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-230],
+				"scale":[0.8]
+			},
 		},
 	},
 }
@@ -320,44 +460,64 @@ const SHIP_PROSPECTOR_PIGEON = {
 	"fallback_override":"SHIP_PROSPECTOR",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
-			"position":[-40,-165],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
 		},
 		"IOE_PREPROC_20x10":{
-			"position":[-40,-165],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
 		},
 		"IOE_PREPROC_40x20":{
-			"position":[-36,-165],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-36,-165],
+				"scale":[0.8]
+			},
 		},
 		"IOE_STORAGE_4K":{
-			"position":[-40,-165],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
 		},
 		"IOE_STORAGE_8K":{
-			"position":[-40,-165],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
 		},
 		"IOE_FABAUX_FAB":{
-			"position":[-40,-165],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
 		},
 		"IOE_FABAUX_BIGFAB":{
-			"position":[-40,-165],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_M35":{
-			"position":[-40,-165],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_M85":{
-			"position":[-40,-165],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
 		},
 		"IOE_ICEBREAKER_P15":{
-			"position":[-40,-165],
-			"scale":[0.8]
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
 		},
 	},
 }
@@ -366,54 +526,74 @@ const SHIP_OCP209 = {
 	"ship_name":"SHIP_OCP209",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
-			"position":[-140,0],
-			"scale":[1.75],
-			"rotation":45,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[1.75],
+				"rotation":45,
+			},
 		},
 		"IOE_PREPROC_20x10":{
-			"position":[-140,0],
-			"scale":[1.75],
-			"rotation":45,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[1.75],
+				"rotation":45,
+			},
 		},
 		"IOE_PREPROC_40x20":{
-			"position":[-136,0],
-			"scale":[1.5],
-			"rotation":45,
+			"position_data":{
+				"position":[-136,0],
+				"scale":[1.5],
+				"rotation":45,
+			},
 		},
 		"IOE_STORAGE_4K":{
-			"position":[-140,0],
-			"scale":[1.75],
-			"rotation":45,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[1.75],
+				"rotation":45,
+			},
 		},
 		"IOE_STORAGE_8K":{
-			"position":[-140,0],
-			"scale":[1.75],
-			"rotation":45,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[1.75],
+				"rotation":45,
+			},
 		},
 		"IOE_FABAUX_FAB":{
-			"position":[-140,0],
-			"scale":[0.8],
-			"rotation":45,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[0.8],
+				"rotation":45,
+			},
 		},
 		"IOE_FABAUX_BIGFAB":{
-			"position":[-140,0],
-			"scale":[0.8],
-			"rotation":45,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[0.8],
+				"rotation":45,
+			},
 		},
 		"IOE_ICEBREAKER_M35":{
-			"position":[-140,0],
-			"scale":[1],
-			"rotation":45,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[1],
+				"rotation":45,
+			},
 		},
 		"IOE_ICEBREAKER_M85":{
-			"position":[-140,0],
-			"scale":[2],
-			"rotation":45,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[2],
+				"rotation":45,
+			},
 		},
 		"IOE_ICEBREAKER_P15":{
-			"position":[-140,0],
-			"scale":[2],
-			"rotation":45,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[2],
+				"rotation":45,
+			},
 		},
 	},
 }
@@ -424,54 +604,74 @@ const SHIP_TRTL_OCP = {
 	"fallback_override":"SHIP_OCP209",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
-			"position":[-140,0],
-			"scale":[1.75],
-			"rotation":190,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[1.75],
+				"rotation":190,
+			},
 		},
 		"IOE_PREPROC_20x10":{
-			"position":[-140,0],
-			"scale":[1.75],
-			"rotation":190,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[1.75],
+				"rotation":190,
+			},
 		},
 		"IOE_PREPROC_40x20":{
-			"position":[-136,0],
-			"scale":[1.5],
-			"rotation":190,
+			"position_data":{
+				"position":[-136,0],
+				"scale":[1.5],
+				"rotation":190,
+			},
 		},
 		"IOE_STORAGE_4K":{
-			"position":[-140,0],
-			"scale":[1.75],
-			"rotation":190,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[1.75],
+				"rotation":190,
+			},
 		},
 		"IOE_STORAGE_8K":{
-			"position":[-140,0],
-			"scale":[1.75],
-			"rotation":190,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[1.75],
+				"rotation":190,
+			},
 		},
 		"IOE_FABAUX_FAB":{
-			"position":[-140,0],
-			"scale":[0.8],
-			"rotation":190,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[0.8],
+				"rotation":190,
+			},
 		},
 		"IOE_FABAUX_BIGFAB":{
-			"position":[-140,0],
-			"scale":[0.8],
-			"rotation":190,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[0.8],
+				"rotation":190,
+			},
 		},
 		"IOE_ICEBREAKER_M35":{
-			"position":[-140,0],
-			"scale":[1],
-			"rotation":190,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[1],
+				"rotation":190,
+			},
 		},
 		"IOE_ICEBREAKER_M85":{
-			"position":[-140,0],
-			"scale":[2],
-			"rotation":190,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[2],
+				"rotation":190,
+			},
 		},
 		"IOE_ICEBREAKER_P15":{
-			"position":[-140,0],
-			"scale":[2],
-			"rotation":190,
+			"position_data":{
+				"position":[-140,0],
+				"scale":[2],
+				"rotation":190,
+			},
 		},
 	},
 }
@@ -480,34 +680,54 @@ const SHIP_COTHON = {
 	"ship_name":"SHIP_COTHON",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
-			"position":[-43,-188]
+			"position_data":{
+				"position":[-43,-188]
+			}
 		},
 		"IOE_PREPROC_20x10":{
-			"position":[-43,-188]
+			"position_data":{
+				"position":[-43,-188]
+			},
 		},
 		"IOE_PREPROC_40x20":{
-			"position":[-39,-188]
+			"position_data":{
+				"position":[-39,-188]
+			},
 		},
 		"IOE_STORAGE_4K":{
-			"position":[-43,-188]
+			"position_data":{
+				"position":[-43,-188]
+			},
 		},
 		"IOE_STORAGE_8K":{
-			"position":[-43,-188]
+			"position_data":{
+				"position":[-43,-188]
+			},
 		},
 		"IOE_FABAUX_FAB":{
-			"position":[-43,-188]
+			"position_data":{
+				"position":[-43,-188]
+			},
 		},
 		"IOE_FABAUX_BIGFAB":{
-			"position":[-43,-188]
+			"position_data":{
+				"position":[-43,-188]
+			},
 		},
 		"IOE_ICEBREAKER_M35":{
-			"position":[-43,-188]
+			"position_data":{
+				"position":[-43,-188]
+			},
 		},
 		"IOE_ICEBREAKER_M85":{
-			"position":[-43,-188]
+			"position_data":{
+				"position":[-43,-188]
+			},
 		},
 		"IOE_ICEBREAKER_P15":{
-			"position":[-43,-188]
+			"position_data":{
+				"position":[-43,-188]
+			},
 		},
 	},
 }

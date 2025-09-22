@@ -52,6 +52,7 @@ func _ready():
 		visible = true
 		if registerExternal:
 			ship.externalSystems.append(self)
+	make_mirror()
 	isready = true
 	
 	
@@ -90,8 +91,8 @@ func _physics_process(delta):
 				
 				extend(ship)
 				
-				modify_shape()
-				make_mirror()
+#				modify_shape()
+#				make_mirror()
 
 func make_mirror():
 	self.rotation = -deg2rad(set_rot)
