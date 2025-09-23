@@ -16,4 +16,9 @@ SLOT_MAIN_LARGE|Large Main Propulsion
 
 SLOT_RCS_LARGE|Large Reaction Control System
 
-IOE_MOD_DESCRIPTION|This port of the Industries of Enceladus mod aims to bring full compatability with the content of IoE with that of other equipment mods. \n\nCompatability with saves using the original IoE isn't supported (yet) \n\nCredit: \nSpaceDotEXE - Original mod creator \nZa'krin Yoran - much of the hard work behind the mod's backend and aided with the original development \n__hev - Conversion to a compatable state
+
+
+
+IOE_MOD_DESCRIPTION|This port of the Industries of Enceladus mod aims to bring full compatability with the content of IoE with that of other equipment mods. \n\nCompatability with saves using the original IoE isn't supported (yet)
+
+IOE_MOD_BRIEF|Overhaul content mod with over a dozen ships, 50 equipment items, and much more...

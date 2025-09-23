@@ -3,32 +3,37 @@
 name="Industries of Enceladus Compat Port"
 id="hev.IndustriesOfEnceladus"
 description="IOE_MOD_DESCRIPTION"
+brief="IOE_MOD_BRIEF"
 author="__hev"
 credits=["SpaceDOTexe - original mod with a majority of the mod's functionality and content","Za'krin - mod main design and general help around the mod"]
 
 [version]
 
 version_major=2
-version_minor=4
-version_bugfix=10
+version_minor=5
+version_bugfix=0
 version_metadata=""
 
 [tags]
 
-allow_achievements=false
-overhaul=true
-quality_of_life=true
-language=["en","uk_UA"]
+TAG_ALLOW_ACHIEVEMENTS={"type":"bool","value":false}
+TAG_OVERHAUL={"type":"bool","value":true}
+TAG_QOL={"type":"bool","value":true}
+
+[languages]
+
+en="100%"
+uk_UA="70%"
 
 [links]
 
-github="https://github.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite"
-discord="https://discord.com/channels/426287934870781952/1324503298295988327"
-nexus="https://www.nexusmods.com/dvringsofsaturn/mods/12"
-donations="https://ko-fi.com/00hev"
-wiki="https://delta-v.kodera.pl/index.php/Mod:Industries_of_Enceladus"
-bug_reports="https://forms.gle/vUoarawnYjy3hXJi9"
+HEVLIB_GITHUB={"URL":"https://github.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite"}
+HEVLIB_DISCORD={"URL":"https://discord.com/channels/426287934870781952/1324503298295988327"}
+HEVLIB_NEXUS={"URL":"https://www.nexusmods.com/dvringsofsaturn/mods/12"}
+HEVLIB_DONATIONS={"URL":"https://ko-fi.com/00hev"}
+HEVLIB_WIKI={"URL":"https://delta-v.kodera.pl/index.php/Mod:Industries_of_Enceladus"}
+HEVLIB_BUGREPORTS={"URL":"https://forms.gle/vUoarawnYjy3hXJi9"}
 
 [manifest_definitions]
 
-manifest_version=2.1
+manifest_version=2.2
