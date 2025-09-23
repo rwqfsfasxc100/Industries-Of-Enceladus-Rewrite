@@ -4,7 +4,6 @@ extends "res://Settings.gd"
 var IoEConfig = {
 	"options":{
 		"verbose_logging":true,
-		"display_hold_size_on_hud":true,
 	},
 	"input":{
 		"ship_slot_9":[ "9" ],
