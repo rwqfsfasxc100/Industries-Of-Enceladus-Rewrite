@@ -363,15 +363,6 @@ position = Vector2( 0, -1320 )
 z_index = -5
 toggleCommand = "ship_slot_1"
 
-[node name="SYSTEM_ACTEMD14" parent="HiStressFore" index="19"]
-pivotPath = NodePath("Pivot")
-weaponPath = NodePath("Pivot/massdriver")
-audioPath = NodePath("Actuation")
-lightPath = NodePath("Pivot/Light")
-
-[node name="SYSTEM_ACL200P" parent="HiStressFore" index="20"]
-weaponPath = NodePath("Pivot/laster-pulse")
-
 [node name="TorpedoTubeLeftUp" parent="." instance=ExtResource( 28 )]
 position = Vector2( -160, -1250 )
 __meta__ = {
@@ -379,15 +370,6 @@ __meta__ = {
 }
 slot = "left"
 toggleCommand = "ship_slot_2"
-
-[node name="SYSTEM_ACTEMD14" parent="TorpedoTubeLeftUp" index="19"]
-pivotPath = NodePath("Pivot")
-weaponPath = NodePath("Pivot/massdriver")
-audioPath = NodePath("Actuation")
-lightPath = NodePath("Pivot/Light")
-
-[node name="SYSTEM_ACL200P" parent="TorpedoTubeLeftUp" index="20"]
-weaponPath = NodePath("Pivot/laster-pulse")
 
 [node name="TorpedoTubeRightUp" parent="." instance=ExtResource( 28 )]
 position = Vector2( 160, -1250 )
@@ -397,15 +379,6 @@ __meta__ = {
 slot = "right"
 toggleCommand = "ship_slot_3"
 
-[node name="SYSTEM_ACTEMD14" parent="TorpedoTubeRightUp" index="19"]
-pivotPath = NodePath("Pivot")
-weaponPath = NodePath("Pivot/massdriver")
-audioPath = NodePath("Actuation")
-lightPath = NodePath("Pivot/Light")
-
-[node name="SYSTEM_ACL200P" parent="TorpedoTubeRightUp" index="20"]
-weaponPath = NodePath("Pivot/laster-pulse")
-
 [node name="TorpedoTubeLeftDn" parent="." instance=ExtResource( 28 )]
 position = Vector2( -80, -1300 )
 __meta__ = {
@@ -413,15 +386,6 @@ __meta__ = {
 }
 slot = "middleLeft"
 toggleCommand = "ship_slot_4"
-
-[node name="SYSTEM_ACTEMD14" parent="TorpedoTubeLeftDn" index="19"]
-pivotPath = NodePath("Pivot")
-weaponPath = NodePath("Pivot/massdriver")
-audioPath = NodePath("Actuation")
-lightPath = NodePath("Pivot/Light")
-
-[node name="SYSTEM_ACL200P" parent="TorpedoTubeLeftDn" index="20"]
-weaponPath = NodePath("Pivot/laster-pulse")
 
 [node name="TorpedoTubeRightDn" parent="." instance=ExtResource( 28 )]
 position = Vector2( 80, -1300 )
@@ -431,15 +395,6 @@ __meta__ = {
 slot = "middleRight"
 toggleCommand = "ship_slot_5"
 
-[node name="SYSTEM_ACTEMD14" parent="TorpedoTubeRightDn" index="19"]
-pivotPath = NodePath("Pivot")
-weaponPath = NodePath("Pivot/massdriver")
-audioPath = NodePath("Actuation")
-lightPath = NodePath("Pivot/Light")
-
-[node name="SYSTEM_ACL200P" parent="TorpedoTubeRightDn" index="20"]
-weaponPath = NodePath("Pivot/laster-pulse")
-
 [node name="TurretMidLeft" parent="." instance=ExtResource( 28 )]
 position = Vector2( -310, -740 )
 rotation = -1.309
@@ -447,30 +402,12 @@ z_index = 25
 slot = "turretLeft"
 toggleCommand = "ship_slot_6"
 
-[node name="SYSTEM_ACTEMD14" parent="TurretMidLeft" index="19"]
-pivotPath = NodePath("Pivot")
-weaponPath = NodePath("Pivot/massdriver")
-audioPath = NodePath("Actuation")
-lightPath = NodePath("Pivot/Light")
-
-[node name="SYSTEM_ACL200P" parent="TurretMidLeft" index="20"]
-weaponPath = NodePath("Pivot/laster-pulse")
-
 [node name="TurretMidRight" parent="." instance=ExtResource( 28 )]
 position = Vector2( 310, -740 )
 rotation = 1.309
 z_index = 25
 slot = "turretRight"
 toggleCommand = "ship_slot_7"
-
-[node name="SYSTEM_ACTEMD14" parent="TurretMidRight" index="19"]
-pivotPath = NodePath("Pivot")
-weaponPath = NodePath("Pivot/massdriver")
-audioPath = NodePath("Actuation")
-lightPath = NodePath("Pivot/Light")
-
-[node name="SYSTEM_ACL200P" parent="TurretMidRight" index="20"]
-weaponPath = NodePath("Pivot/laster-pulse")
 
 [node name="DockML" parent="." instance=ExtResource( 28 )]
 position = Vector2( -200, -440 )
@@ -880,18 +817,69 @@ shadow_item_cull_mask = 3
 
 [node name="UberConversation" parent="." instance=ExtResource( 29 )]
 
+[node name="stationkeeping-lt" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( -196, -1246 )
+rotation = 3.14159
+command = "b"
+default = "SYSTEM_THRUSTER_NDSTR"
+
+[node name="stationkeeping-rt" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( 196, -1246 )
+rotation = 3.14159
+command = "b"
+default = "SYSTEM_THRUSTER_NDSTR"
+
+[node name="stationkeeping-lb" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( -90, 793 )
+command = "f"
+default = "SYSTEM_THRUSTER_NDSTR"
+
+[node name="stationkeeping-rb" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( 90, 793 )
+command = "f"
+default = "SYSTEM_THRUSTER_NDSTR"
+
+[node name="stationkeeping-ld" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( -370, 685 )
+rotation = 1.5708
+command = "l>"
+default = "SYSTEM_THRUSTER_NDSTR"
+
+[node name="stationkeeping-lm" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( -370, 350 )
+rotation = 1.5708
+command = "l>"
+default = "SYSTEM_THRUSTER_NDSTR"
+
+[node name="stationkeeping-lu" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( -200, -980 )
+rotation = 1.5708
+command = "r>"
+default = "SYSTEM_THRUSTER_NDSTR"
+
+[node name="stationkeeping-rd" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( 370, 685 )
+rotation = -1.5708
+command = "r<"
+default = "SYSTEM_THRUSTER_NDSTR"
+
+[node name="stationkeeping-rm" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( 370, 350 )
+rotation = -1.5708
+command = "r<"
+default = "SYSTEM_THRUSTER_NDSTR"
+
+[node name="stationkeeping-ru" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
+position = Vector2( 200, -980 )
+rotation = -1.5708
+command = "l<"
+default = "SYSTEM_THRUSTER_NDSTR"
+
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
 [connection signal="body_entered" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_exited"]
 
-[editable path="HiStressFore"]
-[editable path="TorpedoTubeLeftUp"]
-[editable path="TorpedoTubeRightUp"]
-[editable path="TorpedoTubeLeftDn"]
-[editable path="TorpedoTubeRightDn"]
-[editable path="TurretMidLeft"]
-[editable path="TurretMidRight"]
 [editable path="reactor-c"]
 [editable path="reactor-l"]
 [editable path="reactor-l/ExtendingRadiator/ExtendingRadiator"]

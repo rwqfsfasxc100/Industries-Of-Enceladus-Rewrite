@@ -71,7 +71,8 @@ func _ready():
 		}, 
 		"propulsion":{
 			"mainLarge":"SYSTEM_MAIN_ENGINE_ZURBIN", 
-			"rcsLarge":"SYSTEM_MAIN_ENGINE_NDNTR"
+			"rcsLarge":"SYSTEM_MAIN_ENGINE_NDNTR",
+			"rcs":"SYSTEM_THRUSTER_NDSTR"
 		}, 
 		"reactor":{"power":20.0}, 
 		"shielding":{"emp":0.0}, 
