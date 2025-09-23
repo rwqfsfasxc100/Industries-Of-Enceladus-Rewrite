@@ -1,28 +1,21 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://ships/RA-TRTL-R.tscn" type="PackedScene" id=1]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=2]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=3]
 
 [node name="TRTL-R" instance=ExtResource( 1 )]
 position = Vector2( 0, -7 )
 
-[node name="HoldModifiers" parent="." index="24" instance=ExtResource( 3 )]
-
-[node name="MineralProcessingUnit_Bulker" parent="." index="29" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
+[node name="MineralProcessingUnit_Bulker" parent="." index="28" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 light_mask = 0
 position = Vector2( 0, -13 )
 
-[node name="MineralProcessingUnit_Furnace" parent="." index="30" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
+[node name="MineralProcessingUnit_Furnace" parent="." index="29" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
 visible = false
 
-[node name="CargoBaffles" parent="." index="37"]
+[node name="CargoBaffles" parent="." index="36"]
 position = Vector2( 0, 43 )
 slot = "cargo.modifierDivided"
 
-[node name="CrewModifiers" parent="." index="38" instance=ExtResource( 2 )]
-
-[editable path="HoldModifiers"]
 [editable path="MineralProcessingUnit_FAB"]
 [editable path="AI"]

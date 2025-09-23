@@ -1,4 +1,4 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://ships/AI.tscn" type="PackedScene" id=2]
@@ -32,8 +32,6 @@
 [ext_resource path="res://ships/Lifepod.tscn" type="PackedScene" id=30]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=31]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=32]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=33]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=34]
 [ext_resource path="res://ships/drone/pods-m.png" type="Texture" id=35]
 [ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=36]
 [ext_resource path="res://ships/drone/pods-n.png" type="Texture" id=37]
@@ -638,9 +636,6 @@ systemName = "SYSTEM_REACTOR_PROSPECTOR"
 
 [node name="UberConversation" parent="." instance=ExtResource( 5 )]
 
-[node name="HoldModifiers" parent="." instance=ExtResource( 33 )]
-type = "cargo.modifierAmorphic"
-
 [node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 31 )]
 visible = false
 light_mask = 0
@@ -658,8 +653,6 @@ polygon = PoolVector2Array( -20, 68, -12, 70, 12, 70, 20, 68, 20, 10, 12, 8, 16,
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_Furnace/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( -20, 70, 20, 70, 20, 8, -20, 8 )
-
-[node name="CrewModifiers" parent="." instance=ExtResource( 34 )]
 
 [node name="Noises" parent="." instance=ExtResource( 11 )]
 
@@ -679,6 +672,5 @@ polygon = PoolVector2Array( -20, 70, 20, 70, 20, 8, -20, 8 )
 [editable path="MineralProcessingUnit_SMELT"]
 [editable path="MineralProcessingUnit_FAB"]
 [editable path="AI"]
-[editable path="HoldModifiers"]
 [editable path="MineralProcessingUnit_Bulker"]
 [editable path="MineralProcessingUnit_Furnace"]

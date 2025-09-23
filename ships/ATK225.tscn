@@ -1,10 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://ships/ATK225.tscn" type="PackedScene" id=1]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=2]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=5]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=6]
-
 
 [node name="ATK225" instance=ExtResource( 1 )]
 position = Vector2( 0, 18 )
@@ -35,29 +31,23 @@ position = Vector2( 104, 222 )
 visible = true
 slot = "cargo.modifierDivided"
 
-[node name="CargoAuxSlot" parent="." index="31" instance=ExtResource( 2 )]
-
-[node name="weapon-left" parent="." index="33"]
+[node name="weapon-left" parent="." index="32"]
 position = Vector2( -92, -462 )
 
-[node name="weapon-right" parent="." index="34"]
+[node name="weapon-right" parent="." index="33"]
 position = Vector2( 92, -462 )
 
 [node name="SYSTEM_PDMWG-R" parent="weapon-right" index="14"]
 visible = false
 
-[node name="AI" parent="." index="42"]
+[node name="AI" parent="." index="41"]
 visible = false
 
-[node name="CrewModifiers" parent="." index="45" instance=ExtResource( 5 )]
-
-[node name="HoldModifiers" parent="." index="46" instance=ExtResource( 6 )]
-
-[node name="MineralProcessingUnit_Bulker" parent="." index="48" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
+[node name="MineralProcessingUnit_Bulker" parent="." index="45" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 position = Vector2( 0, 142 )
 
-[node name="MineralProcessingUnit_Furnace" parent="." index="49" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
+[node name="MineralProcessingUnit_Furnace" parent="." index="46" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
 visible = false
 light_mask = 1
 position = Vector2( 0, 148 )
@@ -67,7 +57,6 @@ position = Vector2( 0, 148 )
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_SMELT"]
 [editable path="MineralProcessingUnit_FAB"]
-[editable path="CargoAuxSlot"]
 [editable path="weapon-left"]
 [editable path="weapon-right"]
 [editable path="weapon-left-back"]
@@ -77,5 +66,3 @@ position = Vector2( 0, 148 )
 [editable path="weapon-left-back3"]
 [editable path="weapon-right-back3"]
 [editable path="AI"]
-[editable path="CrewModifiers"]
-[editable path="HoldModifiers"]

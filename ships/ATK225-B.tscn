@@ -1,9 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://ships/ATK225-B.tscn" type="PackedScene" id=1]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=2]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=4]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=5]
 
 [node name="ATK225" instance=ExtResource( 1 )]
 position = Vector2( 0, 18 )
@@ -41,28 +38,20 @@ visible = false
 [node name="MineralProcessingUnit_DRY" parent="." index="29"]
 visible = false
 
-[node name="CargoAuxSlot" parent="." index="33" instance=ExtResource( 2 )]
-position = Vector2( 0, -201 )
-
-[node name="weapon-left" parent="." index="35"]
+[node name="weapon-left" parent="." index="34"]
 position = Vector2( -92, -446 )
 
-[node name="weapon-right" parent="." index="36"]
+[node name="weapon-right" parent="." index="35"]
 position = Vector2( 92, -446 )
 
-[node name="AI" parent="." index="44"]
+[node name="AI" parent="." index="43"]
 visible = false
-
-[node name="CrewModifiers" parent="." index="47" instance=ExtResource( 4 )]
-
-[node name="HoldModifiers" parent="." index="48" instance=ExtResource( 5 )]
 
 [editable path="MineralProcessingUnit"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_SMELT"]
 [editable path="MineralProcessingUnit_FAB"]
-[editable path="CargoAuxSlot"]
 [editable path="weapon-left"]
 [editable path="weapon-right"]
 [editable path="weapon-left-back"]
@@ -72,4 +61,3 @@ visible = false
 [editable path="weapon-left-back3"]
 [editable path="weapon-right-back3"]
 [editable path="AI"]
-[editable path="HoldModifiers"]

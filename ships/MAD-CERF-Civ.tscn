@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -41,9 +41,6 @@
 [ext_resource path="res://ships/modules/MPU-c.png" type="Texture" id=41]
 [ext_resource path="res://ships/drone/pods-n.png" type="Texture" id=42]
 [ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=43]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=44]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=45]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=46]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_DRY.tscn" type="PackedScene" id=47]
 [ext_resource path="res://ships/modules/CargoBaffles.tscn" type="PackedScene" id=49]
 [ext_resource path="res://lights/ConfigurableLight.gd" type="Script" id=50]
@@ -67,19 +64,6 @@ shader_param/ref = 0.4
 shader_param/roughness = 4.0
 shader_param/reflectiveness = 8.0
 shader_param/shine = 1.0
-
-[sub_resource type="ShaderMaterial" id=13]
-shader = ExtResource( 38 )
-shader_param/maxval = 5.0
-shader_param/sparkBias = 0.0
-shader_param/scale = Vector2( 0.5, 1 )
-shader_param/coatColor = Vector3( 0.02, 0.02, 0.02 )
-shader_param/ref = 0.1
-shader_param/roughness = 0.5
-shader_param/reflectiveness = 1.0
-shader_param/shine = 1.0
-shader_param/mipmapBias = 0.0
-shader_param/map = ExtResource( 4 )
 
 [sub_resource type="CanvasItemMaterial" id=8]
 blend_mode = 1
@@ -222,17 +206,6 @@ editor_only = true
 texture = ExtResource( 21 )
 energy = 2.14
 range_height = 2000.0
-
-[node name="CargoAuxSlot@CargoAuxFab@Sprite" type="Sprite" parent="."]
-material = SubResource( 13 )
-position = Vector2( 1, -21 )
-rotation = 1.5708
-scale = Vector2( -1, 1 )
-z_index = -10
-texture = ExtResource( 5 )
-normal_map = ExtResource( 6 )
-region_enabled = true
-region_rect = Rect2( 689, 61, 105, 40 )
 
 [node name="editor_centrelight" type="Light2D" parent="."]
 material = SubResource( 4 )
@@ -647,8 +620,6 @@ slot = "leftBay3"
 remove = true
 toggleCommand = "ship_slot_8"
 
-[node name="HoldModifiers" parent="." instance=ExtResource( 45 )]
-
 [node name="MineralProcessingUnit" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit.tscn"]
 visible = false
 light_mask = 0
@@ -731,9 +702,6 @@ polygon = PoolVector2Array( -40, -150, -30, -160, -30, -240, -20, -250, 20, -250
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_DRY/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( -40, -150, -30, -160, -30, -240, -20, -250, 20, -250, 30, -240, 30, -160, 40, -150, 240, -150, 240, 96, -240, 96, -240, -150 )
-
-[node name="CargoAuxSlot" parent="." instance=ExtResource( 44 )]
-position = Vector2( 0, -136 )
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 49 )]
 visible = false
@@ -845,15 +813,12 @@ maxRpm = 1800.0
 powerDraw = 25000.0
 rpmPS = 300.0
 
-[node name="CrewModifiers" parent="." instance=ExtResource( 46 )]
-
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
 
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_Furnace"]
 [editable path="MineralProcessingUnit_DRY"]
-[editable path="CargoAuxSlot"]
 [editable path="CargoBaffles"]
 [editable path="AI"]
 [editable path="reactor-l"]

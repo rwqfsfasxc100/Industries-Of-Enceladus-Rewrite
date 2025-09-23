@@ -1,9 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://ships/Cothon-V.tscn" type="PackedScene" id=1]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=2]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=3]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=4]
 
 [node name="Cothon-V" instance=ExtResource( 1 )]
 
@@ -22,25 +19,16 @@ position = Vector2( 47, -92 )
 [node name="CollisionPolygon2D" parent="CargoBaffles/RightBaffle" index="1"]
 polygon = PoolVector2Array( -44, 14, -12, -4, -4, 0, -14, 12, -44, 18 )
 
-[node name="HoldModifiers" parent="." index="19" instance=ExtResource( 3 )]
-type = "cargo.modifierAmorphic"
-
-[node name="CargoAuxSlot" parent="." index="20" instance=ExtResource( 4 )]
-
-[node name="MineralProcessingUnit_Bulker" parent="." index="21" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/cothon/MineralProcessingUnit_Bulker.tscn"]
+[node name="MineralProcessingUnit_Bulker" parent="." index="19" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/cothon/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 
-[node name="MineralProcessingUnit_Furnace" parent="." index="22" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/cothon/MineralProcessingUnit_Furnace.tscn"]
+[node name="MineralProcessingUnit_Furnace" parent="." index="20" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/cothon/MineralProcessingUnit_Furnace.tscn"]
 visible = false
 
-[node name="AI" parent="." index="34"]
+[node name="AI" parent="." index="32"]
 visible = false
-
-[node name="CrewModifiers" parent="." index="37" instance=ExtResource( 2 )]
 
 [editable path="CargoBaffles"]
-[editable path="HoldModifiers"]
-[editable path="CargoAuxSlot"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_FAB"]

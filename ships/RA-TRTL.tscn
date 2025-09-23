@@ -1,9 +1,6 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=2 format=2]
 
 [ext_resource path="res://ships/RA-TRTL.tscn" type="PackedScene" id=1]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=2]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=3]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=4]
 
 [node name="TRTL" instance=ExtResource( 1 )]
 position = Vector2( 0, -7 )
@@ -23,39 +20,29 @@ energy = 2.5
 range_height = 2048.0
 range_z_min = -892
 
-[node name="HoldModifiers" parent="." index="24" instance=ExtResource( 2 )]
-
-[node name="MineralProcessingUnit" parent="." index="25"]
+[node name="MineralProcessingUnit" parent="." index="24"]
 polygon = PoolVector2Array( -32, -57, -19, -36, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 19, -36, 32, -57, 32, 3, 20, 31, -20, 31, -32, 3 )
 
-[node name="MineralProcessingUnit_FSO" parent="." index="27"]
+[node name="MineralProcessingUnit_FSO" parent="." index="26"]
 polygon = PoolVector2Array( -32, -89, -28, -81, -22, 12, -10, 24, 10, 24, 22, 12, 28, -81, 32, -89, 32, 3, 20, 31, -20, 31, -32, 3 )
 
-[node name="MineralProcessingUnit_SMELT" parent="." index="28"]
+[node name="MineralProcessingUnit_SMELT" parent="." index="27"]
 polygon = PoolVector2Array( -32, -69, -16, -60, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 16, -60, 32, -69, 32, 3, 20, 31, -20, 31, -32, 3 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." index="29" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
+[node name="MineralProcessingUnit_Bulker" parent="." index="28" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
 visible = false
 
-[node name="MineralProcessingUnit_Furnace" parent="." index="30" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
+[node name="MineralProcessingUnit_Furnace" parent="." index="29" instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
 visible = false
 
-[node name="MineralProcessingUnit_FAB" parent="." index="31"]
+[node name="MineralProcessingUnit_FAB" parent="." index="30"]
 polygon = PoolVector2Array( -32, -85, 2, -50, 2, -17, -12, -17, -24, -7, -24, 13, -12, 25, 12, 25, 28, 9, 28, -51, 32, -85, 32, 3, 28, 13, 20, 31, -20, 31, -26, 17, -32, 3, -32, -25 )
 
-[node name="AI" parent="." index="34"]
+[node name="AI" parent="." index="33"]
 visible = false
 
-[node name="CargoBaffles" parent="." index="37"]
+[node name="CargoBaffles" parent="." index="36"]
 visible = false
 slot = "cargo.modifierDivided"
 
-[node name="CrewModifiers" parent="." index="38" instance=ExtResource( 3 )]
-
-[node name="CargoAuxSlot" parent="." index="40" instance=ExtResource( 4 )]
-position = Vector2( 0, -92 )
-
-[editable path="HoldModifiers"]
 [editable path="AI"]
-[editable path="CrewModifiers"]
-[editable path="CargoAuxSlot"]

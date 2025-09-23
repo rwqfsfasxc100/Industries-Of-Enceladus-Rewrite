@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -23,7 +23,6 @@
 [ext_resource path="res://ships/AI.tscn" type="PackedScene" id=25]
 [ext_resource path="res://lights/light-mask.png" type="Texture" id=26]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=27]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=28]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=29]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=30]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_DRY.tscn" type="PackedScene" id=31]
@@ -344,9 +343,6 @@ position = Vector2( -6, 0 )
 scale = Vector2( -1, 1 )
 polygon = PoolVector2Array( 12, -7, 28, -3, 29, 0, 10, 3, 8, 1 )
 
-[node name="HoldModifiersAmorphic" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn"]
-type = "cargo.modifierAmorphic"
-
 [node name="MineralProcessingUnit" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit.tscn"]
 visible = false
 position = Vector2( 0, -144 )
@@ -481,8 +477,6 @@ shape = SubResource( 6 )
 [node name="Hud" parent="." instance=ExtResource( 22 )]
 
 [node name="UberConversation" parent="." instance=ExtResource( 10 )]
-
-[node name="CrewModifiers" parent="." instance=ExtResource( 28 )]
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]

@@ -1,10 +1,8 @@
-[gd_scene load_steps=47 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=1]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=2]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=3]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=4]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=5]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=6]
 [ext_resource path="res://ships/modules/TorchSlot.tscn" type="PackedScene" id=7]
 [ext_resource path="res://lights/distant-proxy.png" type="Texture" id=8]
@@ -626,9 +624,6 @@ position = Vector2( 0, 203 )
 [node name="SYSTEM_SCOOP-L" parent="DockAftStbd" index="22"]
 position = Vector2( 0, 203 )
 
-[node name="HoldModifiers" parent="." instance=ExtResource( 5 )]
-type = "cargo.modifierAmorphic"
-
 [node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 6 )]
 visible = false
 light_mask = 0
@@ -648,8 +643,6 @@ polygon = PoolVector2Array( -106, -15, -84, 7, -46, 27, 1.61732e-06, 37, 46, 27,
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_Furnace/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( 1.87959e-06, 43, 76, 19, 118, -29, 110, -45, -1.44248e-06, -33, -110, -47, -118, -29, -76, 19 )
 
-[node name="CrewModifiers" parent="." instance=ExtResource( 4 )]
-
 [connection signal="body_entered" from="Bay/Bay/CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="Bay/Bay/CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
@@ -668,6 +661,5 @@ polygon = PoolVector2Array( 1.87959e-06, 43, 76, 19, 118, -29, 110, -45, -1.4424
 [editable path="DockForeStbd"]
 [editable path="DockAftPort"]
 [editable path="DockAftStbd"]
-[editable path="HoldModifiers"]
 [editable path="MineralProcessingUnit_Bulker"]
 [editable path="MineralProcessingUnit_Furnace"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=2]
+[gd_scene load_steps=48 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
@@ -34,12 +34,9 @@
 [ext_resource path="res://ships/modules/claws.phymat" type="PhysicsMaterial" id=32]
 [ext_resource path="res://ships/modules/Bay.gd" type="Script" id=33]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=34]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=35]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=36]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_close.wav.sample" type="AudioStream" id=37]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/hud/collect_pac.wav.sample" type="AudioStream" id=38]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/excavator_pac_open.wav.sample" type="AudioStream" id=39]
-
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
@@ -671,9 +668,6 @@ anims/appear = SubResource( 8 )
 [node name="AIdebug" parent="." instance=ExtResource( 22 )]
 visible = false
 
-[node name="HoldModifiers" parent="." instance=ExtResource( 36 )]
-type = "cargo.modifierAmorphic"
-
 [node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 31 )]
 visible = false
 light_mask = 0
@@ -759,8 +753,6 @@ systemName = "SYSTEM_REACTOR_OCP209"
 
 [node name="UberConversation" parent="." instance=ExtResource( 23 )]
 
-[node name="CrewModifiers" parent="." instance=ExtResource( 35 )]
-
 [node name="CentriCabin" type="Sprite" parent="."]
 material = SubResource( 11 )
 position = Vector2( 0, -331 )
@@ -809,7 +801,6 @@ hullCustomPaintFile = "user://custom-ocp-209.png"
 [editable path="DockForeStbd"]
 [editable path="DockAftPort"]
 [editable path="DockAftStbd"]
-[editable path="HoldModifiers"]
 [editable path="MineralProcessingUnit_Bulker"]
 [editable path="MineralProcessingUnit_Furnace"]
 [editable path="MineralProcessingUnit_DRY"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
@@ -36,10 +36,6 @@
 [ext_resource path="res://ships/CabinLight.gd" type="Script" id=34]
 [ext_resource path="res://lights/light-mask.png" type="Texture" id=35]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/ocp/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=36]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=37]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=43]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=44]
-
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
@@ -579,11 +575,6 @@ anims/appear = SubResource( 6 )
 [node name="AIdebug" parent="." instance=ExtResource( 22 )]
 visible = false
 
-[node name="HoldModifiers" parent="." instance=ExtResource( 43 )]
-type = "cargo.modifierAmorphic"
-
-[node name="CargoAuxSlot" parent="." instance=ExtResource( 37 )]
-
 [node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 3 )]
 visible = false
 light_mask = 0
@@ -670,8 +661,6 @@ systemName = "SYSTEM_REACTOR_OCP209"
 
 [node name="UberConversation" parent="." instance=ExtResource( 23 )]
 
-[node name="CrewModifiers" parent="." instance=ExtResource( 44 )]
-
 [node name="CentriCabin" type="Sprite" parent="."]
 material = SubResource( 11 )
 position = Vector2( 0, -331 )
@@ -719,7 +708,6 @@ hullCustomPaintFile = "user://custom-ocp-209.png"
 [editable path="DockForeStbd"]
 [editable path="DockAftPort"]
 [editable path="DockAftStbd"]
-[editable path="HoldModifiers"]
 [editable path="MineralProcessingUnit"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]

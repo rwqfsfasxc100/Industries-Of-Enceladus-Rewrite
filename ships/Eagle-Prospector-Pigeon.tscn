@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -30,10 +30,8 @@
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=28]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=30]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=32]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/prospector/fat/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=34]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/prospector/fat/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=35]
-
 
 [sub_resource type="ShaderMaterial" id=8]
 shader = ExtResource( 2 )
@@ -574,8 +572,6 @@ damping = 0.05
 [node name="AIdebug" parent="." instance=ExtResource( 24 )]
 visible = false
 
-[node name="HoldModifiers" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn"]
-
 [node name="MineralProcessingUnit" parent="." instance=ExtResource( 30 )]
 visible = false
 light_mask = 0
@@ -618,9 +614,6 @@ visible = false
 [node name="MineralProcessingUnit_Furnace" parent="." instance=ExtResource( 34 )]
 visible = false
 
-[node name="CargoAuxSlot" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/prospector/fat/CargoAuxSlot.tscn"]
-position = Vector2( 0, -156 )
-
 [node name="MineralProcessingUnit_FAB" parent="." instance=ExtResource( 22 )]
 visible = false
 position = Vector2( 0, -5 )
@@ -661,8 +654,6 @@ texture = ExtResource( 10 )
 hframes = 11
 region_rect = Rect2( 0, 348, 2816, 160 )
 systemName = "SYSTEM_REACTOR_PROSPECTOR"
-
-[node name="CrewModifiers" parent="." instance=ExtResource( 32 )]
 
 [node name="UberConversation" parent="." instance=ExtResource( 23 )]
 

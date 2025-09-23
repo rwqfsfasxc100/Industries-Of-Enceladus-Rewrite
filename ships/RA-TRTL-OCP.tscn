@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -29,14 +29,10 @@
 [ext_resource path="res://ships/obonto-cd.png" type="Texture" id=27]
 [ext_resource path="res://ships/obonto-n.png" type="Texture" id=28]
 [ext_resource path="res://ships/obonto-m.png" type="Texture" id=29]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=30]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=31]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=32]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxSlot.tscn" type="PackedScene" id=33]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=34]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=35]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/Excavator.gd" type="Script" id=36]
-
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 2 )
@@ -729,8 +725,6 @@ position = Vector2( 6, 8 )
 scale = Vector2( -1, 1 )
 polygon = PoolVector2Array( 9, -12, 28, -6, 29, 0, 4, -4, 4, -10 )
 
-[node name="HoldModifiers" parent="." instance=ExtResource( 34 )]
-
 [node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 32 )]
 visible = false
 position = Vector2( 0, 110 )
@@ -741,12 +735,6 @@ polygon = PoolVector2Array( 4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 
 visible = false
 position = Vector2( 0, 96 )
 polygon = PoolVector2Array( -106, -15, -84, 7, -46, 27, 1.61732e-06, 37, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 138, -62, 122, -24, 100, 3.99999, 72, 26, 38, 40, 0, 46, -38, 40, -72, 26, -100, 4.00001, -120, -20, -136, -56, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33 )
-
-[node name="CargoAuxSlot" parent="." instance=ExtResource( 33 )]
-position = Vector2( 0, -80 )
-
-[node name="CrewModifiers" parent="." instance=ExtResource( 30 )]
-position = Vector2( 0, 70 )
 
 [node name="UberConversation" parent="." instance=ExtResource( 10 )]
 
@@ -764,4 +752,3 @@ position = Vector2( 0, 70 )
 [editable path="CargoBaffles"]
 [editable path="MineralProcessingUnit_Bulker"]
 [editable path="MineralProcessingUnit_Furnace"]
-[editable path="CargoAuxSlot"]

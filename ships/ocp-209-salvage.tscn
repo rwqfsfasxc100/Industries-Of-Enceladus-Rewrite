@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
@@ -23,16 +23,13 @@
 [ext_resource path="res://debug/AIdebug.tscn" type="PackedScene" id=21]
 [ext_resource path="res://comms/conversation/UberConversation.tscn" type="PackedScene" id=22]
 [ext_resource path="res://ships/Lifepod.tscn" type="PackedScene" id=23]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=24]
 [ext_resource path="res://lights/spotlight.png" type="Texture" id=25]
 [ext_resource path="res://ships/obonto-cd.png" type="Texture" id=26]
 [ext_resource path="res://ships/obonto-cl.png" type="Texture" id=27]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=28]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=30]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=31]
 [ext_resource path="res://ships/modules/SalvageArm.tscn" type="PackedScene" id=38]
-
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 1 )
@@ -537,11 +534,6 @@ position = Vector2( 0, 192 )
 visible = false
 position = Vector2( 0, 192 )
 
-[node name="HoldModifiers" parent="." instance=ExtResource( 31 )]
-type = "cargo.modifierAmorphic"
-
-[node name="CrewModifiers" parent="." instance=ExtResource( 24 )]
-
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
 [connection signal="body_entered" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_entered"]
@@ -555,5 +547,3 @@ type = "cargo.modifierAmorphic"
 [editable path="MineralProcessingUnit_SMELT"]
 [editable path="MineralProcessingUnit_FAB"]
 [editable path="MineralProcessingUnit_DRY"]
-[editable path="HoldModifiers"]
-[editable path="CrewModifiers"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://lights/distant-proxy.png" type="Texture" id=2]
@@ -41,10 +41,7 @@
 [ext_resource path="res://ships/matchParent.gd" type="Script" id=39]
 [ext_resource path="res://ships/nival-cl.png" type="Texture" id=40]
 [ext_resource path="res://ships/nival-cd.png" type="Texture" id=41]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn" type="PackedScene" id=42]
 [ext_resource path="res://sfx/dv-plume.wav" type="AudioStream" id=43]
-[ext_resource path="res://ships/modules/AuxSlot.tscn" type="PackedScene" id=44]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=45]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_DRY.tscn" type="PackedScene" id=46]
 [ext_resource path="res://ships/modules/CargoBaffles.tscn" type="PackedScene" id=47]
 
@@ -462,9 +459,6 @@ damageOverheatThreshold = 8000.0
 damageOverheatCapacity = 5.76e+06
 systemName = "SYSTEM_OE600"
 
-[node name="HoldModifiers" parent="." instance=ExtResource( 42 )]
-position = Vector2( 0, -64 )
-
 [node name="MineralProcessingUnit" parent="." instance=ExtResource( 34 )]
 visible = false
 light_mask = 0
@@ -541,8 +535,6 @@ polygon = PoolVector2Array( -24, -88, -20, -80, -18, -14, -12, -4, 12, -4, 18, -
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_DRY/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( -18, -4, 18, -4, 20, -80, -20, -80 )
 
-[node name="AuxSlot" parent="." instance=ExtResource( 44 )]
-
 [node name="reactor" parent="." instance=ExtResource( 5 )]
 position = Vector2( 0, -64 )
 z_index = 20
@@ -613,8 +605,6 @@ __meta__ = {
 position = Vector2( 0, -64 )
 
 [node name="UberConversation" parent="." instance=ExtResource( 32 )]
-
-[node name="CrewModifiers" parent="." instance=ExtResource( 45 )]
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 47 )]
 position = Vector2( 0, -84 )

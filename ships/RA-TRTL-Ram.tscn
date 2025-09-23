@@ -1,4 +1,4 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://ships/shipHull.phymat" type="PhysicsMaterial" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
@@ -28,8 +28,6 @@
 [ext_resource path="res://comms/conversation/UberConversation.tscn" type="PackedScene" id=26]
 [ext_resource path="res://ships/modules/Grinder.tscn" type="PackedScene" id=27]
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/Excavator.gd" type="Script" id=28]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CrewModifiers.tscn" type="PackedScene" id=29]
-
 
 [sub_resource type="ShaderMaterial" id=1]
 shader = ExtResource( 5 )
@@ -353,9 +351,6 @@ anims/appear = SubResource( 5 )
 [node name="AIdebug" parent="." instance=ExtResource( 17 )]
 visible = false
 
-[node name="HoldModifiers" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/HoldModifiers.tscn"]
-type = "cargo.modifierAmorphic"
-
 [node name="MineralProcessingUnit" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit.tscn"]
 visible = false
 position = Vector2( 0, 20 )
@@ -383,10 +378,6 @@ position = Vector2( 0, 3 )
 visible = false
 light_mask = 1
 position = Vector2( 0, 9 )
-
-[node name="CargoAuxSlot" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/CargoAuxSlot.tscn"]
-visible = false
-position = Vector2( 0, -95 )
 
 [node name="MineralProcessingUnit_FAB" parent="." instance=ExtResource( 19 )]
 visible = false
@@ -424,8 +415,6 @@ systemName = "SYSTEM_REACTOR_TNTRL_FORT"
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 25 )]
 slot = "cargo.modifierAmorphic"
-
-[node name="CrewModifiers" parent="." instance=ExtResource( 29 )]
 
 [node name="UberConversation" parent="." instance=ExtResource( 26 )]
 
