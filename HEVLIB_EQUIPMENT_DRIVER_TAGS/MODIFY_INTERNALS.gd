@@ -37,7 +37,7 @@ const MODIFY_INTERNALS = [
 		"system":"SYSTEM_CARGO_MOD_BOLTS",
 		"storage_multi":1/1,
 		"force_type":"divided",
-		"mass":-1000
+		"mass":-650
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_AMORPH4",

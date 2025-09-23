@@ -5,6 +5,48 @@
 
 [node name="ShipParams" instance=ExtResource( 1 )]
 
+[node name="fuelReadout" parent="." index="1"]
+margin_right = 249.0
+
+[node name="fuelUnit" parent="." index="2"]
+margin_left = 253.0
+margin_right = 278.0
+
+[node name="returnFuelReadout" parent="." index="4"]
+margin_right = 249.0
+
+[node name="returnFuelUnit" parent="." index="5"]
+margin_left = 253.0
+margin_right = 278.0
+
+[node name="returnTripTimeReadout" parent="." index="7"]
+margin_right = 249.0
+
+[node name="returnTripTimeUnit" parent="." index="8"]
+margin_left = 253.0
+margin_right = 278.0
+
+[node name="dvReadout" parent="." index="16"]
+margin_right = 249.0
+
+[node name="dvUnit" parent="." index="17"]
+margin_left = 253.0
+margin_right = 278.0
+
+[node name="ammoReadout" parent="." index="19"]
+margin_right = 249.0
+
+[node name="ammoUnit" parent="." index="20"]
+margin_left = 253.0
+margin_right = 278.0
+
+[node name="dronesReadout" parent="." index="22"]
+margin_right = 249.0
+
+[node name="dronesUnit" parent="." index="23"]
+margin_left = 253.0
+margin_right = 278.0
+
 [node name="holdFillLabel" type="Label" parent="." index="24"]
 modulate = Color( 0.5, 3, 0.5, 1 )
 margin_top = 108.0
@@ -13,15 +55,20 @@ margin_bottom = 122.0
 text = "HUD_HOLD_FILL"
 uppercase = true
 
-[node name="holdFillReadout" type="Label" parent="." index="25"]
+[node name="HBoxContainer" type="HBoxContainer" parent="." index="25"]
 margin_left = 152.0
 margin_top = 108.0
-margin_right = 192.0
+margin_right = 249.0
 margin_bottom = 122.0
+
+[node name="holdFillReadout" type="Label" parent="HBoxContainer" index="0"]
+margin_right = 40.0
+margin_bottom = 14.0
 text = "   0.00"
 script = ExtResource( 2 )
 sensor = "hold.fill"
-format = "%7.1f"
+format = "%1.1f"
+controlFormat = "%+1.3f"
 minWarn = 0.0
 minErr = 0.0
 maxWarn = 80.0
@@ -29,13 +76,38 @@ maxErr = 100.0
 conversion = 100.0
 sensorTemporalResolution = 1.0
 
+[node name="Label" type="Label" parent="HBoxContainer" index="1"]
+modulate = Color( 0.5, 3, 0.5, 1 )
+margin_left = 44.0
+margin_right = 65.0
+margin_bottom = 14.0
+text = "% /"
+
+[node name="holdReadout" type="Label" parent="HBoxContainer" index="2"]
+margin_left = 69.0
+margin_right = 97.0
+margin_bottom = 14.0
+text = "0.00"
+align = 2
+script = ExtResource( 2 )
+sensor = "hold"
+format = "%1.1f"
+control = true
+controlFormat = "%+1.1f"
+minWarn = 0.0
+minErr = 0.0
+maxWarn = 1e+07
+maxErr = 1e+07
+conversion = 0.001
+flashTime = 1.0
+
 [node name="holdFillUnit" type="Label" parent="." index="26"]
 modulate = Color( 0.5, 3, 0.5, 1 )
-margin_left = 196.0
+margin_left = 253.0
 margin_top = 108.0
-margin_right = 221.0
+margin_right = 278.0
 margin_bottom = 122.0
-text = "%"
+text = "t"
 
 [node name="shipMassLabel" parent="." index="27"]
 margin_top = 126.0
@@ -43,10 +115,13 @@ margin_bottom = 140.0
 
 [node name="shipMassReadout" parent="." index="28"]
 margin_top = 126.0
+margin_right = 249.0
 margin_bottom = 140.0
 
 [node name="shipMassUnit" parent="." index="29"]
+margin_left = 253.0
 margin_top = 126.0
+margin_right = 278.0
 margin_bottom = 140.0
 
 [node name="powerDrawLabel" parent="." index="30"]
@@ -55,10 +130,13 @@ margin_bottom = 158.0
 
 [node name="powerDrawReadout" parent="." index="31"]
 margin_top = 144.0
+margin_right = 249.0
 margin_bottom = 158.0
 
 [node name="powerDrawUnit" parent="." index="32"]
+margin_left = 253.0
 margin_top = 144.0
+margin_right = 278.0
 margin_bottom = 158.0
 
 [node name="powerSupplyLabel" parent="." index="33"]
@@ -67,10 +145,13 @@ margin_bottom = 176.0
 
 [node name="powerSupplyReadout" parent="." index="34"]
 margin_top = 162.0
+margin_right = 249.0
 margin_bottom = 176.0
 
 [node name="powerSupplyUnit" parent="." index="35"]
+margin_left = 253.0
 margin_top = 162.0
+margin_right = 278.0
 margin_bottom = 176.0
 
 [node name="powerBalanceLabel" parent="." index="36"]
@@ -79,10 +160,13 @@ margin_bottom = 194.0
 
 [node name="powerBalanceReadout" parent="." index="37"]
 margin_top = 180.0
+margin_right = 249.0
 margin_bottom = 194.0
 
 [node name="powerBalanceUnit" parent="." index="38"]
+margin_left = 253.0
 margin_top = 180.0
+margin_right = 278.0
 margin_bottom = 194.0
 
 [node name="capacitorLabel" parent="." index="39"]
@@ -91,10 +175,13 @@ margin_bottom = 212.0
 
 [node name="capacitorReadout" parent="." index="40"]
 margin_top = 198.0
+margin_right = 249.0
 margin_bottom = 212.0
 
 [node name="capacitorUnit" parent="." index="41"]
+margin_left = 253.0
 margin_top = 198.0
+margin_right = 278.0
 margin_bottom = 212.0
 
 [node name="reactorTempLabel" parent="." index="42"]
@@ -103,8 +190,11 @@ margin_bottom = 230.0
 
 [node name="reactorTempReadout" parent="." index="43"]
 margin_top = 216.0
+margin_right = 249.0
 margin_bottom = 230.0
 
 [node name="reactorTempUnit" parent="." index="44"]
+margin_left = 253.0
 margin_top = 216.0
+margin_right = 278.0
 margin_bottom = 230.0

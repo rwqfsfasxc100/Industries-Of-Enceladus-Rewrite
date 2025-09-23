@@ -5,68 +5,310 @@ const IOE_PREPROC_0x30 = {
 	"position":[-32,-92],
 	"scale":[1],
 	"rotation":0,
-	"properties":{}
+	"properties":{
+		"polygon":{
+			"value":[0, 14, 0, -14, 6, -6, 12, -4, 12, 4, 6, 6],
+			"method":"arr2vec2arr"
+		},
+		"ProcessingArea/ZoneTop/polygon":{
+			"value":[26, 0, 0, -8, -26, 0],
+			"method":"arr2vec2arr"
+		},
+		"ProcessingArea/ZoneBottom/polygon":{
+			"value":[26, 0, 0, 8, -26, 0],
+			"method":"arr2vec2arr"
+		}
+	},
+	"ships_to_ignore":[
+		"SHIP_PROSPECTOR_BALD",
+		"SHIP_KITSUNE",
+		"SHIP_TRTL_T",
+		"SHIP_TRTL_R",
+		"SHIP_EIME",
+		"SHIP_YME",
+		"SHIP_OCP209",
+		"SHIP_OCP209_SNAP",
+		"SHIP_OCP213_TWIN",
+		"SHIP_OCP-SALVAGE",
+		"SHIP_OBERON",
+		"SHIP_ATLAS_WASP",
+		"SHIP_CK65",
+		"SHIP_CK69",
+	]
 }
 const IOE_PREPROC_20x10 = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc20x10.tscn",
 	"position":[-32,-92],
 	"scale":[1],
 	"rotation":0,
-	"properties":{}
+	"properties":{
+		"polygon":{
+			"value":[0, 20, 0, -20, 10, -16, 16, -6, 16, 6, 10, 16],
+			"method":"arr2vec2arr"
+		},
+		"ProcessingArea/ZoneTop/polygon":{
+			"value":[26, 0, 0, -8, -26, 0],
+			"method":"arr2vec2arr"
+		},
+		"ProcessingArea/ZoneBottom/polygon":{
+			"value":[26, 0, 0, 8, -26, 0],
+			"method":"arr2vec2arr"
+		}
+	},
+	"ships_to_ignore":[
+		"SHIP_PROSPECTOR_BALD",
+		"SHIP_KITSUNE",
+		"SHIP_TRTL_T",
+		"SHIP_TRTL_R",
+		"SHIP_EIME",
+		"SHIP_YME",
+		"SHIP_OCP209",
+		"SHIP_OCP209_SNAP",
+		"SHIP_OCP213_TWIN",
+		"SHIP_OCP-SALVAGE",
+		"SHIP_OBERON",
+		"SHIP_ATLAS_WASP",
+		"SHIP_CK65",
+		"SHIP_CK69",
+	]
 }
 const IOE_PREPROC_40x20 = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc40x20.tscn",
 	"position":[-28,-92],
 	"scale":[1],
 	"rotation":0,
-	"properties":{}
+	"properties":{
+		"polygon":{
+			"value":[0, -32, 10, -28, 8, -12, 2, -8, 8, -6, 10, 0, 8, 6, 2, 8, 8, 12, 10, 28, 0, 32, -4, 32, -4, 8, -4, -8, -4, -32],
+			"method":"arr2vec2arr"
+		},
+		"ProcessingArea/ZoneTop/polygon":{
+			"value":[26, 0, 12, -32, -12, -32, -26, 0],
+			"method":"arr2vec2arr"
+		},
+		"ProcessingArea/ZoneBottom/polygon":{
+			"value":[26, 0, 26, 32, -26, 32, -26, 0],
+			"method":"arr2vec2arr"
+		}
+	},
+	"ships_to_ignore":[
+		"SHIP_PROSPECTOR_BALD",
+		"SHIP_KITSUNE",
+		"SHIP_TRTL_T",
+		"SHIP_TRTL_R",
+		"SHIP_EIME",
+		"SHIP_YME",
+		"SHIP_OCP209",
+		"SHIP_OCP209_SNAP",
+		"SHIP_OCP213_TWIN",
+		"SHIP_OCP-SALVAGE",
+		"SHIP_OBERON",
+		"SHIP_ATLAS_WASP",
+		"SHIP_CK65",
+		"SHIP_CK69",
+	]
 }
 const IOE_STORAGE_4K = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxStorage4K.tscn",
 	"position":[-32,-92],
 	"scale":[1],
 	"rotation":0,
-	"properties":{}
+	"properties":{
+		"polygon":{
+			"value":[0, 24, 0, -20, 10, -16, 10, 4],
+			"method":"arr2vec2arr"
+		}
+	},
+	"ships_to_ignore":[
+		"SHIP_PROSPECTOR_BALD",
+		"SHIP_KITSUNE",
+		"SHIP_TRTL_T",
+		"SHIP_TRTL_R",
+		"SHIP_EIME",
+		"SHIP_YME",
+		"SHIP_OCP209",
+		"SHIP_OCP209_SNAP",
+		"SHIP_OCP213_TWIN",
+		"SHIP_OCP-SALVAGE",
+		"SHIP_OBERON",
+		"SHIP_ATLAS_WASP",
+		"SHIP_CK65",
+		"SHIP_CK69",
+	]
 }
 const IOE_STORAGE_8K = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxStorProc8K.tscn",
 	"position":[-32,-92],
 	"scale":[1],
 	"rotation":0,
-	"properties":{}
+	"properties":{
+		"polygon":{
+			"value":[0, 32, 0, 8, 0, -32, 10, -32, 20, -28, 20, 4, 10, 8, 10, 20],
+			"method":"arr2vec2arr"
+		},
+		"ProcessingArea/ZoneTop/polygon":{
+			"value":[8, 0, 0, -8, -8, 0],
+			"method":"arr2vec2arr"
+		},
+		"ProcessingArea/ZoneBottom/polygon":{
+			"value":[16, -28, 24, 22, -24, 22, -16, -28],
+			"method":"arr2vec2arr"
+		}
+	},
+	"ships_to_ignore":[
+		"SHIP_PROSPECTOR_BALD",
+		"SHIP_KITSUNE",
+		"SHIP_TRTL_T",
+		"SHIP_TRTL_R",
+		"SHIP_EIME",
+		"SHIP_YME",
+		"SHIP_OCP209",
+		"SHIP_OCP209_SNAP",
+		"SHIP_OCP213_TWIN",
+		"SHIP_OCP-SALVAGE",
+		"SHIP_OBERON",
+		"SHIP_ATLAS_WASP",
+		"SHIP_CK65",
+		"SHIP_CK69",
+	]
 }
 const IOE_FABAUX_FAB = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxFab.tscn",
 	"position":[-32,-92],
 	"scale":[1],
 	"rotation":0,
-	"properties":{}
+	"properties":{
+		"polygon":{
+			"value":[0, -32, 28, -12, 32, -4, 32, 30, 18, 30, 10, 40, 10, 52, 0, 64, 0, 24],
+			"method":"arr2vec2arr"
+		}
+	},
+	"ships_to_ignore":[
+		"SHIP_PROSPECTOR_BALD",
+		"SHIP_KITSUNE",
+		"SHIP_TRTL_T",
+		"SHIP_TRTL_R",
+		"SHIP_EIME",
+		"SHIP_YME",
+		"SHIP_OCP209",
+		"SHIP_OCP209_SNAP",
+		"SHIP_OCP213_TWIN",
+		"SHIP_OCP-SALVAGE",
+		"SHIP_OBERON",
+		"SHIP_ATLAS_WASP",
+		"SHIP_CK65",
+		"SHIP_CK69",
+	]
 }
 const IOE_FABAUX_BIGFAB = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxBigFab.tscn",
 	"position":[-32,-92],
 	"scale":[1],
 	"rotation":0,
-	"properties":{}
+	"properties":{
+		"polygon":{
+			"value":[0, -32, 16, -32, 32, -28, 32, 38, 24, 40, 18, 40, 16, 46, 10, 48, 10, 60, 0, 72, 0, 32],
+			"method":"arr2vec2arr"
+		}
+	},
+	"ships_to_ignore":[
+		"SHIP_PROSPECTOR_BALD",
+		"SHIP_KITSUNE",
+		"SHIP_TRTL_T",
+		"SHIP_TRTL_R",
+		"SHIP_EIME",
+		"SHIP_YME",
+		"SHIP_OCP209",
+		"SHIP_OCP209_SNAP",
+		"SHIP_OCP213_TWIN",
+		"SHIP_OCP-SALVAGE",
+		"SHIP_OBERON",
+		"SHIP_ATLAS_WASP",
+		"SHIP_CK65",
+		"SHIP_CK69",
+	]
 }
 const IOE_ICEBREAKER_M35 = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProcM35.tscn",
 	"position":[-32,-92],
 	"scale":[1],
 	"rotation":0,
-	"properties":{}
+	"properties":{
+		"polygon":{
+			"value":[0, 24, 0, -24, 27, -9, 27, 15],
+			"method":"arr2vec2arr"
+		}
+	},
+	"ships_to_ignore":[
+		"SHIP_PROSPECTOR_BALD",
+		"SHIP_KITSUNE",
+		"SHIP_TRTL_T",
+		"SHIP_TRTL_R",
+		"SHIP_EIME",
+		"SHIP_YME",
+		"SHIP_OCP209",
+		"SHIP_OCP209_SNAP",
+		"SHIP_OCP213_TWIN",
+		"SHIP_OCP-SALVAGE",
+		"SHIP_OBERON",
+		"SHIP_ATLAS_WASP",
+		"SHIP_CK65",
+		"SHIP_CK69",
+	]
 }
 const IOE_ICEBREAKER_M85 = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProcM85.tscn",
 	"position":[-32,-92],
 	"scale":[1],
 	"rotation":0,
-	"properties":{}
+	"properties":{
+		"polygon":{
+			"value":[0, 57, 0, -24, 15, 3, 18, 39],
+			"method":"arr2vec2arr"
+		}
+	},
+	"ships_to_ignore":[
+		"SHIP_PROSPECTOR_BALD",
+		"SHIP_KITSUNE",
+		"SHIP_TRTL_T",
+		"SHIP_TRTL_R",
+		"SHIP_EIME",
+		"SHIP_YME",
+		"SHIP_OCP209",
+		"SHIP_OCP209_SNAP",
+		"SHIP_OCP213_TWIN",
+		"SHIP_OCP-SALVAGE",
+		"SHIP_OBERON",
+		"SHIP_ATLAS_WASP",
+		"SHIP_CK65",
+		"SHIP_CK69",
+	]
 }
 const IOE_ICEBREAKER_P15 = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProcP15.tscn",
 	"position":[-32,-92],
 	"scale":[1],
 	"rotation":0,
-	"properties":{}
+	"properties":{
+		"polygon":{
+			"value":[0, 24, 0, -24, 12, -15, 3, 0, 12, 12],
+			"method":"arr2vec2arr"
+		}
+	},
+	"ships_to_ignore":[
+		"SHIP_PROSPECTOR_BALD",
+		"SHIP_KITSUNE",
+		"SHIP_TRTL_T",
+		"SHIP_TRTL_R",
+		"SHIP_EIME",
+		"SHIP_YME",
+		"SHIP_OCP209",
+		"SHIP_OCP209_SNAP",
+		"SHIP_OCP213_TWIN",
+		"SHIP_OCP-SALVAGE",
+		"SHIP_OBERON",
+		"SHIP_ATLAS_WASP",
+		"SHIP_CK65",
+		"SHIP_CK69",
+	]
 }

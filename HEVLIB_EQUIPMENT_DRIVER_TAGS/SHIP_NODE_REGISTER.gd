@@ -344,6 +344,12 @@ const SHIP_AT225B = {
 				"position":[-46,-201],
 				"scale":[1.5]
 			},
+			"properties":{
+				"polygon":{
+					"value":[0,-32,10,-28,8,-12,2,-8,8,-6,10,0,8,6,2,8,8,12,10,28,8,32,-4,32,-23.3,19.3,-4,19.3,-4,-23.3,-14,-42.6],
+					"method":"arr2vec2arr"
+				}
+			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -356,16 +362,34 @@ const SHIP_AT225B = {
 				"position":[-50,-201],
 				"scale":[1.4]
 			},
+			"properties":{
+				"polygon":{
+					"value":[0,32,-12.1,20.7,0,8,0,-22.1,-5.71,-32.1,10,-32,20,-28,20,4,10,8,10,20],
+					"method":"arr2vec2arr"
+				}
+			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
 				"position":[-50,-201]
 			},
+			"properties":{
+				"polygon":{
+					"value":[-4,-48,28,-12,32,-4,32,30,18,30,10,40,10,52,0,64,-51,29,0,29],
+					"method":"arr2vec2arr"
+				}
+			}
 		},
 		"IOE_FABAUX_BIGFAB":{
 			"position_data":{
 				"position":[-50,-201]
 			},
+			"properties":{
+				"polygon":{
+					"value":[-4,-35,16,-34,32,-28,32,38,24,40,18,40,16,46,10,48,10,60,0,72,-61,70,-78,28,-1,26],
+					"method":"arr2vec2arr"
+				}
+			}
 		},
 		"IOE_ICEBREAKER_M35":{
 			"position_data":{
@@ -378,6 +402,12 @@ const SHIP_AT225B = {
 				"position":[-50,-201],
 				"scale":[3]
 			},
+			"properties":{
+				"polygon":{
+					"value":[0,19,-26,9.66,0,9.66,0,-10.3,5,1,6,13],
+					"method":"arr2vec2arr"
+				}
+			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
@@ -463,7 +493,7 @@ const SHIP_PROSPECTOR_PIGEON = {
 			"position_data":{
 				"position":[-40,-165],
 				"scale":[0.8]
-			},
+			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
@@ -529,71 +559,194 @@ const SHIP_OCP209 = {
 			"position_data":{
 				"position":[-140,0],
 				"scale":[1.75],
-				"rotation":45,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"polygon":{
+					"value":[0,25,0,-25,16,-12,12,-4,12,4,16,12]
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[1.75],
-				"rotation":45,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-136,0],
-				"scale":[1.5],
-				"rotation":45,
+				"scale":[1.5]
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[1.75],
-				"rotation":45,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_STORAGE_8K":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[1.75],
-				"rotation":45,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[0.8],
-				"rotation":45,
 			},
+			"properties":{
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_FABAUX_BIGFAB":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[0.8],
-				"rotation":45,
 			},
+			"properties":{
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_ICEBREAKER_M35":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[1],
-				"rotation":45,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[2],
-				"rotation":45,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[2],
-				"rotation":45,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 	},
 }
@@ -607,71 +760,194 @@ const SHIP_TRTL_OCP = {
 			"position_data":{
 				"position":[-140,0],
 				"scale":[1.75],
-				"rotation":190,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"polygon":{
+					"value":[0,25,0,-25,16,-12,12,-4,12,4,16,12]
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[1.75],
-				"rotation":190,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-136,0],
-				"scale":[1.5],
-				"rotation":190,
+				"scale":[1.5]
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[1.75],
-				"rotation":190,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_STORAGE_8K":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[1.75],
-				"rotation":190,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[0.8],
-				"rotation":190,
 			},
+			"properties":{
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_FABAUX_BIGFAB":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[0.8],
-				"rotation":190,
 			},
+			"properties":{
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_ICEBREAKER_M35":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[1],
-				"rotation":190,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[2],
-				"rotation":190,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-140,0],
 				"scale":[2],
-				"rotation":190,
 			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
 		},
 	},
 }

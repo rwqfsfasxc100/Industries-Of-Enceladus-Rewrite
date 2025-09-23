@@ -3,7 +3,6 @@
 [ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/CargoAuxPreProc.tscn" type="PackedScene" id=1]
 
 [node name="CargoAuxPreProc0x30" instance=ExtResource( 1 )]
-visible = false
 polygon = PoolVector2Array( 0, 14, 0, -14, 6, -6, 12, -4, 12, 4, 6, 6 )
 repairReplacementPrice = 32000
 mass = 750

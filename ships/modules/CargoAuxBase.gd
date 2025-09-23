@@ -52,6 +52,7 @@ func _ready():
 		visible = true
 		if registerExternal:
 			ship.externalSystems.append(self)
+#	modify_shape()
 	make_mirror()
 	isready = true
 	
