@@ -50,7 +50,7 @@ const CREW_MODIFIERS = {
 	"system_slot":"crew.modifier",
 	"slot_node_name":"CrewModifiers",
 	"slot_display_name":"SLOT_CREW_MOD",
-	"always_display":false,
+	"always_display":true,
 	"add_vanilla_equipment":false,
 	"slot_type":"CREW_MODIFIERS"
 }
