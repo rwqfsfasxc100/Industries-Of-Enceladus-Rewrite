@@ -4,19 +4,22 @@ const HOLD_MODIFIER_DIVIDED = {
 	"system_slot":"cargo.modifierDivided",
 	"slot_node_name":"HoldModifiersDivided",
 	"slot_display_name":"SLOT_CARGOBAY_MOD",
-	"always_display":false,
+	"always_display":true,
 	"add_vanilla_equipment":false,
 	"slot_type":"HOLD_MODIFIERS", 
-	"restriction":"HOLDMODIFIER_DIVIDED"
+	"restriction":"HOLDMODIFIER_DIVIDED",
+	"restrict_hold_type":"divided"
 }
 const HOLD_MODIFIER_AMORPHIC = {
 	"system_slot":"cargo.modifierAmorphic",
 	"slot_node_name":"HoldModifiersAmorphic",
 	"slot_display_name":"SLOT_CARGOBAY_MOD",
-	"always_display":false,
+	"always_display":true,
 	"add_vanilla_equipment":false,
 	"slot_type":"HOLD_MODIFIERS", 
-	"restriction":"HOLDMODIFIER_AMORPHIC"
+	"restriction":"HOLDMODIFIER_AMORPHIC",
+	"restrict_hold_type":"amorphic"
+	
 }
 const CARGO_ACCESSORIES = {
 	"system_slot":"cargo.aux",
