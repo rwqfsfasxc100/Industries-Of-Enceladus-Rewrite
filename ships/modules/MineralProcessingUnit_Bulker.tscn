@@ -68,7 +68,6 @@ kgps = 40
 powerDrawPerKg = 1000
 mineralEfficiency = 0.7
 remassEfficiency = 0.2
-internalStorage = 10000.0
 
 [node name="MineralProcessingUnit" type="Area2D" parent="."]
 light_mask = 0

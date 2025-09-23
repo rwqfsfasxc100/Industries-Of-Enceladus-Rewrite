@@ -10,6 +10,10 @@ const MODIFY_INTERNALS = [
 		"storage_flat":4000
 	},
 	{
+		"system":"SYSTEM_CARGO_MPU_BULK",
+		"storage_flat":10000
+	},
+	{
 		"system":"SYSTEM_CARGO_AUX_FAB",
 		"storage_flat":2000
 	},
