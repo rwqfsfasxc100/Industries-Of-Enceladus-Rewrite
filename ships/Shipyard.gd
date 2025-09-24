@@ -29,7 +29,9 @@ var turbineMassNew = {
 		160.0: 600,
 		320.0: 1200,
 	}
-
+var ammoDeliveryPerSeocondNew = {
+	200.0:100
+}
 
 
 func _ready():
@@ -40,7 +42,7 @@ func _ready():
 	capacitorValue.merge(capacitorValueNew)
 	turbineValue.merge(turbineValueNew)
 	turbineMass.merge(turbineMassNew)
-	
+	ammoDeliveryPerSeocond.merge(ammoDeliveryPerSeocondNew)
 	
 	ships["Tsukuyomi-Decom"] = preload("res://IndustriesOfEnceladusRewrite/ships/Tsukuyomi-Decom.tscn")
 	configAlias["Tsukuyomi-Decom"] = "TSUKUYOMI"

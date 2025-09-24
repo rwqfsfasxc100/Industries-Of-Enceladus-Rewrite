@@ -412,7 +412,7 @@ z_index = 21
 toggleCommand = "ship_slot_1"
 
 [node name="WeaponLeft" parent="." instance=ExtResource( 14 )]
-position = Vector2( -54, -68 )
+position = Vector2( -70, -68 )
 z_index = 19
 slot = "left"
 toggleCommand = "ship_slot_2"
@@ -448,7 +448,7 @@ position = Vector2( 48, -86 )
 visible = true
 
 [node name="WeaponRight" parent="." instance=ExtResource( 14 )]
-position = Vector2( 54, -68 )
+position = Vector2( 70, -68 )
 z_index = 19
 slot = "right"
 toggleCommand = "ship_slot_3"
