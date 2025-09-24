@@ -57,7 +57,7 @@ position = Vector2( 0, -132 )
 [node name="Hull" parent="." index="1"]
 position = Vector2( 0, 50 )
 region_enabled = true
-region_rect = Rect2( -3, 472, 7628, 409 )
+region_rect = Rect2( 0, 472, 7560, 409 )
 
 [node name="ForeHull" type="Sprite" parent="Hull" index="0"]
 light_mask = 5
@@ -67,7 +67,7 @@ texture = ExtResource( 5 )
 normal_map = ExtResource( 4 )
 hframes = 12
 region_enabled = true
-region_rect = Rect2( -3, 0, 7628, 267 )
+region_rect = Rect2( 0, 0, 7560, 267 )
 script = ExtResource( 3 )
 hullCustomPaintFile = "user://custom-atk-225.png"
 
@@ -294,6 +294,7 @@ position = Vector2( 122, -392 )
 toggleCommand = "ship_slot_6"
 
 [node name="weapon-left-back2" parent="." index="37"]
+visible = false
 slot = ""
 command = ""
 remove = true
@@ -312,6 +313,7 @@ slot = "rightDrone"
 toggleCommand = "ship_slot_4"
 
 [node name="weapon-right-back2" parent="." index="40"]
+visible = false
 slot = ""
 command = ""
 remove = true
