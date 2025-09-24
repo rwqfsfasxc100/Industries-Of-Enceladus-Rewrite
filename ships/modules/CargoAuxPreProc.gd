@@ -89,18 +89,21 @@ func _physics_process(delta):
 							processor = node
 				if processor:
 					var path = processor.filename
-					if reinstance:
-						if base != null:
-							base.free()
-						base = load(path).instance()
-					if base == null:
-						base = load(path).instance()
-					var baseMineralEfficiency = base.mineralEfficiency
-					var basekgps = base.kgps
-					var basePowerDrawPerKg = base.powerDrawPerKg
-					
-					
-					modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
+					var fl = File.new()
+					if path and fl.file_exists(path):
+						if reinstance:
+							if base != null:
+								base.free()
+							base = load(path).instance()
+						if base == null:
+							base = load(path).instance()
+						if "baseMineralEfficiency" in base and "basekgps" in base and "basePowerDrawPerKg" in base:
+							var baseMineralEfficiency = base.mineralEfficiency
+							var basekgps = base.kgps
+							var basePowerDrawPerKg = base.powerDrawPerKg
+							
+							
+							modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
 #				breakpoint
 				
 				
