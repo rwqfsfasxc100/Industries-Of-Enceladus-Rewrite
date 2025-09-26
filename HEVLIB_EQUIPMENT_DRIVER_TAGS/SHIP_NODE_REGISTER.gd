@@ -748,13 +748,17 @@ const SHIP_OCP209 = {
 				}
 			}
 		},
+		"IOE_OCP_DOCKING_BAY_UPPER":{},
+		"IOE_OCP_DOCKING_BAY_LOWER":{},
+		"IOE_OCP_DRONE_BAY_UPPER":{},
+		"IOE_OCP_DRONE_BAY_LOWER":{},
 	},
 }
 
 const SHIP_TRTL_OCP = {
 	"ship_name":"SHIP_TRTL_OCP",
 	"fallback_to_base_ship":true,
-	"fallback_override":"SHIP_OCP209",
+	"fallback_override":"SHIP_TRTL",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
 			"position_data":{

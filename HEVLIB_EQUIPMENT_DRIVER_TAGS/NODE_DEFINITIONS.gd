@@ -312,3 +312,65 @@ const IOE_ICEBREAKER_P15 = {
 		"SHIP_CK69",
 	]
 }
+const IOE_OCP_DOCKING_BAY_UPPER = {
+	"path":"res://weapons/WeaponSlot.tscn",
+	"position":[-240,40],
+	"rotation":225,
+	"properties":{
+		"z_index":{
+			"value":32
+		},
+		"slot":{
+			"value":"leftBay1"
+		},
+		"toggleCommand":{
+			"value":"ship_slot_5"
+		}
+	}
+}
+const IOE_OCP_DOCKING_BAY_LOWER = {
+	"path":"res://weapons/WeaponSlot.tscn",
+	"position":[-240,-40],
+	"rotation":-45,
+	"properties":{
+		"z_index":{
+			"value":32
+		},
+		"slot":{
+			"value":"rightBay3"
+		},
+		"toggleCommand":{
+			"value":"ship_slot_6"
+		}
+	}
+}
+const IOE_OCP_DRONE_BAY_UPPER = {
+	"path":"res://weapons/WeaponSlot.tscn",
+	"position":[0,-375],
+	"properties":{
+		"z_index":{
+			"value":32
+		},
+		"slot":{
+			"value":"leftDrone"
+		},
+		"toggleCommand":{
+			"value":"ship_slot_7"
+		}
+	}
+}
+const IOE_OCP_DRONE_BAY_LOWER = {
+	"path":"res://weapons/WeaponSlot.tscn",
+	"position":[25,425],
+	"properties":{
+		"z_index":{
+			"value":32
+		},
+		"slot":{
+			"value":"rightDrone"
+		},
+		"toggleCommand":{
+			"value":"ship_slot_8"
+		}
+	}
+}
