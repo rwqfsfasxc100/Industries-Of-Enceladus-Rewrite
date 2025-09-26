@@ -572,58 +572,6 @@ region_rect = Rect2( 0, 824, 3630, 140 )
 script = ExtResource( 12 )
 hullCustomPaintFile = "user://custom-ocp-209.png"
 
-[node name="DockForePort" parent="." instance=ExtResource( 2 )]
-position = Vector2( -56, -336 )
-slot = "leftBay1"
-toggleCommand = "ship_slot_5"
-
-[node name="SYSTEM_CLAIM-L" parent="DockForePort" index="17"]
-position = Vector2( -25, 196 )
-
-[node name="SYSTEM_SCOOP-R" parent="DockForePort" index="21"]
-position = Vector2( 0, 210 )
-
-[node name="SYSTEM_SCOOP-L" parent="DockForePort" index="22"]
-position = Vector2( 0, 210 )
-
-[node name="DockForeStbd" parent="." instance=ExtResource( 2 )]
-position = Vector2( 56, -336 )
-slot = "rightBay1"
-toggleCommand = "ship_slot_6"
-
-[node name="SYSTEM_CLAIM-R" parent="DockForeStbd" index="18"]
-position = Vector2( 25, 196 )
-
-[node name="SYSTEM_SCOOP-R" parent="DockForeStbd" index="21"]
-position = Vector2( 0, 210 )
-
-[node name="SYSTEM_SCOOP-L" parent="DockForeStbd" index="22"]
-position = Vector2( 0, 210 )
-
-[node name="DockAftPort" parent="." instance=ExtResource( 2 )]
-position = Vector2( 50, 330 )
-rotation = 3.14159
-slot = "leftBay3"
-toggleCommand = "ship_slot_8"
-
-[node name="SYSTEM_SCOOP-R" parent="DockAftPort" index="21"]
-position = Vector2( 0, 203 )
-
-[node name="SYSTEM_SCOOP-L" parent="DockAftPort" index="22"]
-position = Vector2( 0, 203 )
-
-[node name="DockAftStbd" parent="." instance=ExtResource( 2 )]
-position = Vector2( -50, 330 )
-rotation = 3.14159
-slot = "rightBay3"
-toggleCommand = "ship_slot_7"
-
-[node name="SYSTEM_SCOOP-R" parent="DockAftStbd" index="21"]
-position = Vector2( 0, 203 )
-
-[node name="SYSTEM_SCOOP-L" parent="DockAftStbd" index="22"]
-position = Vector2( 0, 203 )
-
 [node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 6 )]
 visible = false
 light_mask = 0
@@ -657,9 +605,5 @@ polygon = PoolVector2Array( 1.87959e-06, 43, 76, 19, 118, -29, 110, -45, -1.4424
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="AI"]
-[editable path="DockForePort"]
-[editable path="DockForeStbd"]
-[editable path="DockAftPort"]
-[editable path="DockAftStbd"]
 [editable path="MineralProcessingUnit_Bulker"]
 [editable path="MineralProcessingUnit_Furnace"]
