@@ -63,75 +63,85 @@ const SHIP_TRTL = {
 				"scale":[0.8]
 			},
 		},
+		"IOE_BAY_AUX_PERSIST":{},
 	},
 }
 
-const SHIP_TSUKUYOMI_IOT = {
-	"ship_name":"SHIP_TSUKUYOMI_IOT",
-	"fallback_to_base_ship":false,
-	"fallback_override":"SHIP_TSUKUYOMI_IOT",
+const SHIP_TRTL_LCB = {
+	"ship_name":"SHIP_TRTL_LCB",
 	"node_definitions":{
-		"IOE_PREPROC_0x30":{
-			"position_data":{
-				"position":[-117,-1125],
-				"scale":[2]
-			},
-		},
-		"IOE_PREPROC_20x10":{
-			"position_data":{
-				"position":[-117,-1125],
-				"scale":[2]
-			},
-		},
-		"IOE_PREPROC_40x20":{
-			"position_data":{
-				"position":[-113,-1125],
-				"scale":[2]
-			},
-		},
-		"IOE_STORAGE_4K":{
-			"position_data":{
-				"position":[-117,-1125],
-				"scale":[2]
-			},
-		},
-		"IOE_STORAGE_8K":{
-			"position_data":{
-				"position":[-117,-1125],
-				"scale":[2]
-			},
-		},
-		"IOE_FABAUX_FAB":{
-			"position_data":{
-				"position":[-117,-1125],
-				"scale":[2]
-			},
-		},
-		"IOE_FABAUX_BIGFAB":{
-			"position_data":{
-				"position":[-117,-1125],
-				"scale":[2]
-			},
-		},
-		"IOE_ICEBREAKER_M35":{
-			"position_data":{
-				"position":[-117,-1125],
-				"scale":[2]
-			},
-		},
-		"IOE_ICEBREAKER_M85":{
-			"position_data":{
-				"position":[-117,-1125],
-				"scale":[2]
-			},
-		},
-		"IOE_ICEBREAKER_P15":{
-			"position_data":{
-				"position":[-117,-1125],
-				"scale":[2]
-			},
-		},
-	},
+		"IOE_BAY_AUX_PERSIST":{},
+	}
+}
+
+const SHIP_TRTL_K44 = {
+	"ship_name":"SHIP_TRTL_K44",
+	"node_definitions":{
+		"IOE_BAY_AUX_PERSIST":{},
+	}
+}
+
+const SHIP_PROSPECTOR_LUX = {
+	"ship_name":"SHIP_PROSPECTOR_LUX",
+	"node_definitions":{
+		"IOE_BAY_AUX_PERSIST":{},
+	}
+}
+
+const SHIP_COTHON_V = {
+	"ship_name":"SHIP_COTHON_V",
+	"node_definitions":{
+		"IOE_BAY_AUX_PERSIST":{},
+	}
+}
+
+const SHIP_COTHON_LND = {
+	"ship_name":"SHIP_COTHON_LND",
+	"node_definitions":{
+		"IOE_BAY_AUX_PERSIST":{},
+	}
+}
+
+const SHIP_COTHON_CHK = {
+	"ship_name":"SHIP_COTHON_CHK",
+	"node_definitions":{
+		"IOE_BAY_AUX_PERSIST":{},
+	}
+}
+
+const SHIP_OCP209_DD = {
+	"ship_name":"SHIP_OCP209_DD",
+	"node_definitions":{
+		"IOE_BAY_AUX_PERSIST":{},
+	}
+}
+
+const SHIP_MADCERF_CIV = {
+	"ship_name":"SHIP_MADCERF_CIV",
+	"node_definitions":{
+		"IOE_BAY_AUX_PERSIST":{},
+	}
+}
+
+const SHIP_AT225_STUB = {
+	"ship_name":"SHIP_AT225_STUB",
+	"node_definitions":{
+		"IOE_BAY_AUX_PERSIST":{},
+	}
+}
+
+const SHIP_COTHON_LUX = {
+	"ship_name":"SHIP_COTHON_LUX",
+	"node_definitions":{
+		"IOE_BAY_AUX_PERSIST":{},
+	}
+}
+
+const SHIP_TRTL_RAM = {
+	"ship_name":"SHIP_TRTL_RAM",
+	"node_definitions":{
+		"IOE_BAY_AUX_PERSIST":{},
+	}
 }
 
 const SHIP_PROSPECTOR = {
@@ -197,6 +207,7 @@ const SHIP_PROSPECTOR = {
 				"scale":[0.8]
 			},
 		},
+		"IOE_BAY_AUX_PERSIST":{},
 	},
 }
 
@@ -263,6 +274,7 @@ const SHIP_PROSPECTOR_VP = {
 				"scale":[0.8]
 			},
 		},
+		"IOE_BAY_AUX_PERSIST":{},
 	},
 }
 
@@ -319,13 +331,12 @@ const SHIP_AT225 = {
 				"position":[-32,-210]
 			},
 		},
+		"IOE_BAY_AUX_PERSIST":{},
 	},
 }
 
 const SHIP_AT225B = {
 	"ship_name":"SHIP_AT225B",
-	"fallback_to_base_ship":true,
-	"fallback_override":"SHIP_AT225",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
 			"position_data":{
@@ -415,7 +426,15 @@ const SHIP_AT225B = {
 				"scale":[3]
 			},
 		},
+		"IOE_BAY_AUX_PERSIST":{},
 	},
+}
+
+const SHIP_AT225R = {
+	"ship_name":"SHIP_AT225R",
+	"node_definitions":{
+		"IOE_BAY_AUX_PERSIST":{},
+	}
 }
 
 const SHIP_PROSPECTOR_FAT = {
@@ -481,74 +500,7 @@ const SHIP_PROSPECTOR_FAT = {
 				"scale":[0.8]
 			},
 		},
-	},
-}
-
-const SHIP_PROSPECTOR_PIGEON = {
-	"ship_name":"SHIP_PROSPECTOR_PIGEON",
-	"fallback_to_base_ship":true,
-	"fallback_override":"SHIP_PROSPECTOR",
-	"node_definitions":{
-		"IOE_PREPROC_0x30":{
-			"position_data":{
-				"position":[-40,-165],
-				"scale":[0.8]
-			}
-		},
-		"IOE_PREPROC_20x10":{
-			"position_data":{
-				"position":[-40,-165],
-				"scale":[0.8]
-			},
-		},
-		"IOE_PREPROC_40x20":{
-			"position_data":{
-				"position":[-36,-165],
-				"scale":[0.8]
-			},
-		},
-		"IOE_STORAGE_4K":{
-			"position_data":{
-				"position":[-40,-165],
-				"scale":[0.8]
-			},
-		},
-		"IOE_STORAGE_8K":{
-			"position_data":{
-				"position":[-40,-165],
-				"scale":[0.8]
-			},
-		},
-		"IOE_FABAUX_FAB":{
-			"position_data":{
-				"position":[-40,-165],
-				"scale":[0.8]
-			},
-		},
-		"IOE_FABAUX_BIGFAB":{
-			"position_data":{
-				"position":[-40,-165],
-				"scale":[0.8]
-			},
-		},
-		"IOE_ICEBREAKER_M35":{
-			"position_data":{
-				"position":[-40,-165],
-				"scale":[0.8]
-			},
-		},
-		"IOE_ICEBREAKER_M85":{
-			"position_data":{
-				"position":[-40,-165],
-				"scale":[0.8]
-			},
-		},
-		"IOE_ICEBREAKER_P15":{
-			"position_data":{
-				"position":[-40,-165],
-				"scale":[0.8]
-			},
-		},
+		"IOE_BAY_AUX_PERSIST":{},
 	},
 }
 
@@ -755,9 +707,66 @@ const SHIP_OCP209 = {
 	},
 }
 
+const SHIP_COTHON = {
+	"ship_name":"SHIP_COTHON",
+	"node_definitions":{
+		"IOE_PREPROC_0x30":{
+			"position_data":{
+				"position":[-43,-188]
+			}
+		},
+		"IOE_PREPROC_20x10":{
+			"position_data":{
+				"position":[-43,-188]
+			},
+		},
+		"IOE_PREPROC_40x20":{
+			"position_data":{
+				"position":[-39,-188]
+			},
+		},
+		"IOE_STORAGE_4K":{
+			"position_data":{
+				"position":[-43,-188]
+			},
+		},
+		"IOE_STORAGE_8K":{
+			"position_data":{
+				"position":[-43,-188]
+			},
+		},
+		"IOE_FABAUX_FAB":{
+			"position_data":{
+				"position":[-43,-188]
+			},
+		},
+		"IOE_FABAUX_BIGFAB":{
+			"position_data":{
+				"position":[-43,-188]
+			},
+		},
+		"IOE_ICEBREAKER_M35":{
+			"position_data":{
+				"position":[-43,-188]
+			},
+		},
+		"IOE_ICEBREAKER_M85":{
+			"position_data":{
+				"position":[-43,-188]
+			},
+		},
+		"IOE_ICEBREAKER_P15":{
+			"position_data":{
+				"position":[-43,-188]
+			},
+		},
+		"IOE_BAY_AUX_PERSIST":{},
+	},
+}
+
 const SHIP_TRTL_OCP = {
 	"ship_name":"SHIP_TRTL_OCP",
-	"fallback_to_base_ship":true,
+	"fallback_to_base_ship":false,
 	"fallback_override":"SHIP_TRTL",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
@@ -954,61 +963,144 @@ const SHIP_TRTL_OCP = {
 				}
 			}
 		},
+		"IOE_BAY_AUX_PERSIST":{},
 	},
 }
 
-const SHIP_COTHON = {
-	"ship_name":"SHIP_COTHON",
+const SHIP_TSUKUYOMI_IOT = {
+	"ship_name":"SHIP_TSUKUYOMI_IOT",
+	"fallback_to_base_ship":false,
+	"fallback_override":"SHIP_TSUKUYOMI_IOT",
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
 			"position_data":{
-				"position":[-43,-188]
-			}
+				"position":[-117,-1125],
+				"scale":[2]
+			},
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
-				"position":[-43,-188]
+				"position":[-117,-1125],
+				"scale":[2]
 			},
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
-				"position":[-39,-188]
+				"position":[-113,-1125],
+				"scale":[2]
 			},
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
-				"position":[-43,-188]
+				"position":[-117,-1125],
+				"scale":[2]
 			},
 		},
 		"IOE_STORAGE_8K":{
 			"position_data":{
-				"position":[-43,-188]
+				"position":[-117,-1125],
+				"scale":[2]
 			},
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
-				"position":[-43,-188]
+				"position":[-117,-1125],
+				"scale":[2]
 			},
 		},
 		"IOE_FABAUX_BIGFAB":{
 			"position_data":{
-				"position":[-43,-188]
+				"position":[-117,-1125],
+				"scale":[2]
 			},
 		},
 		"IOE_ICEBREAKER_M35":{
 			"position_data":{
-				"position":[-43,-188]
+				"position":[-117,-1125],
+				"scale":[2]
 			},
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
-				"position":[-43,-188]
+				"position":[-117,-1125],
+				"scale":[2]
 			},
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
-				"position":[-43,-188]
+				"position":[-117,-1125],
+				"scale":[2]
 			},
 		},
+		"IOE_BAY_AUX_PERSIST":{},
+	},
+}
+
+const SHIP_PROSPECTOR_PIGEON = {
+	"ship_name":"SHIP_PROSPECTOR_PIGEON",
+	"fallback_to_base_ship":true,
+	"fallback_override":"SHIP_PROSPECTOR",
+	"node_definitions":{
+		"IOE_PREPROC_0x30":{
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			}
+		},
+		"IOE_PREPROC_20x10":{
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
+		},
+		"IOE_PREPROC_40x20":{
+			"position_data":{
+				"position":[-36,-165],
+				"scale":[0.8]
+			},
+		},
+		"IOE_STORAGE_4K":{
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
+		},
+		"IOE_STORAGE_8K":{
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
+		},
+		"IOE_FABAUX_FAB":{
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
+		},
+		"IOE_FABAUX_BIGFAB":{
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
+		},
+		"IOE_ICEBREAKER_M35":{
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
+		},
+		"IOE_ICEBREAKER_M85":{
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
+		},
+		"IOE_ICEBREAKER_P15":{
+			"position_data":{
+				"position":[-40,-165],
+				"scale":[0.8]
+			},
+		},
+		"IOE_BAY_AUX_PERSIST":{},
 	},
 }

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/bay_aux_persist.gd" type="Script" id=1]
+
+[node name="bay_aux_persist" type="Node"]
+script = ExtResource( 1 )

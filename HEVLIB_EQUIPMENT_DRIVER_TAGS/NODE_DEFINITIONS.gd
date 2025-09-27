@@ -147,12 +147,22 @@ const IOE_STORAGE_8K = {
 			"method":"arr2vec2arr"
 		},
 		"ProcessingArea/ZoneTop/polygon":{
-			"value":[8, 0, 0, -8, -8, 0],
-			"method":"arr2vec2arr"
+			"node_path":"CargoHoldArea/CollisionPolygon2D",
+			"property":"polygon",
+			"method":"copy"
 		},
 		"ProcessingArea/ZoneBottom/polygon":{
-			"value":[16, -28, 24, 22, -24, 22, -16, -28],
-			"method":"arr2vec2arr"
+			"node_path":"CargoHoldArea/CollisionPolygon2D",
+			"property":"polygon",
+			"method":"copy"
+		},
+		"ProcessingArea/ZoneTop/position":{
+			"value":[32,92],
+			"method":"arr2vec2"
+		},
+		"ProcessingArea/ZoneBottom/position":{
+			"value":[32,92],
+			"method":"arr2vec2"
 		}
 	},
 	"ships_to_ignore":[
@@ -321,7 +331,7 @@ const IOE_OCP_DOCKING_BAY_UPPER = {
 			"value":32
 		},
 		"slot":{
-			"value":"leftBay1"
+			"value":"rightBay1"
 		},
 		"toggleCommand":{
 			"value":"ship_slot_5"
@@ -337,7 +347,7 @@ const IOE_OCP_DOCKING_BAY_LOWER = {
 			"value":32
 		},
 		"slot":{
-			"value":"rightBay3"
+			"value":"leftBay3"
 		},
 		"toggleCommand":{
 			"value":"ship_slot_6"
@@ -361,7 +371,7 @@ const IOE_OCP_DRONE_BAY_UPPER = {
 }
 const IOE_OCP_DRONE_BAY_LOWER = {
 	"path":"res://weapons/WeaponSlot.tscn",
-	"position":[25,425],
+	"position":[25,150],
 	"properties":{
 		"z_index":{
 			"value":32
@@ -373,4 +383,8 @@ const IOE_OCP_DRONE_BAY_LOWER = {
 			"value":"ship_slot_8"
 		}
 	}
+}
+const IOE_BAY_AUX_PERSIST = {
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/bay_aux_persist.tscn",
+	"recurse_to_variants":false
 }
