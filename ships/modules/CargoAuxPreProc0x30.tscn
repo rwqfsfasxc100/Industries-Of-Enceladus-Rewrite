@@ -15,9 +15,11 @@ self_remassEfficiency = 0.45
 modify_kgps_add = -5
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
+visible = true
 polygon = PoolVector2Array( 26, 0, 0, -8, -26, 0 )
 
 [node name="ZoneBottom" parent="ProcessingArea" index="1"]
+visible = true
 polygon = PoolVector2Array( 26, 0, 0, 8, -26, 0 )
 
 [node name="VentRemass" parent="." index="1"]
