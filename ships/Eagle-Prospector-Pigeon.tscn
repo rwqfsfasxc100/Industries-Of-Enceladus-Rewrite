@@ -406,8 +406,7 @@ energy = 2.0
 range_height = 50.0
 
 [node name="HiStressFore" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-visible = false
-position = Vector2( 0, -224 )
+position = Vector2( 0, -272 )
 z_index = 21
 toggleCommand = "ship_slot_1"
 
