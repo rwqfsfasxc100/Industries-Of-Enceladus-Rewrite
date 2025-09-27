@@ -113,6 +113,52 @@ const SHIP_OCP209_DD = {
 	"ship_name":"SHIP_OCP209_DD",
 	"node_definitions":{
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_OCP_DOCKING_BAY_UPPER":{},
+		"IOE_OCP_DOCKING_BAY_LOWER":{},
+		"IOE_OCP_DRONE_BAY_UPPER":{},
+		"IOE_OCP_DRONE_BAY_LOWER":{},
+	}
+}
+
+const SHIP_OCP213_TWIN = {
+	"ship_name":"SHIP_OCP213_TWIN",
+	"node_definitions":{
+		"IOE_OCP_DOCKING_BAY_UPPER":{},
+		"IOE_OCP_DOCKING_BAY_LOWER":{},
+		"IOE_OCP_TURRET_BAY_UPPER":{},
+		"IOE_OCP_TURRET_BAY_LOWER":{},
+	}
+}
+
+const SHIP_OCP209_SNAP = {
+	"ship_name":"SHIP_OCP209_SNAP",
+	"node_definitions":{
+		"IOE_OCP_DOCKING_BAY_UPPER":{},
+		"IOE_OCP_DOCKING_BAY_LOWER":{},
+		"IOE_OCP_DRONE_BAY_UPPER":{},
+		"IOE_OCP_DRONE_BAY_LOWER":{},
+	}
+}
+
+const SHIP_OCP_SALVAGE = {
+	"ship_name":"SHIP_OCP-SALVAGE",
+	"node_definitions":{
+		"IOE_OCP_TURRET_BAY_UPPER":{
+			"properties":{
+				"toggleCommand":{
+					"value":"ship_slot_5"
+				}
+			}
+		},
+		"IOE_OCP_TURRET_BAY_LOWER":{
+			"properties":{
+				"toggleCommand":{
+					"value":"ship_slot_6"
+				}
+			}
+		},
+		"IOE_OCP_DRONE_BAY_UPPER":{},
+		"IOE_OCP_DRONE_BAY_LOWER":{},
 	}
 }
 
@@ -702,8 +748,8 @@ const SHIP_OCP209 = {
 		},
 		"IOE_OCP_DOCKING_BAY_UPPER":{},
 		"IOE_OCP_DOCKING_BAY_LOWER":{},
-		"IOE_OCP_DRONE_BAY_UPPER":{},
-		"IOE_OCP_DRONE_BAY_LOWER":{},
+		"IOE_OCP_TURRET_BAY_UPPER":{},
+		"IOE_OCP_TURRET_BAY_LOWER":{},
 	},
 }
 

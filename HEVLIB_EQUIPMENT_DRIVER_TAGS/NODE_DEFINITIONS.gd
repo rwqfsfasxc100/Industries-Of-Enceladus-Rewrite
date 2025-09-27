@@ -324,6 +324,7 @@ const IOE_ICEBREAKER_P15 = {
 }
 const IOE_OCP_DOCKING_BAY_UPPER = {
 	"path":"res://weapons/WeaponSlot.tscn",
+	"recurse_to_variants":false,
 	"position":[-240,40],
 	"rotation":225,
 	"properties":{
@@ -340,6 +341,7 @@ const IOE_OCP_DOCKING_BAY_UPPER = {
 }
 const IOE_OCP_DOCKING_BAY_LOWER = {
 	"path":"res://weapons/WeaponSlot.tscn",
+	"recurse_to_variants":false,
 	"position":[-240,-40],
 	"rotation":-45,
 	"properties":{
@@ -356,6 +358,7 @@ const IOE_OCP_DOCKING_BAY_LOWER = {
 }
 const IOE_OCP_DRONE_BAY_UPPER = {
 	"path":"res://weapons/WeaponSlot.tscn",
+	"recurse_to_variants":false,
 	"position":[0,-375],
 	"properties":{
 		"z_index":{
@@ -371,6 +374,7 @@ const IOE_OCP_DRONE_BAY_UPPER = {
 }
 const IOE_OCP_DRONE_BAY_LOWER = {
 	"path":"res://weapons/WeaponSlot.tscn",
+	"recurse_to_variants":false,
 	"position":[25,150],
 	"properties":{
 		"z_index":{
@@ -378,6 +382,40 @@ const IOE_OCP_DRONE_BAY_LOWER = {
 		},
 		"slot":{
 			"value":"rightDrone"
+		},
+		"toggleCommand":{
+			"value":"ship_slot_8"
+		}
+	}
+}
+const IOE_OCP_TURRET_BAY_UPPER = {
+	"path":"res://weapons/WeaponSlot.tscn",
+	"recurse_to_variants":false,
+	"position":[210,-180],
+	"rotation":90,
+	"properties":{
+		"z_index":{
+			"value":32
+		},
+		"slot":{
+			"value":"turretLeft"
+		},
+		"toggleCommand":{
+			"value":"ship_slot_7"
+		}
+	}
+}
+const IOE_OCP_TURRET_BAY_LOWER = {
+	"path":"res://weapons/WeaponSlot.tscn",
+	"recurse_to_variants":false,
+	"position":[210,180],
+	"rotation":90,
+	"properties":{
+		"z_index":{
+			"value":32
+		},
+		"slot":{
+			"value":"turretRight"
 		},
 		"toggleCommand":{
 			"value":"ship_slot_8"

@@ -326,8 +326,8 @@ slot = "middleRight"
 toggleCommand = "ship_slot_2"
 
 [node name="WeaponHardTop" parent="." instance=ExtResource( 28 )]
-position = Vector2( 192, -109 )
-rotation = 1.5708
+position = Vector2( -192, 109 )
+rotation = -1.5708
 z_index = 32
 slot = "mainLeft"
 toggleCommand = "ship_slot_3"
