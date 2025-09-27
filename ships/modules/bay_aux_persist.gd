@@ -16,3 +16,4 @@ func _ready():
 	if not mounted:
 		ship.setConfig(type, default)
 		mounted = default
+	Tool.remove(self)
