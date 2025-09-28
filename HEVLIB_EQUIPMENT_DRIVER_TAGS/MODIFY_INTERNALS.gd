@@ -7,7 +7,10 @@ const MODIFY_INTERNALS = [
 	},
 	{
 		"system":"SYSTEM_CARGO_AUX_STORAGE_4K",
-		"storage_flat":4000
+		"storage_flat":4000,
+		"storage_ammo":1500,
+		"storage_nanodrones":1500,
+		"storage_propellant":4000
 	},
 	{
 		"system":"SYSTEM_CARGO_MPU_BULK",
@@ -15,7 +18,8 @@ const MODIFY_INTERNALS = [
 	},
 	{
 		"system":"SYSTEM_CARGO_AUX_FAB",
-		"storage_flat":2000
+		"storage_flat":2000,
+		"storage_propellant":6000
 	},
 	{
 		"system":"SYSTEM_CARGO_AUX_BIGFAB",

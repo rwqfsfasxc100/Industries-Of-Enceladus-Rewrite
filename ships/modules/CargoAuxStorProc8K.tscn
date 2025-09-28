@@ -8,9 +8,9 @@ polygon = PoolVector2Array( 0, 32, 0, 8, 0, -32, 10, -32, 20, -28, 20, 4, 10, 8,
 repairReplacementPrice = 435000
 mass = 8000
 systemName = "SYSTEM_CARGO_AUX_STORPROC_8K"
-internalStorage = 8000.0
 mirrorCollider = true
 powerDrawPerKg = 250
+modify_kgps_percent_multi = 110
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
 disabled = true

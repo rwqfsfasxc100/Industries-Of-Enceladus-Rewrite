@@ -8,18 +8,90 @@ const SHIP_TRTL = {
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-28,-75],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -32,6 +104,30 @@ const SHIP_TRTL = {
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -50,18 +146,90 @@ const SHIP_TRTL = {
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-32,-75],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 	},
@@ -198,18 +366,90 @@ const SHIP_PROSPECTOR = {
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-23,-192],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -222,6 +462,30 @@ const SHIP_PROSPECTOR = {
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -240,18 +504,90 @@ const SHIP_PROSPECTOR = {
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-27,-192],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 	},
@@ -265,18 +601,90 @@ const SHIP_PROSPECTOR_VP = {
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-23,-130],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -289,6 +697,30 @@ const SHIP_PROSPECTOR_VP = {
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -307,18 +739,90 @@ const SHIP_PROSPECTOR_VP = {
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-27,-130],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 	},
@@ -331,16 +835,88 @@ const SHIP_AT225 = {
 			"position_data":{
 				"position":[-32,-210]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-32,-210]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-28,-210]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -351,6 +927,30 @@ const SHIP_AT225 = {
 			"position_data":{
 				"position":[-32,-210]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -366,16 +966,88 @@ const SHIP_AT225 = {
 			"position_data":{
 				"position":[-32,-210]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-32,-210]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-32,-210]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 	},
@@ -389,12 +1061,60 @@ const SHIP_AT225B = {
 				"position":[-50,-201],
 				"scale":[1.85]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-50,-201],
 				"scale":[1.45]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
@@ -405,7 +1125,29 @@ const SHIP_AT225B = {
 				"polygon":{
 					"value":[0,-32,10,-28,8,-12,2,-8,8,-6,10,0,8,6,2,8,8,12,10,28,8,32,-4,32,-23.3,19.3,-4,19.3,-4,-23.3,-14,-42.6],
 					"method":"arr2vec2arr"
-				}
+				},
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
 			}
 		},
 		"IOE_STORAGE_4K":{
@@ -423,7 +1165,29 @@ const SHIP_AT225B = {
 				"polygon":{
 					"value":[0,32,-12.1,20.7,0,8,0,-22.1,-5.71,-32.1,10,-32,20,-28,20,4,10,8,10,20],
 					"method":"arr2vec2arr"
-				}
+				},
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
 			}
 		},
 		"IOE_FABAUX_FAB":{
@@ -453,6 +1217,30 @@ const SHIP_AT225B = {
 				"position":[-50,-201],
 				"scale":[2.5]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
@@ -463,7 +1251,29 @@ const SHIP_AT225B = {
 				"polygon":{
 					"value":[0,19,-26,9.66,0,9.66,0,-10.3,5,1,6,13],
 					"method":"arr2vec2arr"
-				}
+				},
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
 			}
 		},
 		"IOE_ICEBREAKER_P15":{
@@ -471,6 +1281,30 @@ const SHIP_AT225B = {
 				"position":[-50,-201],
 				"scale":[3]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 	},
@@ -491,18 +1325,90 @@ const SHIP_PROSPECTOR_FAT = {
 				"position":[-40,-230],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-40,-230],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-36,-230],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -515,6 +1421,30 @@ const SHIP_PROSPECTOR_FAT = {
 				"position":[-40,-230],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -533,18 +1463,90 @@ const SHIP_PROSPECTOR_FAT = {
 				"position":[-40,-230],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-40,-230],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-40,-230],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 	},
@@ -759,17 +1761,89 @@ const SHIP_COTHON = {
 		"IOE_PREPROC_0x30":{
 			"position_data":{
 				"position":[-43,-188]
+			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
 			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-43,-188]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-39,-188]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -780,6 +1854,30 @@ const SHIP_COTHON = {
 			"position_data":{
 				"position":[-43,-188]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -795,16 +1893,88 @@ const SHIP_COTHON = {
 			"position_data":{
 				"position":[-43,-188]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-43,-188]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-43,-188]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 	},
@@ -1023,18 +2193,90 @@ const SHIP_TSUKUYOMI_IOT = {
 				"position":[-117,-1125],
 				"scale":[2]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
 				"position":[-117,-1125],
 				"scale":[2]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-113,-1125],
 				"scale":[2]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -1047,6 +2289,30 @@ const SHIP_TSUKUYOMI_IOT = {
 				"position":[-117,-1125],
 				"scale":[2]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -1065,18 +2331,90 @@ const SHIP_TSUKUYOMI_IOT = {
 				"position":[-117,-1125],
 				"scale":[2]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-117,-1125],
 				"scale":[2]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-117,-1125],
 				"scale":[2]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 	},
@@ -1091,6 +2429,30 @@ const SHIP_PROSPECTOR_PIGEON = {
 			"position_data":{
 				"position":[-40,-165],
 				"scale":[0.8]
+			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
 			}
 		},
 		"IOE_PREPROC_20x10":{
@@ -1098,12 +2460,60 @@ const SHIP_PROSPECTOR_PIGEON = {
 				"position":[-40,-165],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
 				"position":[-36,-165],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
@@ -1116,6 +2526,30 @@ const SHIP_PROSPECTOR_PIGEON = {
 				"position":[-40,-165],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
@@ -1134,18 +2568,90 @@ const SHIP_PROSPECTOR_PIGEON = {
 				"position":[-40,-165],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
 				"position":[-40,-165],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
 				"position":[-40,-165],
 				"scale":[0.8]
 			},
+			"properties":{
+				"ProcessingArea/ZoneBottom/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneTop/position":{
+					"method":"center_to_ship",
+					"ignore_scaling":true
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"method":"copy",
+					"node_path":"CargoHoldArea/CollisionPolygon2D"
+				},
+				"ProcessingArea/ZoneBottom/scale":{
+					"method":"invert_scaling",
+				},
+				"ProcessingArea/ZoneTop/scale":{
+					"method":"invert_scaling",
+				},
+			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
 	},

@@ -12,7 +12,7 @@ self_kgps = 25
 powerDrawPerKg = 125
 modify_mineralEfficiency = 0.15
 self_remassEfficiency = 0.1
-modify_kgps_percent_multi = 95
+modify_kgps_percent_multi = 90
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
 visible = true
