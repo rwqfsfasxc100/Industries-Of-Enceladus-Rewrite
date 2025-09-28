@@ -325,7 +325,7 @@ const IOE_ICEBREAKER_P15 = {
 const IOE_OCP_DOCKING_BAY_UPPER = {
 	"path":"res://weapons/WeaponSlot.tscn",
 	"recurse_to_variants":false,
-	"position":[-240,40],
+	"position":[-230,40],
 	"rotation":225,
 	"properties":{
 		"z_index":{
@@ -342,7 +342,7 @@ const IOE_OCP_DOCKING_BAY_UPPER = {
 const IOE_OCP_DOCKING_BAY_LOWER = {
 	"path":"res://weapons/WeaponSlot.tscn",
 	"recurse_to_variants":false,
-	"position":[-240,-40],
+	"position":[-230,-40],
 	"rotation":-45,
 	"properties":{
 		"z_index":{
