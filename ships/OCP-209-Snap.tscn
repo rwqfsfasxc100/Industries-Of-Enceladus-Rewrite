@@ -589,9 +589,10 @@ slot = "middleRight"
 toggleCommand = "ship_slot_2"
 
 [node name="WeaponHardTop" parent="." instance=ExtResource( 29 )]
-position = Vector2( 192, 0 )
+position = Vector2( 130, 0 )
 rotation = 1.5708
 z_index = 32
+slot = "mainRight"
 toggleCommand = "ship_slot_3"
 
 [node name="SYSTEM_SALVAGE_ARM" parent="WeaponHardTop" index="11"]
@@ -599,10 +600,10 @@ flip = true
 feedVelocity = Vector2( -140, -280 )
 
 [node name="WeaponHardRight" parent="." instance=ExtResource( 29 )]
-position = Vector2( -192, 0 )
+position = Vector2( -130, 0 )
 rotation = -1.5708
 z_index = 32
-slot = "mainlow"
+slot = "mainLeft"
 toggleCommand = "ship_slot_4"
 
 [node name="SYSTEM_SALVAGE_ARM" parent="WeaponHardRight" index="11"]
