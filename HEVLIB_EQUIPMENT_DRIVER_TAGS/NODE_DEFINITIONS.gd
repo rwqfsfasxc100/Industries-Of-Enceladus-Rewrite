@@ -323,7 +323,7 @@ const IOE_ICEBREAKER_P15 = {
 	]
 }
 const IOE_OCP_DOCKING_BAY_UPPER = {
-	"path":"res://weapons/WeaponSlot.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/node_instances/WeaponSlot.tscn",
 	"recurse_to_variants":false,
 	"position":[-230,40],
 	"rotation":225,
@@ -340,7 +340,7 @@ const IOE_OCP_DOCKING_BAY_UPPER = {
 	}
 }
 const IOE_OCP_DOCKING_BAY_LOWER = {
-	"path":"res://weapons/WeaponSlot.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/node_instances/WeaponSlot.tscn",
 	"recurse_to_variants":false,
 	"position":[-230,-40],
 	"rotation":-45,
@@ -357,7 +357,7 @@ const IOE_OCP_DOCKING_BAY_LOWER = {
 	}
 }
 const IOE_OCP_DRONE_BAY_UPPER = {
-	"path":"res://weapons/WeaponSlot.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/node_instances/WeaponSlot.tscn",
 	"recurse_to_variants":false,
 	"position":[0,-375],
 	"properties":{
@@ -373,7 +373,7 @@ const IOE_OCP_DRONE_BAY_UPPER = {
 	}
 }
 const IOE_OCP_DRONE_BAY_LOWER = {
-	"path":"res://weapons/WeaponSlot.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/node_instances/WeaponSlot.tscn",
 	"recurse_to_variants":false,
 	"position":[25,150],
 	"properties":{
@@ -389,7 +389,7 @@ const IOE_OCP_DRONE_BAY_LOWER = {
 	}
 }
 const IOE_OCP_TURRET_BAY_UPPER = {
-	"path":"res://weapons/WeaponSlot.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/node_instances/WeaponSlot.tscn",
 	"recurse_to_variants":false,
 	"position":[210,-180],
 	"rotation":90,
@@ -406,7 +406,7 @@ const IOE_OCP_TURRET_BAY_UPPER = {
 	}
 }
 const IOE_OCP_TURRET_BAY_LOWER = {
-	"path":"res://weapons/WeaponSlot.tscn",
+	"path":"res://IndustriesOfEnceladusRewrite/weapons/node_instances/WeaponSlot.tscn",
 	"recurse_to_variants":false,
 	"position":[210,180],
 	"rotation":90,
