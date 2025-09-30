@@ -25,6 +25,17 @@ TAG_QOL={"type":"bool","value":true}
 en="100%"
 uk_UA="70%"
 
+[configs]
+
+options={
+	"verbose_logging":true
+}
+input={
+	"ship_slot_9":[ "9" ],
+	"ship_slot_minus":[ "Minus" ],
+	"ship_slot_equal":[ "Equal" ],
+}
+
 [links]
 
 HEVLIB_GITHUB={"URL":"https://github.com/rwqfsfasxc100/Industries-Of-Enceladus-Rewrite"}
