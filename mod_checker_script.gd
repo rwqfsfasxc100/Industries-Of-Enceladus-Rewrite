@@ -28,7 +28,7 @@ var this_mod_name : String = "Industries of Enceladus Rewrite"
 # 
 var min_version_major : int = 1 # Setting this to INF will mean no min version is checked
 var min_version_minor : int = 8
-var min_version_bugfix : int = 5
+var min_version_bugfix : int = 6
 
 var max_version_major : int = INF # Setting this to INF will mean no max version is checked
 var max_version_minor : int = 0
