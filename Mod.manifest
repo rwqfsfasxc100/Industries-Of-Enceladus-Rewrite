@@ -28,12 +28,36 @@ uk_UA="70%"
 [configs]
 
 options={
-	"verbose_logging":true
+	"verbose_logging":{
+		"name":"IOE_CONFIG_VERBOSE_LOGGING",
+		"description":"IOE_CONFIG_VERBOSE_LOGGING_TOOLTIP",
+		"type":"bool",
+		"script":"",
+		"default":true
+	}
 }
 input={
-	"ship_slot_9":[ "9" ],
-	"ship_slot_minus":[ "Minus" ],
-	"ship_slot_equal":[ "Equal" ],
+	"ship_slot_9":{
+		"name":"IOE_CONFIG_SHIP_SLOT_9",
+		"description":"IOE_CONFIG_SHIP_SLOT_9_TOOLTIP",
+		"type":"Input",
+		"script":"",
+		"default":[ "9" ]
+	},
+	"ship_slot_minus":{
+		"name":"IOE_CONFIG_SHIP_SLOT_MINUS",
+		"description":"IOE_CONFIG_SHIP_SLOT_MINUS_TOOLTIP",
+		"type":"Input",
+		"script":"",
+		"default":[ "Minus" ]
+	},
+	"ship_slot_equal":{
+		"name":"IOE_CONFIG_SHIP_SLOT_MINUS",
+		"description":"IOE_CONFIG_SHIP_SLOT_MINUS_TOOLTIP",
+		"type":"Input",
+		"script":"",
+		"default":[ "Equal" ]
+	},
 }
 
 [links]
