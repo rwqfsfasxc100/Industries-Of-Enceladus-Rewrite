@@ -26,12 +26,11 @@ var verbose = false
 func _init(modLoader = ModLoader):
 # Must load DLC early for it to properly function.
 	# Modify Settings.gd first so we can load config and DLC
-	installScriptExtension("Settings.gd")
-	loadSettings()
 	
+	var ConfigDriver = load("res://HevLib/pointers/ConfigDriver.gd")
 	loadDLC()
 	
-	verbose = modSettings["options"]["verbose_logging"]
+	verbose = ConfigDriver.__get_value("IndustriesOfEnceladusRewrite","IOE_CONFIG_OPTIONS","verbose_logging")
 	
 	var self_path = self.get_script().get_path()
 	var self_directory = self_path.split(self_path.split("/")[self_path.split("/").size() - 1])[0]
@@ -100,16 +99,6 @@ func _ready():
 	l("Ready!")
 
 
-
-func loadSettings():
-	l(MOD_NAME + ": Loading mod settings")
-	var settings = load("res://Settings.gd").new()
-	settings.loadIoEFromFile()
-	settings.saveIoEToFile()
-	modSettings = settings.IoEConfig
-	l(MOD_NAME + ": Current settings: %s" % modSettings)
-	settings.queue_free()
-	l(MOD_NAME + ": Finished loading settings")
 
 # helper script for translations
 # based on Za'krin's helper script!!

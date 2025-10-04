@@ -17,3 +17,11 @@ SYSTEM_AUTOPILOT_337MOD_MANUAL|Displays LIDAR circle around your ship. \nARL: Ca
 IOE_CONFIG_VERBOSE_LOGGING|Verbose logging
 
 IOE_CONFIG_VERBOSE_LOGGING_TOOLTIP|Whether to produce additional logs on mod load
+
+IOE_CONFIG_OPTIONS|Options
+
+IOE_CONFIG_INPUTS|Binds
+
+IOE_CONFIG_SHIP_SLOT_9|Toggle hardpoint 9
+IOE_CONFIG_SHIP_SLOT_MINUS|Toggle hardpoint 10
+IOE_CONFIG_SHIP_SLOT_EQUAL|Toggle hardpoint 11

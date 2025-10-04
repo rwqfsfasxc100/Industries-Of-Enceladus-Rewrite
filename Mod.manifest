@@ -27,7 +27,7 @@ uk_UA="70%"
 
 [configs]
 
-options={
+IOE_CONFIG_OPTIONS={
 	"verbose_logging":{
 		"name":"IOE_CONFIG_VERBOSE_LOGGING",
 		"description":"IOE_CONFIG_VERBOSE_LOGGING_TOOLTIP",
@@ -36,7 +36,7 @@ options={
 		"default":true
 	}
 }
-input={
+IOE_CONFIG_INPUTS={
 	"ship_slot_9":{
 		"name":"IOE_CONFIG_SHIP_SLOT_9",
 		"description":"IOE_CONFIG_SHIP_SLOT_9_TOOLTIP",
@@ -52,8 +52,8 @@ input={
 		"default":[ "Minus" ]
 	},
 	"ship_slot_equal":{
-		"name":"IOE_CONFIG_SHIP_SLOT_MINUS",
-		"description":"IOE_CONFIG_SHIP_SLOT_MINUS_TOOLTIP",
+		"name":"IOE_CONFIG_SHIP_SLOT_EQUAL",
+		"description":"IOE_CONFIG_SHIP_SLOT_EQUAL_TOOLTIP",
 		"type":"Input",
 		"script":"",
 		"default":[ "Equal" ]
