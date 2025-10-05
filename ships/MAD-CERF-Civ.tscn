@@ -578,6 +578,20 @@ z_index = 22
 slot = "turretRight"
 toggleCommand = "ship_slot_5"
 
+[node name="dock-left" parent="." instance=ExtResource( 53 )]
+position = Vector2( -360, -170 )
+z_index = 22
+slot = "leftBay2"
+remove = true
+toggleCommand = "ship_slot_8"
+
+[node name="dock-right" parent="." instance=ExtResource( 53 )]
+position = Vector2( 360, -170 )
+z_index = 22
+slot = "rightBay2"
+remove = true
+toggleCommand = "ship_slot_9"
+
 [node name="drone-port" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( -65, -173 )
 z_index = 50
@@ -589,36 +603,6 @@ position = Vector2( 65, -173 )
 z_index = 50
 slot = "rightDrone"
 toggleCommand = "ship_slot_7"
-
-[node name="dock-fore-port" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( -345, -356 )
-z_index = 50
-slot = "leftBay1"
-remove = true
-toggleCommand = "ship_slot_5"
-
-[node name="dock-fore-stbd" parent="." instance=ExtResource( 53 )]
-position = Vector2( 345, -356 )
-z_index = 50
-slot = "rightBay1"
-remove = true
-toggleCommand = "ship_slot_6"
-
-[node name="dock-aft-port" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( -345, 316 )
-rotation = 3.14159
-z_index = 50
-slot = "rightBay3"
-remove = true
-toggleCommand = "ship_slot_7"
-
-[node name="dock-aft-stbd" parent="." instance=ExtResource( 53 )]
-position = Vector2( 345, 316 )
-rotation = 3.14159
-z_index = 50
-slot = "leftBay3"
-remove = true
-toggleCommand = "ship_slot_8"
 
 [node name="MineralProcessingUnit" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit.tscn"]
 visible = false

@@ -25,3 +25,6 @@ IOE_CONFIG_INPUTS|Binds
 IOE_CONFIG_SHIP_SLOT_9|Toggle hardpoint 9
 IOE_CONFIG_SHIP_SLOT_MINUS|Toggle hardpoint 10
 IOE_CONFIG_SHIP_SLOT_EQUAL|Toggle hardpoint 11
+IOE_CONFIG_SHIP_SLOT_9_TOOLTIP|Keybind used for the 9th equipment slot
+IOE_CONFIG_SHIP_SLOT_MINUS_TOOLTIP|Keybind used for the 10th equipment slot
+IOE_CONFIG_SHIP_SLOT_EQUAL_TOOLTIP|Keybind used for the 11th equipment slot

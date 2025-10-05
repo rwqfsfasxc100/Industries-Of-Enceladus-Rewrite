@@ -839,7 +839,7 @@ position = Vector2( 0, 0 )
 z_index = 200
 texture = ExtResource( 20 )
 hframes = 11
-region_rect = Rect2( 341.586, 372.366, 914.591, 99.462 )
+region_rect = Rect2( 0, 348, 2816, 160 )
 systemName = "SYSTEM_REACTOR_EIME_REFIT"
 
 [connection signal="body_entered" from="Beak/Claw Right/CargoHoldArea2" to="." method="_on_CargoHoldArea_body_entered"]

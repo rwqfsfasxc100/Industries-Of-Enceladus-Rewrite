@@ -37,7 +37,7 @@ SHIP_MADCERF_CIV|MAD-CERF (Civilian Refit)
 
 SHIP_MADCERF_CIV_DESC|This civilian refit, made in collaboration with Obonto Microengineering, introduces a number of modifications for the diverse requirements of the ring environment. Its compact top-mounted habitat has been relocated to the bow and replaced with an expanded OCP-standard centrifuge, increasing its effective crew capacity to eight. Further, the docking bay has been enclosed with a mesh basket and the clamps removed to support mining operations, and its rear bulkhead bears an enormous sliding door for acceptance of large cargo. Much of the bow substructure has also been replaced by hold volumes, lending the vessel more processed mineral space than any other vessel on the civilian market.
 
-SHIP_MADCERF_CIV_SPECS|Make: Machines Astro-Dynamiques / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nTurret Hardpoints: 2 \nDrone Bays: 2 \nCrew: 6 \nDry mass: 195,000 kg \nCargo bay: 1,300 m^3 \nProcessed cargo storage (per mineral): 45,000 kg
+SHIP_MADCERF_CIV_SPECS|Make: Machines Astro-Dynamiques / Obonto Microengineering \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nTurret Hardpoints: 2 \nDrone Bays: 2 \nDocking Bays: 2 \nCrew: 6 \nDry mass: 195,000 kg \nCargo bay: 1,300 m^3 \nProcessed cargo storage (per mineral): 45,000 kg
 
 
 SHIP_MADCERF_DESC|The Machines Astro-Dynamiques Cernunnos Modèle II, otherwise known as the MAD-CERF, is the staple ship of salvage companies within the rings of Saturn. Its heavily-armoured bow, rated for asteroid belt travel, is an inelegant but effective solution to the many hazards posed by interplanetary excursions. Twin reactors on either side of the vessel each power their own pair of torches and maneuvering thrusters.
