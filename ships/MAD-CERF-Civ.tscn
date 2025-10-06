@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=83 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -24,6 +24,8 @@
 [ext_resource path="res://ships/shipHull.phymat" type="PhysicsMaterial" id=22]
 [ext_resource path="res://debug/AIdebug.tscn" type="PackedScene" id=23]
 [ext_resource path="res://ships/AI.tscn" type="PackedScene" id=24]
+[ext_resource path="res://asteroids/dust-c.png" type="Texture" id=25]
+[ext_resource path="res://asteroids/dust-n.png" type="Texture" id=26]
 [ext_resource path="res://ships/modules/ThrusterSlot.tscn" type="PackedScene" id=27]
 [ext_resource path="res://ships/obonto-cl.png" type="Texture" id=28]
 [ext_resource path="res://ships/obonto-m.png" type="Texture" id=29]
@@ -33,20 +35,26 @@
 [ext_resource path="res://ships/excavator_open.wav" type="AudioStream" id=33]
 [ext_resource path="res://ships/excavator_struggle.wav" type="AudioStream" id=34]
 [ext_resource path="res://ships/modules/SpringOperated.gd" type="Script" id=35]
-[ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=36]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=37]
+[ext_resource path="res://ships/tntrl_engine_on.wav" type="AudioStream" id=36]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit.patch.gd" type="Script" id=37]
 [ext_resource path="res://shader/ao-spec-difuse-fast.shader" type="Shader" id=38]
 [ext_resource path="res://ships/modules/MPU-m.png" type="Texture" id=39]
 [ext_resource path="res://ships/modules/MPU-n.png" type="Texture" id=40]
 [ext_resource path="res://ships/modules/MPU-c.png" type="Texture" id=41]
 [ext_resource path="res://ships/drone/pods-n.png" type="Texture" id=42]
 [ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=43]
-[ext_resource path="res://ships/modules/MineralProcessingUnit_DRY.tscn" type="PackedScene" id=47]
+[ext_resource path="res://ships/tntrl_engine_off.wav" type="AudioStream" id=44]
+[ext_resource path="res://ships/tnrtl-engine_01.wav" type="AudioStream" id=45]
+[ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=46]
+[ext_resource path="res://ships/modules/MineralProcessingUnit_FAB.tscn" type="PackedScene" id=48]
 [ext_resource path="res://ships/modules/CargoBaffles.tscn" type="PackedScene" id=49]
 [ext_resource path="res://lights/ConfigurableLight.gd" type="Script" id=50]
 [ext_resource path="res://ships/modules/NuclearReactor.tscn" type="PackedScene" id=51]
 [ext_resource path="res://lights/color-square.png" type="Texture" id=52]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=53]
+[ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=54]
+[ext_resource path="res://ships/modules/MineralProcessingUnit.gd" type="Script" id=55]
+[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=56]
 
 [sub_resource type="ShaderMaterial" id=4]
 shader = ExtResource( 2 )
@@ -129,6 +137,96 @@ load_path = "res://IndustriesOfEnceladusRewrite/ships/grid_big_n.png.stex"
 [sub_resource type="CircleShape2D" id=12]
 radius = 68.0074
 
+[sub_resource type="Gradient" id=19]
+colors = PoolColorArray( 1, 1, 1, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 19 )
+
+[sub_resource type="ParticlesMaterial" id=3]
+emission_shape = 1
+emission_sphere_radius = 16.0
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 128.0
+initial_velocity_random = 0.5
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+scale_random = 1.0
+color_ramp = SubResource( 2 )
+
+[sub_resource type="Curve" id=20]
+_data = [ Vector2( 0, 0.122951 ), 0.0, 0.454656, 0, 0, Vector2( 1, 1 ), 1.20874, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=5]
+curve = SubResource( 20 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+emission_shape = 1
+emission_sphere_radius = 16.0
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 128.0
+initial_velocity_random = 0.5
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 6.0
+scale_random = 1.0
+scale_curve = SubResource( 5 )
+color_ramp = SubResource( 2 )
+
+[sub_resource type="Gradient" id=23]
+colors = PoolColorArray( 1, 1, 1, 1, 0, 0, 0, 0 )
+
+[sub_resource type="GradientTexture" id=24]
+gradient = SubResource( 23 )
+
+[sub_resource type="ParticlesMaterial" id=25]
+emission_shape = 1
+emission_sphere_radius = 16.0
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 128.0
+initial_velocity_random = 0.5
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 0.5
+scale_random = 1.0
+color_ramp = SubResource( 24 )
+
+[sub_resource type="Curve" id=26]
+_data = [ Vector2( 0, 0.122951 ), 0.0, 0.454656, 0, 0, Vector2( 1, 1 ), 1.20874, 0.0, 0, 0 ]
+
+[sub_resource type="CurveTexture" id=27]
+curve = SubResource( 26 )
+
+[sub_resource type="ParticlesMaterial" id=28]
+emission_shape = 1
+emission_sphere_radius = 16.0
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 0, 0 )
+initial_velocity = 128.0
+initial_velocity_random = 0.5
+angular_velocity = 90.0
+angular_velocity_random = 1.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+scale = 6.0
+scale_random = 1.0
+scale_curve = SubResource( 27 )
+color_ramp = SubResource( 24 )
+
 [sub_resource type="ShaderMaterial" id=10]
 shader = ExtResource( 38 )
 shader_param/maxval = 5.0
@@ -142,10 +240,10 @@ shader_param/shine = 1.0
 shader_param/mipmapBias = 0.0
 shader_param/map = ExtResource( 39 )
 
-[sub_resource type="CircleShape2D" id=5]
+[sub_resource type="CircleShape2D" id=21]
 radius = 7000.0
 
-[sub_resource type="CapsuleShape2D" id=6]
+[sub_resource type="CapsuleShape2D" id=22]
 radius = 300.0
 height = 420.0
 
@@ -181,7 +279,7 @@ baseShipName = "SHIP_MADCERF"
 shipType = "fission"
 crew = 8
 hullPrice = 3250000
-processedCargoCapacity = 45000
+processedCargoCapacity = 35000
 poweroffInCargoHold = true
 startProductionYear = 2230.0
 lifepod = ExtResource( 17 )
@@ -472,7 +570,7 @@ offset = Vector2( 0, 25 )
 [node name="Collider" type="CollisionPolygon2D" parent="."]
 light_mask = 0
 z_index = 100
-polygon = PoolVector2Array( 222, -306, 270, -256, 270, -200, 378, -200, 378, -86, 394, -60, 394, 20, 378, 46, 378, 96, 378, 160, 278, 160, 270, 156, 240, 156, 240, 120, 110, 120, 100, 110, 100, 90, 106, 90, 110, 96, 240, 96, 240, 46, 240, -86, 240, -150, 40, -150, 30, -160, 30, -240, 20, -250, -20, -250, -30, -240, -30, -160, -40, -150, -240, -150, -240, -86, -240, 46, -240, 96, -110, 96, -106, 90, -100, 90, -100, 110, -110, 120, -240, 120, -240, 156, -270, 156, -278, 160, -378, 160, -378, 96, -378, 46, -394, 20, -394, -60, -378, -86, -378, -200, -270, -200, -270, -256, -222, -306, -104, -306, -20, -306, 20, -306, 104, -306 )
+polygon = PoolVector2Array( 222, -306, 270, -256, 270, -200, 378, -200, 378, -86, 394, -60, 394, 20, 378, 46, 378, 96, 378, 160, 278, 160, 270, 156, 240, 156, 240, 120, 110, 120, 100, 110, 100, 90, 106, 90, 110, 96, 240, 96, 240, 46, 240, -86, 240, -150, 40, -150, 30, -160, -30, -160, -40, -150, -240, -150, -240, -86, -240, 46, -240, 96, -110, 96, -106, 90, -100, 90, -100, 110, -110, 120, -240, 120, -240, 156, -270, 156, -278, 160, -378, 160, -378, 96, -378, 46, -394, 20, -394, -60, -378, -86, -378, -200, -270, -200, -270, -256, -222, -306, -104, -306, -20, -306, 20, -306, 104, -306 )
 
 [node name="Cabin" type="CollisionShape2D" parent="."]
 light_mask = 0
@@ -491,7 +589,7 @@ angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldArea"]
 light_mask = 0
-polygon = PoolVector2Array( -246, -156, -44, -156, -36, -164, -36, -244, -24, -256, 24, -256, 36, -244, 36, -164, 44, -156, 246, -156, 246, 110, 110, 110, 110, 120, -110, 120, -110, 110, -246, 110 )
+polygon = PoolVector2Array( -246, -156, -44, -156, -36, -164, 36, -164, 44, -156, 246, -156, 246, 110, 110, 110, 110, 120, -110, 120, -110, 110, -246, 110 )
 
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
 visible = false
@@ -582,14 +680,12 @@ toggleCommand = "ship_slot_5"
 position = Vector2( -360, -170 )
 z_index = 22
 slot = "leftBay2"
-remove = true
 toggleCommand = "ship_slot_8"
 
 [node name="dock-right" parent="." instance=ExtResource( 53 )]
 position = Vector2( 360, -170 )
 z_index = 22
 slot = "rightBay2"
-remove = true
 toggleCommand = "ship_slot_9"
 
 [node name="drone-port" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
@@ -604,44 +700,201 @@ z_index = 50
 slot = "rightDrone"
 toggleCommand = "ship_slot_7"
 
-[node name="MineralProcessingUnit" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit.tscn"]
+[node name="MineralProcessingUnit" parent="." instance=ExtResource( 46 )]
 visible = false
 light_mask = 0
-position = Vector2( 0, -220 )
-rotation = 3.14159
-polygon = PoolVector2Array( -32, -56, -19, -36, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 19, -36, 32, -56, 32, -11.9999, 32, 20, 20, 32, -20, 32, -32, 20, -32, -12.1304 )
+position = Vector2( -208, -116 )
+rotation = 1.5708
+polygon = PoolVector2Array( -34, -56, -19, -36, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 19, -36, 34, -56, 59, 32, -34, 32 )
 
-[node name="MineralProcessingUnit_FAB" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit_FAB.tscn"]
+[node name="MineralProcessingUnit_FAB" parent="." instance=ExtResource( 48 )]
 visible = false
-position = Vector2( 0, -220 )
-rotation = 3.14159
-polygon = PoolVector2Array( -12, -70, 2, -50, 2, -18, -14, -18, -22, -9, -22, 12, -10, 24, 16, 24, 27, 12, 27, -50, 30.0002, -59.9999, 32.0001, -51.9999, 32, 20, 20, 32, -20, 32, -32, 20, -31.9999, -28.0001, -32, -60, -42, -70 )
+position = Vector2( 208, -116 )
+rotation = 4.71239
+polygon = PoolVector2Array( -34, -86, 2, -50, 2, -18, -14, -18, -22, -9, -22, 12, -10, 24, 16, 24, 27, 12, 27, -50, 34, -86, 34, 32, -67, 31 )
 
-[node name="MineralProcessingUnit_FSO" parent="." instance=ExtResource( 36 )]
+[node name="MineralProcessingUnit_FSO" type="CollisionPolygon2D" parent="."]
+visible = false
+light_mask = 0
+position = Vector2( 0, -129 )
+rotation = -3.14159
+z_index = 50
+polygon = PoolVector2Array( -240, -94.9994, -231, -90, -230, 11, -22, 12, -10, 24, 10, 24, 22, 12, 230, 11, 231, -90, 240, -95.0006, 240, 21, 40.0001, 20.9999, 30.0001, 30.9999, -29.9999, 31.0001, -39.9999, 21.0001, -240, 21 )
+script = ExtResource( 55 )
+repairReplacementPrice = 350000
+repairFixPrice = 35000
+mass = 1700
+systemName = "SYSTEM_CARGO_MPUFSO"
+kgps = 20
+powerDrawPerKg = 100
+mineralEfficiency = 0.4
+remassEfficiency = 0.4
+
+[node name="MineralProcessingUnit" type="Area2D" parent="MineralProcessingUnit_FSO"]
+z_index = 50
+collision_layer = 524288
+monitorable = false
+space_override = 3
+gravity_vec = Vector2( 0, 0 )
+gravity = 0.0
+linear_damp = 0.0
+angular_damp = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MineralProcessingUnit_FSO/MineralProcessingUnit"]
+polygon = PoolVector2Array( -9.99994, 24, 10.0001, 24, 22, 11.9999, 230, 10.9994, 231, -90.0006, -231, -89.9994, -230, 11.0006, -22, 12.0001 )
+
+[node name="Processing" type="AudioStreamPlayer" parent="MineralProcessingUnit_FSO"]
+stream = ExtResource( 45 )
+volume_db = -15.0
+pitch_scale = 7.0
+bus = "ShipBowels"
+script = ExtResource( 11 )
+
+[node name="ProStart" type="AudioStreamPlayer" parent="MineralProcessingUnit_FSO"]
+stream = ExtResource( 36 )
+pitch_scale = 7.0
+bus = "SFX"
+script = ExtResource( 11 )
+
+[node name="ProStop" type="AudioStreamPlayer" parent="MineralProcessingUnit_FSO"]
+stream = ExtResource( 44 )
+pitch_scale = 7.0
+bus = "SFX"
+script = ExtResource( 11 )
+
+[node name="Processed" type="AudioStreamPlayer" parent="MineralProcessingUnit_FSO"]
+stream = ExtResource( 32 )
+pitch_scale = 0.5
+bus = "SFX"
+script = ExtResource( 11 )
+
+[node name="VentRemass" type="Particles2D" parent="MineralProcessingUnit_FSO"]
+show_behind_parent = true
+z_index = -52
+emitting = false
+amount = 64
+lifetime = 0.75
+visibility_rect = Rect2( -1500, -1500, 3000, 3000 )
+local_coords = false
+process_material = SubResource( 3 )
+texture = ExtResource( 25 )
+normal_map = ExtResource( 26 )
+
+[node name="VentMineral" type="Particles2D" parent="MineralProcessingUnit_FSO"]
+show_behind_parent = true
+z_index = -52
+emitting = false
+amount = 128
+lifetime = 4.0
+explosiveness = 0.75
+visibility_rect = Rect2( -1500, -1500, 3000, 3000 )
+local_coords = false
+process_material = SubResource( 6 )
+texture = ExtResource( 25 )
+normal_map = ExtResource( 26 )
+
+[node name="Light2D" type="Light2D" parent="MineralProcessingUnit_FSO"]
+position = Vector2( -184, -204 )
+editor_only = true
+texture = ExtResource( 21 )
+range_height = 380.4
+
+[node name="MineralProcessingUnit_SMELT" parent="." instance=ExtResource( 54 )]
+visible = false
+light_mask = 0
+position = Vector2( -208, -116 )
+rotation = 1.5708
+polygon = PoolVector2Array( -34, -70, -16, -60, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 16, -60, 34, -70, 44, 32, -34, 32 )
+
+[node name="MineralProcessingUnit_Furnace" type="CollisionPolygon2D" parent="."]
 visible = false
 light_mask = 0
 position = Vector2( 0, -220 )
 rotation = -3.14159
-polygon = PoolVector2Array( -42, -70, -28, -84, -22, 12, -10, 24, 10, 24, 22, 12, 28, -84, 42, -70, 32, -60, 32, 20, 20, 32, -20, 32, -32, 20, -32, -60 )
+z_index = 50
+polygon = PoolVector2Array( -32, -60, -40, -68, -96, -68, -96, -84, -40, -160, -18.0004, -154, -14.0004, -146, -34.0004, -146, -80, -84, -70, -72, -38, -72, -28, -62, 28, -62, 38, -72, 70, -72, 80, -84, 33.9996, -146, 13.9996, -146, 17.9996, -154, 40, -160, 94, -84, 94, -68, 40, -68, 32, -60 )
+script = ExtResource( 37 )
+__meta__ = {
+"_editor_description_": ""
+}
+repairReplacementPrice = 650000
+repairFixPrice = 35000
+mass = 3000
+systemName = "SYSTEM_CARGO_MPU_FURN"
+kgps = 25
+powerDrawPerKg = 250
+mineralEfficiency = 0.6
+remassEfficiency = 0.4
 
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_FSO/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -24, 24, 24, 24, 28, -84, 90, -160, 60, -210, -2.01072e-05, -230, -60, -210, -90, -160, -28, -84 )
+[node name="MineralProcessingUnit" type="Area2D" parent="MineralProcessingUnit_Furnace"]
+z_index = 50
+collision_layer = 524288
+monitorable = false
+space_override = 3
+gravity_vec = Vector2( 0, 0 )
+gravity = 0.0
+linear_damp = 0.0
+angular_damp = 0.0
 
-[node name="MineralProcessingUnit_SMELT" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit_SMELT.tscn"]
-visible = false
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MineralProcessingUnit_Furnace/MineralProcessingUnit"]
 light_mask = 0
-position = Vector2( 0, -220 )
-rotation = -3.14159
-polygon = PoolVector2Array( -30.0002, -59.9999, -16, -54, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 16, -54, 29.9998, -60.0001, 29.9999, -32.0001, 30.0001, 19.9999, 20.0001, 30, -19.9999, 30, -29.9999, 20.0001, -30.0001, -31.9999 )
+polygon = PoolVector2Array( 34, -68, 90, -74, 31.9996, -148, -32.0004, -148, -90, -74, -34, -68, -29.0002, -61.9999, 27.9998, -62.0001 )
 
-[node name="MineralProcessingUnit_Furnace" parent="." instance=ExtResource( 37 )]
-visible = false
-position = Vector2( 0, -220 )
-rotation = -3.14159
-polygon = PoolVector2Array( -32, -60, -40, -68, -96, -68, -96, -84, -40, -160, -18.0004, -154, -14.0004, -146, -34.0004, -146, -80, -84, -70, -72, -38, -72, -28, -62, -28, 0, -12, 24, 12, 24, 28, 0, 28, -62, 38, -72, 70, -72, 80, -84, 33.9996, -146, 13.9996, -146, 17.9996, -154, 40, -160, 94, -84, 94, -68, 40, -68, 32, -60, 32, 3.99992, 32, 20, 20, 32, -20, 32, -32, 20, -32, 4.00008 )
+[node name="Processing" type="AudioStreamPlayer" parent="MineralProcessingUnit_Furnace"]
+stream = ExtResource( 45 )
+volume_db = -15.0
+pitch_scale = 7.0
+bus = "ShipBowels"
+script = ExtResource( 11 )
 
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_Furnace/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -26, 24, 26, 24, 34, -68, 90, -74, 31.9996, -148, -32.0004, -148, -90, -74, -34, -68 )
+[node name="ProStart" type="AudioStreamPlayer" parent="MineralProcessingUnit_Furnace"]
+stream = ExtResource( 36 )
+pitch_scale = 7.0
+bus = "SFX"
+script = ExtResource( 11 )
+
+[node name="ProStop" type="AudioStreamPlayer" parent="MineralProcessingUnit_Furnace"]
+stream = ExtResource( 44 )
+pitch_scale = 7.0
+bus = "SFX"
+script = ExtResource( 11 )
+
+[node name="Processed" type="AudioStreamPlayer" parent="MineralProcessingUnit_Furnace"]
+stream = ExtResource( 32 )
+pitch_scale = 0.5
+bus = "SFX"
+script = ExtResource( 11 )
+
+[node name="VentRemass" type="Particles2D" parent="MineralProcessingUnit_Furnace"]
+show_behind_parent = true
+z_index = -50
+emitting = false
+amount = 64
+lifetime = 0.75
+visibility_rect = Rect2( -500, -500, 1000, 1000 )
+local_coords = false
+process_material = SubResource( 25 )
+texture = ExtResource( 25 )
+normal_map = ExtResource( 26 )
+
+[node name="VentMineral" type="Particles2D" parent="MineralProcessingUnit_Furnace"]
+show_behind_parent = true
+z_index = -50
+emitting = false
+amount = 128
+lifetime = 4.0
+explosiveness = 0.75
+visibility_rect = Rect2( -501.795, -477.743, 985.024, 993.438 )
+local_coords = false
+process_material = SubResource( 28 )
+texture = ExtResource( 25 )
+normal_map = ExtResource( 26 )
+
+[node name="Light2D" type="Light2D" parent="MineralProcessingUnit_Furnace"]
+position = Vector2( -184, -204 )
+editor_only = true
+texture = ExtResource( 21 )
+range_height = 380.4
 
 [node name="gfx" type="Node2D" parent="MineralProcessingUnit_Furnace"]
 z_index = -10
@@ -674,18 +927,99 @@ normal_map = ExtResource( 42 )
 region_enabled = true
 region_rect = Rect2( 1, 99, 124, 117 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn"]
+[node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 56 )]
 visible = false
 light_mask = 0
-position = Vector2( 0, -220 )
-rotation = 3.14159
-polygon = PoolVector2Array( 2.00011, -42, 2, -36, -20, -36, -26, -30, -26, -18, -20, -12, 18, -12, 24, -18, 30.0002, -59.9999, 32, -3.99992, 32, 20, 20, 32, -8.11258e-05, 32, -20, 32, -32, 20, -32, -12.0001, -31.9999, -36.0001, -32, -62 )
+position = Vector2( 184, -118 )
+rotation = 4.71239
+polygon = PoolVector2Array( 2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 32, -56, 32, 56, -77, 56, -32, -56, -24, -40, -14, -34 )
 
-[node name="MineralProcessingUnit_DRY" parent="." instance=ExtResource( 47 )]
-polygon = PoolVector2Array( -40, -150, -30, -160, -30, -240, -20, -250, 20, -250, 30, -240, 30, -160, 40, -150, 240, -150, 240, 96, 230, 96, 230, -146, 40, -145, 25, -160, 20, -241, -20, -241, -25, -160, -39.5792, -145.417, -230, -145, -230, 96, -240, 96, -240, -150 )
+[node name="MineralProcessingUnit_DRY" type="CollisionPolygon2D" parent="."]
+visible = false
+light_mask = 0
+position = Vector2( 0, -129 )
+rotation = -3.14159
+z_index = 50
+polygon = PoolVector2Array( -240, -94.9994, -231, -90, -230, 11, -22, 12, -10, 24, 10, 24, 22, 12, 230, 11, 231, -90, 240, -95.0006, 240, 21, 40.0001, 20.9999, 30.0001, 30.9999, -29.9999, 31.0001, -39.9999, 21.0001, -240, 21 )
+script = ExtResource( 55 )
+repairReplacementPrice = 120000
+repairFixPrice = 25000
+mass = 2800
+systemName = "SYSTEM_CARGO_MPUDRY"
+kgps = 10
+mineralEfficiency = 0.0
+remassEfficiency = 0.6
+removeChunks = false
 
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_DRY/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -40, -150, -30, -160, -30, -240, -20, -250, 20, -250, 30, -240, 30, -160, 40, -150, 240, -150, 240, 96, -240, 96, -240, -150 )
+[node name="MineralProcessingUnit" type="Area2D" parent="MineralProcessingUnit_DRY"]
+z_index = 50
+collision_layer = 524288
+monitorable = false
+space_override = 3
+gravity_vec = Vector2( 0, 0 )
+gravity = 0.0
+linear_damp = 0.0
+angular_damp = 0.0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MineralProcessingUnit_DRY/MineralProcessingUnit"]
+light_mask = 0
+polygon = PoolVector2Array( -9.99994, 24, 10.0001, 24, 22, 11.9999, 230, 10.9994, 231, -90.0006, -231, -89.9994, -230, 11.0006, -22, 12.0001 )
+
+[node name="Processing" type="AudioStreamPlayer" parent="MineralProcessingUnit_DRY"]
+stream = ExtResource( 45 )
+volume_db = -15.0
+pitch_scale = 7.0
+bus = "ShipBowels"
+script = ExtResource( 11 )
+
+[node name="ProStart" type="AudioStreamPlayer" parent="MineralProcessingUnit_DRY"]
+stream = ExtResource( 36 )
+pitch_scale = 7.0
+bus = "SFX"
+script = ExtResource( 11 )
+
+[node name="ProStop" type="AudioStreamPlayer" parent="MineralProcessingUnit_DRY"]
+stream = ExtResource( 44 )
+pitch_scale = 7.0
+bus = "SFX"
+script = ExtResource( 11 )
+
+[node name="Processed" type="AudioStreamPlayer" parent="MineralProcessingUnit_DRY"]
+stream = ExtResource( 32 )
+pitch_scale = 0.5
+bus = "SFX"
+script = ExtResource( 11 )
+
+[node name="VentRemass" type="Particles2D" parent="MineralProcessingUnit_DRY"]
+show_behind_parent = true
+z_index = -52
+emitting = false
+amount = 64
+lifetime = 0.75
+visibility_rect = Rect2( -1500, -1500, 3000, 3000 )
+local_coords = false
+process_material = SubResource( 3 )
+texture = ExtResource( 25 )
+normal_map = ExtResource( 26 )
+
+[node name="VentMineral" type="Particles2D" parent="MineralProcessingUnit_DRY"]
+show_behind_parent = true
+z_index = -52
+emitting = false
+amount = 128
+lifetime = 4.0
+explosiveness = 0.75
+visibility_rect = Rect2( -1500, -1500, 3000, 3000 )
+local_coords = false
+process_material = SubResource( 6 )
+texture = ExtResource( 25 )
+normal_map = ExtResource( 26 )
+
+[node name="Light2D" type="Light2D" parent="MineralProcessingUnit_DRY"]
+position = Vector2( -184, -204 )
+editor_only = true
+texture = ExtResource( 21 )
+range_height = 380.4
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 49 )]
 visible = false
@@ -723,12 +1057,12 @@ visible = false
 visible = false
 
 [node name="CollisionShape2D" parent="AI/RocksArea" index="0"]
-shape = SubResource( 5 )
+shape = SubResource( 21 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AI/CollisionArea" index="0"]
 position = Vector2( 4, -40 )
 rotation = 1.57079
-shape = SubResource( 6 )
+shape = SubResource( 22 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AI/DangerArea" index="0"]
 shape = SubResource( 7 )
@@ -799,10 +1133,13 @@ rpmPS = 300.0
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
+[connection signal="body_entered" from="MineralProcessingUnit_FSO/MineralProcessingUnit" to="MineralProcessingUnit_FSO" method="_on_MineralProcessingUnit_body_entered"]
+[connection signal="body_exited" from="MineralProcessingUnit_FSO/MineralProcessingUnit" to="MineralProcessingUnit_FSO" method="_on_MineralProcessingUnit_body_exited"]
+[connection signal="body_entered" from="MineralProcessingUnit_Furnace/MineralProcessingUnit" to="MineralProcessingUnit_Furnace" method="_on_MineralProcessingUnit_body_entered"]
+[connection signal="body_exited" from="MineralProcessingUnit_Furnace/MineralProcessingUnit" to="MineralProcessingUnit_Furnace" method="_on_MineralProcessingUnit_body_exited"]
+[connection signal="body_entered" from="MineralProcessingUnit_DRY/MineralProcessingUnit" to="MineralProcessingUnit_DRY" method="_on_MineralProcessingUnit_body_entered"]
+[connection signal="body_exited" from="MineralProcessingUnit_DRY/MineralProcessingUnit" to="MineralProcessingUnit_DRY" method="_on_MineralProcessingUnit_body_exited"]
 
-[editable path="MineralProcessingUnit_FSO"]
-[editable path="MineralProcessingUnit_Furnace"]
-[editable path="MineralProcessingUnit_DRY"]
 [editable path="CargoBaffles"]
 [editable path="AI"]
 [editable path="reactor-l"]
