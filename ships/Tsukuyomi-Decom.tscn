@@ -239,7 +239,7 @@ pinned = false
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BigHatch/Claw Left"]
 light_mask = 0
 position = Vector2( 9, 21 )
-polygon = PoolVector2Array( -96, -28, -8, -28, -8, -24, 6, -18, 6, -14, -12, -14, -96, -14 )
+polygon = PoolVector2Array( -96, -28, -8, -28, -8, -24, 6, -18, 6, -8, -96, -8 )
 
 [node name="LeftGrooveJointTop" type="GrooveJoint2D" parent="BigHatch/Claw Left"]
 visible = false
@@ -294,7 +294,7 @@ pinned = false
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BigHatch/Claw Right"]
 light_mask = 0
 position = Vector2( -9, 21 )
-polygon = PoolVector2Array( -6, -28, 12, -28, 96, -28, 96, -14, 8, -14, 8, -18, -6, -24 )
+polygon = PoolVector2Array( -6, -28, 96, -28, 96, -8, 8, -8, 8, -18, -6, -24 )
 
 [node name="RightGrooveJointTop" type="GrooveJoint2D" parent="BigHatch/Claw Right"]
 visible = false
