@@ -41,6 +41,7 @@ func _init():
 		{"name":"OCP213-TWIN", "age":24 * 3600 * 365 * 200},
 		{"name":"OCP213-TWIN", "age":24 * 3600 * 365 * 200},
 		{"name":"TRTL-OCP", "age":24 * 3600 * 365 * 200},
+		{"name":"TRTL-PEEPER", "age":24 * 3600 * 365 * 200},
 		{"name":"TRTL-RAM", "age":24 * 3600 * 365 * 200},
 		{"name":"CK65", "age":24 * 3600 * 365 * 20},
 		{"name":"CK69", "age":24 * 3600 * 365 * 20},

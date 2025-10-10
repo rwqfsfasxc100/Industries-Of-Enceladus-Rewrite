@@ -2411,6 +2411,209 @@ const SHIP_TRTL_OCP = {
 	},
 }
 
+const SHIP_TRTL_PEEPER = {
+	"ship_name":"SHIP_TRTL_PEEPER",
+	"fallback_to_base_ship":false,
+	"fallback_override":"SHIP_TRTL",
+	"node_definitions":{
+		"IOE_PREPROC_0x30":{
+			"position_data":{
+				"position":[-140,-90],
+				"scale":[1.75],
+			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"polygon":{
+					"value":[0,25,0,-25,16,-12,12,-4,12,4,16,12],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
+		},
+		"IOE_PREPROC_20x10":{
+			"position_data":{
+				"position":[-140,-90],
+				"scale":[1.75],
+			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
+		},
+		"IOE_PREPROC_40x20":{
+			"position_data":{
+				"position":[-136,-90],
+				"scale":[1.5]
+			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
+		},
+		"IOE_STORAGE_4K":{
+			"position_data":{
+				"position":[-140,-90],
+				"scale":[1.75],
+			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
+		},
+		"IOE_STORAGE_8K":{
+			"position_data":{
+				"position":[-140,-90],
+				"scale":[1.75],
+			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
+		},
+		"IOE_FABAUX_FAB":{
+			"position_data":{
+				"position":[-140,-90],
+				"scale":[0.8],
+			},
+			"properties":{
+				"set_rot":{
+					"value":45
+				}
+			}
+		},
+		"IOE_FABAUX_BIGFAB":{
+			"position_data":{
+				"position":[-140,-90],
+				"scale":[0.8],
+			},
+			"properties":{
+				"set_rot":{
+					"value":45
+				}
+			}
+		},
+		"IOE_ICEBREAKER_M35":{
+			"position_data":{
+				"position":[-140,-90],
+				"scale":[1],
+			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
+		},
+		"IOE_ICEBREAKER_M85":{
+			"position_data":{
+				"position":[-140,-90],
+				"scale":[2],
+			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
+		},
+		"IOE_ICEBREAKER_P15":{
+			"position_data":{
+				"position":[-140,-90],
+				"scale":[2],
+			},
+			"properties":{
+				"mirrorVertical":{
+					"value":true
+				},
+				"ProcessingArea/ZoneTop/polygon":{
+					"value":[244, 0, 238, -34, 223, -64, 198, -95, 180, -112, 161, -122, 139, -129, 109, -132, 86, -129, 59, -123, 35, -109, 12, -91, -8, -66, -22, -34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"ProcessingArea/ZoneBottom/polygon":{
+					"value":[244, 0, 238, 34, 223, 64, 198, 95, 161, 122, 109, 132, 56, 122, 12, 91, -8, 66, -22, 34, -26, 0],
+					"method":"arr2vec2arr"
+				},
+				"set_rot":{
+					"value":45
+				}
+			}
+		},
+		"IOE_BAY_AUX_PERSIST":{},
+	},
+}
+
 const SHIP_TSUKUYOMI_IOT = {
 	"ship_name":"SHIP_TSUKUYOMI_IOT",
 	"fallback_to_base_ship":false,

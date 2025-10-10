@@ -446,6 +446,36 @@ func _ready():
 			"rightBack": {"type":"SYSTEM_NONE"},
 		}, 
 	}}
+	ships["TRTL-PEEPER"] = preload("res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-PEEPER.tscn")
+	configAlias["TRTL-PEEPER"] = "TRTL"
+	defaultShipConfig["TRTL-PEEPER"] = {"config": {
+		"ammo":{
+			"capacity": 1000.0, 
+			"initial": 1000.0, 
+		}, 
+		"autopilot":{"type":"SYSTEM_AUTOPILOT_MK1"}, 
+		"capacitor":{"capacity": 500.0}, 
+		"cargo":{
+			"equipment":"SYSTEM_CARGO_STANDARD",
+			"modifierDivided":"SYSTEM_CARGO_MOD_2K"
+		},
+		"fuel":{
+			"capacity": 30000.0, 
+			"initial": 30000.0, 
+		}, 
+		"propulsion":{
+			"main":"SYSTEM_MAIN_ENGINE_K37", 
+			"rcs":"SYSTEM_THRUSTER_K37"
+		}, 
+		"reactor":{	"power": 8.0},
+		"turbine":{"power": 100.0}, 
+		"weaponSlot":{
+			"left": {"type":"SYSTEM_EMD14"},
+			"right": {"type":"SYSTEM_EMD14"},
+			"leftBack": {"type":"SYSTEM_NONE"},
+			"rightBack": {"type":"SYSTEM_NONE"},
+		}, 
+	}}
 	ships["TRTL-RAM"] = preload("res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-Ram.tscn")
 	configAlias["TRTL-RAM"] = "TRTL"
 	defaultShipConfig["TRTL-RAM"] = {"config": {
