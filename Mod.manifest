@@ -32,7 +32,6 @@ IOE_CONFIG_OPTIONS={
 		"name":"IOE_CONFIG_VERBOSE_LOGGING",
 		"description":"IOE_CONFIG_VERBOSE_LOGGING_TOOLTIP",
 		"type":"bool",
-		"script":"",
 		"default":true
 	}
 }
@@ -41,7 +40,6 @@ IOE_CONFIG_INPUTS={
 		"name":"IOE_CONFIG_SHIP_SLOT_9",
 		"description":"IOE_CONFIG_SHIP_SLOT_9_TOOLTIP",
 		"type":"Input",
-		"script":"",
 		"default":[ "9" ]
 	},
 	"ship_slot_minus":{
@@ -55,7 +53,6 @@ IOE_CONFIG_INPUTS={
 		"name":"IOE_CONFIG_SHIP_SLOT_EQUAL",
 		"description":"IOE_CONFIG_SHIP_SLOT_EQUAL_TOOLTIP",
 		"type":"Input",
-		"script":"",
 		"default":[ "Equal" ]
 	},
 }
