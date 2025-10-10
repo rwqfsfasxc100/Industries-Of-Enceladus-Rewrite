@@ -96,7 +96,7 @@ SHIP_TRTL_OCP|SSE OK720 TNTRL
 
 SHIP_TRTL_OCP_DESC|"Oh, dear God, what is that?", they said. "That won't fly," they said. "Stop calling us or we'll press charges," both Antonoff and Obonto said, in unison. It was in this chorus of naysaying and whining that we created the miracle that is the OK720 TNTRL. \n\nTwo spare bay halves from Obonto surplus and the resectioned corpse of a K37 come together to create this masterpiece, originally a "joke" posted to the RingChan /dreamship/ board by user snownukitro. With a truly enormous cargo bay and support hardware for OCP-standard MPUs and accessories, four low-stress equipment hardpoints, and incredibly low mass for the volume of its bay, this monster is perfectly suited for ring mining - as long as it doesn't hit anything. \n\nLimited warranty applies. We won't replace it if you get stuck in a tight space, but we'll sell you replacement panels.
 
-SHIP_TRTL_OCP_SPECS|Make: Rusatom-Antonoff / Obonto Microengineering / Sin Space Engineering \nLow-Stress Hardpoints: 1 \nDocking Bays: 4 \nCrew: 4 \nDry mass: 86,600 kg \nCargo bay: 720 m^3 \nProcessed cargo storage (per mineral): 5,000 kg
+SHIP_TRTL_OCP_SPECS|Make: Rusatom-Antonoff / Obonto Microengineering / Sin Space Engineering \nLow-Stress Hardpoints: 4 \nCrew: 4 \nDry mass: 86,600 kg \nCargo bay: 720 m^3 \nProcessed cargo storage (per mineral): 5,000 kg
 
 
 SHIP_OCP209_SPECS|Make: Obonto Microengineering\nHigh-Stress Hardpoints: 2\nLow-Stress Hardpoints: 2\nDocking Bays: 4\nCrew: 8\nDry mass: 184,500 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg

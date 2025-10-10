@@ -2418,7 +2418,7 @@ const SHIP_TRTL_PEEPER = {
 	"node_definitions":{
 		"IOE_PREPROC_0x30":{
 			"position_data":{
-				"position":[-140,-90],
+				"position":[-140,0],
 				"scale":[1.75],
 			},
 			"properties":{
@@ -2444,7 +2444,7 @@ const SHIP_TRTL_PEEPER = {
 		},
 		"IOE_PREPROC_20x10":{
 			"position_data":{
-				"position":[-140,-90],
+				"position":[-140,0],
 				"scale":[1.75],
 			},
 			"properties":{
@@ -2466,7 +2466,7 @@ const SHIP_TRTL_PEEPER = {
 		},
 		"IOE_PREPROC_40x20":{
 			"position_data":{
-				"position":[-136,-90],
+				"position":[-136,0],
 				"scale":[1.5]
 			},
 			"properties":{
@@ -2488,7 +2488,7 @@ const SHIP_TRTL_PEEPER = {
 		},
 		"IOE_STORAGE_4K":{
 			"position_data":{
-				"position":[-140,-90],
+				"position":[-140,0],
 				"scale":[1.75],
 			},
 			"properties":{
@@ -2502,7 +2502,7 @@ const SHIP_TRTL_PEEPER = {
 		},
 		"IOE_STORAGE_8K":{
 			"position_data":{
-				"position":[-140,-90],
+				"position":[-140,0],
 				"scale":[1.75],
 			},
 			"properties":{
@@ -2524,7 +2524,7 @@ const SHIP_TRTL_PEEPER = {
 		},
 		"IOE_FABAUX_FAB":{
 			"position_data":{
-				"position":[-140,-90],
+				"position":[-140,0],
 				"scale":[0.8],
 			},
 			"properties":{
@@ -2535,7 +2535,7 @@ const SHIP_TRTL_PEEPER = {
 		},
 		"IOE_FABAUX_BIGFAB":{
 			"position_data":{
-				"position":[-140,-90],
+				"position":[-140,0],
 				"scale":[0.8],
 			},
 			"properties":{
@@ -2546,7 +2546,7 @@ const SHIP_TRTL_PEEPER = {
 		},
 		"IOE_ICEBREAKER_M35":{
 			"position_data":{
-				"position":[-140,-90],
+				"position":[-140,0],
 				"scale":[1],
 			},
 			"properties":{
@@ -2568,7 +2568,7 @@ const SHIP_TRTL_PEEPER = {
 		},
 		"IOE_ICEBREAKER_M85":{
 			"position_data":{
-				"position":[-140,-90],
+				"position":[-140,0],
 				"scale":[2],
 			},
 			"properties":{
@@ -2590,7 +2590,7 @@ const SHIP_TRTL_PEEPER = {
 		},
 		"IOE_ICEBREAKER_P15":{
 			"position_data":{
-				"position":[-140,-90],
+				"position":[-140,0],
 				"scale":[2],
 			},
 			"properties":{
