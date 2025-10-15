@@ -58,4 +58,4 @@ SYSTEM_MAIN_ENGINE_PMS|ND PMS engine
 
 SYSTEM_MAIN_ENGINE_PMS_DESC|The PMS is an early predecessor to the NTTR thruster. Nakamura Dynamics's first large NTR type thruster holds an abysmal propellant economy and sub-par thrust for a raw NTR, it still holds out for it's sheer reliability. Able to operate under stresses far-exceeding any other thruster on the market, and being incredibly sturdy for it's power, the PMS still keeps up with demand for a thruster able to keep running, even in situations that would be considered dire using alternatives.
 
-SYSTEM_MAIN_ENGINE_PMS_SPECS|Thrust: 3,000 kN \nExhaust velocity: 3 km/s \nPropellant consumption: 1000 kg/s \nPower consumption: 20 MW \nThermal consumption: 4.5 GW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 250 kg \nManufacturer: Nakamura Dynamics
+SYSTEM_MAIN_ENGINE_PMS_SPECS|Thrust: 3,000 kN \nExhaust velocity: 3 km/s \nPropellant consumption: 1,000 kg/s \nPower consumption: 20 MW \nThermal consumption: 4.5 GW \nOperation mode: Variable thrust \nPropellant: Oxygen-Hydrogen plasma \nMass: 250 kg \nManufacturer: Nakamura Dynamics
