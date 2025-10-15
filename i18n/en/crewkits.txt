@@ -38,14 +38,14 @@ SYSTEM_CREW_MOD_KMX|Antonoff KMX Upfit
 
 SYSTEM_CREW_MOD_KMX_DESC|The Antonoff KMX is advertised as a long-term flight comfort system intended for interlunar cargo crews and passenger vessels. \n\nWith a full water reclamation system, a range of improvements to the galley, lavatory, and recreaction deck (and retrofit to introduce them on most common hull patterns, should any not exist), and breathable upholstery for most standard seating, crews generally find flying with the KMX upfit preferable to flying without.
 
-SYSTEM_CREW_MOD_KMX_SPECS|Crew morale erosion per day: -20% (good) \nMass: 500 kg \nMass per crewmember capacity: 150 kg \nManufacturer: Antonoff
+SYSTEM_CREW_MOD_KMX_SPECS|Crew capacity: -1 \nCrew morale erosion per day: -20% (good) \nMass: 500 kg \nMass per crewmember capacity: 150 kg \nManufacturer: Antonoff
 
 
 SYSTEM_CREW_MOD_OCM|OCM-36 Upfit
 
 SYSTEM_CREW_MOD_OCM_DESC|Obonto Microengineering's OCM-36 completely overhauls ship habitats with modern luxuries that will feel very familiar to those who have visited or lived on their stations. This purchase covers the full cost of Obonto (or otherwise licensed) renovators' labour, which includes the use of a Nakamura Dynamics Class 2 AI system to optimise for varying internal geometries. \n\nIf the divided crew quarters with adjustable bedding, independent entertainment systems and en-suite bathrooms aren't enough, there's always the full Yamato-brand kitchenette in the galley, the diverse and expansive recreation area, and the modern, sleek cockpit overhaul - not to mention the pleasing wall cladding and low-profile handholds for zero-g navigation.
 
-SYSTEM_CREW_MOD_OCM_SPECS|Crew morale erosion per day: -50% (excellent) \nMass: 700 kg \nMass per crewmember capacity: 200 kg \nManufacturer: Obonto Microengineering
+SYSTEM_CREW_MOD_OCM_SPECS|Crew capacity: -2 \nCrew morale erosion per day: -50% (excellent) \nMass: 700 kg \nMass per crewmember capacity: 200 kg \nManufacturer: Obonto Microengineering
 
 
 SYSTEM_CREW_MOD_MANUAL|Increases or decreases crew morale erosion per day of operation. \nUnhappy crew may cause worse operational outcomes. \nDoes not require power or reactor heat.
