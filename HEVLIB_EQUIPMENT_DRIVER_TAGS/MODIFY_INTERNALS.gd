@@ -8,9 +8,9 @@ const MODIFY_INTERNALS = [
 	{
 		"system":"SYSTEM_CARGO_AUX_STORAGE_4K",
 		"storage_flat":4000,
-		"storage_ammo":1500,
-		"storage_nanodrones":1500,
-		"storage_propellant":4000
+		"storage_ammo":3000,
+		"storage_nanodrones":3000,
+		"storage_propellant":5000
 	},
 	{
 		"system":"SYSTEM_CARGO_MPU_BULK",
@@ -29,29 +29,33 @@ const MODIFY_INTERNALS = [
 	{
 		"system":"SYSTEM_CARGO_MOD_2K",
 		"storage_flat":2000,
-		"mass":1000
+		"mass":1600,
+		"mass_per_tonne_of_processed_ore":100,
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_4K",
 		"storage_flat":4000,
-		"mass":2000
+		"mass":3300,
+		"mass_per_tonne_of_processed_ore":100,
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_6K",
 		"storage_flat":6000,
-		"mass":3500
+		"mass":5500,
+		"mass_per_tonne_of_processed_ore":100,
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_BOLTS",
 		"storage_multi":1/1,
 		"force_type":"divided",
-		"mass":-650
+		"mass":-2650
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_AMORPH4",
 		"storage_multi_upper":1,
 		"storage_multi_lower":2,
 		"force_type":"amorphic",
+		"mass_per_tonne_total_storage_added":-20,
 		"mass":1500
 	},
 	{
@@ -59,6 +63,7 @@ const MODIFY_INTERNALS = [
 		"storage_multi_upper":2,
 		"storage_multi_lower":3,
 		"force_type":"amorphic",
+		"mass_per_tonne_total_storage_added":-75,
 		"mass":2500
 	},
 	{
@@ -66,36 +71,49 @@ const MODIFY_INTERNALS = [
 		"storage_multi_upper":5,
 		"storage_multi_lower":6,
 		"force_type":"amorphic",
+		"mass_per_tonne_total_storage_added":-165,
 		"mass":3750
 	},
 	{
 		"system":"SYSTEM_CREW_ADD_BUNK",
 		"crew_count":1,
-		"crew_morale":-0.3
+		"crew_morale":-0.3,
+		"mass":250,
+		"mass_per_crew_member":15
 	},
 	{
 		"system":"SYSTEM_CREW_ADD_BUNK2",
 		"crew_count":2,
-		"crew_morale":-0.4
+		"crew_morale":-0.4,
+		"mass":500,
+		"mass_per_crew_member":35
 	},
 	{
 		"system":"SYSTEM_CREW_ADD_CAPSULE",
 		"crew_count":2,
-		"crew_morale":-0.25
+		"crew_morale":-0.25,
+		"mass":1000,
+		"mass_per_crew_member":60
 	},
 	{
 		"system":"SYSTEM_CREW_MOD_HOME",
 		"crew_count":0,
-		"crew_morale":0.1
+		"crew_morale":0.1,
+		"mass":200,
+		"mass_per_crew_member":75
 	},
 	{
 		"system":"SYSTEM_CREW_MOD_KMX",
-		"crew_count":0,
-		"crew_morale":0.2
+		"crew_count":-1,
+		"crew_morale":0.2,
+		"mass":500,
+		"mass_per_crew_member":150
 	},
 	{
 		"system":"SYSTEM_CREW_MOD_OCM",
-		"crew_count":0,
-		"crew_morale":0.5
+		"crew_count":-2,
+		"crew_morale":0.5,
+		"mass":700,
+		"mass_per_crew_member":200
 	}
 ]
