@@ -73,30 +73,30 @@ var basePowerDrawPerKg = 0
 
 func _physics_process(delta):
 	var ship = getShip()
-	if not has_modified:
-		if !ship.cutscene and ship.isPlayerControlled():
-			var processor
-			var reinstance = false
-			var current_aux = ship.getConfig("cargo.aux")
-			var current_mpu = ship.getConfig("cargo.equipment")
-			if current_aux == systemName:
-				if current_model != current_mpu:
-					reinstance = true
-					current_model = current_mpu
-				var self_aux = systemName
-				for node in ship.get_children():
-					if "systemName" in node:
-						var nname = node.name
-						if node.systemName == current_mpu:
-							processor = node
-				if processor:
-					if not has_modified:
-						baseMineralEfficiency = processor.mineralEfficiency
-						basekgps = processor.kgps
-						basePowerDrawPerKg = processor.powerDrawPerKg
-						
-					else:
-						modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
+	if !ship.cutscene and ship.isPlayerControlled():
+		var processor
+		var reinstance = false
+		var current_aux = ship.getConfig("cargo.aux")
+		var current_mpu = ship.getConfig("cargo.equipment")
+		if current_aux == systemName:
+			if current_model != current_mpu:
+				reinstance = true
+				current_model = current_mpu
+			var self_aux = systemName
+			for node in ship.get_children():
+				if "systemName" in node:
+					var nname = node.name
+					if node.systemName == current_mpu:
+						processor = node
+			if processor:
+				if not has_modified:
+					baseMineralEfficiency = processor.mineralEfficiency
+					basekgps = processor.kgps
+					basePowerDrawPerKg = processor.powerDrawPerKg
+					modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
+					has_modified = true
+				else:
+					modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
 #				breakpoint
 				
 				

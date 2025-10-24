@@ -79,7 +79,8 @@ func _physics_process(delta):
 					baseMineralEfficiency = processor.mineralEfficiency
 					basekgps = processor.kgps
 					basePowerDrawPerKg = processor.powerDrawPerKg
-					
+					modifyProcessor(processor,basekgps,basePowerDrawPerKg)
+					has_modified = true
 				else:
 					modifyProcessor(processor,basekgps,basePowerDrawPerKg)
 				
