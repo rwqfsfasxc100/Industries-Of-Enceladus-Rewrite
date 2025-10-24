@@ -228,6 +228,9 @@ func _ready():
 			"capacity":80000.0, 
 			"initial":80000.0, 
 		}, 
+		"hud":{
+			"type":"SYSTEM_HUD_CERF"
+		}, 
 		"propulsion":{
 			"main":"SYSTEM_MAIN_ENGINE_CHEVAL", 
 			"rcs":"SYSTEM_THRUSTER_MADTX4"
