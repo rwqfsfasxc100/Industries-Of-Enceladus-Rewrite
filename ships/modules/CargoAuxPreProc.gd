@@ -67,7 +67,9 @@ var has_modified = false
 
 var current_model = ""
 
-var base
+var baseMineralEfficiency = 0
+var basekgps = 0
+var basePowerDrawPerKg = 0
 
 func _physics_process(delta):
 	var ship = getShip()
@@ -88,22 +90,13 @@ func _physics_process(delta):
 						if node.systemName == current_mpu:
 							processor = node
 				if processor:
-					var path = processor.filename
-					var fl = File.new()
-					if path and fl.file_exists(path):
-						if reinstance:
-							if base != null:
-								base.free()
-							base = load(path).instance()
-						if base == null:
-							base = load(path).instance()
-						if "baseMineralEfficiency" in base and "basekgps" in base and "basePowerDrawPerKg" in base:
-							var baseMineralEfficiency = base.mineralEfficiency
-							var basekgps = base.kgps
-							var basePowerDrawPerKg = base.powerDrawPerKg
-							
-							
-							modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
+					if not has_modified:
+						baseMineralEfficiency = processor.mineralEfficiency
+						basekgps = processor.kgps
+						basePowerDrawPerKg = processor.powerDrawPerKg
+						
+					else:
+						modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
 #				breakpoint
 				
 				
