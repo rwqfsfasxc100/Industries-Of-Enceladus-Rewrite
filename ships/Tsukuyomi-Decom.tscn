@@ -207,7 +207,6 @@ script = ExtResource( 38 )
 registerExternal = true
 
 [node name="LeftSpringJoint" type="DampedSpringJoint2D" parent="BigHatch"]
-visible = false
 position = Vector2( -150, -11 )
 rotation = -1.5708
 node_a = NodePath("../..")
@@ -218,8 +217,47 @@ rest_length = 140.0
 stiffness = 64.0
 
 [node name="LeftSpringJoint2" type="DampedSpringJoint2D" parent="BigHatch"]
-visible = false
 position = Vector2( -150, 11 )
+rotation = -1.5708
+node_a = NodePath("../..")
+node_b = NodePath("../Claw Left")
+bias = 0.6
+length = 150.0
+rest_length = 140.0
+stiffness = 64.0
+
+[node name="LeftSpringJoint3" type="DampedSpringJoint2D" parent="BigHatch"]
+position = Vector2( -150, -40 )
+rotation = -1.5708
+node_a = NodePath("../..")
+node_b = NodePath("../Claw Left")
+bias = 0.6
+length = 150.0
+rest_length = 140.0
+stiffness = 64.0
+
+[node name="LeftSpringJoint4" type="DampedSpringJoint2D" parent="BigHatch"]
+position = Vector2( -150, 40 )
+rotation = -1.5708
+node_a = NodePath("../..")
+node_b = NodePath("../Claw Left")
+bias = 0.6
+length = 150.0
+rest_length = 140.0
+stiffness = 64.0
+
+[node name="LeftSpringJoint5" type="DampedSpringJoint2D" parent="BigHatch"]
+position = Vector2( -150, -25 )
+rotation = -1.5708
+node_a = NodePath("../..")
+node_b = NodePath("../Claw Left")
+bias = 0.6
+length = 150.0
+rest_length = 140.0
+stiffness = 64.0
+
+[node name="LeftSpringJoint6" type="DampedSpringJoint2D" parent="BigHatch"]
+position = Vector2( -150, 25 )
 rotation = -1.5708
 node_a = NodePath("../..")
 node_b = NodePath("../Claw Left")
@@ -239,11 +277,10 @@ pinned = false
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BigHatch/Claw Left"]
 light_mask = 0
 position = Vector2( 9, 21 )
-polygon = PoolVector2Array( -96, -28, -8, -28, -8, -24, 6, -18, 6, -8, -96, -8 )
+polygon = PoolVector2Array( -117, -28, -8, -28, -8, -24, 20, -12, 20, -8, -95.218, -8, -117, 7 )
 
 [node name="LeftGrooveJointTop" type="GrooveJoint2D" parent="BigHatch/Claw Left"]
-visible = false
-position = Vector2( -111, -25 )
+position = Vector2( -111, -50 )
 rotation = -1.5708
 node_a = NodePath("../../..")
 node_b = NodePath("..")
@@ -252,8 +289,7 @@ length = 120.0
 initial_offset = 110.0
 
 [node name="LeftGrooveJointBottom" type="GrooveJoint2D" parent="BigHatch/Claw Left"]
-visible = false
-position = Vector2( -111, 25 )
+position = Vector2( -111, 50 )
 rotation = -1.5708
 node_a = NodePath("../../..")
 node_b = NodePath("..")
@@ -262,7 +298,6 @@ length = 120.0
 initial_offset = 110.0
 
 [node name="RightSpringJoint" type="DampedSpringJoint2D" parent="BigHatch"]
-visible = false
 position = Vector2( 150, -11 )
 rotation = 1.5708
 node_a = NodePath("../..")
@@ -273,8 +308,47 @@ rest_length = 140.0
 stiffness = 64.0
 
 [node name="RightSpringJoint2" type="DampedSpringJoint2D" parent="BigHatch"]
-visible = false
 position = Vector2( 150, 11 )
+rotation = 1.5708
+node_a = NodePath("../..")
+node_b = NodePath("../Claw Right")
+bias = 0.6
+length = 150.0
+rest_length = 140.0
+stiffness = 64.0
+
+[node name="RightSpringJoint3" type="DampedSpringJoint2D" parent="BigHatch"]
+position = Vector2( 150, 40 )
+rotation = 1.5708
+node_a = NodePath("../..")
+node_b = NodePath("../Claw Right")
+bias = 0.6
+length = 150.0
+rest_length = 140.0
+stiffness = 64.0
+
+[node name="RightSpringJoint4" type="DampedSpringJoint2D" parent="BigHatch"]
+position = Vector2( 150, -40 )
+rotation = 1.5708
+node_a = NodePath("../..")
+node_b = NodePath("../Claw Right")
+bias = 0.6
+length = 150.0
+rest_length = 140.0
+stiffness = 64.0
+
+[node name="RightSpringJoint5" type="DampedSpringJoint2D" parent="BigHatch"]
+position = Vector2( 150, -25 )
+rotation = 1.5708
+node_a = NodePath("../..")
+node_b = NodePath("../Claw Right")
+bias = 0.6
+length = 150.0
+rest_length = 140.0
+stiffness = 64.0
+
+[node name="RightSpringJoint6" type="DampedSpringJoint2D" parent="BigHatch"]
+position = Vector2( 150, 25 )
 rotation = 1.5708
 node_a = NodePath("../..")
 node_b = NodePath("../Claw Right")
@@ -294,11 +368,10 @@ pinned = false
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="BigHatch/Claw Right"]
 light_mask = 0
 position = Vector2( -9, 21 )
-polygon = PoolVector2Array( -6, -28, 96, -28, 96, -8, 8, -8, 8, -18, -6, -24 )
+polygon = PoolVector2Array( -6, -28, 116, -28, 116, 6, 96.56, -8, 22, -8, 22, -12, -6, -24 )
 
 [node name="RightGrooveJointTop" type="GrooveJoint2D" parent="BigHatch/Claw Right"]
-visible = false
-position = Vector2( 111, -25 )
+position = Vector2( 111, -50 )
 rotation = 1.5708
 node_a = NodePath("../../..")
 node_b = NodePath("..")
@@ -307,8 +380,7 @@ length = 120.0
 initial_offset = 110.0
 
 [node name="RightGrooveJointBottom" type="GrooveJoint2D" parent="BigHatch/Claw Right"]
-visible = false
-position = Vector2( 111, 25 )
+position = Vector2( 111, 50 )
 rotation = 1.5708
 node_a = NodePath("../../..")
 node_b = NodePath("..")
