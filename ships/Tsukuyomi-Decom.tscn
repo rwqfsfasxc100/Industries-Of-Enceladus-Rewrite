@@ -818,61 +818,31 @@ shadow_item_cull_mask = 3
 [node name="UberConversation" parent="." instance=ExtResource( 29 )]
 
 [node name="stationkeeping-lt" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
-position = Vector2( -196, -1246 )
-rotation = 3.14159
+position = Vector2( -206, -1242 )
+rotation = 2.35619
+extraGimbal = 35.0
 command = "b"
 default = "SYSTEM_THRUSTER_NDSTR"
 
 [node name="stationkeeping-rt" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
-position = Vector2( 196, -1246 )
-rotation = 3.14159
+position = Vector2( 206, -1242 )
+rotation = 3.92699
+extraGimbal = 30.0
 command = "b"
 default = "SYSTEM_THRUSTER_NDSTR"
 
 [node name="stationkeeping-lb" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
-position = Vector2( -90, 793 )
+position = Vector2( -352, 790 )
+rotation = 0.785398
+extraGimbal = 35.0
 command = "f"
 default = "SYSTEM_THRUSTER_NDSTR"
 
 [node name="stationkeeping-rb" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
-position = Vector2( 90, 793 )
+position = Vector2( 352, 790 )
+rotation = 5.49779
+extraGimbal = 35.0
 command = "f"
-default = "SYSTEM_THRUSTER_NDSTR"
-
-[node name="stationkeeping-ld" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
-position = Vector2( -370, 685 )
-rotation = 1.5708
-command = "l>"
-default = "SYSTEM_THRUSTER_NDSTR"
-
-[node name="stationkeeping-lm" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
-position = Vector2( -370, 350 )
-rotation = 1.5708
-command = "l>"
-default = "SYSTEM_THRUSTER_NDSTR"
-
-[node name="stationkeeping-lu" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
-position = Vector2( -200, -980 )
-rotation = 1.5708
-command = "r>"
-default = "SYSTEM_THRUSTER_NDSTR"
-
-[node name="stationkeeping-rd" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
-position = Vector2( 370, 685 )
-rotation = -1.5708
-command = "r<"
-default = "SYSTEM_THRUSTER_NDSTR"
-
-[node name="stationkeeping-rm" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
-position = Vector2( 370, 350 )
-rotation = -1.5708
-command = "r<"
-default = "SYSTEM_THRUSTER_NDSTR"
-
-[node name="stationkeeping-ru" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
-position = Vector2( 200, -980 )
-rotation = -1.5708
-command = "l<"
 default = "SYSTEM_THRUSTER_NDSTR"
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
