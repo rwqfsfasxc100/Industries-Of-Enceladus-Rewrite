@@ -46,7 +46,6 @@ const MODIFY_INTERNALS = [
 	},
 	{
 		"system":"SYSTEM_CARGO_MOD_BOLTS",
-		"storage_multi":1/1,
 		"force_type":"divided",
 		"mass":-2650
 	},
