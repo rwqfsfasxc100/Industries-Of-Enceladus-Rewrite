@@ -619,8 +619,7 @@ visible = false
 [node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 31 )]
 visible = false
 light_mask = 0
-position = Vector2( 0, 110 )
-rotation = -1.5708
+position = Vector2( -110, 0 )
 polygon = PoolVector2Array( 4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -38, 32, -26, 32, 1.39876e-06, 32, 40, -14, 72, -30, 22, -32, -2, -32, -22, -22, -58, 4.00001, -92 )
 
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_Bulker/MineralProcessingUnit" index="0"]
@@ -638,8 +637,7 @@ polygon = PoolVector2Array( 1.87959e-06, 43, 76, 19, 118, -29, 110, -45, -1.4424
 [node name="MineralProcessingUnit" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit.tscn"]
 visible = false
 light_mask = 0
-position = Vector2( 16, 115 )
-rotation = -1.5708
+position = Vector2( -115, 16 )
 polygon = PoolVector2Array( -34, -56, -8.99971, -80, -8.99986, -38, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 21.0001, -37.9999, 34, -56, 34, 4, 22, 32, -18, 32, -34, 4 )
 
 [node name="MineralProcessingUnit_DRY" parent="." instance=ExtResource( 7 )]
@@ -662,13 +660,12 @@ polygon = PoolVector2Array( -75, 4.99983, -14, 28, 16, 28, 83, 3.00018, 134, -53
 [node name="MineralProcessingUnit_SMELT" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit_SMELT.tscn"]
 visible = false
 light_mask = 0
-position = Vector2( 29, 120 )
-rotation = -1.57079
+position = Vector2( -120, 29 )
 polygon = PoolVector2Array( -32.0002, -38.9998, -4.00059, -93, -4.00038, -61, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 34, -70, 34, -36.6339, 34, 4, 22, 32, -18, 32, -34, 4 )
 
 [node name="MineralProcessingUnit_FAB" parent="." instance=ExtResource( 18 )]
-position = Vector2( 41, 106 )
-rotation = -1.57079
+visible = false
+position = Vector2( -106, 41 )
 polygon = PoolVector2Array( -34, -86, -14.0007, -113, 2, -50, 2, -18, -14, -18, -22, -9, -22, 12, -10, 24, 16, 24, 27, 12, 27, -50, 33.9997, -41.0002, 34, 4, 34.0001, 18.9998, 22, 32, -20, 32, -33.9999, 13.0002 )
 
 [node name="AuxSlot" parent="." instance=ExtResource( 16 )]
