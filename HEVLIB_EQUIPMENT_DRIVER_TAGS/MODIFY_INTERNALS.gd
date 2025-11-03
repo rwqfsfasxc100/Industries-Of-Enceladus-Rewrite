@@ -114,5 +114,36 @@ const MODIFY_INTERNALS = [
 		"crew_morale":0.5,
 		"mass":700,
 		"mass_per_crew_member":200
+	},
+	{
+		"system":"SYSTEM_CARGO_MOD_AMMO_1",
+		"storage_ammo":6000,
+		"mass":3000,
+	},
+	{
+		"system":"SYSTEM_CARGO_MOD_AMMO_2",
+		"storage_ammo":15000,
+		"mass":10000,
+	},
+	{
+		"system":"SYSTEM_CARGO_MOD_AMMO_EXTEND_1",
+		"ammo_multi_upper":4,
+		"ammo_multi_lower":3,
+		"storage_ammo":1000,
+		"mass":7500,
+	},
+	{
+		"system":"SYSTEM_CARGO_MOD_AMMO_EXTEND_2",
+		"ammo_multi_upper":3,
+		"ammo_multi_lower":2,
+		"storage_ammo":1000,
+		"mass":12000,
+	},
+	{
+		"system":"SYSTEM_CARGO_MOD_AMMO_EXTEND_3",
+		"ammo_multi_upper":17,
+		"ammo_multi_lower":10,
+		"storage_ammo":1000,
+		"mass":20000,
 	}
 ]
