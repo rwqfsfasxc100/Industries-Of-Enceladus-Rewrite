@@ -28,7 +28,7 @@ const CARGO_ACCESSORIES = {
 	"always_display":false,
 	"add_vanilla_equipment":false,
 	"slot_type":"CARGO_ACCESSORIES",
-	"limit_ships":[
+	"prevent_ships":[
 		"SHIP_PROSPECTOR_BALD",
 		"SHIP_KITSUNE",
 		"SHIP_TRTL_T",
@@ -44,7 +44,6 @@ const CARGO_ACCESSORIES = {
 		"SHIP_CK65",
 		"SHIP_CK69",
 	],
-	"invert_limit_logic":true
 }
 const CREW_MODIFIERS = {
 	"system_slot":"crew.modifier",
