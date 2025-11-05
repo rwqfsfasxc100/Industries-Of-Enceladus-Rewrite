@@ -10,6 +10,14 @@ const HOLD_MODIFIER_DIVIDED = {
 	"restriction":"HOLDMODIFIER_DIVIDED",
 	"restrict_hold_type":"divided"
 }
+const HULL_CONSUMABLE_VAT = {
+	"system_slot":"hull.consumableVat",
+	"slot_node_name":"HullConsumableVat",
+	"slot_display_name":"SLOT_HULL_CONSUMABLEVAT",
+	"always_display":true,
+	"add_vanilla_equipment":false,
+	"slot_type":"HULL_VAT",
+}
 const HOLD_MODIFIER_AMORPHIC = {
 	"system_slot":"cargo.modifierAmorphic",
 	"slot_node_name":"HoldModifiersAmorphic",

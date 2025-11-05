@@ -443,45 +443,45 @@ const HOLD_MODIFIER_4K = {
 	"slot_type":"HOLD_MODIFIERS",
 	"equipment_type":"EQUIPMENT_HOLD_MODIFIER"
 }
-const HOLD_MODIFIER_AMMO_1 = {
-	"system":"SYSTEM_CARGO_MOD_AMMO_1",
-	"manual":"SYSTEM_CARGO_MOD_AMMO_MANUAL",
+const HULL_VAT_AMMO_1 = {
+	"system":"SYSTEM_HULLVAT_AMMO_1",
+	"manual":"SYSTEM_HULLVAT_AMMO_MANUAL",
 	"price":105000,
 	"test_protocol":"takeoff",
-	"slot_type":"HOLD_MODIFIERS",
-	"equipment_type":"EQUIPMENT_HOLD_MODIFIER"
+	"slot_type":"HULL_VAT",
+	"equipment_type":"CONSUMABLE_VAT"
 }
-const HOLD_MODIFIER_AMMO_2 = {
-	"system":"SYSTEM_CARGO_MOD_AMMO_2",
-	"manual":"SYSTEM_CARGO_MOD_AMMO_MANUAL",
+const HULL_VAT_AMMO_2 = {
+	"system":"SYSTEM_HULLVAT_AMMO_2",
+	"manual":"SYSTEM_HULLVAT_AMMO_MANUAL",
 	"price":400000,
 	"test_protocol":"takeoff",
-	"slot_type":"HOLD_MODIFIERS",
-	"equipment_type":"EQUIPMENT_HOLD_MODIFIER"
+	"slot_type":"HULL_VAT",
+	"equipment_type":"CONSUMABLE_VAT"
 }
-const HOLD_MODIFIER_AMMO_EXTEND_1 = {
-	"system":"SYSTEM_CARGO_MOD_AMMO_EXTEND_1",
-	"manual":"SYSTEM_CARGO_MOD_AMMO_MANUAL",
+const HULL_VAT_AMMO_EXTEND_1 = {
+	"system":"SYSTEM_HULLVAT_AMMO_EXTEND_1",
+	"manual":"SYSTEM_HULLVAT_AMMO_MANUAL",
 	"price":600000,
 	"test_protocol":"takeoff",
-	"slot_type":"HOLD_MODIFIERS",
-	"equipment_type":"EQUIPMENT_HOLD_MODIFIER"
+	"slot_type":"HULL_VAT",
+	"equipment_type":"CONSUMABLE_VAT"
 }
-const HOLD_MODIFIER_AMMO_EXTEND_2 = {
-	"system":"SYSTEM_CARGO_MOD_AMMO_EXTEND_3",
-	"manual":"SYSTEM_CARGO_MOD_AMMO_MANUAL",
+const HULL_VAT_AMMO_EXTEND_2 = {
+	"system":"SYSTEM_HULLVAT_AMMO_EXTEND_2",
+	"manual":"SYSTEM_HULLVAT_AMMO_MANUAL",
 	"price":900000,
 	"test_protocol":"takeoff",
-	"slot_type":"HOLD_MODIFIERS",
-	"equipment_type":"EQUIPMENT_HOLD_MODIFIER"
+	"slot_type":"HULL_VAT",
+	"equipment_type":"CONSUMABLE_VAT"
 }
-const HOLD_MODIFIER_AMMO_EXTEND_3 = {
-	"system":"SYSTEM_CARGO_MOD_AMMO_EXTEND_3",
-	"manual":"SYSTEM_CARGO_MOD_AMMO_MANUAL",
+const HULL_VAT_AMMO_EXTEND_3 = {
+	"system":"SYSTEM_HULLVAT_AMMO_EXTEND_3",
+	"manual":"SYSTEM_HULLVAT_AMMO_MANUAL",
 	"price":2000000,
 	"test_protocol":"takeoff",
-	"slot_type":"HOLD_MODIFIERS",
-	"equipment_type":"EQUIPMENT_HOLD_MODIFIER"
+	"slot_type":"HULL_VAT",
+	"equipment_type":"CONSUMABLE_VAT"
 }
 const HOLD_MODIFIER_AMORPH5 = {
 	"system":"SYSTEM_CARGO_MOD_AMORPH5",

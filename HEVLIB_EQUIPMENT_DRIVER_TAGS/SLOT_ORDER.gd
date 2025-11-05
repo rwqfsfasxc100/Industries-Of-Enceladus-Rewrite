@@ -4,6 +4,7 @@ const SLOT_ORDER = [
 	"CargoAccessories",
 	"HoldModifiersDivided",
 	"HoldModifiersAmorphic",
+	"HullConsumableVat",
 	"CrewModifiers",
 	"LeftTurretSlot",
 	"RightTurretSlot",
