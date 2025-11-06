@@ -118,11 +118,13 @@ const MODIFY_INTERNALS = [
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_1",
 		"storage_ammo":6000,
+		"crew_morale":-0.05,
 		"mass":3000,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_2",
 		"storage_ammo":15000,
+		"crew_morale":-0.1,
 		"mass":10000,
 	},
 	{
