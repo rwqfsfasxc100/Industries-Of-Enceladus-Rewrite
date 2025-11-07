@@ -147,5 +147,5 @@ const MODIFY_INTERNALS = [
 		"ammo_multi_lower":10,
 		"storage_ammo":1000,
 		"mass":20000,
-	}
+	},
 ]
