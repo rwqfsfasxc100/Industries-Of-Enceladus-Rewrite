@@ -1,0 +1,30 @@
+HUD_HOLD_CAP|total hold capacity
+
+HUD_HOLD_FILL|hold fill level
+
+
+
+SYSTEM_AUTOPILOT_337MOD|Автопилот MA-337-MAX
+
+SYSTEM_AUTOPILOT_337MOD_DESC|MAX — это программное обновление автопилота MA-337, которое интегрирует входные векторы электродистанционного управления в нейронную сеть.
+
+SYSTEM_AUTOPILOT_337MOD_SPECS|Разработчик: Mitsudaya-Starbus \nВозможности: Контр-поворотный регулятор \nАдаптивная угловая тяга \nЭлектродистанционная система управления \nЛИДАР-оверлей
+
+SYSTEM_AUTOPILOT_337MOD_MANUAL|Отображает окружность ЛИДАРа вокруг вашего корабля. \nКПР: отключает противоположные движетели, экономя рабочее тело. \nЭДСУ: Перенаправляет любые ручные маневры через автопилот. \nЭффективно использует двигатели с изменяемым вектором тяги. \nАУТ: Наблюдает за смещением массы груза и повреждениями двигателей для вычисления минимальной тяги, необходимой для маневра. \nПерезагрузите бортовой компьютер, чтобы очистить данные адаптации.
+
+
+
+IOE_CONFIG_VERBOSE_LOGGING|Подробное логирование
+
+IOE_CONFIG_VERBOSE_LOGGING_TOOLTIP|Создавать ли дополнительные логи при загрузке мода
+
+IOE_CONFIG_OPTIONS|Параметры
+
+IOE_CONFIG_INPUTS|Привязки
+
+IOE_CONFIG_SHIP_SLOT_9|Toggle hardpoint 9
+IOE_CONFIG_SHIP_SLOT_MINUS|Toggle hardpoint 10
+IOE_CONFIG_SHIP_SLOT_EQUAL|Toggle hardpoint 11
+IOE_CONFIG_SHIP_SLOT_9_TOOLTIP|Keybind used for the 9th equipment slot
+IOE_CONFIG_SHIP_SLOT_MINUS_TOOLTIP|Keybind used for the 10th equipment slot
+IOE_CONFIG_SHIP_SLOT_EQUAL_TOOLTIP|Keybind used for the 11th equipment slot
