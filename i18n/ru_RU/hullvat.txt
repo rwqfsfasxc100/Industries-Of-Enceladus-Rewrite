@@ -1,0 +1,53 @@
+SLOT_HULL_CONSUMABLEVAT|Consumable Vat
+
+
+SYSTEM_HULLVAT_AMMO_1|Mounted Ammunition Canister
+
+SYSTEM_HULLVAT_AMMO_1_DESC|A lightweight magazine traditionally used to provide extra magazine space for Vilcy vessels utilizing the lesser-used hallways of the vessel. Despite being installed as a secondary system, it still had to make use of the ammunition delivery hatch to bring ammo to the hardpoints, restricting delivery speed to that of the currently installed magazine. The infringement of the air vents caused by various mechanisms used to feed the magazine cause a minor "stuffiness" reported by crews, who may find vessels fitted with them uncomfortable after a longer period of time.
+
+SYSTEM_HULLVAT_AMMO_1_SPECS|Ammunition capacity: 6,000 kg \nDry mass: 3,000 kg \nManufacturer: Conlido RVM 
+
+SYSTEM_HULLVAT_AMMO_MANUAL|Additional ammunition for mass drivers. Compatible with mass drivers and railguns.\n Ammunition delivery rate dependant on installed magazine.\n Ammunition sold separately at dive start.
+
+
+
+SYSTEM_HULLVAT_AMMO_2|ND Hollowed Hull Ammunition Magazine
+
+SYSTEM_HULLVAT_AMMO_2_DESC|Originally based on smuggling mechanisms used during conflicts, the ND HHAM (frequently nicknamed by industry insiders the "Ham") makes use of spare space within the ship's hull to fit in a whopping 15 tonnes of extra mass driver ammunition. Although commonly reserved for Vilcy-licensed specialists, the Ham made it's way onto the civillian market due to a recent reduction in required licensing to allow for those who suffer from a trigger finger to mine without as much issue, without causing Kessler syndrome in the process.
+
+SYSTEM_HULLVAT_AMMO_2_SPECS|Ammunition capacity: 15,000 kg \nDry mass: 10,000 kg \nManufacturer: Nakamura Dynamics 
+
+SYSTEM_HULLVAT_AMMO_MANUAL|Additional ammunition for mass drivers. Compatible with mass drivers and railguns.\n Ammunition delivery rate dependant on installed magazine.\n Ammunition sold separately at dive start.
+
+
+
+SYSTEM_HULLVAT_AMMO_EXTEND_1|
+
+SYSTEM_HULLVAT_AMMO_EXTEND_1_DESC|
+
+SYSTEM_HULLVAT_AMMO_EXTEND_1_SPECS|Ammunition capacity modifier: +33% \nAmmunition capacity: 1,000 kg \nDry mass: 7,500 kg 
+
+SYSTEM_HULLVAT_AMMO_MANUAL|Additional ammunition for mass drivers. Compatible with mass drivers and railguns.\n Ammunition delivery rate dependant on installed magazine.\n Ammunition sold separately at dive start.
+
+
+
+SYSTEM_HULLVAT_AMMO_EXTEND_2|
+
+SYSTEM_HULLVAT_AMMO_EXTEND_2_DESC|
+
+SYSTEM_HULLVAT_AMMO_EXTEND_2_SPECS|Ammunition capacity modifier: +50% \nAmmunition capacity: 1,000 kg \nDry mass: 12,000 kg 
+
+SYSTEM_HULLVAT_AMMO_MANUAL|Additional ammunition for mass drivers. Compatible with mass drivers and railguns.\n Ammunition delivery rate dependant on installed magazine.\n Ammunition sold separately at dive start.
+
+
+
+SYSTEM_HULLVAT_AMMO_EXTEND_3|
+
+SYSTEM_HULLVAT_AMMO_EXTEND_3_DESC|
+
+SYSTEM_HULLVAT_AMMO_EXTEND_3_SPECS|Ammunition capacity modifier: +70% \nAmmunition capacity: 1,000 kg \nDry mass: 20,000 kg 
+
+SYSTEM_HULLVAT_AMMO_MANUAL|Additional ammunition for mass drivers. Compatible with mass drivers and railguns.\n Ammunition delivery rate dependant on installed magazine.\n Ammunition sold separately at dive start.
+
+
+
