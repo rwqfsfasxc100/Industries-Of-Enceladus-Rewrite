@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=2]
+[gd_scene load_steps=59 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -31,7 +31,6 @@
 [ext_resource path="res://ships/obonto-m.png" type="Texture" id=29]
 [ext_resource path="res://ships/k225-mask.png" type="Texture" id=30]
 [ext_resource path="res://asteroids/dust-n.png" type="Texture" id=31]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=32]
 [ext_resource path="res://ships/k225-m.png" type="Texture" id=33]
 [ext_resource path="res://ships/k225-n.png" type="Texture" id=34]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=35]
@@ -41,7 +40,6 @@
 [ext_resource path="res://ships/tntrl_engine_off.wav" type="AudioStream" id=39]
 [ext_resource path="res://ships/tnrtl-engine_01.wav" type="AudioStream" id=40]
 [ext_resource path="res://ships/excavator_close.wav" type="AudioStream" id=41]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit.patch.gd" type="Script" id=42]
 [ext_resource path="res://sfx/PitchAdjustedAudio.gd" type="Script" id=43]
 
 [sub_resource type="ShaderMaterial" id=13]
@@ -246,51 +244,6 @@ height = 220.0
 [sub_resource type="CapsuleShape2D" id=12]
 radius = 250.0
 height = 600.0
-
-[sub_resource type="Gradient" id=14]
-colors = PoolColorArray( 1, 1, 1, 1, 0, 0, 0, 0 )
-
-[sub_resource type="GradientTexture" id=15]
-gradient = SubResource( 14 )
-
-[sub_resource type="ParticlesMaterial" id=16]
-emission_shape = 1
-emission_sphere_radius = 16.0
-flag_disable_z = true
-spread = 180.0
-gravity = Vector3( 0, 0, 0 )
-initial_velocity = 128.0
-initial_velocity_random = 0.5
-angular_velocity = 90.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-scale = 0.5
-scale_random = 1.0
-color_ramp = SubResource( 15 )
-
-[sub_resource type="Curve" id=17]
-_data = [ Vector2( 0, 0.122951 ), 0.0, 0.454656, 0, 0, Vector2( 1, 1 ), 1.20874, 0.0, 0, 0 ]
-
-[sub_resource type="CurveTexture" id=18]
-curve = SubResource( 17 )
-
-[sub_resource type="ParticlesMaterial" id=19]
-emission_shape = 1
-emission_sphere_radius = 16.0
-flag_disable_z = true
-spread = 180.0
-gravity = Vector3( 0, 0, 0 )
-initial_velocity = 128.0
-initial_velocity_random = 0.5
-angular_velocity = 90.0
-angular_velocity_random = 1.0
-orbit_velocity = 0.0
-orbit_velocity_random = 0.0
-scale = 6.0
-scale_random = 1.0
-scale_curve = SubResource( 18 )
-color_ramp = SubResource( 15 )
 
 [node name="TRTL-PEEPER" type="RigidBody2D" groups=["ships"]]
 collision_layer = 530
@@ -1032,101 +985,6 @@ position = Vector2( 6, 8 )
 scale = Vector2( -1, 1 )
 polygon = PoolVector2Array( 9, -12, 28, -6, 29, 0, 4, -4, 4, -10 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 32 )]
-visible = false
-position = Vector2( 0, 95 )
-rotation = -1.5708
-polygon = PoolVector2Array( 4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -38, 32, -26, 32, 1.39876e-06, 32, 40, -20.0003, 76.9999, -26.0002, 59.9999, -32, -2, -32, -22, -25.9998, -60.0001, -14.9997, -87.0001, 4.00038, -106 )
-
-[node name="MineralProcessingUnit_Furnace" type="CollisionPolygon2D" parent="."]
-visible = false
-light_mask = 0
-position = Vector2( 0, 85 )
-z_index = 50
-polygon = PoolVector2Array( -106, -15, -84, 7, -46, 27, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 138, -62, 137, -48, 126, -19, 107, 8, 88, 24, 60, 37, 0, 46, -60, 37, -86, 27, -107, 6, -125, -23, -139, -57, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33 )
-script = ExtResource( 42 )
-__meta__ = {
-"_editor_description_": ""
-}
-repairReplacementPrice = 650000
-repairFixPrice = 35000
-mass = 3000
-systemName = "SYSTEM_CARGO_MPU_FURN"
-kgps = 25
-powerDrawPerKg = 250
-mineralEfficiency = 0.6
-remassEfficiency = 0.4
-
-[node name="MineralProcessingUnit" type="Area2D" parent="MineralProcessingUnit_Furnace"]
-z_index = 50
-collision_layer = 524288
-monitorable = false
-space_override = 3
-gravity_vec = Vector2( 0, 0 )
-gravity = 0.0
-linear_damp = 0.0
-angular_damp = 0.0
-
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="MineralProcessingUnit_Furnace/MineralProcessingUnit"]
-light_mask = 0
-polygon = PoolVector2Array( 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 26, -32.9324, -26, -33, -110, -45, -116, -33, -106, -15, -84, 7, -46, 27, 0, 37 )
-
-[node name="Processing" type="AudioStreamPlayer" parent="MineralProcessingUnit_Furnace"]
-stream = ExtResource( 40 )
-volume_db = -15.0
-pitch_scale = 7.0
-bus = "ShipBowels"
-script = ExtResource( 43 )
-
-[node name="ProStart" type="AudioStreamPlayer" parent="MineralProcessingUnit_Furnace"]
-stream = ExtResource( 38 )
-pitch_scale = 7.0
-bus = "SFX"
-script = ExtResource( 43 )
-
-[node name="ProStop" type="AudioStreamPlayer" parent="MineralProcessingUnit_Furnace"]
-stream = ExtResource( 39 )
-pitch_scale = 7.0
-bus = "SFX"
-script = ExtResource( 43 )
-
-[node name="Processed" type="AudioStreamPlayer" parent="MineralProcessingUnit_Furnace"]
-stream = ExtResource( 41 )
-pitch_scale = 0.5
-bus = "SFX"
-script = ExtResource( 43 )
-
-[node name="VentRemass" type="Particles2D" parent="MineralProcessingUnit_Furnace"]
-show_behind_parent = true
-z_index = -50
-emitting = false
-amount = 64
-lifetime = 0.75
-visibility_rect = Rect2( -500, -500, 1000, 1000 )
-local_coords = false
-process_material = SubResource( 16 )
-texture = ExtResource( 37 )
-normal_map = ExtResource( 31 )
-
-[node name="VentMineral" type="Particles2D" parent="MineralProcessingUnit_Furnace"]
-show_behind_parent = true
-z_index = -50
-emitting = false
-amount = 128
-lifetime = 4.0
-explosiveness = 0.75
-visibility_rect = Rect2( -501.795, -477.743, 985.024, 993.438 )
-local_coords = false
-process_material = SubResource( 19 )
-texture = ExtResource( 37 )
-normal_map = ExtResource( 31 )
-
-[node name="Light2D" type="Light2D" parent="MineralProcessingUnit_Furnace"]
-position = Vector2( -184, -204 )
-editor_only = true
-texture = ExtResource( 21 )
-range_height = 380.4
-
 [node name="UberConversation" parent="." instance=ExtResource( 10 )]
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
@@ -1137,12 +995,9 @@ range_height = 380.4
 [connection signal="body_exited" from="MineralProcessingUnit_DRY/MineralProcessingUnit" to="MineralProcessingUnit_DRY" method="_on_MineralProcessingUnit_body_exited"]
 [connection signal="body_entered" from="MineralProcessingUnit_FSO/MineralProcessingUnit" to="MineralProcessingUnit_FSO" method="_on_MineralProcessingUnit_body_entered"]
 [connection signal="body_exited" from="MineralProcessingUnit_FSO/MineralProcessingUnit" to="MineralProcessingUnit_FSO" method="_on_MineralProcessingUnit_body_exited"]
-[connection signal="body_entered" from="MineralProcessingUnit_Furnace/MineralProcessingUnit" to="MineralProcessingUnit_Furnace" method="_on_MineralProcessingUnit_body_entered"]
-[connection signal="body_exited" from="MineralProcessingUnit_Furnace/MineralProcessingUnit" to="MineralProcessingUnit_Furnace" method="_on_MineralProcessingUnit_body_exited"]
 
 [editable path="Front Bumper"]
 [editable path="WeaponLeftBack"]
 [editable path="WeaponRightBack"]
 [editable path="AI"]
 [editable path="CargoBaffles"]
-[editable path="MineralProcessingUnit_Bulker"]

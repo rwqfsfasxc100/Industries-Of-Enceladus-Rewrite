@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=1]
 [ext_resource path="res://ships/AI.tscn" type="PackedScene" id=2]
@@ -30,8 +30,6 @@
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=28]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/Lifepod.tscn" type="PackedScene" id=30]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=31]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=32]
 [ext_resource path="res://ships/drone/pods-m.png" type="Texture" id=35]
 [ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=36]
 [ext_resource path="res://ships/drone/pods-n.png" type="Texture" id=37]
@@ -636,24 +634,6 @@ systemName = "SYSTEM_REACTOR_PROSPECTOR"
 
 [node name="UberConversation" parent="." instance=ExtResource( 5 )]
 
-[node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 31 )]
-visible = false
-light_mask = 0
-position = Vector2( 0, -172 )
-polygon = PoolVector2Array( 0, -24, -16, -24, -22, -18, -22, -6, -16, 0, 16, 0, 22, -8, 22, -24, 16, -34, 24, -34, 24, 34, -24, 34, -24, -34, -16, -34, -4, -30 )
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_Bulker/MineralProcessingUnit" index="0"]
-light_mask = 0
-polygon = PoolVector2Array( -22, 27, 22, 27, 22, 9, -22, 3 )
-
-[node name="MineralProcessingUnit_Furnace" parent="." instance=ExtResource( 32 )]
-visible = false
-position = Vector2( 0, -241 )
-polygon = PoolVector2Array( -20, 68, -12, 70, 12, 70, 20, 68, 20, 10, 12, 8, 16, 4, 24, 4, 24, 72, -24, 72, -24, 4, -16, 4, -12, 8, -20, 10 )
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_Furnace/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -20, 70, 20, 70, 20, 8, -20, 8 )
-
 [node name="Noises" parent="." instance=ExtResource( 11 )]
 
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
@@ -672,5 +652,3 @@ polygon = PoolVector2Array( -20, 70, 20, 70, 20, 8, -20, 8 )
 [editable path="MineralProcessingUnit_SMELT"]
 [editable path="MineralProcessingUnit_FAB"]
 [editable path="AI"]
-[editable path="MineralProcessingUnit_Bulker"]
-[editable path="MineralProcessingUnit_Furnace"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=2]
+[gd_scene load_steps=47 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/modules/Noises.tscn" type="PackedScene" id=2]
@@ -31,11 +31,9 @@
 [ext_resource path="res://comms/conversation/UberConversation.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FAB.tscn" type="PackedScene" id=30]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=31]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=32]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=33]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=34]
 [ext_resource path="res://ships/excavator_open.wav" type="AudioStream" id=35]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=36]
 [ext_resource path="res://ships/excavator_struggle.wav" type="AudioStream" id=37]
 [ext_resource path="res://ships/modules/SpringOperated.gd" type="Script" id=38]
 [ext_resource path="res://ships/CabinLight.gd" type="Script" id=42]
@@ -818,20 +816,6 @@ polygon = PoolVector2Array( -40, -82, -22, -66, -16, -50, -12, -28, -18, -22, -1
 light_mask = 0
 polygon = PoolVector2Array( -18, 4, 18, 4, 18, -30, -18, -30 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 36 )]
-visible = false
-light_mask = 0
-position = Vector2( 0, -498 )
-polygon = PoolVector2Array( 4, -32, 2, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 24, -8, 40, -70, 40, -10, 40, 26, 40, 56, -40, 56, -40, 26, -40, -10, -40, -38, -40, -70, -30, -46, -16, -34 )
-
-[node name="MineralProcessingUnit_Furnace" parent="." instance=ExtResource( 32 )]
-visible = false
-position = Vector2( 0, -470 )
-polygon = PoolVector2Array( -40, -186, -34, -164, -24, -152, -14, -146, -30, -138, -30, 14, -14, 20, 14, 20, 30, 14, 30, -138, 14, -146, 24, -152, 34, -164, 40, -186, 40, -144, 40, 28, 16, 28, -16, 28, -40, 28, -40, -144 )
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_Furnace/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -30, 20, 30, 20, 30, -146, -30, -146 )
-
 [node name="CargoBaffles" parent="." instance=ExtResource( 22 )]
 visible = false
 position = Vector2( 0, -1097 )
@@ -906,5 +890,4 @@ shadow_item_cull_mask = 3
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_SMELT"]
-[editable path="MineralProcessingUnit_Furnace"]
 [editable path="CargoBaffles"]

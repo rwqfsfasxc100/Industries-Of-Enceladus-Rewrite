@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -30,8 +30,6 @@
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=28]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=29]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=30]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/prospector/fat/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=34]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/prospector/fat/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=35]
 
 [sub_resource type="ShaderMaterial" id=8]
 shader = ExtResource( 2 )
@@ -607,12 +605,6 @@ polygon = PoolVector2Array( -40, -76, -26, -64, -16, -48, -12, -30, -18, -22, -1
 light_mask = 0
 polygon = PoolVector2Array( -18, 4, 18, 4, 18, -30, -18, -30 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 35 )]
-visible = false
-
-[node name="MineralProcessingUnit_Furnace" parent="." instance=ExtResource( 34 )]
-visible = false
-
 [node name="MineralProcessingUnit_FAB" parent="." instance=ExtResource( 22 )]
 visible = false
 position = Vector2( 0, -5 )
@@ -670,7 +662,5 @@ systemName = "SYSTEM_REACTOR_PROSPECTOR"
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_SMELT"]
-[editable path="MineralProcessingUnit_Bulker"]
-[editable path="MineralProcessingUnit_Furnace"]
 [editable path="MineralProcessingUnit_FAB"]
 [editable path="AI"]

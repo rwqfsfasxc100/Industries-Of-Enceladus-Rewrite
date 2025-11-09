@@ -1,4 +1,4 @@
-[gd_scene load_steps=36 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=1]
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=2]
@@ -16,14 +16,12 @@
 [ext_resource path="res://ships/modules/ShipCamera.tscn" type="PackedScene" id=17]
 [ext_resource path="res://ships/modules/AuxSlot.tscn" type="PackedScene" id=18]
 [ext_resource path="res://ships/modules/ReactionWheel.tscn" type="PackedScene" id=19]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=20]
 [ext_resource path="res://ships/Lifepod.tscn" type="PackedScene" id=21]
 [ext_resource path="res://hud/Hud.tscn" type="PackedScene" id=22]
 [ext_resource path="res://debug/AIdebug.tscn" type="PackedScene" id=24]
 [ext_resource path="res://ships/AI.tscn" type="PackedScene" id=25]
 [ext_resource path="res://lights/light-mask.png" type="Texture" id=26]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FSO.tscn" type="PackedScene" id=27]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=29]
 [ext_resource path="res://weapons/WeaponSlot.tscn" type="PackedScene" id=30]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_DRY.tscn" type="PackedScene" id=31]
 
@@ -382,24 +380,6 @@ visible = false
 [node name="CollisionPolygon2D" parent="MineralProcessingUnit_FAB/MineralProcessingUnit" index="0"]
 polygon = PoolVector2Array( -24, 24, 20, 24, 22, -8, -24, -8 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 20 )]
-visible = false
-light_mask = 0
-position = Vector2( 0, -146 )
-polygon = PoolVector2Array( -2, -36, -16, -36, -20, -30, -20, -18, -16, -12, 16, -12, 20, -18, 20, -44, 24, -36, 24, -18, 24, 2, 24, 30, -24, 30, -24, 2, -24, -18, -24, -36, -20, -44, -18, -48, -2, -40 )
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_Bulker/MineralProcessingUnit" index="0"]
-light_mask = 0
-polygon = PoolVector2Array( -20, 15, 20, 15, 20, -9, -20, -9 )
-
-[node name="MineralProcessingUnit_Furnace" parent="." instance=ExtResource( 29 )]
-visible = false
-position = Vector2( 0, -114 )
-polygon = PoolVector2Array( -18, -92, -12, -78, -20, -68, -20, -16, -12, -6, 10, -6, 20, -16, 20, -68, 12, -78, 18, -92, 18, -80, 24, -68, 24, -2, -24, -2, -24, -68, -18, -80 )
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_Furnace/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -20, -6, 20, -6, 20, -68, 12, -78, -12, -78, -20, -68 )
-
 [node name="AuxSlot" parent="." instance=ExtResource( 18 )]
 
 [node name="reactor" parent="." instance_placeholder="res://ships/modules/NuclearReactor.tscn"]
@@ -489,6 +469,4 @@ shape = SubResource( 6 )
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="MineralProcessingUnit_FAB"]
-[editable path="MineralProcessingUnit_Bulker"]
-[editable path="MineralProcessingUnit_Furnace"]
 [editable path="AI"]

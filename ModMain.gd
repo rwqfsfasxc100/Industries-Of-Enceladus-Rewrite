@@ -80,7 +80,7 @@ func _init(modLoader = ModLoader):
 	l("Injecting new ships")
 	installScriptExtension("CurrentGame.gd")
 	installScriptExtension("ships/Shipyard.gd")
-	shipReplacements()
+#	shipReplacements()
 # Load custom translations
 	updateTL("en") 
 	updateTL("uk_UA") 

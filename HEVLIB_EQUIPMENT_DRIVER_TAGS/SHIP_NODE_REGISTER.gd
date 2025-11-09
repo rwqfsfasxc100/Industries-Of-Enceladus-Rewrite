@@ -232,6 +232,26 @@ const SHIP_TRTL = {
 			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"properties":{
+				"polygon":{
+					"value":[2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 32, -56, 32, -8, 32, 20, 20, 48, 0, 48, -20, 48, -32, 20, -32, -24, -32, -56, -18, -38],
+					"method":"arr2vec2arr"
+				}
+			},
+		},
+		"IOE_MPU_FURNACE":{
+			"properties":{
+				"polygon":{
+					"value":[-32, -74, -24, -50, -12, -42, -26, -36, -26, 12, -16, 40, 16, 40, 26, 12, 26, -34, 12, -42, 24, -50, 32, -74, 32, -34, 32, 14, 20, 42, -20, 42, -32, 14, -32, -36],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[16, 40, 26, 12, 26, -42, -26, -42, -26, 12, -14, 40],
+					"method":"arr2vec2arr"
+				},
+			},
+		},
 	},
 }
 
@@ -239,6 +259,76 @@ const SHIP_TRTL_LCB = {
 	"ship_name":"SHIP_TRTL_LCB",
 	"node_definitions":{
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,3],
+			},
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0,9],
+			},
+		},
+	}
+}
+
+const SHIP_TRTL_R = {
+	"ship_name":"SHIP_TRTL_R",
+	"node_definitions":{
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,-9],
+			},
+		},
+		"IOE_MPU_FURNACE":{},
+	}
+}
+
+const SHIP_TRTL_T = {
+	"ship_name":"SHIP_TRTL_T",
+	"node_definitions":{
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,-13],
+			},
+		},
+		"IOE_MPU_FURNACE":{},
+	}
+}
+
+const SHIP_PROSPECTOR_BALD = {
+	"ship_name":"SHIP_PROSPECTOR_BALD",
+	"node_definitions":{
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0, -110],
+			},
+			"properties":{
+				"polygon":{
+					"value":[0, -24, -16, -24, -22, -18, -22, -6, -16, 0, 16, 0, 22, -8, 22, -24, 16, -34, 24, -34, 24, 34, -24, 34, -24, -34, -16, -34, -4, -30],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-22, 27, 22, 27, 22, 9, -22, 3],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, -148],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-20, 68, -12, 70, 12, 70, 20, 68, 20, 10, 12, 8, 16, 4, 24, 4, 24, 72, -24, 72, -24, 4, -16, 4, -12, 8, -20, 10],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-20, 70, 20, 70, 20, 8, -20, 8],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	}
 }
 
@@ -246,6 +336,16 @@ const SHIP_TRTL_K44 = {
 	"ship_name":"SHIP_TRTL_K44",
 	"node_definitions":{
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,23],
+			},
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0,29],
+			},
+		},
 	}
 }
 
@@ -285,6 +385,30 @@ const SHIP_OCP209_DD = {
 		"IOE_OCP_DOCKING_BAY_LOWER":{},
 		"IOE_OCP_DRONE_BAY_UPPER":{},
 		"IOE_OCP_DRONE_BAY_LOWER":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,-200],
+				"rotation":180,
+			},
+			"properties":{
+				"polygon":{
+					"value":[2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 24, -64, 32, -41, 32, 0, 32, 24, 24, 44, 4.52995e-06, 52, -24, 44, -32, 24, -32, 0, -32, -24, -36, -47, -32, -56, -24, -40, -14, -34],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0,-180],
+				"rotation":180,
+			},
+			"properties":{
+				"polygon":{
+					"value":[-24, -48, -12, -40, -24, -32, -24, 44, -12, 64, 12, 64, 24, 44, 24, -32, 12, -40, 24, -48, 51, -57, 32, -24, 32, 46, 24, 64, 6.31809e-06, 72, -24, 64, -32, 46, -32, -24],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	}
 }
 
@@ -305,6 +429,37 @@ const SHIP_OCP209_SNAP = {
 		"IOE_OCP_DOCKING_BAY_LOWER":{},
 		"IOE_OCP_DRONE_BAY_UPPER":{},
 		"IOE_OCP_DRONE_BAY_LOWER":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[-110,0],
+			},
+			"properties":{
+				"polygon":{
+					"value":[4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -38, 32, -26, 32, 1.39876e-06, 32, 40, -14, 72, -30, 22, -32, -2, -32, -22, -22, -58, 4.00001, -92],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-24, 27, 28, 27, 28, 11, -24, 3],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[-97,0],
+				"rotation":90,
+			},
+			"properties":{
+				"polygon":{
+					"value":[-106, -15, -84, 7, -46, 27, 1.61732e-06, 37, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 136, -61, 122, -25, 100, 2.99999, 72, 23, 36, 39, 1.96701e-06, 45, -36, 39, -70, 25, -100, 3.00001, -122, -27, -136, -61, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[1.87959e-06, 43, 76, 19, 118, -29, 110, -45, -1.44248e-06, -33, -110, -47, -118, -29, -76, 19],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	}
 }
 
@@ -327,6 +482,16 @@ const SHIP_OCP_SALVAGE = {
 		},
 		"IOE_OCP_DRONE_BAY_UPPER":{},
 		"IOE_OCP_DRONE_BAY_LOWER":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,192],
+			},
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0,192],
+			},
+		},
 	}
 }
 
@@ -562,6 +727,34 @@ const SHIP_MADCERF_CIV = {
 			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[184, -118],
+				"rotation":270,
+			},
+			"properties":{
+				"polygon":{
+					"value":[2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 32, -56, 32, 56, -77, 56, -32, -56, -24, -40, -14, -34],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, -220],
+				"rotation":180,
+			},
+			"properties":{
+				"polygon":{
+					"value":[-32, -60, -40, -68, -96, -68, -96, -84, -40, -160, -18.0004, -154, -14.0004, -146, -34.0004, -146, -80, -84, -70, -72, -38, -72, -28, -62, 28, -62, 38, -72, 70, -72, 80, -84, 33.9996, -146, 13.9996, -146, 17.9996, -154, 40, -160, 94, -84, 94, -68, 40, -68, 32, -60],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[34, -68, 90, -74, 31.9996, -148, -32.0004, -148, -90, -74, -34, -68, -29.0002, -61.9999, 27.9998, -62.0001],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	}
 }
 
@@ -569,6 +762,32 @@ const SHIP_AT225_STUB = {
 	"ship_name":"SHIP_AT225_STUB",
 	"node_definitions":{
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,12],
+			},
+			"properties":{
+				"polygon":{
+					"value":[2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 36, -59, 36, 9, 24, 50, -24, 50, -36, 9, -36, -60, -18, -38],
+					"method":"arr2vec2arr"
+				}
+			},
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0,18],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-36, -80, -24, -50, -12, -42, -26, -36, -26, 12, -16, 40, 16, 40, 26, 12, 26, -34, 12, -42, 24, -50, 36, -79, 36, 3, 24, 44, -24, 44, -36, 3],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[16, 40, 26, 12, 26, -42, -26, -42, -26, 12, -14, 40],
+					"method":"arr2vec2arr"
+				},
+			},
+		},
 	}
 }
 
@@ -583,6 +802,16 @@ const SHIP_TRTL_RAM = {
 	"ship_name":"SHIP_TRTL_RAM",
 	"node_definitions":{
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,3],
+			},
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0,9],
+			},
+		},
 	}
 }
 
@@ -818,6 +1047,36 @@ const SHIP_PROSPECTOR = {
 			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,-32],
+			},
+			"properties":{
+				"polygon":{
+					"value":[2, -32, 0, -24, -16, -24, -22, -18, -22, -6, -16, 0, 18, 0, 24, -16, 24, 6, 24, 56, -24, 56, -24, 6, -24, -30, -24, -56, -20, -42, -10, -34],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-22, 27, 18, 27, 24, 11, -22, 3],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, -42],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-24, -78, -12, -54, -20, -46, -20, 44, -12, 64, 12, 64, 20, 44, 20, -46, 12, -54, 24, -78, 24, 66, -24, 66],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-20, 64, 20, 64, 20, -54, -20, -54],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	},
 }
 
@@ -1053,6 +1312,36 @@ const SHIP_PROSPECTOR_VP = {
 			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,-32],
+			},
+			"properties":{
+				"polygon":{
+					"value":[2, -32, 0, -24, -16, -24, -22, -18, -22, -6, -16, 0, 18, 0, 24, -16, 24, 6, 24, 56, -24, 56, -24, 6, -24, -30, -24, -56, -20, -42, -10, -34],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-22, 27, 18, 27, 24, 11, -22, 3],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, -42],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-24, -30, -12, -22, -20, -14, -20, 44, -12, 64, 12, 64, 20, 44, 20, -14, 12, -22, 24, -30, 24, 66, -24, 66],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-20, 64, 20, 64, 20, -54, -20, -54],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	},
 }
 
@@ -1278,6 +1567,32 @@ const SHIP_AT225 = {
 			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,126],
+			},
+			"properties":{
+				"polygon":{
+					"value":[2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 24, -8, 32, -56, 32, 0, 32, 24, 20, 64, -20, 64, -32, 24, -32, 0, -32, -24, -32, -56, -24, -40, -14, -34],
+					"method":"arr2vec2arr"
+				}
+			},
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0,104],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-32, -72, -24, -48, -12, -40, -24, -32, -24, 44, -12, 82, 12, 82, 24, 44, 24, -32, 12, -40, 24, -48, 32, -72, 32, -24, 32, 46, 20, 86, -20, 86, -32, 46, -32, -24],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-24, 44, -12, 82, 12, 82, 24, 44, 24, -40, -24, -40],
+					"method":"arr2vec2arr"
+				},
+			},
+		},
 	},
 }
 
@@ -1777,6 +2092,36 @@ const SHIP_PROSPECTOR_FAT = {
 			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,-32],
+			},
+			"properties":{
+				"polygon":{
+					"value":[6, -32, 2, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 24, -8, 40, -56, 40, -8, 40, 16, 40, 56, -40, 56, -40, 16, -40, -6, -40, -18, -40, -56, -26, -40, -14, -34],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-24, 27, 22, 27, 28, 11, 2, 3, -24, 3],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, -48],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-40, -68, -30, -54, -14, -48, -32, -40, -32, 44, -24, 64, 24, 64, 32, 44, 32, -40, 14, -48, 30, -54, 40, -68, 40, -40, 40, 44, 40, 72, 24, 72, -24, 72, -40, 72, -40, 44, -40, -40],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-32, 44, -24, 64, 24, 64, 32, 44, 32, -48, -32, -48],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	},
 }
 
@@ -1980,6 +2325,38 @@ const SHIP_OCP209 = {
 		"IOE_OCP_DOCKING_BAY_LOWER":{},
 		"IOE_OCP_TURRET_BAY_UPPER":{},
 		"IOE_OCP_TURRET_BAY_LOWER":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,110],
+				"rotation":-90,
+			},
+			"properties":{
+				"polygon":{
+					"value":[4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -38, 32, -26, 32, 1.39876e-06, 32, 40, -14, 72, -30, 22, -32, -2, -32, -22, -22, -58, 4.00001, -92],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-24, 27, 28, 27, 28, 11, -24, 3],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[-97,0],
+				"rotation":90,
+			},
+			"properties":{
+				"polygon":{
+					"value":[-106, -15, -84, 7, -46, 27, 1.61732e-06, 37, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 136, -61, 122, -25, 100, 2.99999, 72, 23, 36, 39, 1.96701e-06, 45, -36, 39, -70, 25, -100, 3.00001, -122, -27, -136, -61, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[1.87959e-06, 43, 76, 19, 118, -29, 110, -45, -1.44248e-06, -33, -110, -47, -118, -29, -76, 19],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	},
 }
 
@@ -2205,6 +2582,36 @@ const SHIP_COTHON = {
 			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0, -8],
+			},
+			"properties":{
+				"polygon":{
+					"value":[8, -32, 4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 21, 0, 27, -8, 47, -64, 47, -23, 40, 18, 24, 52, -20, 52, -37, 18, -43, -24, -44, -40, -43, -64, -28, -42, -12, -34],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-24, 27, 22, 27, 28, 11, -24, 3],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, -28],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-44, -100, -36, -84, -26, -76, -12, -72, -12, -68, -34, -62, -34, -6, -20, 66, 20, 66, 37, -6, 37, -62, 15, -68, 15, -72, 29, -76, 39, -84, 47, -100, 47, -3, 40, 38, 28, 72, 22, 72, -22, 72, -28, 72, -37, 38, -44, -4, -44, -68, -44, -78],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-34, -6, -20, 66, 20, 66, 37, -6, 37, -62, 1, -72, -34, -62],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	},
 }
 
@@ -2408,6 +2815,33 @@ const SHIP_TRTL_OCP = {
 			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,110],
+				"rotation":-90,
+			},
+			"properties":{
+				"polygon":{
+					"value":[4, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 26, -10, 26, -38, 32, -26, 32, 1.39876e-06, 32, 40, -14, 72, -30, 22, -32, -2, -32, -22, -22, -58, 4.00001, -92],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0,96],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-106, -15, -84, 7, -46, 27, 1.61732e-06, 37, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 138, -62, 122, -24, 100, 3.99999, 72, 26, 38, 40, 0, 46, -38, 40, -72, 26, -100, 4.00001, -120, -20, -136, -56, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 26, -32.9324, -26, -33, -110, -45, -116, -33, -106, -15, -84, 7, -46, 27, 0, 37],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	},
 }
 
@@ -2611,6 +3045,33 @@ const SHIP_TRTL_PEEPER = {
 			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,95],
+				"rotation":-90,
+			},
+			"properties":{
+				"polygon":{
+					"value":[-106, -15, -84, 7, -46, 27, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 138, -62, 137, -48, 126, -19, 107, 8, 88, 24, 60, 37, 0, 46, -60, 37, -86, 27, -107, 6, -125, -23, -139, -57, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0,85],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-106, -15, -84, 7, -46, 27, 46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 30, -33, 16, -25, 22, -41, 138, -62, 137, -48, 126, -19, 107, 8, 88, 24, 60, 37, 0, 46, -60, 37, -86, 27, -107, 6, -125, -23, -139, -57, -22, -41, -16, -25, -30, -33, -110, -45, -116, -33],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[46, 27, 84, 7, 106, -15, 116, -33, 110, -45, 26, -32.9324, -26, -33, -110, -45, -116, -33, -106, -15, -84, 7, -46, 27, 0, 37],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	},
 }
 
@@ -2848,6 +3309,32 @@ const SHIP_TSUKUYOMI_IOT = {
 			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,-498],
+			},
+			"properties":{
+				"polygon":{
+					"value":[4, -32, 2, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 24, -8, 40, -70, 40, -10, 40, 26, 40, 56, -40, 56, -40, 26, -40, -10, -40, -38, -40, -70, -30, -46, -16, -34],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0,-470],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-40, -186, -34, -164, -24, -152, -14, -146, -30, -138, -30, 14, -14, 20, 14, 20, 30, 14, 30, -138, 14, -146, 24, -152, 34, -164, 40, -186, 40, -144, 40, 28, 16, 28, -16, 28, -40, 28, -40, -144],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-30, 20, 30, 20, 30, -146, -30, -146],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	},
 }
 
@@ -3085,5 +3572,245 @@ const SHIP_PROSPECTOR_PIGEON = {
 			}
 		},
 		"IOE_BAY_AUX_PERSIST":{},
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0,-32],
+			},
+			"properties":{
+				"polygon":{
+					"value":[6, -32, 2, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 24, -8, 40, -56, 40, -8, 40, 16, 40, 56, -40, 56, -40, 16, -40, -6, -40, -18, -40, -56, -26, -40, -14, -34],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-24, 27, 22, 27, 28, 11, 2, 3, -24, 3],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, -48],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-40, -68, -30, -54, -14, -48, -32, -40, -32, 44, -24, 64, 24, 64, 32, 44, 32, -40, 14, -48, 30, -54, 40, -68, 40, -40, 40, 44, 40, 72, 24, 72, -24, 72, -40, 72, -40, 44, -40, -40],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-32, 44, -24, 64, 24, 64, 32, 44, 32, -48, -32, -48],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
 	},
+}
+
+const SHIP_KITSUNE = {
+	"ship_name":"SHIP_KITSUNE",
+	"node_definitions":{
+		"IOE_MPU_BULKER":{
+			"properties":{
+				"polygon":{
+					"value":[0, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 18, 0, 24, -8, 24, -38, 30, -38, 30, 2, 24, 32, -24, 32, -30, 2, -30, -22, -30, -38, -24, -38, -14, -34],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"properties":{
+				"polygon":{
+					"value":[-24, -38, -12, -34, -22, -26, -22, 16, -14, 28, 14, 28, 22, 16, 22, -26, 12, -34, 24, -38, 30, -24, 30, 24, 16, 38, -16, 38, -30, 24, -30, -24],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-22, 16, -14, 28, 14, 28, 22, 16, 22, -34, -22, -34],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+	}
+}
+
+const SHIP_OBERON = {
+	"ship_name":"SHIP_OBERON",
+	"node_definitions":{
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0, -146],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-2, -36, -16, -36, -20, -30, -20, -18, -16, -12, 16, -12, 20, -18, 20, -44, 24, -36, 24, -18, 24, 2, 24, 30, -24, 30, -24, 2, -24, -18, -24, -36, -20, -44, -18, -48, -2, -40],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-20, 15, 20, 15, 20, -9, -20, -9],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, -114],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-18, -92, -12, -78, -20, -68, -20, -16, -12, -6, 10, -6, 20, -16, 20, -68, 12, -78, 18, -92, 18, -80, 24, -68, 24, -2, -24, -2, -24, -68, -18, -80],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-20, -6, 20, -6, 20, -68, 12, -78, -12, -78, -20, -68],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+	}
+}
+
+const SHIP_EIME = {
+	"ship_name":"SHIP_EIME",
+	"node_definitions":{
+		"IOE_MPU_BULKER":{
+			"parent_node_path":"Beak/Claw Right",
+			"position_data":{
+				"position":[10, 3],
+				"rotation":180
+			},
+			"properties":{
+				"polygon":{
+					"value":[27, -22, 21, -22, -23, -38, -29, -36, -33, -22, -29, -14, 19, 4, 19, 38, 5, 52, -19, 52, -33, -8, -37, -22, -41, -36, -43, -52, -23, -44],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-35, 11, 19, 31, 25, 5, -29, -13],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"parent_node_path":"Beak/Claw Right",
+			"position_data":{
+				"position":[0, -29],
+				"rotation":180
+			},
+			"properties":{
+				"polygon":{
+					"value":[-53, -84, -25, -72, 3, -60, 17, -54, 9, -50, 3, -54, -27, -54, -35, -42, -17, 48, -8.99999, 56, 3.00001, 56, 9.00001, 48, 9, -14, 3, -18, 9, -24, 17, -18, 17, 56, 7.00001, 68, 7.00001, 78, -15, 62, -21, 58, -43, -42],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-15, 56, 9.00001, 56, 9, -54, -39, -54],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+	}
+}
+
+const SHIP_CK69 = {
+	"ship_name":"SHIP_CK69",
+	"node_definitions":{
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0, -172],
+			},
+			"properties":{
+				"polygon":{
+					"value":[0, -24, -16, -24, -22, -18, -22, -6, -16, 0, 16, 0, 22, -8, 22, -24, 16, -34, 24, -34, 24, 34, -24, 34, -24, -34, -16, -34, -4, -30],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-22, 27, 22, 27, 22, 9, -22, 3],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, -241],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-20, 68, -12, 70, 12, 70, 20, 68, 20, 10, 12, 8, 16, 4, 24, 4, 24, 72, -24, 72, -24, 4, -16, 4, -12, 8, -20, 10],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-20, 70, 20, 70, 20, 8, -20, 8],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+	}
+}
+
+const SHIP_CK65 = {
+	"ship_name":"SHIP_CK65",
+	"node_definitions":{
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0, -172],
+			},
+			"properties":{
+				"polygon":{
+					"value":[0, -24, -16, -24, -22, -18, -22, -6, -16, 0, 16, 0, 22, -8, 22, -24, 16, -34, 24, -34, 24, 34, -24, 34, -24, -34, -16, -34, -4, -30],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-22, 27, 22, 27, 22, 9, -22, 3],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, -241],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-20, 68, -12, 70, 12, 70, 20, 68, 20, 10, 12, 8, 16, 4, 24, 4, 24, 72, -24, 72, -24, 4, -16, 4, -12, 8, -20, 10],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-20, 70, 20, 70, 20, 8, -20, 8],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+	}
+}
+
+const SHIP_ATLAS_WASP = {
+	"ship_name":"SHIP_ATLAS_WASP",
+	"node_definitions":{
+		"IOE_MPU_BULKER":{
+			"position_data":{
+				"position":[0, -142],
+			},
+			"properties":{
+				"polygon":{
+					"value":[0, -28, 0, -24, -16, -24, -20, -18, -20, -6, -16, 0, 16, 0, 24, -12, 24, 8, 24, 46, -24, 46, -24, 8, -24, -6, -24, -18, -24, -42, -14, -32],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-24, 27, 24, 27, 24, 11, -16, 3, -24, 3],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+		"IOE_MPU_FURNACE":{
+			"position_data":{
+				"position":[0, -168],
+			},
+			"properties":{
+				"polygon":{
+					"value":[-24, -16, -12, -8, -12, -4, -18, 0, -18, 54, -12, 66, 12, 66, 18, 54, 18, 0, 12, -4, 12, -8, 24, -16, 24, 0, 24, 54, 24, 72, -24, 72, -24, 54, -24, 0],
+					"method":"arr2vec2arr"
+				},
+				"MineralProcessingUnit/CollisionPolygon2D/polygon":{
+					"value":[-18, 54, -12, 66, 12, 66, 18, 54, 18, -6, -18, -6],
+					"method":"arr2vec2arr"
+				},
+			}
+		},
+	}
 }

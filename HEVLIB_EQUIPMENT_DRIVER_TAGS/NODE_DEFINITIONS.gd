@@ -426,3 +426,11 @@ const IOE_BAY_AUX_PERSIST = {
 	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/bay_aux_persist.tscn",
 	"recurse_to_variants":false
 }
+const IOE_MPU_BULKER = {
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn",
+	"position":[0,-17],
+}
+const IOE_MPU_FURNACE = {
+	"path":"res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn",
+	"position":[0,-11],
+}

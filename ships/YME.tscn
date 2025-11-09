@@ -1,4 +1,4 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/modules/ShipCamera.tscn" type="PackedScene" id=2]
@@ -50,8 +50,6 @@
 [ext_resource path="res://ships/modules/MineralProcessingUnit_SMELT.tscn" type="PackedScene" id=48]
 [ext_resource path="res://ships/modules/MineralProcessingUnit_FAB.tscn" type="PackedScene" id=49]
 [ext_resource path="res://ships/eime-cl.png" type="Texture" id=50]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=53]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=54]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 200.0
@@ -296,28 +294,6 @@ angular_damp = 0.0
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Beak/Claw Right/CargoHoldArea2"]
 visible = false
 polygon = PoolVector2Array( 0, -276, 42, -246, 79, -97, 61, -83, 0, -117 )
-
-[node name="MineralProcessingUnit_Bulker" parent="Beak/Claw Right" instance=ExtResource( 53 )]
-visible = false
-light_mask = 0
-position = Vector2( 10, 3 )
-rotation = 3.14159
-polygon = PoolVector2Array( 27, -22, 21, -22, -23, -38, -29, -36, -33, -22, -29, -14, 19, 4, 19, 38, 5, 52, -19, 52, -33, -8, -37, -22, -41, -36, -43, -52, -23, -44 )
-
-[node name="MineralProcessingUnit" parent="Beak/Claw Right/MineralProcessingUnit_Bulker" index="0"]
-visible = false
-
-[node name="CollisionPolygon2D" parent="Beak/Claw Right/MineralProcessingUnit_Bulker/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -35, 11, 19, 31, 25, 5, -29, -13 )
-
-[node name="MineralProcessingUnit_Furnace" parent="Beak/Claw Right" instance=ExtResource( 54 )]
-visible = false
-position = Vector2( 0, -29 )
-rotation = 3.14159
-polygon = PoolVector2Array( -53, -84, -25, -72, 3, -60, 17, -54, 9, -50, 3, -54, -27, -54, -35, -42, -17, 48, -8.99999, 56, 3.00001, 56, 9.00001, 48, 9, -14, 3, -18, 9, -24, 17, -18, 17, 56, 7.00001, 68, 7.00001, 78, -15, 62, -21, 58, -43, -42 )
-
-[node name="CollisionPolygon2D" parent="Beak/Claw Right/MineralProcessingUnit_Furnace/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -15, 56, 9.00001, 56, 9, -54, -39, -54 )
 
 [node name="Claw Left" type="RigidBody2D" parent="Beak"]
 position = Vector2( -17, -15 )
@@ -854,8 +830,6 @@ systemName = "SYSTEM_REACTOR_EIME_REFIT"
 [editable path="Noises"]
 [editable path="AI"]
 [editable path="Beak/Claw Right/MineralProcessingUnit"]
-[editable path="Beak/Claw Right/MineralProcessingUnit_Bulker"]
-[editable path="Beak/Claw Right/MineralProcessingUnit_Furnace"]
 [editable path="Beak/Claw Left/MineralProcessingUnit_SMELT"]
 [editable path="Beak/Claw Left/MineralProcessingUnit_FAB"]
 [editable path="MineralProcessingUnit_DRY"]

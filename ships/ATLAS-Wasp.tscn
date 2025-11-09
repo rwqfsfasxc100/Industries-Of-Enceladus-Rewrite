@@ -1,4 +1,4 @@
-[gd_scene load_steps=55 format=2]
+[gd_scene load_steps=53 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://lights/distant-proxy.png" type="Texture" id=2]
@@ -29,8 +29,6 @@
 [ext_resource path="res://ships/drone/pods-m.png" type="Texture" id=27]
 [ext_resource path="res://ships/drone/pods-n.png" type="Texture" id=28]
 [ext_resource path="res://ships/drone/pods-c.png" type="Texture" id=29]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=30]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=31]
 [ext_resource path="res://comms/conversation/UberConversation.tscn" type="PackedScene" id=32]
 [ext_resource path="res://ships/modules/Grinder.tscn" type="PackedScene" id=33]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.tscn" type="PackedScene" id=34]
@@ -506,27 +504,6 @@ polygon = PoolVector2Array( -24, -72, -18, -62, -14, -50, -12, -28, -16, -22, -1
 light_mask = 0
 polygon = PoolVector2Array( -16, 4, 16, 4, 16, -28, -16, -28 )
 
-[node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 30 )]
-visible = false
-light_mask = 0
-position = Vector2( 0, -142 )
-polygon = PoolVector2Array( 0, -28, 0, -24, -16, -24, -20, -18, -20, -6, -16, 0, 16, 0, 24, -12, 24, 8, 24, 46, -24, 46, -24, 8, -24, -6, -24, -18, -24, -42, -14, -32 )
-
-[node name="MineralProcessingUnit" parent="MineralProcessingUnit_Bulker" index="0"]
-visible = false
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_Bulker/MineralProcessingUnit" index="0"]
-light_mask = 0
-polygon = PoolVector2Array( -24, 27, 24, 27, 24, 11, -16, 3, -24, 3 )
-
-[node name="MineralProcessingUnit_Furnace" parent="." instance=ExtResource( 31 )]
-visible = false
-position = Vector2( 0, -168 )
-polygon = PoolVector2Array( -24, -16, -12, -8, -12, -4, -18, 0, -18, 54, -12, 66, 12, 66, 18, 54, 18, 0, 12, -4, 12, -8, 24, -16, 24, 0, 24, 54, 24, 72, -24, 72, -24, 54, -24, 0 )
-
-[node name="CollisionPolygon2D" parent="MineralProcessingUnit_Furnace/MineralProcessingUnit" index="0"]
-polygon = PoolVector2Array( -18, 54, -12, 66, 12, 66, 18, 54, 18, -6, -18, -6 )
-
 [node name="MineralProcessingUnit_DRY" parent="." instance=ExtResource( 46 )]
 visible = false
 position = Vector2( 0, -96 )
@@ -634,8 +611,6 @@ polygon = PoolVector2Array( -18, -4, -19, 1, -5, 4, -1, 0 )
 [editable path="MineralProcessingUnit_FAB"]
 [editable path="MineralProcessingUnit_FSO"]
 [editable path="MineralProcessingUnit_SMELT"]
-[editable path="MineralProcessingUnit_Bulker"]
-[editable path="MineralProcessingUnit_Furnace"]
 [editable path="MineralProcessingUnit_DRY"]
 [editable path="reactor"]
 [editable path="CargoBaffles"]

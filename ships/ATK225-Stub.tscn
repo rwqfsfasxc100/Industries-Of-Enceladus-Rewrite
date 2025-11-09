@@ -903,16 +903,6 @@ texture = ExtResource( 36 )
 
 [node name="UberConversation" parent="." instance=ExtResource( 34 )]
 
-[node name="MineralProcessingUnit_Bulker" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Bulker.tscn"]
-visible = false
-position = Vector2( 0, 12 )
-polygon = PoolVector2Array( 2, -32, 0, -24, -18, -24, -24, -18, -24, -6, -18, 0, 6, 0, 18, -4, 24, -16, 36, -59, 36, 9, 24, 50, -24, 50, -36, 9, -36, -60, -18, -38 )
-
-[node name="MineralProcessingUnit_Furnace" parent="." instance_placeholder="res://IndustriesOfEnceladusRewrite/ships/modules/trtl/MineralProcessingUnit_Furnace.tscn"]
-light_mask = 1
-position = Vector2( 0, 18 )
-polygon = PoolVector2Array( -36, -80, -24, -50, -12, -42, -26, -36, -26, 12, -16, 40, 16, 40, 26, 12, 26, -34, 12, -42, 24, -50, 36, -79, 36, 3, 24, 44, -24, 44, -36, 3 )
-
 [connection signal="body_entered" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_entered"]
 [connection signal="body_exited" from="CargoHoldArea" to="." method="_on_CargoHoldArea_body_exited"]
 [connection signal="body_entered" from="CargoHoldAreaHull" to="." method="_on_CargoHoldArea_body_entered"]

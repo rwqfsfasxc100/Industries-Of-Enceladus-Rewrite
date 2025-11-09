@@ -663,35 +663,3 @@ func _ready():
 			}, 
 		}
 	}
-#	var Prospector_RAM:String = "PROSPECTOR-RAM"
-#	ships[Prospector_RAM] = preload("res://IndustriesOfEnceladusRewrite/ships/Prospector-RAM.tscn")
-#
-#	configAlias[Prospector_RAM] = "PROSPECTOR"
-#	defaultShipConfig[Prospector_RAM] = {"config": {
-#			"ammo":{
-#				"capacity": 1000.0, 
-#				"initial": 1000.0, 
-#			}, 
-#			"autopilot":{"type":"SYSTEM_AUTOPILOT_MK2"}, 
-#			"capacitor":{"capacity": 500.0}, 
-#			"cargo":{
-#				"equipment":"SYSTEM_CARGO_STANDARD",
-#				"modifierDivided":"SYSTEM_CARGO_MOD_2K"
-#			},
-#			"fuel":{
-#				"capacity": 30000.0, 
-#				"initial": 30000.0, 
-#			}, 
-#			"propulsion":{
-#				"main":"SYSTEM_MAIN_ENGINE_PNTR", 
-#				"rcs":"SYSTEM_THRUSTER_NDSTR"
-#			}, 
-#			"reactor":{	"power": 8.0},
-#			"shielding":{"emp": 100},  
-#			"turbine":{"power": 200.0}, 
-#			"weaponSlot":{
-#				"main": {"type":"SYSTEM_NONE"},
-#				"right":{"type":"SYSTEM_EMD14"}, 
-#				"left":{"type":"SYSTEM_EMD14"}
-#			}, 
-#		}}

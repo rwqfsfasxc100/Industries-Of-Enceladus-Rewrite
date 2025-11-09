@@ -1,8 +1,7 @@
-[gd_scene load_steps=63 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://shader/ao-spec-difuse.shader" type="Shader" id=1]
 [ext_resource path="res://ships/ship-ctrl.gd" type="Script" id=2]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/ocp/MineralProcessingUnit_Bulker.tscn" type="PackedScene" id=3]
 [ext_resource path="res://ships/Hull.gd" type="Script" id=4]
 [ext_resource path="res://sfx/spark_noise.png" type="Texture" id=5]
 [ext_resource path="res://ships/modules/Noises.tscn" type="PackedScene" id=6]
@@ -35,7 +34,6 @@
 [ext_resource path="res://ships/modules/Bay.gd" type="Script" id=33]
 [ext_resource path="res://ships/CabinLight.gd" type="Script" id=34]
 [ext_resource path="res://lights/light-mask.png" type="Texture" id=35]
-[ext_resource path="res://IndustriesOfEnceladusRewrite/ships/modules/ocp/MineralProcessingUnit_Furnace.tscn" type="PackedScene" id=36]
 [ext_resource path="res://ships/modules/MineralProcessingUnit.gd" type="Script" id=37]
 [ext_resource path="res://asteroids/dust-c.png" type="Texture" id=38]
 [ext_resource path="res://asteroids/dust-n.png" type="Texture" id=39]
@@ -581,13 +579,6 @@ autoplay = "appear"
 anims/appear = SubResource( 6 )
 
 [node name="AIdebug" parent="." instance=ExtResource( 22 )]
-visible = false
-
-[node name="MineralProcessingUnit_Bulker" parent="." instance=ExtResource( 3 )]
-visible = false
-light_mask = 0
-
-[node name="MineralProcessingUnit_Furnace" parent="." instance=ExtResource( 36 )]
 visible = false
 
 [node name="MineralProcessingUnit" type="CollisionPolygon2D" parent="."]
