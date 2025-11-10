@@ -7,9 +7,9 @@ SYSTEM_HULLVAT_AMMO_1_DESC|A lightweight magazine traditionally used to provide 
 
 SYSTEM_HULLVAT_AMMO_1_SPECS|Ammunition capacity: 6,000 kg \nDry mass: 3,000 kg \nManufacturer: Conlido RVM 
 
-SYSTEM_HULLVAT_AMMO_MANUAL|Additional ammunition for mass drivers. Compatible with mass drivers and railguns.\n Ammunition delivery rate dependant on installed magazine.\n Ammunition sold separately at dive start.
+SYSTEM_HULLVAT_AMMO_MANUAL|Additional ammunition for mass drivers. Compatible with mass drivers and railguns.\n Ammunition delivery rate dependant on installed magazine. \nAmmunition sold separately at dive start.
 
-
+    
 
 SYSTEM_HULLVAT_AMMO_2|ND Hollowed Hull Ammunition Magazine
 
@@ -23,7 +23,7 @@ SYSTEM_HULLVAT_AMMO_EXTEND_1|
 
 SYSTEM_HULLVAT_AMMO_EXTEND_1_DESC|
 
-SYSTEM_HULLVAT_AMMO_EXTEND_1_SPECS|Ammunition capacity modifier: +33% \nAmmunition capacity: 1,000 kg \nDry mass: 7,500 kg 
+SYSTEM_HULLVAT_AMMO_EXTEND_1_SPECS|Ammunition capacity modifier: +33% \nAmmunition capacity: 1,000 kg \nProcessed mineral hold reduction: 5% \nDry mass: 7,500 kg \nManufacturer: 
 
 
 
@@ -31,7 +31,7 @@ SYSTEM_HULLVAT_AMMO_EXTEND_2|
 
 SYSTEM_HULLVAT_AMMO_EXTEND_2_DESC|
 
-SYSTEM_HULLVAT_AMMO_EXTEND_2_SPECS|Ammunition capacity modifier: +50% \nAmmunition capacity: 1,000 kg \nDry mass: 12,000 kg 
+SYSTEM_HULLVAT_AMMO_EXTEND_2_SPECS|Ammunition capacity modifier: +50% \nAmmunition capacity: 1,000 kg \nProcessed mineral hold reduction: 10% \nDry mass: 12,000 kg \nManufacturer: 
 
 
 
@@ -39,6 +39,6 @@ SYSTEM_HULLVAT_AMMO_EXTEND_3|
 
 SYSTEM_HULLVAT_AMMO_EXTEND_3_DESC|
 
-SYSTEM_HULLVAT_AMMO_EXTEND_3_SPECS|Ammunition capacity modifier: +70% \nAmmunition capacity: 1,000 kg \nDry mass: 20,000 kg 
+SYSTEM_HULLVAT_AMMO_EXTEND_3_SPECS|Ammunition capacity modifier: +70% \nAmmunition capacity: 1,000 kg \nProcessed mineral hold reduction: 20% \nDry mass: 20,000 kg \nManufacturer: 
 
 

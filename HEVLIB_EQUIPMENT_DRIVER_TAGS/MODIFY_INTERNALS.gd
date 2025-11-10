@@ -132,6 +132,8 @@ const MODIFY_INTERNALS = [
 		"ammo_multi_upper":4,
 		"ammo_multi_lower":3,
 		"storage_ammo":1000,
+		"storage_multi_upper":19,
+		"storage_multi_lower":20,
 		"mass":7500,
 	},
 	{
@@ -139,6 +141,8 @@ const MODIFY_INTERNALS = [
 		"ammo_multi_upper":3,
 		"ammo_multi_lower":2,
 		"storage_ammo":1000,
+		"storage_multi_upper":9,
+		"storage_multi_lower":10,
 		"mass":12000,
 	},
 	{
@@ -146,6 +150,8 @@ const MODIFY_INTERNALS = [
 		"ammo_multi_upper":17,
 		"ammo_multi_lower":10,
 		"storage_ammo":1000,
+		"storage_multi_upper":4,
+		"storage_multi_lower":5,
 		"mass":20000,
 	},
 ]
