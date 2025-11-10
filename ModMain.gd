@@ -84,6 +84,7 @@ func _init(modLoader = ModLoader):
 # Load custom translations
 	updateTL("en") 
 	updateTL("uk_UA") 
+	updateTL("ru_RU") 
 
 	
 	l("Initialised!", MOD_NAME)
