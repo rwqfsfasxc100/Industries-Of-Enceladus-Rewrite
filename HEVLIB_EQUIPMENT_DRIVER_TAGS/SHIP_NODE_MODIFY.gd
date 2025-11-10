@@ -8,7 +8,6 @@ const SHIP_TRTL = {
 			"property":"slot",
 			"recurse_to_variants":true,
 			"value":"cargo.modifierDivided"
-		
 		}
 	]
 }
