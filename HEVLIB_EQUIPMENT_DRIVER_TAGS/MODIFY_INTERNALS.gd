@@ -119,12 +119,16 @@ const MODIFY_INTERNALS = [
 		"system":"SYSTEM_HULLVAT_AMMO_1",
 		"storage_ammo":6000,
 		"crew_morale":-0.05,
+		"nano_multi_upper":3,
+		"nano_multi_lower":4,
 		"mass":3000,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_2",
 		"storage_ammo":15000,
 		"crew_morale":-0.1,
+		"nano_multi_upper":1,
+		"nano_multi_lower":2,
 		"mass":10000,
 	},
 	{
@@ -134,7 +138,7 @@ const MODIFY_INTERNALS = [
 		"storage_ammo":1000,
 		"storage_multi_upper":9,
 		"storage_multi_lower":10,
-		"mass":7500,
+		"mass":9000,
 	},
 	{
 		"system":"SYSTEM_HULLVAT_AMMO_EXTEND_2",
@@ -150,8 +154,8 @@ const MODIFY_INTERNALS = [
 		"ammo_multi_upper":2,
 		"ammo_multi_lower":1,
 		"storage_ammo":1000,
-		"propellant_multi_upper":1,
-		"propellant_multi_lower":2,
+		"propellant_multi_upper":2,
+		"propellant_multi_lower":3,
 		"mass":35000,
 	},
 ]
