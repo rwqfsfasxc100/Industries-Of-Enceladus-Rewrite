@@ -35,11 +35,11 @@ SYSTEM_HULLVAT_AMMO_EXTEND_2_SPECS|Ammunition capacity modifier: +67% \nAmmuniti
 
 
 
-SYSTEM_HULLVAT_AMMO_EXTEND_3|
+SYSTEM_HULLVAT_AMMO_EXTEND_3|OC Magazine/Tank MechSwap
 
 SYSTEM_HULLVAT_AMMO_EXTEND_3_DESC|
 
-SYSTEM_HULLVAT_AMMO_EXTEND_3_SPECS|Ammunition capacity modifier: +100% \nAmmunition capacity: 1,000 kg \nPropellant tank reduction: 50% \nDry mass: 35,000 kg \nManufacturer: Conlindo RVM
+SYSTEM_HULLVAT_AMMO_EXTEND_3_SPECS|Ammunition capacity modifier: +100% \nAmmunition capacity: 1,000 kg \nPropellant tank reduction: 50% \nDry mass: 35,000 kg \nManufacturer: Conlindo RVM / Obonto Microengineering
 
 
 
