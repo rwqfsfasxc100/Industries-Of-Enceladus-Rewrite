@@ -125,7 +125,7 @@ func make_mirror():
 			copy.set_position(modify_position())
 			copy.rotation = deg2rad(set_rot)
 			copy.set_script(null)
-			ship.add_child(copy)
+			ship.call_deferred("add_child",copy)
 			$Mirror.visible = false
 			$Mirror.disabled = true
 
