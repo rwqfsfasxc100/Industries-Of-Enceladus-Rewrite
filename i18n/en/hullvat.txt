@@ -7,7 +7,7 @@ SYSTEM_HULLVAT_AMMO_1_DESC|A lightweight magazine traditionally used to provide 
 
 SYSTEM_HULLVAT_AMMO_1_SPECS|Ammunition capacity: 6,000 kg \nNanodrone storage loss: 25% \nDry mass: 3,000 kg \nManufacturer: Conlindo RVM 
 
-SYSTEM_HULLVAT_AMMO_MANUAL|Additional ammunition for mass drivers. Compatible with mass drivers and railguns.\n Ammunition delivery rate dependant on installed magazine. \nAmmunition sold separately at dive start.
+SYSTEM_HULLVAT_AMMO_MANUAL|Additional ammunition for mass drivers. Compatible with mass drivers and railguns.\n Ammunition delivery rate dependant on installed magazine. \nAmmunition sold separately at dive start. \nHUD sensor displays may or may not display new values correctly.
 
     
 
@@ -21,25 +21,25 @@ SYSTEM_HULLVAT_AMMO_2_SPECS|Ammunition capacity: 15,000 kg \nNanodrone storage l
 
 SYSTEM_HULLVAT_AMMO_EXTEND_1|Ammunition Expansion Kit
 
-SYSTEM_HULLVAT_AMMO_EXTEND_1_DESC|
+SYSTEM_HULLVAT_AMMO_EXTEND_1_DESC|This kit makes use of processed storage space to store additional projectiles based on currently installed kits. Due to Enceladus's current equipment labelling laws, reduction percentages will be equivalent regardless of vessels, leading to potentially lost space among many vessels. This however will benefit vessels with smaller internal holds or larger magazine capacities, with smaller losses or larger gains from the laws.
 
 SYSTEM_HULLVAT_AMMO_EXTEND_1_SPECS|Ammunition capacity modifier: +33% \nAmmunition capacity: 1,000 kg \nProcessed mineral hold reduction: 10% \nDry mass: 9,000 kg \nManufacturer: Conlindo RVM
 
 
 
-SYSTEM_HULLVAT_AMMO_EXTEND_2|Conlindo Magazine Extendo+
+SYSTEM_HULLVAT_AMMO_EXTEND_2|2x Ammunition Expansion Kit
 
-SYSTEM_HULLVAT_AMMO_EXTEND_2_DESC|
+SYSTEM_HULLVAT_AMMO_EXTEND_2_DESC|A double coupling of Conlindo's AEK, with twice the potential capacity provided and twice the restrictions. Due to technical restraints, some additional mass had to be added to allow for two mechanisms to work simultaneously.
 
-SYSTEM_HULLVAT_AMMO_EXTEND_2_SPECS|Ammunition capacity modifier: +67% \nAmmunition capacity: 1,000 kg \nProcessed mineral hold reduction: 20% \nDry mass: 20,000 kg \nManufacturer: Conlindo RVM
+SYSTEM_HULLVAT_AMMO_EXTEND_2_SPECS|Ammunition capacity modifier: +67% \nAmmunition capacity: 2,000 kg \nProcessed mineral hold reduction: 20% \nDry mass: 20,000 kg \nManufacturer: Conlindo RVM
 
 
 
-SYSTEM_HULLVAT_AMMO_EXTEND_3|OC Magazine/Tank MechSwap
+SYSTEM_HULLVAT_AMMO_EXTEND_3|OC Projectile Extendo+
 
-SYSTEM_HULLVAT_AMMO_EXTEND_3_DESC|
+SYSTEM_HULLVAT_AMMO_EXTEND_3_DESC|Using a different approach to earlier tech for extending the mass driver magazine, instead opting to sacrifice a portion of the propellant tank. Due to conflicting Enceladian laws, it abides by a 1-size-fits-all approach to the tank reduction percent, but will always ensure that 10 tonnes of propellant is available, even if it means that propellant has to be stored in the same container as the ammunition.
 
-SYSTEM_HULLVAT_AMMO_EXTEND_3_SPECS|Ammunition capacity modifier: +100% \nAmmunition capacity: 1,000 kg \nPropellant tank reduction: 50% \nDry mass: 35,000 kg \nManufacturer: Conlindo RVM / Obonto Microengineering
+SYSTEM_HULLVAT_AMMO_EXTEND_3_SPECS|Ammunition capacity modifier: +100% \nAmmunition capacity: 1,000 kg \nPropellant tank reduction: 33% \nDry mass: 35,000 kg \nManufacturer: Obonto Microengineering
 
 
 
@@ -128,6 +128,8 @@ SYSTEM_HULLVAT_PROP_EXTEND_3|
 SYSTEM_HULLVAT_PROP_EXTEND_3_DESC|
 
 SYSTEM_HULLVAT_PROP_EXTEND_3_SPECS|
+
+
 
 
 

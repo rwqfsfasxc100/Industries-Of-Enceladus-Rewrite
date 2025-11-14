@@ -144,7 +144,7 @@ const MODIFY_INTERNALS = [
 		"system":"SYSTEM_HULLVAT_AMMO_EXTEND_2",
 		"ammo_multi_upper":5,
 		"ammo_multi_lower":3,
-		"storage_ammo":1000,
+		"storage_ammo":2000,
 		"storage_multi_upper":4,
 		"storage_multi_lower":5,
 		"mass":20000,
@@ -157,5 +157,53 @@ const MODIFY_INTERNALS = [
 		"propellant_multi_upper":2,
 		"propellant_multi_lower":3,
 		"mass":35000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_NANO_1",
+		"mass":3000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_NANO_2",
+		"mass":10000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_NANO_EXTEND_1",
+		"mass":9000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_NANO_EXTEND_2",
+		"mass":20000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_NANO_EXTEND_3",
+		"mass":35000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_PROP_1",
+		"mass":3000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_PROP_2",
+		"mass":10000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_PROP_EXTEND_1",
+		"mass":9000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_PROP_EXTEND_2",
+		"mass":20000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_PROP_EXTEND_3",
+		"mass":35000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_CONSUMABLESPEED_1",
+		"mass":3000,
+	},
+	{
+		"system":"SYSTEM_HULLVAT_CONSUMABLESPEED_2",
+		"mass":10000,
 	},
 ]
