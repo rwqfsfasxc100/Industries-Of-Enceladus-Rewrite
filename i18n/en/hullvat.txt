@@ -93,7 +93,7 @@ SYSTEM_HULLVAT_PROP_1|
 
 SYSTEM_HULLVAT_PROP_1_DESC|
 
-SYSTEM_HULLVAT_PROP_1_SPECS|
+SYSTEM_HULLVAT_PROP_1_SPECS|Propellant capacity: 10,000 kg \nProcessed mineral hold reduction: 17% \nDry mass: 1,500 kg \nManufacturer: Conlindo RVM
 
 SYSTEM_HULLVAT_PROP_MANUAL|Additional reaction mass for thrusters and turbines. \nReactive mass sold separately at dive start. \nHUD sensor displays may or may not display new values correctly.
 
@@ -103,7 +103,7 @@ SYSTEM_HULLVAT_PROP_2|
 
 SYSTEM_HULLVAT_PROP_2_DESC|
 
-SYSTEM_HULLVAT_PROP_2_SPECS|
+SYSTEM_HULLVAT_PROP_2_SPECS|Propellant capacity: 25,000 kg \nProcessed mineral hold reduction: 22.5% \nDry mass: 4,000 kg \nManufacturer: Conlindo RVM
 
 
 
@@ -111,7 +111,7 @@ SYSTEM_HULLVAT_PROP_EXTEND_1|
 
 SYSTEM_HULLVAT_PROP_EXTEND_1_DESC|
 
-SYSTEM_HULLVAT_PROP_EXTEND_1_SPECS|
+SYSTEM_HULLVAT_PROP_EXTEND_1_SPECS|Propellant capacity modifier: +25% \nAmmunition magazine reduction: 17% \nDrone part capacity reduction: 17% \nDry mass: 3,000 kg \nManufacturer: Conlindo RVM
 
 
 
@@ -119,7 +119,7 @@ SYSTEM_HULLVAT_PROP_EXTEND_2|
 
 SYSTEM_HULLVAT_PROP_EXTEND_2_DESC|
 
-SYSTEM_HULLVAT_PROP_EXTEND_2_SPECS|
+SYSTEM_HULLVAT_PROP_EXTEND_2_SPECS|Propellant capacity modifier: +50% \nAmmunition magazine reduction: 25% \nDrone part capacity reduction: 25% \nDry mass: 8,000 kg \nManufacturer: Conlindo RVM
 
 
 
@@ -127,7 +127,7 @@ SYSTEM_HULLVAT_PROP_EXTEND_3|
 
 SYSTEM_HULLVAT_PROP_EXTEND_3_DESC|
 
-SYSTEM_HULLVAT_PROP_EXTEND_3_SPECS|
+SYSTEM_HULLVAT_PROP_EXTEND_3_SPECS|Propellant capacity modifier: +75% \nAmmunition magazine reduction: 38% \nDrone part capacity reduction: 38% \nDry mass: 15,000 kg \nManufacturer: Conlindo RVM
 
 
 
