@@ -722,7 +722,7 @@ const HULL_VAT_NANO_EXTEND_3 = {
 #const HULL_VAT_PROP_EXTEND_1 = {
 #	"system":"SYSTEM_HULLVAT_PROP_EXTEND_1",
 #	"manual":"SYSTEM_HULLVAT_PROP_MANUAL",
-#	"price":300000,
+#	"price":250000,
 #	"test_protocol":"takeoff",
 #	"slot_type":"HULL_VAT",
 #	"equipment_type":"CONSUMABLE_VAT"
@@ -730,7 +730,7 @@ const HULL_VAT_NANO_EXTEND_3 = {
 #const HULL_VAT_PROP_EXTEND_2 = {
 #	"system":"SYSTEM_HULLVAT_PROP_EXTEND_2",
 #	"manual":"SYSTEM_HULLVAT_PROP_MANUAL",
-#	"price":550000,
+#	"price":350000,
 #	"test_protocol":"takeoff",
 #	"slot_type":"HULL_VAT",
 #	"equipment_type":"CONSUMABLE_VAT"
@@ -738,7 +738,7 @@ const HULL_VAT_NANO_EXTEND_3 = {
 #const HULL_VAT_PROP_EXTEND_3 = {
 #	"system":"SYSTEM_HULLVAT_PROP_EXTEND_3",
 #	"manual":"SYSTEM_HULLVAT_PROP_MANUAL",
-#	"price":750000,
+#	"price":550000,
 #	"test_protocol":"takeoff",
 #	"slot_type":"HULL_VAT",
 #	"equipment_type":"CONSUMABLE_VAT"
