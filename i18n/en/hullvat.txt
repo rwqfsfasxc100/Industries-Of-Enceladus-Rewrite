@@ -1,13 +1,13 @@
 SLOT_HULL_CONSUMABLEVAT|Consumable Vat
 
 
-SYSTEM_HULLVAT_AMMO_1|Mounted Ammunition Canister
+SYSTEM_HULLVAT_AMMO_1|MPI Mounted Ammunition Canister
 
 SYSTEM_HULLVAT_AMMO_1_DESC|A lightweight magazine traditionally used to provide extra magazine space for Vilcy vessels utilizing the lesser-used hallways of the vessel. Despite being installed as a secondary system, it still had to make use of the ammunition delivery hatch to bring ammo to the hardpoints, restricting delivery speed to that of the currently installed magazine. The infringement of the air vents caused by various mechanisms used to feed the magazine cause a minor "stuffiness" reported by crews, who may find vessels fitted with them uncomfortable after a longer period of time.
 
-SYSTEM_HULLVAT_AMMO_1_SPECS|Ammunition capacity: 6,000 kg \nNanodrone storage loss: 25% \nDry mass: 3,000 kg \nManufacturer: Conlindo RVM 
+SYSTEM_HULLVAT_AMMO_1_SPECS|Ammunition capacity: 6,000 kg \nNanodrone storage loss: 25% \nDry mass: 3,000 kg \nManufacturer: Mars Power Industries 
 
-SYSTEM_HULLVAT_AMMO_MANUAL|Additional ammunition for mass drivers. Compatible with mass drivers and railguns.\n Ammunition delivery rate dependant on installed magazine. \nAmmunition sold separately at dive start. \nHUD sensor displays may or may not display new values correctly.
+SYSTEM_HULLVAT_AMMO_MANUAL|Additional ammunition for mass drivers. Compatible with mass drivers and railguns. \nAmmunition delivery rate dependant on installed magazine. \nAmmunition sold separately at dive start. \nHUD sensor displays may or may not display new values correctly.
 
     
 
@@ -19,23 +19,23 @@ SYSTEM_HULLVAT_AMMO_2_SPECS|Ammunition capacity: 15,000 kg \nNanodrone storage l
 
 
 
-SYSTEM_HULLVAT_AMMO_EXTEND_1|Ammunition Expansion Kit
+SYSTEM_HULLVAT_AMMO_EXTEND_1|Antonoff Ammunition Expansion Kit
 
 SYSTEM_HULLVAT_AMMO_EXTEND_1_DESC|This kit makes use of processed storage space to store additional projectiles based on currently installed kits. Due to Enceladus's current equipment labelling laws, reduction percentages will be equivalent regardless of vessels, leading to potentially lost space among many vessels. This however will benefit vessels with smaller internal holds or larger magazine capacities, with smaller losses or larger gains from the laws.
 
-SYSTEM_HULLVAT_AMMO_EXTEND_1_SPECS|Ammunition capacity modifier: +33% \nAmmunition capacity: 1,000 kg \nProcessed mineral hold reduction: 10% \nDry mass: 9,000 kg \nManufacturer: Conlindo RVM
+SYSTEM_HULLVAT_AMMO_EXTEND_1_SPECS|Ammunition capacity modifier: +33% \nAmmunition capacity: 1,000 kg \nProcessed mineral hold reduction: 10% \nDry mass: 9,000 kg \nManufacturer: Antonoff
 
 
 
-SYSTEM_HULLVAT_AMMO_EXTEND_2|2x Ammunition Expansion Kit
+SYSTEM_HULLVAT_AMMO_EXTEND_2|Antonoff 2x Ammunition Expansion Kit
 
 SYSTEM_HULLVAT_AMMO_EXTEND_2_DESC|A double coupling of Conlindo's AEK, with twice the potential capacity provided and twice the restrictions. Due to technical restraints, some additional mass had to be added to allow for two mechanisms to work simultaneously.
 
-SYSTEM_HULLVAT_AMMO_EXTEND_2_SPECS|Ammunition capacity modifier: +67% \nAmmunition capacity: 2,000 kg \nProcessed mineral hold reduction: 20% \nDry mass: 20,000 kg \nManufacturer: Conlindo RVM
+SYSTEM_HULLVAT_AMMO_EXTEND_2_SPECS|Ammunition capacity modifier: +67% \nAmmunition capacity: 2,000 kg \nProcessed mineral hold reduction: 20% \nDry mass: 20,000 kg \nManufacturer: Antonoff
 
 
 
-SYSTEM_HULLVAT_AMMO_EXTEND_3|OC Projectile Extendo+
+SYSTEM_HULLVAT_AMMO_EXTEND_3|Obonto Projectile Extendo+
 
 SYSTEM_HULLVAT_AMMO_EXTEND_3_DESC|Using a different approach to earlier tech for extending the mass driver magazine, instead opting to sacrifice a portion of the propellant tank. Due to conflicting Enceladian laws, it abides by a 1-size-fits-all approach to the tank reduction percent, but will always ensure that 10 tonnes of propellant is available, even if it means that propellant has to be stored in the same container as the ammunition.
 
@@ -45,45 +45,45 @@ SYSTEM_HULLVAT_AMMO_EXTEND_3_SPECS|Ammunition capacity modifier: +100% \nAmmunit
 
 
 
-SYSTEM_HULLVAT_NANO_1|
+SYSTEM_HULLVAT_NANO_1|Runasimi Drone Component Vat
 
-SYSTEM_HULLVAT_NANO_1_DESC|
+SYSTEM_HULLVAT_NANO_1_DESC|Like a large number of Runasimi's commercial products, the DCV focuses on providing a small boost in the available nanodrone components. Originally designed as a backup compartment only available during emergencies, later models were unlocked to allow their contents to be used during nominal flight.
 
-SYSTEM_HULLVAT_NANO_1_SPECS|
+SYSTEM_HULLVAT_NANO_1_SPECS|Drone part capacity: 6,000 kg \nAmmunition magazine loss: 25% \nDry mass: 4,500 kg \nManufacturer: Runasimi 
 
-SYSTEM_HULLVAT_NANO_MANUAL|
+SYSTEM_HULLVAT_NANO_MANUAL|Additional drone parts for nanodrone assembly units. Compatible with all drone launchers. \nDrone part delivery rate dependant on installed magazine. \nParts sold separately at dive start. \nHUD sensor displays may or may not display new values correctly.
 
     
 
-SYSTEM_HULLVAT_NANO_2|
+SYSTEM_HULLVAT_NANO_2|Runasimi Hull-Fitted Nanodrone Locker
 
-SYSTEM_HULLVAT_NANO_2_DESC|
+SYSTEM_HULLVAT_NANO_2_DESC|Based off of the success of the DCV, a larger unit was put into production to allow nanodrone-heavy users able to make good use of the often-unused mass driver magazine space to fit a considerably large portion of nanodrones. The lack of any dedicated safety units allowed for a greater parts-to-magazine space ratio than previous designs.
 
-SYSTEM_HULLVAT_NANO_2_SPECS|
-
-
-
-SYSTEM_HULLVAT_NANO_EXTEND_1|
-
-SYSTEM_HULLVAT_NANO_EXTEND_1_DESC|
-
-SYSTEM_HULLVAT_NANO_EXTEND_1_SPECS|
+SYSTEM_HULLVAT_NANO_2_SPECS|Drone part capacity: 15,000 kg \nAmmunition magazine loss: 50% \nDry mass: 12,000 kg \nManufacturer: Runasimi
 
 
 
-SYSTEM_HULLVAT_NANO_EXTEND_2|
+SYSTEM_HULLVAT_NANO_EXTEND_1|Antonoff Nano Storage Expansion
 
-SYSTEM_HULLVAT_NANO_EXTEND_2_DESC|
+SYSTEM_HULLVAT_NANO_EXTEND_1_DESC|Based along a similar design to the ammunition line of extension retrofit kits, this modification exchanges a portion of the mineral hold to allow for more nanodrone parts to be stored within the vessel. Note that the same laws apply to these kits, and storage adjustment margins are fixed to what is labeled regardless of vessel.
 
-SYSTEM_HULLVAT_NANO_EXTEND_2_SPECS|
+SYSTEM_HULLVAT_NANO_EXTEND_1_SPECS|Drone part capacity modifier: +33% \nDrone part capacity: 1,000 kg \nProcessed mineral hold reduction: 10% \nDry mass: 10,500 kg \nManufacturer: Antonoff
 
 
 
-SYSTEM_HULLVAT_NANO_EXTEND_3|
+SYSTEM_HULLVAT_NANO_EXTEND_2|Antonoff Dual Nano Storage Expansion
 
-SYSTEM_HULLVAT_NANO_EXTEND_3_DESC|
+SYSTEM_HULLVAT_NANO_EXTEND_2_DESC|In a similar design choice to the munitions kits, Antonoff provided a double kitting to their NSE fits. Similar restrictions still apply. 
 
-SYSTEM_HULLVAT_NANO_EXTEND_3_SPECS|
+SYSTEM_HULLVAT_NANO_EXTEND_2_SPECS|Drone part capacity modifier: +67% \nDrone part capacity: 2,000 kg \nProcessed mineral hold reduction: 20% \nDry mass: 25,000 kg \nManufacturer: Antonoff
+
+
+
+SYSTEM_HULLVAT_NANO_EXTEND_3|Obonto Liquid Nanobot Hold
+
+SYSTEM_HULLVAT_NANO_EXTEND_3_DESC|The nanodrone storage variation of Obonto's Projectile Extendo+, this kit replaces a decently sized portion of the propellant tank to store additional nanodrone components. This variant is surprisingly popular among construction crews despite the hit to their propellant storage, likely due to the recent laxing of rulings against tug and haul nanodrone mounts from being used during ring construction. 
+
+SYSTEM_HULLVAT_NANO_EXTEND_3_SPECS|Drone part capacity modifier: +100% \nDrone part capacity: 1,000 kg \nPropellant tank reduction: 33% \nDry mass: 40,000 kg \nManufacturer: Obonto Microengineering
 
 
 
@@ -95,7 +95,7 @@ SYSTEM_HULLVAT_PROP_1_DESC|
 
 SYSTEM_HULLVAT_PROP_1_SPECS|
 
-SYSTEM_HULLVAT_PROP_MANUAL|
+SYSTEM_HULLVAT_PROP_MANUAL|Additional reaction mass for thrusters and turbines. \nReactive mass sold separately at dive start. \nHUD sensor displays may or may not display new values correctly.
 
     
 
@@ -128,7 +128,6 @@ SYSTEM_HULLVAT_PROP_EXTEND_3|
 SYSTEM_HULLVAT_PROP_EXTEND_3_DESC|
 
 SYSTEM_HULLVAT_PROP_EXTEND_3_SPECS|
-
 
 
 
