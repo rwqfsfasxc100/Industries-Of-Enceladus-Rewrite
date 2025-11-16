@@ -89,43 +89,43 @@ SYSTEM_HULLVAT_NANO_EXTEND_3_SPECS|Drone part capacity modifier: +100% \nDrone p
 
 
 
-SYSTEM_HULLVAT_PROP_1|
+SYSTEM_HULLVAT_PROP_1|Propellant Can Mk. I
 
-SYSTEM_HULLVAT_PROP_1_DESC|
+SYSTEM_HULLVAT_PROP_1_DESC|Built off of Conlindo's research into dynamic propellant tank expanders, these smaller extender kits are intended for crews involved in research, search and rescue, or construction due to the abundance of space left available by unused processed storage, and is able to repurpose some of it for reactive mass. 
 
-SYSTEM_HULLVAT_PROP_1_SPECS|Propellant capacity: 10,000 kg \nProcessed mineral hold reduction: 17% \nDry mass: 1,500 kg \nManufacturer: Conlindo RVM
+SYSTEM_HULLVAT_PROP_1_SPECS|Propellant capacity: 10,000 kg \nProcessed mineral hold reduction: 10% \nDry mass: 1,500 kg \nManufacturer: Conlindo RVM
 
 SYSTEM_HULLVAT_PROP_MANUAL|Additional reaction mass for thrusters and turbines. \nReactive mass sold separately at dive start. \nHUD sensor displays may or may not display new values correctly.
 
     
 
-SYSTEM_HULLVAT_PROP_2|
+SYSTEM_HULLVAT_PROP_2|Propellant Can Mk. II
 
-SYSTEM_HULLVAT_PROP_2_DESC|
+SYSTEM_HULLVAT_PROP_2_DESC|A modern improvement over the Mk. I, this unit makes usse of more efficient storing methods to be able to take up less room per kg than it's predecessor. This kit may still not be the most effective for some crews, as the significantly heavier frame has deterred some captains over it's benefits.
 
-SYSTEM_HULLVAT_PROP_2_SPECS|Propellant capacity: 25,000 kg \nProcessed mineral hold reduction: 22.5% \nDry mass: 4,000 kg \nManufacturer: Conlindo RVM
+SYSTEM_HULLVAT_PROP_2_SPECS|Propellant capacity: 25,000 kg \nProcessed mineral hold reduction: 22.5% \nDry mass: 7,000 kg \nManufacturer: Conlindo RVM
 
 
 
-SYSTEM_HULLVAT_PROP_EXTEND_1|
+SYSTEM_HULLVAT_PROP_EXTEND_1|Reaction Mass Tank Expander
 
-SYSTEM_HULLVAT_PROP_EXTEND_1_DESC|
+SYSTEM_HULLVAT_PROP_EXTEND_1_DESC|Focusing on consistent interplanetary travel, Conlindo designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way.
 
 SYSTEM_HULLVAT_PROP_EXTEND_1_SPECS|Propellant capacity modifier: +25% \nAmmunition magazine reduction: 17% \nDrone part capacity reduction: 17% \nDry mass: 3,000 kg \nManufacturer: Conlindo RVM
 
 
 
-SYSTEM_HULLVAT_PROP_EXTEND_2|
+SYSTEM_HULLVAT_PROP_EXTEND_2|2x Reaction Mass Tank Expander
 
-SYSTEM_HULLVAT_PROP_EXTEND_2_DESC|
+SYSTEM_HULLVAT_PROP_EXTEND_2_DESC|Focusing on consistent interplanetary travel, Conlindo designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way.\n\nA double fitting of this equipment allows for additional propellant storage for vessels that need it. 
 
 SYSTEM_HULLVAT_PROP_EXTEND_2_SPECS|Propellant capacity modifier: +50% \nAmmunition magazine reduction: 25% \nDrone part capacity reduction: 25% \nDry mass: 8,000 kg \nManufacturer: Conlindo RVM
 
 
 
-SYSTEM_HULLVAT_PROP_EXTEND_3|
+SYSTEM_HULLVAT_PROP_EXTEND_3|3x Reaction Mass Tank Expander
 
-SYSTEM_HULLVAT_PROP_EXTEND_3_DESC|
+SYSTEM_HULLVAT_PROP_EXTEND_3_DESC|Focusing on consistent interplanetary travel, Conlindo designed this equipment to trade out parts of the mass driver magazine and nanodrone component storages, both being left unused for travel at such distances, to fit more propellant into a ship. Despite the standard interplanetary tanks being legally the minimum required, the added redundancy permits pilots to be able to make additional maneuvers without risking emptying the tank and drifting the rest of the way.\n\nA tripple fitting of this equipment allows for additional propellant storage for vessels that really need it.
 
 SYSTEM_HULLVAT_PROP_EXTEND_3_SPECS|Propellant capacity modifier: +75% \nAmmunition magazine reduction: 38% \nDrone part capacity reduction: 38% \nDry mass: 15,000 kg \nManufacturer: Conlindo RVM
 
@@ -133,17 +133,17 @@ SYSTEM_HULLVAT_PROP_EXTEND_3_SPECS|Propellant capacity modifier: +75% \nAmmuniti
 
 
 
-SYSTEM_HULLVAT_CONSUMABLESPEED_1|
+SYSTEM_HULLVAT_CONSUMABLESPEED_1|Tetsuo SCARLETTE Delivery Driver
 
-SYSTEM_HULLVAT_CONSUMABLESPEED_1_DESC|
+SYSTEM_HULLVAT_CONSUMABLESPEED_1_DESC|The SCARLETTE driver is a module designed to rework the way consumables are provided to the hardpoints. Originally used for military applications, the SCARLETTE was rebranded as an industrial modification after contracts with Nakamura Dynamics were terminated. Despite being used primarily for industrial grade mass driver units, some captains with particularly heavy mass driver requirements were able to make exceptional use of this module.
 
-SYSTEM_HULLVAT_CONSUMABLESPEED_1_SPECS|
+SYSTEM_HULLVAT_CONSUMABLESPEED_1_SPECS|Consumable storage delivery speed: +75% \nDry mass: 3,800 kg \nManufacturer: Tetsuo Engineering
 
-SYSTEM_HULLVAT_CONSUMABLESPEED_MANUAL|
+SYSTEM_HULLVAT_CONSUMABLESPEED_MANUAL|Speeds up the delivery speed of applicable consumable storages by a percentage. \nBest if used in conjunction with industrial-grade equipment. 
 
 
-SYSTEM_HULLVAT_CONSUMABLESPEED_2|
+SYSTEM_HULLVAT_CONSUMABLESPEED_2|Tetsuo RamDrive Consumable Delivery Efficiency Module
 
-SYSTEM_HULLVAT_CONSUMABLESPEED_2_DESC|
+SYSTEM_HULLVAT_CONSUMABLESPEED_2_DESC|In conjunction with the consumer market release of their industrial-grade mass driver, the Tetsuo HMX 2000l, a previously industry-insider only module was made available to consumers looking to retrofit their vessels to be able to make use of it, especially for crews unable to make use of it's iron delivery system or could not afford a vessel capable of meeting it's requirements, this module makes heavy adjustments to the delivery systems of a vessel, and as a result can be used to retrofit a majority of magazines to be able to meet the HMX's absurd ammunition delivery requirements.
 
-SYSTEM_HULLVAT_CONSUMABLESPEED_2_SPECS|
+SYSTEM_HULLVAT_CONSUMABLESPEED_2_SPECS|Consumable storage delivery speed: +150% \nDry mass: 9,000 kg \nManufacturer: Tetsuo Engineering
