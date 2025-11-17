@@ -10,8 +10,8 @@ credits=["SpaceDOTexe - original mod with a majority of the mod's functionality 
 [version]
 
 version_major=2
-version_minor=5
-version_bugfix=15
+version_minor=6
+version_bugfix=0
 version_metadata=""
 
 [tags]
