@@ -1,6 +1,7 @@
 extends Node
 
 const OPS = {
+	"slots":["aux.power"],
 	"type":"SMES",
 	"system":"SYSTEM_AUX_SMES_10K",
 	"price":140000,
@@ -17,6 +18,7 @@ const OPS = {
 }
 
 const MPI = {
+	"slots":["aux.power"],
 	"type":"MPDG",
 	"system":"SYSTEM_AUX_MPD_2000",
 	"price":1425000,

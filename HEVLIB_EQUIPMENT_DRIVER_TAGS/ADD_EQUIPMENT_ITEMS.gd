@@ -364,6 +364,7 @@ const AUX_MPDG_1400 = {
 	"slot_type":"AUX_POWER_SLOT",
 	"equipment_type":"POWER_AUX_POWER_SLOT",
 	"auxiliary_power_unit":{
+		"slots":["aux.power"],
 		"type":"MPDG",
 		"repair_time":1,
 		"fix_price":5000,
