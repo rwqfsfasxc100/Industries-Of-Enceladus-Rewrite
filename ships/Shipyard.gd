@@ -44,7 +44,7 @@ func _ready():
 	turbineMass.merge(turbineMassNew)
 	ammoDeliveryPerSeocond.merge(ammoDeliveryPerSeocondNew)
 	
-	ships["Tsukuyomi-Decom"] = preload("res://IndustriesOfEnceladusRewrite/ships/Tsukuyomi-Decom.tscn")
+	ships["Tsukuyomi-Decom"] = load("res://IndustriesOfEnceladusRewrite/ships/Tsukuyomi-Decom.tscn")
 	configAlias["Tsukuyomi-Decom"] = "TSUKUYOMI"
 	defaultShipConfig["Tsukuyomi-Decom"] = {"config": {
 		"ammo":{
@@ -94,7 +94,7 @@ func _ready():
 			"rightBay3":{"type":"SYSTEM_NONE"},
 		},
 	}}
-	ships["AT225-STUB"] = preload("res://IndustriesOfEnceladusRewrite/ships/ATK225-Stub.tscn")
+	ships["AT225-STUB"] = load("res://IndustriesOfEnceladusRewrite/ships/ATK225-Stub.tscn")
 	configAlias["AT225-STUB"] = "AT225-STUB"
 	defaultShipConfig["AT225-STUB"] = {"config": {
 		"ammo": {
@@ -128,7 +128,7 @@ func _ready():
 			"rightBay3":{"type":"SYSTEM_EXSTORAGE-R"}, 
 		}, 
 	}}
-	ships["ATLAS-WASP"] = preload("res://IndustriesOfEnceladusRewrite/ships/ATLAS-Wasp.tscn")
+	ships["ATLAS-WASP"] = load("res://IndustriesOfEnceladusRewrite/ships/ATLAS-Wasp.tscn")
 	configAlias["ATLAS-WASP"] = "WASP"
 	defaultShipConfig["ATLAS-WASP"] = {"config": {
 		"ammo":{
@@ -155,7 +155,7 @@ func _ready():
 			"middleRight":{"type":"SYSTEM_RAILTOR"}
 		}, 
 	}}
-	ships["COTHON-LUX"] = preload("res://IndustriesOfEnceladusRewrite/ships/Cothon-Lux.tscn")
+	ships["COTHON-LUX"] = load("res://IndustriesOfEnceladusRewrite/ships/Cothon-Lux.tscn")
 	configAlias["COTHON-LUX"] = "COTHON"
 	defaultShipConfig["COTHON-LUX"] = {"config": {
 		"ammo":{
@@ -184,7 +184,7 @@ func _ready():
 			"left":{"type":"SYSTEM_NONE"}
 		}, 
 	}}
-	ships["PIGEON-PROSPECTOR"] = preload("res://IndustriesOfEnceladusRewrite/ships/Eagle-Prospector-Pigeon.tscn")
+	ships["PIGEON-PROSPECTOR"] = load("res://IndustriesOfEnceladusRewrite/ships/Eagle-Prospector-Pigeon.tscn")
 	configAlias["PIGEON-PROSPECTOR"] = "PROSPECTOR"
 	defaultShipConfig["PIGEON-PROSPECTOR"] = {"config":{
 		"ammo":{
@@ -208,7 +208,7 @@ func _ready():
 			"left":{"type":"SYSTEM_EMD14"}
 		}, 
 	}}
-	ships["MAD-CERF-CIV"] = preload("res://IndustriesOfEnceladusRewrite/ships/MAD-CERF-Civ.tscn")
+	ships["MAD-CERF-CIV"] = load("res://IndustriesOfEnceladusRewrite/ships/MAD-CERF-Civ.tscn")
 	configAlias["MAD-CERF-CIV"] = "MADCERF"
 	defaultShipConfig["MAD-CERF-CIV"] = {"config": {
 		"ammo":{
@@ -242,7 +242,7 @@ func _ready():
 			"main":{"type":"SYSTEM_SALVAGE_ARM"}
 		}, 
 	}}
-	ships["OBERON"] = preload("res://IndustriesOfEnceladusRewrite/ships/Oberon.tscn")
+	ships["OBERON"] = load("res://IndustriesOfEnceladusRewrite/ships/Oberon.tscn")
 	configAlias["OBERON"] = "OBERON"
 	defaultShipConfig["OBERON"] = {"config": {
 		"ammo":{
@@ -281,7 +281,7 @@ func _ready():
 			"mainRight":{"type":"SYSTEM_SALVAGE_ARM"},
 		},
 	}}
-	ships["OCP209-DD"] = preload("res://IndustriesOfEnceladusRewrite/ships/OCP-209-DD.tscn")
+	ships["OCP209-DD"] = load("res://IndustriesOfEnceladusRewrite/ships/OCP-209-DD.tscn")
 	configAlias["OCP209-DD"] = "OCP209"
 	defaultShipConfig["OCP209-DD"] = {"config": {
 		"ammo":{
@@ -327,7 +327,7 @@ func _ready():
 			"rightBayRev1":{"type":"SYSTEM_NONE"},
 		},
 	}}
-	ships["OCP213-TWIN"] = preload("res://IndustriesOfEnceladusRewrite/ships/OCP-213-TWIN.tscn")
+	ships["OCP213-TWIN"] = load("res://IndustriesOfEnceladusRewrite/ships/OCP-213-TWIN.tscn")
 	configAlias["OCP213-TWIN"] = "OCP209"
 	defaultShipConfig["OCP213-TWIN"] = {"config": {
 		"ammo":{
@@ -373,7 +373,7 @@ func _ready():
 			"rightBayRev1":{"type":"SYSTEM_NONE"},
 		},
 	}}
-	ships["OCP209-SNAP"] = preload("res://IndustriesOfEnceladusRewrite/ships/OCP-209-Snap.tscn")
+	ships["OCP209-SNAP"] = load("res://IndustriesOfEnceladusRewrite/ships/OCP-209-Snap.tscn")
 	configAlias["OCP209-SNAP"] = "OCP209"
 	defaultShipConfig["OCP209-SNAP"] = {"config": {
 		"ammo":{
@@ -418,7 +418,7 @@ func _ready():
 			"rightBayRev1":{"type":"SYSTEM_NONE"},
 		},
 	}}
-	ships["TRTL-OCP"] = preload("res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-OCP.tscn")
+	ships["TRTL-OCP"] = load("res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-OCP.tscn")
 	configAlias["TRTL-OCP"] = "TRTL"
 	defaultShipConfig["TRTL-OCP"] = {"config": {
 		"ammo":{
@@ -448,7 +448,7 @@ func _ready():
 			"rightBack": {"type":"SYSTEM_NONE"},
 		}, 
 	}}
-	ships["TRTL-PEEPER"] = preload("res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-PEEPER.tscn")
+	ships["TRTL-PEEPER"] = load("res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-PEEPER.tscn")
 	configAlias["TRTL-PEEPER"] = "TRTL"
 	defaultShipConfig["TRTL-PEEPER"] = {"config": {
 		"ammo":{
@@ -478,7 +478,7 @@ func _ready():
 			"rightBack": {"type":"SYSTEM_NONE"},
 		}, 
 	}}
-	ships["TRTL-RAM"] = preload("res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-Ram.tscn")
+	ships["TRTL-RAM"] = load("res://IndustriesOfEnceladusRewrite/ships/RA-TRTL-Ram.tscn")
 	configAlias["TRTL-RAM"] = "TRTL"
 	defaultShipConfig["TRTL-RAM"] = {"config": {
 		"ammo":{
@@ -509,7 +509,7 @@ func _ready():
 		}, 
 	}}
 
-	ships["CK65"] = preload("res://IndustriesOfEnceladusRewrite/ships/CK65.tscn")
+	ships["CK65"] = load("res://IndustriesOfEnceladusRewrite/ships/CK65.tscn")
 	configAlias["CK65"] = "PROSPECTOR"
 	defaultShipConfig["CK65"] = {"config": {
 		"ammo":{
@@ -540,7 +540,7 @@ func _ready():
 	}}
 
 	
-	ships["CK69"] = preload("res://IndustriesOfEnceladusRewrite/ships/CK69.tscn")
+	ships["CK69"] = load("res://IndustriesOfEnceladusRewrite/ships/CK69.tscn")
 	configAlias["CK69"] = "PROSPECTOR"
 	defaultShipConfig["CK69"] = {"config": {
 		"ammo":{
@@ -572,7 +572,7 @@ func _ready():
 
 	
 	var YME:String = "YME"
-	ships[YME] = preload("res://IndustriesOfEnceladusRewrite/ships/YME.tscn")
+	ships[YME] = load("res://IndustriesOfEnceladusRewrite/ships/YME.tscn")
 	configAlias[YME] = "EIME"
 	defaultShipConfig[YME] = {
 		"config":{
@@ -616,7 +616,7 @@ func _ready():
 	
 	
 	var salvageOCP:String = "OCP-SALVAGE"
-	ships[salvageOCP] = preload("res://IndustriesOfEnceladusRewrite/ships/ocp-209-salvage.tscn")
+	ships[salvageOCP] = load("res://IndustriesOfEnceladusRewrite/ships/ocp-209-salvage.tscn")
 	configAlias[salvageOCP] = "OCP209"
 	defaultShipConfig[salvageOCP] = {
 		"config":{

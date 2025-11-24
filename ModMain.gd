@@ -38,7 +38,7 @@ func _init(modLoader = ModLoader):
 	add_child(self_check)
 # replace ShipParams for hold percentage fill readout
 	replaceScene("hud/trtl/ShipParams.tscn")
-	installScriptExtension("ships/modules/ThrusterSlot.gd")
+#	installScriptExtension("ships/modules/ThrusterSlot.gd")
 # install ship-ctrl.gd, adds hold sensors and AP setup
 	installScriptExtension("ships/ship-ctrl.gd")
 # install AutopilotOverlay.gd for new AP type
