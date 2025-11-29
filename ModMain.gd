@@ -54,8 +54,8 @@ func _init(modLoader = ModLoader):
 	
 	
 #	replaceScene("ships/modules/AuxSlot.tscn")
-	replaceScene("ships/modules/ThrusterSlot.tscn")
-	replaceScene("ships/modules/TorchSlot.tscn")
+#	replaceScene("ships/modules/ThrusterSlot.tscn")
+#	replaceScene("ships/modules/TorchSlot.tscn")
 	
 	
 # replace weapons and WeaponSlot
