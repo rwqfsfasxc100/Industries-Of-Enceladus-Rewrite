@@ -27,8 +27,8 @@ var this_mod_name : String = "Industries of Enceladus Rewrite"
 # Setting INF for the max major version and -INF for the min major version will act as standard operators and mean that no maximum or no minimum is set respectively
 # 
 var min_version_major : int = 1 # Setting this to INF will mean no min version is checked
-var min_version_minor : int = 9
-var min_version_bugfix : int = 13
+var min_version_minor : int = 10
+var min_version_bugfix : int = 0
 
 var max_version_major : int = INF # Setting this to INF will mean no max version is checked
 var max_version_minor : int = 0
