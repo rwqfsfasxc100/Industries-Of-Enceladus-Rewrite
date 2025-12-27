@@ -10,3 +10,20 @@ SYSTEM_AUTOPILOT_337MOD_DESC|MAX - це програмне оновлення д
 SYSTEM_AUTOPILOT_337MOD_SPECS|Розробник: Mitsudaya-Starbus \nМожливості: Antipodal Reaction Limiter \nAdaptive Angular Thrust \nFly-By-Wire \nLIDAR-оверлей
 
 SYSTEM_AUTOPILOT_337MOD_MANUAL|Відображає круг LIDAR навколо вашого корабля. \nARL: Вимикає протилежні двигуни, заощаджуючи паливо. \nFBW: Направляє всі ручні введення двигуна через автопілот. \nМоже ефективно використовувати рухомі двигуни. \nAAT: Спостерігає за зміною маси вантажу та пошкодженням двигуна, щоб обчислити мінімальну тягу, необхідну для маневру. \nПерезавантажте бортовий комп'ютер, щоб очистити дані адаптації.
+
+
+
+IOE_CONFIG_VERBOSE_LOGGING|Детальне логування
+
+IOE_CONFIG_VERBOSE_LOGGING_TOOLTIP|Чи створювати додаткові логи при завантаженні мода
+
+IOE_CONFIG_OPTIONS|Налаштування
+
+IOE_CONFIG_INPUTS|Прив'язки клавіш
+
+IOE_CONFIG_SHIP_SLOT_9|Перемкнути кріплення 9
+IOE_CONFIG_SHIP_SLOT_MINUS|Перемкнути кріплення 10
+IOE_CONFIG_SHIP_SLOT_EQUAL|Перемкнути кріплення 11
+IOE_CONFIG_SHIP_SLOT_9_TOOLTIP|Клавіша для 9-го слоту обладнання
+IOE_CONFIG_SHIP_SLOT_MINUS_TOOLTIP|Клавіша для 10-го слоту обладнання
+IOE_CONFIG_SHIP_SLOT_EQUAL_TOOLTIP|Клавіша для 11-го слоту обладнання
