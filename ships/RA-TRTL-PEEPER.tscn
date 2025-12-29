@@ -566,52 +566,61 @@ polygon = PoolVector2Array( -64, -268, -57, -260, -43, -267, -43, -273, -38.274,
 
 [node name="engine-main" parent="." instance_placeholder="res://ships/modules/TorchSlot.tscn"]
 position = Vector2( 0, 356.328 )
+extraGimbal = 0.305
 command = "m"
 default = "SYSTEM_MAIN_ENGINE_K44"
 
 [node name="thruster-lb" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( -64, 326.328 )
+extraGimbal = 0.305
 command = "f"
 default = "SYSTEM_THRUSTER_K44"
 
 [node name="thruster-lt" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( -120, -92.6719 )
 rotation = 2.79253
+extraGimbal = 0.305
 command = "bl>"
 default = "SYSTEM_THRUSTER_K44"
 
 [node name="thruster-rt" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( 120, -92.6719 )
 rotation = -2.79253
+extraGimbal = 0.305
 command = "br<"
 default = "SYSTEM_THRUSTER_K44"
 
 [node name="thruster-rb" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( 64, 326.328 )
+extraGimbal = 0.305
 command = "f"
 default = "SYSTEM_THRUSTER_K44"
 
 [node name="thruster-br" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( 75, 312.328 )
 rotation = -1.309
+extraGimbal = 0.305
 command = "r<"
 default = "SYSTEM_THRUSTER_K44"
 
 [node name="thruster-bl" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( -75, 312.328 )
 rotation = 1.309
+extraGimbal = 0.305
 command = "l>"
 default = "SYSTEM_THRUSTER_K44"
 
 [node name="thruster-tl" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( -75, 167.328 )
 rotation = 1.5708
+extraGimbal = 0.305
 command = ">"
 default = "SYSTEM_THRUSTER_K44"
 
 [node name="thruster-tr" parent="." instance_placeholder="res://ships/modules/ThrusterSlot.tscn"]
 position = Vector2( 75, 167.328 )
 rotation = -1.5708
+extraGimbal = 0.305
 command = "<"
 default = "SYSTEM_THRUSTER_K44"
 
