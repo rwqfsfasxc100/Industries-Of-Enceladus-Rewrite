@@ -440,7 +440,7 @@ anims/appear = SubResource( 5 )
 [node name="CargoBaffles" parent="." instance=ExtResource( 29 )]
 position = Vector2( 0, -82 )
 z_index = 50
-slot = "cargo.modifierDivided"
+slot = "cargo.aux"
 
 [node name="AIdebug" parent="." instance=ExtResource( 17 )]
 visible = false

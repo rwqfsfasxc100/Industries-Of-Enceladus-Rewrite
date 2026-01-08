@@ -500,7 +500,7 @@ anims/appear = SubResource( 13 )
 [node name="CargoBaffles" type="Node2D" parent="."]
 position = Vector2( 0, -92 )
 script = ExtResource( 19 )
-slot = "cargo.modifierDivided"
+slot = "cargo.aux"
 
 [node name="LeftBaffle" type="RigidBody2D" parent="CargoBaffles" groups=["slipstream"]]
 position = Vector2( -23, -99 )

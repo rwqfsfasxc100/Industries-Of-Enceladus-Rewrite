@@ -930,7 +930,7 @@ region_rect = Rect2( 1, 99, 124, 117 )
 visible = false
 position = Vector2( 0, 164 )
 z_index = 100
-slot = "cargo.modifierDivided"
+slot = "cargo.aux"
 
 [node name="LeftBaffle" parent="CargoBaffles" index="0"]
 position = Vector2( -100, -70 )

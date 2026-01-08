@@ -470,16 +470,27 @@ const HOLD_MODIFIER_AMORPH6 = {
 	"restriction":"HOLDMODIFIER_DIVIDED", 
 	"equipment_type":"EQUIPMENT_HOLD_MODIFIER"
 }
+const HOLD_MODIFIER_BAFFLES = {
+	"system":"SYSTEM_CARGO_BAFFLES",
+	"manual":"SYSTEM_CARGO_BAFFLES_MANUAL",
+	"price":10000,
+	"test_protocol":"cargo",
+	"capability_lock":true,
+	"slot_type":"HOLD_MODIFIERS",
+	"equipment_type":"EQUIPMENT_HOLD_MODIFIER"
+#	"slot_type":"CARGO_ACCESSORIES",
+#	"equipment_type":"CARGO_ACCESSORIES"
+}
 const CARGO_ACCESSORY_BAFFLES = {
 	"system":"SYSTEM_CARGO_BAFFLES",
 	"manual":"SYSTEM_CARGO_BAFFLES_MANUAL",
 	"price":15000,
 	"test_protocol":"cargo",
 	"capability_lock":true,
-	"slot_type":"HOLD_MODIFIERS",
-	"equipment_type":"EQUIPMENT_HOLD_MODIFIER"
-	# "slot_type":"CARGO_ACCESSORIES",
-	# "equipment_type":"CARGO_ACCESSORIES"
+#	"slot_type":"HOLD_MODIFIERS",
+#	"equipment_type":"EQUIPMENT_HOLD_MODIFIER"
+	"slot_type":"CARGO_ACCESSORIES",
+	"equipment_type":"CARGO_ACCESSORIES"
 }
 const CARGO_ACCESSORY_P15 = {
 	"system":"SYSTEM_CARGO_PREPROC_P15",

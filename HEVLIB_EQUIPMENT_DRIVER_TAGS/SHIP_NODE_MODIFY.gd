@@ -7,6 +7,30 @@ const SHIP_TRTL = {
 			"path":"CargoBaffles",
 			"property":"slot",
 			"recurse_to_variants":true,
+			"value":"cargo.aux"
+		}
+	]
+}
+
+const SHIP_TRTL_T = {
+	"ship_name":"SHIP_TRTL_T",
+	"modifications":[
+		{
+			"path":"CargoBaffles",
+			"property":"slot",
+			"recurse_to_variants":true,
+			"value":"cargo.modifierDivided"
+		}
+	]
+}
+
+const SHIP_TRTL_R = {
+	"ship_name":"SHIP_TRTL_R",
+	"modifications":[
+		{
+			"path":"CargoBaffles",
+			"property":"slot",
+			"recurse_to_variants":true,
 			"value":"cargo.modifierDivided"
 		}
 	]
@@ -43,13 +67,25 @@ const SHIP_PROSPECTOR = {
 			"path":"CargoBaffles",
 			"property":"slot",
 			"recurse_to_variants":true,
+			"value":"cargo.aux"
+		}
+	]
+}
+
+const SHIP_CK65 = {
+	"ship_name":"SHIP_CK69",
+	"modifications":[
+		{
+			"path":"CargoBaffles",
+			"property":"slot",
+			"recurse_to_variants":true,
 			"value":"cargo.modifierDivided"
 		}
 	]
 }
 
-const SHIP_COTHON_V = {
-	"ship_name":"SHIP_COTHON_V",
+const SHIP_CK69 = {
+	"ship_name":"SHIP_CK69",
 	"modifications":[
 		{
 			"path":"CargoBaffles",
@@ -67,7 +103,7 @@ const SHIP_COTHON = {
 			"path":"CargoBaffles",
 			"property":"slot",
 			"recurse_to_variants":true,
-			"value":"cargo.modifierDivided"
+			"value":"cargo.aux"
 		}
 	]
 }
@@ -79,7 +115,7 @@ const SHIP_AT225 = {
 			"path":"CargoBaffles",
 			"property":"slot",
 			"recurse_to_variants":true,
-			"value":"cargo.modifierDivided"
+			"value":"cargo.aux"
 		}
 	]
 }
@@ -92,6 +128,18 @@ const SHIP_OCP209 = {
 			"property":"slot",
 			"recurse_to_variants":true,
 			"value":"cargo.modifierAmorphic"
+		}
+	]
+}
+
+const SHIP_OCP209_DD = {
+	"ship_name":"SHIP_OCP209_DD",
+	"modifications":[
+		{
+			"path":"Bay/Bay/CargoBaffles",
+			"property":"slot",
+			"recurse_to_variants":true,
+			"value":"cargo.aux"
 		}
 	]
 }

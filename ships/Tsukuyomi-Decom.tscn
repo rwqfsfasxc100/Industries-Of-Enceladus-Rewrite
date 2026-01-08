@@ -820,7 +820,7 @@ polygon = PoolVector2Array( -18, 4, 18, 4, 18, -30, -18, -30 )
 visible = false
 position = Vector2( 0, -1097 )
 z_index = 50
-slot = "cargo.modifierDivided"
+slot = "cargo.aux"
 
 [node name="LeftBaffle" parent="CargoBaffles" index="0"]
 position = Vector2( -88, -123 )
