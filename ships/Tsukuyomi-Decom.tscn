@@ -166,11 +166,8 @@ linear_damp = 0.0
 angular_damp = 0.0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="CargoHoldArea"]
-visible = false
 light_mask = 0
-position = Vector2( 3, -966 )
-scale = Vector2( 1.3, 1.3 )
-polygon = PoolVector2Array( 71.5385, -201.539, 93.0769, -186.154, 93.077, 20, 34.615, 110, 34.6154, 409.231, -39.2308, 409.231, -39.231, 110, -97.692, 20, -97.6923, -186.154, -76.1539, -201.539, -76.1539, -209.231, 71.5385, -209.231 )
+polygon = PoolVector2Array( 93, -1225, 123, -1205, 123, -940, 47, -820, 47, -439, -49, -439, -49, -820, -125, -940, -126, -1205, -97, -1225, -97, -1235, 93, -1235 )
 
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
 visible = false

@@ -19,11 +19,11 @@ const SHIP_TRTL = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -49,11 +49,11 @@ const SHIP_TRTL = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -79,11 +79,11 @@ const SHIP_TRTL = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -115,11 +115,11 @@ const SHIP_TRTL = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -157,11 +157,11 @@ const SHIP_TRTL = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -187,11 +187,11 @@ const SHIP_TRTL = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -217,11 +217,11 @@ const SHIP_TRTL = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -514,11 +514,11 @@ const SHIP_MADCERF_CIV = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -544,11 +544,11 @@ const SHIP_MADCERF_CIV = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -574,11 +574,11 @@ const SHIP_MADCERF_CIV = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -610,11 +610,11 @@ const SHIP_MADCERF_CIV = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -652,11 +652,11 @@ const SHIP_MADCERF_CIV = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -682,11 +682,11 @@ const SHIP_MADCERF_CIV = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -712,11 +712,11 @@ const SHIP_MADCERF_CIV = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -834,11 +834,11 @@ const SHIP_PROSPECTOR = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -864,11 +864,11 @@ const SHIP_PROSPECTOR = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -894,11 +894,11 @@ const SHIP_PROSPECTOR = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -930,11 +930,11 @@ const SHIP_PROSPECTOR = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -972,11 +972,11 @@ const SHIP_PROSPECTOR = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1002,11 +1002,11 @@ const SHIP_PROSPECTOR = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1032,11 +1032,11 @@ const SHIP_PROSPECTOR = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1099,11 +1099,11 @@ const SHIP_PROSPECTOR_VP = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1129,11 +1129,11 @@ const SHIP_PROSPECTOR_VP = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1159,11 +1159,11 @@ const SHIP_PROSPECTOR_VP = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1195,11 +1195,11 @@ const SHIP_PROSPECTOR_VP = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1237,11 +1237,11 @@ const SHIP_PROSPECTOR_VP = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1267,11 +1267,11 @@ const SHIP_PROSPECTOR_VP = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1297,11 +1297,11 @@ const SHIP_PROSPECTOR_VP = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1363,11 +1363,11 @@ const SHIP_AT225 = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1392,11 +1392,11 @@ const SHIP_AT225 = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1421,11 +1421,11 @@ const SHIP_AT225 = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1455,11 +1455,11 @@ const SHIP_AT225 = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1494,11 +1494,11 @@ const SHIP_AT225 = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1523,11 +1523,11 @@ const SHIP_AT225 = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1552,11 +1552,11 @@ const SHIP_AT225 = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1615,11 +1615,11 @@ const SHIP_AT225B = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1645,11 +1645,11 @@ const SHIP_AT225B = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1679,11 +1679,11 @@ const SHIP_AT225B = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1719,11 +1719,11 @@ const SHIP_AT225B = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1771,11 +1771,11 @@ const SHIP_AT225B = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1805,11 +1805,11 @@ const SHIP_AT225B = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1835,11 +1835,11 @@ const SHIP_AT225B = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1879,11 +1879,11 @@ const SHIP_PROSPECTOR_FAT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1909,11 +1909,11 @@ const SHIP_PROSPECTOR_FAT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1939,11 +1939,11 @@ const SHIP_PROSPECTOR_FAT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -1975,11 +1975,11 @@ const SHIP_PROSPECTOR_FAT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -2017,11 +2017,11 @@ const SHIP_PROSPECTOR_FAT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -2047,11 +2047,11 @@ const SHIP_PROSPECTOR_FAT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -2077,11 +2077,11 @@ const SHIP_PROSPECTOR_FAT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -2378,11 +2378,11 @@ const SHIP_COTHON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -2407,11 +2407,11 @@ const SHIP_COTHON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -2436,11 +2436,11 @@ const SHIP_COTHON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -2470,11 +2470,11 @@ const SHIP_COTHON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -2509,11 +2509,11 @@ const SHIP_COTHON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -2538,11 +2538,11 @@ const SHIP_COTHON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -2567,11 +2567,11 @@ const SHIP_COTHON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3096,11 +3096,11 @@ const SHIP_TSUKUYOMI_IOT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3126,11 +3126,11 @@ const SHIP_TSUKUYOMI_IOT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3156,11 +3156,11 @@ const SHIP_TSUKUYOMI_IOT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3192,11 +3192,11 @@ const SHIP_TSUKUYOMI_IOT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3234,11 +3234,11 @@ const SHIP_TSUKUYOMI_IOT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3264,11 +3264,11 @@ const SHIP_TSUKUYOMI_IOT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3294,11 +3294,11 @@ const SHIP_TSUKUYOMI_IOT = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3359,11 +3359,11 @@ const SHIP_PROSPECTOR_PIGEON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3389,11 +3389,11 @@ const SHIP_PROSPECTOR_PIGEON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3419,11 +3419,11 @@ const SHIP_PROSPECTOR_PIGEON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3455,11 +3455,11 @@ const SHIP_PROSPECTOR_PIGEON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3497,11 +3497,11 @@ const SHIP_PROSPECTOR_PIGEON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3527,11 +3527,11 @@ const SHIP_PROSPECTOR_PIGEON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
@@ -3557,11 +3557,11 @@ const SHIP_PROSPECTOR_PIGEON = {
 				},
 				"ProcessingArea/ZoneBottom/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneTop/polygon":{
 					"method":"copy",
-					"node_path":"CargoHoldArea/CollisionPolygon2D"
+					"node_path":"CargoHoldArea/CollisionPolygon2D","defer":true
 				},
 				"ProcessingArea/ZoneBottom/scale":{
 					"method":"invert_scaling",
