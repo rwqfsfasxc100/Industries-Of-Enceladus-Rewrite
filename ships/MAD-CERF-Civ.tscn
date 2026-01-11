@@ -676,13 +676,13 @@ slot = "turretRight"
 toggleCommand = "ship_slot_5"
 
 [node name="dock-left" parent="." instance=ExtResource( 53 )]
-position = Vector2( -360, -170 )
+position = Vector2( -370, -170 )
 z_index = 22
 slot = "leftBay2"
 toggleCommand = "ship_slot_8"
 
 [node name="dock-right" parent="." instance=ExtResource( 53 )]
-position = Vector2( 360, -170 )
+position = Vector2( 370, -170 )
 z_index = 22
 slot = "rightBay2"
 toggleCommand = "ship_slot_9"

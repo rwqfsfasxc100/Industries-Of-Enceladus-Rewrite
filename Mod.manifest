@@ -11,7 +11,7 @@ credits=["SpaceDOTexe - original mod with a majority of the mod's functionality 
 
 version_major=2
 version_minor=6
-version_bugfix=4
+version_bugfix=5
 version_metadata=""
 
 [tags]
@@ -19,6 +19,7 @@ version_metadata=""
 TAG_ALLOW_ACHIEVEMENTS={"type":"bool","value":false}
 TAG_OVERHAUL={"type":"bool","value":true}
 TAG_QOL={"type":"bool","value":true}
+TAG_ADD_TRANSIT_TIPS={"type":"array","value":["IOER_TRANSIT_TIP_1","IOER_TRANSIT_TIP_2","IOER_TRANSIT_TIP_3","IOER_TRANSIT_TIP_4","IOER_TRANSIT_TIP_5"]}
 TAG_USING_HEVLIB_RESEARCH={"type":"array","value":[
 {
 	"name":"SYSTEM_PDT",

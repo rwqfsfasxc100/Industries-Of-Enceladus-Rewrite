@@ -431,7 +431,7 @@ z_index = -5
 toggleCommand = "ship_slot_1"
 
 [node name="TorpedoTubeLeftUp" parent="." instance=ExtResource( 28 )]
-position = Vector2( -160, -1250 )
+position = Vector2( -180, -1250 )
 __meta__ = {
 "_editor_description_": ""
 }
@@ -439,7 +439,7 @@ slot = "left"
 toggleCommand = "ship_slot_2"
 
 [node name="TorpedoTubeRightUp" parent="." instance=ExtResource( 28 )]
-position = Vector2( 160, -1250 )
+position = Vector2( 180, -1250 )
 __meta__ = {
 "_editor_description_": ""
 }
