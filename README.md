@@ -2,6 +2,10 @@
 This is a modification of SpaceDotEXE's Industries of Enceladus mod for ΔV: Rings of Saturn that brings much requested compatability with several other content mods (this was probably the biggest request of the modding community, at least at the time of writing).
 None of this is really mine, and all credit goes to SpaceDOTexe and their [original repository](https://github.com/spdx-github/IndustriesOfEnceladus).
 
+> [!WARNING]
+> HevLib is required for this mod to function.
+> A download can be found from it's [releases page](https://github.com/rwqfsfasxc100/HevLib/releases/latest)
+
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/M4M01L6LMF)
 
 For ease of the user, the Space's original mod README is as follows: 
