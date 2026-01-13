@@ -6,4 +6,4 @@ IOER_TRANSIT_TIP_3|Want to use the variable processed ore storage of the Cothon-
 
 IOER_TRANSIT_TIP_4|Need extra processed ore storage? Install a hold expansion module or a bay auxiliary storage module.
 
-IOER_TRANSIT_TIP_5|Habitat kits can improve the crew capacity of your ship, but watch the morale from the new conditions provided by it.
+IOER_TRANSIT_TIP_5|Habitat kits can improve the crew capacity of your ship, but watch for any changes in morale created by the new conditions.
