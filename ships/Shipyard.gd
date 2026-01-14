@@ -2,6 +2,10 @@ extends "res://ships/Shipyard.gd"
 
 var ammoValueNew = {
 		200: 500,
+		100000: 750000,
+	}
+var droneValueNew = {
+		100000: 2000000,
 	}
 var rodsValueNew = {
 		1.0: 20000,
@@ -30,12 +34,14 @@ var turbineMassNew = {
 		320.0: 1200,
 	}
 var ammoDeliveryPerSeocondNew = {
-	200.0:100
-}
+		200.0: 100,
+		100000.0: 1000,
+	}
 
 
-func _ready():
+func _enter_tree():
 	ammoValue.merge(ammoValueNew)
+	droneValue.merge(droneValueNew)
 	rodsValue.merge(rodsValueNew)
 	rodsMass.merge(rodsMassNew)
 	capacitorMass.merge(capacitorMassNew)
@@ -43,13 +49,14 @@ func _ready():
 	turbineValue.merge(turbineValueNew)
 	turbineMass.merge(turbineMassNew)
 	ammoDeliveryPerSeocond.merge(ammoDeliveryPerSeocondNew)
-	
+
+func _ready():
 	ships["Tsukuyomi-Decom"] = load("res://IndustriesOfEnceladusRewrite/ships/Tsukuyomi-Decom.tscn")
 	configAlias["Tsukuyomi-Decom"] = "TSUKUYOMI"
 	defaultShipConfig["Tsukuyomi-Decom"] = {"config": {
 		"ammo":{
-			"capacity":50000.0, 
-			"initial":5000.0, 
+			"capacity":100000.0, 
+			"initial":100000.0, 
 		}, 
 		"autopilot":{
 			"type":"SYSTEM_AUTOPILOT_MK3"
@@ -64,8 +71,8 @@ func _ready():
 			"modifierDivided":"SYSTEM_CARGO_MOD_2K"
 		},
 		"drones":{
-			"initial":0.0, 
-			"capacity":50000.0, 
+			"initial":100000.0, 
+			"capacity":100000.0, 
 		}, 
 		"fuel":{
 			"capacity":500000.0, 

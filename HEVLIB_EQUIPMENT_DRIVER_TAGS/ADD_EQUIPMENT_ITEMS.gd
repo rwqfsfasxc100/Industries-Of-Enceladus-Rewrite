@@ -185,6 +185,24 @@ const AMMO_200 = {
 	"slot_type":"MASS_DRIVER_AMMUNITION",
 	"equipment_type":"CONSUMABLE_MASS_DRIVER_AMMUNITION"
 }
+const AMMO_100000 = {
+	"num_val":100000,
+	"system":"SYSTEM_AMMO_100000",
+	"manual":"SYSTEM_AMMO_MANUAL",
+	"price":750000,
+	"test_protocol":"takeoff",
+	"slot_type":"MASS_DRIVER_AMMUNITION",
+	"equipment_type":"CONSUMABLE_MASS_DRIVER_AMMUNITION"
+}
+const DND_100000 = {
+	"num_val":100000,
+	"system":"SYSTEM_DND_100000",
+	"manual":"SYSTEM_DND_MANUAL",
+	"price":2000000,
+	"test_protocol":"drone",
+	"slot_type":"NANODRONE_STORAGE",
+	"equipment_type":"CONSUMABLE_NANODRONES"
+}
 const PROPELLANT_1000000 = {
 	"num_val":1000000,
 	"system":"SYSTEM_FUEL_1000000",
@@ -494,7 +512,7 @@ const CARGO_ACCESSORY_BAFFLES = {
 }
 const CARGO_ACCESSORY_P15 = {
 	"system":"SYSTEM_CARGO_PREPROC_P15",
-	"manual":"SYSTEM_CARGO_AUX_PREPROC_MANUAL",
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL",
 	"price":55000,
 	"test_protocol":"cargo",
 	"slot_type":"CARGO_ACCESSORIES",
@@ -502,7 +520,7 @@ const CARGO_ACCESSORY_P15 = {
 }
 const CARGO_ACCESSORY_M35 = {
 	"system":"SYSTEM_CARGO_PREPROC_M35",
-	"manual":"SYSTEM_CARGO_AUX_PREPROC_MANUAL",
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL",
 	"price":815000,
 	"test_protocol":"cargo",
 	"slot_type":"CARGO_ACCESSORIES",
@@ -510,7 +528,7 @@ const CARGO_ACCESSORY_M35 = {
 }
 const CARGO_ACCESSORY_M85 = {
 	"system":"SYSTEM_CARGO_PREPROC_M85",
-	"manual":"SYSTEM_CARGO_AUX_PREPROC_MANUAL",
+	"manual":"SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL",
 	"price":2750000,
 	"test_protocol":"cargo",
 	"slot_type":"CARGO_ACCESSORIES",

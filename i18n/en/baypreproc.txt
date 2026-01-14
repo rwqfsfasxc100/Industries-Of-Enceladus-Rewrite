@@ -39,6 +39,14 @@ SYSTEM_CARGO_PREPROC_M85_DESC|Mitsudaya-Starbus's Frakker uses a combination of 
 
 SYSTEM_CARGO_PREPROC_M85_SPECS|MPU processing speed factor: 185% MPU speed \nSecondary MPU processing speed modifier: 0 kg/s \nAdditional MPU power cost per chunk: ~85% \nGoverning AI: Class-1 \nAmbient power cost per chunk: 2,500 kW \nAmbient ice melt rate: 12 kg/s \nMass: 12,550 kg \nManufacturer: Mitsudaya-Starbus
 
+
+
 SYSTEM_CARGO_AUX_PREPROC_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nDecreases MPU processing speed multiplicatively \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nChanged MPU processing speed and power per chunk \nDoes not extract minerals or destroy chunks.
 
 SYSTEM_CARGO_AUX_PREPROC_NOMINERAL_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
+
+SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU speed multiplicatively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
+
+SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU speed additively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
+
+SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nIncreases MPU speed multiplicatively and additively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.

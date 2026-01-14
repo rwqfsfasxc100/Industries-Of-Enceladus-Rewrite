@@ -148,12 +148,12 @@ const IOE_STORAGE_8K = {
 		},
 		"ProcessingArea/ZoneTop/polygon":{
 			"node_path":"CargoHoldArea/CollisionPolygon2D",
-			"property":"polygon",
+#			"property":"polygon",
 			"method":"copy"
 		},
 		"ProcessingArea/ZoneBottom/polygon":{
 			"node_path":"CargoHoldArea/CollisionPolygon2D",
-			"property":"polygon",
+#			"property":"polygon",
 			"method":"copy"
 		},
 		"ProcessingArea/ZoneTop/position":{
