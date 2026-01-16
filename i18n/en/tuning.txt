@@ -1,0 +1,11 @@
+IOE_TUNE_PARAMETER_PREPROC_MELT_POWER_DRAW|Water Reduction Power Draw (per chunk)
+
+IOE_TUNE_PREPROC_RECLAIM|Ice Thawing Speed
+
+IOE_TUNE_PREPROC_MODIFY|MPU Processing Efficiency Modifier
+
+IOE_TUNE_PARAMETER_PREPROC_MPU_EFFICIENCY_MODIFIER|Mineral Processing Unit Speed Modifier
+
+IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY|Ice Remass Reclamation Efficiency
+
+IOE_TUNE_PARAMETER_MPU_SPEED_POWER_DRAW|Mineral Processing Unit Power Draw Percent

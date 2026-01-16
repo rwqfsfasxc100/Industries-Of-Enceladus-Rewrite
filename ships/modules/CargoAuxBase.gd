@@ -5,7 +5,8 @@ export  var repairReplacementTime = 1
 export  var repairFixPrice = 1000
 export  var repairFixTime = 1
 var equipment = true
-export (String) var slotName = name
+onready var slotName = "CargoAux_" + systemName
+#export (String) var slotName = "CargoAux_" + systemName
 
 export var mass = 1000
 export  var systemName = "SYSTEM_CARGO_AUX"

@@ -13,6 +13,8 @@ self_kgps = 40
 modify_mineralEfficiency = 0.3
 self_remassEfficiency = 0.2
 modify_kgps_percent_multi = 80
+tunable_speed_min = 0.5
+tunable_speed_max = 1.5
 
 [node name="ProcessingArea" parent="." index="0"]
 position = Vector2( 28, 0 )
