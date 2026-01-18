@@ -236,3 +236,38 @@ func addEquipmentSlot(slot_data: Dictionary):
 	ADD_EQUIPMENT_SLOTS.append(slot_data)
 func addEquipmentItem(item_data: Dictionary):
 	ADD_EQUIPMENT_ITEMS.append(item_data)
+
+func updateTL_r(path:String, delim:String = ",", useRelativePath:bool = true, fullLogging:bool = true):
+	if useRelativePath:
+		path = str(modPath + path)
+	l("Adding translations from: %s" % path)
+	var tlFile:File = File.new()
+	tlFile.open(path, File.READ)
+
+	var translations := []
+	
+	var translationCount = 0
+	var csvLine := tlFile.get_line().split(delim)
+	if fullLogging:
+		l("Adding translations as: %s" % csvLine)
+	for i in range(1, csvLine.size()):
+		var translationObject := Translation.new()
+		translationObject.locale = csvLine[i]
+		translations.append(translationObject)
+
+	while not tlFile.eof_reached():
+		csvLine = tlFile.get_csv_line(delim)
+
+		if csvLine.size() > 1:
+			var translationID := csvLine[0]
+			for i in range(1, csvLine.size()):
+				translations[i - 1].add_message(translationID, csvLine[i].c_unescape())
+			if fullLogging:
+				l("Added translation: %s" % csvLine)
+			translationCount += 1
+
+	tlFile.close()
+
+	for translationObject in translations:
+		TranslationServer.add_translation(translationObject)
+	l("%s Translations Updated" % translationCount)

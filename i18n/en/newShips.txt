@@ -10,7 +10,7 @@ SYSTEM_REACTOR_EIME_REFIT|Liquid drum replacement reactor
 
 SHIP_OCP-SALVAGE|OCP-209 Salvaged Hull
 
-SHIP_OCP-SALVAGE_SPECS|Make: Obonto Microengineering\nBay-Fitted Manipulator Arms: 1\nHigh-Stress Hardpoints: 2\nLow-Stress Hardpoints: 2\nCrew: 8\nDry mass: 184,500 kg\nCargo bay: 150 m^3\nProcessed cargo storage (combined): 50,000 kg
+SHIP_OCP-SALVAGE_SPECS|Make: Obonto Microengineering\nBay-Fitted Manipulator Arms: 1\nHigh-Stress Hardpoints: 2\nLow-Stress Hardpoints: 2\nTurret Mounts: 2\nDrone Bays: 2\nCrew: 8\nDry mass: 184,500 kg\nCargo bay: 150 m^3\nProcessed cargo storage (combined): 50,000 kg
 
 SHIP_OCP-SALVAGE_DESC|This ship was found in a back alley behind Sin Space Engineering. We asked if we could take it and the (unpaid) intern working the atrium said he didn't care so we did. The entire bay has been cut out and replaced with a manipulator arm, we believe partially to make a competitor to the MAD-CERF, and partially because Sin Space Engineering didn't know what to do with the rest of the OCP after making their OK720 line of ships.
 
@@ -34,7 +34,7 @@ SHIP_PROSPECTOR_RAM_SPECS|Maker: Unknown\nHigh-Stress Hardpoints: 1\nLow-Stress 
 
 SHIP_OCP213_TWIN|OCP-213 Twin
 
-SHIP_OCP213_TWIN_SPECS|Make: Obonto Microengineering\nHigh-Stress Hardpoints: 2\nLow-Stress Hardpoints: 2\nCrew: 8\nDry mass: 187,500 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg
+SHIP_OCP213_TWIN_SPECS|Make: Obonto Microengineering\nHigh-Stress Hardpoints: 2\nLow-Stress Hardpoints: 2\nDocking Bays: 2\nTurret Mounts: 2\nCrew: 8\nDry mass: 187,500 kg\nCargo bay: 610 m^3\nProcessed cargo storage (combined): 50,000 kg
 
 SHIP_OCP213_TWIN_DESC|A minor modification to the stock OCP-209, the Twin adds a second torch fitting and splits both into a V-shape to allow for more varied maneuvers, especially when combining translation and rotation.
 
