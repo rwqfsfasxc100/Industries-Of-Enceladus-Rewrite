@@ -283,7 +283,6 @@ poweroffInCargoHold = true
 startProductionYear = 2230.0
 lifepod = ExtResource( 17 )
 evaOffset = Vector2( 0, -325 )
-lidarResponse = 3.0
 shockAbsorber = 0.9
 autopilotRotationPriority = 1.0
 droneGatheringSpotRotation = 3.142

@@ -118,7 +118,6 @@ evaOffset = Vector2( 30, -130 )
 model = "OBERON"
 astrogationVelocity = 1900.0
 astrogationStartVelocity = 750.0
-lidarResponse = 1.0
 proximityForAstrogation = 50.0
 proximityAheadForAstrogation = 250.0
 autopilotComfortEnabled = false
