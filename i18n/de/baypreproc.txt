@@ -1,0 +1,52 @@
+SYSTEM_CARGO_AUX_PREPROC_0x30|Rasamama RP-25
+
+SYSTEM_CARGO_AUX_PREPROC_0x30_DESC|The Rasamama Material Solutions RP-25 is a low-profile ore preprocessor designed to exclusively melt ice from mineral chunks within a vessel's cargo bay and little else. The unit taps the reactor turbine bleed line for thermal power and requires very little electrical energy to function. \n\nRemass is recovered by running process exhaust through a condenser-radiator panel mounted to the vessel's hull. Rasamama MS recommends monthly flow tests followed by hot gas purges to prevent fouling.
+
+SYSTEM_CARGO_AUX_PREPROC_0x30_SPECS|Ice melt rate: 20 kg/s \nPreprocessor remass processing efficiency: 45% \nPreprocessor Power draw: 1,250 kW / chunk \nMPU mineral efficiency multiplier: x100% (no change) \nMPU processing speed change: -10 kg/s \nMPU power change: minimal reductions \nMass: 750 kg \nManufacturer: Rasamama Material Solutions
+
+
+
+SYSTEM_CARGO_AUX_PREPROC_20x10|Nakamura Big MT
+
+SYSTEM_CARGO_AUX_PREPROC_20x10_DESC|Nakamura Dynamics' Big MT Ore Preprocessor utilises the fundamental principles of its operation to its advantage when processing ore chunks. Free steam in the cargo bay is superheated by the unit's massive toroidal radiator, quickly sublimating ice and preheating the resultant metal particulates for more efficient processing. \n\nWhile some process steam can be reclaimed as propellant, the unit's compact condenser is often overloaded by the sheer volume and high temperatures. \n\nDisclaimer: no Lobotomites were harmed in the development of this unit.
+
+SYSTEM_CARGO_AUX_PREPROC_20x10_SPECS|Ice melt rate: 25 kg/s \nPreprocessor remass processing efficiency: 10% \nPreprocessor Power draw: 125 kW / chunk \nMPU mineral efficiency multiplier: x115% \nMPU processing speed change: 90% nominal speed \nMPU power change: 10% reduction \nMass: 2,000 kg \nManufacturer: Nakamura Dynamics
+
+
+
+SYSTEM_CARGO_AUX_PREPROC_40x20|Rusatom-Antonoff MPP-N1
+
+SYSTEM_CARGO_AUX_PREPROC_40x20_DESC|The MPP-N1 is one of the best mineral preprocessors on the market, offering excellent efficiency gains and propellant reclamation yields with a magnetohydrodynamic system. \n\nThe unit repurposes reactor powerplant exhaust as its heat source, emitting it into the bay through a bulb at its centre. Electromagnetic coils surrounding the bulb control temperatures through inductive heating. \n\nProcess steam and trace minerals are recovered by a baffled condenser. Replacement of the condenser assembly is recommended after 320 flight-hours to ensure maximum efficiency.
+
+SYSTEM_CARGO_AUX_PREPROC_40x20_SPECS|Ice melt rate: 40 kg/s \nPreprocessor remass processing efficiency: 20% \nPreprocessor Power draw: 375 kW / chunk \nMPU mineral efficiency multiplier: x130% \nMPU processing speed change: 80% nominal speed \nMPU power change: 20% reduction \nMass: 6,500 kg \nManufacturer: Rusatom-Antonoff
+
+
+SYSTEM_CARGO_PREPROC_P15|Rusatom Chunk Cutter
+
+SYSTEM_CARGO_PREPROC_P15_DESC|The RCC was produced in the earlier days of bay modification technology, and unlike most companies at the time, focused on the ability to put ore through a processor, rather the efficiency at which ore came out of them. Using a constant, but fine, coating of magnesium lit by the ignition lasers from the processor, water is melted off artificially, and reducing the time at which a chunk takes to go through a processor. The additional heat produced by the ignitions produces slight further melting, however the extreme impurities created during the process makes it unsuitable for propellant reclaimation. \n\nMagnesium powder refills available for free at Enceladus prime.
+
+SYSTEM_CARGO_PREPROC_P15_SPECS|MPU processing speed factor: 100% MPU speed \nSecondary MPU processing speed modifier: 15 kg/s \nAdditional MPU power cost per chunk: minimal \nAmbient power cost per chunk: 150 kW \nAmbient ice melt rate: 5 kg/s \n Mass: 1,220 kg \nManufacturer: Rusatom
+
+SYSTEM_CARGO_PREPROC_M35|MAD Heating Coils
+
+SYSTEM_CARGO_PREPROC_M35_DESC|This specialized processing unit utilizes patterned melting of ore chunks entering the bay to create a more fragile ice structure. This unit also comes with a secondary efficiency unit that is to be strapped onto the MPU unit itself to produce a higher processing speed and mineral reclaimation rate. \n\nThis unit does receive major criticism for companies using it for long periods of time, as the proprietary components lead to quick decomposition after a few months of use.
+
+SYSTEM_CARGO_PREPROC_M35_SPECS|MPU processing speed factor: 135% MPU speed \nSecondary MPU processing speed modifier: 10 kg/s \nAdditional MPU power cost per chunk: ~38% \nIce melt rate: 30 kg/s \nPreprocessor remass processing efficiency: 10% \nPreprocessor Power draw: 550 kW / chunk \nMPU mineral efficiency multiplier: x110% \n Mass: 4,780 kg \nManufacturer: Machines Astro-Dynamiques
+
+SYSTEM_CARGO_PREPROC_M85|MS Frakker
+
+SYSTEM_CARGO_PREPROC_M85_DESC|Mitsudaya-Starbus's Frakker uses a combination of performance coils and pattern-recognition chips to optimise the melting and breaking through of ice. The use of pattern-recognition AI chips stems from a method of geological survey common in the early 21st century's heavy interest in LLM algorithms to observe and determine an optimal method to breaking apart ores without losing more minerals than the base unit. As a result, use of this unit comes with a heavy power cost attached, with the tracking of each ore chunk creating additional power consumption the entire time it is in the scanning area. \n\nHeat generated by this unit also induces slight melting of ore chunks, however no system was ever created to reclaim it into reaction mass.
+
+SYSTEM_CARGO_PREPROC_M85_SPECS|MPU processing speed factor: 185% MPU speed \nSecondary MPU processing speed modifier: 0 kg/s \nAdditional MPU power cost per chunk: ~85% \nGoverning AI: Class-1 \nAmbient power cost per chunk: 2,500 kW \nAmbient ice melt rate: 12 kg/s \nMass: 12,550 kg \nManufacturer: Mitsudaya-Starbus
+
+
+
+SYSTEM_CARGO_AUX_PREPROC_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nDecreases MPU processing speed multiplicatively \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nChanged MPU processing speed and power per chunk \nDoes not extract minerals or destroy chunks.
+
+SYSTEM_CARGO_AUX_PREPROC_NOMINERAL_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
+
+SYSTEM_CARGO_AUX_PREPROC_SPEED_MULTI_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU speed multiplicatively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
+
+SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU speed additively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.
+
+SYSTEM_CARGO_AUX_PREPROC_SPEED_ADD_AND_MULTI_MANUAL|Reduces ice mass of chunks within a large area. \nReplenishes propellant. \nIncreases MPU efficiency multiplicatively. \nIncreases MPU speed multiplicatively and additively. \nProcesses multiple ore chunks simultaneously. \nPower requirements and processing speed listed per chunk. \nDoes not extract minerals or destroy chunks.

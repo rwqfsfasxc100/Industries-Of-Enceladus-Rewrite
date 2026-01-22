@@ -1,0 +1,12 @@
+SYSTEM_SALVAGE_ARM_HEAVY|Rusatom-Antonoff ORD
+
+SYSTEM_SALVAGE_ARM_HEAVY_DESC|Through the course of their collaboration on the KTA24, Rusatom-Antonoff quickly recognised the shortcomings of the Triskellion-Armstrong AR-1500. A slow and delicate device, its usage as an ore recovery tool quickly wears out its precision servos and carefully-constructed docking adapter. The ORD is their response to such shortcomings. \n\nWhile especially heavy and power-hungry on account of its bulky support structure, its hard-wearing motors and bearings offer a viable and durable alternative to its counterpart. 
+
+SYSTEM_SALVAGE_ARM_HEAVY_SPECS|Arm strength: 3,200 kN \nReach: 40 m \nPower draw (peak): 220 MW \nMounting Location: High-stress only \nMass: 14,000 kg \nManufacturer: Rusatom-Antonoff
+
+
+SYSTEM_SALVAGE_ARM_LIGHT|Runasimi KRB-500
+
+SYSTEM_SALVAGE_ARM_LIGHT_DESC|The Runasimi KRB-500 Sample Manipulator was originally developed for the vessels of lesser-funded research organisations, but has recently found a new niche in the mining sector as a convenient alternative to nanodrone systems. \n\nThe manipulator's actuators use fluid couplings with brake discs to simulate the precision of stepper or servo motors, a novel implementation that minimises maintenance expenses and overall mass. In addition, its claw can be magnetised to clamp to the outer hull of small ferromagnetic objects such as drone hulls, but its holding strength may be inadequate for larger vessels. \n\nNote: analysis and experiment packages are available as a separate purchase.
+
+SYSTEM_SALVAGE_ARM_LIGHT_SPECS|Arm strength: 500 kN \nReach: 35 m \nPower draw (peak): 60 MW \nMass: 2,050 kg \nManufacturer: Runasimi Inc.

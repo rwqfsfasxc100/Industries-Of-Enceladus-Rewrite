@@ -1,0 +1,5 @@
+SYSTEM_RODS_1|1x SO6 fuel rod
+
+SYSTEM_RODS_1_DESC|This Rusatom-Antonoff SO6 nuclear fuel rod, commonly called a "sunshard", is a standard fuel for early interplanetary NTR designs. The SO6 utilize a liquid thorium-based core encased in a solid shell. The stress and composition yield extremely high operating temperatures. \n\nThe perfect gift for the aspiring ship captain. Lead-lined wrapping material in a variety of designs and colours is available on request.
+
+SYSTEM_RODS_1_SPECS|Manufacturer: Rusatom-Antonoff \nOperating temperature: 3,500 K \nFailure point: 4,500 K \nMass: 400 kg \nThermal power: 1 GW

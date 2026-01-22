@@ -1,0 +1,13 @@
+SYSTEM_FUEL_1000000|2x Freighter propellant tank array
+
+SYSTEM_FUEL_1000000_DESC|A doubled-up array of freighter-class propellant tanks that can hold up to 1,000,000 kg of propellant for thermal rockets. Honeycombed cells prevent mass shifts during maneuvers.
+
+SYSTEM_FUEL_1000000_SPECS|Capacity: 1,000,000 kg \nPropellant type: Thermal Rocket
+
+
+
+SYSTEM_FUEL_2000000|Frigate propellant tank array
+
+SYSTEM_FUEL_2000000_DESC|A sprawling, decommissioned military-class fuel tank array that can hold up to 2,000,000 kg of propellant for thermal rockets. Honeycombed cells prevent mass shifts during maneuvers.
+
+SYSTEM_FUEL_2000000_SPECS|Capacity: 2,000,000 kg \nPropellant type: Thermal Rocket

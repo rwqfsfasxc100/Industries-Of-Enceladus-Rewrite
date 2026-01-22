@@ -1,0 +1,17 @@
+SYSTEM_AMMO_200|Projectile clip
+
+SYSTEM_AMMO_200_DESC|A set of extension rails for kinetic projectile weapons, capable of handling a variety of calibres. Ammunition is fed by a cost-effective rack-and-pinion actuator. Ports at their bases allow for manual and automatic reloading.
+
+SYSTEM_AMMO_200_SPECS|Storage: 200 kg \nDelivery: 100 kg/s \nManufacturer: Rasamama Material Solutions
+
+SYSTEM_AMMO_100000|Shipyard-class projectile magazine
+
+SYSTEM_AMMO_100000_DESC|Typically found in restocking yards, this module is primarily manufactured to provide a large supply of driver munitions in the event that supplies cannot meet demand. With adequate skill, this unit can be retrofitted to ultraheavy vessels for operations typically spanning multiple weeks.
+
+SYSTEM_AMMO_100000_SPECS|Storage: 100,000 kg \nDelivery: 1,000 kg/s \nManufacturer: Nakamura Dynamics
+
+SYSTEM_DND_100000|Shipyard-class nanodrone storage
+
+SYSTEM_DND_100000_DESC|Most commonly outfitted to stations within the ring, this storage unit is large enough to provide adequate nanodrone provisions when supplies dwindle. Can be outfitted to ultraheavy ships for industrial applications.
+
+SYSTEM_DND_100000_SPECS|Storage: 100,000 kg \nDelivery: 100 kg/s \nManufacturer: Nakamura Dynamics
