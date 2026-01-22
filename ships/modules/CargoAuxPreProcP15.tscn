@@ -9,6 +9,7 @@ mass = 1220
 systemName = "SYSTEM_CARGO_PREPROC_P15"
 self_kgps = 5
 powerDrawPerKg = 150
+modify_mineralEfficiency = 100
 self_remassEfficiency = 0.0
 modify_kgps_add = 15
 

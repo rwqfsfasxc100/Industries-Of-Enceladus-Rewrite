@@ -9,10 +9,14 @@ mass = 4780
 systemName = "SYSTEM_CARGO_PREPROC_M35"
 self_kgps = 30
 powerDrawPerKg = 550
-modify_mineralEfficiency = 0.1
+modify_mineralEfficiency = 110
 self_remassEfficiency = 0.1
 modify_kgps_add = 10
 modify_kgps_percent_multi = 135
+tunable_speed_min = 0.5
+tunable_speed_max = 1.5
+tunable_mpu_min = -15
+tunable_mpu_max = 15
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
 visible = true

@@ -9,6 +9,7 @@ mass = 12550
 systemName = "SYSTEM_CARGO_PREPROC_M85"
 self_kgps = 12
 powerDrawPerKg = 2500
+modify_mineralEfficiency = 100
 self_remassEfficiency = 0.0
 modify_kgps_percent_multi = 185
 tunable_speed_min = 0.5

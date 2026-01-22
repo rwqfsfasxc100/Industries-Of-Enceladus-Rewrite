@@ -9,16 +9,16 @@ export  var ventTime = 0.5
 export  var massDamageScale = 20.0
 export  var self_kgps = 100
 export  var powerDrawPerKg = 100
-export (float, 0, 1, 0.05) var modify_mineralEfficiency = 0.0
+export (int, 50, 150) var modify_mineralEfficiency = 100
 export (float, 0, 1, 0.05) var self_remassEfficiency = 0.5
-export  var modify_kgps_add = 0
+export (int) var modify_kgps_add = 0
 export  (int, 10, 1000, 1) var modify_kgps_percent_multi = 100
 
 export (float) var tunable_speed_min = 0.5
 export (float) var tunable_speed_max = 1.5
 
-export (float) var tunable_mpu_min = 0.85
-export (float) var tunable_mpu_max = 1.15
+export (int,-50,50,1) var tunable_mpu_min = -15
+export (int,-50,50,1) var tunable_mpu_max = 15
 
 export  var enabled = true
 
@@ -31,92 +31,68 @@ func getStatus():
 func getPower():
 	return clamp(power, 0, 1)
 
-#
-#func getParameters():
-#	if self_kgps == 0 or powerDrawPerKg == 0:
-#		return {}
-#	var dynamicKgps = getKgps()
-#	var ratio = dynamicKgps / self_kgps
-#	var pv = powerFromRatio(ratio) * dynamicKgps
-#	var powerDrawKw = (powerDrawPerKg * pv)/self_kgps
-#	var powerDrawHuman = ["%s" % [CurrentGame.formatThousands(powerDrawKw / 1000)], "MW"] if powerDrawKw > 1000 else ["%s" % [CurrentGame.formatThousands(powerDrawKw)], "kW"]
-#
-#	var eff = 100.0 + (modify_mineralEfficiency * 100)
-#	var dynamicModifier = getMPUEfficiencyPercent()
-#	var ratio2 = dynamicModifier / eff
-#
-#	var out = {}
-#	if self_remassEfficiency > 0.0 or self_kgps > 0.0:
-#
-#		var preproc_efficiency = pow(self_remassEfficiency, ratio) * 100
-#		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY": ["%.1f" % [preproc_efficiency], "%"]})
-#		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_POWER_DRAW": powerDrawHuman})
-#	if modify_mineralEfficiency > 0.0 or modify_kgps_percent_multi != 100.0:
-#
-#		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MPU_EFFICIENCY_MODIFIER": ["%.1f" % [getMPUSpeedPercent()], "%"]})
-#		out.merge({"IOE_TUNE_PARAMETER_MPU_SPEED_POWER_DRAW": ["%.1f" % [pow(100.0,ratio2)], "%"]})
-#
-#
-#
-#
-#
-#	return out
-#
-#func getTuneables():
-#	if self_kgps == 0 or powerDrawPerKg == 0:
-#		return {}
-#	var out = {}
-#	if self_remassEfficiency > 0.0 or self_kgps > 0.0:
-#		out.merge({"IOE_TUNE_PREPROC_RECLAIM": {
-#			"type": "float", 
-#			"min": float(self_kgps) * tunable_speed_min, 
-#			"max": float(self_kgps) * tunable_speed_max, 
-#			"step": ceil(float(self_kgps) / 100), 
-#			"default": self_kgps, 
-#			"current": getKgps(), 
-#			"unit": "kg/s", 
-#			"testProtocol": "cargo"
-#		}})
-#	var eff = 100.0 + (modify_mineralEfficiency * 100)
-#	if modify_mineralEfficiency > 0.0 or modify_kgps_percent_multi != 100.0:
-#		out.merge({"IOE_TUNE_PREPROC_MODIFY": {
-#			"type": "float", 
-#			"min": round(eff * tunable_mpu_min), 
-#			"max": round(eff * tunable_mpu_max), 
-#			"step": 1, 
-#			"default": eff, 
-#			"current": getMPUEfficiencyPercent(), 
-#			"unit": "%", 
-#			"testProtocol": "cargo"
-#		}})
-#	return out
-#
-#func getMPUEfficiencyPercent() -> float:
-#	var eff = 100.0 + (modify_mineralEfficiency * 100)
-#	return ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_MODIFY", eff)
-#
-#func getMPUSpeedPercent() -> float:
-#	var eff = 100.0 + (modify_mineralEfficiency * 100)
-#	var dynamicModifier = getMPUEfficiencyPercent()
-#	var ratio2 = eff / dynamicModifier
-#	var percent = ratio2 * modify_kgps_percent_multi
-#
-#	return percent
-#
-#func getKgps() -> float:
-#	return ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_RECLAIM", self_kgps)
-
 func get_preprocessor_kgps() -> float:
 	return ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_SPEED", self_kgps)
 
 func get_preprocessor_efficiency() -> float:
-	var val = pow(self_remassEfficiency,2.0 - (ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_SPEED", self_kgps)/self_kgps))
+	var val = pow(self_remassEfficiency,(ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_SPEED", self_kgps) / self_kgps))
 	return val
 
+func get_mpu_efficiency() -> float:
+	return ship.getTuneMdValue(slotName, "IOE_TUNE_PREPROC_MODIFY", modify_mineralEfficiency)
+
+func get_mpu_speed() -> float:
+	var val = pow(modify_kgps_percent_multi, 2.0 - float(ship.getTuneMdValue(slotName, "IOE_TUNE_PREPROC_MODIFY", modify_mineralEfficiency)) / float(modify_mineralEfficiency))
+	return val
 
 func powerFromRatio(x: float) -> float:
 	return ((1.0 / (x * (2.0 - x)) - 1) * 1.8 + 1)
 
+
+func getParameters():
+	if self_kgps == 0 or powerDrawPerKg == 0:
+		return {}
+	var dynamicKgps = get_preprocessor_kgps()
+	var ratio = dynamicKgps / self_kgps
+	var pv = powerFromRatio(ratio) * dynamicKgps
+	var powerDrawKw = (powerDrawPerKg * pv)/self_kgps
+	var powerDrawHuman = ["%s" % [CurrentGame.formatThousands(powerDrawKw / 1000)], "MW"] if powerDrawKw > 1000 else ["%s" % [CurrentGame.formatThousands(powerDrawKw)], "kW"]
+	var out = {}
+	if self_remassEfficiency > 0.0 or self_kgps > 0.0:
+		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY": ["%.1f" % [get_preprocessor_efficiency()], "%"]})
+		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_POWER_DRAW": powerDrawHuman})
+	if modify_mineralEfficiency != 100 or modify_kgps_percent_multi != 100:
+		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MPU_EFFICIENCY_MODIFIER": ["%.1f" % [get_mpu_speed()], "%"]})
+		
+	return out
+
+func getTuneables():
+	if self_kgps <= 0.0 or powerDrawPerKg <= 0.0:
+		return {}
+	var out = {}
+	if self_remassEfficiency > 0.0:
+		out.merge({"IOE_TUNE_PREPROC_RECLAIM": {
+			"type": "float", 
+			"min": float(self_kgps) * tunable_speed_min, 
+			"max": float(self_kgps) * tunable_speed_max, 
+			"step": ceil(float(self_kgps) / 100), 
+			"default": self_kgps, 
+			"current": get_preprocessor_kgps(), 
+			"unit": "kg/s", 
+			"testProtocol": "cargo"
+		}})
+	if modify_mineralEfficiency != 100 or modify_kgps_percent_multi != 100:
+		out.merge({"IOE_TUNE_PREPROC_MODIFY": {
+			"type": "float", 
+			"min": modify_mineralEfficiency + tunable_mpu_min, 
+			"max": modify_mineralEfficiency + tunable_mpu_max, 
+			"step": 1, 
+			"default": modify_mineralEfficiency, 
+			"current": get_mpu_efficiency(), 
+			"unit": "%", 
+			"testProtocol": "cargo"
+		}})
+	return out
 
 func _ready():
 	yield(get_tree(),"idle_frame")
@@ -137,15 +113,11 @@ func _ready():
 					if node.systemName == current_mpu:
 						processor = node
 			if processor:
-				if not has_modified:
-					baseMineralEfficiency = processor.mineralEfficiency
-					basekgps = processor.kgps
-					basePowerDrawPerKg = processor.powerDrawPerKg
-					modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
-					has_modified = true
-				else:
-					modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
-
+				baseMineralEfficiency = processor.mineralEfficiency
+				basekgps = processor.kgps
+				basePowerDrawPerKg = processor.powerDrawPerKg
+				modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
+				
 onready var ventRemass = $VentRemass
 onready var processingA = $Processing
 onready var proStart = $ProStart
@@ -154,8 +126,6 @@ onready var proStop = $ProStop
 var ventingMineral = 0.0
 
 var made_adjustment = false
-
-var has_modified = false
 
 var current_model = ""
 
@@ -171,7 +141,7 @@ func _physics_process(delta):
 	var isproc = false
 	
 	if enabled:
-		if self_kgps == 0 or powerDrawPerKg == 0:
+		if self_kgps <= 0.0 or powerDrawPerKg <= 0.0:
 			pass
 		else:
 			for p in processing:
@@ -235,7 +205,7 @@ func _physics_process(delta):
 
 
 func modifyProcessor(processor,nodeMinEff,nodeKGPS,nodePower):
-	var newMinEff = clamp(nodeMinEff + (nodeMinEff * modify_mineralEfficiency),
+	var newMinEff = clamp(nodeMinEff * (get_mpu_efficiency()/100),
 		0, 0.995)
 
 	var clp = clamp(modify_kgps_percent_multi,10,1000)

@@ -38,10 +38,14 @@ ventTime = 0.5
 massDamageScale = 20.0
 self_kgps = 100
 powerDrawPerKg = 100
-modify_mineralEfficiency = 0.0
+modify_mineralEfficiency = 100
 self_remassEfficiency = 0.5
 modify_kgps_add = 0
 modify_kgps_percent_multi = 100
+tunable_speed_min = 0.5
+tunable_speed_max = 1.5
+tunable_mpu_min = -15
+tunable_mpu_max = 15
 enabled = true
 
 [node name="ProcessingArea" type="Area2D" parent="." index="0"]
