@@ -253,7 +253,7 @@ height = 800.0
 [sub_resource type="CircleShape2D" id=11]
 radius = 64.0
 
-[node name="MAD-CERF-Civ" type="RigidBody2D" groups=["ships"]]
+[node name="MAD-CERF-Civ-Inverse" type="RigidBody2D" groups=["ships"]]
 collision_layer = 530
 collision_mask = 7
 mass = 190.0
@@ -273,7 +273,7 @@ upgradeLimits = {
 "reactor.power": Vector2( 0, 50 ),
 "turbine.power": Vector2( 0, 500 )
 }
-shipName = "SHIP_MADCERF_CIV"
+shipName = "SHIP_MADCERF_CIV_INVERSE"
 baseShipName = "SHIP_MADCERF"
 shipType = "fission"
 crew = 8
@@ -312,7 +312,8 @@ energy = 5.1
 range_height = 100.0
 
 [node name="BigHatch" type="Node2D" parent="."]
-position = Vector2( 0, 109 )
+position = Vector2( 0, -109 )
+rotation = 3.14159
 z_index = 80
 script = ExtResource( 35 )
 registerExternal = true
@@ -465,8 +466,7 @@ matchOtherLight = NodePath("../CabinLight/Light")
 
 [node name="CentriCabin" type="Sprite" parent="."]
 material = SubResource( 8 )
-position = Vector2( 0, -325 )
-rotation = 3.14159
+position = Vector2( 0, 325 )
 z_index = 18
 texture = ExtResource( 28 )
 normal_map = SubResource( 14 )
@@ -499,7 +499,8 @@ hullCustomPaintFile = "user://custom-ocp-209.png"
 
 [node name="Hull" type="Sprite" parent="."]
 material = SubResource( 1 )
-position = Vector2( 0, -80 )
+position = Vector2( 0, 80 )
+rotation = 3.14159
 z_index = 43
 texture = ExtResource( 5 )
 normal_map = ExtResource( 6 )
@@ -567,16 +568,18 @@ offset = Vector2( 0, 25 )
 
 [node name="Collider" type="CollisionPolygon2D" parent="."]
 light_mask = 0
+rotation = 3.14159
 z_index = 100
 polygon = PoolVector2Array( 222, -306, 270, -256, 270, -200, 378, -200, 378, -86, 394, -60, 394, 20, 378, 46, 378, 96, 378, 160, 278, 160, 270, 156, 240, 156, 240, 120, 110, 120, 100, 110, 100, 90, 106, 90, 110, 96, 240, 96, 240, 46, 240, -86, 240, -150, 40, -150, 30, -160, -30, -160, -40, -150, -240, -150, -240, -86, -240, 46, -240, 96, -110, 96, -106, 90, -100, 90, -100, 110, -110, 120, -240, 120, -240, 156, -270, 156, -278, 160, -378, 160, -378, 96, -378, 46, -394, 20, -394, -60, -378, -86, -378, -200, -270, -200, -270, -256, -222, -306, -104, -306, -20, -306, 20, -306, 104, -306 )
 
 [node name="Cabin" type="CollisionShape2D" parent="."]
 light_mask = 0
-position = Vector2( 0, -325 )
+position = Vector2( 0, 325 )
 z_index = 50
 shape = SubResource( 12 )
 
 [node name="CargoHoldArea" type="Area2D" parent="."]
+rotation = 3.14159
 z_index = 50
 collision_layer = 524288
 collision_mask = 35
@@ -592,6 +595,7 @@ polygon = PoolVector2Array( -246, -156, -44, -156, -36, -164, 36, -164, 44, -156
 [node name="CargoHoldAreaHull" type="Area2D" parent="."]
 visible = false
 light_mask = 0
+rotation = 3.14159
 z_index = 50
 collision_layer = 0
 collision_mask = 33
@@ -605,95 +609,100 @@ light_mask = 0
 polygon = PoolVector2Array( 220, -302, 266, -256, 266, -196, 374, -196, 374, 154, 282, 154, 240, 110, -240, 110, -280, 156, -374, 156, -374, -196, -266, -196, -266, -256, -220, -302 )
 
 [node name="torch-fore-port" parent="." instance_placeholder="res://ships/modules/TorchSlot.tscn"]
-position = Vector2( -327, -225 )
-rotation = 3.14159
-command = "bl"
+position = Vector2( 327, 225 )
+command = "fml"
 
 [node name="torch-fore-stbd" parent="." instance_placeholder="res://ships/modules/TorchSlot.tscn"]
-position = Vector2( 327, -225 )
+position = Vector2( -327, 225 )
+command = "fmr"
+
+[node name="torch-aft-port" parent="." instance_placeholder="res://ships/modules/TorchSlot.tscn"]
+position = Vector2( 327, -185 )
 rotation = 3.14159
 command = "br"
 
-[node name="torch-aft-port" parent="." instance_placeholder="res://ships/modules/TorchSlot.tscn"]
-position = Vector2( -327, 185 )
-command = "fmr"
-
 [node name="torch-aft-stbd" parent="." instance_placeholder="res://ships/modules/TorchSlot.tscn"]
-position = Vector2( 327, 185 )
-command = "fml"
+position = Vector2( -327, -185 )
+rotation = 3.14159
+command = "bl"
 
 [node name="rcs-stbd-fore" parent="." instance=ExtResource( 27 )]
-position = Vector2( 415, -118 )
-rotation = -1.5708
+position = Vector2( -415, 118 )
+rotation = 1.5708
 command = "<l"
 
 [node name="rcs-stbd-aft" parent="." instance=ExtResource( 27 )]
-position = Vector2( 415, 80 )
-rotation = -1.5708
+position = Vector2( -415, -80 )
+rotation = 1.5708
 command = "<r"
 
 [node name="rcs-port-fore" parent="." instance=ExtResource( 27 )]
-position = Vector2( -415, -118 )
-rotation = 1.5708
+position = Vector2( 415, 118 )
+rotation = -1.5708
 command = ">r"
 
 [node name="rcs-port-aft" parent="." instance=ExtResource( 27 )]
-position = Vector2( -415, 80 )
-rotation = 1.5708
+position = Vector2( 415, -80 )
+rotation = -1.5708
 command = ">l"
 
 [node name="histress-aft" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( 0, 260 )
-rotation = 3.14159
+position = Vector2( 0, -260 )
 z_index = 50
 toggleCommand = "ship_slot_1"
 
 [node name="lostress-fore-port" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( -135, -435 )
+position = Vector2( 135, 435 )
+rotation = 3.14159
 z_index = 22
 slot = "middleLeft"
 toggleCommand = "ship_slot_2"
 
 [node name="lostress-fore-stbd" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( 135, -435 )
+position = Vector2( -135, 435 )
+rotation = 3.14159
 z_index = 22
 slot = "middleRight"
 toggleCommand = "ship_slot_3"
 
 [node name="turret-fore-port" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( -330, -380 )
-rotation = -0.698132
+position = Vector2( 330, 380 )
+rotation = 2.44346
 z_index = 20
 slot = "turretLeft"
 toggleCommand = "ship_slot_4"
 
 [node name="turret-fore-stbd" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( 330, -380 )
-rotation = 0.698132
+position = Vector2( -330, 380 )
+rotation = 3.83972
 z_index = 22
 slot = "turretRight"
 toggleCommand = "ship_slot_5"
 
 [node name="dock-left" parent="." instance=ExtResource( 53 )]
-position = Vector2( -370, -170 )
+position = Vector2( 370, 170 )
+rotation = 3.14159
 z_index = 22
 slot = "leftBay2"
 toggleCommand = "ship_slot_8"
 
 [node name="dock-right" parent="." instance=ExtResource( 53 )]
-position = Vector2( 370, -170 )
+position = Vector2( -370, 170 )
+rotation = 3.14159
 z_index = 22
 slot = "rightBay2"
 toggleCommand = "ship_slot_9"
 
 [node name="drone-port" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( -65, -173 )
+position = Vector2( 65, 173 )
+rotation = 3.14159
 z_index = 50
 slot = "leftDrone"
 toggleCommand = "ship_slot_6"
 
 [node name="drone-stbd" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
-position = Vector2( 65, -173 )
+position = Vector2( -65, 173 )
+rotation = 3.14159
 z_index = 50
 slot = "rightDrone"
 toggleCommand = "ship_slot_7"
@@ -701,21 +710,20 @@ toggleCommand = "ship_slot_7"
 [node name="MineralProcessingUnit" parent="." instance=ExtResource( 46 )]
 visible = false
 light_mask = 0
-position = Vector2( -208, -116 )
-rotation = 1.5708
+position = Vector2( 208, 116 )
+rotation = 4.71239
 polygon = PoolVector2Array( -34, -56, -19, -36, -14, -12, -22, -4, -22, 12, -10, 24, 10, 24, 22, 12, 22, -4, 14, -12, 19, -36, 34, -56, 59, 32, -34, 32 )
 
 [node name="MineralProcessingUnit_FAB" parent="." instance=ExtResource( 48 )]
 visible = false
-position = Vector2( 208, -116 )
-rotation = 4.71239
+position = Vector2( -208, 116 )
+rotation = 1.5708
 polygon = PoolVector2Array( -34, -86, 2, -50, 2, -18, -14, -18, -22, -9, -22, 12, -10, 24, 16, 24, 27, 12, 27, -50, 34, -86, 34, 32, -67, 31 )
 
 [node name="MineralProcessingUnit_FSO" type="CollisionPolygon2D" parent="."]
 visible = false
 light_mask = 0
-position = Vector2( 0, -129 )
-rotation = -3.14159
+position = Vector2( 0, 129 )
 z_index = 50
 polygon = PoolVector2Array( -240, -94.9994, -231, -90, -230, 11, -22, 12, -10, 24, 10, 24, 22, 12, 230, 11, 231, -90, 240, -95.0006, 240, 21, 40.0001, 20.9999, 30.0001, 30.9999, -29.9999, 31.0001, -39.9999, 21.0001, -240, 21 )
 script = ExtResource( 55 )
@@ -800,15 +808,14 @@ range_height = 380.4
 [node name="MineralProcessingUnit_SMELT" parent="." instance=ExtResource( 54 )]
 visible = false
 light_mask = 0
-position = Vector2( -208, -116 )
-rotation = 1.5708
+position = Vector2( 208, 116 )
+rotation = 4.71239
 polygon = PoolVector2Array( -34, -70, -16, -60, -12, -28, -18, -22, -18, -4, -10, 4, 10, 4, 18, -4, 18, -22, 12, -28, 16, -60, 34, -70, 44, 32, -34, 32 )
 
 [node name="MineralProcessingUnit_Furnace" type="CollisionPolygon2D" parent="."]
 visible = false
 light_mask = 0
-position = Vector2( 0, -220 )
-rotation = -3.14159
+position = Vector2( 0, 220 )
 z_index = 50
 polygon = PoolVector2Array( -32, -60, -40, -68, -96, -68, -96, -84, -40, -160, -18.0004, -154, -14.0004, -146, -34.0004, -146, -80, -84, -70, -72, -38, -72, -28, -62, 28, -62, 38, -72, 70, -72, 80, -84, 33.9996, -146, 13.9996, -146, 17.9996, -154, 40, -160, 94, -84, 94, -68, 40, -68, 32, -60 )
 script = ExtResource( 37 )
@@ -927,7 +934,8 @@ region_rect = Rect2( 1, 99, 124, 117 )
 
 [node name="CargoBaffles" parent="." instance=ExtResource( 49 )]
 visible = false
-position = Vector2( 0, 164 )
+position = Vector2( 0, -164 )
+rotation = 3.14159
 z_index = 100
 slot = "cargo.aux"
 
@@ -972,7 +980,8 @@ shape = SubResource( 22 )
 shape = SubResource( 7 )
 
 [node name="reactor-l" parent="." instance=ExtResource( 51 )]
-position = Vector2( -292, -80 )
+position = Vector2( 292, 80 )
+rotation = 3.14159
 z_index = 43
 texture = ExtResource( 13 )
 offset = Vector2( 68, 0 )
@@ -989,7 +998,8 @@ position = Vector2( -35, 60 )
 shape = SubResource( 11 )
 
 [node name="reactor-r" parent="." instance=ExtResource( 51 )]
-position = Vector2( 294, -80 )
+position = Vector2( -294, 80 )
+rotation = 3.14159
 z_index = 43
 texture = ExtResource( 13 )
 offset = Vector2( -71, 0 )

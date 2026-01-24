@@ -35,6 +35,7 @@ func _init():
 		{"name":"COTHON-LUX", "age":24 * 3600 * 365 * 200},
 		{"name":"PIGEON-PROSPECTOR", "age":24 * 3600 * 365 * 200},
 		{"name":"MAD-CERF-CIV", "age":24 * 3600 * 365 * 200},
+		{"name":"MAD-CERF-CIV-INVERSE", "age":24 * 3600 * 365 * 200},
 		{"name":"OBERON", "age":24 * 3600 * 365 * 200},
 		{"name":"OCP209-DD", "age":24 * 3600 * 365 * 200},
 		{"name":"OCP209-SNAP", "age":24 * 3600 * 365 * 200},
