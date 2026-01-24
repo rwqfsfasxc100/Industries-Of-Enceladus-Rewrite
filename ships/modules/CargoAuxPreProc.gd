@@ -32,34 +32,47 @@ func getPower():
 	return clamp(power, 0, 1)
 
 func get_preprocessor_kgps() -> float:
-	return ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_SPEED", self_kgps)
+	return ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_RECLAIM", self_kgps)
 
 func get_preprocessor_efficiency() -> float:
-	var val = pow(self_remassEfficiency,(ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_SPEED", self_kgps) / self_kgps))
+	var tuned = ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_RECLAIM", self_kgps)
+	var val = pow(self_remassEfficiency,tuned / self_kgps)
 	return val
 
 func get_mpu_efficiency() -> float:
-	return ship.getTuneMdValue(slotName, "IOE_TUNE_PREPROC_MODIFY", modify_mineralEfficiency)
+	return ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_MODIFY", modify_mineralEfficiency)
 
 func get_mpu_speed() -> float:
-	var val = pow(modify_kgps_percent_multi, 2.0 - float(ship.getTuneMdValue(slotName, "IOE_TUNE_PREPROC_MODIFY", modify_mineralEfficiency)) / float(modify_mineralEfficiency))
+	var tuned = float(ship.getTunedValue(slotName, "IOE_TUNE_PREPROC_MODIFY", modify_mineralEfficiency))
+	
+	var val = pow(modify_kgps_percent_multi, 2.0 - (tuned / float(modify_mineralEfficiency)))
 	return val
 
 func powerFromRatio(x: float) -> float:
 	return ((1.0 / (x * (2.0 - x)) - 1) * 1.8 + 1)
 
-
-func getParameters():
-	if self_kgps == 0 or powerDrawPerKg == 0:
-		return {}
+func get_power():
 	var dynamicKgps = get_preprocessor_kgps()
 	var ratio = dynamicKgps / self_kgps
 	var pv = powerFromRatio(ratio) * dynamicKgps
 	var powerDrawKw = (powerDrawPerKg * pv)/self_kgps
+	return powerDrawKw
+
+func get_mpu_power():
+	var dynamicKgps = (get_mpu_speed()/100) * self_kgps
+	var ratio = dynamicKgps / basekgps
+	var pv = powerFromRatio(ratio) * dynamicKgps
+	var powerDrawKw = (basePowerDrawPerKg * pv)/basekgps
+	return powerDrawKw
+
+func getParameters():
+	if self_kgps == 0 or powerDrawPerKg == 0:
+		return {}
+	var powerDrawKw = get_power()
 	var powerDrawHuman = ["%s" % [CurrentGame.formatThousands(powerDrawKw / 1000)], "MW"] if powerDrawKw > 1000 else ["%s" % [CurrentGame.formatThousands(powerDrawKw)], "kW"]
 	var out = {}
 	if self_remassEfficiency > 0.0 or self_kgps > 0.0:
-		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY": ["%.1f" % [get_preprocessor_efficiency()], "%"]})
+		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_REMASS_EFFICIENCY": ["%.1f" % [(get_preprocessor_efficiency() * 100.0)], "%"]})
 		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MELT_POWER_DRAW": powerDrawHuman})
 	if modify_mineralEfficiency != 100 or modify_kgps_percent_multi != 100:
 		out.merge({"IOE_TUNE_PARAMETER_PREPROC_MPU_EFFICIENCY_MODIFIER": ["%.1f" % [get_mpu_speed()], "%"]})
@@ -94,30 +107,32 @@ func getTuneables():
 		}})
 	return out
 
+var processor = null
+
 func _ready():
-	yield(get_tree(),"idle_frame")
+#	yield(get_tree(),"idle_frame")
 	ship = getShip()
-	if !ship.cutscene and ship.isPlayerControlled():
-		var processor = null
-		var reinstance = false
-		var current_aux = ship.getConfig("cargo.aux")
-		var current_mpu = ship.getConfig("cargo.equipment")
-		if current_aux == systemName:
-			if current_model != current_mpu:
-				reinstance = true
-				current_model = current_mpu
-			var self_aux = systemName
-			for node in ship.get_children():
-				if "systemName" in node:
-					var nname = node.name
-					if node.systemName == current_mpu:
-						processor = node
-			if processor:
-				baseMineralEfficiency = processor.mineralEfficiency
-				basekgps = processor.kgps
-				basePowerDrawPerKg = processor.powerDrawPerKg
-				modifyProcessor(processor,baseMineralEfficiency,basekgps,basePowerDrawPerKg)
-				
+#	if !ship.cutscene and ship.isPlayerControlled():
+		
+#	var reinstance = false
+	var current_aux = ship.getConfig("cargo.aux")
+	var current_mpu = ship.getConfig("cargo.equipment")
+	if current_aux == systemName:
+		if current_model != current_mpu:
+#			reinstance = true
+			current_model = current_mpu
+		var self_aux = systemName
+		for node in ship.get_children():
+			if "systemName" in node:
+				var nname = node.name
+				if node.systemName == current_mpu:
+					processor = node
+		if processor:
+			baseMineralEfficiency = processor.mineralEfficiency
+			basekgps = processor.kgps
+			basePowerDrawPerKg = processor.powerDrawPerKg
+			modifyProcessor()
+
 onready var ventRemass = $VentRemass
 onready var processingA = $Processing
 onready var proStart = $ProStart
@@ -145,14 +160,16 @@ func _physics_process(delta):
 			pass
 		else:
 			for p in processing:
-				var current_kgps = self_kgps
+				var current_kgps = get_preprocessor_kgps()
+				var current_powerdraw = get_power()
+				var current_remassefficiency = get_preprocessor_efficiency()
 				if Tool.claim(p):
 					if "fillerContent" in p:
 						if p.fillerContent > 0.01:
 							var fillerMass = p.fillerContent * p.mass
 							var mineralMass = p.mineralContent * p.mass
 							var procDelta = min(fillerMass, delta * current_kgps / 1000)
-							var requiredPower = procDelta * powerDrawPerKg * 1000
+							var requiredPower = procDelta * current_powerdraw * 1000
 							var gotPower = ship.drawEnergy(requiredPower)
 							if gotPower / requiredPower > 0.9:
 								# for some reason it doesn't work if this isn't in place
@@ -167,7 +184,7 @@ func _physics_process(delta):
 								var newMass = max(mineralMass, p.mass - procDelta)
 								var massChange = p.mass - newMass
 								var shipRemass = ship.reactiveMass
-								var procRemass = massChange * 1000 * self_remassEfficiency
+								var procRemass = massChange * 1000 * current_remassefficiency
 								var newRemass = clamp(shipRemass + procRemass, 0, ship.reactiveMassMax)
 								ship.reactiveMass = newRemass
 								isproc = true
@@ -178,12 +195,12 @@ func _physics_process(delta):
 						if p.has_method("getScan") and p.getScan() == "H2O" and p.has_method("applyEnergyDamage"):
 							var mad = max(1, p.mass / massDamageScale)
 							var proc = min(p.mass, delta * current_kgps / 1000) * mad
-							var requiredPower = proc * powerDrawPerKg * 1000 * delta * 60
+							var requiredPower = proc * current_powerdraw * 1000 * delta * 60
 							var gotPower = ship.drawEnergy(requiredPower)
 							var prm = ship.reactiveMass
 							if gotPower / requiredPower > 0.9:
 								p.applyEnergyDamage(gotPower, p.global_position, delta)
-								var st = self_remassEfficiency * proc * 1000
+								var st = current_remassefficiency * proc * 1000
 								var nrm = clamp(prm + st, 0, ship.reactiveMassMax)
 								ship.reactiveMass = nrm
 								isproc = true
@@ -204,18 +221,21 @@ func _physics_process(delta):
 				proStop.play()
 
 
-func modifyProcessor(processor,nodeMinEff,nodeKGPS,nodePower):
-	var newMinEff = clamp(nodeMinEff * (get_mpu_efficiency()/100),
-		0, 0.995)
-
-	var clp = clamp(modify_kgps_percent_multi,10,1000)
+func modifyProcessor():
+	var current_efficiency_multi = get_mpu_efficiency()
+	
+	
+	var newMinEff = clamp(baseMineralEfficiency * (current_efficiency_multi/100), 0.05, 0.995)
+	
+	var current_speed_multi = get_mpu_speed()
+	var clp = clamp(current_speed_multi,10,1000)
 	var cc = clp/100.0
-	var pl = nodeKGPS * cc
+	var pl = basekgps * cc
 	var om = pl + modify_kgps_add
 	var newKGPS = int(pl)
 	
-	var powerFactor = (float(newKGPS)/float(nodeKGPS))
-	var newPower = int(nodePower * powerFactor)
+	
+	var newPower = get_mpu_power()
 	
 	processor.set("mineralEfficiency", newMinEff)
 	processor.set("kgps",newKGPS)

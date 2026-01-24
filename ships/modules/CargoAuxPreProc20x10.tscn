@@ -13,10 +13,6 @@ powerDrawPerKg = 125
 modify_mineralEfficiency = 115
 self_remassEfficiency = 0.1
 modify_kgps_percent_multi = 90
-tunable_speed_min = 0.5
-tunable_speed_max = 1.5
-tunable_mpu_min = 0.85
-tunable_mpu_max = 1.15
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
 visible = true

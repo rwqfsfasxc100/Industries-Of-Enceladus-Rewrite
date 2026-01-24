@@ -11,13 +11,8 @@ mirrorCollider = true
 massDamageScale = 10.0
 self_kgps = 20
 powerDrawPerKg = 1250
-modify_mineralEfficiency = 100
 self_remassEfficiency = 0.45
 modify_kgps_add = -10
-tunable_speed_min = 0.5
-tunable_speed_max = 1.5
-tunable_mpu_min = -15
-tunable_mpu_max = 15
 
 [node name="ZoneTop" parent="ProcessingArea" index="0"]
 visible = true
