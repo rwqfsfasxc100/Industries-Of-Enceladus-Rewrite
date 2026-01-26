@@ -293,7 +293,7 @@ aiHaulDroneAccurancy = 0.95
 aiExcavationMassLimit = 150
 aiBirdFeedSpot = Vector2( 0, 1000 )
 dialogTree = NodePath("UberConversation")
-cargoHoldArea = Rect2( -250, -260, 500, 400 )
+cargoHoldArea = Rect2( -250, -220, 500, 400 )
 cargoHoldOffset = Vector2( 0, 50 )
 
 [node name="editor_allbright" type="Light2D" parent="."]
@@ -629,22 +629,22 @@ command = "bl"
 [node name="rcs-stbd-fore" parent="." instance=ExtResource( 27 )]
 position = Vector2( -415, 118 )
 rotation = 1.5708
-command = "<l"
+command = ">l"
 
 [node name="rcs-stbd-aft" parent="." instance=ExtResource( 27 )]
 position = Vector2( -415, -80 )
 rotation = 1.5708
-command = "<r"
+command = ">r"
 
 [node name="rcs-port-fore" parent="." instance=ExtResource( 27 )]
 position = Vector2( 415, 118 )
 rotation = -1.5708
-command = ">r"
+command = "<r"
 
 [node name="rcs-port-aft" parent="." instance=ExtResource( 27 )]
 position = Vector2( 415, -80 )
 rotation = -1.5708
-command = ">l"
+command = "<l"
 
 [node name="histress-aft" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( 0, -260 )
