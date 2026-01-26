@@ -20,13 +20,13 @@ export var crewBonus = 0
 #
 #	processedCargoCapacity = base_capacity + bay_aux_capacity + hold_kit_capacity
 	
-func handleAmmoDelivery(delta):
-	match massDriverMagazine:
-		100000:
-			var ps = 1000
-			availableAmmoToDrawNow = clamp(availableAmmoToDrawNow + delta * ps, 0, ps)
-		_:
-			.handleAmmoDelivery(delta)
+#func handleAmmoDelivery(delta):
+#	match massDriverMagazine:
+#		100000:
+#			var ps = 1000
+#			availableAmmoToDrawNow = clamp(availableAmmoToDrawNow + delta * ps, 0, ps)
+#		_:
+#			.handleAmmoDelivery(delta)
 
 
 func sensorGet(sensor):
