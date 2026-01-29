@@ -262,7 +262,7 @@ shipName = "SHIP_TRTL_PEEPER"
 baseShipName = "SHIP_TRTL"
 shipType = "fission"
 hullPrice = 1000000
-processedCargoCapacity = 25000
+processedCargoCapacity = 55000
 processedCargoStorageType = "amorphic"
 lifepod = ExtResource( 22 )
 evaOffset = Vector2( 30, -130 )
@@ -642,7 +642,7 @@ range_height = 2048.0
 
 [node name="WeaponSlot" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( 0, -225 )
-z_index = 22
+z_index = 26
 
 [node name="WeaponLeft" parent="." instance=ExtResource( 35 )]
 position = Vector2( -140, -167.672 )
@@ -850,37 +850,6 @@ editor_only = true
 texture = ExtResource( 21 )
 range_height = 380.4
 
-[node name="WeaponLeftBack" parent="." instance=ExtResource( 35 )]
-visible = false
-position = Vector2( -60, 10 )
-z_index = 22
-slot = "REPLACED"
-remove = true
-toggleCommand = "ship_slot_3"
-
-[node name="SYSTEM_PDMWG-L" parent="WeaponLeftBack" index="13"]
-visible = true
-
-[node name="SYSTEM_EXSTORAGE-L" parent="WeaponLeftBack" index="15"]
-visible = true
-
-[node name="SYSTEM_ACTEMD14" parent="WeaponLeftBack" index="19"]
-pivotPath = NodePath("Pivot")
-weaponPath = NodePath("Pivot/massdriver")
-audioPath = NodePath("Actuation")
-lightPath = NodePath("Pivot/Light")
-
-[node name="SYSTEM_ACL200P" parent="WeaponLeftBack" index="20"]
-weaponPath = NodePath("Pivot/laster-pulse")
-
-[node name="SYSTEM_HUNK-L" parent="WeaponLeftBack" index="24"]
-position = Vector2( -40, 222 )
-rotation = -0.523599
-
-[node name="SYSTEM_PDT-L" parent="WeaponLeftBack" index="29"]
-position = Vector2( -124, 211 )
-rotation = -2.0944
-
 [node name="LoStressAftPort" parent="." instance_placeholder="res://weapons/WeaponSlot.tscn"]
 position = Vector2( -60, 92.3281 )
 z_index = 23
@@ -892,31 +861,6 @@ position = Vector2( 60, 92.3281 )
 z_index = 23
 slot = "rightBack"
 toggleCommand = "ship_slot_4"
-
-[node name="WeaponRightBack" parent="." instance=ExtResource( 35 )]
-visible = false
-position = Vector2( 60, 10 )
-z_index = 22
-slot = "REPLACED"
-remove = true
-toggleCommand = "ship_slot_4"
-
-[node name="SYSTEM_ACTEMD14" parent="WeaponRightBack" index="19"]
-pivotPath = NodePath("Pivot")
-weaponPath = NodePath("Pivot/massdriver")
-audioPath = NodePath("Actuation")
-lightPath = NodePath("Pivot/Light")
-
-[node name="SYSTEM_ACL200P" parent="WeaponRightBack" index="20"]
-weaponPath = NodePath("Pivot/laster-pulse")
-
-[node name="SYSTEM_HUNK-R" parent="WeaponRightBack" index="23"]
-position = Vector2( 40, 220 )
-rotation = 0.523599
-
-[node name="SYSTEM_PDT-R" parent="WeaponRightBack" index="30"]
-position = Vector2( 124, 211 )
-rotation = 2.0944
 
 [node name="MineralProcessingUnit_SMELT" parent="." instance_placeholder="res://ships/modules/MineralProcessingUnit_SMELT.tscn"]
 visible = false
@@ -1006,7 +950,5 @@ polygon = PoolVector2Array( 9, -12, 28, -6, 29, 0, 4, -4, 4, -10 )
 [connection signal="body_exited" from="MineralProcessingUnit_FSO/MineralProcessingUnit" to="MineralProcessingUnit_FSO" method="_on_MineralProcessingUnit_body_exited"]
 
 [editable path="Front Bumper"]
-[editable path="WeaponLeftBack"]
-[editable path="WeaponRightBack"]
 [editable path="AI"]
 [editable path="CargoBaffles"]

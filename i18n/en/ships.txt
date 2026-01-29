@@ -58,7 +58,7 @@ SHIP_TRTL_RAM|KX37 TNTRL "RAM"
 
 SHIP_TRTL_RAM_DESC|The "Ringa Aftermarket Modification" variant of the KX37, typically just called the "Ram", is a modification pattern that gained popularity in 2269 after its distribution by a RingChan user going by the handle 'BLKCandy'. The pattern sacrifices a moderate amount of mineral hold capacity to introduce power and feed rails for two drone hardpoints on the tail-end of the vessel's spines, replaces the fixed thruster mounts with gimballing variants, and reworks the RCS blisters for enhanced mobility. \n\nIts most notable feature is its Prospector-type grinder, obtained direct from the salvage market. Its installation makes only minor concessions to crew comforts, being remarkably noisy during operation and slightly reducing the recreation area's floor space.
 
-SHIP_TRTL_RAM_SPECS|Make: Rusatom-Antonoff / Custom-built \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 4 \nDry mass: 42,920 kg \nCargo bay: 110 m^3 \nProcessed cargo storage (combined): 40,000 kg \nEMP shielding: 100 MW
+SHIP_TRTL_RAM_SPECS|Make: Rusatom-Antonoff / Custom-built \nHigh-Stress Hardpoints: 1 \nLow-Stress Hardpoints: 2 \nDrone Bays: 2 \nCrew: 4 \nDry mass: 42,920 kg \nCargo bay: 110 m^3 \nProcessed cargo storage (combined): 35,000 kg \nEMP shielding: 50 MW
 
 SYSTEM_REACTOR_TNTRL_FORT|Braced K37 nuclear reactor
 
