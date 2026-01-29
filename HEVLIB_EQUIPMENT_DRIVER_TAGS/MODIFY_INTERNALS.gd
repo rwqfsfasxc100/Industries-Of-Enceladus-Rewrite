@@ -150,6 +150,16 @@ const MODIFY_INTERNALS = [
 		"mass":20000,
 	},
 	{
+		"system":"SYSTEM_EMD14",
+		"display_system":{
+			"name":"SYSTEM_HULLVAT_AMMO_EXTEND_2",
+			"can_display_multiple":true,
+			"power":1.0,
+			"status":100.0,
+		},
+		"mass":2000,
+	},
+	{
 		"system":"SYSTEM_HULLVAT_AMMO_EXTEND_3",
 		"ammo_multi_upper":2,
 		"ammo_multi_lower":1,
