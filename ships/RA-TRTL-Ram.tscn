@@ -123,6 +123,7 @@ script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
+crewMoraleBonus = -0.3
 shipName = "SHIP_TRTL_RAM"
 baseShipName = "SHIP_TRTL"
 shipType = "fission"
