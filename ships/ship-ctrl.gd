@@ -34,7 +34,7 @@ func sensorGet(sensor):
 		"hold":
 			match processedCargoStorageType:
 				"divided":
-					return processedCargoCapacity * 6
+					return processedCargoCapacity * CurrentGame.traceMinerals.size()
 				"amorphic":
 					return processedCargoCapacity
 				"mono":
