@@ -154,9 +154,11 @@ const MODIFY_INTERNALS = [
 		"display_system":{
 			"name":"SYSTEM_HULLVAT_AMMO_EXTEND_2",
 			"can_display_multiple":true,
-			"power":1.0,
-			"status":100.0,
+			"affect_inspection":false,
+			"power":0.0,
+			"status":0.0,
 		},
+		"show_modifier_system":false,
 		"mass":2000,
 	},
 	{
